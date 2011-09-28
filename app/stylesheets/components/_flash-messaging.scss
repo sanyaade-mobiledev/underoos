@@ -1,0 +1,79 @@
+
+// Flash messages
+div#flash_messages .message {
+  @include darken-gradient(lighten($notice, 30%));
+  @include transition (all 0.25s $ease-in-quad);
+  border-bottom: 1px solid $grey4;
+  color: $flash_color;
+  font-size: 14px;
+  font-weight: bold;
+  position: fixed;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  top: -80px;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 0 10px 50px;
+  &:first-letter {
+    text-transform: capitalize;
+  }
+  &:hover {
+    @include darken-gradient(lighten($notice, 28%));
+  }
+
+  &.show {
+    @include transition (all 0.25s $ease-out-quad);
+    top: 0px;
+  }
+
+  &.notice {
+    @include darken-gradient(lighten($notice, 30%));
+    &:hover {
+      @include darken-gradient(lighten($notice, 28%));
+    }
+  }
+  &.important {
+    @include darken-gradient($important);
+    &:hover {
+      @include darken-gradient(darken($important, 2%));
+    }
+  }
+  &.success {
+    @include darken-gradient($success);
+    &:hover {
+      @include darken-gradient(darken($success, 2%));
+    }
+  }
+  &.warning {
+    @include darken-gradient($warning);
+    &:hover {
+      @include darken-gradient(darken($warning, 2%));
+    }
+  }
+  &.alert {
+    @include darken-gradient($alert);
+    &:hover {
+      @include darken-gradient(darken($alert, 2%));
+    }
+  }
+  &.error {
+    @include darken-gradient($error);
+    &:hover {
+      @include darken-gradient(darken($error, 2%));
+    }
+  }
+}
+
+div#flash_messages .message-content {
+  margin-right: 75px;
+  &:after {
+    @include opacity(.3);
+    color: $black;
+    content: "x";
+    float: right;
+    font-size: 20px;
+    line-height: 12px;
+    text-shadow: 0 1px 0 $greyE;
+  }
+}
+

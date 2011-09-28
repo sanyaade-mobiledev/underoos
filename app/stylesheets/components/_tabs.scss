@@ -1,0 +1,49 @@
+
+nav.tabs {
+  color: $tabs_color;
+  font-weight: bold;
+
+  ul {
+    margin: 0 20px;
+    @include clearfix;
+  }
+
+  li {
+    float: left;
+    margin: 0 2px 0 0;
+  }
+
+  li a {
+    @include border-radius(12px 12px 0px 0px);
+    background: $tabs_bg;
+    border: 1px solid $tabs_border;
+    border-bottom: none;
+    float: left;
+    padding: 10px 40px;
+    -webkit-background-clip: padding-box;
+    &:hover {
+      background: $tabs_hover_bg;
+      border-color: $tabs_hover_border;
+      color: $tabs_hover_color;
+    }
+  }
+
+  li.active a {
+    color: $tabs_active_color;
+    background: $tabs_active_bg;
+    border-bottom: 1px solid $tabs_active_border;
+    &:hover {
+      background: $tabs_active_bg;
+      border-color: $tabs_border;
+      border-bottom-color: $tabs_active_bg;
+      color: $tabs_active_color;
+      cursor: default;
+    }
+  }
+
+  hr {
+    border-color: $tabs_border;
+    margin-top: -1px;
+  }
+}
+

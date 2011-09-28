@@ -1,0 +1,122 @@
+
+@import 'themes/default';
+@import 'compass';
+@import 'mixins/grids';
+
+@mixin _underoos-box-settings() {
+  background-color: rgba(211,54,130,0.50);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+  &.alt {
+    background-color: rgba(211,54,130,0.40);
+  }
+}
+
+@mixin _underoos-column-box($i) {
+  @include column($i);
+  &:after {
+    content: "#{column-width($i)}";
+  }
+}
+
+@mixin _underoos-pull-box($i, $wv) {
+  @include column-pull($i);
+  &:after {
+    content: "pull #{$wv}";
+  }
+}
+
+@mixin _underoos-push-box($i, $wv) {
+  @include column-push($i);
+  &:after {
+    content: "push #{$wv}";
+  }
+}
+
+@mixin _underoos-full-box($i, $wv) {
+  @include column-full($i);
+  &:after {
+    content: "full #{$wv}";
+  }
+}
+
+@mixin _underoos-offset-box($i) {
+  $_by: $columns - $i;
+  @include column-offset($i, 0, $_by);
+  &:after {
+    content: "#{$i} x #{$_by} offset";
+  }
+}
+
+// Define the layouts for testing columns..
+@mixin _underoos-box-definition() {
+  @for $i from 1 through $columns {
+    $_gut_half: (column-width($i)) + ($gutter-width * .5);
+    $_gut_full: (column-width($i)) + ($gutter-width);
+
+    // Set the standard elements for viewing..
+    // We need to render the settings again in case there are more than when we started
+    ._underoos-col-#{$i}, ._underoos-pull-#{$i}, ._underoos-push-#{$i},
+    ._underoos-full-#{$i}, ._underoos-offset-#{$i} {
+      @include _underoos-box-settings();
+    }
+
+    // render standard columns..
+    ._underoos-col-#{$i} {
+      @include _underoos-column-box($i);
+    }
+
+    // render pull columns..
+    ._underoos-pull-#{$i} {
+      @include _underoos-pull-box($i, $_gut_half);
+    }
+
+    // render push columns..
+    ._underoos-push-#{$i} {
+      @include _underoos-push-box($i, $_gut_half);
+    }
+
+    // render full columns..
+    ._underoos-full-#{$i} {
+      @include _underoos-full-box($i, $_gut_full);
+    }
+
+    // render offset columns..
+    ._underoos-offset-#{$i} {
+      @include _underoos-offset-box($i);
+    }
+  }
+}
+
+// Melt faces and render for the desktop settings
+@include _underoos-box-definition();
+
+// take the settings for tablet-landscape (this is generally not necessary) and render dimensions again
+@import 'queries/tablet-landscape';
+@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
+  @include _underoos-box-definition();
+}
+
+// take the settings for tablet-portrait and render dimensions again
+@import 'queries/tablet-portrait';
+@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
+  @include _underoos-box-definition();
+}
+
+// take the settings for mobile-landscape and render dimensions again
+@import 'queries/mobile-landscape';
+@media (min-device-width:1024px) and (max-width:747px),(max-device-width:480px) and (orientation:landscape) {
+  @include _underoos-box-definition();
+}
+
+// take the settings for mobile-portrait and render dimensions again
+@import 'queries/mobile-portrait';
+@media (min-device-width:1024px) and (max-width:469px),(max-device-width:480px) and (orientation:portrait) {
+  @include _underoos-box-definition();
+}
+

@@ -1,0 +1,14 @@
+
+// Tablet portrait
+@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
+  $page-width: 768px;
+  $column-width: 52px;
+  $gutter-width: 12px;
+  $columns: 12;
+  $total-width: ($column-width * $columns) + ($gutter-width * $columns);
+
+  #container {
+    width: $page-width;
+  }
+}
+

@@ -1,0 +1,53 @@
+
+@mixin button($bg, $gradient, $normal, $hover, $border, $border_bot, $padding:5px 14px 6px, $radii:4px) {
+  @include inline-block;
+  @include background($bg linear-gradient($gradient) no-repeat);
+  @include border-radius($radii);
+  @include transition (all 0.25s);
+
+  border: $border;
+  border-bottom-color: $border_bot;
+  color: $normal;
+  padding: $padding;
+  cursor: pointer;
+  width: auto;
+
+  &:visited {
+    color: $normal;
+  }
+
+  &:hover, &:focus {
+    background-position: 0 -15px;
+    padding: $padding;
+    color: $hover;
+  }
+
+  &:focus {
+    @include box-shadow($focus_shadow);
+    border-color: $focus_border;
+    outline: 0;
+  }
+
+  &.error {
+    border: 2px solid $error;
+    color: $error;
+    &:focus {
+      @include box-shadow($focus_error_shadow);
+      outline: 0;
+    }
+  }
+
+  &.disabled, &[disabled], &[readonly] {
+    @include box-shadow(none);
+    background-image: none;
+    background-color: $disabled_bg;
+    border-color: $disabled_border;
+    color: $disabled_color;
+    cursor: not-allowed;
+  }
+}
+
+@mixin def-button() {
+  @include button($btn_def_bg, $btn_def_gradient, $btn_def_normal, $btn_def_hover, $btn_def_border, $btn_def_border_bot);
+}
+
