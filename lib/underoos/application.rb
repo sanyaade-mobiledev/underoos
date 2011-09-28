@@ -1,4 +1,3 @@
-
 require 'compass'
 require 'sinatra'
 require 'sinatra/reloader'
