@@ -1,1 +1,1 @@
-require 'tasks/install'
+require './tasks/install'
