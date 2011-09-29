@@ -1,0 +1,68 @@
+
+- total_width = 984
+- column_width = 70
+- num_columns = 12
+- total_margin = 12
+- single_margin = (total_margin / 2)
+
+%br
+.nagari-note Grid structure:  #{total_width}px ~ #{num_columns} columns ~ #{single_margin}px / #{single_margin}px margins
+
+.nagari-subsection standard horizontal columns
+- (1..num_columns).to_a.reverse.each do |i|
+  ! #{"<div class='_underoos-col-#{i}'></div>"}
+  - if num_columns - i > 0
+    ! #{"<div class='_underoos-col-#{num_columns - i}'></div>"}
+.nagari-clearfix
+
+.nagari-subsection push / pull horizontal columns
+- (1..num_columns).to_a.reverse.each do |i|
+  ! #{"<div class='_underoos-pull-#{i}'></div>"}
+  - if num_columns - i > 0
+    ! #{"<div class='_underoos-push-#{num_columns - i} alt'></div>"}
+  - else
+    ! #{"<div class='_underoos-push-#{num_columns} alt'></div>"}
+.nagari-clearfix
+
+.nagari-subsection full horizontal columns (pushed and pulled)
+- (1..num_columns).to_a.reverse.each do |i|
+  ! #{"<div class='_underoos-full-#{i}'></div>"}
+  - if num_columns - i > 0
+    ! #{"<div class='_underoos-full-#{num_columns - i} alt'></div>"}
+.nagari-clearfix
+
+
+.nagari-subsection offset columns (push / pull / full values not shown)
+- (1..num_columns - 1).to_a.reverse.each do |i|
+  ! #{"<div class='_underoos-offset-#{i}'></div>"}
+.nagari-clearfix
+
+.nagari-subsection vertical grid system
+.nagari-todo TODO: Render the vertical grid
+
+.nagari-subsection Common Sizes and Ratios within the Grid System
+%table(cellspacing=0)
+  %thead
+    %tr
+      %th Column
+      %th 16:9 Ratio (px)
+      %th 4:3 Ratio (px)
+  %tfoot
+    %tr
+      %td(colspan='3') Good reference for <a href="http://andrew.hedges.name/experiments/aspect_ratio/">calculating aspect ratios</a>
+  %tbody
+    %tr
+      %td Full Bleed
+      %td #{total_width} x #{(9.0 / 16.0 * total_width).round}
+      %td #{total_width} x #{(3.0 / 4.0 * total_width).round}
+    - width = total_width - total_margin
+    - spacing = column_width + total_margin
+    - (1..num_columns).to_a.reverse.each do |i|
+      - hd = (9.0 / 16.0 * width).round
+      - sd = (3.0 / 4.0 * width).round
+      %tr
+        %td #{i} columns
+        %td #{width} x #{hd}
+        %td #{width} x #{sd}
+      - width -= spacing
+

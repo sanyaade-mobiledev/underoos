@@ -1,0 +1,119 @@
+
+- lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+.nagari-subsection Heading Styles
+%h1 Google hearts h1 headings, but only use one per page
+%p= lorem
+%br
+%h2 Got sections? Try using h2 headings
+%p= lorem
+%br
+%h3 Good things come in threes, like tacos and h3 headings
+%p= lorem
+%br
+%h4 There's nothing clever to say about h4 headings
+%p= lorem
+%br
+%h5 Every time you use an h5 heading, Google kills a puppy. A tiny little puppy.
+%p= lorem
+%br
+%h6 Really an h6 heading? Google just killed a kitten now too.
+%p= lorem
+
+.nagari-subsection Dividers/Rules
+%hr
+
+.nagari-subsection Paragraph Styles
+%p
+  %em The em tag is used to emphasize text.
+%p
+  %strong The strong tag is generally used for bold text.
+%p
+  %strong
+    %em Wrap the strong and the em tag and away you go.
+%p Just wanted to say what sup<sup>&reg;</sup> with the superscript tag.
+%p The <sub>sub tag</sub> is just plain weird, but that's what makes it a unique beautiful butterfly.
+%p This is an inline anchor tag so <a href='http://www.google.com/'>click here</a>!
+%blockquote
+  %q Nagari is the ancestor of Devanagari and other scripts, and was first used to write Sanskrit only. It is the common language and writing systems used by Tibetan Sherpas. Get it? Writing language for Sherpa guides. Okay, total stretch, but this is what blockquotes look like with quotes.
+%cite * The above quote is really just about 8 minutes spent on <a href="http://en.wikipedia.org/wiki/Devnagari">wikipedia</a> research. Anyhow, this is a footnote using a citation tag.
+%p
+%small The small tag renders text smaller.
+%p
+%big The big tag renders text bigger (tag is being deprecated though).
+%p <abbr title="For Placement Only">FPO</abbr>. The abbr tag describes an abbreviated phrase.
+%p <acronym title="as soon as possible">ASAP</acronym>. An acronym tag can be spoken as if it were a word, example NATO, NASA, ASAP, GUI.
+%p <dfn title="This is a definition">DFN</dfn>. The dfn tag wraps the definition of a word or term.
+%p
+%address
+  Mr. Address Tag
+  %br
+  1600 Pennsylvania Ave NW
+  %br
+  Washington D.C. DC 20500
+%p
+%del The del tag defines text that has been deleted from a document.
+%p
+%ins The ins tag defines text that has been inserted into a document.
+%details
+  %summary Click to Expand
+  %p The summary tag can be clicked on to expand/collapse the details as required. The summary tag, should be the first child of the details tag. The details tag specifies additional details that the user can view or hide on demand.
+%figure
+  %p The figure tag is used for annotating illustrations, diagrams, photos, code listings, etc.
+  %figcaption The figcaption tag is used to provide a caption when using the figure tag. The figcaption tag is used either as the first or last child of its parent figure tag.
+%p
+%mark The mark tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
+%p What time is it? <time>9:00</time>
+
+.nagari-subsection List Styles
+%p An unordered list:
+%ul
+  %li Unordered list
+  %li Unordered list
+  %ul
+    %li Nested unordered list
+    %li Nested unordered list
+    %li Nested unordered list
+  %li Unordered list
+  %ol
+    %li Nested ordered list
+    %li Nested ordered list
+    %li Nested ordered list
+
+%p An ordered list:
+%ol
+  %li Ordered list
+  %li Ordered list
+  %ol
+    %li Nested unordered list
+    %li Nested unordered list
+    %li Nested unordered list
+  %li Ordered list
+  %ul
+    %li Nested ordered list
+    %li Nested ordered list
+    %li Nested ordered list
+
+%dl
+  %dt Definition Term
+  %dd Definition Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+  %dt Definition Term
+  %dd Definition Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+  %dt Definition Term
+  %dd Definition Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+
+.nagari-subsection Code Styles
+%p The <code>&lt;code&gt;</code> tag is used to show inline code
+%br
+%pre // The pre tag. <br />git pull --rebase <br />git add . <br />git commit -m "Updated heading styles" <br/>git push
+%br
+%kbd The kbd tag defines keyboard text
+%br
+%samp The samp tag defines sample computer code
+
+.nagari-subsection Flags
+%p Flags are used to <span class="flag important">pop</span> information in a block of text, they are always wrapped in span tags. Flags and flash messages generally follow the same color pattern and naming convention.
+%br
+%p <span class="flag">Default</span> | <span class="flag notice">Notice</span> | <span class="flag important">Important</span> | <span class="flag success">Success</span> | <span class="flag warning">Warning</span> | <span class="flag alert">Alert</span> | <span class="flag error">Error</span>
+%br
+

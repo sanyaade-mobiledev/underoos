@@ -1,0 +1,72 @@
+
+.nagari-subsection Buttons
+.nagari-note Default: Button Tag / a.btn
+%button(name="commit") Button
+%button.error(name="commit") Button Error
+%button(name="commit" disabled) Button Disabled
+%a.btn(href="#") Link
+%a.btn.error(href="#") Link Error
+%a.btn.disabled(href="#") Link Disabled
+
+.nagari-subsection Table Styles
+%table(cellspacing="0")
+  %caption Table Caption
+  %thead
+    %tr
+      %th Table Header 1
+      %th
+        %a(href="#") Table Header 2 Link
+      %th Table Header 3
+      %th
+        %a.ascending(href="#") Ascending
+      %th
+        %a.descending(href="#") Descending
+  %tfoot
+    %tr
+      %td(colspan="5") This is the table footer it appears at the bottom of the table
+  %tbody
+    %tr
+      %td Table Data - :nth-child(odd)
+      %td
+        %a(href="#") Data as a link
+      %td Table Data
+      %td One
+      %td Three
+    %tr
+      %td Table Data - :nth-child(even)
+      %td
+        %a(href="#") Data as a link
+      %td Table Data
+      %td Two
+      %td Two
+    %tr
+      %td Table Data - :nth-child(odd)
+      %td
+        %a(href="#") Data as a link
+      %td Table Data
+      %td Three
+      %td One
+
+.nagari-subsection Media Styles
+.nagari-note favicon 16x16
+%img(src='/favicon.ico' alt='favicon')
+.nagari-note apple touch icon 114x114
+%img(src='/apple-touch-icon.png' alt='apple touch icon')
+.nagari-note apple startup image 320x460
+%img(src='/startup.png' alt='startup image')
+.nagari-note Image
+%img(src='http://lorempixum.com/150/150' alt='image')
+.nagari-note Video
+%video(controls="" poster="http://lorempixum.com/320/240")
+  %source(src="/path/to/myvideo.mp4" type="video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"")
+  %source(src="/path/to/myvideo.ogv" type="video/ogg; codecs=\"theora, vorbis\"")
+.nagari-note Bars
+%meter(min="0" max="100" value="50")
+%label meter tag
+%p
+%progress(min="0" max="100" value="50")
+%label progress tag
+
+.nagari-subsection UI Elements
+.nagari-todo Insert elements like buttons, sprites, icons, graphics etc...
+

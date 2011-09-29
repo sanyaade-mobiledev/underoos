@@ -1,0 +1,5902 @@
+/* line 10, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari {
+  margin: 0 0 25px 0;
+}
+/* line 17, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-header,
+.nagari .nagari-section,
+.nagari .nagari-subsection,
+.nagari .nagari-note, .nagari .nagari-todo,
+.nagari .nagari-colorbox, .nagari .nagari-gridbox {
+  -webkit-font-smoothing: antialiased;
+  background: transparent;
+  border: 0;
+  color: #666666;
+  font: 13px/1.231 sans-serif;
+  font-weight: bold;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+/* line 30, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-header {
+  border-bottom: 1px solid #666666;
+  font-size: 14px;
+  height: 25px;
+  margin-bottom: 50px;
+}
+/* line 36, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-header a, .nagari .nagari-header a:visited {
+  color: #268bd2;
+  margin-left: 15px;
+  text-decoration: none;
+}
+/* line 41, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-header a:hover, .nagari .nagari-header a:active {
+  color: #666666;
+}
+/* line 44, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-header span {
+  color: #268bd2;
+}
+/* line 49, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-section {
+  border-bottom: 1px dotted #666666;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+/* line 55, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-section a, .nagari .nagari-section a:visited {
+  color: #666666;
+  text-decoration: none;
+}
+/* line 59, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-section a:hover, .nagari .nagari-section a.active {
+  color: #268bd2;
+}
+/* line 64, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-subsection {
+  border-top: 1px dotted #666666;
+  color: #268bd2;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-content {
+  margin: 25px 0 50px 0;
+  overflow: hidden;
+}
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-content.expanded {
+  display: block;
+}
+/* line 80, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-content.collapsed {
+  display: none;
+}
+/* line 84, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-todo {
+  color: #d33682;
+}
+/* line 88, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-row {
+  display: inline-block;
+}
+/* line 93, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-colorbox,
+.nagari .nagari-gridbox {
+  display: inline;
+  float: left;
+  color: #666666;
+  background-color: rgba(211, 54, 130, 0.5);
+  text-align: center;
+}
+/* line 101, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-colorbox {
+  font-size: 9px;
+  width: 60px;
+  padding-top: 50px;
+}
+/* line 107, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-gridbox {
+  line-height: 25px;
+  height: 25px;
+}
+/* line 112, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-clearfix {
+  zoom: 1;
+}
+/* line 115, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-clearfix:before, .nagari .nagari-clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 120, ../app/assets/stylesheets/styleguide/_briefs_layouts.scss */
+.nagari .nagari-clearfix:after {
+  clear: both;
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-1, ._underoos-pull-1, ._underoos-push-1,
+._underoos-full-1, ._underoos-offset-1 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-1.alt, ._underoos-pull-1.alt, ._underoos-push-1.alt,
+._underoos-full-1.alt, ._underoos-offset-1.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-1 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 70px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-1:after {
+  content: "70px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-1 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 70px;
+  margin-left: 0;
+  width: 76px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-1:after {
+  content: "pull 76px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-1 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 70px;
+  margin-right: 0;
+  width: 76px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-1:after {
+  content: "push 76px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-1 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 70px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 82px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-1:after {
+  content: "full 82px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-1 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 70px;
+  margin-left: 908px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-1:after {
+  content: "1 x 11 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-2, ._underoos-pull-2, ._underoos-push-2,
+._underoos-full-2, ._underoos-offset-2 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-2.alt, ._underoos-pull-2.alt, ._underoos-push-2.alt,
+._underoos-full-2.alt, ._underoos-offset-2.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-2 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 152px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-2:after {
+  content: "152px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-2 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 152px;
+  margin-left: 0;
+  width: 158px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-2:after {
+  content: "pull 158px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-2 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 152px;
+  margin-right: 0;
+  width: 158px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-2:after {
+  content: "push 158px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-2 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 152px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 164px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-2:after {
+  content: "full 164px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-2 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 152px;
+  margin-left: 826px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-2:after {
+  content: "2 x 10 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-3, ._underoos-pull-3, ._underoos-push-3,
+._underoos-full-3, ._underoos-offset-3 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-3.alt, ._underoos-pull-3.alt, ._underoos-push-3.alt,
+._underoos-full-3.alt, ._underoos-offset-3.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-3 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 234px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-3:after {
+  content: "234px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-3 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 234px;
+  margin-left: 0;
+  width: 240px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-3:after {
+  content: "pull 240px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-3 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 234px;
+  margin-right: 0;
+  width: 240px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-3:after {
+  content: "push 240px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-3 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 234px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 246px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-3:after {
+  content: "full 246px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-3 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 234px;
+  margin-left: 744px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-3:after {
+  content: "3 x 9 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-4, ._underoos-pull-4, ._underoos-push-4,
+._underoos-full-4, ._underoos-offset-4 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-4.alt, ._underoos-pull-4.alt, ._underoos-push-4.alt,
+._underoos-full-4.alt, ._underoos-offset-4.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-4 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 316px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-4:after {
+  content: "316px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-4 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 316px;
+  margin-left: 0;
+  width: 322px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-4:after {
+  content: "pull 322px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-4 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 316px;
+  margin-right: 0;
+  width: 322px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-4:after {
+  content: "push 322px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-4 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 316px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 328px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-4:after {
+  content: "full 328px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-4 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 316px;
+  margin-left: 662px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-4:after {
+  content: "4 x 8 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-5, ._underoos-pull-5, ._underoos-push-5,
+._underoos-full-5, ._underoos-offset-5 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-5.alt, ._underoos-pull-5.alt, ._underoos-push-5.alt,
+._underoos-full-5.alt, ._underoos-offset-5.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-5 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 398px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-5:after {
+  content: "398px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-5 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 398px;
+  margin-left: 0;
+  width: 404px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-5:after {
+  content: "pull 404px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-5 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 398px;
+  margin-right: 0;
+  width: 404px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-5:after {
+  content: "push 404px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-5 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 398px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 410px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-5:after {
+  content: "full 410px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-5 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 398px;
+  margin-left: 580px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-5:after {
+  content: "5 x 7 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-6, ._underoos-pull-6, ._underoos-push-6,
+._underoos-full-6, ._underoos-offset-6 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-6.alt, ._underoos-pull-6.alt, ._underoos-push-6.alt,
+._underoos-full-6.alt, ._underoos-offset-6.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-6 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 480px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-6:after {
+  content: "480px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-6 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 480px;
+  margin-left: 0;
+  width: 486px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-6:after {
+  content: "pull 486px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-6 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 480px;
+  margin-right: 0;
+  width: 486px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-6:after {
+  content: "push 486px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-6 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 480px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 492px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-6:after {
+  content: "full 492px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-6 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 480px;
+  margin-left: 498px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-6:after {
+  content: "6 x 6 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-7, ._underoos-pull-7, ._underoos-push-7,
+._underoos-full-7, ._underoos-offset-7 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-7.alt, ._underoos-pull-7.alt, ._underoos-push-7.alt,
+._underoos-full-7.alt, ._underoos-offset-7.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-7 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 562px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-7:after {
+  content: "562px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-7 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 562px;
+  margin-left: 0;
+  width: 568px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-7:after {
+  content: "pull 568px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-7 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 562px;
+  margin-right: 0;
+  width: 568px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-7:after {
+  content: "push 568px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-7 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 562px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 574px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-7:after {
+  content: "full 574px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-7 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 562px;
+  margin-left: 416px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-7:after {
+  content: "7 x 5 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-8, ._underoos-pull-8, ._underoos-push-8,
+._underoos-full-8, ._underoos-offset-8 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-8.alt, ._underoos-pull-8.alt, ._underoos-push-8.alt,
+._underoos-full-8.alt, ._underoos-offset-8.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-8 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 644px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-8:after {
+  content: "644px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-8 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 644px;
+  margin-left: 0;
+  width: 650px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-8:after {
+  content: "pull 650px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-8 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 644px;
+  margin-right: 0;
+  width: 650px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-8:after {
+  content: "push 650px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-8 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 644px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 656px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-8:after {
+  content: "full 656px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-8 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 644px;
+  margin-left: 334px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-8:after {
+  content: "8 x 4 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-9, ._underoos-pull-9, ._underoos-push-9,
+._underoos-full-9, ._underoos-offset-9 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-9.alt, ._underoos-pull-9.alt, ._underoos-push-9.alt,
+._underoos-full-9.alt, ._underoos-offset-9.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-9 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 726px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-9:after {
+  content: "726px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-9 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 726px;
+  margin-left: 0;
+  width: 732px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-9:after {
+  content: "pull 732px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-9 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 726px;
+  margin-right: 0;
+  width: 732px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-9:after {
+  content: "push 732px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-9 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 726px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 738px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-9:after {
+  content: "full 738px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-9 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 726px;
+  margin-left: 252px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-9:after {
+  content: "9 x 3 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-10, ._underoos-pull-10, ._underoos-push-10,
+._underoos-full-10, ._underoos-offset-10 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-10.alt, ._underoos-pull-10.alt, ._underoos-push-10.alt,
+._underoos-full-10.alt, ._underoos-offset-10.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-10 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 808px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-10:after {
+  content: "808px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-10 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 808px;
+  margin-left: 0;
+  width: 814px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-10:after {
+  content: "pull 814px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-10 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 808px;
+  margin-right: 0;
+  width: 814px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-10:after {
+  content: "push 814px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-10 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 808px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 820px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-10:after {
+  content: "full 820px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-10 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 808px;
+  margin-left: 170px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-10:after {
+  content: "10 x 2 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-11, ._underoos-pull-11, ._underoos-push-11,
+._underoos-full-11, ._underoos-offset-11 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-11.alt, ._underoos-pull-11.alt, ._underoos-push-11.alt,
+._underoos-full-11.alt, ._underoos-offset-11.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-11 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 890px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-11:after {
+  content: "890px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-11 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 890px;
+  margin-left: 0;
+  width: 896px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-11:after {
+  content: "pull 896px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-11 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 890px;
+  margin-right: 0;
+  width: 896px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-11:after {
+  content: "push 896px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-11 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 890px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 902px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-11:after {
+  content: "full 902px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-11 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 890px;
+  margin-left: 88px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-11:after {
+  content: "11 x 1 offset";
+}
+
+/* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-12, ._underoos-pull-12, ._underoos-push-12,
+._underoos-full-12, ._underoos-offset-12 {
+  background-color: rgba(211, 54, 130, 0.5);
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+/* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-12.alt, ._underoos-pull-12.alt, ._underoos-push-12.alt,
+._underoos-full-12.alt, ._underoos-offset-12.alt {
+  background-color: rgba(211, 54, 130, 0.4);
+}
+
+/* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-12 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 972px;
+}
+/* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-col-12:after {
+  content: "972px";
+}
+
+/* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-12 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 972px;
+  margin-left: 0;
+  width: 978px;
+}
+/* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-pull-12:after {
+  content: "pull 978px";
+}
+
+/* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-12 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 972px;
+  margin-right: 0;
+  width: 978px;
+}
+/* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-push-12:after {
+  content: "push 978px";
+}
+
+/* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-12 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 972px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 984px;
+}
+/* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-full-12:after {
+  content: "full 984px";
+}
+
+/* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-12 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 972px;
+  margin-left: 6px;
+}
+/* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+._underoos-offset-12:after {
+  content: "12 x 0 offset";
+}
+
+@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1, ._underoos-pull-1, ._underoos-push-1,
+  ._underoos-full-1, ._underoos-offset-1 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1.alt, ._underoos-pull-1.alt, ._underoos-push-1.alt,
+  ._underoos-full-1.alt, ._underoos-offset-1.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 70px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1:after {
+    content: "70px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 70px;
+    margin-left: 0;
+    width: 76px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-1:after {
+    content: "pull 76px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 70px;
+    margin-right: 0;
+    width: 76px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-1:after {
+    content: "push 76px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 70px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 82px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-1:after {
+    content: "full 82px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 70px;
+    margin-left: 908px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-1:after {
+    content: "1 x 11 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2, ._underoos-pull-2, ._underoos-push-2,
+  ._underoos-full-2, ._underoos-offset-2 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2.alt, ._underoos-pull-2.alt, ._underoos-push-2.alt,
+  ._underoos-full-2.alt, ._underoos-offset-2.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 152px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2:after {
+    content: "152px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 152px;
+    margin-left: 0;
+    width: 158px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-2:after {
+    content: "pull 158px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 152px;
+    margin-right: 0;
+    width: 158px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-2:after {
+    content: "push 158px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 152px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 164px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-2:after {
+    content: "full 164px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 152px;
+    margin-left: 826px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-2:after {
+    content: "2 x 10 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3, ._underoos-pull-3, ._underoos-push-3,
+  ._underoos-full-3, ._underoos-offset-3 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3.alt, ._underoos-pull-3.alt, ._underoos-push-3.alt,
+  ._underoos-full-3.alt, ._underoos-offset-3.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 234px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3:after {
+    content: "234px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 234px;
+    margin-left: 0;
+    width: 240px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-3:after {
+    content: "pull 240px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 234px;
+    margin-right: 0;
+    width: 240px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-3:after {
+    content: "push 240px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 234px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 246px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-3:after {
+    content: "full 246px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 234px;
+    margin-left: 744px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-3:after {
+    content: "3 x 9 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4, ._underoos-pull-4, ._underoos-push-4,
+  ._underoos-full-4, ._underoos-offset-4 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4.alt, ._underoos-pull-4.alt, ._underoos-push-4.alt,
+  ._underoos-full-4.alt, ._underoos-offset-4.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 316px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4:after {
+    content: "316px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 316px;
+    margin-left: 0;
+    width: 322px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-4:after {
+    content: "pull 322px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 316px;
+    margin-right: 0;
+    width: 322px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-4:after {
+    content: "push 322px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 316px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 328px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-4:after {
+    content: "full 328px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 316px;
+    margin-left: 662px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-4:after {
+    content: "4 x 8 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5, ._underoos-pull-5, ._underoos-push-5,
+  ._underoos-full-5, ._underoos-offset-5 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5.alt, ._underoos-pull-5.alt, ._underoos-push-5.alt,
+  ._underoos-full-5.alt, ._underoos-offset-5.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 398px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5:after {
+    content: "398px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 398px;
+    margin-left: 0;
+    width: 404px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-5:after {
+    content: "pull 404px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 398px;
+    margin-right: 0;
+    width: 404px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-5:after {
+    content: "push 404px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 398px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 410px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-5:after {
+    content: "full 410px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 398px;
+    margin-left: 580px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-5:after {
+    content: "5 x 7 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6, ._underoos-pull-6, ._underoos-push-6,
+  ._underoos-full-6, ._underoos-offset-6 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6.alt, ._underoos-pull-6.alt, ._underoos-push-6.alt,
+  ._underoos-full-6.alt, ._underoos-offset-6.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 480px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6:after {
+    content: "480px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 480px;
+    margin-left: 0;
+    width: 486px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-6:after {
+    content: "pull 486px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 480px;
+    margin-right: 0;
+    width: 486px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-6:after {
+    content: "push 486px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 480px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 492px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-6:after {
+    content: "full 492px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 480px;
+    margin-left: 498px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-6:after {
+    content: "6 x 6 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7, ._underoos-pull-7, ._underoos-push-7,
+  ._underoos-full-7, ._underoos-offset-7 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7.alt, ._underoos-pull-7.alt, ._underoos-push-7.alt,
+  ._underoos-full-7.alt, ._underoos-offset-7.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 562px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7:after {
+    content: "562px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 562px;
+    margin-left: 0;
+    width: 568px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-7:after {
+    content: "pull 568px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 562px;
+    margin-right: 0;
+    width: 568px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-7:after {
+    content: "push 568px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 562px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 574px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-7:after {
+    content: "full 574px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 562px;
+    margin-left: 416px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-7:after {
+    content: "7 x 5 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8, ._underoos-pull-8, ._underoos-push-8,
+  ._underoos-full-8, ._underoos-offset-8 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8.alt, ._underoos-pull-8.alt, ._underoos-push-8.alt,
+  ._underoos-full-8.alt, ._underoos-offset-8.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 644px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8:after {
+    content: "644px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 644px;
+    margin-left: 0;
+    width: 650px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-8:after {
+    content: "pull 650px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 644px;
+    margin-right: 0;
+    width: 650px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-8:after {
+    content: "push 650px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 644px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 656px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-8:after {
+    content: "full 656px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 644px;
+    margin-left: 334px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-8:after {
+    content: "8 x 4 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9, ._underoos-pull-9, ._underoos-push-9,
+  ._underoos-full-9, ._underoos-offset-9 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9.alt, ._underoos-pull-9.alt, ._underoos-push-9.alt,
+  ._underoos-full-9.alt, ._underoos-offset-9.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 726px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9:after {
+    content: "726px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 726px;
+    margin-left: 0;
+    width: 732px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-9:after {
+    content: "pull 732px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 726px;
+    margin-right: 0;
+    width: 732px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-9:after {
+    content: "push 732px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 726px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 738px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-9:after {
+    content: "full 738px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 726px;
+    margin-left: 252px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-9:after {
+    content: "9 x 3 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10, ._underoos-pull-10, ._underoos-push-10,
+  ._underoos-full-10, ._underoos-offset-10 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10.alt, ._underoos-pull-10.alt, ._underoos-push-10.alt,
+  ._underoos-full-10.alt, ._underoos-offset-10.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 808px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10:after {
+    content: "808px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 808px;
+    margin-left: 0;
+    width: 814px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-10:after {
+    content: "pull 814px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 808px;
+    margin-right: 0;
+    width: 814px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-10:after {
+    content: "push 814px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 808px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 820px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-10:after {
+    content: "full 820px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 808px;
+    margin-left: 170px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-10:after {
+    content: "10 x 2 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11, ._underoos-pull-11, ._underoos-push-11,
+  ._underoos-full-11, ._underoos-offset-11 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11.alt, ._underoos-pull-11.alt, ._underoos-push-11.alt,
+  ._underoos-full-11.alt, ._underoos-offset-11.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 890px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11:after {
+    content: "890px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 890px;
+    margin-left: 0;
+    width: 896px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-11:after {
+    content: "pull 896px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 890px;
+    margin-right: 0;
+    width: 896px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-11:after {
+    content: "push 896px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 890px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 902px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-11:after {
+    content: "full 902px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 890px;
+    margin-left: 88px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-11:after {
+    content: "11 x 1 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12, ._underoos-pull-12, ._underoos-push-12,
+  ._underoos-full-12, ._underoos-offset-12 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12.alt, ._underoos-pull-12.alt, ._underoos-push-12.alt,
+  ._underoos-full-12.alt, ._underoos-offset-12.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 972px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12:after {
+    content: "972px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 972px;
+    margin-left: 0;
+    width: 978px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-12:after {
+    content: "pull 978px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 972px;
+    margin-right: 0;
+    width: 978px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-12:after {
+    content: "push 978px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 972px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 984px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-12:after {
+    content: "full 984px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 972px;
+    margin-left: 6px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-12:after {
+    content: "12 x 0 offset";
+  }
+}
+@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
+  /* line 10, ../app/assets/stylesheets/queries/_tablet-portrait.scss */
+  #container {
+    width: 768px;
+  }
+}
+@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1, ._underoos-pull-1, ._underoos-push-1,
+  ._underoos-full-1, ._underoos-offset-1 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1.alt, ._underoos-pull-1.alt, ._underoos-push-1.alt,
+  ._underoos-full-1.alt, ._underoos-offset-1.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 52px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1:after {
+    content: "52px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 52px;
+    margin-left: 0;
+    width: 58px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-1:after {
+    content: "pull 58px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 52px;
+    margin-right: 0;
+    width: 58px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-1:after {
+    content: "push 58px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 52px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 64px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-1:after {
+    content: "full 64px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 52px;
+    margin-left: 710px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-1:after {
+    content: "1 x 11 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2, ._underoos-pull-2, ._underoos-push-2,
+  ._underoos-full-2, ._underoos-offset-2 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2.alt, ._underoos-pull-2.alt, ._underoos-push-2.alt,
+  ._underoos-full-2.alt, ._underoos-offset-2.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 116px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2:after {
+    content: "116px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 116px;
+    margin-left: 0;
+    width: 122px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-2:after {
+    content: "pull 122px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 116px;
+    margin-right: 0;
+    width: 122px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-2:after {
+    content: "push 122px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 116px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 128px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-2:after {
+    content: "full 128px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 116px;
+    margin-left: 646px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-2:after {
+    content: "2 x 10 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3, ._underoos-pull-3, ._underoos-push-3,
+  ._underoos-full-3, ._underoos-offset-3 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3.alt, ._underoos-pull-3.alt, ._underoos-push-3.alt,
+  ._underoos-full-3.alt, ._underoos-offset-3.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 180px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3:after {
+    content: "180px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 180px;
+    margin-left: 0;
+    width: 186px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-3:after {
+    content: "pull 186px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 180px;
+    margin-right: 0;
+    width: 186px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-3:after {
+    content: "push 186px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 180px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 192px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-3:after {
+    content: "full 192px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 180px;
+    margin-left: 582px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-3:after {
+    content: "3 x 9 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4, ._underoos-pull-4, ._underoos-push-4,
+  ._underoos-full-4, ._underoos-offset-4 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4.alt, ._underoos-pull-4.alt, ._underoos-push-4.alt,
+  ._underoos-full-4.alt, ._underoos-offset-4.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 244px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4:after {
+    content: "244px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 244px;
+    margin-left: 0;
+    width: 250px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-4:after {
+    content: "pull 250px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 244px;
+    margin-right: 0;
+    width: 250px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-4:after {
+    content: "push 250px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 244px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 256px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-4:after {
+    content: "full 256px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 244px;
+    margin-left: 518px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-4:after {
+    content: "4 x 8 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5, ._underoos-pull-5, ._underoos-push-5,
+  ._underoos-full-5, ._underoos-offset-5 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5.alt, ._underoos-pull-5.alt, ._underoos-push-5.alt,
+  ._underoos-full-5.alt, ._underoos-offset-5.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 308px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5:after {
+    content: "308px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 308px;
+    margin-left: 0;
+    width: 314px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-5:after {
+    content: "pull 314px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 308px;
+    margin-right: 0;
+    width: 314px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-5:after {
+    content: "push 314px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 308px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 320px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-5:after {
+    content: "full 320px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 308px;
+    margin-left: 454px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-5:after {
+    content: "5 x 7 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6, ._underoos-pull-6, ._underoos-push-6,
+  ._underoos-full-6, ._underoos-offset-6 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6.alt, ._underoos-pull-6.alt, ._underoos-push-6.alt,
+  ._underoos-full-6.alt, ._underoos-offset-6.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 372px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6:after {
+    content: "372px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 372px;
+    margin-left: 0;
+    width: 378px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-6:after {
+    content: "pull 378px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 372px;
+    margin-right: 0;
+    width: 378px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-6:after {
+    content: "push 378px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 372px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 384px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-6:after {
+    content: "full 384px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 372px;
+    margin-left: 390px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-6:after {
+    content: "6 x 6 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7, ._underoos-pull-7, ._underoos-push-7,
+  ._underoos-full-7, ._underoos-offset-7 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7.alt, ._underoos-pull-7.alt, ._underoos-push-7.alt,
+  ._underoos-full-7.alt, ._underoos-offset-7.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 436px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7:after {
+    content: "436px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 436px;
+    margin-left: 0;
+    width: 442px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-7:after {
+    content: "pull 442px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 436px;
+    margin-right: 0;
+    width: 442px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-7:after {
+    content: "push 442px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 436px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 448px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-7:after {
+    content: "full 448px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 436px;
+    margin-left: 326px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-7:after {
+    content: "7 x 5 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8, ._underoos-pull-8, ._underoos-push-8,
+  ._underoos-full-8, ._underoos-offset-8 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8.alt, ._underoos-pull-8.alt, ._underoos-push-8.alt,
+  ._underoos-full-8.alt, ._underoos-offset-8.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 500px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8:after {
+    content: "500px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 500px;
+    margin-left: 0;
+    width: 506px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-8:after {
+    content: "pull 506px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 500px;
+    margin-right: 0;
+    width: 506px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-8:after {
+    content: "push 506px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 500px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 512px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-8:after {
+    content: "full 512px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 500px;
+    margin-left: 262px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-8:after {
+    content: "8 x 4 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9, ._underoos-pull-9, ._underoos-push-9,
+  ._underoos-full-9, ._underoos-offset-9 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9.alt, ._underoos-pull-9.alt, ._underoos-push-9.alt,
+  ._underoos-full-9.alt, ._underoos-offset-9.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 564px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9:after {
+    content: "564px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 564px;
+    margin-left: 0;
+    width: 570px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-9:after {
+    content: "pull 570px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 564px;
+    margin-right: 0;
+    width: 570px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-9:after {
+    content: "push 570px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 564px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 576px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-9:after {
+    content: "full 576px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 564px;
+    margin-left: 198px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-9:after {
+    content: "9 x 3 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10, ._underoos-pull-10, ._underoos-push-10,
+  ._underoos-full-10, ._underoos-offset-10 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10.alt, ._underoos-pull-10.alt, ._underoos-push-10.alt,
+  ._underoos-full-10.alt, ._underoos-offset-10.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 628px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10:after {
+    content: "628px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 628px;
+    margin-left: 0;
+    width: 634px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-10:after {
+    content: "pull 634px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 628px;
+    margin-right: 0;
+    width: 634px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-10:after {
+    content: "push 634px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 628px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 640px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-10:after {
+    content: "full 640px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 628px;
+    margin-left: 134px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-10:after {
+    content: "10 x 2 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11, ._underoos-pull-11, ._underoos-push-11,
+  ._underoos-full-11, ._underoos-offset-11 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11.alt, ._underoos-pull-11.alt, ._underoos-push-11.alt,
+  ._underoos-full-11.alt, ._underoos-offset-11.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 692px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11:after {
+    content: "692px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 692px;
+    margin-left: 0;
+    width: 698px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-11:after {
+    content: "pull 698px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 692px;
+    margin-right: 0;
+    width: 698px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-11:after {
+    content: "push 698px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 692px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 704px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-11:after {
+    content: "full 704px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 692px;
+    margin-left: 70px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-11:after {
+    content: "11 x 1 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12, ._underoos-pull-12, ._underoos-push-12,
+  ._underoos-full-12, ._underoos-offset-12 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12.alt, ._underoos-pull-12.alt, ._underoos-push-12.alt,
+  ._underoos-full-12.alt, ._underoos-offset-12.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 756px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12:after {
+    content: "756px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 756px;
+    margin-left: 0;
+    width: 762px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-12:after {
+    content: "pull 762px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 756px;
+    margin-right: 0;
+    width: 762px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-12:after {
+    content: "push 762px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 756px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 768px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-12:after {
+    content: "full 768px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 756px;
+    margin-left: 6px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-12:after {
+    content: "12 x 0 offset";
+  }
+}
+@media (min-device-width:1024px) and (max-width:747px),(max-device-width:480px) and (orientation:landscape) {
+  /* line 10, ../app/assets/stylesheets/queries/_mobile-landscape.scss */
+  #container {
+    width: 480px;
+  }
+}
+@media (min-device-width:1024px) and (max-width:747px),(max-device-width:480px) and (orientation:landscape) {
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1, ._underoos-pull-1, ._underoos-push-1,
+  ._underoos-full-1, ._underoos-offset-1 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1.alt, ._underoos-pull-1.alt, ._underoos-push-1.alt,
+  ._underoos-full-1.alt, ._underoos-offset-1.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 28px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1:after {
+    content: "28px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 28px;
+    margin-left: 0;
+    width: 34px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-1:after {
+    content: "pull 34px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 28px;
+    margin-right: 0;
+    width: 34px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-1:after {
+    content: "push 34px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 28px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 40px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-1:after {
+    content: "full 40px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 28px;
+    margin-left: 446px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-1:after {
+    content: "1 x 11 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2, ._underoos-pull-2, ._underoos-push-2,
+  ._underoos-full-2, ._underoos-offset-2 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2.alt, ._underoos-pull-2.alt, ._underoos-push-2.alt,
+  ._underoos-full-2.alt, ._underoos-offset-2.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 68px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2:after {
+    content: "68px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 68px;
+    margin-left: 0;
+    width: 74px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-2:after {
+    content: "pull 74px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 68px;
+    margin-right: 0;
+    width: 74px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-2:after {
+    content: "push 74px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 68px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 80px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-2:after {
+    content: "full 80px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 68px;
+    margin-left: 406px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-2:after {
+    content: "2 x 10 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3, ._underoos-pull-3, ._underoos-push-3,
+  ._underoos-full-3, ._underoos-offset-3 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3.alt, ._underoos-pull-3.alt, ._underoos-push-3.alt,
+  ._underoos-full-3.alt, ._underoos-offset-3.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 108px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3:after {
+    content: "108px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 108px;
+    margin-left: 0;
+    width: 114px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-3:after {
+    content: "pull 114px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 108px;
+    margin-right: 0;
+    width: 114px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-3:after {
+    content: "push 114px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 108px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 120px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-3:after {
+    content: "full 120px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 108px;
+    margin-left: 366px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-3:after {
+    content: "3 x 9 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4, ._underoos-pull-4, ._underoos-push-4,
+  ._underoos-full-4, ._underoos-offset-4 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4.alt, ._underoos-pull-4.alt, ._underoos-push-4.alt,
+  ._underoos-full-4.alt, ._underoos-offset-4.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 148px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4:after {
+    content: "148px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 148px;
+    margin-left: 0;
+    width: 154px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-4:after {
+    content: "pull 154px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 148px;
+    margin-right: 0;
+    width: 154px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-4:after {
+    content: "push 154px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 148px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 160px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-4:after {
+    content: "full 160px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 148px;
+    margin-left: 326px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-4:after {
+    content: "4 x 8 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5, ._underoos-pull-5, ._underoos-push-5,
+  ._underoos-full-5, ._underoos-offset-5 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5.alt, ._underoos-pull-5.alt, ._underoos-push-5.alt,
+  ._underoos-full-5.alt, ._underoos-offset-5.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 188px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5:after {
+    content: "188px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 188px;
+    margin-left: 0;
+    width: 194px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-5:after {
+    content: "pull 194px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 188px;
+    margin-right: 0;
+    width: 194px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-5:after {
+    content: "push 194px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 188px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 200px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-5:after {
+    content: "full 200px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 188px;
+    margin-left: 286px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-5:after {
+    content: "5 x 7 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6, ._underoos-pull-6, ._underoos-push-6,
+  ._underoos-full-6, ._underoos-offset-6 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6.alt, ._underoos-pull-6.alt, ._underoos-push-6.alt,
+  ._underoos-full-6.alt, ._underoos-offset-6.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 228px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6:after {
+    content: "228px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 228px;
+    margin-left: 0;
+    width: 234px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-6:after {
+    content: "pull 234px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 228px;
+    margin-right: 0;
+    width: 234px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-6:after {
+    content: "push 234px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 228px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 240px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-6:after {
+    content: "full 240px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 228px;
+    margin-left: 246px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-6:after {
+    content: "6 x 6 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7, ._underoos-pull-7, ._underoos-push-7,
+  ._underoos-full-7, ._underoos-offset-7 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7.alt, ._underoos-pull-7.alt, ._underoos-push-7.alt,
+  ._underoos-full-7.alt, ._underoos-offset-7.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 268px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7:after {
+    content: "268px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 268px;
+    margin-left: 0;
+    width: 274px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-7:after {
+    content: "pull 274px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 268px;
+    margin-right: 0;
+    width: 274px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-7:after {
+    content: "push 274px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 268px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 280px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-7:after {
+    content: "full 280px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 268px;
+    margin-left: 206px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-7:after {
+    content: "7 x 5 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8, ._underoos-pull-8, ._underoos-push-8,
+  ._underoos-full-8, ._underoos-offset-8 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8.alt, ._underoos-pull-8.alt, ._underoos-push-8.alt,
+  ._underoos-full-8.alt, ._underoos-offset-8.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 308px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8:after {
+    content: "308px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 308px;
+    margin-left: 0;
+    width: 314px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-8:after {
+    content: "pull 314px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 308px;
+    margin-right: 0;
+    width: 314px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-8:after {
+    content: "push 314px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 308px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 320px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-8:after {
+    content: "full 320px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 308px;
+    margin-left: 166px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-8:after {
+    content: "8 x 4 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9, ._underoos-pull-9, ._underoos-push-9,
+  ._underoos-full-9, ._underoos-offset-9 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9.alt, ._underoos-pull-9.alt, ._underoos-push-9.alt,
+  ._underoos-full-9.alt, ._underoos-offset-9.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 348px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9:after {
+    content: "348px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 348px;
+    margin-left: 0;
+    width: 354px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-9:after {
+    content: "pull 354px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 348px;
+    margin-right: 0;
+    width: 354px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-9:after {
+    content: "push 354px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 348px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 360px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-9:after {
+    content: "full 360px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 348px;
+    margin-left: 126px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-9:after {
+    content: "9 x 3 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10, ._underoos-pull-10, ._underoos-push-10,
+  ._underoos-full-10, ._underoos-offset-10 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10.alt, ._underoos-pull-10.alt, ._underoos-push-10.alt,
+  ._underoos-full-10.alt, ._underoos-offset-10.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 388px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10:after {
+    content: "388px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 388px;
+    margin-left: 0;
+    width: 394px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-10:after {
+    content: "pull 394px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 388px;
+    margin-right: 0;
+    width: 394px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-10:after {
+    content: "push 394px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 388px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 400px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-10:after {
+    content: "full 400px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 388px;
+    margin-left: 86px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-10:after {
+    content: "10 x 2 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11, ._underoos-pull-11, ._underoos-push-11,
+  ._underoos-full-11, ._underoos-offset-11 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11.alt, ._underoos-pull-11.alt, ._underoos-push-11.alt,
+  ._underoos-full-11.alt, ._underoos-offset-11.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 428px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11:after {
+    content: "428px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 428px;
+    margin-left: 0;
+    width: 434px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-11:after {
+    content: "pull 434px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 428px;
+    margin-right: 0;
+    width: 434px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-11:after {
+    content: "push 434px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 428px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 440px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-11:after {
+    content: "full 440px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 428px;
+    margin-left: 46px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-11:after {
+    content: "11 x 1 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12, ._underoos-pull-12, ._underoos-push-12,
+  ._underoos-full-12, ._underoos-offset-12 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12.alt, ._underoos-pull-12.alt, ._underoos-push-12.alt,
+  ._underoos-full-12.alt, ._underoos-offset-12.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 468px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12:after {
+    content: "468px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 468px;
+    margin-left: 0;
+    width: 474px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-12:after {
+    content: "pull 474px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 468px;
+    margin-right: 0;
+    width: 474px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-12:after {
+    content: "push 474px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 468px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 480px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-12:after {
+    content: "full 480px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 468px;
+    margin-left: 6px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-12:after {
+    content: "12 x 0 offset";
+  }
+}
+@media (min-device-width:1024px) and (max-width:469px),(max-device-width:480px) and (orientation:portrait) {
+  /* line 10, ../app/assets/stylesheets/queries/_mobile-portrait.scss */
+  #container {
+    width: 312px;
+  }
+}
+@media (min-device-width:1024px) and (max-width:469px),(max-device-width:480px) and (orientation:portrait) {
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1, ._underoos-pull-1, ._underoos-push-1,
+  ._underoos-full-1, ._underoos-offset-1 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1.alt, ._underoos-pull-1.alt, ._underoos-push-1.alt,
+  ._underoos-full-1.alt, ._underoos-offset-1.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 14px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-1:after {
+    content: "14px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 14px;
+    margin-left: 0;
+    width: 20px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-1:after {
+    content: "pull 20px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 14px;
+    margin-right: 0;
+    width: 20px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-1:after {
+    content: "push 20px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 14px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 26px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-1:after {
+    content: "full 26px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-1 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 14px;
+    margin-left: 292px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-1:after {
+    content: "1 x 11 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2, ._underoos-pull-2, ._underoos-push-2,
+  ._underoos-full-2, ._underoos-offset-2 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2.alt, ._underoos-pull-2.alt, ._underoos-push-2.alt,
+  ._underoos-full-2.alt, ._underoos-offset-2.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 40px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-2:after {
+    content: "40px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 40px;
+    margin-left: 0;
+    width: 46px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-2:after {
+    content: "pull 46px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 40px;
+    margin-right: 0;
+    width: 46px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-2:after {
+    content: "push 46px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 52px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-2:after {
+    content: "full 52px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-2 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 40px;
+    margin-left: 266px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-2:after {
+    content: "2 x 10 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3, ._underoos-pull-3, ._underoos-push-3,
+  ._underoos-full-3, ._underoos-offset-3 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3.alt, ._underoos-pull-3.alt, ._underoos-push-3.alt,
+  ._underoos-full-3.alt, ._underoos-offset-3.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 66px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-3:after {
+    content: "66px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 66px;
+    margin-left: 0;
+    width: 72px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-3:after {
+    content: "pull 72px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 66px;
+    margin-right: 0;
+    width: 72px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-3:after {
+    content: "push 72px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 66px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 78px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-3:after {
+    content: "full 78px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-3 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 66px;
+    margin-left: 240px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-3:after {
+    content: "3 x 9 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4, ._underoos-pull-4, ._underoos-push-4,
+  ._underoos-full-4, ._underoos-offset-4 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4.alt, ._underoos-pull-4.alt, ._underoos-push-4.alt,
+  ._underoos-full-4.alt, ._underoos-offset-4.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 92px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-4:after {
+    content: "92px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 92px;
+    margin-left: 0;
+    width: 98px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-4:after {
+    content: "pull 98px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 92px;
+    margin-right: 0;
+    width: 98px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-4:after {
+    content: "push 98px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 92px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 104px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-4:after {
+    content: "full 104px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-4 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 92px;
+    margin-left: 214px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-4:after {
+    content: "4 x 8 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5, ._underoos-pull-5, ._underoos-push-5,
+  ._underoos-full-5, ._underoos-offset-5 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5.alt, ._underoos-pull-5.alt, ._underoos-push-5.alt,
+  ._underoos-full-5.alt, ._underoos-offset-5.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 118px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-5:after {
+    content: "118px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 118px;
+    margin-left: 0;
+    width: 124px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-5:after {
+    content: "pull 124px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 118px;
+    margin-right: 0;
+    width: 124px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-5:after {
+    content: "push 124px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 118px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 130px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-5:after {
+    content: "full 130px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-5 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 118px;
+    margin-left: 188.0px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-5:after {
+    content: "5 x 7 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6, ._underoos-pull-6, ._underoos-push-6,
+  ._underoos-full-6, ._underoos-offset-6 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6.alt, ._underoos-pull-6.alt, ._underoos-push-6.alt,
+  ._underoos-full-6.alt, ._underoos-offset-6.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 144px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-6:after {
+    content: "144px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 144px;
+    margin-left: 0;
+    width: 150px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-6:after {
+    content: "pull 150px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 144px;
+    margin-right: 0;
+    width: 150px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-6:after {
+    content: "push 150px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 144px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 156px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-6:after {
+    content: "full 156px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-6 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 144px;
+    margin-left: 162px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-6:after {
+    content: "6 x 6 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7, ._underoos-pull-7, ._underoos-push-7,
+  ._underoos-full-7, ._underoos-offset-7 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7.alt, ._underoos-pull-7.alt, ._underoos-push-7.alt,
+  ._underoos-full-7.alt, ._underoos-offset-7.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 170.0px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-7:after {
+    content: "170.0px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 170.0px;
+    margin-left: 0;
+    width: 176.0px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-7:after {
+    content: "pull 176.0px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 170.0px;
+    margin-right: 0;
+    width: 176.0px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-7:after {
+    content: "push 176.0px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 170.0px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 182.0px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-7:after {
+    content: "full 182.0px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-7 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 170.0px;
+    margin-left: 136px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-7:after {
+    content: "7 x 5 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8, ._underoos-pull-8, ._underoos-push-8,
+  ._underoos-full-8, ._underoos-offset-8 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8.alt, ._underoos-pull-8.alt, ._underoos-push-8.alt,
+  ._underoos-full-8.alt, ._underoos-offset-8.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 196px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-8:after {
+    content: "196px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 196px;
+    margin-left: 0;
+    width: 202px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-8:after {
+    content: "pull 202px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 196px;
+    margin-right: 0;
+    width: 202px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-8:after {
+    content: "push 202px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 196px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 208px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-8:after {
+    content: "full 208px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-8 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 196px;
+    margin-left: 110px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-8:after {
+    content: "8 x 4 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9, ._underoos-pull-9, ._underoos-push-9,
+  ._underoos-full-9, ._underoos-offset-9 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9.alt, ._underoos-pull-9.alt, ._underoos-push-9.alt,
+  ._underoos-full-9.alt, ._underoos-offset-9.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 222px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-9:after {
+    content: "222px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 222px;
+    margin-left: 0;
+    width: 228px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-9:after {
+    content: "pull 228px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 222px;
+    margin-right: 0;
+    width: 228px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-9:after {
+    content: "push 228px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 222px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 234px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-9:after {
+    content: "full 234px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-9 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 222px;
+    margin-left: 84px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-9:after {
+    content: "9 x 3 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10, ._underoos-pull-10, ._underoos-push-10,
+  ._underoos-full-10, ._underoos-offset-10 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10.alt, ._underoos-pull-10.alt, ._underoos-push-10.alt,
+  ._underoos-full-10.alt, ._underoos-offset-10.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 248.0px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-10:after {
+    content: "248.0px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 248.0px;
+    margin-left: 0;
+    width: 254.0px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-10:after {
+    content: "pull 254.0px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 248.0px;
+    margin-right: 0;
+    width: 254.0px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-10:after {
+    content: "push 254.0px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 248.0px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 260px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-10:after {
+    content: "full 260px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-10 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 248.0px;
+    margin-left: 58px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-10:after {
+    content: "10 x 2 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11, ._underoos-pull-11, ._underoos-push-11,
+  ._underoos-full-11, ._underoos-offset-11 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11.alt, ._underoos-pull-11.alt, ._underoos-push-11.alt,
+  ._underoos-full-11.alt, ._underoos-offset-11.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 274px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-11:after {
+    content: "274px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 274px;
+    margin-left: 0;
+    width: 280px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-11:after {
+    content: "pull 280px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 274px;
+    margin-right: 0;
+    width: 280px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-11:after {
+    content: "push 280px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 274px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 286px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-11:after {
+    content: "full 286px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-11 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 274px;
+    margin-left: 32px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-11:after {
+    content: "11 x 1 offset";
+  }
+
+  /* line 61, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12, ._underoos-pull-12, ._underoos-push-12,
+  ._underoos-full-12, ._underoos-offset-12 {
+    background-color: rgba(211, 54, 130, 0.5);
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  /* line 11, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12.alt, ._underoos-pull-12.alt, ._underoos-push-12.alt,
+  ._underoos-full-12.alt, ._underoos-offset-12.alt {
+    background-color: rgba(211, 54, 130, 0.4);
+  }
+
+  /* line 66, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 300px;
+  }
+  /* line 18, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-col-12:after {
+    content: "300px";
+  }
+
+  /* line 71, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 300px;
+    margin-left: 0;
+    width: 306px;
+  }
+  /* line 25, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-pull-12:after {
+    content: "pull 306px";
+  }
+
+  /* line 76, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 300px;
+    margin-right: 0;
+    width: 306px;
+  }
+  /* line 32, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-push-12:after {
+    content: "push 306px";
+  }
+
+  /* line 81, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 312px;
+  }
+  /* line 39, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-full-12:after {
+    content: "full 312px";
+  }
+
+  /* line 86, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-12 {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 300px;
+    margin-left: 6px;
+  }
+  /* line 47, ../app/assets/stylesheets/styleguide/_briefs_mixins.scss */
+  ._underoos-offset-12:after {
+    content: "12 x 0 offset";
+  }
+}

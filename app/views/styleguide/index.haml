@@ -1,0 +1,77 @@
+
+-# This is so dirty and not in that good way.
+:ruby
+  def partial(file)
+    return haml_concat(Haml::Engine.new(IO.read("app/views/styleguide/_#{file}.haml")).render)
+  end
+
+!!! 5
+%html
+  %head
+    %title underoos are fun to wear.
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %link(rel="stylesheet" href="application.css" type="text/css")
+    %link(rel="stylesheet" href="styleguide.css" type="text/css")
+
+  %body
+    .guider
+    #container
+
+      .nagari
+        .nagari-header
+          underoos<span>.</span>
+          %a(href='#_open' onclick='return nagari.open(event);') open all
+          %a(href='#_close' onclick='return nagari.close(event);') close all
+
+      .nagari#_typography
+        .nagari-section
+          %a(href='#_typography' onclick='return nagari.click(event);') Typography
+        .nagari-content.collapsed
+          .nagari-note Contains all of the heading, paragraph, lists, and inline elements
+          - partial("typography")
+
+      .nagari#_palettes
+        .nagari-section
+          %a(href='#_palettes' onclick='return nagari.click(event);') Palettes
+        .nagari-content.collapsed
+          .nagari-note Various color palettes used in the application
+          - partial("palettes")
+
+      .nagari#_elements
+        .nagari-section
+          %a(href='#_elements' onclick='return nagari.click(event);') Elements
+        .nagari-content.collapsed
+          .nagari-note Base elements styles for tables, images, media, buttons
+          - partial("elements")
+
+      .nagari#_forms
+        .nagari-section
+          %a(href='#_forms' onclick='return nagari.click(event);') Forms
+        .nagari-content.collapsed
+          .nagari-note Base input, textarea, labels, selects, button styles associated with form elements
+          - partial("forms")
+
+      .nagari#_components
+        .nagari-section
+          %a(href='#_components' onclick='return nagari.click(event);') Components
+        .nagari-content.collapsed
+          .nagari-note Components consists of systems like tabs, pagination, breadcrumbs, flash messages, tool tips, etc.
+          - partial("components")
+
+      .nagari#_structures
+        .nagari-section
+          %a(href='#_structures' onclick='return nagari.click(event);') Structures
+        .nagari-content.collapsed
+          .nagari-note Structures consists of grids systems and common size elements used within the application.
+          - partial("structures")
+
+      .nagari#_layouts
+        .nagari-section
+          %a(href='#_layouts' onclick='return nagari.click(event);') Layouts
+        .nagari-content.collapsed
+          .nagari-note Layouts consists of various templates. These can be smaller ratios of actual layouts or direct links to individual layouts.
+          - partial("layouts")
+
+    %script(src="nagari.js" type="text/javascript")
+

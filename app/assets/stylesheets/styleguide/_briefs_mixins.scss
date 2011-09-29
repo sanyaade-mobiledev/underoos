@@ -1,8 +1,4 @@
 
-@import 'themes/default';
-@import 'compass';
-@import 'mixins/grids';
-
 @mixin _underoos-box-settings() {
   background-color: rgba(211,54,130,0.50);
   color: #666;
@@ -91,32 +87,5 @@
       @include _underoos-offset-box($i);
     }
   }
-}
-
-// Melt faces and render for the desktop settings
-@include _underoos-box-definition();
-
-// take the settings for tablet-landscape (this is generally not necessary) and render dimensions again
-@import 'queries/tablet-landscape';
-@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape) {
-  @include _underoos-box-definition();
-}
-
-// take the settings for tablet-portrait and render dimensions again
-@import 'queries/tablet-portrait';
-@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
-  @include _underoos-box-definition();
-}
-
-// take the settings for mobile-landscape and render dimensions again
-@import 'queries/mobile-landscape';
-@media (min-device-width:1024px) and (max-width:747px),(max-device-width:480px) and (orientation:landscape) {
-  @include _underoos-box-definition();
-}
-
-// take the settings for mobile-portrait and render dimensions again
-@import 'queries/mobile-portrait';
-@media (min-device-width:1024px) and (max-width:469px),(max-device-width:480px) and (orientation:portrait) {
-  @include _underoos-box-definition();
 }
 
