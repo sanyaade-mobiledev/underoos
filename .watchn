@@ -24,5 +24,9 @@ module.exports.init = function(watchn) {
     watchn.execute('make styleguide.html', options, 'haml', false, true)
   })
 
+  watchn.watch('executable', ['src/underoos.coffee'], function(options) {
+    watchn.execute('make executable', options, 'coffee', false, true)
+  })
+
 }
 
