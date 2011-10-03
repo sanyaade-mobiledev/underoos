@@ -8,6 +8,7 @@
   line-height: 25px;
   margin-bottom: 4px;
   text-align: center;
+  overflow: hidden;
   &.alt {
     background-color: rgba(211,54,130,0.40);
   }
@@ -87,5 +88,54 @@
       @include _underoos-offset-box($i);
     }
   }
+}
+
+._underoos-col-3,
+._underoos-col-9 {
+  overflow: hidden;
+}
+
+.row {
+  @include row(9);
+  background: blue;
+}
+
+.nested-03 {
+  @include _underoos-box-settings;
+  @include column(3, 0, 9);
+  background-color: green;
+}
+
+.row-pull {
+  @include row-pull(9);
+  background: green;
+}
+
+.nested-pull-03 {
+  @include _underoos-box-settings;
+  @include column-pull(3, 0, 9);
+  background-color: red;
+}
+
+.row-push {
+  @include row-push(9);
+  background: purple;
+}
+
+.nested-push-03 {
+  @include _underoos-box-settings;
+  @include column-push(3, 0, 9);
+  background-color: yellow;
+}
+
+.row-full {
+  @include row-full(9);
+  background: orange;
+}
+
+.nested-full-03 {
+  @include _underoos-box-settings;
+  @include column-full(3, 0, 9);
+  background-color: teal;
 }
 

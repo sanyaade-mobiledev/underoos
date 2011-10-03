@@ -1,9 +1,10 @@
 
+@import 'compass';
+
 // grab the theme for this stylesheet
 @import 'themes/default';
 
 // get the mixins
-@import 'compass';
 @import 'mixins/coloring';
 @import 'mixins/timing-equations';
 @import 'mixins/grids';

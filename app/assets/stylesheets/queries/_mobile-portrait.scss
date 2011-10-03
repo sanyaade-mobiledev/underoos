@@ -1,11 +1,8 @@
 
 // Mobile portrait
 @media (min-device-width:1024px) and (max-width:469px),(max-device-width:480px) and (orientation:portrait) {
-  $page-width: 312px;
-  $column-width: 14px;
-  $gutter-width: 12px;
-  $columns: 12;
-  $total-width: ($column-width * $columns) + ($gutter-width * $columns);
+
+  @include grid-settings(320px, 14px, 6px, 16);
 
   #container {
     width: $page-width;

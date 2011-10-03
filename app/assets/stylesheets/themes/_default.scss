@@ -52,11 +52,16 @@ $disabled_border: 1px solid $greyC;
 // ----------------------------------------------------------------------------
 // Settings for desktop/tablet portrait
 // Setting for other devices are stored in their individual "queries file"
-$page-width: 984px;
-$column-width: 70px;
+$page-width: 992px;
+$column-width: 50px;
 $gutter-width: 12px;
-$columns: 12;
-$total-width: ($column-width * $columns) + ($gutter-width * $columns);
+$columns: 16;
+$_gridsystem-width: ($column-width * $columns) + ($gutter-width * $columns);
+
+// Set $total-width to 100% for a fluid layout
+$total-width: $_gridsystem-width;
+
+/* @include grid-settings(984px, 70px, 12px, 12); */
 
 
 // base.scss

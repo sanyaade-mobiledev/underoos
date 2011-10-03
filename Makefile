@@ -8,6 +8,8 @@ application.css:
 styleguide.css:
 	@compass compile $(SASS_DIR)/styleguide.scss --sass-dir $(SASS_DIR) --css-dir $(CSS_DIR)
 
+css: application.css styleguide.css
+
 styleguide.html:
 	@haml -eq app/views/styleguide/index.haml test/index.html
 

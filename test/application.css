@@ -1,3 +1,8 @@
+/* @include grid-settings(984px, 70px, 12px, 12); */
+/*
+TODO: Test out the Fluid layouts using percentages
+TODO: Document and test all of these thoroughly
+*/
 /* line 4, ../app/assets/stylesheets/general/_normalize.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, nav, menu, section {
@@ -722,7 +727,7 @@ input[type="password"],
 input[type="url"],
 input[type="tel"],
 textarea {
-  width: 414px;
+  width: 314px;
 }
 
 /* line 164, ../app/assets/stylesheets/general/_forms.scss */
@@ -1540,27 +1545,27 @@ nav.tabs hr {
 
 /* line 2, ../app/assets/stylesheets/layouts/_containers.scss */
 #container {
-  width: 984px;
+  width: 992px;
   overflow: hidden;
   margin: 45px 0 0 50px;
 }
 
 @media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait) {
-  /* line 10, ../app/assets/stylesheets/queries/_tablet-portrait.scss */
+  /* line 7, ../app/assets/stylesheets/queries/_tablet-portrait.scss */
   #container {
     width: 768px;
   }
 }
 @media (min-device-width:1024px) and (max-width:747px),(max-device-width:480px) and (orientation:landscape) {
-  /* line 10, ../app/assets/stylesheets/queries/_mobile-landscape.scss */
+  /* line 6, ../app/assets/stylesheets/queries/_mobile-landscape.scss */
   #container {
     width: 480px;
   }
 }
 @media (min-device-width:1024px) and (max-width:469px),(max-device-width:480px) and (orientation:portrait) {
-  /* line 10, ../app/assets/stylesheets/queries/_mobile-portrait.scss */
+  /* line 7, ../app/assets/stylesheets/queries/_mobile-portrait.scss */
   #container {
-    width: 312px;
+    width: 320px;
   }
 }
 /* line 2, ../app/assets/stylesheets/queries/_nojs.scss */

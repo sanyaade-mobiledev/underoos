@@ -1,11 +1,7 @@
 
 // Mobile landscape
 @media (min-device-width:1024px) and (max-width:747px),(max-device-width:480px) and (orientation:landscape) {
-  $page-width: 480px;
-  $column-width: 28px;
-  $gutter-width: 12px;
-  $columns: 12;
-  $total-width: ($column-width * $columns) + ($gutter-width * $columns);
+  @include grid-settings(480px, 24px, 6px, 16);
 
   #container {
     width: $page-width;
