@@ -30,13 +30,26 @@ blockquote, address {
   margin: 1em 40px;
 }
 
+blockquote {
+  font-style: italic;
+  quotes: "\201C" "\201D";
+  &:before, &:after {
+    content: open-quote;
+    font-weight: bold;
+    font-style: normal;
+  }
+  &:after {
+    content: close-quote;
+  }
+}
+
 q {
   quotes: none;
 }
 
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -81,7 +94,6 @@ details {
 
 h1, h2, h3, h4, h5, h6 {
  color: $header_color;
- text-shadow: $text_shadow;
 }
 
 p {
@@ -118,29 +130,22 @@ nav ul, nav ol {
 // Definition Lists
 dl {
   dt {
-    margin: 1em 0 0;
+    font-size: 12px;
     font-weight: bold;
+    height: 20px;
+    margin-bottom: -21px;
+    margin-top: 10px;
+    width: 100%;
+
+    &:after {
+      content: ":"
+    }
   }
 
   dd {
     font-style: normal;
+    margin-left: 10%;
+    width: 90%;
   }
-}
-
-// Labels
-span.flag {
-  @include border-radius(3px);
-  background-color: $flag;
-  color: $white;
-  font-size: 85%;
-  font-weight: bold;
-  padding: 1px 4px;
-  text-transform: uppercase;
-  &.notice    { background-color: $notice; }
-  &.success   { background-color: $success; }
-  &.important { background-color: $important; }
-  &.warning   { background-color: $warning; }
-  &.alert     { background-color: $alert; }
-  &.error     { background-color: $error; }
 }
 

@@ -73,7 +73,7 @@ form .hint {
 form .inline-hints,
 form .hint {
   color: $hint_color;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 form .inline-errors {
@@ -89,8 +89,8 @@ form .inline-errors {
 .checkgroup label {
   @include inline-block;
   color: $collection_label_color;
-  font-size: 13px;
-  margin: 0 10px 0 0;
+  font-size: 14px;
+  margin: -4px 10px 0 0;
 }
 
 :-moz-placeholder {
@@ -120,7 +120,7 @@ select, textarea {
   @include border-radius(3px);
   @include box-shadow($input_shadow);
   background: $input_bg;
-  border: $input_border;
+  border: 1px solid $input_border;
   color: $input_color;
   padding: 6px 4px;
   width: auto;
@@ -145,23 +145,17 @@ select, textarea {
     @include box-shadow(none);
     cursor: not-allowed;
     background-color: $disabled_bg;
-    border-color: $disabled_border;
+    border-color: 1px solid $disabled_border;
     color: $disabled_color;
   }
 }
 
 
-// TODO: Width should be set to auto or contained within the grid!
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="url"],
-input[type="tel"],
-textarea {
-  width: column-width(5) + 16;
+select {
+  font-size: 16px;
 }
 
-select {
+select[multiple] {
   font-size: 14px;
 }
 
@@ -176,7 +170,7 @@ input[type="search"] {
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  @include def-button()
+  @extend .btn;
 }
 
 input[type="file"],
@@ -200,7 +194,7 @@ input[type="radio"] {
   box-sizing: border-box;
   cursor: pointer;
   line-height: normal;
-  margin: 1px 4px 0 0;
+  margin: 0 4px 0 0;
   *margin-top: 0;
   width: auto;
   height: auto;
@@ -226,7 +220,7 @@ form ol li.error {
   input[type="checkbox"],
   input[type="radio"] {
     &:focus {
-      outline: 1px solid $error;
+      outline: 5px auto $error;
     }
   }
 }

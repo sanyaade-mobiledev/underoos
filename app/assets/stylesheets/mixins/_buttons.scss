@@ -5,7 +5,7 @@
   @include border-radius($radii);
   @include transition (all 0.25s);
 
-  border: $border;
+  border: 1px solid $border;
   border-bottom-color: $border_bot;
   color: $normal;
   padding: $padding;
@@ -41,7 +41,7 @@
     @include box-shadow(none);
     background-image: none;
     background-color: $disabled_bg;
-    border-color: $disabled_border;
+    border-color: 1px solid $disabled_border;
     color: $disabled_color;
     cursor: not-allowed;
   }

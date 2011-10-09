@@ -65,10 +65,14 @@ TODO: Document and test all of these thoroughly
   width: $_width;
 }
 
-@mixin row-pull($x, $border-offset:0, $columns:$columns) {
+@mixin row-pull($x, $border-offset:0, $columns:$columns, $resize:true) {
   @include row($x, $border-offset, $columns);
   margin-left: 0;
-  width: column-full-width($x, $border-offset, $columns);
+  @if $resize == true {
+    width: column-full-width($x, $border-offset, $columns);
+  } @else {
+    width: column-width($x, $border-offset, $columns);
+  }
 }
 
 // Draws a column and pulls it with a margin-left of "0" and adjusts width: @include column-pull(8);
@@ -82,10 +86,14 @@ TODO: Document and test all of these thoroughly
   }
 }
 
-@mixin row-push($x, $border-offset:0, $columns:$columns) {
+@mixin row-push($x, $border-offset:0, $columns:$columns, $resize:true) {
   @include row($x, $border-offset, $columns);
   margin-right: 0;
-  width: column-full-width($x, $border-offset, $columns);
+  @if $resize == true {
+    width: column-full-width($x, $border-offset, $columns);
+  } @else {
+    width: column-width($x, $border-offset, $columns);
+  }
 }
 
 // Draws a column and pushes it with a margin-right of "0" and adjust width: @include column-push(8);

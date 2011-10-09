@@ -1,0 +1,108 @@
+
+// Tables
+table {
+  background: $table_bg;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+  thead, tfoot {
+    color: $tfoot_color;
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  caption {
+    color: $caption_color;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  thead {
+    background: $thead_bg;
+    color: $thead_color;
+    text-transform: uppercase;
+
+    a, a:visited {
+      color: $thead_link_normal;
+    }
+
+    a:hover {
+      color: $thead_link_hover;
+    }
+  }
+
+  tbody {
+    background: $tbody_bg;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  tr {
+  }
+
+  tfoot {
+    background: $tfoot_bg;
+  }
+
+  // Overrides
+  thead tr {
+    border: 1px solid $thead_border;
+  }
+
+  tbody tr {
+    border-top: 1px dotted $table_border_std;
+    &:nth-child(odd), &.odd {
+      background-color: $tr_odd;
+    }
+    &:nth-child(even), &.even {
+      background-color: $tr_even;
+    }
+    &:last-child {
+      border-bottom: 1px solid $table_border_std;
+    }
+  }
+
+  tfoot tr, tfoot td {
+    padding: 5px 10px;
+  }
+
+  tfoot tr {
+    border-bottom: 1px solid $table_border_std;
+  }
+
+  // Specials
+  th a.ascending,
+  th a.descending {
+    &:after {
+      @include inline-block;
+      content: "";
+      margin: -4px 0 0 10px;
+      border-width: 0 4px 4px;
+      border-style: solid;
+      border-color: $thead_link_normal transparent;
+    }
+    &:hover {
+      &:after {
+        border-color: $thead_link_hover transparent;
+      }
+    }
+  }
+
+  th a.descending {
+    &:after {
+      border-width: 4px 4px 0;
+    }
+  }
+}
+

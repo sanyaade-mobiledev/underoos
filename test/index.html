@@ -43,6 +43,8 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <div class='nagari-subsection'>Dividers/Rules</div>
           <hr />
+          <hr class='dotted' />
+          <hr class='dashed' />
           <div class='nagari-subsection'>Paragraph Styles</div>
           <p>
             <em>The em tag is used to emphasize text.</em>
@@ -93,7 +95,9 @@
           <mark>The mark tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.</mark>
           <p>What time is it? <time>9:00</time></p>
           <div class='nagari-subsection'>List Styles</div>
-          <p>An unordered list:</p>
+          <p>
+            <strong>An unordered list:</strong>
+          </p>
           <ul>
             <li>Unordered list</li>
             <li>Unordered list</li>
@@ -109,7 +113,10 @@
               <li>Nested ordered list</li>
             </ol>
           </ul>
-          <p>An ordered list:</p>
+          <br />
+          <p>
+            <strong>An ordered list:</strong>
+          </p>
           <ol>
             <li>Ordered list</li>
             <li>Ordered list</li>
@@ -141,11 +148,6 @@
           <kbd>The kbd tag defines keyboard text</kbd>
           <br />
           <samp>The samp tag defines sample computer code</samp>
-          <div class='nagari-subsection'>Flags</div>
-          <p>Flags are used to <span class="flag important">pop</span> information in a block of text, they are always wrapped in span tags. Flags and flash messages generally follow the same color pattern and naming convention.</p>
-          <br />
-          <p><span class="flag">Default</span> | <span class="flag notice">Notice</span> | <span class="flag important">Important</span> | <span class="flag success">Success</span> | <span class="flag warning">Warning</span> | <span class="flag alert">Alert</span> | <span class="flag error">Error</span></p>
-          <br />
           
         </div>
       </div>
@@ -174,20 +176,21 @@
           <div class='nagari-colorbox' style='background:#fff;'>#fff</div>
           <div class='nagari-clearfix'></div>
           <div class='nagari-subsection'>mc roy g. biv</div>
-          <div class='nagari-colorbox' style='background:magenta;'>magenta</div>
-          <div class='nagari-colorbox' style='background:cyan;'>cyan</div>
-          <div class='nagari-colorbox' style='background:red;'>red</div>
-          <div class='nagari-colorbox' style='background:orange;'>orange</div>
-          <div class='nagari-colorbox' style='background:yellow;'>yellow</div>
-          <div class='nagari-colorbox' style='background:green;'>green</div>
-          <div class='nagari-colorbox' style='background:blue;'>blue</div>
-          <div class='nagari-colorbox' style='background:indigo;'>indigo</div>
-          <div class='nagari-colorbox' style='background:violet;'>violet</div>
+          <div class='nagari-colorbox' style='background:#ff00ff;'>#ff00ff</div>
+          <div class='nagari-colorbox' style='background:#00ffff;'>#00ffff</div>
+          <div class='nagari-colorbox' style='background:#b22222;'>#b22222</div>
+          <div class='nagari-colorbox' style='background:#f26522;'>#f26522</div>
+          <div class='nagari-colorbox' style='background:#ffc40d;'>#ffc40d</div>
+          <div class='nagari-colorbox' style='background:#32cd32;'>#32cd32</div>
+          <div class='nagari-colorbox' style='background:#268bd2;'>#268bd2</div>
+          <div class='nagari-colorbox' style='background:#4b0082;'>#4b0082</div>
+          <div class='nagari-colorbox' style='background:#ee82ee;'>#ee82ee</div>
           <div class='nagari-clearfix'></div>
-          <div class='nagari-subsection'>notice, important, success, warning, alert, error</div>
+          <div class='nagari-subsection'>standard, notice, important, success, warning, alert, error</div>
+          <div class='nagari-colorbox' style='background:#aaa;'>#aaa</div>
           <div class='nagari-colorbox' style='background:#000;'>#000</div>
           <div class='nagari-colorbox' style='background:#268bd2;'>#268bd2</div>
-          <div class='nagari-colorbox' style='background:#46a546;'>#46a546</div>
+          <div class='nagari-colorbox' style='background:#32cd32;'>#32cd32</div>
           <div class='nagari-colorbox' style='background:#ffc40d;'>#ffc40d</div>
           <div class='nagari-colorbox' style='background:#f26522;'>#f26522</div>
           <div class='nagari-colorbox' style='background:#b22222;'>#b22222</div>
@@ -201,6 +204,16 @@
         </div>
         <div class="nagari-content collapsed">
           <div class="nagari-note">Base elements styles for tables, images, media, buttons</div>
+          <div class='nagari-subsection'>Flags</div>
+          <p>Flags are used to <span class="flag important">pop</span> information in a block of text, they are always wrapped in span tags. Flags and flash messages generally follow the same color pattern and naming convention.</p>
+          <br />
+          <p><span class="flag">Default</span> | <span class="flag notice">Notice</span> | <span class="flag important">Important</span> | <span class="flag success">Success</span> | <span class="flag warning">Warning</span> | <span class="flag alert">Alert</span> | <span class="flag error">Error</span></p>
+          <br />
+          <div class='nagari-subsection'>Stickers</div>
+          <p>Stickers are similar to flags, except they are wrapped around existing elements (<code>headings</code>, <code>dates</code>, <code>span</code>, etc.) and provide more breathing room via <code>inline-block</code>. They also follow the same color pattern and naming convention as flags and flash messages.</p>
+          <br />
+          <p><span class="sticker">Default</span> | <span class="sticker notice">Notice</span> | <span class="sticker important">Important</span> | <span class="sticker success">Success</span> | <span class="sticker warning">Warning</span> | <span class="sticker alert">Alert</span> | <span class="sticker error">Error</span></p>
+          <br />
           <div class='nagari-subsection'>Buttons</div>
           <div class='nagari-note'>Default: Button Tag / a.btn</div>
           <button name='commit'>Button</button>
@@ -319,7 +332,7 @@
                 </li>
                 <li class='input url optional' id='test_url_input'>
                   <label class='label' for='test_url'>Domain Name</label>
-                  <input class='url optional' id='test_url' name='test[url]' placeholder='http://www.example.com/' type='url' />
+                  <input class='url optional' id='test_url' name='test[url]' placeholder='www.example.com' type='url' />
                 </li>
                 <li class='input tel optional' id='test_tel_input'>
                   <label class='label' for='test_tel'>Telephone</label>

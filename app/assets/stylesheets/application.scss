@@ -15,8 +15,9 @@
 @import 'general/normalize';
 @import 'general/base';
 @import 'general/typography';
-@import 'general/forms';
 @import 'general/elements';
+@import 'general/tables';
+@import 'general/forms';
 @import 'general/helpers';
 
 // components
@@ -28,7 +29,6 @@
 
 // layouts
 @import 'layouts/containers';
-
 
 // media queries
 @import 'queries/tablet-landscape';

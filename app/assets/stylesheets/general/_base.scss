@@ -11,7 +11,7 @@ html {
 body, button, input, select, textarea {
   color: $body_color;
   font-family: $sans_norm;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 
@@ -24,6 +24,12 @@ hr {
   height: 1px;
   border: 0;
   border-top: $border_std;
+  &.dotted {
+    border-top-style: dotted;
+  }
+  &.dashed {
+    border-top-style: dashed;
+  }
 }
 
 ::-moz-selection {

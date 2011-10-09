@@ -1,7 +1,7 @@
 
 nav.tabs {
-  color: $tabs_color;
   font-weight: bold;
+  font-size: 16px;
 
   ul {
     margin: 0 20px;
@@ -18,6 +18,7 @@ nav.tabs {
     background: $tabs_bg;
     border: 1px solid $tabs_border;
     border-bottom: none;
+    color: $tabs_normal_color;
     float: left;
     padding: 10px 40px;
     -webkit-background-clip: padding-box;
@@ -29,15 +30,15 @@ nav.tabs {
   }
 
   li.active a {
-    color: $tabs_active_color;
     background: $tabs_active_bg;
     border-bottom: 1px solid $tabs_active_border;
+    color: $tabs_active_color;
+    cursor: default;
     &:hover {
       background: $tabs_active_bg;
       border-color: $tabs_border;
       border-bottom-color: $tabs_active_bg;
       color: $tabs_active_color;
-      cursor: default;
     }
   }
 

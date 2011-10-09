@@ -9,82 +9,33 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+// Flags and Stickers
+.flag, .sticker {
+  @include border-radius(3px);
+  background-color: $standard;
+  color: $white;
+  &.notice    { background-color: $notice; }
+  &.success   { background-color: $success; }
+  &.important { background-color: $important; }
+  &.warning   { background-color: $warning; }
+  &.alert     { background-color: $alert; }
+  &.error     { background-color: $error; }
+}
+
+.flag {
+  font-size: 85%;
+  font-weight: bold;
+  padding: 1px 4px;
+  text-transform: uppercase;
+}
+
+.sticker {
+  @include inline-block;
+  padding: 6px 10px;
+}
+
 // Buttons
 button, .btn {
   @include def-button();
-}
-
-// Tables
-table {
-  background: $table_bg;
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-bottom: 15px;
-  width: 100%;
-
-  caption {
-    margin-bottom: 5px;
-    text-align: left;
-  }
-
-  thead {
-    background: $thead_bg;
-  }
-
-  tbody {
-    background: $tbody_bg;
-  }
-
-  tfoot {
-    background: $tfoot_bg;
-  }
-
-  tfoot tr, tfoot td {
-    padding: 5px 10px;
-  }
-
-  tr {
-    border: $border_std;
-  }
-
-  tbody tr:nth-child(odd), tbody tr.odd {
-    background-color: $tr_odd;
-  }
-
-  tbody tr:nth-child(even), tbody tr.even {
-    background-color: $tr_even;
-  }
-
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
-
-  th {
-    font-weight: bold;
-  }
-
-  th a.ascending,
-  th a.descending {
-    &:after {
-      @include inline-block;
-      content: "";
-      margin-left: 10px;
-      border-width: 0 4px 4px;
-      border-style: solid;
-      border-color: $link_normal transparent;
-    }
-    &:hover {
-      &:after {
-        border-color: $link_hover transparent;
-      }
-    }
-  }
-
-  th a.descending {
-    &:after {
-      border-width: 4px 4px 0;
-    }
-  }
 }
 
