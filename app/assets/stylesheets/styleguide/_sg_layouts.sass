@@ -1,0 +1,100 @@
+
+$sg_color: #666666
+$sg_hilite: #268bd2
+$sg_todo: #d33682
+$sg_border: 1px dotted $sg_color
+$sg_navborder: 1px solid $sg_color
+$sg_boxcolor: rgba(211, 54, 130, 0.5)
+
+.styleguide
+  margin: 0 0 25px 0
+  .styleguide-header,
+  .styleguide-section,
+  .styleguide-subsection,
+  .styleguide-note,
+  .styleguide-todo,
+  .styleguide-colorbox,
+  .styleguide-gridbox
+    -webkit-font-smoothing: antialiased
+    background: transparent
+    border: 0
+    color: $sg_color
+    font: 13px / 1.231 sans-serif
+    font-weight: bold
+    margin: 0
+    outline: 0
+    padding: 0
+    vertical-align: baseline
+
+  .styleguide-header
+    border-bottom: $sg_navborder
+    font-size: 14px
+    height: 25px
+    margin-bottom: 50px
+    a, a:visited
+      color: $sg_hilite
+      margin-left: 15px
+      text-decoration: none
+    a:hover, a:active
+      color: $sg_color
+    span
+      color: $sg_hilite
+
+  .styleguide-section
+    border-bottom: $sg_border
+    font-size: 18px
+    margin-bottom: 10px
+    text-transform: uppercase
+    a, a:visited
+      color: $sg_color
+      text-decoration: none
+    a:hover, a.active
+      color: $sg_hilite
+
+  .styleguide-subsection
+    border-top: $sg_border
+    color: $sg_hilite
+    margin: 15px 0
+    text-transform: uppercase
+
+  .styleguide-content
+    margin: 25px 0 50px 0
+    overflow: hidden
+
+  .styleguide-content.expanded
+    display: block
+
+  .styleguide-content.collapsed
+    display: none
+
+  ._styleguide-todo
+    color: $sg_todo
+
+  .styleguide-row
+    display: inline-block
+
+  .styleguide-colorbox,
+  .styleguide-gridbox
+    display: inline
+    float: left
+    color: $sg_color
+    background-color: $sg_boxcolor
+    text-align: center
+
+  .styleguide-colorbox
+    font-size: 9px
+    width: 60px
+    padding-top: 50px
+
+  .styleguide-gridbox
+    line-height: 25px
+    height: 25px
+
+  .styleguide-clearfix
+    zoom: 1
+    &:before, &:after
+      content: ""
+      display: table
+    &:after
+      clear: both
+

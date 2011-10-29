@@ -1,10 +1,4 @@
 
--# This is so dirty and not in that good way.
--# :ruby
-  -# def partial(file)
-    -# return haml_concat(Haml::Engine.new(IO.read("app/views/styleguide/_#{file}.haml")).render)
-  -# end
-
 !!! 5
 %html
   %head
@@ -18,67 +12,67 @@
     .guider
     .container
 
-      .nagari
-        .nagari-header
+      .styleguide
+        .styleguide-header
           underoos<span>.</span>
-          %a(href='#_open' onclick='return nagari.open(event);') open all
-          %a(href='#_close' onclick='return nagari.close(event);') close all
+          %a(href='#_open' onclick='return styleguide.open(event);') open all
+          %a(href='#_close' onclick='return styleguide.close(event);') close all
 
-      .nagari#_typography
-        .nagari-section
-          %a(href='#_typography' onclick='return nagari.click(event);') Typography
-        .nagari-content.collapsed
-          .nagari-note Contains all of the heading, paragraph, lists, and inline elements
+      .styleguide#_typography
+        .styleguide-section
+          %a(href='#_typography' onclick='return styleguide.click(event);') Typography
+        .styleguide-content.collapsed
+          .styleguide-note Contains all of the heading, paragraph, lists, and inline elements
           -# - partial("typography")
           = haml(:"/styleguide/_typography", :layout => false)
 
-      .nagari#_palettes
-        .nagari-section
-          %a(href='#_palettes' onclick='return nagari.click(event);') Palettes
-        .nagari-content.collapsed
-          .nagari-note Various color palettes used in the application
+      .styleguide#_palettes
+        .styleguide-section
+          %a(href='#_palettes' onclick='return styleguide.click(event);') Palettes
+        .styleguide-content.collapsed
+          .styleguide-note Various color palettes used in the application
           -# - partial("palettes")
           = haml(:"/styleguide/_palettes", :layout => false)
 
-      .nagari#_elements
-        .nagari-section
-          %a(href='#_elements' onclick='return nagari.click(event);') Elements
-        .nagari-content.collapsed
-          .nagari-note Base elements styles for tables, images, media, buttons
+      .styleguide#_elements
+        .styleguide-section
+          %a(href='#_elements' onclick='return styleguide.click(event);') Elements
+        .styleguide-content.collapsed
+          .styleguide-note Base elements styles for tables, images, media, buttons
           -# - partial("elements")
           = haml(:"/styleguide/_elements", :layout => false)
 
-      .nagari#_forms
-        .nagari-section
-          %a(href='#_forms' onclick='return nagari.click(event);') Forms
-        .nagari-content.collapsed
-          .nagari-note Base input, textarea, labels, selects, button styles associated with form elements
+      .styleguide#_forms
+        .styleguide-section
+          %a(href='#_forms' onclick='return styleguide.click(event);') Forms
+        .styleguide-content.collapsed
+          .styleguide-note Base input, textarea, labels, selects, button styles associated with form elements
           -# - partial("forms")
           = haml(:"/styleguide/_forms", :layout => false)
 
-      .nagari#_components
-        .nagari-section
-          %a(href='#_components' onclick='return nagari.click(event);') Components
-        .nagari-content.collapsed
-          .nagari-note Components consists of systems like tabs, pagination, breadcrumbs, flash messages, tool tips, etc.
+      .styleguide#_components
+        .styleguide-section
+          %a(href='#_components' onclick='return styleguide.click(event);') Components
+        .styleguide-content.collapsed
+          .styleguide-note Components consists of systems like tabs, pagination, breadcrumbs, flash messages, tool tips, etc.
           -# - partial("components")
           = haml(:"/styleguide/_components", :layout => false)
 
-      .nagari#_structures
-        .nagari-section
-          %a(href='#_structures' onclick='return nagari.click(event);') Structures
-        .nagari-content.collapsed
-          .nagari-note Structures consists of grids systems and common size elements used within the application.
+      .styleguide#_structures
+        .styleguide-section
+          %a(href='#_structures' onclick='return styleguide.click(event);') Structures
+        .styleguide-content.collapsed
+          .styleguide-note Structures consists of grids systems and common size elements used within the application.
           -# - partial("structures")
           = haml(:"/styleguide/_structures", :layout => false)
 
-      .nagari#_layouts
-        .nagari-section
-          %a(href='#_layouts' onclick='return nagari.click(event);') Layouts
-        .nagari-content.collapsed
-          .nagari-note Layouts consists of various templates. These can be smaller ratios of actual layouts or direct links to individual layouts.
+      .styleguide#_layouts
+        .styleguide-section
+          %a(href='#_layouts' onclick='return styleguide.click(event);') Layouts
+        .styleguide-content.collapsed
+          .styleguide-note Layouts consists of various templates. These can be smaller ratios of actual layouts or direct links to individual layouts.
           -# - partial("layouts")
           = haml(:"/styleguide/_layouts", :layout => false)
 
-    %script(src="nagari.js" type="text/javascript")
+    %script(src="styleguide.js" type="text/javascript")
 

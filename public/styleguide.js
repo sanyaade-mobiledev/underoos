@@ -1,16 +1,16 @@
 
-// ### Enable the expanding and collapsing of nagari sections.
+// ### Enable the expanding and collapsing of styleguide sections.
 // Roll without a js library to keep it totally decoupled from the application.
 
 // (c) 2011 Matthew Kitt :: MIT License
 
 // Yes, we are global
-var nagari
+var styleguide
 
 ;(function() {
 
-  // Instantiate a `Nagari` object and open/close relevant areas based on the url hash.
-  var Nagari = function Nagari() {
+  // Instantiate a `Styleguide` object and open/close relevant areas based on the url hash.
+  var Styleguide = function Styleguide() {
     var hash = window.location.hash
     if (hash === '#_open') this.open(null);
     else if (hash === '#_close' || hash === '') this.close(null);
@@ -19,7 +19,7 @@ var nagari
 
   // Basic way to find elements by class name.
   // Loosely based on [Dustin Diaz's getElementsByClass](http://www.dustindiaz.com/getelementsbyclass).
-  Nagari.prototype.find = function(search, prop, node, tag) {
+  Styleguide.prototype.find = function(search, prop, node, tag) {
     node = node || document
     tag = tag || '*'
     var elements = node.getElementsByTagName(tag)
@@ -36,14 +36,14 @@ var nagari
 
   // Toggle classes for link and content based on current selection state of a nagari link.
   // If a section is being closed, remove the section from the hash.
-  Nagari.prototype.toggle = function(link, content) {
+  Styleguide.prototype.toggle = function(link, content) {
     if (link && content) {
-      if (link.className !== 'nagari-link active') {
-        link.className = 'nagari-link active'
-        content.className = 'nagari-content expanded'
+      if (link.className !== 'styleguide-link active') {
+        link.className = 'styleguide-link active'
+        content.className = 'styleguide-content expanded'
       } else {
-        link.className = 'nagari-link'
-        content.className = 'nagari-content collapsed'
+        link.className = 'styleguide-link'
+        content.className = 'styleguide-content collapsed'
         document.location.hash = ''
         return false
       }
@@ -52,19 +52,19 @@ var nagari
   }
 
   // Find the relevant items based on the hash and toggle their display.
-  Nagari.prototype.display = function(target) {
+  Styleguide.prototype.display = function(target) {
     var hash = target.hash
     var id = hash.substring(1, hash.length)
     var el = document.getElementById(id)
     var link = this.find(target + '', 'href', el, 'a')[0]
-    var content = this.find('nagari-content', 'className', el, 'div')[0]
+    var content = this.find('styleguide-content', 'className', el, 'div')[0]
     return this.toggle(link, content)
   }
 
   // Rip through the nagari sections applying relevant classes for opening/closing all sections.
-  Nagari.prototype.tree = function(linkclass, contentclass) {
-    var links = this.find('nagari-link', 'className', document, 'a')
-    var contents = this.find('nagari-content', 'className', document, 'div')
+  Styleguide.prototype.tree = function(linkclass, contentclass) {
+    var links = this.find('styleguide-link', 'className', document, 'a')
+    var contents = this.find('styleguide-content', 'className', document, 'div')
 
     for (var i = 0, len = links.length; i < len; i += 1) {
       var link = links[i]
@@ -79,22 +79,22 @@ var nagari
   }
 
   // Open all of the nagari sections.
-  Nagari.prototype.open = function(event) {
-    return this.tree('nagari-link active', 'nagari-content expanded')
+  Styleguide.prototype.open = function(event) {
+    return this.tree('styleguide-link active', 'styleguide-content expanded')
   }
 
   // Close all of the nagari sections.
-  Nagari.prototype.close = function(event) {
-    return this.tree('nagari-link', 'nagari-content collapsed')
+  Styleguide.prototype.close = function(event) {
+    return this.tree('styleguide-link', 'styleguide-content collapsed')
   }
 
   // Respond to a click from a nagari header and toggle it's current state.
-  Nagari.prototype.click = function(event) {
+  Styleguide.prototype.click = function(event) {
     return this.display(event.target)
   }
 
-  // Instantiate a new `Nagari` object to the global `nagari` variable
-  nagari = new Nagari()
+  // Instantiate a new `Styleguide` object to the global `nagari` variable
+  styleguide = new Styleguide()
 
 }());
 
