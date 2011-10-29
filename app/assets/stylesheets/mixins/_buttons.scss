@@ -1,5 +1,5 @@
 
-@mixin button($bg, $gradient, $normal, $hover, $border, $border_bot, $padding:5px 14px 6px, $radii:4px) {
+@mixin button($bg, $gradient, $normal, $border, $border_bot, $padding:5px 14px 6px, $radii:4px) {
   @include inline-block;
   @include background($bg linear-gradient($gradient) no-repeat);
   @include border-radius($radii);
@@ -19,7 +19,6 @@
   &:hover, &:focus {
     background-position: 0 -15px;
     padding: $padding;
-    color: $hover;
   }
 
   &:focus {
@@ -29,8 +28,7 @@
   }
 
   &.error {
-    border: 2px solid $error;
-    color: $error;
+    border: 1px solid $error;
     &:focus {
       @include box-shadow($focus_error_shadow);
       outline: 0;
@@ -39,15 +37,22 @@
 
   &.disabled, &[disabled], &[readonly] {
     @include box-shadow(none);
+    @include opacity(.5);
     background-image: none;
-    background-color: $disabled_bg;
-    border-color: 1px solid $disabled_border;
-    color: $disabled_color;
+    background-color: $bg;
     cursor: not-allowed;
   }
 }
 
 @mixin def-button() {
-  @include button($btn_def_bg, $btn_def_gradient, $btn_def_normal, $btn_def_hover, $btn_def_border, $btn_def_border_bot);
+  @include button($btn_def_bg, $btn_def_gradient, $btn_def_normal, $btn_def_border, $btn_def_border_bot);
+}
+
+@mixin def-color-button($bg, $normal: #fff) {
+  $_darken: darken($bg, 10%);
+  $_lighten: lighten($bg, 10%);
+  $_grad: $_lighten, $_darken;
+  @include button($_darken, $_grad, $normal, darken($bg, 25%), darken($bg, 20%));
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 

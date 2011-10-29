@@ -28,18 +28,22 @@ $cyan: #00ffff;
 $red: #b22222;
 $orange: #f26522;
 $yellow: #ffc40d;
-$green: #32cd32;
+$green: #46A546;
 $blue: #268bd2;
 $indigo: #4b0082;
 $violet: #ee82ee;
 
 $standard: $greyA;
-$notice: $black;
+$notice: $grey3;
 $important: $blue;
 $success: $green;
 $warning: $yellow;
 $alert: $orange;
 $error: $red;
+$danger: $error;
+
+$border_std: 1px solid $grey6;
+$border_dot: 1px dotted $grey6;
 
 $focus_shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(82,168,236,.8);
 $focus_error_shadow: inset 0 1px 3px rgba(0,0,0,.1), 0 0 8px rgba(178,34,34,.8);
@@ -82,9 +86,6 @@ $link_visited: $blue;
 $link_focus: $blue;
 $link_highlight: $blue;
 $tap_highlight: $blue;
-
-$border_std: 1px solid $grey6;
-$border_dot: 1px dotted $grey6;
 
 // typography.scss
 // ----------------------------------------------------------------------------
@@ -140,8 +141,8 @@ $input_focus_bg: $greyE;
 // @see mixins/_buttons.scss
 $btn_def_bg: $greyD;
 $btn_def_gradient: $white, $white 25%, $greyD;
-$btn_def_normal: $grey2;
-$btn_def_hover: $black;
+$btn_def_normal: $grey6;
+$btn_def_hover: $grey2;
 $btn_def_border: $grey9;
 $btn_def_border_bot: $greyA;
 
@@ -153,8 +154,8 @@ $breadcrumb_visited: $grey6;
 $breadcrumb_focus: $blue;
 
 $paginate_bg: $white;
-$paginate_color: $grey6;
 $paginate_border: $greyC;
+$paginate_color: $grey6;
 $paginate_hover_bg: $blue;
 $paginate_hover_border: darken($blue, 10%);
 $paginate_hover_color: $white;
@@ -170,8 +171,23 @@ $tabs_active_bg: $white;
 $tabs_active_border: $white;
 $tabs_active_color: $grey6;
 
+$pills_bg: $white;
+$pills_border: $greyC;
+$pills_normal_color: $grey6;
+$pills_hover_bg: $blue;
+$pills_hover_border: darken($blue, 10%);
+$pills_hover_color: $white;
+
+$pills_active_bg: $blue;
+$pills_active_border: darken($blue, 10%);
+$pills_active_color: $white;
+
 $tipsy_bg: $black;
 $tipsy_color: $white;
+
+$pop_bg: $white;
+$pop_color: $grey6;
+$pop_border: $grey6;
 
 // layouts/*.scss
 // ----------------------------------------------------------------------------
