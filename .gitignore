@@ -1,7 +1,0 @@
-.DS_Store
-*.gem
-.bundle
-Gemfile.lock
-pkg/*
-thin/
-.sass-cache
