@@ -1,0 +1,58 @@
+
+// Embedded Content
+img
+  border: 0
+  -ms-interpolation-mode: bicubic
+
+svg:not(:root)
+  overflow: hidden
+
+// Flags and Stickers
+.flag, .sticker
+  +border-radius(3px)
+  background-color: $standard
+  color: $white
+  &.notice
+    background-color: $notice
+  &.success
+    background-color: $success
+  &.important
+    background-color: $important
+  &.warning
+    background-color: $warning
+  &.alert
+    background-color: $alert
+  &.error
+    background-color: $error
+
+.flag
+  font-size: 85%
+  font-weight: bold
+  padding: 1px 4px
+  text-transform: uppercase
+
+.sticker
+  +inline-block
+  padding: 6px 10px
+
+// Buttons
+a.btn
+  font-weight: bold
+
+button, .btn
+  +def-button
+  &.standard
+    +def-color-button($standard, $white)
+  &.notice
+    +def-color-button($notice, $white)
+  &.important
+    +def-color-button($important, $white)
+  &.success
+    +def-color-button($success, $white)
+  &.warning
+    +def-color-button($warning, $white)
+  &.alert
+    +def-color-button($alert, $white)
+  &.danger
+    +def-color-button($error, $white)
+

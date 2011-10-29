@@ -1,0 +1,36 @@
+
+nav.pills
+  font-size: 14px
+  font-weight: bold
+
+  ul
+    +clearfix
+    margin: 20px 0
+
+  li
+    +inline-block
+    margin-right: 6px
+
+  li a
+    +border-radius(12px)
+    +inline-block
+    -webkit-background-clip: padding-box
+    background-color: $pills_bg
+    border: 1px solid $pills_border
+    color: $pills_normal_color
+    padding: 6px 12px
+    &:hover
+      background-color: $pills_hover_bg
+      border-color: $pills_hover_border
+      color: $pills_hover_color
+
+  li.active a
+    background-color: $pills_active_bg
+    border-color: $pills_active_border
+    color: $pills_active_color
+    cursor: default
+    &:hover
+      background-color: $pills_active_bg
+      border-color: $pills_active_border
+      color: $pills_active_color
+
