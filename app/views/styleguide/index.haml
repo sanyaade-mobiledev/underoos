@@ -9,7 +9,7 @@
     %link(rel="stylesheet" href="/assets/styleguide.css" type="text/css")
 
   %body
-    .styleguide-masthead
+    .styleguide-masthead(data-scrollspy="scrollspy")
       .container
         %nav
           %ul
@@ -76,4 +76,7 @@
         = haml(:"/styleguide/_layouts", :layout => false)
 
     .guider
+    %script(src="/javascripts/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8")
+    %script(src="/javascripts/bootstrap-scrollspy.js" type="text/javascript" charset="utf-8")
+
 
