@@ -1,40 +1,107 @@
 
-.styleguide-subsection Flags
-%p Flags are used to <span class="flag important">pop</span> information in a block of text, they are always wrapped in span tags. Flags and flash messages generally follow the same color pattern and naming convention.
-%br
-%p <span class="flag">Default</span> | <span class="flag notice">Notice</span> | <span class="flag important">Important</span> | <span class="flag success">Success</span> | <span class="flag warning">Warning</span> | <span class="flag alert">Alert</span> | <span class="flag error">Error</span>
-%br
-
-.styleguide-subsection Stickers
-%p Stickers are similar to flags, except they are wrapped around existing elements (<code>headings</code>, <code>dates</code>, <code>span</code>, etc.) and provide more breathing room via <code>inline-block</code>. They also follow the same color pattern and naming convention as flags and flash messages.
-%br
-%p <span class="sticker">Default</span> | <span class="sticker notice">Notice</span> | <span class="sticker important">Important</span> | <span class="sticker success">Success</span> | <span class="sticker warning">Warning</span> | <span class="sticker alert">Alert</span> | <span class="sticker error">Error</span>
-%br
-
-.styleguide-subsection Buttons
-.styleguide-note Default: Button Tag / a.btn
-%button(name="commit") Button
-%button.error(name="commit") Button Error
-%button(name="commit" disabled) Button Disabled
-%a.btn(href="#") Link
-%a.btn.error(href="#") Link Error
-%a.btn.disabled(href="#") Link Disabled
-
+.styleguide-h3 Flags
+.styleguide-quarter
+  %p Flags are used to <span class="flag important">pop</span> information in a block of text, they are always wrapped in span tags. Flags and flash messages generally follow the same color pattern and naming convention.
+.styleguide-threequarter.indent
+  %table(cellspacing="0")
+    %thead
+      %tr
+        %th Result
+        %th Markup
+    %tbody
+      %tr
+        %td <span class="flag">Default</span>
+        %td <code>&lt;span class="flag"&gt;Default&lt;/span&gt;</code>
+      %tr
+        %td <span class="flag notice">Notice</span>
+        %td <code>&lt;span class="flag notice"&gt;Notice&lt;/span&gt;</code>
+      %tr
+        %td <span class="flag important">Important</span>
+        %td <code>&lt;span class="flag important"&gt;Important&lt;/span&gt;</code>
+      %tr
+        %td <span class="flag success">Success</span>
+        %td <code>&lt;span class="flag success"&gt;Success&lt;/span&gt;</code>
+      %tr
+        %td <span class="flag warning">Warning</span>
+        %td <code>&lt;span class="flag warning"&gt;Warning&lt;/span&gt;</code>
+      %tr
+        %td <span class="flag alert">Alert</span>
+        %td <code>&lt;span class="flag alert"&gt;Alert&lt;/span&gt;</code>
+      %tr
+        %td <span class="flag error">Error</span>
+        %td <code>&lt;span class="flag error"&gt;Error&lt;/span&gt;</code>
 .styleguide-clearfix
-%br
 
-.styleguide-note Flag Level Buttons, can be used with a.btn
-%button.standard(name="commit") Standard
-%button.notice(name="commit") Notice
-%button.important(name="commit") Important
-%button.success(name="commit") Success
-%button.warning(name="commit") Warning
-%button.alert(name="commit") Alert
-%button.danger(name="commit") Danger
-%button.important.error(href="#") Button Error
-%button.important.disabled(href="#") Button Disabled
+.styleguide-h3 Stickers
+.styleguide-quarter
+  %p Stickers are similar to flags, except they are wrapped around existing <span class="sticker alert">existing</span> (<code>headings</code>, <code>dates</code>, <code>span</code>, etc.) and provide more breathing room via <code>inline-block</code>. They also follow the same color pattern and naming convention as flags and flash messages.
+.styleguide-threequarter.indent
+  %table(cellspacing="0")
+    %thead
+      %tr
+        %th Result
+        %th Markup
+    %tbody
+      %tr
+        %td <span class="sticker">Default</span>
+        %td <code>&lt;span class="sticker"&gt;Default&lt;/span&gt;</code>
+      %tr
+        %td <span class="sticker notice">Notice</span>
+        %td <code>&lt;span class="sticker notice"&gt;Notice&lt;/span&gt;</code>
+      %tr
+        %td <span class="sticker important">Important</span>
+        %td <code>&lt;span class="sticker important"&gt;Important&lt;/span&gt;</code>
+      %tr
+        %td <span class="sticker success">Success</span>
+        %td <code>&lt;span class="sticker success"&gt;Success&lt;/span&gt;</code>
+      %tr
+        %td <span class="sticker warning">Warning</span>
+        %td <code>&lt;span class="sticker warning"&gt;Warning&lt;/span&gt;</code>
+      %tr
+        %td <span class="sticker alert">Alert</span>
+        %td <code>&lt;span class="sticker alert"&gt;Alert&lt;/span&gt;</code>
+      %tr
+        %td <span class="sticker error">Error</span>
+        %td <code>&lt;span class="sticker error"&gt;Error&lt;/span&gt;</code>
+.styleguide-clearfix
 
-.styleguide-subsection Table Styles
+
+.styleguide-h3 Buttons
+.styleguide-quarter
+  %p Default: Button Tag / a.btn
+.styleguide-threequarter.indent
+  .styleguide-well
+    %button(name="commit") Button
+    %button.error(name="commit") Button Error
+    %button(name="commit" disabled) Button Disabled
+.styleguide-clearfix
+
+.styleguide-quarter
+  %p Default: a.btn
+.styleguide-threequarter.indent
+  .styleguide-well
+    %a.btn(href="#") Link
+    %a.btn.error(href="#") Link Error
+    %a.btn.disabled(href="#") Link Disabled
+.styleguide-clearfix
+
+.styleguide-quarter
+  %p Flag Level Buttons, can be used with a.btn
+.styleguide-threequarter.indent
+  .styleguide-well
+    %button.standard(name="commit") Standard
+    %button.notice(name="commit") Notice
+    %button.important(name="commit") Important
+    %button.success(name="commit") Success
+    %button.warning(name="commit") Warning
+    %button.alert(name="commit") Alert
+    %button.danger(name="commit") Danger
+  .styleguide-well
+    %button.important.error(href="#") Button Error
+    %button.important.disabled(href="#") Button Disabled
+.styleguide-clearfix
+
+.styleguide-h3 Table Styles
 %table(cellspacing="0")
   %caption Table Caption
   %thead
@@ -73,7 +140,7 @@
       %td Three
       %td One
 
-.styleguide-subsection Media Styles
+.styleguide-h3 Media Styles
 .styleguide-note favicon 16x16
 %img(src='/favicon.ico' alt='favicon')
 .styleguide-note apple touch icon 114x114
@@ -93,6 +160,6 @@
 %progress(min="0" max="100" value="50")
 %label progress tag
 
-.styleguide-subsection UI Elements
+.styleguide-h3 UI Elements
 .styleguide-todo Insert elements like buttons, sprites, icons, graphics etc...
 

@@ -1,100 +1,148 @@
 
-$sg_color: #666666
+$sg_color: #666
 $sg_hilite: #268bd2
+$sg_link_normal: #268bd2
+$sg_link_hover: #666
 $sg_todo: #d33682
-$sg_border: 1px dotted $sg_color
-$sg_navborder: 1px solid $sg_color
 $sg_boxcolor: rgba(211, 54, 130, 0.5)
 
+// Clearfix it!
+.styleguide-clearfix
+  zoom: 1
+  &:before, &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+// Apply basic resets on the containers
+.styleguide-masthead,
+.styleguide-header,
+.styleguide-h1,
+.styleguide-h2,
+.styleguide-h3,
+.styleguide-note,
+.styleguide-todo,
+.styleguide-colorbox
+  background: transparent
+  color: $sg_color
+  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  font-size: 14px
+  font-weight: bold
+  margin: 0
+  outline: 0
+  padding: 0
+  vertical-align: baseline
+
+// Navigation header
+.styleguide-masthead
+  +background(#222 linear-gradient(top, #333, #222) no-repeat)
+  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5))
+  border-bottom: 1px inset #000
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+  overflow: visible
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  height: 39px
+  z-index: 10000
+
+  nav ul
+    li
+      display: inline
+      a
+        +inline-block
+        color: $sg_link_normal
+        padding: 12px 8px
+        &:hover, &:active
+          color: $sg_link_hover
+        &.active
+          color: #eee
+          background: #000
+        &.styleguide-title
+          color: #eee
+          &span
+            color: $sg_link_normal
+
+// Styleguide Elements and containers
 .styleguide
-  margin: 0 0 25px 0
-  .styleguide-header,
-  .styleguide-section,
-  .styleguide-subsection,
-  .styleguide-note,
-  .styleguide-todo,
-  .styleguide-colorbox,
-  .styleguide-gridbox
-    -webkit-font-smoothing: antialiased
-    background: transparent
-    border: 0
-    color: $sg_color
-    font: 13px / 1.231 sans-serif
-    font-weight: bold
-    margin: 0
-    outline: 0
-    padding: 0
-    vertical-align: baseline
+  @extend .styleguide-clearfix
+  padding: 60px 0 30px
+  border-bottom: 1px solid #ccc
+
+  .styleguide-threequarter,
+  .styleguide-twothird,
+  .styleguide-half,
+  .styleguide-onethird,
+  .styleguide-quarter
+    float: left
+    &.right
+      text-align: right
+    &.indent
+      margin-left: 5%
+
+  .styleguide-threequarter
+    width: 75%
+    &.indent
+      width: 70%
+
+  .styleguide-twothird
+    width: 67%
+    &.indent
+      width: 62%
+
+  .styleguide-half
+    width: 50%
+    &.indent
+      width: 45%
+
+  .styleguide-onethird
+    width: 33%
+    &.indent
+      width: 28%
+
+  .styleguide-quarter
+    width: 25%
+    &.indent
+      width: 20%
+
+  .styleguide-well
+    @extend .styleguide-clearfix
+    border: 1px solid #eaeaea
+    margin-bottom: 20px
+    padding: 20px
 
   .styleguide-header
-    border-bottom: $sg_navborder
-    font-size: 14px
-    height: 25px
-    margin-bottom: 50px
-    a, a:visited
-      color: $sg_hilite
-      margin-left: 15px
-      text-decoration: none
-    a:hover, a:active
-      color: $sg_color
-    span
-      color: $sg_hilite
+    @extend .styleguide-clearfix
+    background-color: #eaeaea
+    padding: 20px
 
-  .styleguide-section
-    border-bottom: $sg_border
-    font-size: 18px
-    margin-bottom: 10px
-    text-transform: uppercase
-    a, a:visited
-      color: $sg_color
-      text-decoration: none
-    a:hover, a.active
-      color: $sg_hilite
+  .styleguide-h1
+    color: $sg_hilite
+    font-size: 30px
+    text-shadow: 0 1px 1px rgba(255,255,255,0.5)
 
-  .styleguide-subsection
-    border-top: $sg_border
+  .styleguide-h2
+    color: #666
+    font-size: 26px
+
+  .styleguide-h3
+    border-top: 1px dotted #268bd2
     color: $sg_hilite
     margin: 15px 0
     text-transform: uppercase
 
-  .styleguide-content
-    margin: 25px 0 50px 0
-    overflow: hidden
-
-  .styleguide-content.expanded
-    display: block
-
-  .styleguide-content.collapsed
-    display: none
-
-  ._styleguide-todo
+  .styleguide-todo
     color: $sg_todo
 
-  .styleguide-row
-    display: inline-block
-
-  .styleguide-colorbox,
-  .styleguide-gridbox
+  .styleguide-colorbox
+    background-color: $sg_boxcolor
+    color: $sg_color
     display: inline
     float: left
-    color: $sg_color
-    background-color: $sg_boxcolor
-    text-align: center
-
-  .styleguide-colorbox
     font-size: 9px
-    width: 60px
     padding-top: 50px
-
-  .styleguide-gridbox
-    line-height: 25px
-    height: 25px
-
-  .styleguide-clearfix
-    zoom: 1
-    &:before, &:after
-      content: ""
-      display: table
-    &:after
-      clear: both
+    text-align: center
+    width: 60px
 

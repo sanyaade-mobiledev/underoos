@@ -1,5 +1,5 @@
 
-.styleguide-subsection Formtastic (Fieldset With Border)
+.styleguide-h3 Formtastic (Fieldset With Border)
 %form
   %fieldset.bordered
     %legend This is a legend, it is hidden
@@ -29,10 +29,6 @@
         %label(class="label" for="test_tel") Telephone
         %input(class="tel optional" id="test_tel" type="tel" name="test[tel]" placeholder="303.867.5309")
 
-      %li(class="textarea optional" id="test_textarea_textarea")
-        %label(class="label" for="test_textarea") Text Area
-        %textarea(class="textarea optional" id="test_textarea" name="test[textarea]" placeholder="Enter some text..." rows="10" cols="53")
-
       %li(class="input search optional" id="test_search_input")
         %label(class="label" for="test_search") search
         %input(class="search optional" id="test_search" type="search" name="test[search]" placeholder="google")
@@ -61,6 +57,10 @@
         %label(class="label" for="test_datetimelocal") Date Time Local
         %input(class="datetime-local optional" id="test_datetimelocal" type="datetime-local" name="test[datetime_local]" placeholder="")
 
+      %li(class="input color optional" id="test_color_input")
+        %label(class="label" for="test_color") Color (Opera only ATM)
+        %input(class="color optional" id="test_color" type="color" name="test[color]" alt="color")
+
       %li(class="input number optional" id="test_number_input")
         %label(class="label" for="test_number") Number
         %input(class="number optional" id="test_number" type="number" name="test[number]" min="0" max="10" placeholder="5")
@@ -69,9 +69,9 @@
         %label(class="label" for="test_range") Range
         %input(class="range optional" id="test_range" type="range" name="test[range]" min="0" max="10" placeholder="5")
 
-      %li(class="input color optional" id="test_color_input")
-        %label(class="label" for="test_color") Color (Opera only ATM)
-        %input(class="color optional" id="test_color" type="color" name="test[color]" alt="color")
+      %li(class="textarea optional" id="test_textarea_textarea")
+        %label(class="label" for="test_textarea") Text Area
+        %textarea(class="textarea optional" id="test_textarea" name="test[textarea]" placeholder="Enter some text..." rows="10" cols="40")
 
       %li(class="select cities optional" id="test_select_select")
         %label(class="label" for="test_select") Select
@@ -150,7 +150,7 @@
       %li(class="input-file")
         %input(class="file" name="file" type="file" value="file")
 
-.styleguide-subsection Formtastic (Fieldset No Border)
+.styleguide-h3 Formtastic (Fieldset No Border)
 %form
   %fieldset
     %legend This is a legend, it is hidden
@@ -176,7 +176,7 @@
       %li(class="input reset")
         %input(class="reset" name="reset" type="reset" value="Reset")
 
-.styleguide-subsection Formtastic Error States
+.styleguide-h3 Formtastic Error States
 %form
   %fieldset.bordered
     %legend This is a legend, it is hidden
@@ -215,7 +215,7 @@
       %li(class="input error submit")
         %input(class="submit" name="submit" type="submit" value="Submit")
 
-.styleguide-subsection Formtastic Disabled States
+.styleguide-h3 Formtastic Disabled States
 %form
   %fieldset.bordered
     %legend This is a legend, it is hidden

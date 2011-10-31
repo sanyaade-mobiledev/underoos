@@ -8,14 +8,14 @@
 %br
 .styleguide-note Grid structure:  #{total_width}px ~ #{num_columns} columns ~ #{single_margin}px / #{single_margin}px margins
 
-.styleguide-subsection standard horizontal columns
+.styleguide-h3 standard horizontal columns
 - (1..num_columns).to_a.reverse.each do |i|
   ! #{"<div class='_underoos-col-#{i}'></div>"}
   - if num_columns - i > 0
     ! #{"<div class='_underoos-col-#{num_columns - i}'></div>"}
 .styleguide-clearfix
 
-.styleguide-subsection push / pull horizontal columns
+.styleguide-h3 push / pull horizontal columns
 - (1..num_columns).to_a.reverse.each do |i|
   ! #{"<div class='_underoos-pull-#{i}'></div>"}
   - if num_columns - i > 0
@@ -24,7 +24,7 @@
     ! #{"<div class='_underoos-push-#{num_columns} alt'></div>"}
 .styleguide-clearfix
 
-.styleguide-subsection full horizontal columns (pushed and pulled)
+.styleguide-h3 full horizontal columns (pushed and pulled)
 - (1..num_columns).to_a.reverse.each do |i|
   ! #{"<div class='_underoos-full-#{i}'></div>"}
   - if num_columns - i > 0
@@ -32,15 +32,15 @@
 .styleguide-clearfix
 
 
-.styleguide-subsection offset columns (push / pull / full values not shown)
+.styleguide-h3 offset columns (push / pull / full values not shown)
 - (1..num_columns - 1).to_a.reverse.each do |i|
   ! #{"<div class='_underoos-offset-#{i}'></div>"}
 .styleguide-clearfix
 
-.styleguide-subsection vertical grid system
+.styleguide-h3 vertical grid system
 .styleguide-todo TODO: Render the vertical grid
 
-.styleguide-subsection Common Sizes and Ratios within the Grid System
+.styleguide-h3 Common Sizes and Ratios within the Grid System
 %table(cellspacing=0)
   %thead
     %tr
