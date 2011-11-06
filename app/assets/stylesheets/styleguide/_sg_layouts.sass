@@ -6,14 +6,17 @@ $sg_link_hover: #666
 $sg_todo: #d33682
 $sg_boxcolor: rgba(211, 54, 130, 0.5)
 
-// Clearfix it!
-.styleguide-clearfix
+@mixin sg-clearfix
   zoom: 1
   &:before, &:after
     content: ""
     display: table
   &:after
     clear: both
+
+// Clearfix it!
+.styleguide-clearfix
+  +sg-clearfix
 
 // Apply basic resets on the containers
 .styleguide-masthead,
@@ -62,12 +65,12 @@ $sg_boxcolor: rgba(211, 54, 130, 0.5)
             color: $sg_link_normal
       &.active
         a, a:hover, a:active
-          color: #eee
           background: #000
+          color: #eee
 
 // Styleguide Elements and containers
 .styleguide
-  @extend .styleguide-clearfix
+  +sg-clearfix
   padding: 60px 0 30px
   border-bottom: 1px solid #ccc
 
@@ -76,6 +79,7 @@ $sg_boxcolor: rgba(211, 54, 130, 0.5)
   .styleguide-half,
   .styleguide-onethird,
   .styleguide-quarter
+    +sg-clearfix
     float: left
     &.right
       text-align: right
@@ -108,13 +112,13 @@ $sg_boxcolor: rgba(211, 54, 130, 0.5)
       width: 20%
 
   .styleguide-well
-    @extend .styleguide-clearfix
+    +sg-clearfix
     border: 1px solid #eaeaea
     margin-bottom: 20px
     padding: 20px
 
   .styleguide-header
-    @extend .styleguide-clearfix
+    +sg-clearfix
     background-color: #eaeaea
     padding: 20px
 
@@ -128,6 +132,7 @@ $sg_boxcolor: rgba(211, 54, 130, 0.5)
     font-size: 26px
 
   .styleguide-h3
+    +sg-clearfix
     border-top: 1px dotted #268bd2
     color: $sg_hilite
     margin: 15px 0

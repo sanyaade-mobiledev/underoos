@@ -9,7 +9,7 @@ svg:not(:root)
 
 // Flags and Stickers
 .flag, .sticker
-  +border-radius(3px)
+  +border-radius(4px)
   background-color: $standard
   color: $white
   &.notice
@@ -33,26 +33,43 @@ svg:not(:root)
 
 .sticker
   +inline-block
-  padding: 6px 10px
+  padding: 6px 8px
 
 // Buttons
+.btn
+  +btn-button($btn_bg, $btn_gradient, $btn_color)
+  &.standard
+    +btn-override($standard, $white)
+  &.notice
+    +btn-override($notice, $white)
+  &.important
+    +btn-override($important, $white)
+  &.success
+    +btn-override($success, $white)
+  &.warning
+    +btn-override($warning, $white)
+  &.alert
+    +btn-override($alert, $white)
+  &.danger
+    +btn-override($danger, $white)
+
 a.btn
   font-weight: bold
 
-button, .btn
-  +def-button
+.action
+  +action-button($action_bg, $action_color)
   &.standard
-    +def-color-button($standard, $white)
+    +action-override($standard, $white)
   &.notice
-    +def-color-button($notice, $white)
+    +action-override($notice, $white)
   &.important
-    +def-color-button($important, $white)
+    +action-override($important, $white)
   &.success
-    +def-color-button($success, $white)
+    +action-override($success, $white)
   &.warning
-    +def-color-button($warning, $white)
+    +action-override($warning, $white)
   &.alert
-    +def-color-button($alert, $white)
+    +action-override($alert, $white)
   &.danger
-    +def-color-button($error, $white)
+    +action-override($danger, $white)
 

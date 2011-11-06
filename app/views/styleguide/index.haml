@@ -22,46 +22,56 @@
             %li
               %a(href="#elements") Elements
             %li
-              %a(href="#forms") Forms
-            %li
               %a(href="#components") Components
+            %li
+              %a(href="#tables") Tables
+            %li
+              %a(href="#forms") Forms
             %li
               %a(href="#structures") Structures
             %li
               %a(href="#layouts") Layouts
+            %li
+              %a(href="#media") Media
 
     .container
 
       .styleguide#typography
         .styleguide-header
           .styleguide-h1 Typography
-          .styleguide-note Contains all of the heading, paragraph, lists, and inline copy related elements
+          .styleguide-note Contains all of the heading, paragraph, lists, and inline typographic elements.
         = haml(:"/styleguide/_typography", :layout => false)
 
       .styleguide#palettes
         .styleguide-header
           .styleguide-h1 Palettes
-          .styleguide-note Various color palettes used in the application
+          .styleguide-note Various color palettes and themes used in the application.
         = haml(:"/styleguide/_palettes", :layout => false)
 
 
       .styleguide#elements
         .styleguide-header
           .styleguide-h1 Elements
-          .styleguide-note Base elements styles for tables, images, media, buttons
+          .styleguide-note Base class styles to enhance common elements found in an application.
         = haml(:"/styleguide/_elements", :layout => false)
-
-      .styleguide#forms
-        .styleguide-header
-          .styleguide-h1 Forms
-          .styleguide-note Base input, textarea, labels, selects, button styles associated with form elements
-        = haml(:"/styleguide/_forms", :layout => false)
 
       .styleguide#components
         .styleguide-header
           .styleguide-h1 Components
-          .styleguide-note Components consists of systems like tabs, pagination, breadcrumbs, flash messages, tool tips, etc.
+          .styleguide-note Components consists of common patterns used in many applications but are not defined as base element tags.
         = haml(:"/styleguide/_components", :layout => false)
+
+      .styleguide#tables
+        .styleguide-header
+          .styleguide-h1 Tables
+          .styleguide-note Tables are used to represent tabular data.
+        = haml(:"/styleguide/_tables", :layout => false)
+
+      .styleguide#forms
+        .styleguide-header
+          .styleguide-h1 Forms
+          .styleguide-note Base input, textarea, labels, selects, button styles associated with form elements. Tuned to play with <a href="https://github.com/justinfrench/formtastic">formtastic</a>.
+        = haml(:"/styleguide/_forms", :layout => false)
 
       .styleguide#structures
         .styleguide-header
@@ -72,11 +82,22 @@
       .styleguide#layouts
         .styleguide-header
           .styleguide-h1 Layouts
-          .styleguide-note Layouts consists of various templates. These can be smaller ratios of actual layouts or direct links to individual layouts.
+          .styleguide-note Layouts consists of various templates that are specific to the application.
         = haml(:"/styleguide/_layouts", :layout => false)
+
+      .styleguide#media
+        .styleguide-header
+          .styleguide-h1 Media
+          .styleguide-note Showcases the various media elements that are in use by the application.
+        = haml(:"/styleguide/_media", :layout => false)
 
     .guider
     %script(src="/javascripts/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8")
     %script(src="/javascripts/bootstrap-scrollspy.js" type="text/javascript" charset="utf-8")
+    %script(src="/javascripts/bootstrap-twipsy.js" type="text/javascript" charset="utf-8")
+    %script(src="/javascripts/bootstrap-popover.js" type="text/javascript" charset="utf-8")
+    :javascript
+      $(function(){$("a[rel=twipsy]").twipsy({live: true})})
+      $(function(){$("a[rel=popover]").popover({live: true})})
 
 

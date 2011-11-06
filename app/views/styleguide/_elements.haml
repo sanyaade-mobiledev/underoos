@@ -1,17 +1,17 @@
 
 .styleguide-h3 Flags
 .styleguide-quarter
-  %p Flags are used to <span class="flag important">pop</span> information in a block of text, they are always wrapped in span tags. Flags and flash messages generally follow the same color pattern and naming convention.
+  %p Flags are used to <span class="flag important">pop</span> information in a <code>block</code> of text, they are generally used with <code>inline</code> elements.
 .styleguide-threequarter.indent
   %table(cellspacing="0")
     %thead
       %tr
-        %th Result
+        %th Flag
         %th Markup
     %tbody
       %tr
-        %td <span class="flag">Default</span>
-        %td <code>&lt;span class="flag"&gt;Default&lt;/span&gt;</code>
+        %td <span class="flag">Standard</span>
+        %td <code>&lt;span class="flag"&gt;Standard&lt;/span&gt;</code>
       %tr
         %td <span class="flag notice">Notice</span>
         %td <code>&lt;span class="flag notice"&gt;Notice&lt;/span&gt;</code>
@@ -34,132 +34,157 @@
 
 .styleguide-h3 Stickers
 .styleguide-quarter
-  %p Stickers are similar to flags, except they are wrapped around existing <code>headings</code>, <code>dates</code>, <code>span</code>, etc. They provide more breathing room via <code>inline-block</code>. They also follow the same color pattern and naming convention as flags and flash messages.
+  %p Stickers are similar to flags, except they are generally wrapped around <code>block</code> or <code>inline-block</code> level elements such as <code>headings</code>. Stickers add <code>display: inline-block</code> to their elements.
 .styleguide-threequarter.indent
   %table(cellspacing="0")
     %thead
       %tr
-        %th Result
+        %th Sticker
         %th Markup
     %tbody
       %tr
-        %td <span class="sticker">Default</span>
-        %td <code>&lt;span class="sticker"&gt;Default&lt;/span&gt;</code>
+        %td <h4 class="sticker">Standard</h4>
+        %td <code>&lt;h4 class="sticker"&gt;Standard&lt;/h4&gt;</code>
       %tr
-        %td <span class="sticker notice">Notice</span>
-        %td <code>&lt;span class="sticker notice"&gt;Notice&lt;/span&gt;</code>
+        %td <h4 class="sticker notice">Notice</h4>
+        %td <code>&lt;h4 class="sticker notice"&gt;Notice&lt;/h4&gt;</code>
       %tr
-        %td <span class="sticker important">Important</span>
-        %td <code>&lt;span class="sticker important"&gt;Important&lt;/span&gt;</code>
+        %td <h4 class="sticker important">Important</h4>
+        %td <code>&lt;h4 class="sticker important"&gt;Important&lt;/h4&gt;</code>
       %tr
-        %td <span class="sticker success">Success</span>
-        %td <code>&lt;span class="sticker success"&gt;Success&lt;/span&gt;</code>
+        %td <h4 class="sticker success">Success</h4>
+        %td <code>&lt;h4 class="sticker success"&gt;Success&lt;/h4&gt;</code>
       %tr
-        %td <span class="sticker warning">Warning</span>
-        %td <code>&lt;span class="sticker warning"&gt;Warning&lt;/span&gt;</code>
+        %td <h4 class="sticker warning">Warning</h4>
+        %td <code>&lt;h4 class="sticker warning"&gt;Warning&lt;/h4&gt;</code>
       %tr
-        %td <span class="sticker alert">Alert</span>
-        %td <code>&lt;span class="sticker alert"&gt;Alert&lt;/span&gt;</code>
+        %td <h4 class="sticker alert">Alert</h4>
+        %td <code>&lt;h4 class="sticker alert"&gt;Alert&lt;/h4&gt;</code>
       %tr
-        %td <span class="sticker error">Error</span>
-        %td <code>&lt;span class="sticker error"&gt;Error&lt;/span&gt;</code>
+        %td <h4 class="sticker error">Error</h4>
+        %td <code>&lt;h4 class="sticker error"&gt;Error&lt;/h4&gt;</code>
 .styleguide-clearfix
 
 
 .styleguide-h3 Buttons
 .styleguide-quarter
-  %p Default: Button Tag / a.btn
+  %h3 Standard Buttons
+  %p The <code>.btn</code> style can be applied to <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and select <code>&lt;input&gt;</code> tags. To colorize a <code>.btn</code> style you can add the following classes:
+  %br
+  %p <code>standard</code>, <code>notice</code>, <code>important</code>, <code>success</code>, <code>warning</code>, <code>alert</code>, <code>danger</code>
 .styleguide-threequarter.indent
   .styleguide-well
-    %button(name="commit") Button
-    %button.error(name="commit") Button Error
-    %button(name="commit" disabled) Button Disabled
-.styleguide-clearfix
-
-.styleguide-quarter
-  %p Default: a.btn
-.styleguide-threequarter.indent
-  .styleguide-well
+    %button.btn(href="#") Button
+    %button.btn.error(href="#") Button Error
+    %button.btn(href="#" disabled) Button Disabled
     %a.btn(href="#") Link
     %a.btn.error(href="#") Link Error
     %a.btn.disabled(href="#") Link Disabled
+    %br
+    %br
+    %button.btn.standard(href="#") Standard
+    %button.btn.notice(href="#") Notice
+    %button.btn.important(href="#") Important
+    %button.btn.success(href="#") Success
+    %button.btn.warning(href="#") Warning
+    %button.btn.alert(href="#") Alert
+    %button.btn.danger(href="#") Danger
+    -# %br
+    -# %br
+    -# %button.btn.standard(href="#" disabled) Standard
+    -# %button.btn.notice(href="#" disabled) Notice
+    -# %button.btn.important(href="#" disabled) Important
+    -# %button.btn.success(href="#" disabled) Success
+    -# %button.btn.warning(href="#" disabled) Warning
+    -# %button.btn.alert(href="#" disabled) Alert
+    -# %button.btn.danger(href="#" disabled) Danger
+    -# %br
+    -# %br
+    -# %button.btn.error.standard(href="#") Standard
+    -# %button.btn.error.notice(href="#") Notice
+    -# %button.btn.error.important(href="#") Important
+    -# %button.btn.error.success(href="#") Success
+    -# %button.btn.error.warning(href="#") Warning
+    -# %button.btn.error.alert(href="#") Alert
+    -# %button.btn.error.danger(href="#") Danger
 .styleguide-clearfix
+%br
+%br
 
 .styleguide-quarter
-  %p Flag Level Buttons, can be used with a.btn
+  %h3 Action Buttons
+  %p The <code>.action</code> style can be applied to <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and select <code>&lt;input&gt;</code> tags. To colorize an <code>.action</code> style you can add the following classes:
+  %br
+  %p <code>standard</code>, <code>notice</code>, <code>important</code>, <code>success</code>, <code>warning</code>, <code>alert</code>, <code>danger</code>
 .styleguide-threequarter.indent
   .styleguide-well
-    %button.standard(name="commit") Standard
-    %button.notice(name="commit") Notice
-    %button.important(name="commit") Important
-    %button.success(name="commit") Success
-    %button.warning(name="commit") Warning
-    %button.alert(name="commit") Alert
-    %button.danger(name="commit") Danger
-  .styleguide-well
-    %button.important.error(href="#") Button Error
-    %button.important.disabled(href="#") Button Disabled
+    %button.action(href="#") Button
+    %button.action.error(href="#") Button Error
+    %button.action(href="#" disabled) Button Disabled
+    %a.action(href="#") Link
+    %a.action.error(href="#") Link Error
+    %a.action.disabled(href="#") Link Disabled
+    %br
+    %br
+    %button.action.standard(href="#") Standard
+    %button.action.notice(href="#") Notice
+    %button.action.important(href="#") Important
+    %button.action.success(href="#") Success
+    %button.action.warning(href="#") Warning
+    %button.action.alert(href="#") Alert
+    %button.action.danger(href="#") Danger
+    -# %br
+    -# %br
+    -# %button.action.standard(href="#" disabled) Standard
+    -# %button.action.notice(href="#" disabled) Notice
+    -# %button.action.important(href="#" disabled) Important
+    -# %button.action.success(href="#" disabled) Success
+    -# %button.action.warning(href="#" disabled) Warning
+    -# %button.action.alert(href="#" disabled) Alert
+    -# %button.action.danger(href="#" disabled) Danger
+    -# %br
+    -# %br
+    -# %button.action.error.standard(href="#") Standard
+    -# %button.action.error.notice(href="#") Notice
+    -# %button.action.error.important(href="#") Important
+    -# %button.action.error.success(href="#") Success
+    -# %button.action.error.warning(href="#") Warning
+    -# %button.action.error.alert(href="#") Alert
+    -# %button.action.error.danger(href="#") Danger
 .styleguide-clearfix
 
-.styleguide-h3 Table Styles
-%table(cellspacing="0")
-  %caption Table Caption
-  %thead
-    %tr
-      %th Table Header 1
-      %th
-        %a(href="#") Table Header 2 Link
-      %th Table Header 3
-      %th
-        %a.ascending(href="#") Ascending
-      %th
-        %a.descending(href="#") Descending
-  %tfoot
-    %tr
-      %td(colspan="5") This is the table footer it appears at the bottom of the table
-  %tbody
-    %tr
-      %td Table Data - :nth-child(odd)
-      %td
-        %a(href="#") Data as a link
-      %td Table Data
-      %td One
-      %td Three
-    %tr
-      %td Table Data - :nth-child(even)
-      %td
-        %a(href="#") Data as a link
-      %td Table Data
-      %td Two
-      %td Two
-    %tr
-      %td Table Data - :nth-child(odd)
-      %td
-        %a(href="#") Data as a link
-      %td Table Data
-      %td Three
-      %td One
+.styleguide-h3 Images
+.styleguide-quarter
+  %p Standard images using the <code>img</code> tag.
+.styleguide-threequarter.indent
+  .styleguide-well
+    %img(src='http://lorempixum.com/160/90' alt='image')
+.styleguide-clearfix
 
-.styleguide-h3 Media Styles
-.styleguide-note favicon 16x16
-%img(src='/favicon.ico' alt='favicon')
-.styleguide-note apple touch icon 114x114
-%img(src='/apple-touch-icon.png' alt='apple touch icon')
-.styleguide-note apple startup image 320x460
-%img(src='/startup.png' alt='startup image')
-.styleguide-note Image
-%img(src='http://lorempixum.com/150/150' alt='image')
-.styleguide-note Video
-%video(controls="" poster="http://lorempixum.com/320/240")
-  %source(src="/path/to/myvideo.mp4" type="video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"")
-  %source(src="/path/to/myvideo.ogv" type="video/ogg; codecs=\"theora, vorbis\"")
+.styleguide-h3 Video
+.styleguide-quarter
+  %p Standard video, controls, and poster image utilizing the <code>video</code> tag.
+.styleguide-threequarter.indent
+  .styleguide-well
+    %video(controls="" poster="http://lorempixum.com/320/240")
+      %source(src="/path/to/myvideo.mp4" type="video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"")
+      %source(src="/path/to/myvideo.ogv" type="video/ogg; codecs=\"theora, vorbis\"")
+.styleguide-clearfix
+
 .styleguide-note Bars
-%meter(min="0" max="100" value="50")
-%label meter tag
-%p
-%progress(min="0" max="100" value="50")
-%label progress tag
-
-.styleguide-h3 UI Elements
-.styleguide-todo Insert elements like buttons, sprites, icons, graphics etc...
+.styleguide-h3 Progress &amp; Meter Bars
+.styleguide-quarter
+  %p The <code>&lt;meter&gt;</code> bar is used to indicate a scalar measurement within a known range, or a fractional value.
+  %br
+  %p The <code>&lt;progress&gt;</code> bar is used to represent the progress of a task.
+  %br
+  %cite * Progress and Meter Bars are not supported in all browsers.
+.styleguide-threequarter.indent
+  .styleguide-well
+    %meter(min="0" max="100" value="50")
+    %br
+    %br
+    %br
+    %progress(min="0" max="100" value="50")
+.styleguide-clearfix
 

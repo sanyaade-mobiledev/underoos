@@ -2,26 +2,26 @@
 // fonts
 // ----------------------------------------------------------------------------
 $sans_norm: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-$code_norm: monospace, monospace
+$code_norm: "Bitstream Vera Sans Mono", "Menslo LG M", "Menlo", "Monaco", monospace
 
 // colors
 // ----------------------------------------------------------------------------
-$black: black
-$grey1: #111111
-$grey2: #222222
-$grey3: #333333
-$grey4: #444444
-$grey5: #555555
-$grey6: #666666
-$grey7: #777777
-$grey8: #888888
-$grey9: #999999
-$greyA: #aaaaaa
-$greyB: #bbbbbb
-$greyC: #cccccc
-$greyD: #dddddd
-$greyE: #eeeeee
-$white: white
+$black: #000
+$grey1: #111
+$grey2: #222
+$grey3: #333
+$grey4: #444
+$grey5: #555
+$grey6: #666
+$grey7: #777
+$grey8: #888
+$grey9: #999
+$greyA: #aaa
+$greyB: #bbb
+$greyC: #ccc
+$greyD: #ddd
+$greyE: #eee
+$white: #fff
 
 $magenta: #ff00ff
 $cyan: #00ffff
@@ -34,7 +34,7 @@ $indigo: #4b0082
 $violet: #ee82ee
 
 $standard: $greyA
-$notice: $grey3
+$notice: $grey4
 $important: $blue
 $success: $green
 $warning: $yellow
@@ -44,6 +44,7 @@ $danger: $error
 
 $border_std: 1px solid $grey6
 $border_dot: 1px dotted $grey6
+$border_dash: 1px dashed $grey6
 
 $focus_shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.8)
 $focus_error_shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(178, 34, 34, 0.8)
@@ -135,12 +136,12 @@ $input_focus_bg: $greyE
 // ----------------------------------------------------------------------------
 
 // @see mixins/_buttons.scss
-$btn_def_bg: $greyD
-$btn_def_gradient: $white, $white 25%, $greyD
-$btn_def_normal: $grey6
-$btn_def_hover: $grey2
-$btn_def_border: $grey9
-$btn_def_border_bot: $greyA
+$btn_bg: $greyD
+$btn_gradient: $white, $white 25%, $greyD
+$btn_color: $grey6
+
+$action_bg: $greyD
+$action_color: $grey6
 
 $breadcrumb_color: $grey6
 $breadcrumb_normal: $grey6
@@ -173,7 +174,6 @@ $pills_normal_color: $grey6
 $pills_hover_bg: $blue
 $pills_hover_border: darken($blue, 10%)
 $pills_hover_color: $white
-
 $pills_active_bg: $blue
 $pills_active_border: darken($blue, 10%)
 $pills_active_color: $white
