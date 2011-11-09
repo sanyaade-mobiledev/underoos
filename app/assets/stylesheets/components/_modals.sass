@@ -1,0 +1,66 @@
+
+.modal-backdrop
+  +transition(opacity 0.25s)
+  background-color: $black
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 10000
+  &.fade
+    +opacity(0)
+
+.modal-backdrop, .modal-backdrop.fade.in
+  +opacity(0.8)
+
+.modal
+  +border-radius(6px)
+  +box-shadow(0px 4px 8px rgba(0, 0, 0, 0.8))
+  +background-clip(padding-box)
+  background-color: $white
+  border: 1px solid $grey6
+  display: none
+  position: fixed
+  margin: -250px 0 0 -250px
+  top: 50%
+  left: 50%
+  width: 560px
+  z-index: 11000
+
+  header
+    +border-radius(6px 6px 0 0)
+    background-color: $greyE
+    border-bottom: 1px solid $greyA
+    padding: 10px 15px
+
+  section
+    padding: 30px 15px
+    border-top: 1px solid $greyD
+    border-bottom: 1px solid $greyA
+
+  footer
+    +border-radius(0 0 6px 6px)
+    background-color: $greyE
+    border-top: 1px solid $white
+    padding: 10px 15px
+    text-align: right
+
+  .close
+    color: $greyA
+    font-size: 20px
+    font-weight: bold
+    text-shadow: 0 1px 0 $white
+    position: absolute
+    top: 5px
+    right: 15px
+    cursor: pointer
+    &:hover
+      color: $grey6
+
+  &.fade
+    +transition(opacity 0.25s)
+    +opacity(0)
+  &.fade.in
+    +opacity(1)
+

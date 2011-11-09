@@ -3,5 +3,6 @@
 //= require vendor/bootstrap-scrollspy
 //= require vendor/bootstrap-twipsy
 //= require vendor/bootstrap-popover
+//= require vendor/bootstrap-modal
 //= require vendor/prettify
 
