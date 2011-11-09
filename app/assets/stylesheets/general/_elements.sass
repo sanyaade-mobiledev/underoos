@@ -7,6 +7,10 @@ img
 svg:not(:root)
   overflow: hidden
 
+// Not Supported in all Browsers
+meter, progress
+  padding: 10px 0
+
 // Flags and Stickers
 .flag, .sticker
   +border-radius(4px)
@@ -28,7 +32,7 @@ svg:not(:root)
 .flag
   font-size: 85%
   font-weight: bold
-  padding: 1px 4px
+  padding: 2px 4px
   text-transform: uppercase
 
 .sticker

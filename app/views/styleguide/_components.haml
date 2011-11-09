@@ -1,7 +1,7 @@
 
 .styleguide-h3 Breadcrumb
 .styleguide-quarter
-  %p Apply the <code>.breadcrumb</code> class to <code>&lt;nav&gt;</code> elements to provide reference to nested sections within an application.
+  %p Apply the <code>.breadcrumb</code> class to <code>nav</code> elements to provide reference to nested sections within an application.
 .styleguide-threequarter.indent
   .styleguide-well
     %nav.breadcrumb
@@ -30,7 +30,7 @@
 
   %section
     %h2 This is section content within the tab
-    %p Apply the <code>.tabs</code> class to <code>&lt;nav&gt;</code> elements to represent tab navigation. Tabs can be used as page sub navigation or toggle between layers of content. To do this will require a bit of JavaScript. You might want to check out <a href="http://twitter.github.com/bootstrap/javascript.html#tabs">Bootstrap's Solution</a> for this, it's not included in this project. The first <code>section</code> descendant inside a tab area utilizes a margin to pull the content away from the tabs.
+    %p Apply the <code>.tabs</code> class to <code>nav</code> elements to represent tab navigation. Tabs can be used as page sub navigation or toggle between layers of content. To do this will require a bit of JavaScript. You might want to check out <a href="http://twitter.github.com/bootstrap/javascript.html#tabs">Bootstrap's Solution</a> for this, it's not included in this project. The first <code>section</code> descendant inside a tab area utilizes a margin to pull the content away from the tabs.
 
 .styleguide-h3 Pills
 .styleguide-quarter
@@ -51,7 +51,7 @@
 
 .styleguide-h3 Pagination
 .styleguide-quarter
-  %p Apply the <code>.pagination</code> class to <code>&lt;nav&gt;</code> elements to represent pagination navigation. The markup and styles for pagination are tuned to work with the <a href="https://github.com/mislav/will_paginate">will_paginate</a> ruby gem.
+  %p Apply the <code>.pagination</code> class to <code>nav</code> elements to represent pagination navigation. The markup and styles for pagination are tuned to work with the <a href="https://github.com/mislav/will_paginate">will_paginate</a> ruby gem.
 .styleguide-threequarter.indent
   .styleguide-well
     %nav.pagination
@@ -67,6 +67,32 @@
       %a.next_page(href="#" rel="next") next &raquo;
 .styleguide-clearfix
 
+.styleguide-h3 Modal
+.styleguide-quarter
+  %p Modals utilize <a href="http://twitter.github.com/bootstrap/javascript.html#modal">Bootstrap's Modal plugin</a>. You can control various options of how modals are shown based on attributes set in the link. Adding <code>data-autoshow="true"</code> to the <code>modal</code> layer will show the modal on page load.
+.styleguide-threequarter.indent
+  .styleguide-well
+    %button.btn.important(data-controls-modal="modal" data-backdrop="true" data-keyboard="true") Launch Modal
+  %pre
+    = preserve do
+      :escaped
+        <!-- Example Modal Layer and Button -->
+        %button(data-controls-modal="modal_name" data-backdrop="true" data-keyboard="true") Modal
+
+        #modal_name.modal.fade
+          %section
+            %p This is section content
+#modal.modal.fade
+  %header
+    %h3 This is an H3 title tag
+    %a.close(href="#") x
+  %section
+    %p This is section content
+  %footer
+    %button.btn(href="#") Secondary
+    %button.btn.important(href="#") Primary
+.styleguide-clearfix
+
 .styleguide-h3 Tool Tips
 .styleguide-quarter
   %p Tool tips utilize <a href="http://twitter.github.com/bootstrap/javascript.html#twipsy">Bootstrap's Twipsy plugin</a>. You can control various options of how a tool tip is shown based on attributes set in the link.
@@ -78,23 +104,22 @@
         %th Markup
     %tbody
       %tr
-        %td <a href="#" data-placement="above" rel="twipsy" data-original-title="Above">Above</a>
-        %td <code>&lt;a rel="twipsy" data-placement="above" data-original-title="Above"&gt;</code>
+        %td <a href="#" rel="twipsy" data-placement="above" data-original-title="Above">Above</a>
+        %td <code>%a(rel="twipsy" data-placement="above" data-original-title="Above")</code>
       %tr
-        %td <a href="#" data-placement="below" rel="twipsy" data-original-title="Below">Below</a>
-        %td <code>&lt;a rel="twipsy" data-placement="below" data-original-title="Below"&gt;</code>
+        %td <a href="#" rel="twipsy" data-placement="below" data-original-title="Below">Below</a>
+        %td <code>%a(rel="twipsy" data-placement="below" data-original-title="Below")</code>
       %tr
-        %td <a href="#" data-placement="left" rel="twipsy" data-original-title="Left">Left</a>
-        %td <code>&lt;a rel="twipsy" data-placement="left" data-original-title="Left"&gt;</code>
+        %td <a href="#" rel="twipsy" data-placement="left" data-original-title="Left">Left</a>
+        %td <code>%a(rel="twipsy" data-placement="left" data-original-title="Left")</code>
       %tr
-        %td <a href="#" data-placement="right" rel="twipsy" data-original-title="Right" data-offset="10">Right</a>
-        %td <code>&lt;a rel="twipsy" data-placement="right" data-original-title="Right" data-offset="10"&gt;</code>
+        %td <a href="#" rel="twipsy" data-placement="right" data-original-title="Right" data-offset="10">Right</a>
+        %td <code>%a(rel="twipsy" data-placement="right" data-original-title="Right")</code>
 .styleguide-clearfix
 
 .styleguide-h3 Pop Overs
 .styleguide-quarter
-  %p Pop Overs utilize <a href="http://twitter.github.com/bootstrap/javascript.html#popover">Bootstrap's Pop Over plugin</a>. They are similar to the tool tip plugin and they require <a href="http://twitter.github.com/bootstrap/javascript.html#twipsy">Bootstrap's Twipsy plugin</a>.
-  .styleguide-todo This needs to be completed
+  %p Pop Overs utilize <a href="http://twitter.github.com/bootstrap/javascript.html#popover">Bootstrap's Pop Over plugin</a>. They are similar to the tool tip plugin and they require <a href="http://twitter.github.com/bootstrap/javascript.html#twipsy">Bootstrap's Twipsy plugin</a> to be included.
 .styleguide-threequarter.indent
   %table(cellspacing="0")
     %thead
@@ -103,23 +128,17 @@
         %th Markup
     %tbody
       %tr
-        %td <a href="#" data-placement="above" rel="popover">Above</a>
-        %td <code>&lt;a rel="popover" data-placement="above"&gt;</code>
+        %td <a href="#" rel="popover" data-placement="above" data-original-title="Above" data-content="This is a popover">Above</a>
+        %td <code>%a(rel="popover" data-placement="above" data-original-title="Above" data-content="This is a popover")</code>
       %tr
-        %td <a href="#" data-placement="below" rel="popover">Below</a>
-        %td <code>&lt;a rel="popover" data-placement="below"&gt;</code>
+        %td <a href="#" rel="popover" data-placement="below" data-original-title="Below" data-content="This is a popover">Below</a>
+        %td <code>%a(rel="popover" data-placement="below" data-original-title="Below" data-content="This is a popover")</code>
       %tr
-        %td <a href="#" data-placement="left" rel="popover">Left</a>
-        %td <code>&lt;a rel="popover" data-placement="left"&gt;</code>
+        %td <a href="#" rel="popover" data-placement="left" data-original-title="Left" data-content="This is a popover" data-offset="10">Left</a>
+        %td <code>%a(rel="popover" data-placement="left" data-original-title="Left" data-content="This is a popover")</code>
       %tr
-        %td <a href="#" data-placement="right" rel="popover"data-offset="10">Right</a>
-        %td <code>&lt;a rel="popover" data-placement="right"data-offset="10"&gt;</code>
-.styleguide-clearfix
-
-.styleguide-h3 Modals
-.styleguide-quarter
-  .styleguide-todo Add in Modals
-.styleguide-threequarter.indent
+        %td <a href="#" rel="popover" data-placement="right" data-original-title="Right" data-content="This is a popover" data-offset="10">Right</a>
+        %td <code>%a(rel="popover" data-placement="right" data-original-title="Right" data-content="This is a popover")</code>
 .styleguide-clearfix
 
 .styleguide-h3 Flash Messaging
@@ -131,6 +150,12 @@
 .styleguide-h3 Inline Alerts &amp; Block Message Alerts
 .styleguide-quarter
   .styleguide-todo Add in Alerts
+.styleguide-threequarter.indent
+.styleguide-clearfix
+
+.styleguide-h3 Scroll Spy
+.styleguide-quarter
+  .styleguide-todo Add in scrollspy
 .styleguide-threequarter.indent
 .styleguide-clearfix
 

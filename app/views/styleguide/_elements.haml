@@ -10,26 +10,26 @@
         %th Markup
     %tbody
       %tr
-        %td <span class="flag">Standard</span>
-        %td <code>&lt;span class="flag"&gt;Standard&lt;/span&gt;</code>
+        %td <span class="flag">Default</span>
+        %td <code>%span.flag Default</code>
       %tr
         %td <span class="flag notice">Notice</span>
-        %td <code>&lt;span class="flag notice"&gt;Notice&lt;/span&gt;</code>
+        %td <code>%span.flag.notice Notice</code>
       %tr
         %td <span class="flag important">Important</span>
-        %td <code>&lt;span class="flag important"&gt;Important&lt;/span&gt;</code>
+        %td <code>%span.flag.important Important</code>
       %tr
         %td <span class="flag success">Success</span>
-        %td <code>&lt;span class="flag success"&gt;Success&lt;/span&gt;</code>
+        %td <code>%span.flag.success Success</code>
       %tr
         %td <span class="flag warning">Warning</span>
-        %td <code>&lt;span class="flag warning"&gt;Warning&lt;/span&gt;</code>
+        %td <code>%span.flag.warning Warning</code>
       %tr
         %td <span class="flag alert">Alert</span>
-        %td <code>&lt;span class="flag alert"&gt;Alert&lt;/span&gt;</code>
+        %td <code>%span.flag.alert Alert</code>
       %tr
         %td <span class="flag error">Error</span>
-        %td <code>&lt;span class="flag error"&gt;Error&lt;/span&gt;</code>
+        %td <code>%span.flag.error Error</code>
 .styleguide-clearfix
 
 .styleguide-h3 Stickers
@@ -44,34 +44,34 @@
     %tbody
       %tr
         %td <h4 class="sticker">Standard</h4>
-        %td <code>&lt;h4 class="sticker"&gt;Standard&lt;/h4&gt;</code>
+        %td <code>%h4.sticker Standard</code>
       %tr
         %td <h4 class="sticker notice">Notice</h4>
-        %td <code>&lt;h4 class="sticker notice"&gt;Notice&lt;/h4&gt;</code>
+        %td <code>%h4.sticker.notice Notice</code>
       %tr
         %td <h4 class="sticker important">Important</h4>
-        %td <code>&lt;h4 class="sticker important"&gt;Important&lt;/h4&gt;</code>
+        %td <code>%h4.sticker.important Important</code>
       %tr
         %td <h4 class="sticker success">Success</h4>
-        %td <code>&lt;h4 class="sticker success"&gt;Success&lt;/h4&gt;</code>
+        %td <code>%h4.sticker.success Success</code>
       %tr
         %td <h4 class="sticker warning">Warning</h4>
-        %td <code>&lt;h4 class="sticker warning"&gt;Warning&lt;/h4&gt;</code>
+        %td <code>%h4.sticker.warning Warning</code>
       %tr
         %td <h4 class="sticker alert">Alert</h4>
-        %td <code>&lt;h4 class="sticker alert"&gt;Alert&lt;/h4&gt;</code>
+        %td <code>%h4.sticker.alert Alert</code>
       %tr
         %td <h4 class="sticker error">Error</h4>
-        %td <code>&lt;h4 class="sticker error"&gt;Error&lt;/h4&gt;</code>
+        %td <code>%h4.sticker.error Error</code>
 .styleguide-clearfix
 
 
 .styleguide-h3 Buttons
 .styleguide-quarter
   %h3 Standard Buttons
-  %p The <code>.btn</code> style can be applied to <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and select <code>&lt;input&gt;</code> tags. To colorize a <code>.btn</code> style you can add the following classes:
+  %p The <code>.btn</code> style can be applied to <code>a</code>, <code>button</code>, and select <code>input</code> tags. To colorize a <code>.btn</code> style you can add the following classes:
   %br
-  %p <code>standard</code>, <code>notice</code>, <code>important</code>, <code>success</code>, <code>warning</code>, <code>alert</code>, <code>danger</code>
+  %p <code>.standard</code>, <code>.notice</code>, <code>.important</code>, <code>.success</code>, <code>.warning</code>, <code>.alert</code>, <code>.danger</code>
 .styleguide-threequarter.indent
   .styleguide-well
     %button.btn(href="#") Button
@@ -113,9 +113,9 @@
 
 .styleguide-quarter
   %h3 Action Buttons
-  %p The <code>.action</code> style can be applied to <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and select <code>&lt;input&gt;</code> tags. To colorize an <code>.action</code> style you can add the following classes:
+  %p The <code>.action</code> style can be applied to <code>a</code>, <code>button</code>, and select <code>input</code> tags. To colorize an <code>.action</code> style you can add the following classes:
   %br
-  %p <code>standard</code>, <code>notice</code>, <code>important</code>, <code>success</code>, <code>warning</code>, <code>alert</code>, <code>danger</code>
+  %p <code>.standard</code>, <code>.notice</code>, <code>.important</code>, <code>.success</code>, <code>.warning</code>, <code>.alert</code>, <code>.danger</code>
 .styleguide-threequarter.indent
   .styleguide-well
     %button.action(href="#") Button
@@ -166,19 +166,16 @@
   %p Standard video, controls, and poster image utilizing the <code>video</code> tag.
 .styleguide-threequarter.indent
   .styleguide-well
-    %video(controls="" poster="http://lorempixum.com/320/240")
+    %video(controls="" poster="http://lorempixum.com/320/180")
       %source(src="/path/to/myvideo.mp4" type="video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"")
       %source(src="/path/to/myvideo.ogv" type="video/ogg; codecs=\"theora, vorbis\"")
 .styleguide-clearfix
 
-.styleguide-note Bars
 .styleguide-h3 Progress &amp; Meter Bars
 .styleguide-quarter
-  %p The <code>&lt;meter&gt;</code> bar is used to indicate a scalar measurement within a known range, or a fractional value.
+  %p The <code>meter</code> bar is used to indicate a scalar measurement within a known range, or a fractional value.
   %br
-  %p The <code>&lt;progress&gt;</code> bar is used to represent the progress of a task.
-  %br
-  %cite * Progress and Meter Bars are not supported in all browsers.
+  %p The <code>progress</code> bar is used to represent the progress of a task.
 .styleguide-threequarter.indent
   .styleguide-well
     %meter(min="0" max="100" value="50")
@@ -186,5 +183,6 @@
     %br
     %br
     %progress(min="0" max="100" value="50")
+%cite * Progress and Meter Bars are not supported in all browsers.
 .styleguide-clearfix
 

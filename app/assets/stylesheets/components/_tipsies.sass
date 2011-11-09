@@ -1,17 +1,38 @@
 
-// Tool Tips and Popovers
-.twipsy
+// Tool Tips / Pop Overs shared assets.
+._tipsies
   +transition(opacity 0.25s)
   +opacity(0)
   display: block
-  font-size: 11px
-  font-weight: bold
-  padding: 5px
   position: absolute
   visibility: visible
   z-index: 1000
   &.fade.in
-    +opacity(0.9)
+    +opacity(1)
+  .twipsy-arrow,
+  .arrow
+    position: absolute
+    width: 0
+    height: 0
+  &.above .twipsy-arrow,
+  &.above .arrow
+    +arrow_south(5px, $tipsy_bg)
+  &.below .twipsy-arrow,
+  &.below .arrow
+    +arrow_north(5px, $tipsy_bg)
+  &.left .twipsy-arrow,
+  &.left .arrow
+    +arrow_east(5px, $tipsy_bg)
+  &.right .twipsy-arrow,
+  &.right .arrow
+    +arrow_west(5px, $tipsy_bg)
+
+// Tool Tip specific
+.twipsy
+  @extend ._tipsies
+  padding: 5px
+  font-size: 12px
+  font-weight: bold
   .twipsy-inner
     +border-radius(4px)
     background-color: $tipsy_bg
@@ -20,78 +41,38 @@
     padding: 3px 8px
     text-align: center
 
-.twipsy, .popover
-  .twipsy-arrow,
-  .arrow
-    position: absolute
-    width: 0
-    height: 0
-  &.above .twipsy-arrow,
-  &.above .arrow
-    bottom: 0
-    left: 50%
-    margin-left: -5px
-    border-left: 5px solid transparent
-    border-right: 5px solid transparent
-    border-top: 5px solid $tipsy_bg
-  &.below .twipsy-arrow,
-  &.below .arrow
-    top: 0
-    left: 50%
-    margin-left: -5px
-    border-left: 5px solid transparent
-    border-right: 5px solid transparent
-    border-bottom: 5px solid $tipsy_bg
-  &.left .twipsy-arrow,
-  &.left .arrow
-    top: 50%
-    right: 0
-    margin-top: -5px
-    border-top: 5px solid transparent
-    border-bottom: 5px solid transparent
-    border-left: 5px solid $tipsy_bg
-  &.right .twipsy-arrow,
-  &.right .arrow
-    top: 50%
-    left: 0
-    margin-top: -5px
-    border-top: 5px solid transparent
-    border-bottom: 5px solid transparent
-    border-right: 5px solid $tipsy_bg
 
+// Pop Over specific
 .popover
-  +transition(opacity 0.25s)
-  +opacity(0)
-  display: block
-  padding: 5px
-  position: absolute
-  visibility: visible
-  width: 260px
-  z-index: 1000
+  @extend ._tipsies
+  width: 280px
   .inner
-    +border-radius(4px)
+    +border-radius(6px)
     +box-shadow(0px 4px 8px rgba(0, 0, 0, 0.4))
     background-color: $pop_bg
     border: 1px solid $pop_border
-    padding: 8px
     h3
-      border-bottom: 1px solid $pop_border
-      color: $pop_color
-      font-size: 14px
-      line-height: 20px
-      margin-bottom: 10px
-      text-transform: uppercase
-    dd
-      margin-left: 25%
-      width: 75%
-  &.fade.in
-    +opacity(1)
+      +background-clip(padding-box)
+      +border-radius(6px 6px 0 0)
+      background-color: $pop_header_bg
+      border-bottom: 1px solid $pop_header_border
+      padding: 10px 15px
+      line-height: 1
+    .content
+      +background-clip(padding-box)
+      +border-radius(0 0 6px 6px)
+      padding: 14px
+
   &.above .arrow
+    bottom: -5px
     border-top: 5px solid $pop_border
   &.below .arrow
+    top: -5px
     border-bottom: 5px solid $pop_border
   &.left .arrow
+    right: -5px
     border-left: 5px solid $pop_border
   &.right .arrow
+    left: -5px
     border-right: 5px solid $pop_border
 

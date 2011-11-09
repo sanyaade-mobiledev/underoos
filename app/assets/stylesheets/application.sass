@@ -5,12 +5,17 @@
 @import themes/default
 
 // get the mixins
-@import mixins/coloring
+@import mixins/clearfixer
 @import mixins/timing-equations
+@import mixins/coloring
 @import mixins/grids
 @import mixins/image-tools
+@import mixins/arrows
 @import mixins/button-btn
 @import mixins/button-action
+
+// helpers setup for `@extends`
+@import helpers/utilities
 
 // base settings, resets
 @import general/normalize
@@ -19,7 +24,6 @@
 @import general/elements
 @import general/tables
 @import general/forms
-@import general/helpers
 
 // components
 @import components/flash-messaging

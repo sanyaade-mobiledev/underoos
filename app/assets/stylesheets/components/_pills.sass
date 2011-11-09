@@ -4,7 +4,7 @@ nav.pills
   font-weight: bold
 
   ul
-    +clearfix
+    +clearfixer
     margin: 20px 0
 
   li
@@ -12,9 +12,9 @@ nav.pills
     margin-right: 6px
 
   li a
+    +background-clip(padding-box)
     +border-radius(12px)
     +inline-block
-    -webkit-background-clip: padding-box
     background-color: $pills_bg
     border: 1px solid $pills_border
     color: $pills_normal_color

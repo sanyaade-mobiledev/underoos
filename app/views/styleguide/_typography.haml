@@ -45,7 +45,7 @@
   %del The del tag defines text that has been deleted from a document.
 %p
   %mark The mark tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
-%p What time is it? <time>9:00</time> (the <code>&lt;time&gt;</code> tag might not make it into the standards)
+%p What time is it? <time>9:00</time> (the <code>time</code> tag might not make it into the standards)
 %br
 %figure
   %p The figure tag is used for annotating illustrations, diagrams, photos, code listings, etc.
@@ -118,8 +118,24 @@
 
 .styleguide-h3 Code Styles
 .styleguide-half
-  %p The <code>&lt;code&gt;</code> tag is used to show inline code
-  %p The <kbd>&lt;kbd&gt;</kbd> tag defines keyboard text
-  %p The <samp>&lt;samp&gt;</samp> tag defines sample computer code
-  %pre // The pre tag. <br />git commit -m "Updated heading styles" <br/>git push
+  %p The <code>code</code> tag is used to show inline code
+  %p The <kbd>kbd</kbd> tag defines keyboard text
+  %p The <samp>samp</samp> tag defines sample computer code
+  %pre
+    = preserve do
+      :escaped
+        # The pre tag
+        git add .
+        git commit -m "Updated heading styles"
+        git push
+        git pull --rebase
+  %pre.prettyprint
+    = preserve do
+      :escaped
+        <!-- %pre.prettyprint -->
+        <header>
+          <h1>Heading</h1>
+          <p>Some Copy...</p>
+        </header>
 .styleguide-clearfix
+

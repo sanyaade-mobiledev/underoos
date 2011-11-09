@@ -9,7 +9,7 @@ form p
   padding: 0
 
 form
-  +clearfix
+  +clearfixer
 
 form fieldset,
 form fieldset.bordered
@@ -138,10 +138,7 @@ input[type="search"]
   padding: 4px 0 4px 10px
 
 // Form Buttons
-input[type="button"],
-input[type="reset"],
-input[type="submit"]
-  @extend .btn
+// `input[type="button"]`, `input[type="reset"]`, `input[type="submit"]` should be attached to a class like `.btn`
 
 input[type="file"],
 input[type="image"]
@@ -173,14 +170,14 @@ form ol li.error
   label, .hint, .inline-hints,
   input, textarea, select
     color: $error
-  input[type],
-  textarea, select
+
+  input[type], textarea, select
     border: 1px solid $error
     &:focus
       +box-shadow($focus_error_shadow)
       outline: 0
-  input[type="checkbox"],
-  input[type="radio"]
+
+  input[type="checkbox"], input[type="radio"]
     &:focus
       outline: 5px auto $error
 

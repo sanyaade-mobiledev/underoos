@@ -33,6 +33,8 @@
               %a(href="#layouts") Layouts
             %li
               %a(href="#media") Media
+            %li
+              %a(href="#resources") Resources
 
     .container
 
@@ -76,7 +78,7 @@
       .styleguide#structures
         .styleguide-header
           .styleguide-h1 Structures
-          .styleguide-note Structures consists of grids systems and common size elements used within the application.
+          .styleguide-note Structures consists of grids systems and common size elements used within the application. Collapse the browser window to see structures for media queries.
         = haml(:"/styleguide/_structures", :layout => false)
 
       .styleguide#layouts
@@ -91,13 +93,18 @@
           .styleguide-note Showcases the various media elements that are in use by the application.
         = haml(:"/styleguide/_media", :layout => false)
 
+      .styleguide#resources
+        .styleguide-header
+          .styleguide-h1 External Resources
+          .styleguide-note Showcases the various media elements that are in use by the application.
+        = haml(:"/styleguide/_resources", :layout => false)
+
+
     .guider
-    %script(src="/javascripts/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8")
-    %script(src="/javascripts/bootstrap-scrollspy.js" type="text/javascript" charset="utf-8")
-    %script(src="/javascripts/bootstrap-twipsy.js" type="text/javascript" charset="utf-8")
-    %script(src="/javascripts/bootstrap-popover.js" type="text/javascript" charset="utf-8")
+    %script(src="/assets/application.js" type="text/javascript" charset="utf-8")
+
     :javascript
       $(function(){$("a[rel=twipsy]").twipsy({live: true})})
       $(function(){$("a[rel=popover]").popover({live: true})})
-
+      prettyPrint()
 

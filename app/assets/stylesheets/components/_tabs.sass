@@ -1,8 +1,7 @@
 
 nav.tabs
-
   ul
-    +clearfix
+    +clearfixer
     font-weight: bold
     font-size: 16px
     margin: 0 20px
@@ -12,11 +11,11 @@ nav.tabs
     margin: 0 2px 0 0
 
   li a
+    +background-clip(padding-box)
     +border-radius(12px 12px 0px 0px)
-    -webkit-background-clip: padding-box
     background: $tabs_bg
-    border-bottom: none
     border: 1px solid $tabs_border
+    border-bottom: none
     color: $tabs_normal_color
     float: left
     padding: 10px 40px
