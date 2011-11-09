@@ -1,54 +1,106 @@
 
-// Flash messages
-div#flash_messages .message
-  +darken-gradient(lighten($notice, 30%))
+// Abstact version of messaging system
+._messaging
+  +background-clip(padding-box)
+  +darken-gradient($standard)
   +transition(all 0.25s $ease-in-quad)
-  border-bottom: 1px solid $grey4
   color: $flash_color
   font-size: 14px
   font-weight: bold
-  position: fixed
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
-  top: -80px
-  left: 0
-  width: 100%
   cursor: pointer
-  padding: 10px 0 10px 50px
-
   &:first-letter
     text-transform: capitalize
   &:hover
-    +darken-gradient(lighten($notice, 28%))
-  &.show
-    +transition(all 0.25s $ease-out-quad)
-    top: 0px
+    +darken-gradient(darken($standard, 5%))
   &.notice
-    +darken-gradient(lighten($notice, 30%))
+    +darken-gradient($notice)
     &:hover
-      +darken-gradient(lighten($notice, 28%))
+      +darken-gradient(darken($notice, 5%))
   &.important
     +darken-gradient($important)
     &:hover
-      +darken-gradient(darken($important, 2%))
+      // +darken-gradient(darken($important, 5%))
+      background-position: 0 -15px
   &.success
     +darken-gradient($success)
     &:hover
-      +darken-gradient(darken($success, 2%))
+      +darken-gradient(darken($success, 5%))
   &.warning
     +darken-gradient($warning)
     &:hover
-      +darken-gradient(darken($warning, 2%))
+      +darken-gradient(darken($warning, 5%))
   &.alert
     +darken-gradient($alert)
     &:hover
-      +darken-gradient(darken($alert, 2%))
+      +darken-gradient(darken($alert, 5%))
   &.error
     +darken-gradient($error)
     &:hover
-      +darken-gradient(darken($error, 2%))
+      +darken-gradient(darken($error, 5%))
+
+.inline-message
+  @extend ._messaging
+  padding: 10px
+  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.6))
+  +border-radius(6px)
+  position: relative
+  &:after
+    +opacity(0.3)
+    color: $black
+    content: "x"
+    font-size: 20px
+    line-height: 12px
+    text-shadow: 0 1px 0 $greyE
+    position: absolute
+    top: 10px
+    right: 10px
+
+.inline-alert
+  // +box-shadow(inset 0 1px 1px rgba(255,255,255,0.5))
+  // +box-shadow(inset 0 1px 3px darken($danger, 10%))
+  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.6))
+  +border-radius(6px)
+  padding: 10px
+  color: $flash_color
+  font-size: 14px
+  // font-weight: bold
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+  cursor: pointer
+  position: relative
+  &.important
+    background-color: $danger
+    border: 1px solid darken($danger, 10%)
+  &:after
+    +opacity(0.3)
+    color: $black
+    content: "x"
+    font-size: 20px
+    line-height: 12px
+    text-shadow: 0 1px 0 $greyE
+    position: absolute
+    top: 10px
+    right: 10px
+    font-weight: bold
+
+
+// Flash messages
+div#flash_messages .message
+  @extend ._messaging
+  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(0,0,0,0.8))
+  position: fixed
+  overflow: visible
+  padding: 10px 0 10px 50px
+  top: -100px
+  left: 0
+  right: 0
+  z-index: 1000
+  &.show
+    +transition(all 0.25s $ease-out-quad)
+    top: 0px
 
 div#flash_messages .message-content
-  margin-right: 75px
+  margin-right: 50px
   &:after
     +opacity(0.3)
     color: $black
