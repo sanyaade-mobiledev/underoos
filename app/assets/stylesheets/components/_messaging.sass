@@ -1,0 +1,105 @@
+
+
+// Used for @extends on items that are shared across messaging systems
+._abstract-message
+  color: $messaging_color
+  font-size: 14px
+  font-weight: bold
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+  cursor: pointer
+  &:first-letter
+    text-transform: capitalize
+
+// The "x" close button used in messaging systems
+@mixin _closer
+  +opacity(0.3)
+  color: $black
+  content: "x"
+  font-size: 20px
+  font-weight: bold
+  line-height: 12px
+  text-shadow: 0 1px 0 $greyE
+  position: absolute
+  top: 10px
+  right: 10px
+
+// This needs defaults for coloring
+.inline-message
+  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255,255,255,0.5))
+  +border-radius(6px)
+  +transition(all 0.25s)
+  +background-border-color($standard)
+  @extend ._abstract-message
+  padding: 10px
+  position: relative
+  &:hover
+    +background-border-color(darken($standard, 5%))
+  &.notice
+    +background-border-color($notice)
+    &:hover
+      +background-border-color(darken($notice, 5%))
+  &.success
+    +background-border-color($success)
+    &:hover
+      +background-border-color(darken($success, 5%))
+  &.important
+    +background-border-color($important)
+    &:hover
+      +background-border-color(darken($important, 5%))
+  &.warning
+    +background-border-color($warning)
+    &:hover
+      +background-border-color(darken($warning, 5%))
+  &.alert
+    +background-border-color($alert)
+    &:hover
+      +background-border-color(darken($alert, 5%))
+  &.error
+    +background-border-color($danger)
+    &:hover
+      +background-border-color(darken($danger, 5%))
+  &:after
+    +_closer
+
+
+// Flash messages
+div#flash_messages .message
+  +darken-gradient($standard)
+  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(0,0,0,0.8))
+  +transition(all 0.25s $ease-in-quad)
+  @extend ._abstract-message
+  position: fixed
+  overflow: visible
+  padding: 10px 0 10px 50px
+  top: -100px
+  left: 0
+  right: 0
+  z-index: 1000
+
+  &:hover
+    background-position: 0 -15px
+  &.show
+    +transition(all 0.25s $ease-out-quad)
+    top: 0px
+  &.notice
+    +darken-gradient($notice)
+  &.important
+    +darken-gradient($important)
+  &.success
+    +darken-gradient($success)
+  &.warning
+    +darken-gradient($warning)
+  &.alert
+    +darken-gradient($alert)
+  &.error
+    +darken-gradient($error)
+
+  &.notice, &.important, &.success, &.warning, &.alert, &.error
+    &:hover
+      background-position: 0 -15px
+
+div#flash_messages .message-content
+  margin-right: 50px
+  &:after
+    +_closer
+

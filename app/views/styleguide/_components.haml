@@ -147,23 +147,36 @@
 .styleguide-threequarter.indent
 .styleguide-clearfix
 
-.styleguide-h3 Inline Alerts
+.styleguide-h3 Inline Messaging
 .styleguide-quarter
   .styleguide-todo Add in Alerts
 .styleguide-threequarter.indent
   .styleguide-well
+
+    .inline-message
+      %p This is a message
+    %br
+    .inline-message.notice
+      %p This is a message
+    %br
     .inline-message.important
       %p This is a message
     %br
-    .inline-alert.important
-      %p <strong>This is a message</strong>
-      %ul
-        %li Item 1
-        %li Item 2
-        %li Item 3
+    .inline-message.success
+      %p This is a message
+    %br
+    .inline-message.warning
+      %p This is a message
+    %br
+    .inline-message.alert
+      %p This is a message
+    %br
+    .inline-message.error
+      %p This is a message
+
 .styleguide-clearfix
 
-.styleguide-h3 Block Message Alerts
+.styleguide-h3 Block Messaging
 .styleguide-quarter
   .styleguide-todo Add in Alerts
 .styleguide-threequarter.indent
