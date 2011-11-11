@@ -1,6 +1,11 @@
 
 // 2 Color Linear gradient lighter on top, darker on bottom
 @mixin darken-gradient($primary, $percentage: 20%)
-  // +background($primary linear-gradient($primary, darken($primary, $percentage)) no-repeat)
-  +background(darken($primary, $percentage) linear-gradient($primary, darken($primary, $percentage)) no-repeat)
+  $_darker: darken($primary, $percentage)
+  +background($_darker linear-gradient($primary, $_darker) no-repeat)
+
+// TODO: This is not a great name!
+@mixin background-border-color($color, $percentage: 10%)
+  background-color: $color
+  border: 1px solid darken($color, $percentage)
 
