@@ -1,11 +1,11 @@
 
 // fonts
-// ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
 $sans_norm: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 $code_norm: "Bitstream Vera Sans Mono", "Menslo LG M", "Menlo", "Monaco", monospace
 
 // colors
-// ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
 $black: #000
 $grey1: #111
 $grey2: #222
@@ -56,7 +56,7 @@ $disabled_bg: $greyE
 $disabled_border: $greyC
 
 // grid mixin
-// ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
 // Settings for desktop/tablet portrait
 // Setting for other devices are stored in their individual "queries file"
 $page-width: 992px
@@ -68,10 +68,10 @@ $_gridsystem-width: $column-width * $columns + $gutter-width * $columns
 // Set $total-width to 100% for a fluid layout
 $total-width: $_gridsystem-width
 
-/* @include grid-settings(984px, 70px, 12px, 12);
+// @include grid-settings(984px, 70px, 12px, 12);
 
 // base.scss
-// ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
 $body_bg_color: $white
 $body_bg: $white
 $body_color: $grey2
@@ -88,15 +88,23 @@ $link_highlight: $blue
 $tap_highlight: $blue
 
 // typography.scss
-// ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
 $header_color: $grey2
 $mark_bg: $yellow
 
 // elements.scss
-// ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
+// @see mixins/_buttons.scss
+$btn_bg: $greyD
+$btn_gradient: $white, $white 25%, $greyD
+$btn_color: $grey6
+
+$action_bg: $greyD
+$action_color: $grey6
+
 
 // tables.scss
-// ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
 $table_bg: none
 $caption_color: $grey2
 $thead_bg: $greyC
@@ -114,7 +122,7 @@ $thead_border: $grey6
 $table_border_std: $greyC
 
 // forms.scss
-// ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
 $fieldset_border: $border_dot
 $form_hr: $border_dot
 $hint_color: $grey6
@@ -132,16 +140,7 @@ $input_focus_color: $black
 $input_focus_bg: $greyE
 
 // components/*.scss
-// ----------------------------------------------------------------------------
-
-// @see mixins/_buttons.scss
-$btn_bg: $greyD
-$btn_gradient: $white, $white 25%, $greyD
-$btn_color: $grey6
-
-$action_bg: $greyD
-$action_color: $grey6
-
+/* ----------------------------------------------------------------------------
 $breadcrumb_color: $grey6
 $breadcrumb_normal: $grey6
 $breadcrumb_hover: $blue
@@ -191,5 +190,5 @@ $messaging_color: $white
 // TODO: Define Modals
 
 // layouts/*.scss
-// ----------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------
 
