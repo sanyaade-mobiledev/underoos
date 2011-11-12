@@ -153,44 +153,44 @@
 .styleguide-threequarter.indent
   .styleguide-well
 
-    .inline-message
+    .inline-message.alert-message.fade.in(data-alert="alert")
       %p This is a message
       %a.close(href="#") x
     %br
-    .inline-message.notice
+    .inline-message.notice.alert-message.fade.in(data-alert="alert")
       %p This is a message
       %a.close(href="#") x
     %br
-    .inline-message.important
+    .inline-message.important.alert-message.fade.in(data-alert="alert")
       %p This is a message
       %a.close(href="#") x
     %br
-    .inline-message.success
+    .inline-message.success.alert-message.fade.in(data-alert="alert")
       %p This is a message
       %a.close(href="#") x
     %br
-    .inline-message.warning
+    .inline-message.warning.alert-message.fade.in(data-alert="alert")
       %p This is a message
       %a.close(href="#") x
     %br
-    .inline-message.alert
+    .inline-message.alert.alert-message.fade.in(data-alert="alert")
       %p This is a message
       %a.close(href="#") x
     %br
-    .inline-message.error
+    .inline-message.error.alert-message.fade.in(data-alert="alert")
       %p This is a message
       %a.close(href="#") x
 
 .styleguide-clearfix
 
+- block_error = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
 .styleguide-h3 Block Messaging
 .styleguide-quarter
   .styleguide-todo Add in Alerts
 .styleguide-threequarter.indent
   .styleguide-well
 
-    - block_error = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
-    .block-message
+    .block-message.alert-message.fade.in(data-alert="alert")
       %header
         %h3 Standard Message
       %section
@@ -199,7 +199,7 @@
         %button.btn(href="#") Button
       %a.close(href="#") x
     %br
-    .block-message.notice
+    .block-message.notice.alert-message.fade.in(data-alert="alert")
       %header
         %h3 Notice Message
       %section
@@ -208,7 +208,7 @@
         %button.btn(href="#") Button
       %a.close(href="#") x
     %br
-    .block-message.success
+    .block-message.success.alert-message.fade.in(data-alert="alert")
       %header
         %h3 Success Message
       %section
@@ -217,7 +217,7 @@
         %button.btn(href="#") Button
       %a.close(href="#") x
     %br
-    .block-message.important
+    .block-message.important.alert-message.fade.in(data-alert="alert")
       %header
         %h3 Important Message
       %section
@@ -226,7 +226,7 @@
         %button.btn(href="#") Button
       %a.close(href="#") x
     %br
-    .block-message.warning
+    .block-message.warning.alert-message.fade.in(data-alert="alert")
       %header
         %h3 Warning Message
       %section
@@ -235,7 +235,7 @@
         %button.btn(href="#") Button
       %a.close(href="#") x
     %br
-    .block-message.alert
+    .block-message.alert.alert-message.fade.in(data-alert="alert")
       %header
         %h3 Alert Message
       %section
@@ -244,7 +244,7 @@
         %button.btn(href="#") Button
       %a.close(href="#") x
     %br
-    .block-message.error
+    .block-message.error.alert-message.fade.in(data-alert="alert")
       %header
         %h3 Error Message
       %section

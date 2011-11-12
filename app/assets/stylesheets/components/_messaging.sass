@@ -13,13 +13,29 @@
   &:hover
     +opacity(0.5)
 
-// Used for @extends on items that are shared across messaging systems
 ._abstract-message
-  +background-border-color($standard)
-  color: $messaging_color
   font-size: 14px
   padding: 10px
   position: relative
+  &.fade
+    +transition(opacity 0.25s)
+    +opacity(0)
+  &.in
+    +opacity(1)
+  a.close
+    +_closer
+
+// Inline Messages
+.inline-message
+  @extend ._abstract-message
+  +background-border-color($standard)
+  +border-radius(6px)
+  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255,255,255,0.5))
+  color: $messaging_color
+  font-weight: bold
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25)
+  &:first-letter
+    text-transform: capitalize
   &.notice
     +background-border-color($notice)
   &.success
@@ -32,29 +48,33 @@
     +background-border-color($alert)
   &.error
     +background-border-color($danger)
-  a.close
-    +_closer
 
-.inline-message
-  @extend ._abstract-message
-  +border-radius(6px)
-  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255,255,255,0.5))
-  font-weight: bold
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
-  &:first-letter
-    text-transform: capitalize
-
+// Block Level Messages
 .block-message
   @extend ._abstract-message
+  +background-border-color(lighten($standard, 20%))
   +border-radius(4px)
-  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5))
+  color: $grey3
+  text-shadow: 0 1px 0 rgba(255,255,255,.5)
   header
     margin-bottom: 10px
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
     h1,h2,h3,h4,h5,h6
-      color: $messaging_color
+      color: $grey3
   footer
     margin-top: 20px
+  &.notice
+    +background-border-color(lighten($notice, 40%))
+  &.success
+    +background-border-color(lighten($success, 40%))
+  &.important
+    +background-border-color(lighten($important, 40%))
+  &.warning
+    +background-border-color(lighten($warning, 40%))
+  &.alert
+    +background-border-color(lighten($alert, 40%))
+  &.error
+    +background-border-color(lighten($danger, 40%))
+
 
 
 // Flash messages
