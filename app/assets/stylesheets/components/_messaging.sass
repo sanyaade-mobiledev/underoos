@@ -1,20 +1,8 @@
 
-
-// Used for @extends on items that are shared across messaging systems
-._abstract-message
-  color: $messaging_color
-  font-size: 14px
-  font-weight: bold
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
-  cursor: pointer
-  &:first-letter
-    text-transform: capitalize
-
 // The "x" close button used in messaging systems
 @mixin _closer
   +opacity(0.3)
   color: $black
-  content: "x"
   font-size: 20px
   font-weight: bold
   line-height: 12px
@@ -22,44 +10,51 @@
   position: absolute
   top: 10px
   right: 10px
+  &:hover
+    +opacity(0.5)
 
-// This needs defaults for coloring
-.inline-message
-  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255,255,255,0.5))
-  +border-radius(6px)
-  +transition(all 0.25s)
+// Used for @extends on items that are shared across messaging systems
+._abstract-message
   +background-border-color($standard)
-  @extend ._abstract-message
+  color: $messaging_color
+  font-size: 14px
   padding: 10px
   position: relative
-  &:hover
-    +background-border-color(darken($standard, 5%))
   &.notice
     +background-border-color($notice)
-    &:hover
-      +background-border-color(darken($notice, 5%))
   &.success
     +background-border-color($success)
-    &:hover
-      +background-border-color(darken($success, 5%))
   &.important
     +background-border-color($important)
-    &:hover
-      +background-border-color(darken($important, 5%))
   &.warning
     +background-border-color($warning)
-    &:hover
-      +background-border-color(darken($warning, 5%))
   &.alert
     +background-border-color($alert)
-    &:hover
-      +background-border-color(darken($alert, 5%))
   &.error
     +background-border-color($danger)
-    &:hover
-      +background-border-color(darken($danger, 5%))
-  &:after
+  a.close
     +_closer
+
+.inline-message
+  @extend ._abstract-message
+  +border-radius(6px)
+  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255,255,255,0.5))
+  font-weight: bold
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+  &:first-letter
+    text-transform: capitalize
+
+.block-message
+  @extend ._abstract-message
+  +border-radius(4px)
+  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5))
+  header
+    margin-bottom: 10px
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+    h1,h2,h3,h4,h5,h6
+      color: $messaging_color
+  footer
+    margin-top: 20px
 
 
 // Flash messages

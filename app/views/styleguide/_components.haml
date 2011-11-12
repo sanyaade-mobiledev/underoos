@@ -155,24 +155,31 @@
 
     .inline-message
       %p This is a message
+      %a.close(href="#") x
     %br
     .inline-message.notice
       %p This is a message
+      %a.close(href="#") x
     %br
     .inline-message.important
       %p This is a message
+      %a.close(href="#") x
     %br
     .inline-message.success
       %p This is a message
+      %a.close(href="#") x
     %br
     .inline-message.warning
       %p This is a message
+      %a.close(href="#") x
     %br
     .inline-message.alert
       %p This is a message
+      %a.close(href="#") x
     %br
     .inline-message.error
       %p This is a message
+      %a.close(href="#") x
 
 .styleguide-clearfix
 
@@ -181,5 +188,70 @@
   .styleguide-todo Add in Alerts
 .styleguide-threequarter.indent
   .styleguide-well
+
+    - block_error = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+    .block-message
+      %header
+        %h3 Standard Message
+      %section
+        %p=block_error
+      %footer
+        %button.btn(href="#") Button
+      %a.close(href="#") x
+    %br
+    .block-message.notice
+      %header
+        %h3 Notice Message
+      %section
+        %p=block_error
+      %footer
+        %button.btn(href="#") Button
+      %a.close(href="#") x
+    %br
+    .block-message.success
+      %header
+        %h3 Success Message
+      %section
+        %p=block_error
+      %footer
+        %button.btn(href="#") Button
+      %a.close(href="#") x
+    %br
+    .block-message.important
+      %header
+        %h3 Important Message
+      %section
+        %p=block_error
+      %footer
+        %button.btn(href="#") Button
+      %a.close(href="#") x
+    %br
+    .block-message.warning
+      %header
+        %h3 Warning Message
+      %section
+        %p=block_error
+      %footer
+        %button.btn(href="#") Button
+      %a.close(href="#") x
+    %br
+    .block-message.alert
+      %header
+        %h3 Alert Message
+      %section
+        %p=block_error
+      %footer
+        %button.btn(href="#") Button
+      %a.close(href="#") x
+    %br
+    .block-message.error
+      %header
+        %h3 Error Message
+      %section
+        %p=block_error
+      %footer
+        %button.btn(href="#") Button
+      %a.close(href="#") x
+
 .styleguide-clearfix
 
