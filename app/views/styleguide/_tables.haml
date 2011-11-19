@@ -1,40 +1,65 @@
 
 .styleguide-h3 Table Styles
-%table(cellspacing="0")
-  %caption Table Caption
-  %thead
-    %tr
-      %th Table Header 1
-      %th
-        %a(href="#") Table Header 2 Link
-      %th Table Header 3
-      %th
-        %a.ascending(href="#") Ascending
-      %th
-        %a.descending(href="#") Descending
-  %tfoot
-    %tr
-      %td(colspan="5") This is the table footer it appears at the bottom of the table
-  %tbody
-    %tr
-      %td Table Data - :nth-child(odd)
-      %td
-        %a(href="#") Data as a link
-      %td Table Data
-      %td One
-      %td Three
-    %tr
-      %td Table Data - :nth-child(even)
-      %td
-        %a(href="#") Data as a link
-      %td Table Data
-      %td Two
-      %td Two
-    %tr
-      %td Table Data - :nth-child(odd)
-      %td
-        %a(href="#") Data as a link
-      %td Table Data
-      %td Three
-      %td One
+.styleguide-quarter
+  %h3 Default Table
+  %p The basic table creates division in data with horizontal dividers. Additional classes (see below) can be added to build a more structured table.
+.styleguide-threequarter.indent
+  %table(cellspacing="0")
+    %caption Default Table Caption
+    = haml(:"/styleguide/partials/_table-data", :layout => false)
+.styleguide-clearfix
+
+%br
+%br
+
+.styleguide-quarter
+  %h3 Box Table
+  %p Adding the <code>.box</code> class renders the table with exterior boundries for all <code>table rows</code>.
+.styleguide-threequarter.indent
+  %table.box(cellspacing="0")
+    %caption Box Table Caption
+    = haml(:"/styleguide/partials/_table-data", :layout => false)
+.styleguide-clearfix
+
+%br
+%br
+
+.styleguide-quarter
+  %h3 Vertical Border Table
+  %p Adding the <code>.vborder</code> class renders the table with vertical divisions for <code>table data</code>.
+.styleguide-threequarter.indent
+  %table.vborder(cellspacing="0")
+    %caption Vertical Bordered Table Caption
+    = haml(:"/styleguide/partials/_table-data", :layout => false)
+.styleguide-clearfix
+
+%br
+%br
+
+.styleguide-quarter
+  %h3 Box &amp; Vertical Border Table
+  %p Adding the <code>.box</code> class combined with the <code>.vborder</code> class renders the table with full borders around <code>tr</code> and <code>td</code> elements.
+.styleguide-threequarter.indent
+  %table.box.vborder(cellspacing="0")
+    %caption Box &amp; Vertical Bordered Table Caption
+    = haml(:"/styleguide/partials/_table-data", :layout => false)
+.styleguide-clearfix
+
+%br
+%br
+
+.styleguide-quarter
+  %h3 Styled Table
+  %p To add coloring to alternate <code>tbody</code> rows, add the class <code>.zebra</code>
+  %br
+  %p To add a background color to the <code>thead</code> element, add the class <code>.thead-decorate</code>
+  %br
+  %p To add a background color to the <code>tfoot</code> element, add the class <code>.tfoot-decorate</code>
+  %br
+  %p The following table is rendered as <code>%table.box.zebra.thead-decorate.tfoot-decorate</code>
+.styleguide-threequarter.indent
+  %table.box.zebra.thead-decorate.tfoot-decorate(cellspacing="0")
+    %caption Various Settings Caption
+    = haml(:"/styleguide/partials/_table-data", :layout => false)
+.styleguide-clearfix
 

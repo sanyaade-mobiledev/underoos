@@ -1,4 +1,8 @@
 
+// horizontal(default), border
+// normal, zebra
+// Header's should be able to have their own styles
+
 // Tables
 table
   background: $table_bg
@@ -7,12 +11,12 @@ table
   width: 100%
 
   thead, tfoot
-    color: $tfoot_color
+    color: $table_primary_color
     font-size: 11px
     font-weight: bold
 
   caption
-    color: $caption_color
+    color: $table_primary_color
     font-size: 12px
     font-weight: bold
     margin-bottom: 5px
@@ -20,8 +24,8 @@ table
     text-transform: uppercase
 
   thead
-    background: $thead_bg
-    color: $thead_color
+    background: none
+    color: $table_primary_color
     text-transform: uppercase
     a, a:visited
       color: $thead_link_normal
@@ -29,7 +33,7 @@ table
       color: $thead_link_hover
 
   tbody
-    background: $tbody_bg
+    background: none
 
   th, td
     padding: 10px
@@ -41,26 +45,22 @@ table
   // tr
 
   tfoot
-    background: $tfoot_bg
+    background: none
 
   // Overrides
   thead tr
-    border: 1px solid $thead_border
+    border-bottom: 1px solid $thead_border
 
   tbody tr
-    border-top: 1px dotted $table_border_std
-    &:nth-child(odd), &.odd
-      background-color: $tr_odd
-    &:nth-child(even), &.even
-      background-color: $tr_even
+    border-top: 1px solid $table_border_std
     &:last-child
-      border-bottom: 1px solid $table_border_std
+      border-bottom: 1px solid $thead_border
 
   tfoot tr, tfoot td
     padding: 5px 10px
 
   tfoot tr
-    border-bottom: 1px solid $table_border_std
+    border-bottom: 1px solid $tfoot_border
 
   // Specials
   th a.ascending,
@@ -78,4 +78,62 @@ table
   th a.descending
     &:after
       border-width: 4px 4px 0
+
+table.box
+  thead tr
+    border: 1px solid $thead_border
+  tbody tr
+    border: 1px solid $table_border_std
+    &:last-child
+      border-bottom: 1px solid $thead_border
+  tfoot tr
+    border: 1px solid $tfoot_border
+    border-top-color: transparent
+  // Override when vborder is attached to the same class
+  thead th
+    &:first-child
+      border-left-color: $thead_border !important
+    &:last-child
+      border-right-color: $thead_border !important
+  tbody td
+    &:first-child
+      border-left-color: $table_border_std !important
+    &:last-child
+      border-right-color: $table_border_std !important
+
+table.vborder
+  thead th
+    border-left: 1px solid $thead_border
+    border-right: 1px solid $thead_border
+    &:first-child
+      border-left-color: transparent
+    &:last-child
+      border-right-color: transparent
+
+  tbody td
+    border-left: 1px solid $table_border_std
+    border-right: 1px solid $table_border_std
+    &:first-child
+      border-left-color: transparent
+    &:last-child
+      border-right-color: transparent
+
+
+// Zebra table
+table.zebra
+  tbody tr
+    &:nth-child(odd), &.odd
+      background-color: $zebra_odd
+    &:nth-child(even), &.even
+      background-color: $zebra_even
+
+// Colorize the table header background
+table.thead-decorate
+  thead
+    background-color: $thead_bg
+
+// Colorize the table footer background
+table.tfoot-decorate
+  tfoot
+    background-color: $tfoot_bg
 
