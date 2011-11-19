@@ -97,7 +97,7 @@
 .styleguide-quarter
   %p Tool tips utilize <a href="http://twitter.github.com/bootstrap/javascript.html#twipsy">Bootstrap's Twipsy plugin</a>. You can control various options of how a tool tip is shown based on attributes set in the link.
 .styleguide-threequarter.indent
-  %table(cellspacing="0")
+  %table.zebra.thead-decorate(cellspacing="0")
     %thead
       %tr
         %th Position
@@ -121,7 +121,7 @@
 .styleguide-quarter
   %p Pop Overs utilize <a href="http://twitter.github.com/bootstrap/javascript.html#popover">Bootstrap's Pop Over plugin</a>. They are similar to the tool tip plugin and they require <a href="http://twitter.github.com/bootstrap/javascript.html#twipsy">Bootstrap's Twipsy plugin</a> to be included.
 .styleguide-threequarter.indent
-  %table(cellspacing="0")
+  %table.zebra.thead-decorate(cellspacing="0")
     %thead
       %tr
         %th Position
@@ -149,52 +149,58 @@
 
 .styleguide-h3 Inline Messaging
 .styleguide-quarter
-  .styleguide-todo Add in Alerts
+  %p Inline messages are generally displayed near the element they are related to (forms, buttons). They follow the same color pattern as flash messages.
+  %br
+  %p When inline messages are closed, they fade out and are then removed from the DOM.
+  %br
+  .styleguide-todo Change out the JavaScript to use a more natural close state.
 .styleguide-threequarter.indent
   .styleguide-well
 
     .inline-message.alert-message.fade.in(data-alert="alert")
-      %p This is a message
+      %p=@default_message
       %a.close(href="#") x
     %br
     .inline-message.notice.alert-message.fade.in(data-alert="alert")
-      %p This is a message
+      %p=@notice_message
       %a.close(href="#") x
     %br
     .inline-message.important.alert-message.fade.in(data-alert="alert")
-      %p This is a message
+      %p=@important_message
       %a.close(href="#") x
     %br
     .inline-message.success.alert-message.fade.in(data-alert="alert")
-      %p This is a message
+      %p=@success_message
       %a.close(href="#") x
     %br
     .inline-message.warning.alert-message.fade.in(data-alert="alert")
-      %p This is a message
+      %p=@warning_message
       %a.close(href="#") x
     %br
     .inline-message.alert.alert-message.fade.in(data-alert="alert")
-      %p This is a message
+      %p=@alert_message
       %a.close(href="#") x
     %br
     .inline-message.error.alert-message.fade.in(data-alert="alert")
-      %p This is a message
+      %p=@error_message
       %a.close(href="#") x
 
 .styleguide-clearfix
 
-- block_error = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
 .styleguide-h3 Block Messaging
 .styleguide-quarter
-  .styleguide-todo Add in Alerts
+  %p Block messages generally contain a longer message as well as a call to action that may be required by the application. These elements have muted backgrounds compared to their inline message counterparts.
+  %br
+  %p When block messages are closed, they fade out and are then removed from the DOM.
+  %br
+  .styleguide-todo Change out the JavaScript to use a more natural close state.
 .styleguide-threequarter.indent
   .styleguide-well
-
     .block-message.alert-message.fade.in(data-alert="alert")
       %header
         %h3 Standard Message
       %section
-        %p=block_error
+        %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
       %a.close(href="#") x
@@ -203,7 +209,7 @@
       %header
         %h3 Notice Message
       %section
-        %p=block_error
+        %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
       %a.close(href="#") x
@@ -212,7 +218,7 @@
       %header
         %h3 Success Message
       %section
-        %p=block_error
+        %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
       %a.close(href="#") x
@@ -221,7 +227,7 @@
       %header
         %h3 Important Message
       %section
-        %p=block_error
+        %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
       %a.close(href="#") x
@@ -230,7 +236,7 @@
       %header
         %h3 Warning Message
       %section
-        %p=block_error
+        %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
       %a.close(href="#") x
@@ -239,7 +245,7 @@
       %header
         %h3 Alert Message
       %section
-        %p=block_error
+        %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
       %a.close(href="#") x
@@ -248,7 +254,7 @@
       %header
         %h3 Error Message
       %section
-        %p=block_error
+        %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
       %a.close(href="#") x
