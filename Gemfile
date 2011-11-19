@@ -13,6 +13,7 @@ gem 'coffee-script'
 gem 'tilt',           :git => 'git://github.com/rtomayko/tilt.git'
 gem 'thin'
 gem 'redcarpet'
+gem 'eco'
 
 group :development do
   gem 'rocco'
