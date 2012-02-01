@@ -1,0 +1,37 @@
+
+// Ordered and Unordered Lists
+ul
+  list-style: square inside
+
+ol
+  list-style: decimal-leading-zero inside
+
+ul li, ol li
+  margin-left: 0.75em
+
+ul ul li, ul ol li,
+ol ul li, ol ol li
+  margin-left: 1.75em
+
+// Navigation and unstyled Lists
+nav ul, nav ol, ul.unstyled, ol.unstyled
+  list-style: none
+  list-style-image: none
+  margin: 0
+  padding: 0
+  ul li, ol li, li
+    margin-left: 0
+    padding: 0
+
+// Definition Lists
+dl dt
+  font-size: 0.85em
+  font-weight: bold
+  text-transform: uppercase
+  margin-top: 12px
+  &:after
+    content: ":"
+
+dl dd
+  font-size: 1em
+

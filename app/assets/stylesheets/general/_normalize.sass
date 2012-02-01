@@ -1,11 +1,18 @@
 
-// HTML 5 Definitions and Normalization
+// Normalization based on:
+// - [normalize.css](http://necolas.github.com/normalize.css/)
+// - [HTML5 Boilerplate](http://html5boilerplate.com/)
+
+// Resets based on:
+// [Eric Meyer's reset](http://meyerweb.com/eric/tools/css/reset/)
+
+// HTML 5 definitions and normalization
 article, aside, details, figcaption, figure,
 footer, header, hgroup, nav, menu, section
   display: block
 
 audio, canvas, video
-  +inline-block
+  display: inline-block
   *display: inline
   *zoom: 1
 
@@ -14,15 +21,14 @@ audio:not([controls])
 
 [hidden]
   display: none
-  visibility: hidden
 
-// Reset Margin and Padding
-html, body, div, span, object, iframe,
+// Reset margins, paddings and borders
+html, body, div, span, applet, object, embed, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, address, big, cite, code,
+a, abbr, address, big, cite, code, hr,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, embed, a:hover, a:active, a:focus,
+fieldset, form, label, legend, button, input, select, textarea,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
@@ -31,40 +37,76 @@ time, mark, audio, video
   padding: 0
   border: 0
 
-// Form resets
+// All Typography normalization is found in _typography.sass
+// All List normalization is found in _lists.sass
+
+// Embedded content normalization
+img
+  max-width: 100%
+  -ms-interpolation-mode: bicubic
+
+svg:not(:root)
+  overflow: hidden
+
+.chromeframe
+  margin: 0.2em 0
+  background: #ccc
+  color: #000
+  padding: 0.2em 0
+
+// Form normalization
 button, input, select, textarea, label
+  font-size: 100%
   vertical-align: baseline
   *vertical-align: middle
 
+legend
+  *margin-left: -7px
+  white-space: normal
+
 button, input
   line-height: normal
-  *overflow: visible
 
 textarea
   overflow: auto
   vertical-align: top
-  height: auto
+  resize: vertical
 
 button::-moz-focus-inner,
 input::-moz-focus-inner
   border: 0
-
-table button,
-table input
-  *overflow: auto
+  padding: 0
 
 button,
-html input[type="button"],
+input[type="button"],
 input[type="reset"],
 input[type="submit"]
+  cursor: pointer
+  line-height: normal
   -webkit-appearance: button
+  *overflow: visible
+  *height: 13px
+  *width: 13px
 
-input[type="search"]::-webkit-search-decoration
-  -webkit-appearance: none
+input[type="checkbox"],
+input[type="radio"]
+  box-sizing: border-box
+  cursor: pointer
 
 input[type="search"]
   -webkit-appearance: textfield
   -webkit-box-sizing: content-box
   -moz-box-sizing: content-box
   box-sizing: content-box
+
+input[type="search"]::-webkit-search-decoration
+  -webkit-appearance: none
+
+input[type="search"]::-webkit-search-cancel-button
+  -webkit-appearance: none
+
+// Table normalization
+table
+  border-collapse: collapse
+  border-spacing: 0
 
