@@ -10,14 +10,14 @@ table
 
   thead, tfoot
     color: $table_primary_color
-    font-size: 11px
+    font-size: 0.75em
     font-weight: bold
 
   caption
     color: $table_primary_color
-    font-size: 12px
+    font-size: 0.85em
     font-weight: bold
-    margin-bottom: 5px
+    margin-bottom: 0.5em
     text-align: left
     text-transform: uppercase
 
@@ -34,7 +34,7 @@ table
     background: none
 
   th, td
-    padding: 10px
+    padding: 0.75em
     text-align: left
 
   th
@@ -56,6 +56,7 @@ table
 
   tfoot tr, tfoot td
     padding: 5px 10px
+    padding: 0.5em
 
   tfoot tr
     border-bottom: 1px solid $tfoot_border
@@ -87,7 +88,7 @@ table.box
   tfoot tr
     border: 1px solid $tfoot_border
     border-top-color: transparent
-  // Override when vborder is attached to the same class
+  /* Override when vborder is attached to the same class
   thead th
     &:first-child
       border-left-color: $thead_border !important

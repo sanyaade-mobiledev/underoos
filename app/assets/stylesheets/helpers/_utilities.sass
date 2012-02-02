@@ -1,30 +1,32 @@
 
-// Utilizes the pseudo elements for clearing floats
-._clearfixer
+// Utilizes the `micro clearfix` on pseudo elements for clearing floats
+.clearfixer
   +clearfixer
 
-// Uses the Compass clearfix of `overflow:hidden`
-._clearfix
+// Uses the standard clearfix of `overflow:hidden` found in Compass
+.clearfix
   +clearfix
 
 // Image replacement
-._ir
+.ir
   display: block
   text-indent: -999em
   overflow: hidden
+  background-color: transparent
   background-repeat: no-repeat
   text-align: left
   direction: ltr
+  *line-height: 0
   br
     display: none
 
 // Totally hidden
-._hidden
-  display: none
+.hidden
+  display: none !important
   visibility: hidden
 
 // Only visually hidden
-._visuallyhidden
+.visuallyhidden
   border: 0
   clip: rect(0 0 0 0)
   height: 1px
@@ -43,6 +45,6 @@
     width: auto
 
 // Visually invisible, content remains in the DOM
-._invisible
+.invisible
   visibility: hidden
 

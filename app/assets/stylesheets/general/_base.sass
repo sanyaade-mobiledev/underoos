@@ -13,18 +13,8 @@ html, button, input, select, textarea
 
 body
   background: $body_bg
-  font-size: 1em
+  +font-sizes($base_font_size)
   line-height: 1.2
-
-hr
-  display: block
-  height: 1px
-  border-top: $border_std
-  margin: 1em 0
-  &.dotted
-    border-top-style: dotted
-  &.dashed
-    border-top-style: dashed
 
 \::-moz-selection
   background: $select_bg

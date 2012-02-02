@@ -1,0 +1,18 @@
+
+// Converts target `px` value to `em` in context constraints of the base font size
+@function to_em($target_px, $context:$base_font_size)
+  @return ($target_px / $context) * 1em
+
+// Converts target `px` value to `rem` in context constraints of the user's base font size
+@function to_rem($target_px, $context:$context_px)
+  @return ($target_px / $context) * 1rem
+
+// Converts target `px` value to `percentage` in context constraints of the container's width
+@function to_percent($target_px, $context:$base_width)
+  @return percentage($target_px / $context)
+
+// Use `rems` to insert a font size
+@mixin font-sizes($target_px, $context:$context_px)
+  font-size: $target_px * 1px
+  font-size: to_rem($target_px, $context)
+

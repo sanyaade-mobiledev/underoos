@@ -10,11 +10,10 @@
 
   %body
     .styleguide-masthead(data-scrollspy="scrollspy")
-      .container
+      .styleguide-container
         %nav
+          %a.styleguide-title(href="/styleguide") styleguide.
           %ul
-            %li
-              %a.styleguide-title(href="/styleguide") styleguide<span>.</span>
             %li
               %a(href="#typography") Typography
             %li
@@ -36,7 +35,7 @@
             %li
               %a(href="#resources") Resources
 
-    .container
+    .styleguide-container
 
       .styleguide#typography
         .styleguide-header
@@ -79,7 +78,7 @@
         .styleguide-header
           .styleguide-h1 Structures
           .styleguide-note Structures consists of grids systems and common size elements used within the application. Collapse the browser window to see structures for media queries.
-        = haml(:"/styleguide/_structures", :layout => false)
+        -# = haml(:"/styleguide/_structures", :layout => false)
 
       .styleguide#layouts
         .styleguide-header

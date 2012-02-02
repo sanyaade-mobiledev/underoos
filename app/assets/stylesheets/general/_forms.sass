@@ -11,19 +11,20 @@ form p
 form
   +clearfixer
 
-form fieldset,
-form fieldset.bordered
+form fieldset
   border: none
   display: block
-  padding: 10px 2px
+  padding: 1em 0.2em
 
 form fieldset.bordered
   border: $fieldset_border
-  padding: 10px
-
-form ol li
   display: block
-  margin-bottom: 10px
+  padding: 1em
+
+form ol li,
+form ul li
+  display: block
+  margin-bottom: 1em
   &:last-child
     margin-bottom: 0
 
@@ -35,7 +36,7 @@ form hr
   border-top: $form_hr
 
 label
-  font-size: 11px
+  +font-sizes(11)
 
 form fieldset legend
   display: none
@@ -54,12 +55,12 @@ form .hint
 
 form .inline-hints,
 form .hint
+  +font-sizes(11)
   color: $hint_color
-  font-size: 11px
 
 form .inline-errors
+  +font-sizes(11)
   color: $error
-  font-size: 11px
 
 .search label
   display: none
@@ -67,8 +68,8 @@ form .inline-errors
 .radiogroup label,
 .checkgroup label
   +inline-block
+  +font-sizes(14)
   color: $collection_label_color
-  font-size: 14px
   margin: -4px 10px 0 0
 
 \:-moz-placeholder
@@ -122,10 +123,10 @@ select, textarea
     border-color: 1px solid $disabled_border
     color: $disabled_color
 
-select
+// select
   font-size: 16px
 
-select[multiple]
+// select[multiple]
   font-size: 14px
 
 // Search

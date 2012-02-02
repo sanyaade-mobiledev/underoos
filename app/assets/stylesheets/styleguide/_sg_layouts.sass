@@ -6,17 +6,13 @@ $sg_link_hover: #666
 $sg_todo: #d33682
 $sg_boxcolor: rgba(211, 54, 130, 0.5)
 
-@mixin sg-clearfix
-  zoom: 1
-  &:before, &:after
-    content: ""
-    display: table
-  &:after
-    clear: both
-
 // Clearfix it!
 .styleguide-clearfix
-  +sg-clearfix
+  +clearfixer
+
+.styleguide-container
+  margin: 0 auto
+  padding: 0 5%
 
 // Apply basic resets on the containers
 .styleguide-masthead,
@@ -39,39 +35,43 @@ $sg_boxcolor: rgba(211, 54, 130, 0.5)
 
 // Navigation header
 .styleguide-masthead
-  +background(#222 linear-gradient(top, #333, #222) no-repeat)
-  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(0,0,0,0.8))
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
-  overflow: visible
+  +box-shadow(rgba(#000,0.25) 0px 2px 3px)
+  background-color: #eee
+  text-shadow: 0 1px 0 #fff
   position: fixed
   top: 0
   left: 0
   right: 0
-  height: 40px
-  z-index: 10000
+  z-index: 200
 
   nav ul
-    li
-      display: inline
-      a
-        +inline-block
-        color: $sg_link_normal
-        padding: 11px 8px
-        &:hover, &:active
-          color: $sg_link_hover
-        &.styleguide-title
-          color: #eee
-          &span
-            color: $sg_link_normal
-      &.active
-        a, a:hover, a:active
-          background: #000
-          color: #eee
+    display: inline
+
+  nav ul li
+    display: inline
+
+  nav ul li a
+    +inline-block
+    color: $sg_link_normal
+    padding: 1em 0.75em
+    &:hover, &:active
+      color: $sg_link_hover
+
+  nav ul li.active
+    a, a:hover, a:active
+      background: #268bd2
+      color: #eee
+      text-shadow: 0 -1px 0 darken(#268bd2,20%)
+
+  a.styleguide-title
+    +inline-block
+    color: #ccc
+    text-shadow: 0 1px 0 #fff
 
 // Styleguide Elements and containers
 .styleguide
-  +sg-clearfix
-  padding: 60px 0 30px
+  +clearfixer
+  padding: 3.75em 0 1.875em
   border-bottom: 1px solid #ccc
 
   .styleguide-threequarter,
@@ -79,7 +79,7 @@ $sg_boxcolor: rgba(211, 54, 130, 0.5)
   .styleguide-half,
   .styleguide-onethird,
   .styleguide-quarter
-    +sg-clearfix
+    +clearfixer
     float: left
     &.right
       text-align: right
@@ -112,15 +112,15 @@ $sg_boxcolor: rgba(211, 54, 130, 0.5)
       width: 20%
 
   .styleguide-well
-    +sg-clearfix
+    +clearfixer
     border: 1px solid #eaeaea
-    margin-bottom: 20px
-    padding: 20px
+    margin-bottom: 1.25em
+    padding: 1.25em
 
   .styleguide-header
-    +sg-clearfix
+    +clearfixer
     background-color: #eaeaea
-    padding: 20px
+    padding: 1.25em
 
   .styleguide-h1
     color: $sg_hilite
@@ -132,7 +132,7 @@ $sg_boxcolor: rgba(211, 54, 130, 0.5)
     font-size: 26px
 
   .styleguide-h3
-    +sg-clearfix
+    +clearfixer
     border-top: 1px dotted #268bd2
     color: $sg_hilite
     font-size: 14px
