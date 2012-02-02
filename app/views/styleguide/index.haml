@@ -8,12 +8,12 @@
     %link(rel="stylesheet" href="/assets/application.css" type="text/css")
     %link(rel="stylesheet" href="/assets/styleguide.css" type="text/css")
 
-  %body
-    .styleguide-masthead(data-scrollspy="scrollspy")
+  %body(data-spy="scroll")
+    .styleguide-masthead
       .styleguide-container
         %nav
           %a.styleguide-title(href="/styleguide") styleguide.
-          %ul
+          %ul.nav
             %li
               %a(href="#typography") Typography
             %li
@@ -103,10 +103,10 @@
     = haml(:"/shared/_upgrades", :layout => false)
 
 
-
     %script(src="/assets/application.js" type="text/javascript" charset="utf-8")
+    %script(src="/assets/prettify.js" type="text/javascript" charset="utf-8")
     :javascript
-      $(function(){$("a[rel=twipsy]").twipsy({live: true})})
-      $(function(){$("a[rel=popover]").popover({live: true})})
+      $(function(){$("a[rel=tooltip]").tooltip()})
+      $(function(){$("a[rel=popover]").popover()})
       prettyPrint()
 

@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
-curl -L -o ./app/assets/javascripts/vendor/bootstrap-transitions.js https://raw.github.com/twitter/bootstrap/2.0-wip/js/bootstrap-transitions.js
-curl -L -o ./app/assets/javascripts/vendor/bootstrap-alerts.js http://twitter.github.com/bootstrap/1.4.0/bootstrap-alerts.js
-curl -L -o ./app/assets/javascripts/vendor/bootstrap-modal.js http://twitter.github.com/bootstrap/1.4.0/bootstrap-modal.js
-curl -L -o ./app/assets/javascripts/vendor/bootstrap-popover.js http://twitter.github.com/bootstrap/1.4.0/bootstrap-popover.js
-curl -L -o ./app/assets/javascripts/vendor/bootstrap-scrollspy.js http://twitter.github.com/bootstrap/1.4.0/bootstrap-scrollspy.js
-curl -L -o ./app/assets/javascripts/vendor/bootstrap-twipsy.js http://twitter.github.com/bootstrap/1.4.0/bootstrap-twipsy.js
-curl -L -o ./app/assets/javascripts/vendor/jquery-1.7.min.js http://code.jquery.com/jquery-1.7.min.js
+curl -L -o ./vendor/assets/javascripts/bootstrap-transition.js http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js
+curl -L -o ./vendor/assets/javascripts/bootstrap-scrollspy.js http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js
+curl -L -o ./vendor/assets/javascripts/bootstrap-tooltip.js http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js
+curl -L -o ./vendor/assets/javascripts/bootstrap-popover.js http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js
+curl -L -o ./vendor/assets/javascripts/bootstrap-dropdown.js http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js
+curl -L -o ./vendor/assets/javascripts/bootstrap-modal.js http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js
+curl -L -o ./vendor/assets/javascripts/bootstrap-alert.js http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js
+curl -L -o ./vendor/assets/javascripts/bootstrap-button.js http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js
+
+echo Not Updated: jquery, prettify.js
 

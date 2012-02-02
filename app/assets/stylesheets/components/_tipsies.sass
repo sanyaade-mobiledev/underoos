@@ -9,31 +9,31 @@
   z-index: 1000
   &.fade.in
     +opacity(1)
-  .twipsy-arrow,
+  .tooltip-arrow,
   .arrow
     position: absolute
     width: 0
     height: 0
-  &.above .twipsy-arrow,
-  &.above .arrow
+  &.top .tooltip-arrow,
+  &.top .arrow
     +arrow_south(5px, $tipsy_bg)
-  &.below .twipsy-arrow,
-  &.below .arrow
+  &.bottom .tooltip-arrow,
+  &.bottom .arrow
     +arrow_north(5px, $tipsy_bg)
-  &.left .twipsy-arrow,
+  &.left .tooltip-arrow,
   &.left .arrow
     +arrow_east(5px, $tipsy_bg)
-  &.right .twipsy-arrow,
+  &.right .tooltip-arrow,
   &.right .arrow
     +arrow_west(5px, $tipsy_bg)
 
 // Tool Tip specific
-.twipsy
+.tooltip
   @extend ._tipsies
   padding: 5px
   font-size: 12px
   font-weight: bold
-  .twipsy-inner
+  .tooltip-inner
     +border-radius(4px)
     background-color: $tipsy_bg
     color: $tipsy_color
@@ -46,7 +46,7 @@
 .popover
   @extend ._tipsies
   width: 280px
-  .inner
+  .popover-inner
     +border-radius(6px)
     +box-shadow(0px 4px 8px rgba(0, 0, 0, 0.4))
     background-color: $pop_bg
@@ -58,15 +58,15 @@
       border-bottom: 1px solid $pop_header_border
       padding: 10px 15px
       line-height: 1
-    .content
+    .popover-content
       +background-clip(padding-box)
       +border-radius(0 0 6px 6px)
       padding: 14px
 
-  &.above .arrow
+  &.top .arrow
     bottom: -5px
     border-top: 5px solid $pop_border
-  &.below .arrow
+  &.bottom .arrow
     top: -5px
     border-bottom: 5px solid $pop_border
   &.left .arrow

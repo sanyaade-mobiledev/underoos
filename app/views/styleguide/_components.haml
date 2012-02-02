@@ -72,17 +72,17 @@
   %p Modals utilize <a href="http://twitter.github.com/bootstrap/javascript.html#modal">Bootstrap's Modal plugin</a>. You can control various options of how modals are shown based on attributes set in the link. Adding <code>data-autoshow="true"</code> to the <code>modal</code> layer will show the modal on page load.
 .styleguide-threequarter.indent
   .styleguide-well
-    %button.btn.important(data-controls-modal="modal" data-backdrop="true" data-keyboard="true") Launch Modal
+    %button.btn.important(data-toggle="modal" href="#modal") Launch Modal
   %pre
     = preserve do
       :escaped
         <!-- Example Modal Layer and Button -->
-        %button(data-controls-modal="modal_name" data-backdrop="true" data-keyboard="true") Modal
+        %button(data-toggle="modal" href="#modal") Launch Modal
 
-        #modal_name.modal.fade
+        #modal_name.modal.fade(data-backdrop="true" data-keyboard="true")
           %section
             %p This is section content
-#modal.modal.fade
+#modal.modal.fade(data-backdrop="true" data-keyboard="true")
   %header
     %h3 This is an H3 title tag
     %a.close(href="#") x
@@ -97,24 +97,24 @@
 .styleguide-quarter
   %p Tool tips utilize <a href="http://twitter.github.com/bootstrap/javascript.html#twipsy">Bootstrap's Twipsy plugin</a>. You can control various options of how a tool tip is shown based on attributes set in the link.
 .styleguide-threequarter.indent
-  %table.zebra.thead-decorate(cellspacing="0")
+  %table.zebra.thead-decorate.tools(cellspacing="0")
     %thead
       %tr
         %th Position
         %th Markup
     %tbody
       %tr
-        %td <a href="#" rel="twipsy" data-placement="above" data-original-title="Above">Above</a>
-        %td <code>%a(rel="twipsy" data-placement="above" data-original-title="Above")</code>
+        %td <a href="#" rel="tooltip" data-placement="top" data-original-title="Top">Top</a>
+        %td <code>%a(rel="tooltip" data-placement="top" data-original-title="Top")</code>
       %tr
-        %td <a href="#" rel="twipsy" data-placement="below" data-original-title="Below">Below</a>
-        %td <code>%a(rel="twipsy" data-placement="below" data-original-title="Below")</code>
+        %td <a href="#" rel="tooltip" data-placement="bottom" data-original-title="Bottom">Bottom</a>
+        %td <code>%a(rel="tooltip" data-placement="bottom" data-original-title="Bottom")</code>
       %tr
-        %td <a href="#" rel="twipsy" data-placement="left" data-original-title="Left">Left</a>
-        %td <code>%a(rel="twipsy" data-placement="left" data-original-title="Left")</code>
+        %td <a href="#" rel="tooltip" data-placement="left" data-original-title="Left">Left</a>
+        %td <code>%a(rel="tooltip" data-placement="left" data-original-title="Left")</code>
       %tr
-        %td <a href="#" rel="twipsy" data-placement="right" data-original-title="Right" data-offset="10">Right</a>
-        %td <code>%a(rel="twipsy" data-placement="right" data-original-title="Right")</code>
+        %td <a href="#" rel="tooltip" data-placement="right" data-original-title="Right" data-offset="10">Right</a>
+        %td <code>%a(rel="tooltip" data-placement="right" data-original-title="Right")</code>
 .styleguide-clearfix
 
 .styleguide-h3 Pop Overs
@@ -128,16 +128,16 @@
         %th Markup
     %tbody
       %tr
-        %td <a href="#" rel="popover" data-placement="above" data-original-title="Above" data-content="This is a popover">Above</a>
-        %td <code>%a(rel="popover" data-placement="above" data-original-title="Above" data-content="This is a popover")</code>
+        %td <a href="#" rel="popover" data-placement="top" data-original-title="Top" data-content="This is a popover">Top</a>
+        %td <code>%a(rel="popover" data-placement="top" data-original-title="Top" data-content="This is a popover")</code>
       %tr
-        %td <a href="#" rel="popover" data-placement="below" data-original-title="Below" data-content="This is a popover">Below</a>
-        %td <code>%a(rel="popover" data-placement="below" data-original-title="Below" data-content="This is a popover")</code>
+        %td <a href="#" rel="popover" data-placement="bottom" data-original-title="Bottom" data-content="This is a popover">Bottom</a>
+        %td <code>%a(rel="popover" data-placement="bottom" data-original-title="Bottom" data-content="This is a popover")</code>
       %tr
-        %td <a href="#" rel="popover" data-placement="left" data-original-title="Left" data-content="This is a popover" data-offset="10">Left</a>
+        %td <a href="#" rel="popover" data-placement="left" data-original-title="Left" data-content="This is a popover">Left</a>
         %td <code>%a(rel="popover" data-placement="left" data-original-title="Left" data-content="This is a popover")</code>
       %tr
-        %td <a href="#" rel="popover" data-placement="right" data-original-title="Right" data-content="This is a popover" data-offset="10">Right</a>
+        %td <a href="#" rel="popover" data-placement="right" data-original-title="Right" data-content="This is a popover">Right</a>
         %td <code>%a(rel="popover" data-placement="right" data-original-title="Right" data-content="This is a popover")</code>
 .styleguide-clearfix
 
@@ -157,33 +157,33 @@
 .styleguide-threequarter.indent
   .styleguide-well
 
-    .inline-message.alert-message.fade.in(data-alert="alert")
+    .inline-message.alert-message.fade.in
       %p=@default_message
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .inline-message.notice.alert-message.fade.in(data-alert="alert")
+    .inline-message.notice.alert-message.fade.in
       %p=@notice_message
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .inline-message.important.alert-message.fade.in(data-alert="alert")
+    .inline-message.important.alert-message.fade.in
       %p=@important_message
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .inline-message.success.alert-message.fade.in(data-alert="alert")
+    .inline-message.success.alert-message.fade.in
       %p=@success_message
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .inline-message.warning.alert-message.fade.in(data-alert="alert")
+    .inline-message.warning.alert-message.fade.in
       %p=@warning_message
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .inline-message.alert.alert-message.fade.in(data-alert="alert")
+    .inline-message.alert.alert-message.fade.in
       %p=@alert_message
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .inline-message.error.alert-message.fade.in(data-alert="alert")
+    .inline-message.error.alert-message.fade.in
       %p=@error_message
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
 
 .styleguide-clearfix
 
@@ -196,68 +196,68 @@
   .styleguide-todo Change out the JavaScript to use a more natural close state.
 .styleguide-threequarter.indent
   .styleguide-well
-    .block-message.alert-message.fade.in(data-alert="alert")
+    .block-message.alert-message.fade.in
       %header
         %h3 Standard Message
       %section
         %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .block-message.notice.alert-message.fade.in(data-alert="alert")
+    .block-message.notice.alert-message.fade.in
       %header
         %h3 Notice Message
       %section
         %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .block-message.success.alert-message.fade.in(data-alert="alert")
+    .block-message.success.alert-message.fade.in
       %header
         %h3 Success Message
       %section
         %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .block-message.important.alert-message.fade.in(data-alert="alert")
+    .block-message.important.alert-message.fade.in
       %header
         %h3 Important Message
       %section
         %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .block-message.warning.alert-message.fade.in(data-alert="alert")
+    .block-message.warning.alert-message.fade.in
       %header
         %h3 Warning Message
       %section
         %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .block-message.alert.alert-message.fade.in(data-alert="alert")
+    .block-message.alert.alert-message.fade.in
       %header
         %h3 Alert Message
       %section
         %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
     %br
-    .block-message.error.alert-message.fade.in(data-alert="alert")
+    .block-message.error.alert-message.fade.in
       %header
         %h3 Error Message
       %section
         %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
-      %a.close(href="#") x
+      %a.close(href="#" data-dismiss="alert") &times;
 
 .styleguide-clearfix
 

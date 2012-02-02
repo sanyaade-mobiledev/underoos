@@ -1,12 +1,17 @@
 
-//= require vendor/jquery-1.7.min
-//= require vendor/bootstrap-alerts
-//= require vendor/bootstrap-modal
-//= require vendor/bootstrap-scrollspy
-//= require vendor/bootstrap-twipsy
-//= require vendor/bootstrap-popover
-//= require vendor/prettify
+/* VENDOR ASSETS */
+//= require jquery-1.7.1.min
+//= require bootstrap-transition
+//= require bootstrap-scrollspy
+//= require bootstrap-dropdown
+//= require bootstrap-button
+//= require bootstrap-tooltip
+//= require bootstrap-popover
+//= require bootstrap-modal
+//= require bootstrap-alert
 
-//= require_tree ./templates
-//= require components/click_over
+
+/* APPLICATION ASSETS */
+// require_tree ./templates
+// require components/click_over
 
