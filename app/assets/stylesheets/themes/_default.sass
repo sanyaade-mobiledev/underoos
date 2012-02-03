@@ -5,13 +5,11 @@ $base_font_size: 14
 $base_width: 992
 
 // fonts
-/* ----------------------------------------------------------------------------
 $sans_norm: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 $serif_norm: Georgia, Times, "Times New Roman", serif
 $code_norm: "Bitstream Vera Sans Mono", "Menslo LG M", "Menlo", "Monaco", monospace
 
 // colors
-/* ----------------------------------------------------------------------------
 $black: #000
 $grey1: #111
 $grey2: #222
@@ -39,30 +37,32 @@ $blue: #268bd2
 $indigo: #4b0082
 $violet: #ee82ee
 
-$standard: $greyA
-$notice: $grey4
+$standard: #f5f5f5
+$info: $grey9
 $important: $blue
 $success: $green
 $warning: $yellow
 $alert: $orange
 $error: $red
-$danger: $error
+$danger: $red
+
+$primary: $blue
 
 $border_std: 1px solid $grey6
 $border_dot: 1px dotted $grey6
 $border_dash: 1px dashed $grey6
 
-$focus_shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.8)
-$focus_error_shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(178, 34, 34, 0.8)
+$focus_shadow_exterior: 0 0 8px rgba(82, 168, 236, 0.8)
+$focus_shadow: inset 0 1px 3px rgba($black, 0.1), 0 0 8px rgba(82, 168, 236, 0.8)
+$focus_error_shadow: inset 0 1px 3px rgba($black, 0.1), 0 0 8px rgba(178, 34, 34, 0.8)
 $focus_border: rgba(82, 168, 236, 0.8)
-$text_shadow: 0 1px 1px rgba(255, 255, 255, 0.5)
+$text_shadow: 0 1px 1px rgba($white, 0.5)
 
 $disabled_color: $greyB
 $disabled_bg: $greyE
 $disabled_border: $greyC
 
 // grid mixin
-/* ----------------------------------------------------------------------------
 // Settings for desktop/tablet portrait
 // Setting for other devices are stored in their individual "queries file"
 $page-width: 992px
@@ -77,10 +77,9 @@ $total-width: $_gridsystem-width
 // @include grid-settings(984px, 70px, 12px, 12);
 
 // base.scss
-/* ----------------------------------------------------------------------------
 $body_bg_color: $white
 $body_bg: $white
-$body_color: $grey2
+$body_color: $grey3
 
 $select_bg: $blue
 $select_color: $white
@@ -94,8 +93,7 @@ $link_highlight: $blue
 $tap_highlight: $blue
 
 // typography.scss
-/* ----------------------------------------------------------------------------
-$header_color: $grey2
+$header_color: $grey3
 $mark_bg: $yellow
 $code_border: #eaeaea
 $code_bg: #f8f8f8
@@ -103,18 +101,16 @@ $pre_border: #ccc
 $pre_bg: #f8f8f8
 
 // elements.scss
-/* ----------------------------------------------------------------------------
 // @see mixins/_buttons.scss
-$btn_bg: $greyD
-$btn_gradient: $white, $white 25%, $greyD
-$btn_color: $grey6
+// $btn_bg: $greyD
+// $btn_gradient: $white, $white 25%, $greyD
+// $btn_color: $grey6
 
-$action_bg: $greyD
-$action_color: $grey6
+// $action_bg: $greyD
+// $action_color: $grey6
 
 
 // tables.scss
-/* ----------------------------------------------------------------------------
 $table_bg: transparent
 $table_primary_color: $grey2
 $thead_border: $greyA
@@ -130,7 +126,6 @@ $thead_bg: $greyC
 $tfoot_bg: $greyC
 
 // forms.scss
-/* ----------------------------------------------------------------------------
 $fieldset_border: $border_dot
 $form_hr: $border_dot
 $hint_color: $grey6
@@ -141,14 +136,13 @@ $placeholder: $greyB
 $input_color: $grey3
 $input_bg: $white
 $input_border: $greyA
-$input_shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 0px rgba(255, 255, 255, 0.4)
+$input_shadow: inset 0 1px 2px rgba($black, 0.2), 0 1px 0px rgba($white, 0.4)
 $input_file_bg: $white
 
 $input_focus_color: $black
 $input_focus_bg: $greyE
 
 // components/*.scss
-/* ----------------------------------------------------------------------------
 $breadcrumb_color: $grey6
 $breadcrumb_normal: $grey6
 $breadcrumb_hover: $blue
@@ -198,5 +192,4 @@ $messaging_color: $white
 // TODO: Define Modals
 
 // layouts/*.scss
-/* ----------------------------------------------------------------------------
 

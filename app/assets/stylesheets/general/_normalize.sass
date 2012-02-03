@@ -42,7 +42,6 @@ time, mark, audio, video
 
 // Embedded content normalization
 img
-  max-width: 100%
   -ms-interpolation-mode: bicubic
 
 svg:not(:root)
@@ -87,6 +86,10 @@ input[type="submit"]
   *overflow: visible
   *height: 13px
   *width: 13px
+
+button[disabled],
+input[disabled]
+  cursor: default
 
 input[type="checkbox"],
 input[type="radio"]

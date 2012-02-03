@@ -1,43 +1,13 @@
 
-// Not Supported in all Browsers
-meter, progress
-  padding: 10px 0
-
-// Flags and Stickers
-.flag, .sticker
-  +border-radius(4px)
-  background-color: $standard
-  color: $white
-  &.notice
-    background-color: $notice
-  &.success
-    background-color: $success
-  &.important
-    background-color: $important
-  &.warning
-    background-color: $warning
-  &.alert
-    background-color: $alert
-  &.error
-    background-color: $error
-
-.flag
-  font-size: 85%
-  font-weight: bold
-  padding: 2px 4px
-  text-transform: uppercase
-
-.sticker
-  +inline-block
-  padding: 6px 8px
+// Allow images to be fluid
+img
+  max-width: 100%
 
 // Buttons
 .btn
-  +btn-button($btn_bg, $btn_gradient, $btn_color)
-  &.standard
-    +btn-override($standard, $white)
-  &.notice
-    +btn-override($notice, $white)
+  +btn-button($standard, $grey6)
+  &.info
+    +btn-override($info, $white)
   &.important
     +btn-override($important, $white)
   &.success
@@ -48,24 +18,14 @@ meter, progress
     +btn-override($alert, $white)
   &.danger
     +btn-override($danger, $white)
+  &.primary
+    +btn-override($primary, $white)
 
+// Fix standard links to closer resemble `button` elements
 a.btn
   font-weight: bold
 
-.action
-  +action-button($action_bg, $action_color)
-  &.standard
-    +action-override($standard, $white)
-  &.notice
-    +action-override($notice, $white)
-  &.important
-    +action-override($important, $white)
-  &.success
-    +action-override($success, $white)
-  &.warning
-    +action-override($warning, $white)
-  &.alert
-    +action-override($alert, $white)
-  &.danger
-    +action-override($danger, $white)
+// Not Supported in all Browsers
+meter, progress
+  padding: 0.625em 0
 

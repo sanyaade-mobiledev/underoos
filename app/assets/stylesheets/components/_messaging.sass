@@ -17,6 +17,7 @@
   font-size: 14px
   padding: 10px
   position: relative
+  margin: 1em 0
   &.fade
     +transition(opacity 0.25s)
     +opacity(0)
@@ -30,29 +31,31 @@
   @extend ._abstract-message
   +background-border-color($standard)
   +border-radius(6px)
-  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255,255,255,0.5))
-  color: $messaging_color
+  +box-shadow(0px 2px 4px rgba(#000,0.5), inset 0 1px 1px rgba(#fff,0.5))
   font-weight: bold
   text-shadow: 0 -1px 0 rgba(0,0,0,0.25)
   &:first-letter
     text-transform: capitalize
-  &.notice
-    +background-border-color($notice)
-  &.success
-    +background-border-color($success)
+  &.info, &.important, &.success, &.warning,
+  &.alert, &.danger
+    color: $messaging_color
+  &.info
+    +background-border-color($info)
   &.important
     +background-border-color($important)
+  &.success
+    +background-border-color($success)
   &.warning
     +background-border-color($warning)
   &.alert
     +background-border-color($alert)
-  &.error
+  &.danger
     +background-border-color($danger)
 
 // Block Level Messages
 .block-message
   @extend ._abstract-message
-  +background-border-color(lighten($standard, 20%))
+  +background-border-color(lighten($standard, 1%))
   +border-radius(4px)
   color: $grey3
   text-shadow: 0 1px 0 rgba(255,255,255,.5)
@@ -62,59 +65,59 @@
       color: $grey3
   footer
     margin-top: 20px
-  &.notice
-    +background-border-color(lighten($notice, 40%))
-  &.success
-    +background-border-color(lighten($success, 40%))
+  &.info
+    +background-border-color(lighten($info, 1%))
   &.important
     +background-border-color(lighten($important, 40%))
+  &.success
+    +background-border-color(lighten($success, 40%))
   &.warning
     +background-border-color(lighten($warning, 40%))
   &.alert
     +background-border-color(lighten($alert, 40%))
-  &.error
+  &.danger
     +background-border-color(lighten($danger, 40%))
 
 
 
 // Flash messages
-div#flash_messages .message
-  +darken-gradient($standard)
-  +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(0,0,0,0.8))
-  +transition(all 0.25s $ease-in-quad)
-  @extend ._abstract-message
-  position: fixed
-  overflow: visible
-  padding: 10px 0 10px 50px
-  top: -100px
-  left: 0
-  right: 0
-  z-index: 1000
+// div#flash_messages .message
+  // +darken-gradient($standard)
+  // +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(0,0,0,0.8))
+  // +transition(all 0.25s $ease-in-quad)
+  // @extend ._abstract-message
+  // position: fixed
+  // overflow: visible
+  // padding: 10px 0 10px 50px
+  // top: -100px
+  // left: 0
+  // right: 0
+  // z-index: 1000
 
-  &:hover
-    background-position: 0 -15px
-  &.show
-    +transition(all 0.25s $ease-out-quad)
-    top: 0px
-  &.notice
-    +darken-gradient($notice)
-  &.important
-    +darken-gradient($important)
-  &.success
-    +darken-gradient($success)
-  &.warning
-    +darken-gradient($warning)
-  &.alert
-    +darken-gradient($alert)
-  &.error
-    +darken-gradient($error)
+  // &:hover
+    // background-position: 0 -15px
+  // &.show
+    // +transition(all 0.25s $ease-out-quad)
+    // top: 0px
+  // &.info
+    // +darken-gradient($info)
+  // &.important
+    // +darken-gradient($important)
+  // &.success
+    // +darken-gradient($success)
+  // &.warning
+    // +darken-gradient($warning)
+  // &.alert
+    // +darken-gradient($alert)
+  // &.error
+    // +darken-gradient($error)
 
-  &.notice, &.important, &.success, &.warning, &.alert, &.error
-    &:hover
-      background-position: 0 -15px
+  // &.info, &.important, &.success, &.warning, &.alert, &.error
+    // &:hover
+      // background-position: 0 -15px
 
-div#flash_messages .message-content
-  margin-right: 50px
-  &:after
-    +_closer
+// div#flash_messages .message-content
+  // margin-right: 50px
+  // &:after
+    // +_closer
 

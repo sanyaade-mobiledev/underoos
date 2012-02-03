@@ -6,9 +6,8 @@ nav.breadcrumb
     display: inline
     &:after
       content: " /"
-    &:last-child
-      &:after
-        content: ""
+    &:last-child:after
+      content: ""
   li a
     +link-colors($breadcrumb_normal, $breadcrumb_hover, $breadcrumb_active, $breadcrumb_visited, $breadcrumb_focus)
 

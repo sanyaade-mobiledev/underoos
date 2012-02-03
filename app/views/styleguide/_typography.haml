@@ -1,21 +1,21 @@
 
 .styleguide-h3 Heading Styles
-%h1 Google hearts h1 headings, but only use one per page
+%h1 Google hearts h1 headings, but only use one per page.
 %p=@lorem
 %br
-%h2 Got sections? Try using h2 headings
+%h2 Got sections? Try using h2 headings.
 %p=@lorem
 %br
-%h3 Good things come in threes, like tacos and h3 headings
+%h3 Good things come in threes, like tacos and h3 headings.
 %p=@lorem
 %br
-%h4 There's nothing clever to say about h4 headings
+%h4 There's nothing clever to say about h4 headings.
 %p=@lorem
 %br
 %h5 Every time you use an h5 heading, Google kills a puppy. A tiny little puppy.
 %p=@lorem
 %br
-%h6 Really an h6 heading? Google just killed a kitten now too.
+%h6 Google just killed a kitten now too since you used an h6 heading.
 %p=@lorem
 
 
@@ -31,7 +31,7 @@
 %p The <sub>sub tag</sub> is just plain weird, but that's what makes it a unique beautiful butterfly.
 %p This is an inline anchor tag so <a href='http://www.google.com/'>click here</a>!
 %p
-  %small The small tag renders text smaller.
+  %small The small tag renders text well, smaller.
 %p
   %big The big tag renders text bigger (tag is being deprecated).
 %p <abbr title="For Placement Only">FPO</abbr>. The abbr tag describes an abbreviated phrase.
@@ -42,8 +42,8 @@
 %p
   %del The del tag defines text that has been deleted from a document.
 %p
-  %mark The mark tag is used for indicating text as marked or highlighted for reference purposes, due to its relevance in another context.
-%p What time is it? <time>9:00</time> (the <code>time</code> tag might not make it into the standards)
+  %mark The mark tag is used for indicating text as marked or highlighted for reference purposes.
+%p What time is it? <time>1:00am</time>
 %br
 %figure
   %p The figure tag is used for annotating illustrations, diagrams, photos, code listings, etc.
@@ -56,20 +56,46 @@
   %br
   Washington D.C. DC 20500
 %br
+.styleguide-half
+  %blockquote
+    %q Let me tell you what Melba Toast is packin' right here, all right. We got 4:11 Positrac outback, 750 double pumper, Edelbrock intake, bored over 30, 11 to 1 pop-up pistons, turbo-jet 390 horsepower. We're talkin' some f***in' muscle.
+    %cite David Wooderson
+.styleguide-clearfix
+
+%cite A <code>cite</code> outside a block quote
+
+%br
 %details
   %summary Click to Expand A Summary
   %p The summary tag can be clicked on to expand/collapse the details as required. The summary tag, should be the first child of the details tag. The details tag specifies additional details that the user can view or hide on demand.
-%blockquote
-  %q Let me tell you what Melba Toast is packin' right here, all right. We got 4:11 Positrac outback, 750 double pumper, Edelbrock intake, bored over 30, 11 to 1 pop-up pistons, turbo-jet 390 horsepower. We're talkin' some f***in' muscle.
-  %cite David Wooderson
-
-%cite Citation outside a block quote
-
 
 .styleguide-h3 Dividers/ Horizontal Rules
 %hr
 %hr.dotted
 %hr.dashed
+
+.styleguide-h3 Code Styles
+.styleguide-half
+  %p The <code>code</code> tag is used to show inline code
+  %p The <kbd>kbd</kbd> tag defines keyboard text
+  %p The <samp>samp</samp> tag defines sample computer code
+  %pre
+    = preserve do
+      :escaped
+        # The pre tag
+        git add .
+        git commit -m "Updated heading styles"
+        git push
+        git pull --rebase
+  %pre.prettyprint
+    = preserve do
+      :escaped
+        <!-- %pre.prettyprint -->
+        <header>
+          <h1>Heading</h1>
+          <p>Some Copy...</p>
+        </header>
+.styleguide-clearfix
 
 
 .styleguide-h3 List Styles
@@ -103,7 +129,22 @@
       %li Nested ordered list
       %li Nested ordered list
       %li Nested ordered list
-.styleguide-half
+.styleguide-quarter
+  %p
+    %strong Unstyled List:
+  %ul.unstyled
+    %li Unordered list
+    %li Unordered list
+    %ul
+      %li Nested unordered list
+      %li Nested unordered list
+      %li Nested unordered list
+    %li Unordered list
+    %ol
+      %li Nested ordered list
+      %li Nested ordered list
+      %li Nested ordered list
+.styleguide-quarter
   %p
     %strong Definition List:
   %dl
@@ -115,27 +156,4 @@
     %dd Definition Description #{@lorem_dd}
 .styleguide-clearfix
 
-
-.styleguide-h3 Code Styles
-.styleguide-half
-  %p The <code>code</code> tag is used to show inline code
-  %p The <kbd>kbd</kbd> tag defines keyboard text
-  %p The <samp>samp</samp> tag defines sample computer code
-  %pre
-    = preserve do
-      :escaped
-        # The pre tag
-        git add .
-        git commit -m "Updated heading styles"
-        git push
-        git pull --rebase
-  %pre.prettyprint
-    = preserve do
-      :escaped
-        <!-- %pre.prettyprint -->
-        <header>
-          <h1>Heading</h1>
-          <p>Some Copy...</p>
-        </header>
-.styleguide-clearfix
 

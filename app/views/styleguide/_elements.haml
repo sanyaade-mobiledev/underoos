@@ -1,157 +1,120 @@
 
-.styleguide-h3 Flags
+.styleguide-h3 Decal
 .styleguide-quarter
-  %p Flags are used to <span class="flag important">pop</span> information in a <code>block</code> of text, they are generally used with <code>inline</code> elements.
+  %p Decals are used to <span class="decal important">pop</span> information in a <code>block</code> of text, they are generally used with <code>inline</code> elements. It's best to wrap them in <code>span</code> tags.
 .styleguide-threequarter.indent
-  %table.zebra.thead-decorate(cellspacing="0")
+  %table.thead-decorate.box(cellspacing="0")
     %thead
       %tr
-        %th Flag
-        %th Markup
+        %th Decal
+        %th Class
+        %th Description
     %tbody
       %tr
-        %td <span class="flag">Default</span>
-        %td <code>%span.flag Default</code>
+        %td <span class="decal">Default</span>
+        %td <code>.decal</code>
+        %td Describe this guy
       %tr
-        %td <span class="flag notice">Notice</span>
-        %td <code>%span.flag.notice Notice</code>
+        %td <span class="decal info">Info</span>
+        %td <code>.decal.info</code>
+        %td Describe this guy
       %tr
-        %td <span class="flag important">Important</span>
-        %td <code>%span.flag.important Important</code>
+        %td <span class="decal important">Important</span>
+        %td <code>.decal.important</code>
+        %td Describe this guy
       %tr
-        %td <span class="flag success">Success</span>
-        %td <code>%span.flag.success Success</code>
+        %td <span class="decal success">Success</span>
+        %td <code>.decal.success</code>
+        %td Describe this guy
       %tr
-        %td <span class="flag warning">Warning</span>
-        %td <code>%span.flag.warning Warning</code>
+        %td <span class="decal warning">Warning</span>
+        %td <code>.decal.warning</code>
+        %td Describe this guy
       %tr
-        %td <span class="flag alert">Alert</span>
-        %td <code>%span.flag.alert Alert</code>
+        %td <span class="decal alert">Alert</span>
+        %td <code>.decal.alert</code>
+        %td Describe this guy
       %tr
-        %td <span class="flag error">Error</span>
-        %td <code>%span.flag.error Error</code>
+        %td <span class="decal danger">Danger</span>
+        %td <code>.decal.danger</code>
+        %td Describe this guy
+      %tr
+        %td <span class="decal primary">Primary</span>
+        %td <code>.decal.primary</code>
+        %td Describe this guy
 .styleguide-clearfix
-
-.styleguide-h3 Stickers
-.styleguide-quarter
-  %p Stickers are similar to flags, except they are generally wrapped around <code>block</code> or <code>inline-block</code> level elements such as <code>headings</code>. Stickers add <code>display: inline-block</code> to their elements.
-.styleguide-threequarter.indent
-  %table.zebra.thead-decorate(cellspacing="0")
-    %thead
-      %tr
-        %th Sticker
-        %th Markup
-    %tbody
-      %tr
-        %td <h4 class="sticker">Standard</h4>
-        %td <code>%h4.sticker Standard</code>
-      %tr
-        %td <h4 class="sticker notice">Notice</h4>
-        %td <code>%h4.sticker.notice Notice</code>
-      %tr
-        %td <h4 class="sticker important">Important</h4>
-        %td <code>%h4.sticker.important Important</code>
-      %tr
-        %td <h4 class="sticker success">Success</h4>
-        %td <code>%h4.sticker.success Success</code>
-      %tr
-        %td <h4 class="sticker warning">Warning</h4>
-        %td <code>%h4.sticker.warning Warning</code>
-      %tr
-        %td <h4 class="sticker alert">Alert</h4>
-        %td <code>%h4.sticker.alert Alert</code>
-      %tr
-        %td <h4 class="sticker error">Error</h4>
-        %td <code>%h4.sticker.error Error</code>
-.styleguide-clearfix
-
 
 .styleguide-h3 Buttons
 .styleguide-quarter
-  %h3 Standard Buttons
-  %p The <code>.btn</code> style can be applied to <code>a</code>, <code>button</code>, and select <code>input</code> tags. To colorize a <code>.btn</code> style you can add the following classes:
+  %p.styleguide-todo Add a description about buttons.
   %br
-  %p <code>.standard</code>, <code>.notice</code>, <code>.important</code>, <code>.success</code>, <code>.warning</code>, <code>.alert</code>, <code>.danger</code>
-.styleguide-threequarter.indent
-  .styleguide-well
+  %p links render different
+  .well
     %button.btn(href="#") Button
-    %button.btn.error(href="#") Button Error
-    %button.btn(href="#" disabled) Button Disabled
     %a.btn(href="#") Link
-    %a.btn.error(href="#") Link Error
-    %a.btn.disabled(href="#") Link Disabled
-    %br
-    %br
-    %button.btn.standard(href="#") Standard
-    %button.btn.notice(href="#") Notice
-    %button.btn.important(href="#") Important
-    %button.btn.success(href="#") Success
-    %button.btn.warning(href="#") Warning
-    %button.btn.alert(href="#") Alert
-    %button.btn.danger(href="#") Danger
-    -# %br
-    -# %br
-    -# %button.btn.standard(href="#" disabled) Standard
-    -# %button.btn.notice(href="#" disabled) Notice
-    -# %button.btn.important(href="#" disabled) Important
-    -# %button.btn.success(href="#" disabled) Success
-    -# %button.btn.warning(href="#" disabled) Warning
-    -# %button.btn.alert(href="#" disabled) Alert
-    -# %button.btn.danger(href="#" disabled) Danger
-    -# %br
-    -# %br
-    -# %button.btn.error.standard(href="#") Standard
-    -# %button.btn.error.notice(href="#") Notice
-    -# %button.btn.error.important(href="#") Important
-    -# %button.btn.error.success(href="#") Success
-    -# %button.btn.error.warning(href="#") Warning
-    -# %button.btn.error.alert(href="#") Alert
-    -# %button.btn.error.danger(href="#") Danger
-.styleguide-clearfix
-%br
-%br
-
-.styleguide-quarter
-  %h3 Action Buttons
-  %p The <code>.action</code> style can be applied to <code>a</code>, <code>button</code>, and select <code>input</code> tags. To colorize an <code>.action</code> style you can add the following classes:
-  %br
-  %p <code>.standard</code>, <code>.notice</code>, <code>.important</code>, <code>.success</code>, <code>.warning</code>, <code>.alert</code>, <code>.danger</code>
+    %button.btn.primary(href="#") Button
+    %a.btn.primary(href="#") Link
+  %p disabled states
+  .well
+    %button.btn(href="#" disabled) Button
+    %a.btn.disabled(href="#") Link
+    %button.btn.primary(href="#" disabled) Button
+    %a.btn.primary.disabled(href="#") Link
+  %p error states
+  .well
+    %button.btn.error(href="#") Button
+    %a.btn.error(href="#") Link
+    %button.btn.primary.error(href="#") Button
+    %a.btn.primary.error(href="#") Link
+  %p sizing
+  .well
+    %button.btn.small(href="#") Small
+    %button.btn.large(href="#") Large
+    %button.btn.primary.small(href="#") Small
+    %button.btn.primary.large(href="#") Large
 .styleguide-threequarter.indent
-  .styleguide-well
-    %button.action(href="#") Button
-    %button.action.error(href="#") Button Error
-    %button.action(href="#" disabled) Button Disabled
-    %a.action(href="#") Link
-    %a.action.error(href="#") Link Error
-    %a.action.disabled(href="#") Link Disabled
-    %br
-    %br
-    %button.action.standard(href="#") Standard
-    %button.action.notice(href="#") Notice
-    %button.action.important(href="#") Important
-    %button.action.success(href="#") Success
-    %button.action.warning(href="#") Warning
-    %button.action.alert(href="#") Alert
-    %button.action.danger(href="#") Danger
-    -# %br
-    -# %br
-    -# %button.action.standard(href="#" disabled) Standard
-    -# %button.action.notice(href="#" disabled) Notice
-    -# %button.action.important(href="#" disabled) Important
-    -# %button.action.success(href="#" disabled) Success
-    -# %button.action.warning(href="#" disabled) Warning
-    -# %button.action.alert(href="#" disabled) Alert
-    -# %button.action.danger(href="#" disabled) Danger
-    -# %br
-    -# %br
-    -# %button.action.error.standard(href="#") Standard
-    -# %button.action.error.notice(href="#") Notice
-    -# %button.action.error.important(href="#") Important
-    -# %button.action.error.success(href="#") Success
-    -# %button.action.error.warning(href="#") Warning
-    -# %button.action.error.alert(href="#") Alert
-    -# %button.action.error.danger(href="#") Danger
+  %table.thead-decorate.box
+    %thead
+      %tr
+        %th Button
+        %th Class
+        %th Description
+    %tbody
+      %tr
+        %td <button class="btn">Default</button>
+        %td <code>.btn</code>
+        %td The default button
+      %tr
+        %td <button class="btn info">Info</button>
+        %td <code>.btn.info</code>
+        %td The info button
+      %tr
+        %td <button class="btn important">Important</button>
+        %td <code>.btn.important</code>
+        %td The important button
+      %tr
+        %td <button class="btn success">Success</button>
+        %td <code>.btn.success</code>
+        %td The success button
+      %tr
+        %td <button class="btn warning">Warning</button>
+        %td <code>.btn.warning</code>
+        %td The warning button
+      %tr
+        %td <button class="btn alert">Alert</button>
+        %td <code>.btn.alert</code>
+        %td The alert button
+      %tr
+        %td <button class="btn danger">Danger</button>
+        %td <code>.btn.danger</code>
+        %td The danger button
+      %tr
+        %td <button class="btn primary">Primary</button>
+        %td <code>.btn.primary</code>
+        %td The primary button
 .styleguide-clearfix
+
+
 
 .styleguide-h3 Images
 .styleguide-quarter

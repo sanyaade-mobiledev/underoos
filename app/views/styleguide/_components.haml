@@ -155,33 +155,26 @@
   %br
   .styleguide-todo Change out the JavaScript to use a more natural close state.
 .styleguide-threequarter.indent
-  .styleguide-well
-
-    .inline-message.alert-message.fade.in
+  .well
+    .inline-message.fade.in
       %p=@default_message
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .inline-message.notice.alert-message.fade.in
+    .inline-message.info.fade.in
       %p=@notice_message
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .inline-message.important.alert-message.fade.in
+    .inline-message.important.fade.in
       %p=@important_message
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .inline-message.success.alert-message.fade.in
+    .inline-message.success.fade.in
       %p=@success_message
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .inline-message.warning.alert-message.fade.in
+    .inline-message.warning.fade.in
       %p=@warning_message
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .inline-message.alert.alert-message.fade.in
+    .inline-message.alert.fade.in
       %p=@alert_message
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .inline-message.error.alert-message.fade.in
+    .inline-message.danger.fade.in
       %p=@error_message
       %a.close(href="#" data-dismiss="alert") &times;
 
@@ -195,35 +188,24 @@
   %br
   .styleguide-todo Change out the JavaScript to use a more natural close state.
 .styleguide-threequarter.indent
-  .styleguide-well
-    .block-message.alert-message.fade.in
+  .well
+    .block-message.fade.in
       %header
-        %h3 Standard Message
+        %h3 Default Message
       %section
         %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .block-message.notice.alert-message.fade.in
+    .block-message.info.fade.in
       %header
-        %h3 Notice Message
+        %h3 Info Message
       %section
         %p=@lorem_sm
       %footer
         %button.btn(href="#") Button
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .block-message.success.alert-message.fade.in
-      %header
-        %h3 Success Message
-      %section
-        %p=@lorem_sm
-      %footer
-        %button.btn(href="#") Button
-      %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .block-message.important.alert-message.fade.in
+    .block-message.important.fade.in
       %header
         %h3 Important Message
       %section
@@ -231,8 +213,15 @@
       %footer
         %button.btn(href="#") Button
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .block-message.warning.alert-message.fade.in
+    .block-message.success.fade.in
+      %header
+        %h3 Success Message
+      %section
+        %p=@lorem_sm
+      %footer
+        %button.btn(href="#") Button
+      %a.close(href="#" data-dismiss="alert") &times;
+    .block-message.warning.fade.in
       %header
         %h3 Warning Message
       %section
@@ -240,8 +229,7 @@
       %footer
         %button.btn(href="#") Button
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .block-message.alert.alert-message.fade.in
+    .block-message.alert.fade.in
       %header
         %h3 Alert Message
       %section
@@ -249,10 +237,9 @@
       %footer
         %button.btn(href="#") Button
       %a.close(href="#" data-dismiss="alert") &times;
-    %br
-    .block-message.error.alert-message.fade.in
+    .block-message.danger.fade.in
       %header
-        %h3 Error Message
+        %h3 Danger Message
       %section
         %p=@lorem_sm
       %footer
