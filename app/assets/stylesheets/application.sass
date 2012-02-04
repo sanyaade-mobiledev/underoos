@@ -4,6 +4,9 @@
 // grab the theme for this stylesheet
 @import themes/default
 
+// normalize all resets
+@import general/normalize
+
 // get the mixins
 @import mixins/sizing
 @import mixins/clearfixins
@@ -14,11 +17,11 @@
 @import mixins/arrows
 @import mixins/button-btn
 
-// helpers setup for `@extends`
+// helpers
 @import helpers/utilities
+@import helpers/transitions
 
-// base settings, resets
-@import general/normalize
+// base settings
 @import general/base
 @import general/typography
 @import general/lists
@@ -27,7 +30,8 @@
 @import general/forms
 
 // components
-@import components/messaging
+@import components/close
+@import components/notifications
 @import components/decals
 @import components/pagination
 @import components/breadcrumbs

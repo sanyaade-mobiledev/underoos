@@ -1,0 +1,128 @@
+
+.base-notification
+  +border-radius(6px)
+  +background-darken-border($standard)
+  position: relative
+  padding: .75em
+  margin: 1em 0
+  header, footer, p
+    padding-right: 1.2em
+  header
+    margin-bottom: 0.25em
+  footer
+    margin-top: 1.25em
+    &.footer-right
+      text-align: right
+  .close
+    position: absolute
+    top: 7px
+    right: 10px
+
+// Main notification message
+.notification
+  @extend .base-notification
+  text-shadow: 0 1px 0 rgba(#fff,0.5)
+  &.info
+    +background-darken-border(lighten($info, 20%))
+  &.important
+    +background-darken-border(lighten($important, 40%))
+    color: $important
+    h1,h2,h3,h4,h5,h6
+      color: $important
+  &.success
+    +background-darken-border(lighten($success, 40%))
+    color: $success
+    h1,h2,h3,h4,h5,h6
+      color: $success
+  &.warning
+    +background-darken-border(lighten($warning, 30%))
+    color: darken($warning, 15%)
+    h1,h2,h3,h4,h5,h6
+      color: darken($warning, 15%)
+  &.alert
+    +background-darken-border(lighten($alert, 20%))
+    color: darken($alert, 10%)
+    h1,h2,h3,h4,h5,h6
+      color: darken($alert, 10%)
+  &.danger
+    +background-darken-border(lighten($danger, 40%))
+    color: $danger
+    h1,h2,h3,h4,h5,h6
+      color: $danger
+  &.primary
+    +background-darken-border(lighten($primary_ci, 40%))
+    color: $primary_ci
+    h1,h2,h3,h4,h5,h6
+      color: $primary_ci
+
+// Pop Messages
+.pop-notification
+  @extend .base-notification
+  +box-shadow(0px 2px 4px rgba(#000,0.5), inset 0 1px 4px rgba(#fff,0.7))
+  color: $grey6
+  font-weight: bold
+  text-shadow: 0 -1px 0 rgba(#fff, 0.75)
+  &.info, &.important, &.success, &.warning, &.alert, &.danger, &.primary
+    color: $white
+    text-shadow: 0 -1px 0 rgba(#000, 0.25)
+  &.info
+    +background-darken-border($info)
+  &.important
+    +background-darken-border($important)
+  &.success
+    +background-darken-border($success)
+  &.warning
+    +background-darken-border($warning)
+  &.alert
+    +background-darken-border($alert)
+  &.danger
+    +background-darken-border($danger)
+  &.primary
+    +background-darken-border($primary_ci)
+
+
+
+
+
+
+// Flash messages
+// div#flash_messages .message
+  // +darken-gradient($standard)
+  // +box-shadow(0px 1px 4px rgba(0, 0, 0, 0.5), inset 0 -1px 0 rgba(0,0,0,0.8))
+  // +transition(all 0.25s $ease-in-quad)
+  // @extend ._abstract-message
+  // position: fixed
+  // overflow: visible
+  // padding: 10px 0 10px 50px
+  // top: -100px
+  // left: 0
+  // right: 0
+  // z-index: 1000
+
+  // &:hover
+    // background-position: 0 -15px
+  // &.show
+    // +transition(all 0.25s $ease-out-quad)
+    // top: 0px
+  // &.info
+    // +darken-gradient($info)
+  // &.important
+    // +darken-gradient($important)
+  // &.success
+    // +darken-gradient($success)
+  // &.warning
+    // +darken-gradient($warning)
+  // &.alert
+    // +darken-gradient($alert)
+  // &.error
+    // +darken-gradient($error)
+
+  // &.info, &.important, &.success, &.warning, &.alert, &.error
+    // &:hover
+      // background-position: 0 -15px
+
+// div#flash_messages .message-content
+  // margin-right: 50px
+  // &:after
+    // +_closer
+

@@ -85,7 +85,7 @@
 #modal.modal.fade(data-backdrop="true" data-keyboard="true")
   %header
     %h3 This is an H3 title tag
-    %a.close(href="#") x
+    %a.close(href="#") &times;
   %section
     %p This is section content
   %footer
@@ -141,110 +141,11 @@
         %td <code>%a(rel="popover" data-placement="right" data-original-title="Right" data-content="This is a popover")</code>
 .styleguide-clearfix
 
+= haml(:"/styleguide/partials/_notifications", :layout => false)
+
 .styleguide-h3 Flash Messaging
 .styleguide-quarter
   .styleguide-todo Add in Flash messaging
 .styleguide-threequarter.indent
-.styleguide-clearfix
-
-.styleguide-h3 Inline Messaging
-.styleguide-quarter
-  %p Inline messages are generally displayed near the element they are related to (forms, buttons). They follow the same color pattern as flash messages.
-  %br
-  %p When inline messages are closed, they fade out and are then removed from the DOM.
-  %br
-  .styleguide-todo Change out the JavaScript to use a more natural close state.
-.styleguide-threequarter.indent
-  .well
-    .inline-message.fade.in
-      %p=@default_message
-      %a.close(href="#" data-dismiss="alert") &times;
-    .inline-message.info.fade.in
-      %p=@notice_message
-      %a.close(href="#" data-dismiss="alert") &times;
-    .inline-message.important.fade.in
-      %p=@important_message
-      %a.close(href="#" data-dismiss="alert") &times;
-    .inline-message.success.fade.in
-      %p=@success_message
-      %a.close(href="#" data-dismiss="alert") &times;
-    .inline-message.warning.fade.in
-      %p=@warning_message
-      %a.close(href="#" data-dismiss="alert") &times;
-    .inline-message.alert.fade.in
-      %p=@alert_message
-      %a.close(href="#" data-dismiss="alert") &times;
-    .inline-message.danger.fade.in
-      %p=@error_message
-      %a.close(href="#" data-dismiss="alert") &times;
-
-.styleguide-clearfix
-
-.styleguide-h3 Block Messaging
-.styleguide-quarter
-  %p Block messages generally contain a longer message as well as a call to action that may be required by the application. These elements have muted backgrounds compared to their inline message counterparts.
-  %br
-  %p When block messages are closed, they fade out and are then removed from the DOM.
-  %br
-  .styleguide-todo Change out the JavaScript to use a more natural close state.
-.styleguide-threequarter.indent
-  .well
-    .block-message.fade.in
-      %header
-        %h3 Default Message
-      %section
-        %p=@lorem_sm
-      %footer
-        %button.btn(href="#") Button
-      %a.close(href="#" data-dismiss="alert") &times;
-    .block-message.info.fade.in
-      %header
-        %h3 Info Message
-      %section
-        %p=@lorem_sm
-      %footer
-        %button.btn(href="#") Button
-      %a.close(href="#" data-dismiss="alert") &times;
-    .block-message.important.fade.in
-      %header
-        %h3 Important Message
-      %section
-        %p=@lorem_sm
-      %footer
-        %button.btn(href="#") Button
-      %a.close(href="#" data-dismiss="alert") &times;
-    .block-message.success.fade.in
-      %header
-        %h3 Success Message
-      %section
-        %p=@lorem_sm
-      %footer
-        %button.btn(href="#") Button
-      %a.close(href="#" data-dismiss="alert") &times;
-    .block-message.warning.fade.in
-      %header
-        %h3 Warning Message
-      %section
-        %p=@lorem_sm
-      %footer
-        %button.btn(href="#") Button
-      %a.close(href="#" data-dismiss="alert") &times;
-    .block-message.alert.fade.in
-      %header
-        %h3 Alert Message
-      %section
-        %p=@lorem_sm
-      %footer
-        %button.btn(href="#") Button
-      %a.close(href="#" data-dismiss="alert") &times;
-    .block-message.danger.fade.in
-      %header
-        %h3 Danger Message
-      %section
-        %p=@lorem_sm
-      %footer
-        %button.btn(href="#") Button
-      %a.close(href="#" data-dismiss="alert") &times;
-
 .styleguide-clearfix
 

@@ -1,0 +1,133 @@
+
+.styleguide-h3 Notifications
+
+-# Standard Notifications
+.styleguide-onethird
+  %h5 Standard Notifications
+  %p The standard notification is applied to a container with the <code>.notification</code> class.
+  .notification.fade.in
+    %p <strong>Default!</strong> This is the default notification.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .notification.info.fade.in
+    %p <strong>Info!</strong> Use this for general information.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .notification.important.fade.in
+    %p <strong>Important!</strong> Something important is said here.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .notification.success.fade.in
+    %p <strong>Success!</strong> Congratulations, you get a trophy.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .notification.warning.fade.in
+    %p <strong>Warning!</strong> Your first and final.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .notification.alert.fade.in
+    %p <strong>Alert!</strong> Something bad is about to happen.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .notification.danger.fade.in
+    %p <strong>Danger!</strong> Something bad did happen.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .notification.primary.fade.in
+    %p <strong>Primary!</strong> The CI button.
+    %a.close(href="#" data-dismiss="alert") &times;
+  %pre.prettyprint
+    = preserve do
+      :escaped
+        <div class="notification important fade in">
+          ...
+          <a class="close" data-dismiss="alert">&times;</a>
+        </div>
+
+  %br
+  %p Block Level.
+  .well
+    .notification.success.fade.in
+      %header
+        %h5 Header with an h5
+      %section
+        %p=@lorem_sm
+      %footer
+        %button.btn.success(href="#") Action
+        %button.btn(href="#") Cancel
+      %a.close(href="#" data-dismiss="alert") &times;
+    .notification.danger.fade.in
+      %section
+        %p
+          %strong Yikes! This doesn't have a header and the footer is on the right!
+          =@lorem_sm
+      %footer.footer-right
+        %button.btn.danger(href="#") Action
+        %button.btn(href="#") Cancel
+      %a.close(href="#" data-dismiss="alert") &times;
+    .notification.important.fade.in
+      %header
+        %strong Header with strong tag, no section or footer!
+      %p=@lorem_sm
+      %a.close(href="#" data-dismiss="alert") &times;
+
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <!-- Success Block -->
+          <div class="notification success fade in">
+            <header>...</header>
+            <section>...</section>
+            <footer>... </footer>
+            <a class="close" data-dismiss="alert">&times;</a>
+          </div>
+
+          <!-- Danger Block -->
+          <div class="notification danger fade in">
+            <section>...</section>
+            <footer class="footer-right">... </footer>
+            <a class="close" data-dismiss="alert">&times;</a>
+          </div>
+
+          <!-- Primary Block -->
+          <div class="notification important fade in">
+            <header>...</header>
+            <p>... </p>
+            <a class="close" data-dismiss="alert">&times;</a>
+          </div>
+
+-# Pop Notifications
+.styleguide-onethird.indent
+  %h5 Pop Notifications
+  %p describe
+  .pop-notification.fade.in
+    %p <strong>Default!</strong> This is the default notification.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .pop-notification.info.fade.in
+    %p <strong>Info!</strong> Use this for general information.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .pop-notification.important.fade.in
+    %p <strong>Important!</strong> Something important is said here.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .pop-notification.success.fade.in
+    %p <strong>Success!</strong> Congratulations, you get a trophy.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .pop-notification.warning.fade.in
+    %p <strong>Warning!</strong> Your first and final.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .pop-notification.alert.fade.in
+    %p <strong>Alert!</strong> Something bad is about to happen.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .pop-notification.danger.fade.in
+    %p <strong>Danger!</strong> Something bad did happen.
+    %a.close(href="#" data-dismiss="alert") &times;
+  .pop-notification.primary.fade.in
+    %p <strong>Primary!</strong> The CI button.
+    %a.close(href="#" data-dismiss="alert") &times;
+  %pre.prettyprint
+    = preserve do
+      :escaped
+        <div class="pop-notification important fade in">
+          ...
+          <a class="close" data-dismiss="alert">&times;</a>
+        </div>
+
+-# Flash Notifications
+.styleguide-onethird.indent
+  %h5 Flash Notifications
+  %p.styleguide-note Add in flash notifications
+.styleguide-clearfix
+
