@@ -121,7 +121,11 @@
   %p Standard images using the <code>img</code> tag.
 .styleguide-threequarter.indent
   .styleguide-well
-    %img(src='http://lorempixum.com/160/90' alt='image')
+    %img(src="http://placehold.it/160x90" alt="image")
+  .styleguide-well
+    %figure
+      %img(src="http://placehold.it/160x90" alt="image")
+      %figcaption The HTML <code>&lt;figure&gt;</code> tag is used for annotating illustrations, diagrams, photos, code listings, etc.
 .styleguide-clearfix
 
 .styleguide-h3 Video
@@ -129,7 +133,7 @@
   %p Standard video, controls, and poster image utilizing the <code>video</code> tag.
 .styleguide-threequarter.indent
   .styleguide-well
-    %video(controls="" poster="http://lorempixum.com/320/180")
+    %video(controls="" poster="http://placehold.it/320x180&text=Poster")
       %source(src="/path/to/myvideo.mp4" type="video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"")
       %source(src="/path/to/myvideo.ogv" type="video/ogg; codecs=\"theora, vorbis\"")
 .styleguide-clearfix
