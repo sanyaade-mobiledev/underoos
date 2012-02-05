@@ -1,16 +1,18 @@
 
-nav.breadcrumb
-  color: $breadcrumb_color
-  font-weight: bold
-  li
-    display: inline
-    &:after
-      content: " /"
-    &:last-child:after
-      content: ""
-  li a
-    +link-colors($breadcrumb_normal, $breadcrumb_hover, $breadcrumb_active, $breadcrumb_visited, $breadcrumb_focus)
+.breadcrumb li
+  display: inline
+  &:after
+    content: " /"
+  &:last-child:after
+    content: ""
 
-  li.active
-    color: $breadcrumb_active
+.breadcrumb li > a,
+.breadcrumb li > a:visited,
+.breadcrumb li > a:active
+  color: $blue
+
+.breadcrumb li > a:hover,
+.breadcrumb .active,
+.breadcrumb .active > a
+  color: $grey6
 

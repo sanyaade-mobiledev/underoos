@@ -1,37 +1,43 @@
 
-nav.pagination
+.pagination
   +clearfixer
-  color: $paginate_color
+  ol, ul
+    +inline-block
+  li
+    display: inline
 
-  span, a, em
-    background-color: $paginate_bg
-    border: 1px solid $paginate_border
-    display: block
+  li > a
     float: left
-    font-style: normal
-    font-weight: bold
-    margin-right: 6px
-    padding: 3px 6px
-
-  span.gap
-    border: none
-    background: none
-    padding: 8px 0 0
-
-  .current, a:hover
-    color: $paginate_hover_color
-    background-color: $paginate_hover_bg
-    border-color: $paginate_hover_border
-
-  .next_page, .previous_page, .disabled
-    background: none
-    border: none
+    background-color: $white
+    border: 1px solid $greyC
+    border-right-width: 0
+    color: $blue
+    padding: .5em .75em
     &:hover
-      background: none
-      color: $paginate_color
+      background-color: $greyE
 
-  .disabled
-    color: $paginate_disabled
-    &:hover
-      color: $paginate_disabled
+  li.active > a
+    background-color: $blue
+    color: $white
+
+  li.active > a, li > a:active
+    +box-shadow($inset_shadow)
+
+  li.active > a, li.disabled > a
+    cursor: default
+
+  li.disabled > a, li.disabled > a:hover
+    color: $disabled_color
+    background: transparent
+
+  li:first-child > a
+    +border-radius(4px 0 0 4px)
+  li:last-child > a
+    +border-radius(0 4px 4px 0)
+    border-right-width: 1px
+
+.pagination-center
+  text-align: center
+.pagination-right
+  text-align: right
 

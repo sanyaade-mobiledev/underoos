@@ -1,0 +1,43 @@
+
+.tooltip
+  +font-sizes(12)
+  +opacity(0)
+  font-weight: bold
+  padding: 5px
+  display: block
+  position: absolute
+  visibility: visible
+  z-index: 1000
+  &.in
+    +opacity(0.9)
+  &.top
+    margin-top: -2px
+  &.bottom
+    margin-top: 2px
+  &.left
+    margin-left: -2px
+  &.right
+    margin-left: 2px
+  &.top .tooltip-arrow
+    +arrow_south(5px, $black)
+  &.bottom .tooltip-arrow
+    +arrow_north(5px, $black)
+  &.left .tooltip-arrow
+    +arrow_east(5px, $black)
+  &.right .tooltip-arrow
+    +arrow_west(5px, $black)
+
+.tooltip-inner
+  +border-radius(4px)
+  background-color: $black
+  color: $white
+  max-width: 200px
+  padding: .25em .7em
+  text-align: center
+  line-height: 1.4
+
+.tooltip-arrow
+  position: absolute
+  width: 0
+  height: 0
+

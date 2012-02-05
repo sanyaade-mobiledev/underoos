@@ -14,46 +14,15 @@
 .modal-backdrop, .modal-backdrop.fade.in
   +opacity(0.8)
 
+// todo: convert pixels
 .modal
-  +border-radius(6px)
-  +box-shadow(0px 4px 8px rgba(0, 0, 0, 0.8))
-  +background-clip(padding-box)
-  background-color: $white
-  border: 1px solid $grey6
   display: none
+  overflow: auto
+  margin: -250px 0 0 -280px
   position: fixed
-  margin: -250px 0 0 -250px
   top: 50%
   left: 50%
   width: 560px
+  max-height: 500px
   z-index: 11000
-
-  header
-    +border-radius(6px 6px 0 0)
-    background-color: $greyE
-    border-bottom: 1px solid $greyA
-    padding: 10px 15px
-
-  section
-    padding: 30px 15px
-    border-top: 1px solid $greyD
-    border-bottom: 1px solid $greyA
-
-  footer
-    +border-radius(0 0 6px 6px)
-    background-color: $greyE
-    border-top: 1px solid $white
-    padding: 10px 15px
-    text-align: right
-
-  .close
-    position: absolute
-    top: 5px
-    right: 15px
-
-  &.fade
-    +transition(opacity 0.25s)
-    +opacity(0)
-  &.fade.in
-    +opacity(1)
 
