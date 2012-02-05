@@ -2,34 +2,5 @@
 @import compass
 @import themes/default
 @import mixins/clearfixins
-@import mixins/grids
-@import styleguide/sg_mixins
 @import styleguide/sg_layouts
-
-// Melt faces and render for the desktop settings
-+_underoos-box-definition
-
-// take the settings for tablet-landscape (this is generally not necessary) and render dimensions again
-@import queries/tablet-landscape
-
-@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape)
-  +_underoos-box-definition
-
-// take the settings for tablet-portrait and render dimensions again
-@import queries/tablet-portrait
-
-@media (min-device-width:1024px) and (max-width:960px),(min-device-width:768px) and (max-device-width:1024px) and (orientation:portrait)
-  +_underoos-box-definition
-
-// take the settings for mobile-landscape and render dimensions again
-@import queries/mobile-landscape
-
-@media (min-device-width:1024px) and (max-width:747px),(max-device-width:480px) and (orientation:landscape)
-  +_underoos-box-definition
-
-// take the settings for mobile-portrait and render dimensions again
-@import queries/mobile-portrait
-
-@media (min-device-width:1024px) and (max-width:469px),(max-device-width:480px) and (orientation:portrait)
-  +_underoos-box-definition
 
