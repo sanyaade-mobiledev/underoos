@@ -28,32 +28,32 @@
   &.important
     +background-darken-border(lighten($important, 40%))
     color: $important
-    h1,h2,h3,h4,h5,h6
+    .heading
       color: $important
   &.success
     +background-darken-border(lighten($success, 40%))
     color: $success
-    h1,h2,h3,h4,h5,h6
+    .heading
       color: $success
   &.warning
     +background-darken-border(lighten($warning, 30%))
     color: darken($warning, 15%)
-    h1,h2,h3,h4,h5,h6
+    .heading
       color: darken($warning, 15%)
   &.alert
     +background-darken-border(lighten($alert, 20%))
     color: darken($alert, 10%)
-    h1,h2,h3,h4,h5,h6
+    .heading
       color: darken($alert, 10%)
   &.danger
     +background-darken-border(lighten($danger, 40%))
     color: $danger
-    h1,h2,h3,h4,h5,h6
+    .heading
       color: $danger
   &.primary
     +background-darken-border(lighten($primary_ci, 40%))
     color: $primary_ci
-    h1,h2,h3,h4,h5,h6
+    .heading
       color: $primary_ci
 
 // Pop Messages
@@ -65,7 +65,7 @@
   &.info, &.important, &.success, &.warning, &.alert, &.danger, &.primary
     color: $white
     text-shadow: 0 -1px 0 rgba(#000, 0.25)
-    h1,h2,h3,h4,h5,h6
+    .heading
       color: $white
   &.info
     +background-darken-border($info)
