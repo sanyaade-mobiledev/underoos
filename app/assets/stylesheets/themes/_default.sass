@@ -2,7 +2,7 @@
 // fluid sizing
 $context_px: 16
 $base_font_size: 14
-$base_width: 992
+$base_width: 1000
 
 // fonts
 $sans_norm: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif
@@ -67,20 +67,6 @@ $disabled_color: $greyB
 $disabled_bg: $greyE
 $disabled_border: $greyC
 
-// grid mixin
-// Settings for desktop/tablet portrait
-// Setting for other devices are stored in their individual "queries file"
-$page-width: 992px
-$column-width: 50px
-$gutter-width: 12px
-$columns: 16
-$_gridsystem-width: $column-width * $columns + $gutter-width * $columns
-
-// Set $total-width to 100% for a fluid layout
-$total-width: $_gridsystem-width
-
-// @include grid-settings(984px, 70px, 12px, 12);
-
 // base.scss
 $body_bg_color: $white
 $body_bg: $white
@@ -106,14 +92,6 @@ $pre_border: #ccc
 $pre_bg: #f8f8f8
 
 // elements.scss
-// @see mixins/_buttons.scss
-// $btn_bg: $greyD
-// $btn_gradient: $white, $white 25%, $greyD
-// $btn_color: $grey6
-
-// $action_bg: $greyD
-// $action_color: $grey6
-
 
 // tables.scss
 $table_bg: transparent
@@ -148,36 +126,6 @@ $input_focus_color: $black
 $input_focus_bg: $greyE
 
 // components/*.scss
-$tabs_bg: $greyE
-$tabs_border: $greyC
-$tabs_normal_color: lighten($grey6, 30%)
-$tabs_hover_bg: $blue
-$tabs_hover_border: darken($blue, 10%)
-$tabs_hover_color: $white
-$tabs_active_bg: $white
-$tabs_active_border: $white
-$tabs_active_color: $grey6
-
-$pills_bg: $white
-$pills_border: $greyC
-$pills_normal_color: $grey6
-$pills_hover_bg: $blue
-$pills_hover_border: darken($blue, 10%)
-$pills_hover_color: $white
-$pills_active_bg: $blue
-$pills_active_border: darken($blue, 10%)
-$pills_active_color: $white
-
-$tipsy_bg: $black
-$tipsy_color: $white
-
-$pop_bg: $white
-$pop_color: $grey6
-$pop_border: $grey6
-$pop_header_bg: $greyE
-$pop_header_border: $greyA
-
-// TODO: Define Modals
 
 // layouts/*.scss
 
