@@ -104,7 +104,7 @@ select, textarea
   padding: 6px 4px
   width: auto
   &:focus
-    +box-shadow($focus_shadow)
+    +box-shadow($focus_inset, $focus_glow)
     border-color: $focus_border
     outline: 0
   &:focus, &:hover
@@ -114,7 +114,7 @@ select, textarea
   &.error
     border: 2px solid $error
     &:focus
-      +box-shadow($focus_error_shadow)
+      +box-shadow($focus_inset, $error_glow)
       outline: 0
   &.disabled, &[disabled], &[readonly]
     +box-shadow(none)
@@ -142,7 +142,7 @@ input[type="image"]
   +transition(all 0.25s)
   margin-left: 2px
   &:focus
-    +box-shadow($focus_shadow)
+    +box-shadow($focus_inset, $focus_glow)
     outline: 1px solid $focus_border
 
 input[type="file"]
@@ -165,7 +165,7 @@ form ol li.error
   input[type], textarea, select
     border: 1px solid $error
     &:focus
-      +box-shadow($focus_error_shadow)
+      +box-shadow($focus_inset, $error_glow)
       outline: 0
 
   input[type="checkbox"], input[type="radio"]

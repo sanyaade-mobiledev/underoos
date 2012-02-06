@@ -26,12 +26,12 @@
 .pills .active > a, .pills li > a:active,
 .list .active > a, .list li > a:active,
 .tabs.stacked .active > a, .tabs.stacked li > a:active
-  +box-shadow($inset_shadow)
+  +box-shadow($inset_dark)
 
 
 // Tabs
 .tabs
-  border-bottom: 1px solid $greyA
+  border-bottom: 1px solid $component_border_alt
 .tabs > li
   margin-bottom: -1px
 .tabs > li > a
@@ -39,45 +39,47 @@
   border: 1px solid transparent
   padding-top: .65em
   padding-bottom: .65em
+  text-shadow: $text_drop_lite
   &:hover
-    background-color: $greyE
-    border-color: $greyC $greyC $greyA
+    background-color: $component_bg_hover
+    border-color: $component_bg_hover $component_bg_hover $component_border_alt
 .tabs > .active > a,
 .tabs > .active > a:hover
-  background-color: $white
-  border: 1px solid $greyA
+  background-color: $body_bg
+  border: 1px solid $component_border_alt
   border-bottom-color: transparent
-  color: $grey6
 
 // Pills
 .pills > li > a
   +border-radius(4px)
   padding-top: .65em
   padding-bottom: .65em
+  text-shadow: $text_drop_lite
   &:hover
-    background-color: $greyE
+    background-color: $component_bg_hover
 .pills .active > a,
 .pills .active > a:hover
-  color: $white
-  background-color: $blue
+  background-color: $component_bg_active
+  color: $component_active
+  text-shadow: $text_inset_dark
 
 // Nav List
 .list > li > a,
 .list .nav-header
   padding: .3em 1em
-  text-shadow: 0 1px 0 rgba(255,255,255,.5)
+  text-shadow: $text_drop_lite
 .list > li > a:hover
-  background-color: $greyE
+  background-color: $component_bg_hover
 .list .active > a,
 .list .active > a:hover
-  color: $white
-  text-shadow: 0 -1px 0 rgba(0,0,0,.2)
-  background-color: $blue
+  background-color: $component_bg_active
+  color: $component_active
+  text-shadow: $text_inset_dark
 .list .nav-header
   display: block
   font-size: .75em
   font-weight: bold
-  color: $grey9
+  color: $component_normal
   text-transform: uppercase
 .list > li + .nav-header
   margin-top: 1em
@@ -93,18 +95,19 @@
   border-bottom: 0
 .tabs.stacked > li > a
   +border-radius(0)
-  border: 1px solid $greyA
+  border: 1px solid $component_border_alt
 .tabs.stacked > li:first-child > a
   +border-radius(4px 4px 0 0)
 .tabs.stacked > li:last-child > a
   +border-radius(0 0 4px 4px)
 .tabs.stacked > li > a:hover
-  border-color: $greyA
+  border-color: $component_border_alt
   z-index: 2
 .tabs.stacked .active > a,
 .tabs.stacked .active > a:hover
-  color: $white
-  background-color: $blue
+  background-color: $component_bg_active
+  color: $component_active
+  text-shadow: $text_inset_dark
 
 // Stacked Pills
 .pills.stacked > li > a

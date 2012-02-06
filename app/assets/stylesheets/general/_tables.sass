@@ -5,16 +5,14 @@
 
 // Tables
 table
-  background: $table_bg
+  background: transparent
   width: 100%
 
   thead, tfoot
-    color: $table_primary_color
     font-size: 0.75em
     font-weight: bold
 
   caption
-    color: $table_primary_color
     font-size: 0.85em
     font-weight: bold
     margin-bottom: 0.5em
@@ -23,12 +21,7 @@ table
 
   thead
     background: none
-    color: $table_primary_color
     text-transform: uppercase
-    a, a:visited
-      color: $thead_link_normal
-    a:hover
-      color: $thead_link_hover
 
   tbody
     background: none
@@ -47,18 +40,21 @@ table
 
   // Overrides
   thead tr
-    border-bottom: 1px solid $thead_border
+    border-bottom: 1px solid $component_border_alt
 
   tbody tr
-    border-top: 1px solid $table_border_std
+    border-top: 1px solid $component_border
     &:last-child
-      border-bottom: 1px solid $thead_border
+      border-bottom: 1px solid $component_border_alt
+
+  tbody td > a:hover
+    text-decoration: underline
 
   tfoot tr, tfoot td
     padding: 0.5em
 
   tfoot tr
-    border-bottom: 1px solid $tfoot_border
+    border-bottom: 1px solid $component_border_alt
 
   // Specials
   th a.ascending,
@@ -69,48 +65,48 @@ table
       margin: -4px 0 0 10px
       border-width: 0 4px 4px
       border-style: solid
-      border-color: $thead_link_normal transparent
+      border-color: $link_normal transparent
     &:hover
       &:after
-        border-color: $thead_link_hover transparent
+        border-color: $link_hover transparent
   th a.descending
     &:after
       border-width: 4px 4px 0
 
 table.box
   thead tr
-    border: 1px solid $thead_border
+    border: 1px solid $component_border_alt
   tbody tr
-    border: 1px solid $table_border_std
+    border: 1px solid $component_border
     &:last-child
-      border-bottom: 1px solid $thead_border
+      border-bottom: 1px solid $component_border_alt
   tfoot tr
-    border: 1px solid $tfoot_border
+    border: 1px solid $component_border_alt
     border-top-color: transparent
   /* Override when vborder is attached to the same class
   thead th
     &:first-child
-      border-left-color: $thead_border !important
+      border-left-color: $component_border_alt !important
     &:last-child
-      border-right-color: $thead_border !important
+      border-right-color: $component_border_alt !important
   tbody td
     &:first-child
-      border-left-color: $table_border_std !important
+      border-left-color: $component_border !important
     &:last-child
-      border-right-color: $table_border_std !important
+      border-right-color: $component_border !important
 
 table.vborder
   thead th
-    border-left: 1px solid $thead_border
-    border-right: 1px solid $thead_border
+    border-left: 1px solid $component_border_alt
+    border-right: 1px solid $component_border_alt
     &:first-child
       border-left-color: transparent
     &:last-child
       border-right-color: transparent
 
   tbody td
-    border-left: 1px solid $table_border_std
-    border-right: 1px solid $table_border_std
+    border-left: 1px solid $component_border
+    border-right: 1px solid $component_border
     &:first-child
       border-left-color: transparent
     &:last-child
@@ -121,17 +117,17 @@ table.vborder
 table.zebra
   tbody tr
     &:nth-child(odd), &.odd
-      background-color: $zebra_odd
+      background-color: transparent
     &:nth-child(even), &.even
-      background-color: $zebra_even
+      background-color: $component_bg_hover
 
 // Colorize the table header background
 table.thead-decorate
   thead
-    background-color: $thead_bg
+    background-color: $standard
 
 // Colorize the table footer background
 table.tfoot-decorate
   tfoot
-    background-color: $tfoot_bg
+    background-color: $standard
 

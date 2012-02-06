@@ -8,22 +8,21 @@
 
   li > a
     float: left
-    background-color: $white
-    border: 1px solid $greyC
+    background-color: $component_bg
+    border: 1px solid $component_border
     border-right-width: 0
-    color: $blue
     padding: .5em .75em
     &:hover
-      background-color: $greyE
+      background-color: $component_bg_hover
 
   li.active > a
-    background-color: $blue
-    color: $white
+    background-color: $component_bg_active
+    color: $component_active
 
   li.active > a, li > a:active
-    +box-shadow($inset_shadow)
+    +box-shadow($inset_dark)
 
-  li.active > a, li.disabled > a
+  li.active > a
     cursor: default
 
   li.disabled > a, li.disabled > a:hover

@@ -19,18 +19,18 @@
   &.right
     margin-left: 2px
   &.top .tooltip-arrow
-    +arrow_south(5px, $black)
+    +arrow_south(5px, invert($body_bg))
   &.bottom .tooltip-arrow
-    +arrow_north(5px, $black)
+    +arrow_north(5px, invert($body_bg))
   &.left .tooltip-arrow
-    +arrow_east(5px, $black)
+    +arrow_east(5px, invert($body_bg))
   &.right .tooltip-arrow
-    +arrow_west(5px, $black)
+    +arrow_west(5px, invert($body_bg))
 
 .tooltip-inner
   +border-radius(4px)
-  background-color: $black
-  color: $white
+  background-color: invert($body_bg)
+  color: $body_bg
   max-width: 200px
   padding: .25em .7em
   text-align: center

@@ -27,12 +27,8 @@ body
   text-shadow: none
 
 // Links
-a
+a, a:visited
   color: $link_normal
-  text-decoration: none
-
-a:visited
-  color: $link_visited
   text-decoration: none
 
 a:focus
@@ -45,8 +41,8 @@ a:hover, a:active
 a:hover
   color: $link_hover
 
-a:active, a.active
-  color: $link_active
+a:active, a.active, .active > a
+  color: $link_hover
 
 a:link
   -webkit-tap-highlight-color: $tap_highlight

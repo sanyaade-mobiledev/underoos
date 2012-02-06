@@ -22,7 +22,7 @@
 // Main notification message
 .notification
   @extend .base-notification
-  text-shadow: 0 1px 0 rgba(#fff,0.5)
+  text-shadow: $text_drop_lite
   &.info
     +background-darken-border(lighten($info, 20%))
   &.important
@@ -59,12 +59,12 @@
 // Pop Messages
 .pop-notification
   @extend .base-notification
-  +box-shadow(0px 2px 4px rgba(#000,0.5), inset 0 1px 4px rgba(#fff,0.7))
+  +box-shadow($drop_dark, $inset_lite)
   color: $grey6
-  text-shadow: 0 -1px 0 rgba(#fff, 0.75)
+  text-shadow: $text_inset_lite
   &.info, &.important, &.success, &.warning, &.alert, &.danger, &.primary
     color: $white
-    text-shadow: 0 -1px 0 rgba(#000, 0.25)
+    text-shadow: $text_inset_dark
     .heading
       color: $white
   &.info
