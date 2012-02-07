@@ -1,159 +1,162 @@
 
-.styleguide-h3 Heading Styles
-%h1 Google hearts h1 headings, but only use one per page.
-%p=@lorem
-%br
-%h2 Got sections? Try using h2 headings.
-%p=@lorem
-%br
-%h3 Good things come in threes, like tacos and h3 headings.
-%p=@lorem
-%br
-%h4 There's nothing clever to say about h4 headings.
-%p=@lorem
-%br
-%h5 Every time you use an h5 heading, Google kills a puppy. A tiny little puppy.
-%p=@lorem
-%br
-%h6 Google just killed a kitten now too since you used an h6 heading.
-%p=@lorem
-
-
-.styleguide-h3 Paragraph Styles
-%p
-  %em The em tag is used to emphasize text.
-%p
-  %strong The strong tag is generally used for bold text.
-%p
-  %strong
-    %em Wrap the strong and the em tag and away you go.
-%p Just wanted to say what sup<sup>&reg;</sup> with the superscript tag.
-%p The <sub>sub tag</sub> is just plain weird, but that's what makes it a unique beautiful butterfly.
-%p This is an inline anchor tag so <a href='http://www.google.com/'>click here</a>!
-%p
-  %small The small tag renders text well, smaller.
-%p
-  %big The big tag renders text bigger (tag is being deprecated).
-%p <abbr title="For Placement Only">FPO</abbr>. The abbr tag describes an abbreviated phrase.
-%p <acronym title="as soon as possible">ASAP</acronym>. An acronym tag can be spoken as if it were a word, example NATO, NASA, ASAP, GUI.
-%p <dfn title="This is a definition">DFN</dfn>. The dfn tag wraps the definition of a word or term.
-%p
-  %ins The ins tag defines text that has been inserted into a document.
-%p
-  %del The del tag defines text that has been deleted from a document.
-%p
-  %mark The mark tag is used for indicating text as marked or highlighted for reference purposes.
-%p What time is it? <time>1:00am</time>
-%br
-%figure
-  %p The figure tag is used for annotating illustrations, diagrams, photos, code listings, etc.
-  %figcaption The figcaption tag is used to provide a caption when using the figure tag. The figcaption tag is used either as the first or last child of its parent figure tag.
-%br
-%address
-  Mr. Address Tag
+.sg-subsection
+  %h3.sg-subheading Heading Styles
+  %h1 Google hearts h1 headings, but only use one per page.
+  %p=@lorem
   %br
-  1600 Pennsylvania Ave NW
+  %h2 Got sections? Try using h2 headings.
+  %p=@lorem
   %br
-  Washington D.C. DC 20500
-%br
-.styleguide-half
-  %blockquote
-    %q Let me tell you what Melba Toast is packin' right here, all right. We got 4:11 Positrac outback, 750 double pumper, Edelbrock intake, bored over 30, 11 to 1 pop-up pistons, turbo-jet 390 horsepower. We're talkin' some f***in' muscle.
-    %cite David Wooderson
-.styleguide-clearfix
+  %h3 Good things come in threes, like tacos and h3 headings.
+  %p=@lorem
+  %br
+  %h4 There's nothing clever to say about h4 headings.
+  %p=@lorem
+  %br
+  %h5 Every time you use an h5 heading, Google kills a puppy. A tiny little puppy.
+  %p=@lorem
+  %br
+  %h6 Google just killed a kitten now too since you used an h6 heading.
+  %p=@lorem
 
-%cite A <code>cite</code> outside a block quote
 
-%br
-%details
-  %summary Click to Expand A Summary
-  %p The summary tag can be clicked on to expand/collapse the details as required. The summary tag, should be the first child of the details tag. The details tag specifies additional details that the user can view or hide on demand.
+.sg-subsection
+  %h3.sg-subheading Paragraph Styles
+  %p
+    %em The em tag is used to emphasize text.
+  %p
+    %strong The strong tag is generally used for bold text.
+  %p
+    %strong
+      %em Wrap the strong and the em tag and away you go.
+  %p Just wanted to say what sup<sup>&reg;</sup> with the superscript tag.
+  %p The <sub>sub tag</sub> is just plain weird, but that's what makes it a unique beautiful butterfly.
+  %p This is an inline anchor tag so <a href='http://www.google.com/'>click here</a>!
+  %p
+    %small The small tag renders text well, smaller.
+  %p
+    %big The big tag renders text bigger (tag is being deprecated).
+  %p <abbr title="For Placement Only">FPO</abbr>. The abbr tag describes an abbreviated phrase.
+  %p <acronym title="as soon as possible">ASAP</acronym>. An acronym tag can be spoken as if it were a word, example NATO, NASA, ASAP, GUI.
+  %p <dfn title="This is a definition">DFN</dfn>. The dfn tag wraps the definition of a word or term.
+  %p
+    %ins The ins tag defines text that has been inserted into a document.
+  %p
+    %del The del tag defines text that has been deleted from a document.
+  %p
+    %mark The mark tag is used for indicating text as marked or highlighted for reference purposes.
+  %p What time is it? <time>1:00am</time>
+  %br
+  %figure
+    %p The figure tag is used for annotating illustrations, diagrams, photos, code listings, etc.
+    %figcaption The figcaption tag is used to provide a caption when using the figure tag. The figcaption tag is used either as the first or last child of its parent figure tag.
+  %br
+  %address
+    Mr. Address Tag
+    %br
+    1600 Pennsylvania Ave NW
+    %br
+    Washington D.C. DC 20500
+  %br
+  .sg-half
+    %blockquote
+      %q Let me tell you what Melba Toast is packin' right here, all right. We got 4:11 Positrac outback, 750 double pumper, Edelbrock intake, bored over 30, 11 to 1 pop-up pistons, turbo-jet 390 horsepower. We're talkin' some f***in' muscle.
+      %cite David Wooderson
+  .clearfixer
 
-.styleguide-h3 Dividers/ Horizontal Rules
-%hr
-%hr.dotted
-%hr.dashed
+  %cite A <code>cite</code> outside a block quote
 
-.styleguide-h3 Code Styles
-.styleguide-half
+  %br
+  %details
+    %summary Click to Expand A Summary
+    %p The summary tag can be clicked on to expand/collapse the details as required. The summary tag, should be the first child of the details tag. The details tag specifies additional details that the user can view or hide on demand.
+
+.sg-subsection
+  %h3.sg-subheading Dividers/ Horizontal Rules
+  %hr
+  %hr.dotted
+  %hr.dashed
+
+.sg-subsection
+  %h3.sg-subheading Code Styles
   %p The <code>code</code> tag is used to show inline code
   %p The <kbd>kbd</kbd> tag defines keyboard text
   %p The <samp>samp</samp> tag defines sample computer code
-  %pre
-    = preserve do
-      :escaped
-        # The pre tag
-        git add .
-        git commit -m "Updated heading styles"
-        git push
-        git pull --rebase
-  %pre.prettyprint
-    = preserve do
-      :escaped
-        <!-- %pre.prettyprint -->
-        <header>
-          <h1>Heading</h1>
-          <p>Some Copy...</p>
-        </header>
-.styleguide-clearfix
+  .sg-half.pull
+    %pre
+      = preserve do
+        :escaped
+          # The pre tag
+          git add .
+          git commit -m "Updated heading styles"
+          git push
+          git pull --rebase
+  .sg-half.push
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <!-- %pre.prettyprint -->
+          <header>
+            <h1>Heading</h1>
+            <p>Some Copy...</p>
+          </header>
 
 
-.styleguide-h3 List Styles
-.styleguide-quarter
-  %p
-    %strong Unordered List:
-  %ul
-    %li Unordered list
-    %li Unordered list
+.sg-subsection
+  %h3.sg-subheading List Styles
+  .sg-quarter.pull
+    %p
+      %strong Unordered List:
     %ul
-      %li Nested unordered list
-      %li Nested unordered list
-      %li Nested unordered list
-    %li Unordered list
+      %li Unordered list
+      %li Unordered list
+      %ul
+        %li Nested unordered list
+        %li Nested unordered list
+        %li Nested unordered list
+      %li Unordered list
+      %ol
+        %li Nested ordered list
+        %li Nested ordered list
+        %li Nested ordered list
+  .sg-quarter
+    %p
+      %strong Ordered List:
     %ol
-      %li Nested ordered list
-      %li Nested ordered list
-      %li Nested ordered list
-.styleguide-quarter
-  %p
-    %strong Ordered List:
-  %ol
-    %li Ordered list
-    %li Ordered list
-    %ol
-      %li Nested unordered list
-      %li Nested unordered list
-      %li Nested unordered list
-    %li Ordered list
-    %ul
-      %li Nested ordered list
-      %li Nested ordered list
-      %li Nested ordered list
-.styleguide-quarter
-  %p
-    %strong Unstyled List:
-  %ul.unstyled
-    %li Unordered list
-    %li Unordered list
-    %ul
-      %li Nested unordered list
-      %li Nested unordered list
-      %li Nested unordered list
-    %li Unordered list
-    %ol
-      %li Nested ordered list
-      %li Nested ordered list
-      %li Nested ordered list
-.styleguide-quarter
-  %p
-    %strong Definition List:
-  %dl
-    %dt Definition Term
-    %dd Definition Description #{@lorem_dd}
-    %dt Definition Term
-    %dd Definition Description #{@lorem_dd}
-    %dt Definition Term
-    %dd Definition Description #{@lorem_dd}
-.styleguide-clearfix
-
+      %li Ordered list
+      %li Ordered list
+      %ol
+        %li Nested unordered list
+        %li Nested unordered list
+        %li Nested unordered list
+      %li Ordered list
+      %ul
+        %li Nested ordered list
+        %li Nested ordered list
+        %li Nested ordered list
+  .sg-quarter
+    %p
+      %strong Unstyled List:
+    %ul.unstyled
+      %li Unordered list
+      %li Unordered list
+      %ul
+        %li Nested unordered list
+        %li Nested unordered list
+        %li Nested unordered list
+      %li Unordered list
+      %ol
+        %li Nested ordered list
+        %li Nested ordered list
+        %li Nested ordered list
+  .sg-quarter.push
+    %p
+      %strong Definition List:
+    %dl
+      %dt Definition Term
+      %dd Definition Description #{@lorem_dd}
+      %dt Definition Term
+      %dd Definition Description #{@lorem_dd}
+      %dt Definition Term
+      %dd Definition Description #{@lorem_dd}
 

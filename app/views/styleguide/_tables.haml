@@ -1,65 +1,54 @@
 
-.styleguide-h3 Table Styles
-.styleguide-quarter
-  %h3 Default Table
-  %p The basic table creates division in data with horizontal dividers. Additional classes (see below) can be added to build a more structured table.
-.styleguide-threequarter.indent
-  %table(cellspacing="0")
-    %caption Default Table Caption
-    = haml(:"/styleguide/partials/_table-data", :layout => false)
-.styleguide-clearfix
+.sg-subsection
+  %h3.sg-subheading Table Styles
 
-%br
-%br
+  .sg-onethird.pull
+    %h4 Default Table
+    %p The basic table creates division in data with horizontal dividers. Additional classes (see below) can be added to build a more structured table.
+  .sg-twothird.push
+    %table(cellspacing="0")
+      %caption Default Table Caption
+      = haml(:"/styleguide/partials/_table-data", :layout => false)
 
-.styleguide-quarter
-  %h3 Box Table
-  %p Adding the <code>.box</code> class renders the table with exterior boundries for all <code>table rows</code>.
-.styleguide-threequarter.indent
-  %table.box(cellspacing="0")
-    %caption Box Table Caption
-    = haml(:"/styleguide/partials/_table-data", :layout => false)
-.styleguide-clearfix
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Box Table
+    %p Adding the <code>.box</code> class renders the table with exterior boundries for all <code>table rows</code>.
+  .sg-twothird.push
+    %table.box(cellspacing="0")
+      %caption Box Table Caption
+      = haml(:"/styleguide/partials/_table-data", :layout => false)
 
-%br
-%br
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Vertical Border Table
+    %p Adding the <code>.vborder</code> class renders the table with vertical divisions for <code>table data</code>.
+  .sg-twothird.push
+    %table.vborder(cellspacing="0")
+      %caption Vertical Bordered Table Caption
+      = haml(:"/styleguide/partials/_table-data", :layout => false)
 
-.styleguide-quarter
-  %h3 Vertical Border Table
-  %p Adding the <code>.vborder</code> class renders the table with vertical divisions for <code>table data</code>.
-.styleguide-threequarter.indent
-  %table.vborder(cellspacing="0")
-    %caption Vertical Bordered Table Caption
-    = haml(:"/styleguide/partials/_table-data", :layout => false)
-.styleguide-clearfix
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Box &amp; Vertical Border Table
+    %p Adding the <code>.box</code> class combined with the <code>.vborder</code> class renders the table with full borders around <code>tr</code> and <code>td</code> elements.
+  .sg-twothird.push
+    %table.box.vborder(cellspacing="0")
+      %caption Box &amp; Vertical Bordered Table Caption
+      = haml(:"/styleguide/partials/_table-data", :layout => false)
 
-%br
-%br
-
-.styleguide-quarter
-  %h3 Box &amp; Vertical Border Table
-  %p Adding the <code>.box</code> class combined with the <code>.vborder</code> class renders the table with full borders around <code>tr</code> and <code>td</code> elements.
-.styleguide-threequarter.indent
-  %table.box.vborder(cellspacing="0")
-    %caption Box &amp; Vertical Bordered Table Caption
-    = haml(:"/styleguide/partials/_table-data", :layout => false)
-.styleguide-clearfix
-
-%br
-%br
-
-.styleguide-quarter
-  %h3 Styled Table
-  %p To add coloring to alternate <code>tbody</code> rows, add the class <code>.zebra</code>
-  %br
-  %p To add a background color to the <code>thead</code> element, add the class <code>.thead-decorate</code>
-  %br
-  %p To add a background color to the <code>tfoot</code> element, add the class <code>.tfoot-decorate</code>
-  %br
-  %p The following table is rendered as <code>%table.box.zebra.thead-decorate.tfoot-decorate</code>
-.styleguide-threequarter.indent
-  %table.box.zebra.thead-decorate.tfoot-decorate(cellspacing="0")
-    %caption Various Settings Caption
-    = haml(:"/styleguide/partials/_table-data", :layout => false)
-.styleguide-clearfix
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Styled Table
+    %p To add coloring to alternate <code>tbody</code> rows, add the class <code>.zebra</code>
+    %br
+    %p To add a background color to the <code>thead</code> element, add the class <code>.thead-decorate</code>
+    %br
+    %p To add a background color to the <code>tfoot</code> element, add the class <code>.tfoot-decorate</code>
+    %br
+    %p The following table is rendered as <code>%table.box.zebra.thead-decorate.tfoot-decorate</code>
+  .sg-twothird.push
+    %table.box.zebra.thead-decorate.tfoot-decorate(cellspacing="0")
+      %caption Various Settings Caption
+      = haml(:"/styleguide/partials/_table-data", :layout => false)
 

@@ -6,98 +6,99 @@
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %link(rel="stylesheet" href="/assets/application.css" type="text/css")
-    %link(rel="stylesheet" href="/assets/styleguide.css" type="text/css")
+    -# %link(rel="stylesheet" href="/assets/styleguide.css" type="text/css")
 
   %body(data-spy="scroll" data-target=".spy")
-    .styleguide-masthead
-      .styleguide-container
-        %nav.spy
-          %a.styleguide-title(href="/styleguide") styleguide.
-          %ul.nav
-            %li
-              %a(href="#typography") Typography
-            %li
-              %a(href="#palettes") Palettes
-            %li
-              %a(href="#elements") Elements
-            %li
-              %a(href="#components") Components
-            %li
-              %a(href="#tables") Tables
-            %li
-              %a(href="#forms") Forms
-            %li
-              %a(href="#structures") Structures
-            %li
-              %a(href="#layouts") Layouts
-            %li
-              %a(href="#media") Media
-            %li
-              %a(href="#resources") Resources
+    .navbar.fixed.sg-navbar
+      .navbar-inner
+        .container
+          %nav.spy
+            %a.brand(href="/styleguide") styleguide.
+            %ul.nav
+              %li
+                %a(href="#typography") Typography
+              %li
+                %a(href="#palettes") Palettes
+              %li
+                %a(href="#elements") Elements
+              %li
+                %a(href="#components") Components
+              %li
+                %a(href="#tables") Tables
+              %li
+                %a(href="#forms") Forms
+              %li
+                %a(href="#structures") Structures
+              %li
+                %a(href="#layouts") Layouts
+              %li
+                %a(href="#media") Media
+              %li
+                %a(href="#resources") Resources
 
-    .styleguide-container
 
-      .styleguide#typography
-        .styleguide-header
-          .styleguide-h1 Typography
-          .styleguide-note Contains all of the heading, paragraph, lists, and inline typographic elements.
+    .container.sg-contents
+
+      #typography.sg-section
+        .well.dark
+          %h2.sg-heading Typography
+          %p.sg-note Contains all of the heading, paragraph, lists, and inline typographic elements.
         = haml(:"/styleguide/_typography", :layout => false)
 
-      .styleguide#palettes
-        .styleguide-header
-          .styleguide-h1 Palettes
-          .styleguide-note Various color palettes and themes used in the application.
+      #palettes.sg-section
+        .well.dark
+          %h2.sg-heading Palettes
+          %p.sg-note Various color palettes and themes used in the application.
         = haml(:"/styleguide/_palettes", :layout => false)
 
 
-      .styleguide#elements
-        .styleguide-header
-          .styleguide-h1 Elements
-          .styleguide-note Base class styles to enhance common elements found in an application.
+      #elements.sg-section
+        .well.dark
+          %h2.sg-heading Elements
+          %p.sg-note Base class styles to enhance common elements found in an application.
         = haml(:"/styleguide/_elements", :layout => false)
 
-      .styleguide#components
-        .styleguide-header
-          .styleguide-h1 Components
-          .styleguide-note Components consists of common patterns used in many applications but are not defined as base element tags.
+      #components.sg-section
+        .well.dark
+          %h2.sg-heading Components
+          %p.sg-note Components consists of common patterns used in many applications but are not defined as base element tags.
         = haml(:"/styleguide/_components", :layout => false)
 
-      .styleguide#tables
-        .styleguide-header
-          .styleguide-h1 Tables
-          .styleguide-note Tables are used to represent tabular data.
+      #tables.sg-section
+        .well.dark
+          %h2.sg-heading Tables
+          %p.sg-note Tables are used to represent tabular data.
         = haml(:"/styleguide/_tables", :layout => false)
 
-      .styleguide#forms
-        .styleguide-header
-          .styleguide-h1 Forms
-          .styleguide-note Base input, textarea, labels, selects, button styles associated with form elements. Tuned to play with <a href="https://github.com/justinfrench/formtastic">formtastic</a>.
+      #forms.sg-section
+        .well.dark
+          %h2.sg-heading Forms
+          %p.sg-note Base input, textarea, labels, selects, button styles associated with form elements. Tuned to play with <a href="https://github.com/justinfrench/formtastic">formtastic</a>.
         = haml(:"/styleguide/_forms", :layout => false)
 
-      .styleguide#structures
-        .styleguide-header
-          .styleguide-h1 Structures
-          .styleguide-note Structures consists of grids systems and common size elements used within the application. Collapse the browser window to see structures for media queries.
+      #structures.sg-section
+        .well.dark
+          %h2.sg-heading Structures
+          %p.sg-note Structures consists of grids systems and common size elements used within the application. Collapse the browser window to see structures for media queries.
         -# = haml(:"/styleguide/_structures", :layout => false)
 
-      .styleguide#layouts
-        .styleguide-header
-          .styleguide-h1 Layouts
-          .styleguide-note Layouts consists of various templates that are specific to the application.
+      #layouts.sg-section
+        .well.dark
+          %h2.sg-heading Layouts
+          %p.sg-note Layouts consists of various templates that are specific to the application.
         = haml(:"/styleguide/_layouts", :layout => false)
 
-      .styleguide#media
-        .styleguide-header
-          .styleguide-h1 Media
-          .styleguide-note Showcases the various media elements that are in use by the application.
+      #media.sg-section
+        .well.dark
+          %h2.sg-heading Media
+          %p.sg-note Showcases the various media elements that are in use by the application.
         = haml(:"/styleguide/_media", :layout => false)
 
-      .styleguide#resources
-        .styleguide-header
-          .styleguide-h1 External Resources
-          .styleguide-note Showcases the various media elements that are in use by the application.
+      #resources.sg-section
+        .well.dark
+          %h2.sg-heading External Resources
+          %p.sg-note What's this do?
         = haml(:"/styleguide/_resources", :layout => false)
-
 
     .guider
     = haml(:"/shared/_upgrades", :layout => false)

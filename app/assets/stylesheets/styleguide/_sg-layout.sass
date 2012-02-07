@@ -1,0 +1,82 @@
+
+// Nav Bar
+.sg-navbar .navbar-inner
+  font-weight: bold
+.sg-navbar .brand
+  float: right
+
+// Containers
+.sg-contents
+  margin-top: 2em
+
+.sg-section, .sg-subsection
+  +clearfixer
+
+.sg-section
+  padding: 3em 0 1.875em
+  border-bottom: 1px solid $hr_color
+
+.sg-subsection
+  margin: 1.5em 0
+
+.sg-threequarter, .sg-half, .sg-quarter,
+.sg-twothird, .sg-onethird
+  @extend .base-column
+  margin-left: 2%
+  margin-right: 2%
+  &.pull
+    margin-left: 0
+  &.push
+    margin-right: 0
+.sg-threequarter
+  width: 71%
+  &.pull, &.push
+    width: 73%
+.sg-half
+  width: 46%
+  &.pull, &.push
+    width: 48%
+.sg-quarter
+  width: 21%
+  &.pull, &.push
+    width: 23%
+.sg-twothird
+  width: 63%
+  &.pull, &.push
+    width: 65%
+.sg-onethird
+  width: 29%
+  &.pull, &.push
+    width: 31%
+
+// Text items
+.sg-heading
+  color: $primary_ci
+  text-shadow: $text_drop_lite
+  line-height: 1.4
+
+.sg-subheading
+  border-bottom: 1px solid $greyC
+  // color: $primary_ci
+  line-height: 1.4
+  margin-bottom: 1em
+
+.sg-note, .sg-todo
+  font-weight: bold
+
+.sg-note
+  color: $grey6
+
+.sg-todo
+  color: lighten($magenta, 20%)
+  font-style: italic
+
+.sg-swatch
+  -webkit-border-radius: 4px
+  -moz-border-radius: 4px
+  border-radius: 4px
+  display: inline-block
+  background-color: $magenta
+  width: 30px
+  height: 20px
+

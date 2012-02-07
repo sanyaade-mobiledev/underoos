@@ -1,0 +1,52 @@
+
+.navbar
+  overflow: visible
+
+.navbar-inner
+  +box-shadow($drop_dark)
+  text-shadow: $text_drop_lite
+  background-color: $standard
+
+.navbar-inner .nav
+  display: block
+  float: left
+  position: relative
+  left: 0
+
+.navbar .nav > li
+  display: block
+  float: left
+
+.navbar .nav > li > a
+  float: none
+  color: $primary_ci
+  padding: 1em 0.75em
+  &:hover, &:active
+    color: $component_normal
+    background-color: $component_bg_hover
+
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover
+  +box-shadow($inset_dark)
+  background-color: $primary_ci
+  color: $standard
+  text-shadow: $text_inset_dark
+
+.navbar .brand
+  float: left
+  display: block
+  padding: 1em 0.75em
+  color: #ccc
+
+// FIXED NAVBAR
+.navbar.fixed
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  z-index: 3000
+
+.navbar.fixed .navbar-inner
+  // padding-left:  0
+  // padding-right: 0
+

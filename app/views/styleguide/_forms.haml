@@ -1,195 +1,80 @@
 
-.styleguide-h3 Formtastic (Fieldset With Border)
-%form
-  %fieldset.bordered
-    %legend This is a legend, it is hidden
-    %ol
-      %li(class="input text optional" id="test_text_input")
-        %label(class="label" for="test_text") Basic Input
-        %input(class="text optional" id="test_text" type="text" name="test[text]" placeholder="text input")
-        .hint This is a hint about the form above being filled out
-
-      %li(class="input email required" id="test_email_input")
-        %label(class="label" for="test_email")
-          Email
-          %abbr(title="required") *
-        %input(class="email required" id="test_email" type="email" name="test[email]" placeholder="user@example.com")
-
-      %li(class="input password required" id="test_password_input")
-        %label(class="label" for="test_password")
-          Password
-          %abbr(title="required") *
-        %input(class="password required" id="test_password" type="password" name="test[password]" placeholder="password")
-
-      %li(class="input url optional" id="test_url_input")
-        %label(class="label" for="test_url") Domain Name
-        %input(class="url optional" id="test_url" type="url" name="test[url]" placeholder="www.example.com")
-
-      %li(class="input tel optional" id="test_tel_input")
-        %label(class="label" for="test_tel") Telephone
-        %input(class="tel optional" id="test_tel" type="tel" name="test[tel]" placeholder="303.867.5309")
-
-      %li(class="input search optional" id="test_search_input")
-        %label(class="label" for="test_search") search
-        %input(class="search optional" id="test_search" type="search" name="test[search]" placeholder="google")
-
-      %li(class="input date optional" id="test_date_input")
-        %label(class="label" for="test_date") Date
-        %input(class="date optional" id="test_date" type="date" name="test[date]" placeholder="2011-09-08")
-
-      %li(class="input month optional" id="test_month_input")
-        %label(class="label" for="test_month") Month
-        %input(class="month optional" id="test_month" type="month" name="test[month]" placeholder="")
-
-      %li(class="input week optional" id="test_week_input")
-        %label(class="label" for="test_week") Week
-        %input(class="week optional" id="test_week" type="week" name="test[week]" placeholder="")
-
-      %li(class="input time optional" id="test_time_input")
-        %label(class="label" for="test_time") Time
-        %input(class="time optional" id="test_time" type="time" name="test[time]" placeholder="")
-
-      %li(class="input datetime optional" id="test_datetime_input")
-        %label(class="label" for="test_datetime") Date Time
-        %input(class="datetime optional" id="test_datetime" type="datetime" name="test[datetime]" placeholder="")
-
-      %li(class="input datetime-local optional" id="test_datetimelocal_input")
-        %label(class="label" for="test_datetimelocal") Date Time Local
-        %input(class="datetime-local optional" id="test_datetimelocal" type="datetime-local" name="test[datetime_local]" placeholder="")
-
-      %li(class="input color optional" id="test_color_input")
-        %label(class="label" for="test_color") Color (Opera only ATM)
-        %input(class="color optional" id="test_color" type="color" name="test[color]" alt="color")
-
-      %li(class="input number optional" id="test_number_input")
-        %label(class="label" for="test_number") Number
-        %input(class="number optional" id="test_number" type="number" name="test[number]" min="0" max="10" placeholder="5")
-
-      %li(class="input range optional" id="test_range_input")
-        %label(class="label" for="test_range") Range
-        %input(class="range optional" id="test_range" type="range" name="test[range]" min="0" max="10" placeholder="5")
-
-      %li(class="textarea optional" id="test_textarea_textarea")
-        %label(class="label" for="test_textarea") Text Area
-        %textarea(class="textarea optional" id="test_textarea" name="test[textarea]" placeholder="Enter some text..." rows="10" cols="40")
-
-      %li(class="select cities optional" id="test_select_select")
-        %label(class="label" for="test_select") Select
-        %select(class="cities optional" id="test_select" name="test[cities]")
-          %optgroup(label="Colorado")
-            %option(value="denver" selected="selected") Denver
-            %option(value="boulder") Boulder
-          %optgroup(label="California")
-            %option(value="los angeles") Los Angeles
-            %option(value="san francisco") San Francisco
-
-      %li(class="multi select cities optional" id="test_multi_select_select")
-        %label(class="label" for="test_multiselect") Select
-        %select(class="cities optional" id="test_multiselect" name="test[cities]" multiple)
-          %optgroup(label="Colorado")
-            %option(value="denver" selected="selected") Denver
-            %option(value="boulder") Boulder
-          %optgroup(label="California")
-            %option(value="los angeles") Los Angeles
-            %option(value="san francisco") San Francisco
-
-      %li
-        %hr
-
-      %li(class="description")
-        .styleguide-note Radio group separated by <code>li</code> tags displays block level
-
-      %li(class="radiogroup required")
-        %input(class="radio_button required" id="test_radio3" type="radio" name="test[radio2]" checked="checked" value="0")
-        %label(class="label" for="test_radio3") Radio Button 1
-      %li(class="radiogroup required")
-        %input(class="radio_button required" id="test_radio4" type="radio" name="test[radio2]" value="1")
-        %label(class="label" for="test_radio4") Radio Button 2
-
-      %li(class="description")
-        .styleguide-note Radio group under single <code>li</code> tag displays inline
-
-      %li(class="radiogroup required")
-        %input(class="radio_button required" id="test_radio1" type="radio" name="test[radio1]" checked="checked" value="0")
-        %label(class="label" for="test_radio1") Radio Button 3
-        %input(class="radio_button required" id="test_radio2" type="radio" name="test[radio1]" value="1")
-        %label(class="label" for="test_radio2") Radio Button 4
-
-      %li
-        %hr
-
-      %li(class="description")
-        .styleguide-note Checkbox group separated by <code>li</code> tags displays block level
-
-      %li(class="checkgroup required")
-        %input(class="check_button required" id="test_check1" type="checkbox" name="test[check1]" checked="checked" value="0")
-        %label(class="label" for="test_check1") Checkbox Button 1
-      %li(class="checkgroup required")
-        %input(class="check_button required" id="test_check2" type="checkbox" name="test[check1]" value="1")
-        %label(class="label" for="test_check2") Checkbox Button 2
-
-      %li(class="description")
-        .styleguide-note Checkbox group under single <code>li</code> tag displays inline
-      %li(class="checkgroup required")
-        %input(class="check_button required" id="test_check3" type="checkbox" name="test[check2]" checked="checked" value="0")
-        %label(class="label" for="test_check3") Checkbox Button 3
-        %input(class="check_button required" id="test_check4" type="checkbox" name="test[check2]" value="1")
-        %label(class="label" for="test_check4") Checkbox Button 4
-
-      %li
-        %hr
-
-      %li(class="input submit")
-        %input(class="submit btn" name="submit" type="submit" value="Submit")
-      %li(class="input reset")
-        %input(class="reset btn" name="reset" type="reset" value="Reset")
-      %li(class="input button")
-        %input(class="button btn" name="button" type="button" value="Button")
-      %li(class="input image")
-        %input(class="image" name="image" type="image" src="http://lorempixum.com/68/28/" value="Image")
-      %li(class="input-file")
-        %input(class="file" name="file" type="file" value="file")
-
-.styleguide-h3 Example Forms (Fieldset No Border)
-.styleguide-onethird
+.sg-subsection
+  %h3.sg-subheading Formtastic (Fieldset With Border)
   %form
-    %fieldset
+    %fieldset.bordered
       %legend This is a legend, it is hidden
       %ol
-        %li(class="input text optional" id="test_text1_input")
-          %label(class="label" for="test_text1") Basic Input
-          %input(class="text optional" id="test_text1" type="text" name="test[text]" placeholder="text input")
+        %li(class="input text optional" id="test_text_input")
+          %label(class="label" for="test_text") Basic Input
+          %input(class="text optional" id="test_text" type="text" name="test[text]" placeholder="text input")
+          .hint This is a hint about the form above being filled out
 
-        %li(class="input email required" id="test_email1_input")
-          %label(class="label" for="test_email1")
+        %li(class="input email required" id="test_email_input")
+          %label(class="label" for="test_email")
             Email
             %abbr(title="required") *
-          %input(class="email required" id="test_email1" type="email" name="test[email]" placeholder="user@example.com")
+          %input(class="email required" id="test_email" type="email" name="test[email]" placeholder="user@example.com")
 
-        %li(class="input password required" id="test_password1_input")
-          %label(class="label" for="test_password1")
+        %li(class="input password required" id="test_password_input")
+          %label(class="label" for="test_password")
             Password
             %abbr(title="required") *
-          %input(class="password required" id="test_password1" type="password" name="test[password]" placeholder="password")
+          %input(class="password required" id="test_password" type="password" name="test[password]" placeholder="password")
 
-        %li(class="input submit")
-          %input(class="submit btn" name="submit" type="submit" value="Submit")
-        %li(class="input reset")
-          %input(class="reset btn" name="reset" type="reset" value="Reset")
+        %li(class="input url optional" id="test_url_input")
+          %label(class="label" for="test_url") Domain Name
+          %input(class="url optional" id="test_url" type="url" name="test[url]" placeholder="www.example.com")
 
-.styleguide-onethird
-  %form
-    %fieldset
-      %legend This is a legend, it is hidden
-      %ol
-        %li(class="input text error required" id="test_error_input")
-          %label(class="label" for="test_error")
-            Error Input
-            %abbr(title="required") *
-          %input(class="text required" id="test_error" type="text" name="test[error]" placeholder="error input" value="Error!")
-          .hint This is a hint about what went wrong
+        %li(class="input tel optional" id="test_tel_input")
+          %label(class="label" for="test_tel") Telephone
+          %input(class="tel optional" id="test_tel" type="tel" name="test[tel]" placeholder="303.867.5309")
 
-        %li(class="select cities optional error" id="test_select_select")
+        %li(class="input search optional" id="test_search_input")
+          %label(class="label" for="test_search") search
+          %input(class="search optional" id="test_search" type="search" name="test[search]" placeholder="google")
+
+        %li(class="input date optional" id="test_date_input")
+          %label(class="label" for="test_date") Date
+          %input(class="date optional" id="test_date" type="date" name="test[date]" placeholder="2011-09-08")
+
+        %li(class="input month optional" id="test_month_input")
+          %label(class="label" for="test_month") Month
+          %input(class="month optional" id="test_month" type="month" name="test[month]" placeholder="")
+
+        %li(class="input week optional" id="test_week_input")
+          %label(class="label" for="test_week") Week
+          %input(class="week optional" id="test_week" type="week" name="test[week]" placeholder="")
+
+        %li(class="input time optional" id="test_time_input")
+          %label(class="label" for="test_time") Time
+          %input(class="time optional" id="test_time" type="time" name="test[time]" placeholder="")
+
+        %li(class="input datetime optional" id="test_datetime_input")
+          %label(class="label" for="test_datetime") Date Time
+          %input(class="datetime optional" id="test_datetime" type="datetime" name="test[datetime]" placeholder="")
+
+        %li(class="input datetime-local optional" id="test_datetimelocal_input")
+          %label(class="label" for="test_datetimelocal") Date Time Local
+          %input(class="datetime-local optional" id="test_datetimelocal" type="datetime-local" name="test[datetime_local]" placeholder="")
+
+        %li(class="input color optional" id="test_color_input")
+          %label(class="label" for="test_color") Color (Opera only ATM)
+          %input(class="color optional" id="test_color" type="color" name="test[color]" alt="color")
+
+        %li(class="input number optional" id="test_number_input")
+          %label(class="label" for="test_number") Number
+          %input(class="number optional" id="test_number" type="number" name="test[number]" min="0" max="10" placeholder="5")
+
+        %li(class="input range optional" id="test_range_input")
+          %label(class="label" for="test_range") Range
+          %input(class="range optional" id="test_range" type="range" name="test[range]" min="0" max="10" placeholder="5")
+
+        %li(class="textarea optional" id="test_textarea_textarea")
+          %label(class="label" for="test_textarea") Text Area
+          %textarea(class="textarea optional" id="test_textarea" name="test[textarea]" placeholder="Enter some text..." rows="10" cols="40")
+
+        %li(class="select cities optional" id="test_select_select")
           %label(class="label" for="test_select") Select
           %select(class="cities optional" id="test_select" name="test[cities]")
             %optgroup(label="Colorado")
@@ -199,39 +84,9 @@
               %option(value="los angeles") Los Angeles
               %option(value="san francisco") San Francisco
 
-        %li(class="radiogroup required error")
-          %input(class="radio_button required" id="test_radio3" type="radio" name="test[radio2]" checked="checked" value="0")
-          %label(class="label" for="test_radio3") Radio Button 1
-        %li(class="radiogroup required error")
-          %input(class="radio_button required" id="test_radio4" type="radio" name="test[radio2]" value="1")
-          %label(class="label" for="test_radio4") Radio Button 2
-
-        %li(class="checkgroup required error")
-          %input(class="check_button required" id="test_check1" type="checkbox" name="test[check1]" checked="checked" value="0")
-          %label(class="label" for="test_check1") Checkbox Button 1
-        %li(class="checkgroup required error")
-          %input(class="check_button required" id="test_check2" type="checkbox" name="test[check1]" value="1")
-          %label(class="label" for="test_check2") Checkbox Button 2
-
-        %li(class="input error submit")
-          %input(class="submit btn" name="submit" type="submit" value="Submit")
-
-.styleguide-onethird
-  %form
-    %fieldset
-      %legend This is a legend, it is hidden
-      %ol
-        %li(class="input disabled optional" id="test_disabled_input")
-          %label(class="label" for="test_disabled") Disabled Input (li)
-          %input(class="text optional" id="test_disabled" type="text" name="test[disabled]" placeholder="you shall not pass!" disabled)
-
-        %li(class="input optional" id="test_disabled1_input")
-          %label(class="label" for="test_disabled1") Disabled Input (input only)
-          %input(class="text optional" id="test_disabled1" type="text" name="test[disabled1]" placeholder="you can't click me!" disabled)
-
-        %li(class="select cities optional disabled" id="test_select_select")
-          %label(class="label" for="test_select") Select
-          %select(class="cities optional" id="test_select" name="test[cities]" disabled)
+        %li(class="multi select cities optional" id="test_multi_select_select")
+          %label(class="label" for="test_multiselect") Select
+          %select(class="cities optional" id="test_multiselect" name="test[cities]" multiple)
             %optgroup(label="Colorado")
               %option(value="denver" selected="selected") Denver
               %option(value="boulder") Boulder
@@ -239,20 +94,167 @@
               %option(value="los angeles") Los Angeles
               %option(value="san francisco") San Francisco
 
-        %li(class="radiogroup required disabled")
-          %input(class="radio_button required" id="test_radio3" type="radio" name="test[radio2]" checked="checked" value="0" disabled)
+        %li
+          %hr
+
+        %li(class="description")
+          .styleguide-note Radio group separated by <code>li</code> tags displays block level
+
+        %li(class="radiogroup required")
+          %input(class="radio_button required" id="test_radio3" type="radio" name="test[radio2]" checked="checked" value="0")
           %label(class="label" for="test_radio3") Radio Button 1
-        %li(class="radiogroup required disabled")
-          %input(class="radio_button required" id="test_radio4" type="radio" name="test[radio2]" value="1" disabled)
+        %li(class="radiogroup required")
+          %input(class="radio_button required" id="test_radio4" type="radio" name="test[radio2]" value="1")
           %label(class="label" for="test_radio4") Radio Button 2
 
-        %li(class="checkgroup required disabled")
-          %input(class="check_button required" id="test_check1" type="checkbox" name="test[check1]" checked="checked" value="0" disabled)
+        %li(class="description")
+          .styleguide-note Radio group under single <code>li</code> tag displays inline
+
+        %li(class="radiogroup required")
+          %input(class="radio_button required" id="test_radio1" type="radio" name="test[radio1]" checked="checked" value="0")
+          %label(class="label" for="test_radio1") Radio Button 3
+          %input(class="radio_button required" id="test_radio2" type="radio" name="test[radio1]" value="1")
+          %label(class="label" for="test_radio2") Radio Button 4
+
+        %li
+          %hr
+
+        %li(class="description")
+          .styleguide-note Checkbox group separated by <code>li</code> tags displays block level
+
+        %li(class="checkgroup required")
+          %input(class="check_button required" id="test_check1" type="checkbox" name="test[check1]" checked="checked" value="0")
           %label(class="label" for="test_check1") Checkbox Button 1
-        %li(class="checkgroup required disabled")
-          %input(class="check_button required" id="test_check2" type="checkbox" name="test[check1]" value="1" disabled)
+        %li(class="checkgroup required")
+          %input(class="check_button required" id="test_check2" type="checkbox" name="test[check1]" value="1")
           %label(class="label" for="test_check2") Checkbox Button 2
 
+        %li(class="description")
+          .styleguide-note Checkbox group under single <code>li</code> tag displays inline
+        %li(class="checkgroup required")
+          %input(class="check_button required" id="test_check3" type="checkbox" name="test[check2]" checked="checked" value="0")
+          %label(class="label" for="test_check3") Checkbox Button 3
+          %input(class="check_button required" id="test_check4" type="checkbox" name="test[check2]" value="1")
+          %label(class="label" for="test_check4") Checkbox Button 4
+
+        %li
+          %hr
+
         %li(class="input submit")
-          %input(class="submit btn" name="submit" type="submit" value="Submit" disabled)
+          %input(class="submit btn" name="submit" type="submit" value="Submit")
+        %li(class="input reset")
+          %input(class="reset btn" name="reset" type="reset" value="Reset")
+        %li(class="input button")
+          %input(class="button btn" name="button" type="button" value="Button")
+        %li(class="input image")
+          %input(class="image" name="image" type="image" src="http://lorempixum.com/68/28/" value="Image")
+        %li(class="input-file")
+          %input(class="file" name="file" type="file" value="file")
+
+.sg-subsection
+  %h3.sg-subheading Example Forms (Fieldset No Border)
+  .sg-onethird.pull
+    %form
+      %fieldset
+        %legend This is a legend, it is hidden
+        %ol
+          %li(class="input text optional" id="test_text1_input")
+            %label(class="label" for="test_text1") Basic Input
+            %input(class="text optional" id="test_text1" type="text" name="test[text]" placeholder="text input")
+
+          %li(class="input email required" id="test_email1_input")
+            %label(class="label" for="test_email1")
+              Email
+              %abbr(title="required") *
+            %input(class="email required" id="test_email1" type="email" name="test[email]" placeholder="user@example.com")
+
+          %li(class="input password required" id="test_password1_input")
+            %label(class="label" for="test_password1")
+              Password
+              %abbr(title="required") *
+            %input(class="password required" id="test_password1" type="password" name="test[password]" placeholder="password")
+
+          %li(class="input submit")
+            %input(class="submit btn" name="submit" type="submit" value="Submit")
+          %li(class="input reset")
+            %input(class="reset btn" name="reset" type="reset" value="Reset")
+
+  .sg-onethird
+    %form
+      %fieldset
+        %legend This is a legend, it is hidden
+        %ol
+          %li(class="input text error required" id="test_error_input")
+            %label(class="label" for="test_error")
+              Error Input
+              %abbr(title="required") *
+            %input(class="text required" id="test_error" type="text" name="test[error]" placeholder="error input" value="Error!")
+            .hint This is a hint about what went wrong
+
+          %li(class="select cities optional error" id="test_select_select")
+            %label(class="label" for="test_select") Select
+            %select(class="cities optional" id="test_select" name="test[cities]")
+              %optgroup(label="Colorado")
+                %option(value="denver" selected="selected") Denver
+                %option(value="boulder") Boulder
+              %optgroup(label="California")
+                %option(value="los angeles") Los Angeles
+                %option(value="san francisco") San Francisco
+
+          %li(class="radiogroup required error")
+            %input(class="radio_button required" id="test_radio3" type="radio" name="test[radio2]" checked="checked" value="0")
+            %label(class="label" for="test_radio3") Radio Button 1
+          %li(class="radiogroup required error")
+            %input(class="radio_button required" id="test_radio4" type="radio" name="test[radio2]" value="1")
+            %label(class="label" for="test_radio4") Radio Button 2
+
+          %li(class="checkgroup required error")
+            %input(class="check_button required" id="test_check1" type="checkbox" name="test[check1]" checked="checked" value="0")
+            %label(class="label" for="test_check1") Checkbox Button 1
+          %li(class="checkgroup required error")
+            %input(class="check_button required" id="test_check2" type="checkbox" name="test[check1]" value="1")
+            %label(class="label" for="test_check2") Checkbox Button 2
+
+          %li(class="input error submit")
+            %input(class="submit btn" name="submit" type="submit" value="Submit")
+
+  .sg-onethird.push
+    %form
+      %fieldset
+        %legend This is a legend, it is hidden
+        %ol
+          %li(class="input disabled optional" id="test_disabled_input")
+            %label(class="label" for="test_disabled") Disabled Input (li)
+            %input(class="text optional" id="test_disabled" type="text" name="test[disabled]" placeholder="you shall not pass!" disabled)
+
+          %li(class="input optional" id="test_disabled1_input")
+            %label(class="label" for="test_disabled1") Disabled Input (input only)
+            %input(class="text optional" id="test_disabled1" type="text" name="test[disabled1]" placeholder="you can't click me!" disabled)
+
+          %li(class="select cities optional disabled" id="test_select_select")
+            %label(class="label" for="test_select") Select
+            %select(class="cities optional" id="test_select" name="test[cities]" disabled)
+              %optgroup(label="Colorado")
+                %option(value="denver" selected="selected") Denver
+                %option(value="boulder") Boulder
+              %optgroup(label="California")
+                %option(value="los angeles") Los Angeles
+                %option(value="san francisco") San Francisco
+
+          %li(class="radiogroup required disabled")
+            %input(class="radio_button required" id="test_radio3" type="radio" name="test[radio2]" checked="checked" value="0" disabled)
+            %label(class="label" for="test_radio3") Radio Button 1
+          %li(class="radiogroup required disabled")
+            %input(class="radio_button required" id="test_radio4" type="radio" name="test[radio2]" value="1" disabled)
+            %label(class="label" for="test_radio4") Radio Button 2
+
+          %li(class="checkgroup required disabled")
+            %input(class="check_button required" id="test_check1" type="checkbox" name="test[check1]" checked="checked" value="0" disabled)
+            %label(class="label" for="test_check1") Checkbox Button 1
+          %li(class="checkgroup required disabled")
+            %input(class="check_button required" id="test_check2" type="checkbox" name="test[check1]" value="1" disabled)
+            %label(class="label" for="test_check2") Checkbox Button 2
+
+          %li(class="input submit")
+            %input(class="submit btn" name="submit" type="submit" value="Submit" disabled)
 
