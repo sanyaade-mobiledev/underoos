@@ -6,8 +6,7 @@
     %h4 Default Table
     %p The basic table creates division in data with horizontal dividers. Additional classes (see below) can be added to build a more structured table.
   .sg-twothird.push
-    %table(cellspacing="0")
-      %caption Default Table Caption
+    %table
       = haml(:"/styleguide/partials/_table-data", :layout => false)
 
 .sg-subsection
@@ -15,8 +14,7 @@
     %h4 Box Table
     %p Adding the <code>.box</code> class renders the table with exterior boundries for all <code>table rows</code>.
   .sg-twothird.push
-    %table.box(cellspacing="0")
-      %caption Box Table Caption
+    %table.box
       = haml(:"/styleguide/partials/_table-data", :layout => false)
 
 .sg-subsection
@@ -24,8 +22,7 @@
     %h4 Vertical Border Table
     %p Adding the <code>.vborder</code> class renders the table with vertical divisions for <code>table data</code>.
   .sg-twothird.push
-    %table.vborder(cellspacing="0")
-      %caption Vertical Bordered Table Caption
+    %table.vborder
       = haml(:"/styleguide/partials/_table-data", :layout => false)
 
 .sg-subsection
@@ -33,8 +30,7 @@
     %h4 Box &amp; Vertical Border Table
     %p Adding the <code>.box</code> class combined with the <code>.vborder</code> class renders the table with full borders around <code>tr</code> and <code>td</code> elements.
   .sg-twothird.push
-    %table.box.vborder(cellspacing="0")
-      %caption Box &amp; Vertical Bordered Table Caption
+    %table.box.vborder
       = haml(:"/styleguide/partials/_table-data", :layout => false)
 
 .sg-subsection
@@ -48,7 +44,6 @@
     %br
     %p The following table is rendered as <code>%table.box.zebra.thead-decorate.tfoot-decorate</code>
   .sg-twothird.push
-    %table.box.zebra.thead-decorate.tfoot-decorate(cellspacing="0")
-      %caption Various Settings Caption
+    %table.box.zebra.thead-decorate.tfoot-decorate
       = haml(:"/styleguide/partials/_table-data", :layout => false)
 

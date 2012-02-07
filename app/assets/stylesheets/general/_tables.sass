@@ -1,105 +1,73 @@
 
-// horizontal(default), border
-// normal, zebra
-// Header's should be able to have their own styles
-
 // Tables
 table
-  background: transparent
-  width: 100%
   margin: .5em 0
-
-  thead, tfoot
-    font-size: 0.75em
-    font-weight: bold
-
-  caption
-    font-size: 0.85em
-    font-weight: bold
-    margin-bottom: 0.5em
-    text-align: left
-    text-transform: uppercase
-
-  thead
-    background: none
-    text-transform: uppercase
-
-  tbody
-    background: none
+  width: 100%
 
   th, td
-    padding: 0.75em
+    padding: 0.6em
+    line-height: 1
     text-align: left
+    border-top: 1px solid $component_border
 
   th
     font-weight: bold
+    vertical-align: bottom
 
-  /* tr
-
-  tfoot
-    background: none
-
-  // Overrides
-  thead tr
-    border-bottom: 1px solid $component_border_alt
-
-  tbody tr
-    border-top: 1px solid $component_border
-    &:last-child
-      border-bottom: 1px solid $component_border_alt
+  thead:first-child tr th,
+  thead:first-child tr td
+    border-top: 0
 
   tbody td > a:hover
     text-decoration: underline
 
-  tfoot tr, tfoot td
-    padding: 0.5em
+  tfoot
+    font-size: 0.85em
 
-  tfoot tr
-    border-bottom: 1px solid $component_border_alt
+  tbody + tbody
+    border-top: 2px solid $component_border
 
   // Specials
-  th a.ascending,
-  th a.descending
-    &:after
-      +inline-block
-      content: ""
-      margin: -4px 0 0 10px
-      border-width: 0 4px 4px
-      border-style: solid
-      border-color: $link_normal transparent
-    &:hover
-      &:after
-        border-color: $link_hover transparent
-  th a.descending
-    &:after
-      border-width: 4px 4px 0
+  th a.ascending:after,
+  th a.descending:after
+    +inline-block
+    content: ""
+    margin: -4px 0 0 8px
+    border-width: 0 4px 4px
+    border-style: solid
+    border-color: $link_normal transparent
+  th a.ascending:hover:after,
+  th a.descending:hover:after
+    border-color: $link_hover transparent
+  th a.descending:after
+    border-width: 4px 4px 0
 
+// Take another look at the overrides for borders... might not be needed
 table.box
   thead tr
-    border: 1px solid $component_border_alt
+    border: 1px solid $component_border
   tbody tr
     border: 1px solid $component_border
-    &:last-child
-      border-bottom: 1px solid $component_border_alt
   tfoot tr
-    border: 1px solid $component_border_alt
-    border-top-color: transparent
+    border: 1px solid $component_border
+
   /* Override when vborder is attached to the same class
   thead th
     &:first-child
-      border-left-color: $component_border_alt !important
+      border-left-color: $component_border !important
     &:last-child
-      border-right-color: $component_border_alt !important
+      border-right-color: $component_border !important
   tbody td
     &:first-child
       border-left-color: $component_border !important
     &:last-child
       border-right-color: $component_border !important
 
+// Vertical borders
 table.vborder
   thead th
-    border-left: 1px solid $component_border_alt
-    border-right: 1px solid $component_border_alt
+    border-left: 1px solid $component_border
+    border-right: 1px solid $component_border
     &:first-child
       border-left-color: transparent
     &:last-child
@@ -113,22 +81,18 @@ table.vborder
     &:last-child
       border-right-color: transparent
 
-
 // Zebra table
-table.zebra
-  tbody tr
-    &:nth-child(odd), &.odd
-      background-color: transparent
-    &:nth-child(even), &.even
-      background-color: $component_bg_hover
+table.zebra tbody tr
+  &:nth-child(odd), &.odd
+    background-color: transparent
+  &:nth-child(even), &.even
+    background-color: $standard
 
 // Colorize the table header background
-table.thead-decorate
-  thead
-    background-color: $standard
+table.thead-decorate thead
+  background-color: $component_bg_hover
 
 // Colorize the table footer background
-table.tfoot-decorate
-  tfoot
-    background-color: $standard
+table.tfoot-decorate tfoot
+  background-color: $standard
 
