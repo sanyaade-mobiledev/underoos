@@ -48,16 +48,16 @@
         %td The sub element is used to display text <sub>lower</sub> and <sub>smaller</sub>
       %tr
         %td <code>&lt;address&gt;</code>
-        %td For contact information related to the author of the document (end each line with <code>&lt;br&gt;</code>)
+        %td For contact information related to the author of the document
       %tr
         %td <code>&lt;time&gt;</code>
         %td Use for a <time>24-hour</time> clock or a precise date in the <a href="http://en.wikipedia.org/wiki/Gregorian_calendar">Gregorian calendar</a>
       %tr
         %td <code>&lt;abbr&gt;</code>
-        %td <abbr title="For Placement Only">FPO</abbr>. Describes an abbreviated phrase (include <code>title="value"</code>)
+        %td <abbr title="For Placement Only">FPO</abbr>. Describes an abbreviated phrase with the <code>title</code> attribute
       %tr
         %td <code>&lt;dfn&gt;</code>
-        %td <dfn title="This is a definition">DFN</dfn>. Describes the definition of a word or term (include <code>title="value"</code>)
+        %td <dfn title="This is a definition">DFN</dfn>. Describes the definition of a word or term with the <code>title</code> attribute
       %tr
         %td <code>&lt;ins&gt;</code>
         %td The ins element defines text that has been <ins>inserted into a document</ins>
@@ -72,9 +72,10 @@
   .sg-half.pull
     %h5 Inline elements examples
     %br
-    %p Yeah, well, <em>listen</em>. You ought to <strong>ditch</strong> the <strong><em>two</em></strong> <a href="http://modeset.com/">geeks</a> you're in the <dfn title="motorized vehicle">car</dfn> with now and get <sub>in with</sub> us.
+    %p Yeah, well, <em>listen</em>. You ought to <strong>ditch</strong> the <strong><em>two</em></strong> <a href="http://modeset.com/">geeks</a> you're in the <dfn title="motorized vehicle">car</dfn> with now and get <sub>in with</sub> us. But that's alright, <mark>we'll worry about</mark> that <time>later</time>. I will <small>see you</small> there. All right<sup>&trade;</sup>? <del>Man</del>, <ins>I love</ins> those <abbr title="Hotties">redheads</abbr>.
     %br
-    %p But that's alright, <mark>we'll worry about</mark> that <time>later</time>. I will <small>see you</small> there. All right<sup>&trade;</sup>? <del>Man</del>, <ins>I love</ins> those <abbr title="Hotties">redheads</abbr>.
+    %br
+    %p <small>* See <a href="http://dochub.io/#html/">dochub.io</a> for other available elements</small>
   .sg-half.push
     %h5 Address examples
     %br
@@ -85,6 +86,8 @@
       %br
       Washington D.C. DC 20500
       %br
+      %br
+      <strong>Email:</strong>
       %br
       %a(href="#") president@whitehouse.gov
 
