@@ -26,8 +26,11 @@
 .sg-subsection
   %h3.sg-subheading UI Elements
   .sg-onethird.pull
-    %p.sg-todo Buttons, sprites, icons, graphics etc...
+    %p Sprites, icons, graphics, images auto generated from <code>public/images/*</code>
   .sg-twothird.push
     .well
-      %p auto generated images...
+      - @images.each do |image|
+        - base = "#{File.basename(image)}"
+        %p.sg-note(style="margin: 1.5em 0 1em 0;") #{image}
+        %img(src="#{image}" alt="#{base}")
 
