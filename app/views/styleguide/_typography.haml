@@ -1,6 +1,6 @@
 
 .sg-subsection
-  %h3.sg-subheading Heading Styles
+  %h3.sg-subheading Headings &amp; body copy
   %h1 Google hearts h1 headings, but only use one per page.
   %p=@lorem
   %br
@@ -16,97 +16,115 @@
   %h5 Every time you use an h5 heading, Google kills a puppy. A tiny little puppy.
   %p=@lorem
   %br
-  %h6 Google just killed a kitten now too since you used an h6 heading.
+  %h6 An h6 heading? Google just killed a litter of kittens.
   %p=@lorem
 
 
 .sg-subsection
-  %h3.sg-subheading Paragraph Styles
-  %p
-    %em The em tag is used to emphasize text.
-  %p
-    %strong The strong tag is generally used for bold text.
-  %p
-    %strong
-      %em Wrap the strong and the em tag and away you go.
-  %p Just wanted to say what sup<sup>&reg;</sup> with the superscript tag.
-  %p The <sub>sub tag</sub> is just plain weird, but that's what makes it a unique beautiful butterfly.
-  %p This is an inline anchor tag so <a href='http://www.google.com/'>click here</a>!
-  %p
-    %small The small tag renders text well, smaller.
-  %p
-    %big The big tag renders text bigger (tag is being deprecated).
-  %p <abbr title="For Placement Only">FPO</abbr>. The abbr tag describes an abbreviated phrase.
-  %p <acronym title="as soon as possible">ASAP</acronym>. An acronym tag can be spoken as if it were a word, example NATO, NASA, ASAP, GUI.
-  %p <dfn title="This is a definition">DFN</dfn>. The dfn tag wraps the definition of a word or term.
-  %p
-    %ins The ins tag defines text that has been inserted into a document.
-  %p
-    %del The del tag defines text that has been deleted from a document.
-  %p
-    %mark The mark tag is used for indicating text as marked or highlighted for reference purposes.
-  %p What time is it? <time>1:00am</time>
-  %br
-  %figure
-    %p The figure tag is used for annotating illustrations, diagrams, photos, code listings, etc.
-    %figcaption The figcaption tag is used to provide a caption when using the figure tag. The figcaption tag is used either as the first or last child of its parent figure tag.
-  %br
-  %address
-    Mr. Address Tag
-    %br
-    1600 Pennsylvania Ave NW
-    %br
-    Washington D.C. DC 20500
-  %br
-  .sg-half
-    %blockquote
-      %q Let me tell you what Melba Toast is packin' right here, all right. We got 4:11 Positrac outback, 750 double pumper, Edelbrock intake, bored over 30, 11 to 1 pop-up pistons, turbo-jet 390 horsepower. We're talkin' some f***in' muscle.
-      %cite David Wooderson
-  .clearfixer
-
-  %cite A <code>cite</code> outside a block quote
-
-  %br
-  %details
-    %summary Click to Expand A Summary
-    %p The summary tag can be clicked on to expand/collapse the details as required. The summary tag, should be the first child of the details tag. The details tag specifies additional details that the user can view or hide on demand.
+  %h3.sg-subheading Inline paragraph elements
+  %table.box.vborder.zebra.thead-decorate
+    %thead
+      %tr
+        %th Element
+        %th Usage
+    %tbody
+      %tr
+        %td <code>&lt;a&gt;</code>
+        %td The anchor element defines a <a href='http://www.modeset.com/'>hyperlink</a>!
+      %tr
+        %td <code>&lt;em&gt;</code>
+        %td The em element is used to <em>emphasize</em> text
+      %tr
+        %td <code>&lt;strong&gt;</code>
+        %td The strong element also <strong>emphasizes</strong> text, typically in <strong>bold</strong>
+      %tr
+        %td <code>&lt;small&gt;</code>
+        %td The small element renders text well, <small>smaller</small>
+      %tr
+        %td <code>&lt;sup&gt;</code>
+        %td The superscript element is used to display text higher<sup>&reg;</sup> and smaller<sup>&trade;</sup>
+      %tr
+        %td <code>&lt;sub&gt;</code>
+        %td The sub element is used to display text <sub>lower</sub> and <sub>smaller</sub>
+      %tr
+        %td <code>&lt;address&gt;</code>
+        %td For contact information related to the author of the document (end each line with <code>&lt;br&gt;</code>)
+      %tr
+        %td <code>&lt;time&gt;</code>
+        %td Use for a <time>24-hour</time> clock or a precise date in the <a href="http://en.wikipedia.org/wiki/Gregorian_calendar">Gregorian calendar</a>
+      %tr
+        %td <code>&lt;abbr&gt;</code>
+        %td <abbr title="For Placement Only">FPO</abbr>. Describes an abbreviated phrase (include <code>title="value"</code>)
+      %tr
+        %td <code>&lt;dfn&gt;</code>
+        %td <dfn title="This is a definition">DFN</dfn>. Describes the definition of a word or term (include <code>title="value"</code>)
+      %tr
+        %td <code>&lt;ins&gt;</code>
+        %td The ins element defines text that has been <ins>inserted into a document</ins>
+      %tr
+        %td <code>&lt;del&gt;</code>
+        %td The del tag defines text that has been <del>deleted from a document</del>
+      %tr
+        %td <code>&lt;mark&gt;</code>
+        %td The mark element is used for indicating text as <mark>marked or highlighted for reference</mark> purposes
 
 .sg-subsection
-  %h3.sg-subheading Dividers/ Horizontal Rules
-  %hr
-  %hr.dotted
-  %hr.dashed
-
-.sg-subsection
-  %h3.sg-subheading Code Styles
-  %p The <code>code</code> tag is used to show inline code
-  %p The <kbd>kbd</kbd> tag defines keyboard text
-  %p The <samp>samp</samp> tag defines sample computer code
   .sg-half.pull
-    %pre
-      = preserve do
-        :escaped
-          # The pre tag
-          git add .
-          git commit -m "Updated heading styles"
-          git push
-          git pull --rebase
+    %h5 Inline elements examples
+    %br
+    %p Yeah, well, <em>listen</em>. You ought to <strong>ditch</strong> the <strong><em>two</em></strong> <a href="http://modeset.com/">geeks</a> you're in the <dfn title="motorized vehicle">car</dfn> with now and get <sub>in with</sub> us.
+    %br
+    %p But that's alright, <mark>we'll worry about</mark> that <time>later</time>. I will <small>see you</small> there. All right<sup>&trade;</sup>? <del>Man</del>, <ins>I love</ins> those <abbr title="Hotties">redheads</abbr>.
   .sg-half.push
-    %pre.prettyprint
-      = preserve do
-        :escaped
-          <!-- %pre.prettyprint -->
-          <header>
-            <h1>Heading</h1>
-            <p>Some Copy...</p>
-          </header>
-
+    %h5 Address examples
+    %br
+    %address
+      <strong>Mr. Address Tag</strong>
+      %br
+      1600 Pennsylvania Ave NW
+      %br
+      Washington D.C. DC 20500
+      %br
+      %br
+      %a(href="#") president@whitehouse.gov
 
 .sg-subsection
-  %h3.sg-subheading List Styles
+  %h3.sg-subheading Blockquotes
+  %blockquote
+    %p &#8220;Let me tell you what Melba Toast is packin' right here, all right. We got 4:11 Positrac outback, 750 double pumper, Edelbrock intake, bored over 30, 11 to 1 pop-up pistons, turbo-jet 390 horsepower. We're talkin' some f***in' muscle.&#8221;
+    %small David Wooderson, <cite title="link to source">Dazed &amp; Confused</cite>
+.sg-subsection
+  %pre.prettyprint
+    = preserve do
+      :escaped
+        <blockquote>
+          <p>&#8220;Let me...&#8221;</p>
+          <small>Author<cite title="resource">source...</cite></small>
+        </blockquote>
+
+.sg-subsection
+  %h3.sg-subheading Horizontal Rules
   .sg-quarter.pull
-    %p
-      %strong Unordered List:
+    %code(style="line-height:5em") &lt;hr&gt;
+  .sg-threequarter.push
+    .well
+      %hr
+  .sg-quarter.pull
+    %code(style="line-height:5em") &lt;hr class="dotted"&gt;
+  .sg-threequarter.push
+    .well
+      %hr.dotted
+  .sg-quarter.pull
+    %code(style="line-height:5em") &lt;hr class="dashed"&gt;
+  .sg-threequarter.push
+    .well
+      %hr.dashed
+
+.sg-subsection
+  %h3.sg-subheading Lists
+  .sg-quarter.pull
+    %p <strong>Unordered List:</strong>
+    %p(style="margin-bottom:0.5em;") <code>&lt;ul&gt;</code>
     %ul
       %li Unordered list
       %li Unordered list
@@ -120,8 +138,8 @@
         %li Nested ordered list
         %li Nested ordered list
   .sg-quarter
-    %p
-      %strong Ordered List:
+    %p <strong>Ordered List:</strong>
+    %p(style="margin-bottom:0.5em;") <code>&lt;ol&gt;</code>
     %ol
       %li Ordered list
       %li Ordered list
@@ -135,8 +153,8 @@
         %li Nested ordered list
         %li Nested ordered list
   .sg-quarter
-    %p
-      %strong Unstyled List:
+    %p <strong>Unstyled List:</strong>
+    %p(style="margin-bottom:0.5em;") <code>&lt;ul class="unstyled"&gt;</code>
     %ul.unstyled
       %li Unordered list
       %li Unordered list
@@ -150,8 +168,8 @@
         %li Nested ordered list
         %li Nested ordered list
   .sg-quarter.push
-    %p
-      %strong Definition List:
+    %p <strong>Definition List:</strong>
+    %p(style="margin-bottom:0.5em;") <code>&lt;dl&gt;</code>
     %dl
       %dt Definition Term
       %dd Definition Description #{@lorem_tiny}
@@ -159,4 +177,47 @@
       %dd Definition Description #{@lorem_tiny}
       %dt Definition Term
       %dd Definition Description #{@lorem_tiny}
+
+.sg-subsection
+  %h3.sg-subheading Code Styles
+  %h5 Inline elements
+  %table.box.vborder.zebra.thead-decorate
+    %thead
+      %tr
+        %th Element
+        %th Usage
+    %tbody
+      %tr
+        %td <code>&lt;code&gt;</code>
+        %td The <code>code</code> tag is used to show inline code
+      %tr
+        %td <code>&lt;kbd&gt;</code>
+        %td The <kbd>kbd</kbd> tag defines keyboard text
+      %tr
+        %td <code>&lt;samp&gt;</code>
+        %td The <samp>samp</samp> tag defines sample computer code
+
+.sg-subsection
+  .sg-half.pull
+    %h5 The basic block
+    %p Use the <code>pre</code> element for multiline code blocks.
+    %pre
+      = preserve do
+        :escaped
+          <!-- <pre> -->
+          <header>
+            <h1>Heading</h1>
+            <p>Some Copy...</p>
+          </header>
+  .sg-half.push
+    %h5 Google's Prettify
+    %p Add the <code>.prettyprint</code> class for basic syntax highlighting.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <!-- <pre class="prettyprint"> -->
+          <header>
+            <h1>Heading</h1>
+            <p>Some Copy...</p>
+          </header>
 
