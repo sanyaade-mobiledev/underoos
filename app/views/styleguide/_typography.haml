@@ -204,20 +204,24 @@
     %pre
       = preserve do
         :escaped
-          <!-- <pre> -->
-          <header>
-            <h1>Heading</h1>
-            <p>Some Copy...</p>
-          </header>
+          <!-- basic block -->
+          <pre>
+            <section>
+              <h1>Heading</h1>
+              <p>Some Copy...</p>
+            </section>
+          </pre>
   .sg-half.push
     %h5 Google's Prettify
     %p Add the <code>.prettyprint</code> class for basic syntax highlighting.
     %pre.prettyprint
       = preserve do
         :escaped
-          <!-- <pre class="prettyprint"> -->
-          <header>
-            <h1>Heading</h1>
-            <p>Some Copy...</p>
-          </header>
+          <!-- make it pretty -->
+          <pre class="prettyprint">
+            <section>
+              <h1>Heading</h1>
+              <p>Some Copy...</p>
+            </section>
+          </pre>
 

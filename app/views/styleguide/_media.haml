@@ -26,11 +26,13 @@
 .sg-subsection
   %h3.sg-subheading UI Elements
   .sg-onethird.pull
-    %p Sprites, icons, graphics, images auto generated from <code>public/images/*</code>
+    %p Sprites, icons, graphics, images used in the application
   .sg-twothird.push
     .well
       - @images.each do |image|
         - base = "#{File.basename(image)}"
         %p.sg-note(style="margin: 1.5em 0 1em 0;") #{image}
         %img(src="#{image}" alt="#{base}")
+    .notification.important.fade.in
+      %p Images are auto generated from `public/images/*`
 
