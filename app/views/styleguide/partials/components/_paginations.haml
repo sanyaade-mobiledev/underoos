@@ -1,0 +1,32 @@
+
+.sg-subsection
+  %h3.sg-subheading Paginations
+  .sg-onethird.pull
+    %p Apply the <code>.pagination</code> class to <code>nav</code> elements to represent pagination navigation. The markup and styles for pagination are tuned to work with the <a href="https://github.com/mislav/will_paginate">will_paginate</a> ruby gem.
+    %br
+    %p Add <code>.pagination-center</code> or <code>.pagination-right</code> to the <code>.pagination</code> container to center or position to the right.
+  .sg-twothird.push
+    .well
+      %nav.pagination
+        %ol
+          %li.disabled
+            %a(href="#") &laquo;
+          %li
+            %a(href="#") 1
+          %li.active
+            %a(href="#") 2
+          %li
+            %a(href="#" rel="next") 3
+          %li
+            %a(href="#") 4
+          %li
+            %a(href="#") 5
+          %li.disabled
+            %a(href="#") &hellip;
+          %li
+            %a(href="#") 11
+          %li
+            %a(href="#") 12
+          %li
+            %a(href="#" rel="next") &raquo;
+
