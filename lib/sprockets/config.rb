@@ -11,5 +11,5 @@ $sprockets_environment.append_path 'vendor/assets/javascripts'
 $sprockets_environment.append_path 'app/assets/javascripts'
 $sprockets_environment.append_path 'app/assets/stylesheets'
 
-# Compass.configuration.line_comments = false
+Compass.configuration.line_comments = false
 
