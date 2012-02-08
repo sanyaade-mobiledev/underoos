@@ -1,93 +1,154 @@
 
 .sg-subsection
   %h3.sg-subheading Buttons
-  .sg-onethird.pull
-    %p.sg-todo Add a description about buttons.
+  %table.box.zebra.thead-decorate
+    %thead
+      %tr
+        %th Button
+        %th Class
+        %th Description
+    %tbody
+      %tr
+        %td <button class="btn">Default</button>
+        %td <code>.btn</code>
+        %td The default button is typically used in forms
+      %tr
+        %td <button class="btn info">Info</button>
+        %td <code>.btn.info</code>
+        %td The info button is an alternate to the default button
+      %tr
+        %td <button class="btn important">Important</button>
+        %td <code>.btn.important</code>
+        %td The important button is used to showcase a primary action
+      %tr
+        %td <button class="btn success">Success</button>
+        %td <code>.btn.success</code>
+        %td The success button indicates a successful or positive action
+      %tr
+        %td <button class="btn warning">Warning</button>
+        %td <code>.btn.warning</code>
+        %td The warning button indicates caution should be taken with this action
+      %tr
+        %td <button class="btn alert">Alert</button>
+        %td <code>.btn.alert</code>
+        %td The alert button indicates is similar to a warning, but more severe
+      %tr
+        %td <button class="btn danger">Danger</button>
+        %td <code>.btn.danger</code>
+        %td The danger button indicates a dangerous or potentially negative action
+      %tr
+        %td <button class="btn primary">Primary</button>
+        %td <code>.btn.primary</code>
+        %td The primary button is based off of the CI settings within the application
+.sg-subsection
+  .sg-half.pull
+    %h4 About these buttons
+    %p As a convention, buttons should only be used for actions while hyperlinks are to be used for objects. For instance, "Download" should be a button while "recent activity" should be a link.
     %br
-    %p links render different
+    %p Button styles can be applied to anything with the <code>.btn</code> class. Typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements or <code>input</code> button elements.
+  .sg-half.push
+    %h4 The structure
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <button class="btn">Default</button>
+          <button class="btn important">Important</button>
+
+          <a class="btn">Default</a>
+          <a class="btn important">Important</a>
+
+          <input class="submit btn" type="submit" value="Submit"></input>
+          <input class="reset btn" type="reset" value="Reset"></input>
+.sg-subsection(style="margin-top:2.5em")
+  .sg-half.pull
+    %h5 Links render different
+    %p <code>a</code> elements have <code>font-style:bold</code>
+    %br
     .well
       %button.btn(href="#") Button
       %a.btn(href="#") Link
       %button.btn.primary(href="#") Button
       %a.btn.primary(href="#") Link
-    %p disabled states
-    .well
-      %button.btn(href="#" disabled) Button
-      %a.btn.disabled(href="#") Link
-      %button.btn.primary(href="#" disabled) Button
-      %a.btn.primary.disabled(href="#") Link
-    %p error states
-    .well
-      %button.btn.error(href="#") Button
-      %a.btn.error(href="#") Link
-      %button.btn.primary.error(href="#") Button
-      %a.btn.primary.error(href="#") Link
-    %p sizing
+      %input.submit.btn(name="submit" type="submit" value="Input Submit")
+      %input.reset.btn.alert(name="reset" type="reset" value="Input Reset")
+
+    %br
+    %h5 Sizing
+    %p Add either <code>.small</code> or <code>.large</code> class to change the size
+    %br
     .well
       %button.btn.small(href="#") Small
       %button.btn.large(href="#") Large
       %button.btn.primary.small(href="#") Small
       %button.btn.primary.large(href="#") Large
-  .sg-twothird.push
-    %table.box.thead-decorate
-      %thead
-        %tr
-          %th Button
-          %th Class
-          %th Description
-      %tbody
-        %tr
-          %td <button class="btn">Default</button>
-          %td <code>.btn</code>
-          %td The default button
-        %tr
-          %td <button class="btn info">Info</button>
-          %td <code>.btn.info</code>
-          %td The info button
-        %tr
-          %td <button class="btn important">Important</button>
-          %td <code>.btn.important</code>
-          %td The important button
-        %tr
-          %td <button class="btn success">Success</button>
-          %td <code>.btn.success</code>
-          %td The success button
-        %tr
-          %td <button class="btn warning">Warning</button>
-          %td <code>.btn.warning</code>
-          %td The warning button
-        %tr
-          %td <button class="btn alert">Alert</button>
-          %td <code>.btn.alert</code>
-          %td The alert button
-        %tr
-          %td <button class="btn danger">Danger</button>
-          %td <code>.btn.danger</code>
-          %td The danger button
-        %tr
-          %td <button class="btn primary">Primary</button>
-          %td <code>.btn.primary</code>
-          %td The primary button
+
+  .sg-half.push
+    %h5 Disabled states
+    %p Add the <code>.disabled</code> class or <code>:disabled</code> attribute
+    %br
+    .well
+      %button.btn(href="#" disabled) Button
+      %a.btn.disabled(href="#") Link
+      %button.btn.primary(href="#" disabled) Button
+      %a.btn.primary.disabled(href="#") Link
+
+    %br
+    %h5 Error states
+    %p Applied by adding the <code>.error</code> class
+    %br
+    .well
+      %button.btn.error(href="#") Button
+      %a.btn.error(href="#") Link
+      %button.btn.primary.error(href="#") Button
+      %a.btn.primary.error(href="#") Link
+
 
 
 .sg-subsection
   %h3.sg-subheading Images
-  .sg-onethird.pull
-    %p Standard images using the <code>img</code> tag.
-  .sg-twothird.push
+  .sg-half.pull
+    %strong Standard image element
+    %br
+    %p Images by default have the style setting of <code>max-width:100%</code> applied to allow scaling in a fluid grid.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <img src="http://placehold.it/160x90" alt="image"/>
+  .sg-half.push
     .well
       %img(src="http://placehold.it/160x90" alt="image")
+.sg-subsection
+  .sg-half.pull
+    %strong The figure element
+    %br
+    %p The <code>figure</code> element represents self-contained content, frequently with a <code>figcaption</code>. Image, illustration, diagram, code snippet, that is referenced in the main text.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <figure>
+            <img src="http://placehold.it/160x90" alt="image"/>
+            <figcaption>caption</figcaption>
+          </figure>
+  .sg-half.push
+    %br
     .well
       %figure
         %img(src="http://placehold.it/160x90" alt="image")
-        %figcaption The <code>&lt;figure&gt;</code> tag with <code>&lt;figcaption&gt;</code>
+        %figcaption <small>placehold.it</small>
 
 
 .sg-subsection
   %h3.sg-subheading Video
-  .sg-onethird.pull
-    %p Standard video, controls, and poster image utilizing the <code>video</code> tag.
-  .sg-twothird.push
+  .sg-half.pull
+    %p Standard video, controls, and poster image utilizing the <code>video</code> tag. Nothing special is done to the <code>video</code> element, just make sure to include a poster image and the appropriate sources!
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <video controls="" poster="...">
+            <source src="video.mp4" type="video/mp4; codecs=\"...\"">
+            <source src="video.ogv" type="video/ogg; codecs=\"...\"">
+          </video>
+  .sg-half.push
     .well
       %video(controls="" poster="http://placehold.it/320x180&text=Poster")
         %source(src="/path/to/myvideo.mp4" type="video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"")

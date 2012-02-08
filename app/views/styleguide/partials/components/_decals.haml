@@ -2,7 +2,12 @@
 .sg-subsection
   %h3.sg-subheading Decals
   .sg-onethird.pull
-    %p Decals are used to <span class="decal important">pop</span> information in a <code>block</code> of text, they are generally used with <code>inline</code> elements. It's best to wrap them in <code>span</code> tags.
+    %p Decals are used to <span class="decal important">pop</span> information in a block of text, they are generally used with <code>inline</code> elements. It's best to wrap them in <code>span</code> tags.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <span class="decal">Default</span>
+          <span class="decal danger">Danger!</span>
   .sg-twothird.push
     %table.box.thead-decorate
       %thead
