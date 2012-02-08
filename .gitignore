@@ -7,3 +7,4 @@ pkg/*
 log/*
 *.log
 tmp/*
+Gemfile.lock
