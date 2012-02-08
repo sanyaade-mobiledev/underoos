@@ -2,27 +2,28 @@
 .sg-subsection
   %h3.sg-subheading Breadcrumbs
   .sg-onethird.pull
-    %p Apply the <code>.breadcrumb</code> class to <code>nav</code> elements to provide linkable references to nested sections within the application.
+    %p Apply the <code>.breadcrumb</code> class to the <code>ol</code> or <code>ul</code> element to provide linkable references to nested sections within the application.
   .sg-twothird.push
     .well
-      %nav.breadcrumb
-        %ol
+      %nav
+        %ol.nav.breadcrumb
           %li
             %a(href="#") Level 1
           %li
             %a(href="#") Level 2
           %li
             %a(href="#") Level 3
-          %li.active Active Level
+          %li.active
+            %a(href="#") Active Level
     %pre.prettyprint
       = preserve do
         :escaped
-          <nav class="breadcrumb">
-            <ol>
+          <nav>
+            <ol class="nav breadcrumb">
               <li><a href="#">Level 1</a></li>
               <li><a href="#">Level 2</a></li>
               <li><a href="#">Level 3</a></li>
-              <li>Active</li>
+              <li class="active"><a href="#">Active</a></li>
             </ol>
           </nav>
 

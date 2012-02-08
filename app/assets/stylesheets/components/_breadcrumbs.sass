@@ -1,5 +1,5 @@
 
-.breadcrumb li
+.breadcrumb > li
   display: inline
   font-weight: bold
   color: $component_normal
@@ -8,15 +8,15 @@
   &:last-child:after
     content: ""
 
-.breadcrumb li > a,
-.breadcrumb li > a:visited
+.breadcrumb > li > a
+  display: inline
   color: $link_normal
 
-.breadcrumb li > a:hover,
-.breadcrumb li > a:active
+.breadcrumb > li > a:hover,
+.breadcrumb > li > a:active
   color: $link_hover
 
-.breadcrumb .active,
-.breadcrumb .active > a
+.breadcrumb > .active > a,
+.breadcrumb > .active > a:hover
   color: $component_normal
 
