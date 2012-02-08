@@ -1,11 +1,10 @@
-
 !!! 5
 %html
   %head
     %title underoos.
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %link(rel="stylesheet" href="/assets/application.css" type="text/css")
+    = stylesheet_link_tag 'underoos'
 
   %body(data-spy="scroll" data-target=".spy")
     .navbar.fixed.sg-navbar
@@ -42,67 +41,66 @@
         .well.dark
           %h2.sg-heading Typography
           %p.sg-note Contains all of the heading, paragraph, lists, and inline typographic elements.
-        = haml(:"/styleguide/_typography", :layout => false)
+        = render :partial => 'typography'
 
       #palettes.sg-section
         .well.dark
           %h2.sg-heading Palettes
           %p.sg-note Various color palettes and themes used in the application.
-        = haml(:"/styleguide/_palettes", :layout => false)
+        = render :partial => 'palettes'
 
 
       #elements.sg-section
         .well.dark
           %h2.sg-heading Elements
           %p.sg-note Base class styles to enhance common elements found in an application.
-        = haml(:"/styleguide/_elements", :layout => false)
+        = render :partial => 'elements'
 
       #components.sg-section
         .well.dark
           %h2.sg-heading Components
           %p.sg-note Components consists of common patterns used in many applications but are not defined as base element tags.
-        = haml(:"/styleguide/_components", :layout => false)
+        = render :partial => 'components'
 
       #tables.sg-section
         .well.dark
           %h2.sg-heading Tables
           %p.sg-note Tables are used to represent tabular data.
-        = haml(:"/styleguide/_tables", :layout => false)
+        = render :partial => 'tables'
 
       #forms.sg-section
         .well.dark
           %h2.sg-heading Forms
           %p.sg-note Base input, textarea, labels, selects, button styles associated with form elements. Tuned to play with <a href="https://github.com/justinfrench/formtastic">formtastic</a>.
-        = haml(:"/styleguide/_forms", :layout => false)
+        = render :partial => 'forms'
 
       #structures.sg-section
         .well.dark
           %h2.sg-heading Structures
           %p.sg-note Structures consists of grids systems and common size elements used within the application. Collapse the browser window to see structures for media queries.
-        = haml(:"/styleguide/_structures", :layout => false)
+        = render :partial => 'structures'
 
       #layouts.sg-section
         .well.dark
           %h2.sg-heading Layouts
           %p.sg-note Layouts consists of various templates that are specific to the application.
-        = haml(:"/styleguide/_layouts", :layout => false)
+        = render :partial => 'layouts'
 
       #media.sg-section
         .well.dark
           %h2.sg-heading Media
           %p.sg-note Showcases the various media elements that are in use by the application.
-        = haml(:"/styleguide/_media", :layout => false)
+        = render :partial => 'media'
 
       #resources.sg-section
         .well.dark
           %h2.sg-heading External Resources
           %p.sg-note What's this do?
-        = haml(:"/styleguide/_resources", :layout => false)
+        = render :partial => 'resources'
 
     .guider
-    = haml(:"/shared/_upgrades", :layout => false)
+    = render :partial => 'shared/upgrades'
 
-    %script(src="/assets/application.js" type="text/javascript" charset="utf-8")
-    %script(src="/assets/prettify.js" type="text/javascript" charset="utf-8")
-    %script(src="/assets/styleguide.js" type="text/javascript" charset="utf-8")
-
+    = javascript_include_tag 'underoos'
+    = javascript_include_tag 'prettify'
+    = javascript_include_tag 'styleguide'

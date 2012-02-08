@@ -1,0 +1,34 @@
+
+= render :partial => 'underoos/styleguides/components/decals'
+= render :partial => 'underoos/styleguides/components/breadcrumbs'
+= render :partial => 'underoos/styleguides/components/navs'
+= render :partial => 'underoos/styleguides/components/paginations'
+= render :partial => 'underoos/styleguides/components/modals'
+= render :partial => 'underoos/styleguides/components/tooltips'
+= render :partial => 'underoos/styleguides/components/popovers'
+= render :partial => 'underoos/styleguides/components/notifications'
+
+-# Small miscellaneous components
+.sg-subsection
+  %h3.sg-subheading Closers
+  .sg-onethird.pull
+    %p Closes stuff
+  .sg-twothird.push
+    .well.primary
+      %a.close(href="#" style="float:none;") &times;
+      %a.close.alt(href="#" style="float:none;") &times;
+
+.sg-subsection
+  %h3.sg-subheading Wells
+  .sg-quarter.pull
+    %p Holds stuff
+  .sg-quarter
+    .well
+      %code .well
+  .sg-quarter
+    .well.lite
+      %code .well.lite
+  .sg-quarter.push
+    .well.dark
+      %code .well.dark
+
