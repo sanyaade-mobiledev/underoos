@@ -1,16 +1,34 @@
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), 'lib')
 
 require 'rubygems'
 require 'bundler/setup'
+require 'underoos'
 
-require 'rack'
-require File.join(File.dirname(__FILE__), 'lib', 'sprockets', 'config')
-require './app'
+require 'action_controller/railtie'
+require 'sass-rails'
+require 'compass-rails'
+require 'sprockets/railtie'
+require 'haml-rails'
 
-map '/assets' do
-  run $sprockets_environment
+# Set up a dummy app for development
+class Underoos::Application < Rails::Application
+  config.session_store :cookie_store, :key => '_testapp_session'
+  config.secret_token = '1319d8ccf1b9bfbdefcb6aa380aadkasdjlkajdlajd044ce'
+
+  config.encoding = 'utf-8'
+  config.assets.enabled   = true
+  config.assets.compress  = false
+  config.assets.debug     = true
+  config.assets.version = '1.2'
+
+  # Compass, Y U No Play Nice?
+  config.sass.load_paths << "#{Gem.loaded_specs['compass'].full_gem_path}/frameworks/compass/stylesheets"
 end
 
-map '/' do
-  run App::Application.new
+Underoos::Application.initialize!
+
+Underoos::Application.routes.draw do
+  mount Underoos::Engine => "/styleguide"
 end
 
+run Underoos::Application
