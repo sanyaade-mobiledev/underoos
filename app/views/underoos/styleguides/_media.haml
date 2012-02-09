@@ -28,11 +28,11 @@
   .sg-onethird.pull
     %p Sprites, icons, graphics, images used in the application
   .sg-twothird.push
+    .notification.important.fade.in
+      %p Images are auto generated from `public/images/*`
     .well
       - @images.each do |image|
         - base = "#{File.basename(image)}"
         %p.sg-note(style="margin: 1.5em 0 1em 0;") #{image}
         %img(src="#{image}" alt="#{base}")
-    .notification.important.fade.in
-      %p Images are auto generated from `public/images/*`
 

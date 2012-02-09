@@ -1,51 +1,36 @@
 
 .sg-subsection
   %h3.sg-subheading Decals
-  .sg-onethird.pull
-    %p Decals are used to <span class="decal important">pop</span> information in a block of text, they are generally used with <code>inline</code> elements. It's best to wrap them in <code>span</code> tags.
-    %pre.prettyprint
-      = preserve do
-        :escaped
-          <span class="decal">Default</span>
-          <span class="decal danger">Danger!</span>
-  .sg-twothird.push
-    %table.box.thead-decorate
-      %thead
-        %tr
-          %th Decal
-          %th Class
-          %th Description
-      %tbody
-        %tr
-          %td <span class="decal">Default</span>
-          %td <code>.decal</code>
-          %td Describe this guy
-        %tr
-          %td <span class="decal info">Info</span>
-          %td <code>.decal.info</code>
-          %td Describe this guy
-        %tr
-          %td <span class="decal important">Important</span>
-          %td <code>.decal.important</code>
-          %td Describe this guy
-        %tr
-          %td <span class="decal success">Success</span>
-          %td <code>.decal.success</code>
-          %td Describe this guy
-        %tr
-          %td <span class="decal warning">Warning</span>
-          %td <code>.decal.warning</code>
-          %td Describe this guy
-        %tr
-          %td <span class="decal alert">Alert</span>
-          %td <code>.decal.alert</code>
-          %td Describe this guy
-        %tr
-          %td <span class="decal danger">Danger</span>
-          %td <code>.decal.danger</code>
-          %td Describe this guy
-        %tr
-          %td <span class="decal primary">Primary</span>
-          %td <code>.decal.primary</code>
-          %td Describe this guy
+  %p(style="width:50%;") Decals are used to <span class="decal important">pop</span> information in a block of text. They are typically used with <code>inline</code> elements and wrapped in a <code>span</code> element.
+.sg-subsection
+  %table.box.thead-decorate
+    %thead
+      %tr
+        %th Decal
+        %th Markup
+    %tbody
+      %tr
+        %td <span class="decal">Default</span>
+        %td <code>&lt;span class="decal"&gt;Default&lt;/span&gt;</code>
+      %tr
+        %td <span class="decal info">Info</span>
+        %td <code>&lt;span class="decal info"&gt;Info&lt;/span&gt;</code>
+      %tr
+        %td <span class="decal important">Important</span>
+        %td <code>&lt;span class="decal important"&gt;Important&lt;/span&gt;</code>
+      %tr
+        %td <span class="decal success">Success</span>
+        %td <code>&lt;span class="decal success"&gt;Success&lt;/span&gt;</code>
+      %tr
+        %td <span class="decal warning">Warning</span>
+        %td <code>&lt;span class="decal warning"&gt;Warning&lt;/span&gt;</code>
+      %tr
+        %td <span class="decal alert">Alert</span>
+        %td <code>&lt;span class="decal alert"&gt;Alert&lt;/span&gt;</code>
+      %tr
+        %td <span class="decal danger">Danger</span>
+        %td <code>&lt;span class="decal danger"&gt;Danger&lt;/span&gt;</code>
+      %tr
+        %td <span class="decal primary">Primary</span>
+        %td <code>&lt;span class="decal primary"&gt;Primary&lt;/span&gt;</code>
 

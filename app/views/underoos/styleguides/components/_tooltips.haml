@@ -1,25 +1,32 @@
 
 .sg-subsection
   %h3.sg-subheading Tooltips
-  .sg-onethird.pull
-    %p Tool tips utilize <a href="http://twitter.github.com/bootstrap/javascript.html#twipsy">Bootstrap's Twipsy plugin</a>. You can control various options of how a tool tip is shown based on attributes set in the link.
-  .sg-twothird.push
-    %table.box.zebra.thead-decorate.tools
-      %thead
-        %tr
-          %th Position
-          %th Markup
-      %tbody
-        %tr
-          %td <a href="#" rel="tooltip" data-placement="top" data-original-title="Top">Top</a>
-          %td <code>%a(rel="tooltip" data-placement="top" data-original-title="Top")</code>
-        %tr
-          %td <a href="#" rel="tooltip" data-placement="bottom" data-original-title="Bottom">Bottom</a>
-          %td <code>%a(rel="tooltip" data-placement="bottom" data-original-title="Bottom")</code>
-        %tr
-          %td <a href="#" rel="tooltip" data-placement="left" data-original-title="Left">Left</a>
-          %td <code>%a(rel="tooltip" data-placement="left" data-original-title="Left")</code>
-        %tr
-          %td <a href="#" rel="tooltip" data-placement="right" data-original-title="Right" data-offset="10">Right</a>
-          %td <code>%a(rel="tooltip" data-placement="right" data-original-title="Right")</code>
+  %p(style="width:50%;")
+    Tool tips utilize <a href="http://twitter.github.com/bootstrap/javascript.html#tooltips">Bootstrap's Tooltip plugin</a>. You can control various options of how a tool tip is shown based on attributes set in the link.
+    %br
+    %br
+    Styles are automatically generated based on the inverted colors of the body's <code>background-color</code> and font <code>color</code>.
+
+.sg-subsection
+  %table.box.zebra.thead-decorate.tools
+    %thead
+      %tr
+        %th Position
+        %th Markup
+    %tbody
+      %tr
+        %td <a href="#" rel="tooltip" data-placement="top" data-original-title="Top">Top</a>
+        %td <code>&lt;a href="#" rel="tooltip" data-placement="top" data-original-title="Top"&gt;Top&lt;/a&gt;</code>
+      %tr
+        %td <a href="#" rel="tooltip" data-placement="bottom" data-original-title="Bottom">Bottom</a>
+        %td <code>&lt;a href="#" rel="tooltip" data-placement="bottom" data-original-title="Bottom"&gt;Bottom&lt;/a&gt;</code>
+      %tr
+        %td <a href="#" rel="tooltip" data-placement="left" data-original-title="Left">Left</a>
+        %td <code>&lt;a href="#" rel="tooltip" data-placement="left" data-original-title="Left"&gt;Left&lt;/a&gt;</code>
+      %tr
+        %td <a href="#" rel="tooltip" data-placement="right" data-original-title="Right" data-offset="10">Right</a>
+        %td <code>&lt;a href="#" rel="tooltip" data-placement="right" data-original-title="Right"&gt;Right&lt;/a&gt;</code>
+
+  .notification.important.fade.in
+    %p <strong>Important!</strong> Tooltips are opt in and will only be instantiated if called directly from JavaScript
 

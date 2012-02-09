@@ -1,25 +1,28 @@
 
 .sg-subsection
   %h3.sg-subheading Popovers
-  .sg-onethird.pull
-    %p Pop Overs utilize <a href="http://twitter.github.com/bootstrap/javascript.html#popover">Bootstrap's Pop Over plugin</a>. They are similar to the tool tip plugin and they require <a href="http://twitter.github.com/bootstrap/javascript.html#twipsy">Bootstrap's Twipsy plugin</a> to be included.
-  .sg-twothird.push
-    %table.box.zebra.thead-decorate
-      %thead
-        %tr
-          %th Position
-          %th Markup
-      %tbody
-        %tr
-          %td <a href="#" rel="popover" data-placement="top" data-original-title="Top" data-content="This is a popover">Top</a>
-          %td <code>%a(rel="popover" data-placement="top" data-original-title="Top" data-content="This is a popover")</code>
-        %tr
-          %td <a href="#" rel="popover" data-placement="bottom" data-original-title="Bottom" data-content="This is a popover">Bottom</a>
-          %td <code>%a(rel="popover" data-placement="bottom" data-original-title="Bottom" data-content="This is a popover")</code>
-        %tr
-          %td <a href="#" rel="popover" data-placement="left" data-original-title="Left" data-content="This is a popover">Left</a>
-          %td <code>%a(rel="popover" data-placement="left" data-original-title="Left" data-content="This is a popover")</code>
-        %tr
-          %td <a href="#" rel="popover" data-placement="right" data-original-title="Right" data-content="This is a popover">Right</a>
-          %td <code>%a(rel="popover" data-placement="right" data-original-title="Right" data-content="This is a popover")</code>
+  %p(style="width:50%;") Pop Overs utilize <a href="http://twitter.github.com/bootstrap/javascript.html#popovers">Bootstrap's Popover plugin</a>. They are similar to the tool tip plugin and they require <a href="http://twitter.github.com/bootstrap/javascript.html#tooltips">Bootstrap's Tooltip plugin</a> to be included.
+
+.sg-subsection
+  %table.box.zebra.thead-decorate
+    %thead
+      %tr
+        %th Position
+        %th Markup
+    %tbody
+      %tr
+        %td <a href="#" rel="popover" data-placement="top" data-original-title="Top" data-content="This is a popover">Top</a>
+        %td <code>&lt;a rel="popover" data-placement="top" data-original-title="Top" data-content="..."&gt;Top&lt;/a&gt;</code>
+      %tr
+        %td <a href="#" rel="popover" data-placement="bottom" data-original-title="Bottom" data-content="This is a popover">Bottom</a>
+        %td <code>&lt;a rel="popover" data-placement="bottom" data-original-title="Bottom" data-content="..."&gt;Bottom&lt;/a&gt;</code>
+      %tr
+        %td <a href="#" rel="popover" data-placement="left" data-original-title="Left" data-content="This is a popover">Left</a>
+        %td <code>&lt;a rel="popover" data-placement="left" data-original-title="Left" data-content="..."&gt;Left&lt;/a&gt;</code>
+      %tr
+        %td <a href="#" rel="popover" data-placement="right" data-original-title="Right" data-content="This is a popover">Right</a>
+        %td <code>&lt;a rel="popover" data-placement="right" data-original-title="Right" data-content="..."&gt;Right&lt;/a&gt;</code>
+
+  .notification.important.fade.in
+    %p <strong>Important!</strong> Popovers are opt in and will only be instantiated if called directly from JavaScript
 

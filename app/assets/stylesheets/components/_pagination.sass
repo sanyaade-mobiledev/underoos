@@ -1,0 +1,41 @@
+
+.pagination
+  +clearfixer
+
+.pagination > li
+  display: inline
+  float: left
+
+.pagination > li > a
+  background-color: $component_bg
+  border: 1px solid $component_border
+  border-right-width: 0
+  padding: .5em .75em
+  &:hover
+    background-color: $component_bg_hover
+
+.pagination .active > a,
+.pagination .active > a:hover
+  background-color: $component_bg_active
+  color: $component_active
+
+.pagination .active > a,
+.pagination > li > a:active
+  +box-shadow($inset_dark)
+
+.pagination .disabled > a,
+.pagination .disabled > a:hover
+  color: $disabled_color
+  background: transparent
+
+.pagination > li:first-child > a
+  +border-radius(4px 0 0 4px)
+.pagination > li:last-child > a
+  +border-radius(0 4px 4px 0)
+  border-right-width: 1px
+
+.pagination-center
+  text-align: center
+.pagination-right
+  text-align: right
+

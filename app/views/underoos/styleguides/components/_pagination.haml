@@ -1,0 +1,45 @@
+
+.sg-subsection
+  %h3.sg-subheading Pagination
+  .sg-onethird.pull
+    %p Apply the <code>.pagination</code> class to the <code>ol</code> or <code>ul</code> element to represent pagination navigation.
+    %br
+    %br
+    %br
+    %p A pagination group can be centered or right aligned within a container by adding either <code>pagination-center</code> or the <code>pagination-right</code> class to the <code>ol</code> or <code>ul</code> element.
+  .sg-twothird.push
+    .well
+      %nav
+        %ol.nav.pagination
+          %li.disabled
+            %a(href="#") &laquo;
+          %li
+            %a(href="#") 1
+          %li.active
+            %a(href="#") 2
+          %li
+            %a(href="#" rel="next") 3
+          %li.disabled
+            %a(href="#") &hellip;
+          %li
+            %a(href="#") 11
+          %li
+            %a(href="#") 12
+          %li
+            %a(href="#" rel="next") &raquo;
+
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav>
+            <ol class="nav pagination">
+              <li class="disabled"><a href="#">&laquo;</a></li>
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#" rel="next">3</a></li>
+              <li class="disabled"><a href="#">&hellip;</a></li>
+              <li><a href="#">11</a></li>
+              <li><a href="#">12</a></li>
+              <li><a href="#">&raquo;</a></li>
+            </ol>
+          </nav>
