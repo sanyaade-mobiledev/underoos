@@ -1,49 +1,92 @@
 
 .sg-subsection
-  %h3.sg-subheading Table Styles
+  %h3.sg-subheading Table styles
+  %p Building tables is additive around the classes applied to the top level <code>table</code> element.
 
+.sg-subsection
   .sg-onethird.pull
-    %h4 Default Table
-    %p The basic table creates division in data with horizontal dividers. Additional classes (see below) can be added to build a more structured table.
+    %h4 Base
+    %p The base table creates division in data with horizontal dividers.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <table>
+            ...
+          </table>
   .sg-twothird.push
     %table
-      = render :partial => 'table-data'
+      = render :partial => 'underoos/styleguides/data/table-data'
 
 .sg-subsection
   .sg-onethird.pull
-    %h4 Box Table
+    %h4 Box
     %p Adding the <code>.box</code> class renders the table with exterior boundries for all <code>table rows</code>.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <table class="box">
+            ...
+          </table>
   .sg-twothird.push
     %table.box
-      = render :partial => 'table-data'
+      = render :partial => 'underoos/styleguides/data/table-data'
 
 .sg-subsection
   .sg-onethird.pull
-    %h4 Vertical Border Table
+    %h4 Vertical border
     %p Adding the <code>.vborder</code> class renders the table with vertical divisions for <code>table data</code>.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <table class="vborder">
+            ...
+          </table>
   .sg-twothird.push
     %table.vborder
-      = render :partial => 'table-data'
+      = render :partial => 'underoos/styleguides/data/table-data'
 
 .sg-subsection
   .sg-onethird.pull
-    %h4 Box &amp; Vertical Border Table
-    %p Adding the <code>.box</code> class combined with the <code>.vborder</code> class renders the table with full borders around <code>tr</code> and <code>td</code> elements.
+    %h4 Box &amp; vertical border
+    %p Combining the <code>.box</code> class combined with the <code>.vborder</code> class renders the table with full borders around <code>tr</code> and <code>td</code> elements.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <table class="box vborder">
+            ...
+          </table>
   .sg-twothird.push
     %table.box.vborder
-      = render :partial => 'table-data'
+      = render :partial => 'underoos/styleguides/data/table-data'
 
 .sg-subsection
   .sg-onethird.pull
-    %h4 Styled Table
-    %p To add coloring to alternate <code>tbody</code> rows, add the class <code>.zebra</code>
-    %br
-    %p To add a background color to the <code>thead</code> element, add the class <code>.thead-decorate</code>
-    %br
-    %p To add a background color to the <code>tfoot</code> element, add the class <code>.tfoot-decorate</code>
-    %br
-    %p The following table is rendered as <code>%table.box.zebra.thead-decorate.tfoot-decorate</code>
+    %h4 Banded
+    %p To add coloring to alternate <code>tbody</code> rows, add the class <code>.banded</code>
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <table class="banded">
+            ...
+          </table>
   .sg-twothird.push
-    %table.box.zebra.thead-decorate.tfoot-decorate
-      = render :partial => 'table-data'
+    %table.banded
+      = render :partial => 'underoos/styleguides/data/table-data'
+    .notification.important.fade.in
+      %p <strong>Note!</strong> You can also add <code>.odd</code> or <code>.even</code> to <code>tr</code> instead of relying on <code>:nth-child(<em>odd|even</em>)</code>
+
+
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Kitchen sink
+    %p Combine all of the available classes including <code>thead-decorate</code> and <code>tfoot-decorate</code> to style the <code>thead</code> and <code>tfoot</code> elements.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <table class="box vborder banded thead-decorate tfoot-decorate">
+            ...
+          </table>
+  .sg-twothird.push
+    %table.box.vborder.banded.thead-decorate.tfoot-decorate
+      = render :partial => 'underoos/styleguides/data/table-data'
 

@@ -1,10 +1,10 @@
 
 .sg-subsection
   %h3.sg-subheading Popovers
-  %p(style="width:50%;") Pop Overs utilize <a href="http://twitter.github.com/bootstrap/javascript.html#popovers">Bootstrap's Popover plugin</a>. They are similar to the tool tip plugin and they require <a href="http://twitter.github.com/bootstrap/javascript.html#tooltips">Bootstrap's Tooltip plugin</a> to be included.
+  %p(style="width:50%;") Pop Overs utilize <a href="http://twitter.github.com/bootstrap/javascript.html#popovers">Bootstrap's Popover plugin</a>. They are similar to the tool tip plugin and they require <a href="http://twitter.github.com/bootstrap/javascript.html#tooltips">Bootstrap's Tooltip plugin</a> to be included as well.
 
 .sg-subsection
-  %table.box.zebra.thead-decorate
+  %table.box.banded.thead-decorate
     %thead
       %tr
         %th Position
@@ -24,5 +24,6 @@
         %td <code>&lt;a rel="popover" data-placement="right" data-original-title="Right" data-content="..."&gt;Right&lt;/a&gt;</code>
 
   .notification.important.fade.in
-    %p <strong>Important!</strong> Popovers are opt in and will only be instantiated if called directly from JavaScript
+    %p <strong>Note!</strong> Popovers are opt in and will only be instantiated if called directly from JavaScript:
+    %code $("a[rel=popover]").popover()
 

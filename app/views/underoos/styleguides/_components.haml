@@ -10,25 +10,40 @@
 
 -# Small miscellaneous components
 .sg-subsection
-  %h3.sg-subheading Closers
-  .sg-onethird.pull
-    %p Closes stuff
-  .sg-twothird.push
-    .well.primary
+  %h3.sg-subheading Close icon
+  .sg-half.pull
+    %p Use the close icon to dismiss modals and notifications. The default is a darker icon. Pass in the <code>alt</code> class for a lighter color.
+    %br
+    %p Coupled with Twitter Bootstrap's <a href="http://twitter.github.com/bootstrap/javascript.html#alerts">alert</a> or <a href="http://twitter.github.com/bootstrap/javascript.html#modals">modal</a> JavaScript files, you can pass an optional <code>data-dismiss="modal|alert"</code> attribute to trigger the dismissing behavior.
+  .sg-half.push
+    .well(style="background-color:#666;")
       %a.close(href="#" style="float:none;") &times;
       %a.close.alt(href="#" style="float:none;") &times;
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <a class="close" href="#">&times;</a>
+          <a class="close alt" href="#">&times;</a>
+
 
 .sg-subsection
   %h3.sg-subheading Wells
-  .sg-quarter.pull
-    %p Holds stuff
-  .sg-quarter
+  .sg-half.pull
+    %p Wells are simple containers for popping elements off the page. They come in a few different flavors.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <div class="well">...</div>
+          <div class="well lite">...</div>
+          <div class="well dark">...</div>
+          <div class="well primary">...</div>
+  .sg-half
     .well
       %code .well
-  .sg-quarter
     .well.lite
       %code .well.lite
-  .sg-quarter.push
     .well.dark
       %code .well.dark
+    .well.primary
+      %code .well.primary
 
