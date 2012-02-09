@@ -1,38 +1,41 @@
 
 .sg-subsection
-  %h3.sg-subheading Favicon 16x16
-  .sg-onethird.pull
-    %p.sg-todo Describe favicon
-  .sg-twothird.push
+  %h3.sg-subheading Favicon &amp; touch icons
+  .sg-half.pull
+    %p Include these icons in the root directory of your project.
+    %br
+    %ol
+      %li favicon.ico <code>[16x16]</code>
+      %li apple-touch-icon.png <code>[57x57]</code>
+      %li apple-touch-icon-precomposed.png <code>[57x57]</code>
+      %li apple-touch-icon-57x57-precomposed.png
+      %li apple-touch-icon-72x72-precomposed.png
+      %li apple-touch-icon-114x114-precomposed.png
+    %br
+    %p
+      %small
+        You can optionally include a <code>320x460</code> <code>startup.png</code> in your root directory as well. See the <a href="http://miniapps.co.uk/blog/post/ios-startup-images-using-css-media-queries/">post</a> by Alex Gibson for more information.
+  .sg-half.push
     .well
       %img(src='/favicon.ico' alt='favicon')
-
-.sg-subsection
-  %h3.sg-subheading Apple touch icon 114x114
-  .sg-onethird.pull
-    %p.sg-todo Describe touch icon
-  .sg-twothird.push
-    .well
       %img(src='/apple-touch-icon.png' alt='apple touch icon')
-
-.sg-subsection
-  %h3.sg-subheading Apple startup image 320x460
-  .sg-onethird.pull
-    %p.sg-todo Describe startup image
-  .sg-twothird.push
-    .well
-      %img(src='/startup.png' alt='startup image')
+      %img(src='/apple-touch-icon-precomposed.png' alt='apple touch icon')
+      %img(src='/apple-touch-icon-57x57-precomposed.png' alt='apple touch icon')
+      %img(src='/apple-touch-icon-72x72-precomposed.png' alt='apple touch icon')
+      %img(src='/apple-touch-icon-114x114-precomposed.png' alt='apple touch icon')
+    .notification.important.fade.in
+      %p <strong>Note!</strong> For more information on using icons, see <a href="http://mathiasbynens.be/notes/touch-icons">Mathias Bynens post</a>.
 
 .sg-subsection
   %h3.sg-subheading UI Elements
   .sg-onethird.pull
-    %p Sprites, icons, graphics, images used in the application
+    %p Sprites, icons, graphics, and other image assets used within the application.
   .sg-twothird.push
-    .notification.important.fade.in
-      %p Images are auto generated from `public/images/*`
     .well
       - @images.each do |image|
         - base = "#{File.basename(image)}"
         %p.sg-note(style="margin: 1.5em 0 1em 0;") #{image}
         %img(src="#{image}" alt="#{base}")
+    .notification.important.fade.in
+      %p <strong>Note!</strong> Images are auto populated from `public/images/*`
 
