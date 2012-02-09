@@ -31,8 +31,6 @@
                 %a(href="#layouts") Layouts
               %li
                 %a(href="#media") Media
-              %li
-                %a(href="#resources") Resources
 
 
     .container.sg-contents
@@ -40,7 +38,7 @@
       #typography.sg-section
         .well.dark
           %h2.sg-heading Typography
-          %p.sg-note Contains all of the heading, paragraph, lists, and inline typographic elements.
+          %p.sg-note Heading, paragraph, lists, and inline typographic elements.
         = render :partial => 'typography'
 
       #palettes.sg-section
@@ -59,7 +57,7 @@
       #components.sg-section
         .well.dark
           %h2.sg-heading Components
-          %p.sg-note Components consists of common patterns used in many applications but are not defined as base element tags.
+          %p.sg-note Components are common patterns used in many applications but are not defined as base element tags.
         = render :partial => 'components'
 
       #tables.sg-section
@@ -77,7 +75,7 @@
       #structures.sg-section
         .well.dark
           %h2.sg-heading Structures
-          %p.sg-note Structures consists of grids systems and common size elements used within the application. Collapse the browser window to see structures for media queries.
+          %p.sg-note Structures consists of grids systems and common size elements used within the application.
         = render :partial => 'structures'
 
       #layouts.sg-section
@@ -95,7 +93,7 @@
       #resources.sg-section
         .well.dark
           %h2.sg-heading External Resources
-          %p.sg-note What's this do?
+          %p.sg-note References, links, credits, and various information related to the styleguide.
         = render :partial => 'resources'
 
     .guider
