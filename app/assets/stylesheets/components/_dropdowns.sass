@@ -1,0 +1,81 @@
+
+.dropdown
+  position: relative
+
+.dropdown-toggle:active,
+.dropdown.open .dropdown-toggle
+  outline: 0
+
+// move this to it's own state
+.caret
+  border-left: 4px solid transparent
+  border-right: 4px solid transparent
+  border-top: 4px solid $link_normal
+  content: "\2193"
+  text-indent: -999em
+  display: inline-block
+  vertical-align: top
+  width: 0
+  height: 0
+
+.dropdown .caret
+  margin: .5em 0 0 .3em
+
+.dropdown:hover .caret,
+.dropdown.open .caret
+  border-top-color: $link_hover
+
+.dropdown-menu
+  +background-clip(padding-box)
+  +border-radius(0 0 4px 4px)
+  +box-shadow($drop_dark)
+  list-style: none
+  background-color: $body_bg
+  border: 1px solid $component_border
+  position: absolute
+  display: none
+  float: left
+  margin: 0
+  padding: .3em 0
+  top: 100%
+  left: 0
+  max-width: 240px
+  min-width: 160px
+  z-index: 1000
+  &.drop-up
+    margin-bottom: 2px
+    top: auto
+    bottom: 100%
+
+.dropdown-menu li > a
+  color: $body_color
+  display: block
+  padding: .3em 1em
+  clear: both
+  white-space: nowrap
+
+.dropdown-menu li > a:hover,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover
+  color: $component_active
+  background-color: $component_bg_active
+
+.dropdown-menu li > a:active,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover
+  +box-shadow($inset_dark)
+
+// Kinda like an hr
+.dropdown-menu li.divider
+  height: 1px
+  margin: .3em 1px
+  overflow: hidden
+  background-color: $component_border
+  border-bottom: 1px solid lighten($component_border, 15%)
+
+// Open state for the dropdown
+.dropdown.open .dropdown-toggle
+  color: $link_hover
+.dropdown.open .dropdown-menu
+  display: block
+

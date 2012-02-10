@@ -1,0 +1,49 @@
+
+.sg-subsection
+  %h3.sg-subheading Dropdowns
+  .sg-onethird.pull
+    %p Describe
+  .sg-twothird.push
+    .well
+      %nav
+        %ul.nav
+          %li.dropdown(style="display:inline-block; margin-right: 2em;")
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Dropdown<span class="caret"></span>
+            %ul.dropdown-menu
+              %li
+                %a(href="#") DD Subnav 1
+              %li
+                %a(href="#") DD Subnav 2
+              %li.divider
+              %li
+                %a(href="#") DD Subnav 3
+
+          %li.dropdown(style="display:inline-block;")
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Dropup<span class="caret"></span>
+            %ul.dropdown-menu.drop-up
+              %li
+                %a(href="#") DU Subnav 1
+              %li
+                %a(href="#") DU Subnav 2
+              %li.divider
+              %li
+                %a(href="#") DU Subnav 3
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav>
+            <ul class="nav">
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown">Dropdown<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Subnav 1</a></li>
+                  <li><a href="#">Subnav 2</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Subnav 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+    .notification.important.fade.in
+      %p <strong>Note!</strong> Add the <code>.drop-up</code> class to the <code>ul.dropdown-menu</code> to pop the menu above the target
