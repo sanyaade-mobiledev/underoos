@@ -13,8 +13,16 @@
             %a(href="#") Tab Two
           %li
             %a(href="#") Tab Three
-          %li
-            %a(href="#") Tab Four
+          %li.dropdown
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Tab Four<span class="caret"></span>
+            %ul.dropdown-menu
+              %li
+                %a(href="#") Subnav 1
+              %li
+                %a(href="#") Subnav 2
+              %li.divider
+              %li
+                %a(href="#") Subnav 3
 
         -# %section
           -# %h2 This is section content within the tab
@@ -34,11 +42,19 @@
             %a(href="#") Pill Two
           %li
             %a(href="#") Pill Three
-          %li
-            %a(href="#") Pill Four
+          %li.dropdown
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Pill Four<span class="caret"></span>
+            %ul.dropdown-menu
+              %li
+                %a(href="#") Subnav 1
+              %li
+                %a(href="#") Subnav 2
+              %li.divider
+              %li
+                %a(href="#") Subnav 3
 
 .sg-subsection
-  %h3.sg-subheading Stacked tabs &amp; pills
+  %h3.sg-subheading Stacked Tabs &amp; Pills
   .sg-onethird.pull
     %p.sg-todo Describe stacked
   .sg-onethird
@@ -49,8 +65,16 @@
             %a(href="#") Tab One
           %li.active
             %a(href="#") Tab Two
-          %li
-            %a(href="#") Tab Three
+          %li.dropdown
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Tab Three<span class="caret"></span>
+            %ul.dropdown-menu
+              %li
+                %a(href="#") Subnav 1
+              %li
+                %a(href="#") Subnav 2
+              %li.divider
+              %li
+                %a(href="#") Subnav 3
           %li
             %a(href="#") Tab Four
   .sg-onethird.push
@@ -61,8 +85,16 @@
             %a(href="#") Pill One
           %li.active
             %a(href="#") Pill Two
-          %li
-            %a(href="#") Pill Three
+          %li.dropdown
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Pill Three<span class="caret"></span>
+            %ul.dropdown-menu
+              %li
+                %a(href="#") Subnav 1
+              %li
+                %a(href="#") Subnav 2
+              %li.divider
+              %li
+                %a(href="#") Subnav 3
           %li
             %a(href="#") Pill Four
 

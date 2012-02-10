@@ -105,3 +105,38 @@
 .pills.stacked > li > a
   margin-bottom: .15em
 
+
+// Dropdowns
+.tabs .dropdown-menu
+  border-top: 0
+  border-color: $component_border_alt
+
+.pills .dropdown-menu
+  margin-top: 1px
+  // border-width: 1px
+
+.pills .active .dropdown-toggle .caret
+  border-top-color: $component_active
+
+.nav > .dropdown.active > a:hover
+  cursor: pointer
+
+.tabs .open .dropdown-toggle,
+.pills .open .dropdown-toggle,
+.nav > .open.active > a:hover
+  background-color: darken($component_bg_hover, 35%)
+  border-color: $component_border
+  color: $component_active
+  text-shadow: none
+
+.tabs .active .caret
+  border-top-color: $link_hover
+
+.nav .open .caret,
+.nav .open.active .caret,
+.nav .open a:hover .caret
+  border-top-color: $component_active
+
+.tabs.stacked .active .dropdown-toggle .caret
+  border-top-color: $component_active
+
