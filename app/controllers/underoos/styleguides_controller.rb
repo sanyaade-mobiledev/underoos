@@ -36,7 +36,7 @@ module Underoos
         {prop:'$violet',  hex:'#ee82ee'}
       ]
       @ci_colors = [
-        {prop:'$primary_ci', hex:'#268bd2'}
+        {prop:'$primary', hex:'#268bd2'}
       ]
       @status = [
         {prop:'$standard', hex:'#f5f5f5'},
