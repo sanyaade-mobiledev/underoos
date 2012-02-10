@@ -1,13 +1,13 @@
 
 @import compass
 
-// grab the theme for this stylesheet
+// The theme used for the build
 @import themes/default
 
-// normalize all resets
-@import general/normalize
+// normalize and reset
+@import base/normalize
 
-// get the mixins
+// mixins
 @import mixins/clearfixins
 @import mixins/sizing
 @import mixins/user-select
@@ -17,16 +17,16 @@
 @import mixins/arrows
 @import mixins/button-btn
 
-// helpers
-@import helpers/utilities
-@import helpers/transitions
-
 // base settings
-@import general/base
-@import general/typography
-@import general/elements
-@import general/tables
-@import general/forms
+@import base/scaffold
+@import base/utilities
+@import base/transitions
+
+// core elements
+@import core/typography
+@import core/elements
+@import core/tables
+@import core/forms
 
 // components
 @import components/close
@@ -54,5 +54,5 @@
 @import queries/mobile-portrait
 @import queries/upgrades
 
-/* @import 'queries/print';
+// @import queries/print
 

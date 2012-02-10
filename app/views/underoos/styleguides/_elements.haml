@@ -1,5 +1,33 @@
 
 .sg-subsection
+  %h3.sg-subheading Base nav
+  .sg-half.pull
+    %p The base nav is generally the first class in the list for components like tabs, pills, breadcrumbs, pagination and navigation lists.
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav>
+            <ul class="nav">
+              <li><a href="#">Nav 1</a></li>
+              <li><a href="#">Nav 2</a></li>
+              <li class="active"><a href="#">Active</a></li>
+              <li><a href="#">Nav 4</a></li>
+            </ul>
+          </nav>
+  .sg-half.push
+    .well
+      %nav
+        %ol.nav
+          %li
+            %a(href="#") Nav 1
+          %li
+            %a(href="#") Nav 2
+          %li.active
+            %a(href="#") Active
+          %li
+            %a(href="#") Nav 4
+
+.sg-subsection
   %h3.sg-subheading Buttons
   %table.box.banded.thead-decorate
     %thead

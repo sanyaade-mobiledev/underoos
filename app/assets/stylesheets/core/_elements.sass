@@ -3,6 +3,17 @@
 img
   max-width: 100%
 
+// Base Navs, used by tabs, pills, breadcrumbs, pagination, and navigation lists
+.nav
+  list-style: none
+.nav > li > a
+  display: block
+
+// Active states for navs get a default cursor
+.nav > .active > a,
+.nav > .active > a:hover
+  cursor: default
+
 // Buttons
 .btn
   +btn-button($standard, $grey6)
