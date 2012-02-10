@@ -2,18 +2,10 @@
 .sg-subsection
   %h3.sg-subheading Base nav
   .sg-half.pull
-    %p The base nav is generally the first class in the list for components like tabs, pills, breadcrumbs, pagination and navigation lists.
-    %pre.prettyprint
-      = preserve do
-        :escaped
-          <nav>
-            <ul class="nav">
-              <li><a href="#">Nav 1</a></li>
-              <li><a href="#">Nav 2</a></li>
-              <li class="active"><a href="#">Active</a></li>
-              <li><a href="#">Nav 4</a></li>
-            </ul>
-          </nav>
+    %p The base nav is generally the first class in the list for components like tabs, pills, breadcrumbs, pagination and navigation lists. Use this class as a building block for custom navigation systems.
+    %br
+    .notification.important.fade.in
+      %p <strong>Note!</strong> All navigation components depend on this class being attached to the container element
   .sg-half.push
     .well
       %nav
@@ -26,6 +18,17 @@
             %a(href="#") Active
           %li
             %a(href="#") Nav 4
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav>
+            <ul class="nav">
+              <li><a href="#">Nav 1</a></li>
+              <li><a href="#">Nav 2</a></li>
+              <li class="active"><a href="#">Active</a></li>
+              <li><a href="#">Nav 4</a></li>
+            </ul>
+          </nav>
 
 .sg-subsection
   %h3.sg-subheading Buttons
@@ -89,7 +92,7 @@
           <input class="reset btn" type="reset" value="Reset"></input>
 .sg-subsection(style="margin-top:2.5em")
   .sg-half.pull
-    %h5 Links render different
+    %h4 Links render different
     %p <code>a</code> elements have <code>font-style:bold</code>
     %br
     .well
@@ -101,7 +104,7 @@
       %input.reset.btn.alert(name="reset" type="reset" value="Input Reset")
 
     %br
-    %h5 Sizing
+    %h4 Sizing
     %p Add either <code>.small</code> or <code>.large</code> class to change the size
     %br
     .well
@@ -111,7 +114,7 @@
       %button.btn.primary.large(href="#") Large
 
   .sg-half.push
-    %h5 Disabled states
+    %h4 Disabled states
     %p Add the <code>.disabled</code> class or <code>:disabled</code> attribute
     %br
     .well
@@ -121,7 +124,7 @@
       %a.btn.primary.disabled(href="#") Link
 
     %br
-    %h5 Error states
+    %h4 Error states
     %p Applied by adding the <code>.error</code> class
     %br
     .well
@@ -135,8 +138,7 @@
 .sg-subsection
   %h3.sg-subheading Images
   .sg-half.pull
-    %strong Standard image element
-    %br
+    %h4 Standard image element
     %p Images by default have the style setting of <code>max-width:100%</code> applied to allow scaling in a fluid grid.
     %pre.prettyprint
       = preserve do
@@ -147,8 +149,7 @@
       %img(src="http://placehold.it/160x90" alt="image")
 .sg-subsection
   .sg-half.pull
-    %strong The figure element
-    %br
+    %h4 The figure element
     %p The <code>figure</code> element represents self-contained content, frequently with a <code>figcaption</code>. Image, illustration, diagram, code snippet, that is referenced in the main text.
     %pre.prettyprint
       = preserve do
