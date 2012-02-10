@@ -1,8 +1,10 @@
 
 .sg-subsection
-  %h3.sg-subheading Navigation lists
+  %h3.sg-subheading Nav lists
   .sg-onethird.pull
-    %p.sg-todo Describe navigation lists
+    %p Nav lists build off of the same markup as <code>tabs</code> and <code>pills</code>. They are typically used in aside style navigation systems.
+    %br
+    %p To include a header, just supply the <code>li</code> with the class <code>.nav-header</code>
   .sg-twothird.push
     .well.lite
       %nav
@@ -23,11 +25,13 @@
       = preserve do
         :escaped
           <nav>
-            <ol class="nav nav-list">
-              <li><a href="#">Level 1</a></li>
-              <li><a href="#">Level 2</a></li>
-              <li><a href="#">Level 3</a></li>
-              <li class="active"><a href="#">Active</a></li>
-            </ol>
+            <ul class="nav nav-list">
+              <li class="nav-header">List Header</li>
+              <li><a href="#">List 1</a></li>
+              <li><a href="#" class="active">List 2</a></li>
+              <li><a href="#">List 3</a></li>
+              <li class="nav-header">Another List Header</li>
+              <li><a href="#">List 4</a></li>
+            </ul>
           </nav>
 

@@ -5,7 +5,7 @@
 .sg-subsection
   .sg-half.pull
     %h4 Default Tabs
-    %p.sg-todo Describe tabs
+    %p Attach the classes <code>.nav .tabs</code> to the <code>ol</code> or <code>ul</code> elements.
     .well(style="margin-top:1.25em;")
       %nav
         %ul.nav.tabs
@@ -27,18 +27,18 @@
                 %a(href="#") Subnav 3
   .sg-half.push
     %h4 Default Pills
-    %p.sg-todo Describe pills
+    %p Attach the classes <code>.nav .pills</code> to the <code>ol</code> or <code>ul</code> elements.
     .well(style="margin-top:1.25em;")
       %nav
         %ul.nav.pills
           %li
-            %a(href="#") Pills One
+            %a(href="#") Pill One
           %li.active
-            %a(href="#") Pills Two
+            %a(href="#") Pill Two
           %li
-            %a(href="#") Pills Three
+            %a(href="#") Pill Three
           %li.dropdown
-            %a.dropdown-toggle(href="#" data-toggle="dropdown") Pills Four<span class="caret"></span>
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Pill Four<span class="caret"></span>
             %ul.dropdown-menu
               %li
                 %a(href="#") Subnav 1
@@ -51,7 +51,7 @@
 .sg-subsection
   .sg-half.pull
     %h4 Stacked Tabs
-    %p.sg-todo Describe stacked
+    %p Stack tabs by adding the class <code>.stacked</code> to the <code>.tabs</code> element.
     .well(style="margin-top:1.25em;")
       %nav
         %ul.nav.tabs.stacked
@@ -74,7 +74,7 @@
 
   .sg-half.push
     %h4 Stacked Pills
-    %p.sg-todo Describe stacked
+    %p Stack pills by adding the class <code>.stacked</code> to the <code>.pills</code> element.
     .well(style="margin-top:1.25em; padding-bottom:1em;")
       %nav
         %ul.nav.pills.stacked
@@ -99,31 +99,47 @@
 .sg-subsection
   .sg-half.pull
     %h4 Tabs structure
-    %p.sg-todo Describe structure
+    %p Tabs structure shown with a dropdown.
     %pre.prettyprint
       = preserve do
         :escaped
           <nav>
-            <ol class="nav tabs">
-              <li><a href="#">Level 1</a></li>
-              <li><a href="#">Level 2</a></li>
-              <li><a href="#">Level 3</a></li>
-              <li class="active"><a href="#">Active</a></li>
-            </ol>
+            <!-- Add `.stacked` to the ul below -->
+            <ul class="nav tabs">
+              <li><a>Tab 1</a></li>
+              <li><a class="active">Tab 2</a></li>
+              <li class="dropdown">
+                <a data-toggle="dropdown">Tab 3<span class="caret">...
+                <ul class="dropdown-menu">
+                  <li><a href="#">Subnav 1</a></li>
+                  <li><a href="#">Subnav 2</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Subnav 3</a></li>
+                </ul>
+              </li>
+            </ul>
           </nav>
 
   .sg-half.push
     %h4 Pills structure
-    %p.sg-todo Describe structure
+    %p Pills structure shown with a dropdown.
     %pre.prettyprint
       = preserve do
         :escaped
           <nav>
-            <ol class="nav pills">
-              <li><a href="#">Level 1</a></li>
-              <li><a href="#">Level 2</a></li>
-              <li><a href="#">Level 3</a></li>
-              <li class="active"><a href="#">Active</a></li>
-            </ol>
+            <!-- Add `.stacked` to the ul below -->
+            <ul class="nav pills">
+              <li><a>Pill 1</a></li>
+              <li><a class="active">Pill 2</a></li>
+              <li class="dropdown">
+                <a data-toggle="dropdown">Pill 3<span class="caret">...
+                <ul class="dropdown-menu">
+                  <li><a href="#">Subnav 1</a></li>
+                  <li><a href="#">Subnav 2</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Subnav 3</a></li>
+                </ul>
+              </li>
+            </ul>
           </nav>
 
