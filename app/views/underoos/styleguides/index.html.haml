@@ -31,6 +31,8 @@
                 %a(href="#layouts") Layouts
               %li
                 %a(href="#media") Media
+              %li
+                %a(href="#utilities") Utilities
 
 
     .container.sg-contents
@@ -90,11 +92,19 @@
           %p.sg-note Showcases the various media elements that are in use by the application.
         = render :partial => 'media'
 
+      #utilities.sg-section
+        .well.dark
+          %h2.sg-heading Utilities
+          %p.sg-note Various utility, helpers and miscellaneous classes, commonly used for extension.
+        = render :partial => 'utilities'
+
+
       #resources.sg-section
         .well.dark
           %h2.sg-heading External Resources
           %p.sg-note References, links, credits, and various information related to the styleguide.
         = render :partial => 'resources'
+
 
     = render :partial => 'shared/upgrades'
 
