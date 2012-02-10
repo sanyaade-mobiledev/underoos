@@ -1,0 +1,33 @@
+
+.sg-subsection
+  %h3.sg-subheading Navigation lists
+  .sg-onethird.pull
+    %p.sg-todo Describe navigation lists
+  .sg-twothird.push
+    .well.lite
+      %nav
+        %ul.nav.nav-list
+          %li.nav-header List Header
+          %li
+            %a(href="#") List One
+          %li.active
+            %a(href="#") List Two
+          %li
+            %a(href="#") List Three
+          %li.nav-header Another List Header
+          %li
+            %a(href="#") List Four
+          %li
+            %a(href="#") List Five
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav>
+            <ol class="nav nav-list">
+              <li><a href="#">Level 1</a></li>
+              <li><a href="#">Level 2</a></li>
+              <li><a href="#">Level 3</a></li>
+              <li class="active"><a href="#">Active</a></li>
+            </ol>
+          </nav>
+

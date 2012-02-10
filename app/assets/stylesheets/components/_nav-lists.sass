@@ -1,0 +1,33 @@
+
+// Nav List
+.nav-list > li > a
+  +border-radius(4px)
+
+.nav-list .active > a,
+.nav-list li > a:active,
+  +box-shadow($inset_dark)
+
+.nav-list > li > a,
+.nav-list .nav-header
+  padding: .3em 1em
+  text-shadow: $text_drop_lite
+
+.nav-list > li > a:hover
+  background-color: $component_bg_hover
+
+.nav-list .active > a,
+.nav-list .active > a:hover
+  background-color: $component_bg_active
+  color: $component_active
+  text-shadow: $text_inset_dark
+
+.nav-list .nav-header
+  display: block
+  font-size: .75em
+  font-weight: bold
+  color: $component_normal
+  text-transform: uppercase
+
+.nav-list > li + .nav-header
+  margin-top: 1em
+

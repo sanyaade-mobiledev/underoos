@@ -6,6 +6,7 @@ img
 // Base Navs, used by tabs, pills, breadcrumbs, pagination, and navigation lists
 .nav
   list-style: none
+  +clearfixer
 .nav > li > a
   display: block
 
@@ -13,6 +14,8 @@ img
 .nav > .active > a,
 .nav > .active > a:hover
   cursor: default
+.nav > .dropdown.active > a:hover
+  cursor: pointer
 
 // Buttons
 .btn

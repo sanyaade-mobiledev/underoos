@@ -1,0 +1,129 @@
+
+.sg-subsection
+  %h3.sg-subheading Tabs &amp; Pills
+
+.sg-subsection
+  .sg-half.pull
+    %h4 Default Tabs
+    %p.sg-todo Describe tabs
+    .well(style="margin-top:1.25em;")
+      %nav
+        %ul.nav.tabs
+          %li
+            %a(href="#") Tab One
+          %li.active
+            %a(href="#") Tab Two
+          %li
+            %a(href="#") Tab Three
+          %li.dropdown
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Tab Four<span class="caret"></span>
+            %ul.dropdown-menu
+              %li
+                %a(href="#") Subnav 1
+              %li
+                %a(href="#") Subnav 2
+              %li.divider
+              %li
+                %a(href="#") Subnav 3
+  .sg-half.push
+    %h4 Default Pills
+    %p.sg-todo Describe pills
+    .well(style="margin-top:1.25em;")
+      %nav
+        %ul.nav.pills
+          %li
+            %a(href="#") Pills One
+          %li.active
+            %a(href="#") Pills Two
+          %li
+            %a(href="#") Pills Three
+          %li.dropdown
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Pills Four<span class="caret"></span>
+            %ul.dropdown-menu
+              %li
+                %a(href="#") Subnav 1
+              %li
+                %a(href="#") Subnav 2
+              %li.divider
+              %li
+                %a(href="#") Subnav 3
+
+.sg-subsection
+  .sg-half.pull
+    %h4 Stacked Tabs
+    %p.sg-todo Describe stacked
+    .well(style="margin-top:1.25em;")
+      %nav
+        %ul.nav.tabs.stacked
+          %li
+            %a(href="#") Tab One
+          %li.active
+            %a(href="#") Tab Two
+          %li.dropdown
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Tab Three<span class="caret"></span>
+            %ul.dropdown-menu
+              %li
+                %a(href="#") Subnav 1
+              %li
+                %a(href="#") Subnav 2
+              %li.divider
+              %li
+                %a(href="#") Subnav 3
+          %li
+            %a(href="#") Tab Four
+
+  .sg-half.push
+    %h4 Stacked Pills
+    %p.sg-todo Describe stacked
+    .well(style="margin-top:1.25em; padding-bottom:1em;")
+      %nav
+        %ul.nav.pills.stacked
+          %li
+            %a(href="#") Pills One
+          %li.active
+            %a(href="#") Pills Two
+          %li.dropdown
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Pills Three<span class="caret"></span>
+            %ul.dropdown-menu
+              %li
+                %a(href="#") Subnav 1
+              %li
+                %a(href="#") Subnav 2
+              %li.divider
+              %li
+                %a(href="#") Subnav 3
+          %li
+            %a(href="#") Pills Four
+
+
+.sg-subsection
+  .sg-half.pull
+    %h4 Tabs structure
+    %p.sg-todo Describe structure
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav>
+            <ol class="nav tabs">
+              <li><a href="#">Level 1</a></li>
+              <li><a href="#">Level 2</a></li>
+              <li><a href="#">Level 3</a></li>
+              <li class="active"><a href="#">Active</a></li>
+            </ol>
+          </nav>
+
+  .sg-half.push
+    %h4 Pills structure
+    %p.sg-todo Describe structure
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav>
+            <ol class="nav pills">
+              <li><a href="#">Level 1</a></li>
+              <li><a href="#">Level 2</a></li>
+              <li><a href="#">Level 3</a></li>
+              <li class="active"><a href="#">Active</a></li>
+            </ol>
+          </nav>
+
