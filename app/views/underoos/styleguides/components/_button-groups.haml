@@ -7,7 +7,7 @@
     %p Button groups are used to join multiple buttons together as one composite component.
   .sg-twothird.push
     .well
-      %nav.button-group
+      %nav.button-group(data-toggle="buttons-checkbox")
         %a.btn.primary(href="#") Left
         %a.btn.primary.active(href="#") Middle 1
         %a.btn.primary(href="#") Middle 2
@@ -55,4 +55,34 @@
           </section>
     .notification.important.fade.in
       %p <strong>Note!</strong> When creating custom buttons, add the necessary overrides within <code>_button-groups.sass</code>
+
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Button states
+    %p.sg-todo Describe this
+  .sg-twothird.push
+    %table.box.banded.thead-decorate
+      %thead
+        %tr
+          %th State
+          %th Usage
+      %tbody
+        %tr
+          %td
+            %button.btn.important(data-toggle="button") Toggle
+          %td Toggles active state on a single button
+        %tr
+          %td
+            %nav.button-group(data-toggle="buttons-checkbox")
+              %a.btn.primary(href="#") 1
+              %a.btn.primary(href="#") 2
+              %a.btn.primary(href="#") 3
+          %td Treats button group states similar to checkboxes
+        %tr
+          %td
+            %nav.button-group(data-toggle="buttons-radio")
+              %a.btn.primary(href="#") 1
+              %a.btn.primary(href="#") 2
+              %a.btn.primary(href="#") 3
+          %td Treats button group states similar to radio buttons
 
