@@ -29,15 +29,16 @@
     height: 0
 
 .popover-inner
-  +border-radius(6px)
+  +border-radius($radii + .1em)
   +box-shadow($drop_dark)
   overflow: hidden
   background-color: $body_bg
   border: 1px solid $component_border
 
 .popover-title
+  $radiix: $radii + .1em
   +background-clip(padding-box)
-  +border-radius(6px 6px 0 0)
+  +border-radius($radiix $radiix 0 0)
   +font-sizes(16)
   background-color: $component_bg_hover
   border-bottom: 1px solid $component_border_alt
@@ -45,7 +46,8 @@
   line-height: 1
 
 .popover-content
+  $radiix: $radii + .1em
   +background-clip(padding-box)
-  +border-radius(0 0 6px 6px)
+  +border-radius(0 0 $radiix $radiix)
   padding: 1em
 

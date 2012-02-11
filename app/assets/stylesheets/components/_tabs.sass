@@ -8,7 +8,7 @@
   margin-bottom: -1px
 
 .tabs > li > a
-  +border-radius(4px 4px 0 0)
+  +border-radius($radii $radii 0 0)
   border: 1px solid transparent
   margin-right: .15em
   padding: .65em .85em
@@ -41,9 +41,9 @@
     z-index: 2
 
 .tabs.stacked > li:first-child > a
-  +border-radius(4px 4px 0 0)
+  +border-radius($radii $radii 0 0)
 .tabs.stacked > li:last-child > a
-  +border-radius(0 0 4px 4px)
+  +border-radius(0 0 $radii $radii)
 
 .tabs.stacked .active > a,
 .tabs.stacked li > a:active
