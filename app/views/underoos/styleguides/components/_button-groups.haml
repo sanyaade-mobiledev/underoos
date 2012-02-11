@@ -1,26 +1,36 @@
 
 .sg-subsection
   %h3.sg-subheading Button Groups
+.sg-subsection
   .sg-onethird.pull
-    %p.sg-todo Describe this
+    %h4 Button group
+    %p Button groups are used to join multiple buttons together as one composite component.
   .sg-twothird.push
     .well
-      %nav.btn-group
+      %nav.button-group
         %a.btn.primary(href="#") Left
         %a.btn.primary.active(href="#") Middle 1
         %a.btn.primary(href="#") Middle 2
         %a.btn.primary(href="#") Right
 
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Button toolbar
+    %p Combine multiple <code>.button-group</code> elements under a <code>.button-toolbar</code> container to form navigation system.
+  .sg-twothird.push
     .well
-      %section.btn-toolbar
-        %nav.btn-group
+      %section.button-toolbar
+        %nav.button-group
           %a.btn(href="#") 1
           %a.btn(href="#") 2
           %a.btn(href="#") 3
-        %nav.btn-group
+        %nav.button-group
           %a.btn(href="#") 4
           %a.btn.active(href="#") 5
           %a.btn(href="#") 6
-        %nav.btn-group
+        %nav.button-group
           %a.btn(href="#") 7
+
+    .notification.important.fade.in
+      %p <strong>Note!</strong> When creating custom buttons, add the necessary overrides within <code>_button-groups.sass</code>
 

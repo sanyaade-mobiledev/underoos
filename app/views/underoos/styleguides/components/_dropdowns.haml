@@ -1,8 +1,12 @@
 
 .sg-subsection
   %h3.sg-subheading Dropdowns
+  %p Requires <a href="http://twitter.github.com/bootstrap/javascript.html#dropdowns">Bootstrap's Dropdown plugin</a>.
+
+.sg-subsection
   .sg-onethird.pull
-    %p Dropdowns utilize <a href="http://twitter.github.com/bootstrap/javascript.html#dropdowns">Bootstrap's Dropdown plugin</a>. Add dropdown menus to just about any type of navigation element by applying the attribute <code>data-toggle="dropdown"</code> to the target button.
+    %h4 Basic Dropdowns
+    %p Add dropdown menus to just about any type of navigation list element by applying the attribute <code>data-toggle="dropdown"</code> to the target button.
   .sg-twothird.push
     .well
       %nav
@@ -11,23 +15,23 @@
             %a.dropdown-toggle(href="#" data-toggle="dropdown") Dropdown<span class="caret"></span>
             %ul.dropdown-menu
               %li
-                %a(href="#") DD Subnav 1
+                %a(href="#") Subnav 1
               %li
-                %a(href="#") DD Subnav 2
+                %a(href="#") Subnav 2
               %li.divider
               %li
-                %a(href="#") DD Subnav 3
+                %a(href="#") Subnav 3
 
           %li.dropdown(style="display:inline-block;")
             %a.dropdown-toggle(href="#" data-toggle="dropdown") Dropup<span class="caret"></span>
             %ul.dropdown-menu.drop-up
               %li
-                %a(href="#") DU Subnav 1
+                %a(href="#") Subnav 1
               %li
-                %a(href="#") DU Subnav 2
+                %a(href="#") Subnav 2
               %li.divider
               %li
-                %a(href="#") DU Subnav 3
+                %a(href="#") Subnav 3
     %pre.prettyprint
       = preserve do
         :escaped
@@ -44,6 +48,108 @@
               </li>
             </ul>
           </nav>
-
     .notification.important.fade.in
       %p <strong>Note!</strong> Add the <code>.drop-up</code> class to the <code>ul.dropdown-menu</code> to pop the menu above the target
+
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Button dropdowns
+    %p For elements outside of a list, typically in stand alone buttons, utilize the <code>button-group</code> structure for creating dropdowns.
+  .sg-twothird.push
+    .well
+      %nav.button-group(style="display:inline-block;")
+        %button.btn.dropdown-toggle(href="#" data-toggle="dropdown") Dropdown<span class="caret"></span>
+        %ul.dropdown-menu
+          %li
+            %a(href="#") Subnav 1
+          %li
+            %a(href="#") Subnav 2
+          %li.divider
+          %li
+            %a(href="#") Subnav 3
+
+      %nav.button-group(style="display:inline-block;")
+        %button.btn.important.dropdown-toggle(href="#" data-toggle="dropdown") Important<span class="caret"></span>
+        %ul.dropdown-menu.drop-up
+          %li
+            %a(href="#") Subnav 1
+          %li
+            %a(href="#") Subnav 2
+          %li.divider
+          %li
+            %a(href="#") Subnav 3
+      %nav.button-group(style="display:inline-block;")
+        %button.btn.success.dropdown-toggle(href="#" data-toggle="dropdown") Success<span class="caret"></span>
+        %ul.dropdown-menu
+          %li
+            %a(href="#") Subnav 1
+          %li
+            %a(href="#") Subnav 2
+          %li.divider
+          %li
+            %a(href="#") Subnav 3
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav class="button-group">
+            <button class="btn dropdown-toggle" data-toggle="dropdown">Dropdown<span class="caret">
+            <ul class="dropdown-menu">
+              ...
+            </ul>
+          </nav>
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Split button dropdowns
+    %p Building on the <code>button-group</code> structure, create split buttons where there is action on the left button and contextual menu items under the caret to the right.
+  .sg-twothird.push
+    .well
+      %nav.button-group(style="display:inline-block;")
+        %button.btn(href="#") Action
+        %button.btn.dropdown-toggle(href="#" data-toggle="dropdown") <span class="caret split"></span>
+        %ul.dropdown-menu
+          %li
+            %a(href="#") Subnav 1
+          %li
+            %a(href="#") Subnav 2
+          %li.divider
+          %li
+            %a(href="#") Subnav 3
+      %nav.button-group(style="display:inline-block;")
+        %button.btn.important(href="#") Action
+        %button.btn.important.dropdown-toggle(href="#" data-toggle="dropdown") <span class="caret split"></span>
+        %ul.dropdown-menu.drop-up
+          %li
+            %a(href="#") Subnav 1
+          %li
+            %a(href="#") Subnav 2
+          %li.divider
+          %li
+            %a(href="#") Subnav 3
+      %nav.button-group(style="display:inline-block;")
+        %button.btn.success(href="#") Action
+        %button.btn.success.dropdown-toggle(href="#" data-toggle="dropdown") <span class="caret split"></span>
+        %ul.dropdown-menu
+          %li
+            %a(href="#") Subnav 1
+          %li
+            %a(href="#") Subnav 2
+          %li.divider
+          %li
+            %a(href="#") Subnav 3
+
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav class="button-group">
+            <button class="btn" href="#">Action</button>
+            <button class="btn dropdown-toggle" data-toggle="dropdown">
+              <span class="caret split"></span>
+            </button>
+            <ul class="dropdown-menu">
+              ...
+            </ul>
+          </nav>
+
+    .notification.important.fade.in
+      %p <strong>Note!</strong> Add the <code>.split</code> class to the caret <code>&lt;span&gt;</code> to center within the button
+

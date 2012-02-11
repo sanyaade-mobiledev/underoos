@@ -1,37 +1,49 @@
 
-.btn-group
+// Settings for button groups and toolbars
+.button-group
   +clearfixer
   position: relative
 
-.btn-group + .btn-group
+.button-group + .button-group
   margin-left: .5em
 
-.btn-toolbar
+.button-toolbar
   margin: 1em 0
-  .btn-group
-    display: inline-block
 
-.btn-group .btn
+.button-toolbar .button-group
+  display: inline-block
+
+.button-group .dropdown-toggle:active,
+.button-group.open .dropdown-toggle
+  outline: 0
+
+.button-group.open .dropdown-menu
+  +border-radius($radii)
+  display: block
+  margin-top: 1px
+
+// Overrides and settings for the `.btn` class
+.button-group .btn
   +border-radius(0)
   position: relative
   float: left
   margin-left: -1px
 
-.btn-group .btn:first-child
+.button-group .btn:first-child
   +border-top-left-radius($radii)
   +border-bottom-left-radius($radii)
-.btn-group .btn:last-child,
-.btn-group .dropdown-toggle
+
+.button-group .btn:last-child,
+.button-group .dropdown-toggle
   +border-top-right-radius($radii)
   +border-bottom-right-radius($radii)
 
-.btn-group .btn:hover,
-.btn-group .btn:focus,
-.btn-group .btn:active,
-.btn-group .btn.active
+.button-group .btn:hover,
+.button-group .btn:focus,
+.button-group .btn:active,
+.button-group .btn.active
   z-index: 2
 
-.btn-group .dropdown-toggle:active,
-.btn-group.open .dropdown-toggle
-  outline: 0
+.button-group.open .btn
+  +box-shadow($inset_dark)
 

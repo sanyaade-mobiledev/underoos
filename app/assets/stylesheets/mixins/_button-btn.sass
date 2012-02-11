@@ -42,6 +42,9 @@
     +font-sizes($base_font_size - 2)
   &.large
     +font-sizes($base_font_size + 2)
+  .caret
+    margin: .5em 0 0 .5em
+    border-top-color: $color
 
 // Override specific properties for `.btn` colorways
 @mixin btn-override($bg, $color:#fff)
@@ -61,4 +64,6 @@
     border: 1px solid $error
   &.disabled, &[disabled], &[readonly]
     background-color: $bg
+  .caret
+    border-top-color: $color
 
