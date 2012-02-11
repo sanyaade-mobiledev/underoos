@@ -1,0 +1,50 @@
+
+.sg-subsection
+  %h3.sg-subheading Paddles
+
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Default paddles
+    %p Paddles are commonly used in carousel or simple paging navigations. The default set contains simple inline links.
+  .sg-twothird.push
+    .well
+      %nav
+        %ul.paddles
+          %li
+            %a(href="#") &larr; Previous
+          %li
+            %a(href="#") Next &rarr;
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav>
+            <ul class="paddles">
+              <li> <a href="#">&larr; Previous</a> </li>
+              <li> <a href="#">Next &rarr;</a> </li>
+            </ul>
+          </nav>
+    .notification.important.fade.in
+      %p <strong>Note!</strong> Add <code>.paddles-center</code> or <code>.paddles-right</code> on the container to change the alignment
+
+.sg-subsection
+  .sg-onethird.pull
+    %h4 Aligned paddles
+    %p To allow paddles to float on the sides of the container, apply the <code>.prev</code> and <code>.next</code> classes to the containing paddles <code>li</code> element.
+  .sg-twothird.push
+    .well
+      %nav
+        %ul.paddles
+          %li.prev
+            %a(href="#") &larr; Previous
+          %li.next
+            %a(href="#") Next &rarr;
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav>
+            <ul class="paddles">
+              <li class="prev"><a href="#">&larr; Previous</a> </li>
+              <li class="next"><a href="#">Next &rarr;</a> </li>
+            </ul>
+          </nav>
+

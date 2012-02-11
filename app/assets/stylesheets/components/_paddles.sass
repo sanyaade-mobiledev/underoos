@@ -1,0 +1,34 @@
+
+.paddles
+  +clearfixer
+  list-style: none
+
+.paddles li
+  display: inline
+
+.paddles a
+  +border-radius(1em)
+  display: inline-block
+  padding: .5em .75em
+  background-color: #fff
+  border: 1px solid #ddd
+  &:hover
+    background-color: $component_bg_hover
+  &:active
+    +box-shadow($inset_dark)
+
+.paddles .disabled > a,
+.paddles .disabled > a:hover
+  color: $disabled_color
+  background: transparent
+
+.paddles .next > a
+  float: right
+.paddles .prev > a
+  float: left
+
+.paddles-center
+  text-align: center
+.paddles-right
+  text-align: right
+
