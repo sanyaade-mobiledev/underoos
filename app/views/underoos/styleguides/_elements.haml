@@ -3,9 +3,17 @@
   %h3.sg-subheading Base nav
   .sg-half.pull
     %p The base nav is generally the first class in the list for components like tabs, pills, breadcrumbs, pagination and navigation lists. Use this class as a building block for custom navigation systems.
-    %br
-    .notification.important.fade.in
-      %p <strong>Note!</strong> All navigation components depend on this class being attached to the container element
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav>
+            <ul class="nav">
+              <li><a href="#">Nav 1</a></li>
+              <li><a href="#">Nav 2</a></li>
+              <li class="active"><a href="#">Active</a></li>
+              <li><a href="#">Nav 4</a></li>
+            </ul>
+          </nav>
   .sg-half.push
     .well
       %nav
@@ -18,17 +26,8 @@
             %a(href="#") Active
           %li
             %a(href="#") Nav 4
-    %pre.prettyprint
-      = preserve do
-        :escaped
-          <nav>
-            <ul class="nav">
-              <li><a href="#">Nav 1</a></li>
-              <li><a href="#">Nav 2</a></li>
-              <li class="active"><a href="#">Active</a></li>
-              <li><a href="#">Nav 4</a></li>
-            </ul>
-          </nav>
+    .notification.important.fade.in
+      %p <strong>Note!</strong> All navigation components depend on this class being attached to the container element
 
 .sg-subsection
   %h3.sg-subheading Buttons

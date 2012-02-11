@@ -12,6 +12,15 @@
         %a.btn.primary.active(href="#") Middle 1
         %a.btn.primary(href="#") Middle 2
         %a.btn.primary(href="#") Right
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <nav class="button-group">
+            <a class="btn" href="#">Left</a>
+            <a class="btn active" href="#">Middle 1</a>
+            <a class="btn" href="#">Middle 2</a>
+            <a class="btn" href="#">Right</a>
+          </nav>
 
 .sg-subsection
   .sg-onethird.pull
@@ -30,7 +39,20 @@
           %a.btn(href="#") 6
         %nav.button-group
           %a.btn(href="#") 7
-
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <section class="button-toolbar">
+            <nav class="button-group">
+              ...
+            </nav>
+            <nav class="button-group">
+              ...
+            </nav>
+            <nav class="button-group">
+              ...
+            </nav>
+          </section>
     .notification.important.fade.in
       %p <strong>Note!</strong> When creating custom buttons, add the necessary overrides within <code>_button-groups.sass</code>
 
