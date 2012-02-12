@@ -59,7 +59,23 @@
 .sg-subsection
   .sg-onethird.pull
     %h4 Button states
-    %p.sg-todo Describe this
+    %p Control a button state or entire button groups state using Bootstrap's <a href="http://twitter.github.com/bootstrap/javascript.html#buttons">Button plugin</a>.
+    %br
+    %p A stateful button can be used for tasks like submitting a form. It disables a button and waits for a callback to either <code>reset</code> or populate the button's text with the value found in <code>data-complete-text</code>.
+    %br
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          $('#btn').on('click', function(e) {
+            var btn = $(this)
+            btn.button('loading')
+            setTimeout(function() {
+            // set text to data-complete-text
+             btn.button('complete')
+            // reset text to original value
+            // btn.button('reset')
+            }, 3000)
+          })
   .sg-twothird.push
     %table.box.banded.thead-decorate
       %thead
@@ -81,8 +97,31 @@
         %tr
           %td
             %nav.button-group(data-toggle="buttons-radio")
-              %a.btn.primary(href="#") 1
-              %a.btn.primary(href="#") 2
-              %a.btn.primary(href="#") 3
+              %a.btn.primary(href="#") 4
+              %a.btn.primary(href="#") 5
+              %a.btn.primary(href="#") 6
           %td Treats button group states similar to radio buttons
+        %tr
+          %td
+            %button#loader_btn.btn.important(data-loading-text="sending..." data-complete-text="Sent") Send
+          %td Disables a button as information is being sent, resets on callback
+
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          <!-- Toggle -->
+          <button class="btn" data-toggle="button">Toggle</button>
+
+          <!-- Checkbox type button group -->
+          <nav class="button-group" data-toggle="buttons-checkbox">
+            ...
+          </nav>
+
+          <!-- Radio type button group -->
+          <nav class="button-group" data-toggle="buttons-radio">
+            ...
+          </nav>
+
+          <!-- Stateful -->
+          <button data-loading-text="sending..." data-complete-text="Sent">Send</button>
 

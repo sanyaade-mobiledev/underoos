@@ -29,6 +29,15 @@
       showcase.removeClass().addClass(classes)
     })
 
+    // Fake loading data to showcase a stateful button
+    $('#loader_btn').on('click', function(e) {
+      var btn = $(this)
+      btn.button('loading')
+      setTimeout(function() {
+       btn.button('complete')
+      }, 3000)
+    })
+
   })
 
 }(window.jQuery)
