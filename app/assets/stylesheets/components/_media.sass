@@ -1,0 +1,30 @@
+
+.media-grid
+  +clearfixer
+  list-style: none
+
+.media-grid > li
+  float: left
+  margin-bottom: 1em
+
+.media-item
+  +border-radius($radii)
+  +box-shadow($drop_dark)
+  display: block
+  padding: .3em
+  line-height: 1
+  border: 1px solid $component_border
+
+a.media-item:hover
+  +box-shadow($focus_glow)
+  border-color: $blue
+
+.media-item > img
+  display: block
+  max-width: 100%
+  margin-left: auto
+  margin-right: auto
+
+.media-item .caption
+  padding: 1em
+
