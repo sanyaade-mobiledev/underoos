@@ -21,6 +21,10 @@ class Underoos::Application < Rails::Application
   config.assets.debug     = true
   config.assets.version = '1.2'
 
+  # Tune down the output of the css
+  # config.compass.line_comments = false
+  # config.compass.output_style = :compressed
+
   # Compass, Y U No Play Nice?
   config.sass.load_paths << "#{Gem.loaded_specs['compass'].full_gem_path}/frameworks/compass/stylesheets"
 end
