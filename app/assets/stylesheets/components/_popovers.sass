@@ -16,17 +16,21 @@
   &.right
     margin-left: 5px
   &.top .arrow
-    +arrow_south(5px, invert($body_bg))
+    +arrow_south(invert($body_bg))
+    bottom: 0
+    left: 50%
   &.bottom .arrow
-    +arrow_north(5px, invert($body_bg))
+    +arrow_north(invert($body_bg))
+    top: 0
+    left: 50%
   &.left .arrow
-    +arrow_east(5px, invert($body_bg))
+    +arrow_east(invert($body_bg))
+    top: 50%
+    right: 0
   &.right .arrow
-    +arrow_west(5px, invert($body_bg))
-  .arrow
-    position: absolute
-    width: 0
-    height: 0
+    +arrow_west(invert($body_bg))
+    top: 50%
+    left: 0
 
 .popover-inner
   +border-radius($radii + .1em)

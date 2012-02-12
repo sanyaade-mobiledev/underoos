@@ -1,32 +1,38 @@
 
 // Mixins for creating arrows for pseudo elements
-@mixin arrow_north($size: 5px, $color:#000)
-  top: 0
-  left: 50%
+
+@mixin _arrow
+  position: absolute
+  width: 0
+  height: 0
+
+// Set `top` and `left` positions from the caller
+@mixin arrow_north($color:#000, $size:5px)
+  +_arrow
   margin-left: -$size
   border-left: $size solid transparent
   border-right: $size solid transparent
   border-bottom: $size solid $color
 
-@mixin arrow_south($size: 5px, $color:#000)
-  bottom: 0
-  left: 50%
+// Set `bottom` and `left` positions from the caller
+@mixin arrow_south($color:#000, $size:5px)
+  +_arrow
   margin-left: -$size
   border-left: $size solid transparent
   border-right: $size solid transparent
   border-top: $size solid $color
 
-@mixin arrow_east($size: 5px, $color:#000)
-  top: 50%
-  right: 0
+// Set `top` and `right` positions from the caller
+@mixin arrow_east($color:#000, $size:5px)
+  +_arrow
   margin-top: -$size
   border-top: $size solid transparent
   border-bottom: $size solid transparent
   border-left: $size solid $color
 
-@mixin arrow_west($size: 5px, $color:#000)
-  top: 50%
-  left: 0
+// Set `top` and `left` positions from the caller
+@mixin arrow_west($color:#000, $size:5px)
+  +_arrow
   margin-top: -$size
   border-top: $size solid transparent
   border-bottom: $size solid transparent
