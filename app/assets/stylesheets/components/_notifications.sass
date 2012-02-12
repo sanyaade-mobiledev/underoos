@@ -48,11 +48,6 @@
     color: darken($warning, 15%)
     .heading
       color: darken($warning, 15%)
-  &.alert
-    +background-darken-border(lighten($alert, 20%))
-    color: darken($alert, 10%)
-    .heading
-      color: darken($alert, 10%)
   &.danger
     +background-darken-border(lighten($danger, 40%))
     color: $danger
@@ -70,7 +65,7 @@
   +box-shadow($drop_dark, $inset_lite)
   color: $grey6
   text-shadow: $text_inset_lite
-  &.info, &.important, &.success, &.warning, &.alert, &.danger, &.primary
+  &.info, &.important, &.success, &.warning, &.danger, &.primary
     color: $white
     text-shadow: $text_inset_dark
     .heading
@@ -83,8 +78,6 @@
     +background-darken-border($success)
   &.warning
     +background-darken-border($warning)
-  &.alert
-    +background-darken-border($alert)
   &.danger
     +background-darken-border($danger)
   &.primary

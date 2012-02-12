@@ -44,7 +44,6 @@ module Underoos
         {prop:'$important',hex:'#268bd2'},
         {prop:'$success',  hex:'#46a546'},
         {prop:'$warning',  hex:'#ffc40d'},
-        {prop:'$alert',    hex:'#f26522'},
         {prop:'$error',    hex:'#b22222'},
         {prop:'$danger',   hex:'#b22222'}
       ]
