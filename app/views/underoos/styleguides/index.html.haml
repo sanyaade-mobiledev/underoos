@@ -30,7 +30,7 @@
               %li
                 %a(href="#layouts") Layouts
               %li
-                %a(href="#media") Media
+                %a(href="#assets") Assets
               %li
                 %a(href="#utilities") Utilities
 
@@ -46,7 +46,7 @@
       #palettes.sg-section
         .well.dark
           %h2.sg-heading Palettes
-          %p.sg-note Various color palettes and themes used in the application.
+          %p.sg-note Various color palettes and themes used in the application. All properties are found under the themes directory
         = render :partial => 'palettes'
 
 
@@ -86,11 +86,11 @@
           %p.sg-note Layouts consists of various templates that are specific to the application.
         = render :partial => 'layouts'
 
-      #media.sg-section
+      #assets.sg-section
         .well.dark
-          %h2.sg-heading Media
-          %p.sg-note Showcases the various media elements that are in use by the application.
-        = render :partial => 'media'
+          %h2.sg-heading Assets
+          %p.sg-note Showcases the various assets in use by the application.
+        = render :partial => 'assets'
 
       #utilities.sg-section
         .well.dark
