@@ -5,10 +5,18 @@ img
 
 // Base Navs, used by tabs, pills, breadcrumbs, pagination, and navigation lists
 .nav
-  list-style: none
   +clearfixer
+  list-style: none
+
 .nav > li > a
   display: block
+
+.nav.inline > li
+  float: left
+
+.nav.inline > li > a
+  padding-left: .5em
+  padding-right: .5em
 
 // Active states for navs get a default cursor
 .nav > .active > a,
@@ -16,6 +24,7 @@ img
   cursor: default
 .nav > .dropdown.active > a:hover
   cursor: pointer
+
 
 // Buttons
 .btn

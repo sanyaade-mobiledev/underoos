@@ -26,8 +26,24 @@
             %a(href="#") Active
           %li
             %a(href="#") Nav 4
+    .well
+      %nav
+        %ol.nav.inline
+          %li
+            %a(href="#") Nav 1
+          %li
+            %a(href="#") Nav 2
+          %li.active
+            %a(href="#") Active
+          %li
+            %a(href="#") Nav 4
+.sg-subsection
+  .sg-half.pull
+    .notification.warning.fade.in
+      %p <strong>Warning!</strong> All navigation components depend on this class being attached to the container element
+  .sg-half.push
     .notification.important.fade.in
-      %p <strong>Note!</strong> All navigation components depend on this class being attached to the container element
+      %p <strong>Note!</strong> For convenience, add the <code>inline</code> class to the <code>ul</code> element to display the base nav as, well inline
 
 .sg-subsection
   %h3.sg-subheading Buttons <span>elements.sass, button-btn-mixin.sass</span>
