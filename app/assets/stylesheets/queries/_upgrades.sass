@@ -1,77 +1,64 @@
 
-// Hook for coloring icons and containers
-@mixin _upgrade-coloring($color)
-  background-color: $color
-  border: 1px solid darken($color, 10%)
-  .upgrade-message
-    background: $color
-    border: 1px solid darken($color, 10%)
-    &:before
-      border-bottom-color: $color
-
-// Show the upgrade container if a condition is met
-html.no-js div#upgrade_messages,
-html.ie6 div#upgrade_messages,
-html.ie7 div#upgrade_messages,
-html.ie8 div#upgrade_messages,
-html.oldie div#upgrade_messages
-  display: block
-
-// Show the message if a condition is met
-html.no-js div#upgrade_messages #no_js,
-html.ie6 div#upgrade_messages #ie6,
-html.ie7 div#upgrade_messages #ie7,
-html.ie8 div#upgrade_messages #ie8,
-html.oldie div#upgrade_messages #oldie
-  +inline-block
-
-div#upgrade_messages
+// The main container for the upgrade notification
+#upgrade_notifications
   display: none
-  position: fixed
+  color: $white
+  font-weight: bold
+  position: absolute
   top: 10px
   left: 10px
   z-index: 99999
-  .upgrade-icon
-    +border-radius(20px)
-    cursor: pointer
-    color: $white
-    display: none
-    font-size: 19px
-    font-weight: bold
-    line-height: 1
-    text-align: center
-    width: 20px
-    height: 20px
-    &:before
-      content: "!"
-    .upgrade-message
-      +border-radius($radii)
-      cursor: default
-      font-size: 12px
-      text-align: left
-      margin-top: 5px
-      padding: 10px
-      display: none
-      position: relative
-      top: 0
-      left: 0
-      width: 200px
-      a, a:visited
-        color: $white
-        text-decoration: underline
-      &:before
-        position: absolute
-        content: ""
-        // +arrow_north(5px)
-        top: -5px
-        left: 9px
-    &.warning
-      +_upgrade-coloring($warning)
-    &.alert
-      +_upgrade-coloring($alert)
-    &.danger
-      +_upgrade-coloring($danger)
-    &:hover
-      .upgrade-message
-        display: block
+
+// Settings for the icon
+#upgrade_notifications .upgrade-icon
+  cursor: pointer
+  line-height: 1
+  font-size: 1em
+  text-align: center
+  width: 1.2em
+  height: 1.2em
+  background-color: $danger
+  border: 1px solid darken($danger, 10%)
+
+// Settings for block message
+#upgrade_notifications .upgrade-notification
+  cursor: default
+  display: none
+  font-size: .85em
+  text-align: left
+  margin-top: .2em
+  padding: .75em
+  position: relative
+  top: 0
+  left: 0
+  width: 200px
+  background-color: $danger
+  border: 1px solid darken($danger, 10%)
+
+// Make the links readable
+#upgrade_notifications .upgrade-notification a
+  color: $white
+  text-decoration: underline
+
+// Show the message on hover
+#upgrade_notifications .upgrade-icon:hover .upgrade-notification
+  display: block
+
+// Default all message containers to be hidden
+#upgrade_notifications .upgrade-container
+  display: none
+
+// Space out multiple containers
+#upgrade_notifications .upgrade-container + .upgrade-container
+  margin-top: 1em
+
+// Show the upgrade notifications if a condition is met
+html.no-js #upgrade_notifications,
+html.lt-ie8 #upgrade_notifications
+  display: block
+
+// Show the correct notification container
+html.no-js #upgrade_notifications #no_js,
+html.lt-ie8 #upgrade_notifications #lt_ie8
+  display: block
 
