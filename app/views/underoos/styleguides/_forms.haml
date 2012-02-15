@@ -2,22 +2,26 @@
 .sg-subsection
   %h3.sg-subheading Forms <span>forms.sass</span>
   %form
-    %fieldset.bordered
+    %fieldset
       %legend This is a legend, it doesn't respect margin bottom, so add a <code>br</code> tag
       %br
       %ol
-        %li(class="input text optional" id="test_text_input")
-          %label(class="label" for="test_text") Basic Input
-          %input(class="text optional" id="test_text" type="text" name="test[text]" placeholder="text input")
-          .hint This is a hint about the form above being filled out
+        %li#test_text_input.required
+          %label.label(for="test_text") Text Input <abbr title="required">*</abbr>
+          %input#test_text(type="text" name="test[text]" placeholder="text input")
+          %p.hint This is a hint about the form above being filled out
 
-        %li(class="textarea optional" id="test_textarea_textarea")
-          %label(class="label" for="test_textarea") Text Area
-          %textarea(class="textarea optional" id="test_textarea" name="test[textarea]" placeholder="Enter some text..." rows="10" cols="40")
+        %li#test_search_input.optional
+          %label.label(for="test_search") Search
+          %input#test_search(type="search" name="test[search]" placeholder="google")
 
-        %li(class="select cities optional" id="test_select_select")
-          %label(class="label" for="test_select") Select
-          %select(class="cities optional" id="test_select" name="test[cities]")
+        %li#test_textarea_textarea.optional
+          %label.label(for="test_textarea") Text Area
+          %textarea#test_textarea(name="test[textarea]" placeholder="Enter some text..." rows="10" cols="40")
+
+        %li#test_select_input.optional
+          %label.label(for="test_select") Select
+          %select#test_select(name="test[select]")
             %optgroup(label="Colorado")
               %option(value="denver" selected="selected") Denver
               %option(value="boulder") Boulder
@@ -25,30 +29,14 @@
               %option(value="los angeles") Los Angeles
               %option(value="san francisco") San Francisco
 
-        %li(class="multi select cities optional" id="test_multi_select_select")
-          %label(class="label" for="test_multiselect") Select
-          %select(class="cities optional" id="test_multiselect" name="test[cities]" multiple)
-            %optgroup(label="Colorado")
-              %option(value="denver" selected="selected") Denver
-              %option(value="boulder") Boulder
-            %optgroup(label="California")
-              %option(value="los angeles") Los Angeles
-              %option(value="san francisco") San Francisco
-
-        %li(class="input search optional" id="test_search_input")
-          %label(class="label" for="test_search") search
-          %input(class="search optional" id="test_search" type="search" name="test[search]" placeholder="google")
-
-        %li(class="input submit")
-          %input(class="submit" name="submit" type="submit" value="Submit")
-        %li(class="input reset")
-          %input(class="reset" name="reset" type="reset" value="Reset")
-        %li(class="input button")
-          %input(class="button" name="button" type="button" value="Button")
-        %li(class="input image")
-          %input(class="image" name="image" type="image" src="http://lorempixum.com/68/28/" value="Image")
-        %li(class="input-file")
-          %input(class="file" name="file" type="file" value="file")
+        %li#test_multi_input.optional
+          %label.label(for="test_multi") Multi
+          %select#test_multi(name="test[multi]" multiple)
+            %option(value="1") One
+            %option(value="2" selected="selected") Two
+            %option(value="3") Three
+            %option(value="4") Four
+            %option(value="5") Five
 
         %ol.choices-group
           %li.choice
@@ -60,12 +48,23 @@
               %input(id="test_radio2" name="test[radio]" type="radio" value="false")
               No
 
-      %li.boolean
-        %label(for="test_check1")
-          %input(id="test_check1" name="test[check1]" type="checkbox" checked="checked" value="0")
-          Beer
-      %li.boolean
-        %label(for="test_check2")
-          %input(id="test_check2" name="test[check2]" type="checkbox" value="1")
-          Liquor
+        %li.boolean
+          %label(for="test_check1" name="test[check1]")
+            %input(id="test_check1" name="test[check1]" type="checkbox" checked="checked" value="0")
+            Checkbox 1
+        %li.boolean
+          %label(for="test_check2" name="test[check2]")
+            %input(id="test_check2" name="test[check2]" type="checkbox" value="1")
+            Checkbox 2
+
+        %li.commit.button
+          %input.submit(name="submit" type="submit" value="Submit")
+        %li.commit.button
+          %input.reset(name="reset" type="reset" value="Reset")
+        %li.commit.button
+          %input.button(name="button" type="button" value="Button")
+        %li.commit.button
+          %input.image(name="image" type="image" src="http://lorempixum.com/68/28/" value="Image")
+        %li.commit.button
+          %input.file(name="file" type="file" value="file")
 
