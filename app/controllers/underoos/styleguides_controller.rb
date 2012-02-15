@@ -48,17 +48,17 @@ module Underoos
         {prop:'$danger',   hex:'#b22222'}
       ]
       @components = [
-        {prop:'component_normal', hex:'#666'},
-        {prop:'component_active', hex:'#fff'},
-        {prop:'component_bg', hex:'transparent'},
-        {prop:'component_bg_hover', hex:'#eee'},
-        {prop:'component_bg_active', hex:'#268bd2'},
-        {prop:'component_border', hex:'#ccc'},
-        {prop:'component_border_alt', hex:'#b3b3b3'},
-        {prop:'disabled_color', hex:'#bbb'},
-        {prop:'disabled_bg', hex:'#eee'},
-        {prop:'disabled_border', hex:'#ccc'},
-        {prop:'focus_border', hex:'rgba(82,168,236,0.8)'}
+        {prop:'$component_normal', hex:'#666'},
+        {prop:'$component_active', hex:'#fff'},
+        {prop:'$component_bg', hex:'transparent'},
+        {prop:'$component_bg_hover', hex:'#eee'},
+        {prop:'$component_bg_active', hex:'#268bd2'},
+        {prop:'$component_border', hex:'#ccc'},
+        {prop:'$component_border_alt', hex:'#b3b3b3'},
+        {prop:'$disabled_color', hex:'#bbb'},
+        {prop:'$disabled_bg', hex:'#eee'},
+        {prop:'$disabled_border', hex:'#ccc'},
+        {prop:'$focus_border', hex:'rgba(82,168,236,0.8)'}
       ]
     end
   end

@@ -5,47 +5,47 @@
     %table.box.banded.thead-decorate
       %thead
         %tr
+          %th Swatch
           %th Variable
           %th Hex
-          %th Swatch
       %tbody
         - @greys.each do |color|
           %tr
-            %td <code>#{color[:prop]}</code>
-            %td <code>#{color[:hex]}</code>
             %td
               %span.sg-swatch(style="background-color:#{color[:hex]};")
+            %td <code>#{color[:prop]}</code>
+            %td <code>#{color[:hex]}</code>
   .sg-half.push
     %h4 Component colors
     %table.box.banded.thead-decorate
       %thead
         %tr
+          %th Swatch
           %th Variable
           %th Hex
-          %th Swatch
       %tbody
         - @components.each do |color|
           %tr
-            %td <code>#{color[:prop]}</code>
-            %td <code>#{color[:hex]}</code>
             %td
               %span.sg-swatch(style="background-color:#{color[:hex]};")
+            %td <code>#{color[:prop]}</code>
+            %td <code>#{color[:hex]}</code>
 
     %br
     %h4 CI colors
     %table.box.banded.thead-decorate
       %thead
         %tr
+          %th Swatch
           %th Variable
           %th Hex
-          %th Swatch
       %tbody
         - @ci_colors.each do |color|
           %tr
-            %td <code>#{color[:prop]}</code>
-            %td <code>#{color[:hex]}</code>
             %td
               %span.sg-swatch(style="background-color:#{color[:hex]};")
+            %td <code>#{color[:prop]}</code>
+            %td <code>#{color[:hex]}</code>
 
 
 .sg-subsection
@@ -54,29 +54,29 @@
     %table.box.banded.thead-decorate
       %thead
         %tr
+          %th Swatch
           %th Variable
           %th Hex
-          %th Swatch
       %tbody
         - @rainbow.each do |color|
           %tr
-            %td <code>#{color[:prop]}</code>
-            %td <code>#{color[:hex]}</code>
             %td
               %span.sg-swatch(style="background-color:#{color[:hex]};")
+            %td <code>#{color[:prop]}</code>
+            %td <code>#{color[:hex]}</code>
   .sg-half.push
     %h4 Status level
     %table.box.banded.thead-decorate
       %thead
         %tr
+          %th Swatch
           %th Variable
           %th Hex
-          %th Swatch
       %tbody
         - @status.each do |color|
           %tr
-            %td <code>#{color[:prop]}</code>
-            %td <code>#{color[:hex]}</code>
             %td
               %span.sg-swatch(style="background-color:#{color[:hex]};")
+            %td <code>#{color[:prop]}</code>
+            %td <code>#{color[:hex]}</code>
 
