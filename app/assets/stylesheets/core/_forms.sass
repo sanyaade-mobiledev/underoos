@@ -1,76 +1,25 @@
 
-// Containers
-form, form fieldset,
-form ol, form ul,
-form li,
-form p
-  +no-bullet
+// ## Form containers and base settings
+form
+  // TODO: Look at creating some additional padding around forms?
+  margin: 0
+
+fieldset
+  border: 0
+
+form ol, form ul, form li
   margin: 0
   padding: 0
 
-form
+form ol, form ul
   +clearfixer
+  +no-bullet
 
-form fieldset
-  border: none
+form li
   display: block
-  padding: 1em 0.2em
-
-form fieldset.bordered
-  border: $fieldset_border
-  display: block
-  padding: 1em
-
-form ol li,
-form ul li
-  display: block
-  margin-bottom: 1em
+  margin-bottom: .65em
   &:last-child
     margin-bottom: 0
-
-// Description Elements
-form abbr[title]
-  border: none
-
-form hr
-  border-top: $form_hr
-
-label
-  +font-sizes(11)
-
-form fieldset legend
-  display: none
-
-form label,
-form .inline-hints,
-form .inline-errors,
-form .hint
-  color: $label_color
-  display: block
-  margin-left: 3px
-  &.error
-    color: $error
-  &.disabled
-    color: $disabled_color
-
-form .inline-hints,
-form .hint
-  +font-sizes(11)
-  color: $hint_color
-
-form .inline-errors
-  +font-sizes(11)
-  color: $error
-
-.search label
-  display: none
-
-.radiogroup label,
-.checkgroup label
-  +inline-block
-  +font-sizes(14)
-  color: $collection_label_color
-  margin: -4px 10px 0 0
 
 \:-moz-placeholder
   color: $placeholder
@@ -78,102 +27,102 @@ form .inline-errors
 \::-webkit-input-placeholder
   color: $placeholder
 
-// Input Elements
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="url"],
-input[type="tel"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="number"],
-input[type="color"],
-input[type="search"],
-select, textarea
-  +inline-block
+// ## Form elements
+
+// Groups of fields with labels on top (legends)
+legend
+  display: block
+  border-bottom: 1px solid $greyE
+  color: $header_color
+  font-size: 1.25em
+  padding-bottom: .25em
+  width: 100%
+
+
+// Identify controls by their labels
+label
+  display: block
+  font-size: .85em
+  margin-bottom: .3em
+
+// Be specific about the inputs to avoid style leak through
+// TODO: look at the default settings for shadows and colorways
+input,
+textarea,
+select
   +border-radius($radii)
-  +box-shadow($input_shadow)
-  background: $input_bg
-  border: 1px solid $input_border
-  color: $input_color
-  padding: 6px 4px
-  width: auto
+  +box-shadow(inset 0 1px 1px rgba($black,.1))
+  +transition(border 0.25s, box-shadow 0.25s, background-color 0.25s)
+  display: block
+  border: 1px solid #ccc
+  padding: .3em
+  width: 210px
   &:focus
-    +box-shadow($focus_inset, $focus_glow)
-    border-color: $focus_border
+    +box-shadow(inset 0 1px 1px rgba($black,.1), 0 0 8px rgba(82,168,236,.6))
+    border-color: rgba(82,168,236,.8)
     outline: 0
   &:focus, &:hover
-    +transition(all 0.25s)
-    background-color: $input_focus_bg
-    color: $input_focus_color
+    background-color: #fafafa
   &.error
     border: 2px solid $error
     &:focus
       +box-shadow($focus_inset, $error_glow)
       outline: 0
   &.disabled, &[disabled], &[readonly]
-    +box-shadow(none)
     cursor: not-allowed
     background-color: $disabled_bg
-    border-color: 1px solid $disabled_border
-    color: $disabled_color
+    border-color: $disabled_border
+    // color: $disabled_color
 
-// select
-  font-size: 16px
 
-// select[multiple]
-  font-size: 14px
+// Perform Mini resets on certain input elements before defining again
+// -----------------------------------------------
+input[type="radio"],
+input[type="checkbox"],
+input[type="button"],
+input[type="image"],
+input[type="reset"],
+input[type="submit"]
+  width: auto
+  height: auto
 
-// Search
-input[type="search"]
-  +border-radius(12px)
-  padding: 4px 0 4px 10px
-
-// Form Buttons
-// `input[type="button"]`, `input[type="reset"]`, `input[type="submit"]` should be attached to a class like `.btn`
-
-input[type="file"],
-input[type="image"]
-  +transition(all 0.25s)
-  margin-left: 2px
-  &:focus
-    +box-shadow($focus_inset, $focus_glow)
-    outline: 1px solid $focus_border
-
-input[type="file"]
-  background: $input_file_bg
-  margin-left: 0
-
-// Checks and Radios
+input[type="image"],
 input[type="checkbox"],
 input[type="radio"]
-  margin: 0 4px 0 0
-  &.disabled, &[disabled], &[readonly]
-    cursor: not-allowed
+  +border-radius(0)
+  padding: 0
+  margin: 0
+  *margin-top: 0
+  cursor: pointer
 
-// Formtastic States
-form ol li.error
-  label, .hint, .inline-hints,
-  input, textarea, select
-    color: $error
+// Reset the file input to browser defaults
+input[type="file"]
+  +box-shadow(none)
+  padding: initial
+  line-height: initial
+  border: initial
+  background-color: $white
+  background-color: initial
 
-  input[type], textarea, select
-    border: 1px solid $error
-    &:focus
-      +box-shadow($focus_inset, $error_glow)
-      outline: 0
+// -----------------------------------------------
+.choices-group label,
+.boolean label,
+  +font-sizes($base_font_size)
 
-  input[type="checkbox"], input[type="radio"]
-    &:focus
-      outline: 5px auto $error
+.choices-group li
+  margin: 0
 
-form ol li.disabled label,
-form ol li.disabled .inline-hints,
-form ol li.disabled .hint
-  color: $disabled_color
+input[type="checkbox"],
+input[type="radio"]
+  +inline-block
+  border: 0
+  margin-top: -0.3em
+
+// -----------------------------------------------
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus
+  +box-shadow(none)
+  +tab-focus
 
