@@ -96,25 +96,25 @@
       %ol.form-actions
         %li.commit.button(class="#{state} #{disabled}")
           - if disabled == "disabled"
-            %input.submit(name="submit" type="submit" value="Submit" disabled)
+            %input.submit.btn(name="submit" type="submit" value="Submit" disabled)
           - else
-            %input.submit(name="submit" type="submit" value="Submit")
+            %input.submit.btn(name="submit" type="submit" value="Submit")
 
         %li.commit.button(class="#{state} #{disabled}")
           - if disabled == "disabled"
-            %input.reset(name="reset" type="reset" value="Reset" disabled)
+            %input.reset.btn(name="reset" type="reset" value="Reset" disabled)
           - else
-            %input.reset(name="reset" type="reset" value="Reset")
+            %input.reset.btn(name="reset" type="reset" value="Reset")
 
         %li.commit.button(class="#{state} #{disabled}")
           - if disabled == "disabled"
-            %input.button(name="button" type="button" value="Button" disabled)
+            %input.button.btn(name="button" type="button" value="Button" disabled)
           - else
-            %input.button(name="button" type="button" value="Button")
+            %input.button.btn(name="button" type="button" value="Button")
 
         %li.commit.button(class="#{state} #{disabled}")
           - if disabled == "disabled"
-            %input.image(name="image" type="image" src="http://lorempixum.com/68/28/" value="Image" disabled)
+            %input.image(name="image" type="image" src="http://placehold.it/68x28&text=IMG" value="Image" disabled)
           - else
-            %input.image(name="image" type="image" src="http://lorempixum.com/68/28/" value="Image")
+            %input.image(name="image" type="image" src="http://placehold.it/68x28&text=IMG" value="Image")
 
