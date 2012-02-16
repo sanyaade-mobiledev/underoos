@@ -1,0 +1,120 @@
+
+%fieldset
+  %legend=legend
+  %ol
+    %li(class="#{state} #{disabled}" id="#{uid}test_text_input")
+      %label.label(for="#{uid}test_text") Text Input <abbr title="required">*</abbr>
+      - if disabled == "disabled"
+        %input.input-medium(id="#{uid}test_text" type="text" name="test[text]" placeholder="text input" disabled)
+      - else
+        %input.input-medium(id="#{uid}test_text" type="text" name="test[text]" placeholder="text input")
+      %p.hint This is a hint for the text element!
+
+    %li.boolean(class="#{state} #{disabled}")
+      %label(for="#{uid}test_check1" name="test[check1]")
+        - if disabled == "disabled"
+          %input(id="#{uid}test_check1" name="test[check1]" type="checkbox" checked="checked" value="0" disabled)
+        - else
+          %input(id="#{uid}test_check1" name="test[check1]" type="checkbox" checked="checked" value="0")
+        Checkboxes for multiple selections
+    %li.boolean(class="#{state} #{disabled}")
+      %label(for="#{uid}test_check2" name="test[check2]")
+        - if disabled == "disabled"
+          %input(id="#{uid}test_check2" name="test[check2]" type="checkbox" value="1" disabled)
+        - else
+          %input(id="#{uid}test_check2" name="test[check2]" type="checkbox" value="1")
+        Go ahead and select this one too
+
+    %li
+      %ol.choices-group
+        %li.choice(class="#{state} #{disabled}")
+          %label(for="#{uid}test_radio1")
+            - if disabled == "disabled"
+              %input(id="#{uid}test_radio1" name="test[radio]" type="radio" value="true" disabled)
+            - else
+              %input(id="#{uid}test_radio1" name="test[radio]" type="radio" value="true")
+            Yes, to radio buttons
+        %li.choice(class="#{state} #{disabled}")
+          %label(for="#{uid}test_radio2")
+            - if disabled == "disabled"
+              %input(id="#{uid}test_radio2" name="test[radio]" type="radio" value="false" disabled)
+            - else
+              %input(id="#{uid}test_radio2" name="test[radio]" type="radio" value="false")
+            No, to radio buttons
+
+    %li(id="#{uid}test_select_input" class="#{state} #{disabled}")
+      %label.label(for="#{uid}test_select") Select
+      - if disabled == "disabled"
+        %select.input-medium(id="#{uid}test_select" name="test[select]" disabled)
+          %optgroup(label="Colorado")
+            %option(value="denver" selected="selected") Denver
+            %option(value="boulder") Boulder
+          %optgroup(label="California")
+            %option(value="los angeles") Los Angeles
+            %option(value="san francisco") San Francisco
+      - else
+        %select.input-medium(id="#{uid}test_select" name="test[select]")
+          %optgroup(label="Colorado")
+            %option(value="denver" selected="selected") Denver
+            %option(value="boulder") Boulder
+          %optgroup(label="California")
+            %option(value="los angeles") Los Angeles
+            %option(value="san francisco") San Francisco
+
+    %li(id="#{uid}test_multi_input" class="#{state} #{disabled}")
+      %label.label(for="#{uid}test_multi") Multi
+      - if disabled == "disabled"
+        %select.input-medium(id="#{uid}test_multi" name="test[multi]" multiple disabled)
+          %option(value="1") One
+          %option(value="2" selected="selected") Two
+          %option(value="3") Three
+          %option(value="4") Four
+          %option(value="5") Five
+      - else
+        %select.input-medium(id="#{uid}test_multi" name="test[multi]" multiple)
+          %option(value="1") One
+          %option(value="2" selected="selected") Two
+          %option(value="3") Three
+          %option(value="4") Four
+          %option(value="5") Five
+
+    %li(id="#{uid}test_textarea_textarea.optional" class="#{state} #{disabled}")
+      %label.label(for="#{uid}test_textarea") Text Area
+      - if disabled == "disabled"
+        %textarea.input-medium(id="#{uid}test_textarea" name="test[textarea]" placeholder="Enter some text..." rows="2" disabled)
+      - else
+        %textarea.input-medium(id="#{uid}test_textarea" name="test[textarea]" placeholder="Enter some text..." rows="2")
+
+    %li.commit.button(class="#{state} #{disabled}")
+      %label.label(for="#{uid}test_file") File Browser
+      - if disabled == "disabled"
+        %input.file(id="#{uid}test_file" name="file" type="file" value="file" disabled)
+      - else
+        %input.file(id="#{uid}test_file" name="file" type="file" value="file")
+
+    %li
+      %ol.form-actions
+        %li.commit.button(class="#{state} #{disabled}")
+          - if disabled == "disabled"
+            %input.submit(name="submit" type="submit" value="Submit" disabled)
+          - else
+            %input.submit(name="submit" type="submit" value="Submit")
+
+        %li.commit.button(class="#{state} #{disabled}")
+          - if disabled == "disabled"
+            %input.reset(name="reset" type="reset" value="Reset" disabled)
+          - else
+            %input.reset(name="reset" type="reset" value="Reset")
+
+        %li.commit.button(class="#{state} #{disabled}")
+          - if disabled == "disabled"
+            %input.button(name="button" type="button" value="Button" disabled)
+          - else
+            %input.button(name="button" type="button" value="Button")
+
+        %li.commit.button(class="#{state} #{disabled}")
+          - if disabled == "disabled"
+            %input.image(name="image" type="image" src="http://lorempixum.com/68/28/" value="Image" disabled)
+          - else
+            %input.image(name="image" type="image" src="http://lorempixum.com/68/28/" value="Image")
+

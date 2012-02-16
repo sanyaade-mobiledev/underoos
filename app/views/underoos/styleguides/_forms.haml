@@ -1,37 +1,35 @@
 
--# .sg-subsection
-  -# %h3.sg-subheading Form Controls <span>forms.sass</span>
-  -# .sg-half.pull
-    -# = render :partial => 'underoos/styleguides/forms/default-elements'
-  -# .sg-half.push
-    -# = render :partial => 'underoos/styleguides/forms/horizontal-elements'
+.sg-subsection
+  %h3.sg-subheading Vertical form <span>forms.sass</span>
+  .sg-threequarter.pull
+    %form
+      = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "vert_", :legend => 'I am Legend', :state => "", :disabled => ""}
+  .sg-quartter.push
+    %h4 Vertical form
 
 .sg-subsection
-  %h3.sg-subheading Form Controls <span>forms.sass</span>
+  %h3.sg-subheading Horizontal form <span>forms.sass</span>
   .sg-threequarter.pull
-    = render :partial => 'underoos/styleguides/forms/default-elements'
+    %form.form-horizontal
+      = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "horz_", :legend => 'Legend, starring Tom Cruise', :state => "", :disabled => ""}
   .sg-quartter.push
-    %h4 Vertical forms
-
-.sg-subsection
-  %h3.sg-subheading Form Controls <span>forms.sass</span>
-  .sg-threequarter.pull
-    = render :partial => 'underoos/styleguides/forms/horizontal-elements'
-  .sg-quartter.push
-    %h4 Horizontal forms
-
+    %h4 Horizontal form
 
 
 .sg-subsection
   %h3.sg-subheading Form States <span>forms.sass</span>
   .sg-half.pull
-    = render :partial => 'underoos/styleguides/forms/disabled-elements'
+    %form.form-horizontal
+      = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "disabled_", :legend => 'Disabled states', :state => "", :disabled => "disabled"}
   .sg-half.push
-    = render :partial => 'underoos/styleguides/forms/success-elements'
+    %form.form-horizontal
+      = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "errors_", :legend => 'Error states', :state => "error", :disabled => ""}
 
 .sg-subsection
   .sg-half.pull
-    = render :partial => 'underoos/styleguides/forms/warning-elements'
+    %form.form-horizontal
+      = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "warn_", :legend => 'Warning states', :state => "warning", :disabled => ""}
   .sg-half.push
-    = render :partial => 'underoos/styleguides/forms/error-elements'
+    %form.form-horizontal
+      = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "success_", :legend => 'Success states', :state => "success", :disabled => ""}
 
