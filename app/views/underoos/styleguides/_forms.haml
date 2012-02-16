@@ -1,8 +1,59 @@
 
 .sg-subsection
+  %table.box.banded.thead-decorate
+    %thead
+      %tr
+        %th Name
+        %th Class
+        %th Description
+    %tfoot
+      %tr
+        %td(colspan="3") Apply the class directly on the <code>form</code> element
+    %tbody
+      %tr
+        %td
+          %strong Vertical
+        %td(style="color: #999;") not required
+        %td Stacked label, controls and hints
+      %tr
+        %td
+          %strong Horizontal
+        %td <code>.form-horizontal</code>
+        %td Labels and controls on the same line, stacked hints
+      %tr
+        %td
+          %strong Inline
+        %td <code>.form-inline</code>
+        %td All controls on the same line
+      %tr
+        %td
+          %strong Search
+        %td <code>.form-search</code>
+        %td Similar to inline, but targets a search field
+
+.sg-subsection
   %h3.sg-subheading Example forms <span>forms.sass</span>
   .sg-quarter.pull
+    %h4 Basic form
+    %p Small sample of form control elements using the default layout.
+  .sg-threequarter.push
+    %form.well.dark
+      %ol
+        %li
+          %label.label(for="example_url") Domain Name <abbr title="required">*</abbr>
+          %input.input-medium(id="example_url" type="url" name="example[url]" placeholder="www.example.com")
+          %p.hint Enter your domain name!
+        %li.boolean
+          %label(for="example_check" name="example[check]")
+            %input(id="example_check" name="example[check]" type="checkbox" value="0")
+            Check this box!
+        %li.form-actions.dark
+          %button.btn(type="submit") Submit
+
+.sg-subsection
+  .sg-quarter.pull
     %h4 Search form
+    %p Add the class <code>search-query</code> to input elements for rounded corners.
   .sg-threequarter.push
     %form.form-search.well.dark
       %ol
@@ -13,6 +64,7 @@
 .sg-subsection
   .sg-quarter.pull
     %h4 Inline form
+    %p Use the inline form for small forms needing a compact style.
   .sg-threequarter.push
     %form.form-inline.well.dark
       %ol
@@ -21,38 +73,148 @@
           %input.input-small(type="password" name="test[password]" placeholder="password")
           %button.btn(type="submit") Go
 
-
 .sg-subsection
   %h3.sg-subheading Vertical form <span>forms.sass</span>
-  .sg-threequarter.pull
-    %form
-      = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "vert_", :legend => 'I am Legend', :state => "", :disabled => ""}
-  .sg-quarter.push
-    %h4 Vertical form
+  %form
+    = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "vert_", :legend => 'I am Legend', :state => "", :disabled => "", :dark => ""}
 
 .sg-subsection
   %h3.sg-subheading Horizontal form <span>forms.sass</span>
-  .sg-threequarter.pull
-    %form.form-horizontal.well.dark
-      = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "horz_", :legend => 'Legend, starring Tom Cruise', :state => "", :disabled => ""}
-  .sg-quarter.push
-    %h4 Horizontal form
-
+  %form.form-horizontal.well.dark
+    = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "horz_", :legend => 'Legend, starring Tom Cruise', :state => "", :disabled => "", :dark => "dark"}
+  .notification.important.fade.in
+    %p <strong>Tip!</strong> Add one of the <code>.well</code> classes to the <code>form</code> element to contain it from other items on the page
 
 .sg-subsection
-  %h3.sg-subheading Form States <span>forms.sass</span>
+  %h3.sg-subheading Form structure <span>forms.sass</span>
+  %p Forms are built around the structure output from <a href="https://github.com/justinfrench/formtastic">formtastic</a>.
+  %pre.prettyprint
+    = preserve do
+      :escaped
+        <form class="form-horizontal well dark">
+          <ol>
+            <li>
+              <label class="label" for="example_url">Domain Name <abbr title="required">*</abbr></label>
+              <input class="input-medium" id="example_url" name="example[url]" placeholder="www.example.com" type="url">
+              <p class="hint">Enter your domain name!</p>
+            </li>
+            <li class="boolean">
+              <label for="example_check" name="example[check]">
+                <input id="example_check" name="example[check]" type="checkbox" value="0">
+                Check this box!
+              </label>
+            </li>
+            <li class="form-actions dark">
+              <button class="btn" type="submit">Submit</button>
+            </li>
+          </ol>
+        </form>
+
+.sg-subsection
+  %h3.sg-subheading Form states <span>forms.sass</span>
   .sg-half.pull
     %form.form-horizontal.well
-      = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "disabled_", :legend => 'Disabled states', :state => "", :disabled => "disabled"}
+      = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "disabled_", :legend => 'Disabled states', :state => "", :disabled => "disabled", :dark => ""}
+    .notification.important.fade.in
+      %p <strong>Note!</strong> Add <code>.disable</code> to the <code>li</code> and a <code>disable</code> attribute to form controls
   .sg-half.push
     %form.form-horizontal.well
-      = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "errors_", :legend => 'Error states', :state => "error", :disabled => ""}
+      = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "errors_", :legend => 'Error states', :state => "error", :disabled => "", :dark => ""}
+    .notification.important.fade.in
+      %p <strong>Note!</strong> Add the <code>.error</code> class to the <code>li</code> for the problem element
 
 .sg-subsection
   .sg-half.pull
     %form.form-horizontal.well
-      = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "warn_", :legend => 'Warning states', :state => "warning", :disabled => ""}
+      = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "warn_", :legend => 'Warning states', :state => "warning", :disabled => "", :dark => ""}
+    .notification.important.fade.in
+      %p <strong>Note!</strong> Add the <code>.warning</code> class to the <code>li</code> for the problem element
   .sg-half.push
     %form.form-horizontal.well
-      = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "success_", :legend => 'Success states', :state => "success", :disabled => ""}
+      = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "success_", :legend => 'Success states', :state => "success", :disabled => "", :dark => ""}
+    .notification.important.fade.in
+      %p <strong>Note!</strong> Add the <code>.success</code> class to the <code>li</code> for the winning element
+
+.sg-subsection
+  %h3.sg-subheading Additional input controls <span>forms.sass</span>
+  %table.box.banded.thead-decorate
+    %thead
+      %tr
+        %th Control
+        %th Value
+        %th Type
+    %tfoot
+      %tr
+        %td(colspan="3") Descriptions courtesy <a href="https://developer.mozilla.org">Mozilla Developer Network</a>
+    %tbody
+      %tr
+        %td
+          %input.input-xlarge(type="email" name="email" placeholder="name@example.com")
+        %td <code>email</code>
+        %td Text field for editing an e-mail address, <code>:valid</code> and <code>:invalid</code> pseudo-classes are applied
+      %tr
+        %td
+          %input.input-xlarge(type="password" name="password" placeholder="password")
+        %td <code>password</code>
+        %td A single-line text field whose value is obscured
+      %tr
+        %td
+          %input.input-xlarge(type="url" name="url" placeholder="www.example.com")
+        %td <code>url</code>
+        %td Text field for editing a URL, <code>:valid</code> and <code>:invalid</code> pseudo-classes are applied
+      %tr
+        %td
+          %input.input-xlarge(type="tel" name="tel" placeholder="303-867-5309")
+        %td <code>tel</code>
+        %td Text field for entering a telephone number, <code>:valid</code> and <code>:invalid</code> pseudo-classes are applied
+      %tr
+        %td
+          %input.input-xlarge(type="datetime" name="datetime" placeholder="2012-01-29 12:06:23:21")
+        %td <code>datetime</code>
+        %td Date and time control with the time zone set to UTC
+      %tr
+        %td
+          %input.input-xlarge(type="datetime-local" name="datetime-local" placeholder="2012-01-29 12:06:23:21")
+        %td <code>datetime-local</code>
+        %td Date and time control with no time zone
+      %tr
+        %td
+          %input.input-xlarge(type="time" name="time" placeholder="12:06:23:21")
+        %td <code>time</code>
+        %td Time control with no time zone
+      %tr
+        %td
+          %input.input-xlarge(type="date" name="date" placeholder="2012-01-29")
+        %td <code>date</code>
+        %td Date control with no time zone
+      %tr
+        %td
+          %input.input-xlarge(type="month" name="month" placeholder="2012-01")
+        %td <code>month</code>
+        %td Date control consisting of a year and a month with no time zone
+      %tr
+        %td
+          %input.input-xlarge(type="week" name="week" placeholder="42")
+        %td <code>week</code>
+        %td Date control consisting of a week-year number and a week number with no time zone
+      %tr
+        %td
+          %input.input-xlarge(type="number" name="number" placeholder="5" min="0" max="10")
+        %td <code>number</code>
+        %td Control for floating point values, add <code>min</code> and <code>max</code> attributes to create a spinner
+      %tr
+        %td
+          %input.input-xlarge(type="range" name="range" placeholder="5" min="0" max="10" step=".5")
+        %td <code>range</code>
+        %td Slider control for numbers where exact value is not important, add <code>min</code>, <code>max</code> and <code>step</code> attributes
+      %tr
+        %td
+          %input.input-xlarge(type="color" name="color" placeholder="#fff" alt="color")
+        %td <code>color</code>
+        %td A control for specifying a color
+      %tr
+        %td
+          %input.input-xlarge(type="hidden" name="hidden" placeholder="hidden")
+        %td <code>hidden</code>
+        %td A control that is not displayed, but whose value is submitted to the server
 

@@ -135,7 +135,7 @@
 
     -# Action Group
     %li
-      %ol.form-actions
+      %ol.form-actions(class="#{dark}")
         %li.commit.button(class="#{state} #{disabled}")
           - if disabled == "disabled"
             %input.submit.btn(name="submit" type="submit" value="Submit" disabled)
