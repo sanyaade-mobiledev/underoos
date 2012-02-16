@@ -26,11 +26,16 @@ form li
 \::-webkit-input-placeholder
   color: $placeholder
 
+// -----------------------------------------------
 
 // ## Helper Elements
-
 form abbr[title]
   border: none
+
+legend + ol,
+legend + ul
+  margin-top: 1.5em
+  -webkit-margin-top-collapse: separate
 
 legend
   display: block
@@ -47,8 +52,11 @@ label
 
 .hint
   display: block
-  color: $grey9
-  font-size: .85em
+  color: $grey6
+  font-size: .92em
+  margin-top: .25em
+
+// -----------------------------------------------
 
 // ## Form elements
 input,
@@ -57,8 +65,9 @@ select
   +border-radius($radii)
   +font-sizes($base_font_size)
   display: inline-block
+  vertical-align: middle
   border: 1px solid #ccc
-  // color: @gray;
+  // color: @gray
   padding: .4em
 
 select
@@ -72,9 +81,9 @@ label textarea,
 label select
   display: block
 
-// Perform Mini resets on certain input elements before defining again
 // -----------------------------------------------
 
+// Perform Mini resets on certain input elements before defining again
 select[multiple],
 select[size]
   height: auto
@@ -86,6 +95,7 @@ input[type="file"]
   border: initial
   background-color: $white
   background-color: initial
+  padding-top: 0.3em
 
 input[type="image"]
   +border-radius(0)
@@ -94,20 +104,29 @@ input[type="image"]
   margin: 0
 
 // -----------------------------------------------
+
+// Radio and Checkboxes
 input[type="checkbox"],
 input[type="radio"]
   +border-radius(0)
   display: inline-block
+  vertical-align: middle
   border: 0
-  margin: -0.3em 0 0 0
+  margin: -0.3em 0.3em 0 0
   padding: 0
 
-.choices-group label,
-.boolean label
-  +font-sizes($base_font_size)
-
-.choices-group li
+form .choices-group
+  margin: 1em 0
+form .choices-group li
   margin: 0
+
+form .boolean,
+form .choice
+  margin-bottom: .3em
+
+form .boolean > label,
+form .choice > label
+  +font-sizes($base_font_size)
 
 // -----------------------------------------------
 
@@ -137,14 +156,101 @@ input:hover,
 textarea:hover
   background-color: #fafafa
 
+// Disabled State
 input,
 textarea,
 select
   &.disabled, &[disabled], &[readonly]
+    +box-shadow(none)
     cursor: not-allowed
-    background-color: $disabled_bg
-    border-color: $disabled_border
+    background-color: #f5f5f5
+    border-color: #ddd
     // color: $disabled_color
+
+input[type="file"][disabled],
+input[type="file"][readonly]
+  border: initial
+  background-color: $white
+  background-color: initial
+
+form .disabled label,
+form .disabled .hint
+  color: $disabled_color
+
+// Error, Warning Success States
+@mixin form-states($text_color, $border_color)
+  label, .hint
+    color: $text_color
+
+  input, select, textarea
+    color: $text_color
+    border-color: $border_color
+    &:focus
+      +box-shadow(0 0 6px lighten($border_color, 20%))
+      border-color: darken($border_color, 10%)
+
+form .error
+  +form-states($error, $error)
+form .success
+  +form-states($success, $success)
+form .warning
+  $warn: darken($warning, 10%)
+  +form-states($warn, $warn)
+
+// -----------------------------------------------
+
+// Containers?
+.form-actions
+  padding: 20px
+  margin-top: 1em
+  margin-bottom: 1em
+  background-color: #f5f5f5
+  border-top: 1px solid #ddd
+
+.form-actions li
+  display: inline-block
+  vertical-align: middle
+  margin: 0
+
+.form-horizontal
+  input,
+  textarea,
+  select
+    display: inline-block
+    margin-bottom: 0
+
+// Layout the forms horizontally
+.form-horizontal
+  li
+    +clearfixer
+
+  li > input,
+  li > textarea,
+  li > select
+    margin-left: 1em
+
+  li > label
+    float: left
+    text-align: right
+    padding-top: .5em
+    width: 10%
+
+  .boolean > label,
+  .choice > label
+    float: none
+    text-align: left
+    margin-left: 1em
+    padding-left: 10%
+    padding-top: 0
+    width: auto
+
+  .form-actions
+    padding-left: 10%
+
+  .hint
+    padding-left: 10%
+    margin-left: 1.2em
+
 
 // -----------------------------------------------
 
@@ -160,33 +266,14 @@ select
 .input-xlarge
   width: 100%
 
-// -----------------------------------------------
-// Be specific about the inputs to avoid style leak through
-// TODO: look at the default settings for shadows and colorways
-// input,
-// textarea,
-// select
-  +border-radius($radii)
-  +box-shadow(inset 0 1px 1px rgba($black,.1))
-  +transition(border 0.25s, box-shadow 0.25s, background-color 0.25s)
-  display: block
-  border: 1px solid #ccc
-  padding: .4em
-  width: 210px
-  &:focus
-    +box-shadow(inset 0 1px 1px rgba($black,.1), 0 0 8px rgba(82,168,236,.6))
-    border-color: rgba(82,168,236,.8)
-    outline: 0
-  &:focus, &:hover
-    background-color: #fafafa
-  &.error
-    border: 2px solid $error
-    &:focus
-      +box-shadow($focus_inset, $error_glow)
-      outline: 0
-  &.disabled, &[disabled], &[readonly]
-    cursor: not-allowed
-    background-color: $disabled_bg
-    border-color: $disabled_border
-    // color: $disabled_color
-
+// Add a little more to selects for equal sizing
+select.input-xsmall
+  width: 15.5%
+select.input-small
+  width: 28%
+select.input-medium
+  width: 53%
+select.input-large
+  width: 78%
+select.input-xlarge
+  width: 100%

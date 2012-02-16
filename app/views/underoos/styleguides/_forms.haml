@@ -1,70 +1,37 @@
 
+-# .sg-subsection
+  -# %h3.sg-subheading Form Controls <span>forms.sass</span>
+  -# .sg-half.pull
+    -# = render :partial => 'underoos/styleguides/forms/default-elements'
+  -# .sg-half.push
+    -# = render :partial => 'underoos/styleguides/forms/horizontal-elements'
+
 .sg-subsection
-  %h3.sg-subheading Forms <span>forms.sass</span>
-  %form
-    %fieldset
-      %legend This is a legend, it doesn't respect margin bottom, so add a <code>br</code> tag
-      %br
-      %ol
-        %li#test_text_input.required
-          %label.label(for="test_text") Text Input <abbr title="required">*</abbr>
-          %input#test_text(type="text" name="test[text]" placeholder="text input")
-          %p.hint This is a hint about the form above being filled out
+  %h3.sg-subheading Form Controls <span>forms.sass</span>
+  .sg-threequarter.pull
+    = render :partial => 'underoos/styleguides/forms/default-elements'
+  .sg-quartter.push
+    %h4 Vertical forms
 
-        %li#test_search_input.optional
-          %label.label(for="test_search") Search
-          %input#test_search(type="search" name="test[search]" placeholder="google")
+.sg-subsection
+  %h3.sg-subheading Form Controls <span>forms.sass</span>
+  .sg-threequarter.pull
+    = render :partial => 'underoos/styleguides/forms/horizontal-elements'
+  .sg-quartter.push
+    %h4 Horizontal forms
 
-        %li#test_textarea_textarea.optional
-          %label.label(for="test_textarea") Text Area
-          %textarea#test_textarea(name="test[textarea]" placeholder="Enter some text..." rows="10" cols="40")
 
-        %li#test_select_input.optional
-          %label.label(for="test_select") Select
-          %select#test_select(name="test[select]")
-            %optgroup(label="Colorado")
-              %option(value="denver" selected="selected") Denver
-              %option(value="boulder") Boulder
-            %optgroup(label="California")
-              %option(value="los angeles") Los Angeles
-              %option(value="san francisco") San Francisco
 
-        %li#test_multi_input.optional
-          %label.label(for="test_multi") Multi
-          %select#test_multi(name="test[multi]" multiple)
-            %option(value="1") One
-            %option(value="2" selected="selected") Two
-            %option(value="3") Three
-            %option(value="4") Four
-            %option(value="5") Five
+.sg-subsection
+  %h3.sg-subheading Form States <span>forms.sass</span>
+  .sg-half.pull
+    = render :partial => 'underoos/styleguides/forms/disabled-elements'
+  .sg-half.push
+    = render :partial => 'underoos/styleguides/forms/success-elements'
 
-        %ol.choices-group
-          %li.choice
-            %label(for="test_radio1")
-              %input(id="test_radio1" name="test[radio]" type="radio" value="true")
-              Yes
-          %li.choice
-            %label(for="test_radio2")
-              %input(id="test_radio2" name="test[radio]" type="radio" value="false")
-              No
-
-        %li.boolean
-          %label(for="test_check1" name="test[check1]")
-            %input(id="test_check1" name="test[check1]" type="checkbox" checked="checked" value="0")
-            Checkbox 1
-        %li.boolean
-          %label(for="test_check2" name="test[check2]")
-            %input(id="test_check2" name="test[check2]" type="checkbox" value="1")
-            Checkbox 2
-
-        %li.commit.button
-          %input.submit(name="submit" type="submit" value="Submit")
-        %li.commit.button
-          %input.reset(name="reset" type="reset" value="Reset")
-        %li.commit.button
-          %input.button(name="button" type="button" value="Button")
-        %li.commit.button
-          %input.image(name="image" type="image" src="http://lorempixum.com/68/28/" value="Image")
-        %li.commit.button
-          %input.file(name="file" type="file" value="file")
+.sg-subsection
+  .sg-half.pull
+    = render :partial => 'underoos/styleguides/forms/warning-elements'
+  .sg-half.push
+    = render :partial => 'underoos/styleguides/forms/error-elements'
 
