@@ -4,7 +4,7 @@
   .sg-quarter.pull
     %h4 Search form
   .sg-threequarter.push
-    %form.well.dark.form-search
+    %form.form-search.well.dark
       %ol
         %li
           %input.search-query.input-small(type="search" name="test[search]" placeholder="google")
@@ -14,7 +14,7 @@
   .sg-quarter.pull
     %h4 Inline form
   .sg-threequarter.push
-    %form.well.dark.form-inline
+    %form.form-inline.well.dark
       %ol
         %li
           %input.input-small(type="email" name="test[email]" placeholder="email")
@@ -42,17 +42,17 @@
 .sg-subsection
   %h3.sg-subheading Form States <span>forms.sass</span>
   .sg-half.pull
-    %form.form-horizontal
+    %form.form-horizontal.well
       = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "disabled_", :legend => 'Disabled states', :state => "", :disabled => "disabled"}
   .sg-half.push
-    %form.form-horizontal
+    %form.form-horizontal.well
       = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "errors_", :legend => 'Error states', :state => "error", :disabled => ""}
 
 .sg-subsection
   .sg-half.pull
-    %form.form-horizontal
+    %form.form-horizontal.well
       = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "warn_", :legend => 'Warning states', :state => "warning", :disabled => ""}
   .sg-half.push
-    %form.form-horizontal
+    %form.form-horizontal.well
       = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "success_", :legend => 'Success states', :state => "success", :disabled => ""}
 
