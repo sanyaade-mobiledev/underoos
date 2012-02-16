@@ -62,6 +62,7 @@ label
 input,
 textarea,
 select
+  +box-sizing(border-box)
   +border-radius($radii)
   +font-sizes($base_font_size)
   display: inline-block
@@ -294,14 +295,3 @@ form .warning
 .input-xlarge
   width: 100%
 
-// Add a little more to selects for equal sizing
-select.input-xsmall
-  width: 15.5%
-select.input-small
-  width: 28%
-select.input-medium
-  width: 53%
-select.input-large
-  width: 78%
-select.input-xlarge
-  width: 100%
