@@ -39,7 +39,7 @@ legend + ul
 
 legend
   display: block
-  border-bottom: 1px solid $greyE
+  border-bottom: 1px solid $component_border
   color: $header_color
   font-size: 1.25em
   padding-bottom: .25em
@@ -52,7 +52,7 @@ label
 
 .hint
   display: block
-  color: $grey6
+  color: $body_color_alt
   font-size: .92em
   margin-top: .25em
 
@@ -67,8 +67,8 @@ select
   +font-sizes($base_font_size)
   display: inline-block
   vertical-align: middle
-  border: 1px solid #ccc
-  // color: @gray
+  border: 1px solid $component_border
+  color: $body_color
   padding: .4em
 
 select
@@ -102,7 +102,7 @@ input[type="file"]
   border: initial
   background-color: $white
   background-color: initial
-  padding-top: 0.3em
+  margin-top: 0.3em
 
 input[type="image"]
   +border-radius(0)
@@ -139,23 +139,23 @@ form .boolean.inline,
 form .choice.inline
   display: inline-block
   vertical-align: middle
-  margin-right: 10px
+  margin-right: 1em
 
 // -----------------------------------------------
 
 // Focus State
 input,
 textarea
-  +box-shadow(inset 0 1px 1px rgba($black,.1))
+  +box-shadow($input_inset_shadow)
   +transition(border 0.25s, box-shadow 0.25s, background-color 0.25s)
 
 input:focus,
 textarea:focus
-  +box-shadow(inset 0 1px 1px rgba($black,.1), 0 0 8px rgba(82,168,236,.6))
-  border-color: rgba(82,168,236,.8)
+  +box-shadow($input_inset_shadow, $focus_glow)
+  border-color: $focus_border
   outline: 0
   outline: thin dotted \9
-  background-color: #fafafa
+  background-color: $component_bg_hover
 
 input[type="file"]:focus,
 input[type="radio"]:focus,
@@ -164,11 +164,6 @@ select:focus
   +box-shadow(none)
   +tab-focus
 
-// Hover State
-input:hover,
-textarea:hover
-  background-color: #fafafa
-
 // Disabled State
 input,
 textarea,
@@ -176,15 +171,19 @@ select
   &.disabled, &[disabled], &[readonly]
     +box-shadow(none)
     cursor: not-allowed
-    background-color: #f5f5f5
-    border-color: #ddd
-    // color: $disabled_color
+    background-color: $disabled_bg
+    border-color: $disabled_border
+    color: $disabled_color
 
 input[type="file"][disabled],
 input[type="file"][readonly]
   border: initial
   background-color: $white
   background-color: initial
+
+input[type="image"][disabled],
+input[type="image"][readonly]
+  +opacity(0.5)
 
 form .disabled label,
 form .disabled .hint
@@ -217,8 +216,8 @@ form .warning
   padding: 20px
   margin-top: 1em
   margin-bottom: 1em
-  background-color: #f5f5f5
-  border-top: 1px solid #ddd
+  background-color: $off_white
+  border-top: 1px solid $component_border
 
 .form-actions li
   display: inline-block
@@ -253,16 +252,14 @@ form .warning
     float: left
     text-align: right
     padding-top: .5em
-    // width: 10%
-    width: 100px
+    width: $horiz_offset
 
   .boolean > label,
   .choice > label
     float: none
     text-align: left
     margin-left: 1em
-    // padding-left: 10%
-    padding-left: 100px
+    padding-left: $horiz_offset
     padding-top: 0
     width: auto
 
@@ -272,12 +269,10 @@ form .warning
     padding-left: 0
 
   .form-actions
-    // padding-left: 10%
-    padding-left: 100px
+    padding-left: $horiz_offset
 
   .hint
-    // padding-left: 10%
-    padding-left: 100px
+    padding-left: $horiz_offset
     margin-left: 1.2em
 
 
