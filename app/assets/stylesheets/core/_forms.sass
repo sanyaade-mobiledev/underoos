@@ -81,6 +81,12 @@ label textarea,
 label select
   display: block
 
+.search-query
+  +border-radius(1em)
+  padding-left: 1em
+  padding-right: 1em
+  margin-bottom: 0
+
 // -----------------------------------------------
 
 // Perform Mini resets on certain input elements before defining again
@@ -212,12 +218,16 @@ form .warning
   vertical-align: middle
   margin: 0
 
+.form-search,
 .form-horizontal
   input,
   textarea,
   select
     display: inline-block
     margin-bottom: 0
+
+.form-search label
+  display: inline-block
 
 // Layout the forms horizontally
 .form-horizontal

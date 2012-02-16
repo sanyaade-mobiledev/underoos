@@ -1,10 +1,22 @@
 
 .sg-subsection
+  %h3.sg-subheading Example forms <span>forms.sass</span>
+  .sg-quarter.pull
+    %h4 Search form
+  .sg-threequarter.push
+    %form.well.dark.form-search
+      %ol
+        %li
+          %input.search-query.input-small(type="search" name="test[search]" placeholder="google")
+          %button.btn(type="submit") Search
+
+
+.sg-subsection
   %h3.sg-subheading Vertical form <span>forms.sass</span>
   .sg-threequarter.pull
     %form
       = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "vert_", :legend => 'I am Legend', :state => "", :disabled => ""}
-  .sg-quartter.push
+  .sg-quarter.push
     %h4 Vertical form
 
 .sg-subsection
@@ -12,7 +24,7 @@
   .sg-threequarter.pull
     %form.form-horizontal
       = render :partial => 'underoos/styleguides/forms/form-template', :locals => {:uid => "horz_", :legend => 'Legend, starring Tom Cruise', :state => "", :disabled => ""}
-  .sg-quartter.push
+  .sg-quarter.push
     %h4 Horizontal form
 
 
