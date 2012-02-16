@@ -2,6 +2,7 @@
 %fieldset
   %legend=legend
   %ol
+    -# Text Input
     %li(class="#{state} #{disabled}" id="#{uid}test_text_input")
       %label.label(for="#{uid}test_text") Text Input <abbr title="required">*</abbr>
       - if disabled == "disabled"
@@ -10,6 +11,7 @@
         %input.input-medium(id="#{uid}test_text" type="text" name="test[text]" placeholder="text input")
       %p.hint This is a hint for the text element!
 
+    -# Block Checkboxes
     %li.boolean(class="#{state} #{disabled}")
       %label(for="#{uid}test_check1" name="test[check1]")
         - if disabled == "disabled"
@@ -25,6 +27,7 @@
           %input(id="#{uid}test_check2" name="test[check2]" type="checkbox" value="1")
         Go ahead and select this one too
 
+    -# Block Radio Group
     %li
       %ol.choices-group
         %li.choice(class="#{state} #{disabled}")
@@ -42,6 +45,41 @@
               %input(id="#{uid}test_radio2" name="test[radio]" type="radio" value="false")
             No, to radio buttons
 
+    -# Inline Checkboxes
+    %li.boolean.inline(class="#{state} #{disabled}")
+      %label(for="#{uid}test_check3" name="test[check3]")
+        - if disabled == "disabled"
+          %input(id="#{uid}test_check3" name="test[check3]" type="checkbox" checked="checked" value="0" disabled)
+        - else
+          %input(id="#{uid}test_check3" name="test[check3]" type="checkbox" checked="checked" value="0")
+        Checkbox inline 1
+    %li.boolean.inline(class="#{state} #{disabled}")
+      %label(for="#{uid}test_check4" name="test[check4]")
+        - if disabled == "disabled"
+          %input(id="#{uid}test_check4" name="test[check4]" type="checkbox" value="1" disabled)
+        - else
+          %input(id="#{uid}test_check4" name="test[check4]" type="checkbox" value="1")
+        Checkbox inline 2
+
+    -# Inline Radio Group
+    %li
+      %ol.choices-group
+        %li.choice.inline(class="#{state} #{disabled}")
+          %label(for="#{uid}test_radio3")
+            - if disabled == "disabled"
+              %input(id="#{uid}test_radio3" name="test[radio]" type="radio" value="true" disabled)
+            - else
+              %input(id="#{uid}test_radio3" name="test[radio]" type="radio" value="true")
+            Yes, radio inline
+        %li.choice.inline(class="#{state} #{disabled}")
+          %label(for="#{uid}test_radio4")
+            - if disabled == "disabled"
+              %input(id="#{uid}test_radio4" name="test[radio]" type="radio" value="false" disabled)
+            - else
+              %input(id="#{uid}test_radio4" name="test[radio]" type="radio" value="false")
+            No, radio inline
+
+    -# Select
     %li(id="#{uid}test_select_input" class="#{state} #{disabled}")
       %label.label(for="#{uid}test_select") Select
       - if disabled == "disabled"
@@ -61,6 +99,7 @@
             %option(value="los angeles") Los Angeles
             %option(value="san francisco") San Francisco
 
+    -# Multi Select
     %li(id="#{uid}test_multi_input" class="#{state} #{disabled}")
       %label.label(for="#{uid}test_multi") Multi
       - if disabled == "disabled"
@@ -78,6 +117,7 @@
           %option(value="4") Four
           %option(value="5") Five
 
+    -# Text Area
     %li(id="#{uid}test_textarea_textarea.optional" class="#{state} #{disabled}")
       %label.label(for="#{uid}test_textarea") Text Area
       - if disabled == "disabled"
@@ -85,6 +125,7 @@
       - else
         %textarea.input-medium(id="#{uid}test_textarea" name="test[textarea]" placeholder="Enter some text..." rows="2")
 
+    -# File Browser
     %li.commit.button(class="#{state} #{disabled}")
       %label.label(for="#{uid}test_file") File Browser
       - if disabled == "disabled"
@@ -92,6 +133,7 @@
       - else
         %input.file(id="#{uid}test_file" name="file" type="file" value="file")
 
+    -# Action Group
     %li
       %ol.form-actions
         %li.commit.button(class="#{state} #{disabled}")

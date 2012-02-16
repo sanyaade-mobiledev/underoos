@@ -134,6 +134,12 @@ form .boolean > label,
 form .choice > label
   +font-sizes($base_font_size)
 
+form .boolean.inline,
+form .choice.inline
+  display: inline-block
+  vertical-align: middle
+  margin-right: 10px
+
 // -----------------------------------------------
 
 // Focus State
@@ -219,6 +225,7 @@ form .warning
   margin: 0
 
 .form-search,
+.form-inline,
 .form-horizontal
   input,
   textarea,
@@ -226,8 +233,10 @@ form .warning
     display: inline-block
     margin-bottom: 0
 
+.form-inline label,
 .form-search label
   display: inline-block
+  margin-bottom: 0
 
 // Layout the forms horizontally
 .form-horizontal
@@ -255,6 +264,11 @@ form .warning
     padding-left: 100px
     padding-top: 0
     width: auto
+
+  .boolean.inline + .boolean.inline > label,
+  .choice.inline + .choice.inline > label
+    margin-left: 0
+    padding-left: 0
 
   .form-actions
     // padding-left: 10%
