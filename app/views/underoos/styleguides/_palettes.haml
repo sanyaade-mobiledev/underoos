@@ -1,7 +1,7 @@
 
-.sg-subsection
-  .sg-half.pull
-    %h4 Greyscale colors
+- @palettes.each do |palette|
+  .sg-subsection
+    %h4=palette[:title]
     %table.box.banded.thead-decorate
       %thead
         %tr
@@ -9,71 +9,7 @@
           %th Variable
           %th Hex
       %tbody
-        - @greys.each do |color|
-          %tr
-            %td
-              %span.sg-swatch(style="background-color:#{color[:hex]};")
-            %td <code>#{color[:prop]}</code>
-            %td <code>#{color[:hex]}</code>
-  .sg-half.push
-    %h4 Component colors
-    %table.box.banded.thead-decorate
-      %thead
-        %tr
-          %th Swatch
-          %th Variable
-          %th Hex
-      %tbody
-        - @components.each do |color|
-          %tr
-            %td
-              %span.sg-swatch(style="background-color:#{color[:hex]};")
-            %td <code>#{color[:prop]}</code>
-            %td <code>#{color[:hex]}</code>
-
-    %br
-    %h4 CI colors
-    %table.box.banded.thead-decorate
-      %thead
-        %tr
-          %th Swatch
-          %th Variable
-          %th Hex
-      %tbody
-        - @ci_colors.each do |color|
-          %tr
-            %td
-              %span.sg-swatch(style="background-color:#{color[:hex]};")
-            %td <code>#{color[:prop]}</code>
-            %td <code>#{color[:hex]}</code>
-
-
-.sg-subsection
-  .sg-half.pull
-    %h4 mc roy g biv
-    %table.box.banded.thead-decorate
-      %thead
-        %tr
-          %th Swatch
-          %th Variable
-          %th Hex
-      %tbody
-        - @rainbow.each do |color|
-          %tr
-            %td
-              %span.sg-swatch(style="background-color:#{color[:hex]};")
-            %td <code>#{color[:prop]}</code>
-            %td <code>#{color[:hex]}</code>
-  .sg-half.push
-    %h4 Status level
-    %table.box.banded.thead-decorate
-      %thead
-        %tr
-          %th Swatch
-          %th Variable
-          %th Hex
-      %tbody
-        - @status.each do |color|
+        - palette[:colors].each do |color|
           %tr
             %td
               %span.sg-swatch(style="background-color:#{color[:hex]};")

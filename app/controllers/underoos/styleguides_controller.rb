@@ -6,6 +6,8 @@ module Underoos
       @lorem_sm = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
       @lorem_tiny = 'Lorem ipsum dolor sit amet.'
       @images = Dir['public/images/**/*.{png,jpeg,jpg,gif}'].map {|f| f.sub('public','')}
+
+      # Palettes
       @greys = [
         {prop:'$black', hex:'#000'},
         {prop:'$grey1', hex:'#111'},
@@ -60,6 +62,15 @@ module Underoos
         {prop:'$disabled_border', hex:'#ccc'},
         {prop:'$focus_border', hex:'rgba(82,168,236,0.8)'}
       ]
+      # Stick all palette options into an array of objects for easier documentation
+      @palettes = [
+        {title:'Greyscale', colors: @greys },
+        {title:'mc roy g biv', colors: @rainbow },
+        {title:'Status', colors: @status },
+        {title:'CI', colors: @ci_colors },
+        {title:'Components', colors: @components }
+      ]
     end
   end
 end
+
