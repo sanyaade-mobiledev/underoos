@@ -2,16 +2,15 @@
 // Default Pills
 .pills > li
   float: left
+  margin-top: .3em
 
 .pills > li > a
   +border-radius($radii)
   margin-right: .15em
-  padding: .5em .85em
+  padding: .4em .85em
   text-shadow: $text_drop_lite
   &:hover
     background-color: $component_bg_hover
-  &:last-child
-    margin-right: 0
 
 .pills .active > a,
 .pills li > a:active
@@ -26,9 +25,10 @@
 // Stacked Pills
 .pills.stacked > li
   float: none
+  margin-top: 0
+
 .pills.stacked > li > a
-  margin-right: 0
-  margin-bottom: .15em
+  margin: .14em 0
 
 // Dropdown Pills
 .pills .dropdown-menu
