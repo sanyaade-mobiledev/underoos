@@ -92,13 +92,13 @@ table.banded tbody tr
   &:nth-child(odd), &.odd
     background-color: transparent
   &:nth-child(even), &.even
-    background-color: $standard
+    background-color: $component_bg_hover
 
 // Colorize the table header background
 table.thead-decorate thead
-  background-color: $component_bg_hover
+  background-color: darken($component_bg_hover, 5%)
 
 // Colorize the table footer background
 table.tfoot-decorate tfoot
-  background-color: $standard
+  background-color: $off_white
 

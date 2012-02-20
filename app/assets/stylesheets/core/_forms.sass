@@ -51,7 +51,7 @@ label
 
 .hint
   display: block
-  color: $body_color_alt
+  color: lighten($body_color, 20%)
   font-size: .92em
   margin-top: .25em
 
@@ -192,31 +192,30 @@ form .disabled .hint
   color: $disabled_color
 
 // ## Error, Warning Success states
-@mixin form-states($text_color, $border_color)
+@mixin form-states($highlight)
   label, .hint
-    color: $text_color
+    color: $highlight
 
   input, select, textarea
-    color: $text_color
-    border-color: $border_color
+    color: $highlight
+    border-color: $highlight
     &:focus
-      color: $text_color
-      +box-shadow(0 0 6px lighten($border_color, 20%))
-      border-color: darken($border_color, 10%)
+      color: $highlight
+      +box-shadow(0 0 6px lighten($highlight, 20%))
+      border-color: darken($highlight, 10%)
 
   input[type="button"]:hover,
   input[type="submit"]:hover,
   input[type="reset"]:hover
-    color: $text_color
-    border-color: darken($border_color, 10%)
+    color: $highlight
+    border-color: darken($highlight, 10%)
 
 form .error
-  +form-states($error, $error)
+  +form-states($error)
 form .success
-  +form-states($success, $success)
+  +form-states($success)
 form .warning
-  $warn: darken($warning, 10%)
-  +form-states($warn, $warn)
+  +form-states(darken($warning, 10%))
 
 // HTML5 invalid states
 input:focus:required:invalid,
@@ -237,7 +236,7 @@ select:focus:required:invalid
   margin-bottom: 1em
   padding: 1.5em
   &.dark
-    background-color: #e3e3e3
+    background-color: darken($off_grey, 3%)
 
 .form-actions li
   display: inline-block

@@ -1,15 +1,15 @@
 
 .well
   +border-radius($radii)
-  border: 1px solid #eaeaea
+  border: 1px solid $component_border
   background-color: transparent
   margin-bottom: 1.25em
   padding: 1.25em
   &.lite
-    background-color: #fcfcfc
+    background-color: $off_white
   &.dark
-    background-color: #eaeaea
-    border-color: #ccc
+    background-color: $off_grey
   &.primary
     background-color: $primary
+    border-color: darken($primary, 30%)
 

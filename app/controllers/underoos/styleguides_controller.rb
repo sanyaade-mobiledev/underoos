@@ -24,7 +24,9 @@ module Underoos
         {prop:'$greyC', hex:'#ccc'},
         {prop:'$greyD', hex:'#ddd'},
         {prop:'$greyE', hex:'#eee'},
-        {prop:'$white', hex:'#fff'}
+        {prop:'$white', hex:'#fff'},
+        {prop:'$off_grey', hex:'#eaeaea'},
+        {prop:'$off_white', hex:'#fafafa'}
       ]
       @rainbow = [
         {prop:'$magenta', hex:'#ff00ff'},
@@ -37,9 +39,6 @@ module Underoos
         {prop:'$indigo',  hex:'#4b0082'},
         {prop:'$violet',  hex:'#ee82ee'}
       ]
-      @ci_colors = [
-        {prop:'$primary', hex:'#268bd2'}
-      ]
       @status = [
         {prop:'$standard', hex:'#f5f5f5'},
         {prop:'$info',     hex:'#999'},
@@ -49,25 +48,29 @@ module Underoos
         {prop:'$error',    hex:'#b22222'},
         {prop:'$danger',   hex:'#b22222'}
       ]
+      @misc_colors = [
+        {prop:'$primary',         hex:'#268bd2'},
+        {prop:'$disabled_color',  hex:'#bbb'},
+        {prop:'$disabled_bg',     hex:'#eee'},
+        {prop:'$disabled_border', hex:'#ddd'},
+        {prop:'$focus_color',     hex:'#52a8ec'},
+        {prop:'$focus_border',    hex:'rgba(82,168,236,0.8)'}
+      ]
       @components = [
         {prop:'$component_normal', hex:'#666'},
         {prop:'$component_active', hex:'#fff'},
         {prop:'$component_bg', hex:'transparent'},
-        {prop:'$component_bg_hover', hex:'#eee'},
         {prop:'$component_bg_active', hex:'#268bd2'},
+        {prop:'$component_bg_hover', hex:'#eee'},
         {prop:'$component_border', hex:'#ccc'},
-        {prop:'$component_border_alt', hex:'#b3b3b3'},
-        {prop:'$disabled_color', hex:'#bbb'},
-        {prop:'$disabled_bg', hex:'#eee'},
-        {prop:'$disabled_border', hex:'#ccc'},
-        {prop:'$focus_border', hex:'rgba(82,168,236,0.8)'}
+        {prop:'$component_border_alt', hex:'#b3b3b3'}
       ]
       # Stick all palette options into an array of objects for easier documentation
       @palettes = [
         {title:'Greyscale', colors: @greys },
         {title:'mc roy g biv', colors: @rainbow },
         {title:'Status', colors: @status },
-        {title:'CI', colors: @ci_colors },
+        {title:'Miscellaneous', colors: @misc_colors },
         {title:'Components', colors: @components }
       ]
     end
