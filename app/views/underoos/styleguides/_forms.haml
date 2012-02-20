@@ -74,19 +74,19 @@
           %button.btn(type="submit") Go
 
 .sg-subsection
-  %h3.sg-subheading Vertical form <span>forms.sass</span>
+  %h3.sg-subheading Vertical form
   %form
     = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "vert_", :legend => 'I am Legend', :state => "", :disabled => "", :dark => ""}
 
 .sg-subsection
-  %h3.sg-subheading Horizontal form <span>forms.sass</span>
+  %h3.sg-subheading Horizontal form
   %form.form-horizontal.well.dark
     = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "horz_", :legend => 'Legend, starring Tom Cruise', :state => "", :disabled => "", :dark => "dark"}
   .notification.important.fade.in
     %p <strong>Tip!</strong> Add one of the <code>.well</code> classes to the <code>form</code> element to contain it from other items on the page
 
 .sg-subsection
-  %h3.sg-subheading Form structure <span>forms.sass</span>
+  %h3.sg-subheading Form structure
   %p Forms are built around the structure output from <a href="https://github.com/justinfrench/formtastic">formtastic</a>.
   %pre.prettyprint
     = preserve do
@@ -111,7 +111,7 @@
         </form>
 
 .sg-subsection
-  %h3.sg-subheading Form states <span>forms.sass</span>
+  %h3.sg-subheading Form states
   .sg-half.pull
     %form.form-horizontal.well
       = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "disabled_", :legend => 'Disabled states', :state => "", :disabled => "disabled", :dark => ""}
@@ -136,7 +136,7 @@
       %p <strong>Note!</strong> Add the <code>.success</code> class to the <code>li</code> for the winning element
 
 .sg-subsection
-  %h3.sg-subheading Additional input controls <span>forms.sass</span>
+  %h3.sg-subheading Additional input controls
   %table.box.banded.thead-decorate
     %thead
       %tr

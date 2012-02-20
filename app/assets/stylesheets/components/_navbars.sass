@@ -4,6 +4,7 @@
 
 .navbar-inner
   +box-shadow($drop_dark)
+  +border-radius($radii)
   text-shadow: $text_drop_lite
   background-color: $standard
 
@@ -22,23 +23,46 @@
   color: $primary
   padding: 1em 0.75em
   &:hover, &:active
-    color: $component_normal
+    color: $link_hover
     background-color: $component_bg_hover
 
 .navbar .nav .active > a,
-.navbar .nav .active > a:hover
+.navbar .nav .active > a:hover,
+.navbar .nav .open > .dropdown-toggle,
+.navbar .nav .active > .dropdown-toggle,
+.navbar .nav .open.active > .dropdown-toggle
   +box-shadow($inset_dark)
   background-color: $primary
   color: $standard
   text-shadow: $text_inset_dark
 
-.navbar .brand
+// Shared inner elements
+.navbar .brand,
+.navbar .plain-text,
+.navbar .button-group,
+.navbar form
   float: left
   display: block
-  padding: 1em 0.75em
-  color: #ccc
 
-// FIXED NAVBAR
+.navbar .brand,
+.navbar .plain-text
+  padding: 1em 0.75em
+
+.navbar .brand
+  color: $greyC
+
+.navbar .button-group,
+.navbar form
+  margin: 0.6em 0.75em
+
+// Dropdowns
+.navbar .dropdown-menu
+  text-shadow: none
+
+.navbar .nav .open.dropdown .caret
+  border-top-color: $standard
+
+// Fixed Navbar
 .navbar.fixed
   position: fixed
   top: 0
@@ -47,6 +71,9 @@
   z-index: $zindex_navbar
 
 .navbar.fixed .navbar-inner
-  // padding-left:  0
-  // padding-right: 0
+  +border-radius(0)
+
+// Redeclare for specificity
+.navbar .pull-right
+  float: right
 
