@@ -13,14 +13,73 @@
           %nav.spy
             %a.brand.pull-right(href="/styleguide") styleguide.
             %ul.nav
-              %li
-                %a(href="#typography") Typography
+              %li.dropdown
+                %a.dropdown-toggle(href="#" data-toggle="dropdown") Typography<span class="caret"></span>
+                %ul.dropdown-menu
+                  %li
+                    %a(href="#typography") Headings
+                  %li
+                    %a(href="#paragraphs") Inline paragraph elements
+                  %li
+                    %a(href="#rules") Rules
+                  %li
+                    %a(href="#lists") Lists
+                  %li
+                    %a(href="#code") Code
               %li
                 %a(href="#palettes") Palettes
-              %li
-                %a(href="#elements") Elements
-              %li
-                %a(href="#components") Components
+              %li.dropdown
+                %a.dropdown-toggle(href="#" data-toggle="dropdown") Elements<span class="caret"></span>
+                %ul.dropdown-menu
+                  %li
+                    %a(href="#elements") Base Nav
+                  %li
+                    %a(href="#buttons") Buttons
+                  %li
+                    %a(href="#images") Images
+                  %li
+                    %a(href="#video") Video
+                  %li
+                    %a(href="#progress_bars") Progress &amp; Meters
+              %li.dropdown
+                %a.dropdown-toggle(href="#" data-toggle="dropdown") Components<span class="caret"></span>
+                %ul.dropdown-menu
+                  %li
+                    %a(href="#components") Button Groups
+                  %li
+                    %a(href="#dropdowns") Dropdowns
+                  %li
+                    %a(href="#tabs_pills") Tabs &amp; Pills
+                  %li
+                    %a(href="#nav_lists") Navigation Lists
+                  %li
+                    %a(href="#breadcrumbs") Breadcrumbs
+                  %li
+                    %a(href="#pagination") Pagination
+                  %li
+                    %a(href="#paddles") Paddles
+                  %li
+                    %a(href="#navs_example") Navs Showcase
+                  %li
+                    %a(href="#navbars") Navbars
+                  %li
+                    %a(href="#modalz") Modals
+                  %li
+                    %a(href="#notifications") Notifications
+                  %li
+                    %a(href="#decals") Decals
+                  %li
+                    %a(href="#tooltips") Tooltips
+                  %li
+                    %a(href="#popovers") Popovers
+                  %li
+                    %a(href="#carets") Carets
+                  %li
+                    %a(href="#closer") Close Icons
+                  %li
+                    %a(href="#wells") Wells
+                  %li
+                    %a(href="#media") Media Grid
               %li
                 %a(href="#tables") Tables
               %li
@@ -35,71 +94,82 @@
                 %a(href="#utilities") Utilities
 
 
-    .container.sg-contents
+    .container
 
-      #typography.sg-section
+      #typography.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading Typography
           %p.sg-note Heading, paragraph, lists, and inline typographic elements.
         = render :partial => 'typography'
 
-      #palettes.sg-section
+      #palettes.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading Palettes
           %p.sg-note Various color palettes and themes used in the application. All properties are found under the themes directory
         = render :partial => 'palettes'
 
 
-      #elements.sg-section
+      #elements.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading Elements
           %p.sg-note Base class styles to enhance common elements found in an application.
         = render :partial => 'elements'
 
-      #components.sg-section
+      #components.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading Components
           %p.sg-note Components are common patterns used in many applications but are not defined as base element tags.
         = render :partial => 'components'
 
-      #tables.sg-section
+      #tables.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading Tables
           %p.sg-note Tables are used to represent tabular data.
         = render :partial => 'tables'
 
-      #forms.sg-section
+      #forms.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading Forms
           %p.sg-note Inputs, textarea, labels, selects, and other controls associated with form elements. Tuned to play with <a href="https://github.com/justinfrench/formtastic">formtastic</a>.
         = render :partial => 'forms'
 
-      #structures.sg-section
+      #structures.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading Structures
           %p.sg-note Structures consists of grids systems and common size elements used within the application.
         = render :partial => 'structures'
 
-      #layouts.sg-section
+      #layouts.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading Layouts
           %p.sg-note Layouts consists of various templates that are specific to the application.
         = render :partial => 'layouts'
 
-      #assets.sg-section
+      #assets.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading Assets
           %p.sg-note Showcases the various assets in use by the application.
         = render :partial => 'assets'
 
-      #utilities.sg-section
+      #utilities.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading Utilities
           %p.sg-note Various utility, helpers and miscellaneous classes, commonly used for extension.
         = render :partial => 'utilities'
 
 
-      #resources.sg-section
+      #resources.sg-spy-landing
+      .sg-section
         .well.dark
           %h2.sg-heading External Resources
           %p.sg-note References, links, credits, and various information related to the styleguide.
@@ -111,3 +181,4 @@
     = javascript_include_tag 'underoos'
     = javascript_include_tag 'prettify'
     = javascript_include_tag 'styleguide'
+
