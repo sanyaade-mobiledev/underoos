@@ -31,7 +31,7 @@
 .notification
   @extend .base-notification
   text-shadow: $text_drop_lite
-  &.info
+  &.info, &.notice
     +background-darken-border(lighten($info, 20%))
   &.important
     +background-darken-border(lighten($important, 40%))
@@ -48,7 +48,7 @@
     color: darken($warning, 15%)
     .heading
       color: darken($warning, 15%)
-  &.danger, &.error
+  &.danger, &.error, &.alert
     +background-darken-border(lighten($danger, 40%))
     color: $danger
     .heading
@@ -70,7 +70,7 @@
     text-shadow: $text_inset_dark
     .heading
       color: $white
-  &.info
+  &.info, &.notice
     +background-darken-border($info)
   &.important
     +background-darken-border($important)
@@ -78,7 +78,7 @@
     +background-darken-border($success)
   &.warning
     +background-darken-border($warning)
-  &.danger, &.error
+  &.danger, &.error, &.alert
     +background-darken-border($danger)
   &.primary
     +background-darken-border($primary)
