@@ -13,7 +13,7 @@
         %td The <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro clearfix</a> from Nicolas Gallagher
       %tr
         %td <code>.clearfix</code>
-        %td The standard clearfix from <a href="http://compass-style.org/reference/compass/utilities/general/clearfix/#mixin-clearfix">Compass</a>
+        %td The standard clearfix from <a href="http://compass-style.org/reference/compass/utilities/general/clearfix/#mixin-clearfix">Compass</a>, utilizing <code>overflow hidden</code>
       %tr
         %td <code>.ir</code>
         %td For use in image replacement, typically on links
@@ -66,4 +66,86 @@
       %tr
         %td <code>.collapse.in</code>
         %td Transitions an element to a <code>height</code> of <code>auto</code>
+
+#utils_mixins.sg-spy-landing
+.sg-subsection
+  %h3.sg-subheading Mixins <span>mixins/*.sass</span>
+  %table.box.vborder.banded.thead-decorate
+    %thead
+      %tr
+        %th Mixin
+        %th Parameters
+        %th Usage
+    %tbody
+      %tr
+        %td <code>+arrow_[north|south|east|west]</code>
+        %td <code>$color:#000, $size:5px</code>
+        %td Draws a directional arrow, typically used for pseudo elements
+      %tr
+        %td <code>+clearfixer</code>
+        %td(style="color: #999;") <em>none</em>
+        %td The <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro clearfix</a> from Nicolas Gallagher
+      %tr
+        %td <code>+clearfix</code>
+        %td(style="color: #999;") <em>none</em>
+        %td The standard clearfix from <a href="http://compass-style.org/reference/compass/utilities/general/clearfix/#mixin-clearfix">Compass</a>, utilizing <code>overflow hidden</code>
+      %tr
+        %td <code>+background-darken-border</code>
+        %td <code>$color, $percentage:20%</code>
+        %td Fill a background and stroke a border with a darkened percentage
+      %tr
+        %td <code>+sharpen-image</code>
+        %td(style="color: #999;") <em>none</em>
+        %td Sharpen an image due to up/down scaling: <a href="http://stitchcss.com/#sharpen_image">stitchcss</a>
+      %tr
+        %td <code>+high-quality-image</code>
+        %td(style="color: #999;") <em>none</em>
+        %td Improve rendering quality on an image: <a href="http://stitchcss.com/#high_quality_image">stitchcss</a>
+      %tr
+        %td <code>+low-quality-image</code>
+        %td(style="color: #999;") <em>none</em>
+        %td Decrease rendering quality in favor of speed: <a href="http://stitchcss.com/#low_quality_image">stitchcss</a>
+      %tr
+        %td <code>+font-sizes</code>
+        %td <code>$target_px, $context:$context_px</code>
+        %td Inject <code>font-size</code> for <code>px</code> and <code>rem</code>: <a href="http://snook.ca/archives/html_and_css/font-size-with-rem">more info</a>
+      %tr
+        %td <code>+tab-focus</code>
+        %td(style="color: #999;") <em>none</em>
+        %td Resets default outlines for webkit on focusable elements
+      %tr
+        %td <code>+user-select</code>
+        %td <code>$type:none</code>
+        %td Define whether an element is selectable
+  .notification.important.fade.in
+    %p <strong>Pro Tip!</strong> There are variables available within <code>_timing-equations.sass</code> for defining <code>cubic-bezier</code> values.
+
+#utils_functions.sg-spy-landing
+.sg-subsection
+  %h3.sg-subheading Functions <span>mixins/sizing.sass</span>
+  %table.box.vborder.banded.thead-decorate
+    %thead
+      %tr
+        %th Function
+        %th Parameters
+        %th Usage
+    %tfoot
+      %tr
+        %td(colspan="3") All functions return a value
+    %tbody
+      %tr
+        %td <code>to_em</code>
+        %td <code>$target_px, $context:$base_font_size</code>
+        %td Convert target <code>px</code> value to <code>em</code> in context constraints of the base font size
+      %tr
+        %td <code>to_rem</code>
+        %td <code>$target_px, $context:$context_px</code>
+        %td Convert target <code>px</code> value to <code>rem</code> in context constraints of the user's base font size
+      %tr
+        %td <code>to_percent</code>
+        %td <code>$target_px, $context:$base_width</code>
+        %td Convert target <code>px</code> value to <code>percentage</code> in context constraints of the container's width
+  .notification.warning.fade.in
+    %p <strong>Warning!</strong> Define <code>$context_px</code>, <code>$base_font_size</code>, and <code>$base_width</code> prior to the functions being loaded.
+
 
