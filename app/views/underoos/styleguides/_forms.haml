@@ -1,4 +1,5 @@
 
+#forms_type.sg-spy-landing
 .sg-subsection
   %table.box.banded.thead-decorate
     %thead
@@ -31,6 +32,7 @@
         %td <code>.form-search</code>
         %td Similar to inline, but targets a search field
 
+#forms_example.sg-spy-landing
 .sg-subsection
   %h3.sg-subheading Example forms <span>forms.sass</span>
   .sg-quarter.pull
@@ -73,11 +75,13 @@
           %input.input-small(type="password" name="test[password]" placeholder="password")
           %button.btn(type="submit") Go
 
+#forms_vertical.sg-spy-landing
 .sg-subsection
   %h3.sg-subheading Vertical form
   %form
     = render :partial => 'underoos/styleguides/partials/form-template', :locals => {:uid => "vert_", :legend => 'I am Legend', :state => "", :disabled => "", :dark => ""}
 
+#forms_horizontal.sg-spy-landing
 .sg-subsection
   %h3.sg-subheading Horizontal form
   %form.form-horizontal.well.dark
@@ -85,6 +89,7 @@
   .notification.important.fade.in
     %p <strong>Tip!</strong> Add one of the <code>.well</code> classes to the <code>form</code> element to contain it from other items on the page
 
+#forms_structure.sg-spy-landing
 .sg-subsection
   %h3.sg-subheading Form structure
   %p Forms are built around the structure output from <a href="https://github.com/justinfrench/formtastic">formtastic</a>.
@@ -110,6 +115,7 @@
           </ol>
         </form>
 
+#forms_state.sg-spy-landing
 .sg-subsection
   %h3.sg-subheading Form states
   .sg-half.pull
@@ -135,6 +141,7 @@
     .notification.important.fade.in
       %p <strong>Note!</strong> Add the <code>.success</code> class to the <code>li</code> for the winning element
 
+#forms_inputs.sg-spy-landing
 .sg-subsection
   %h3.sg-subheading Additional input controls
   %table.box.banded.thead-decorate
