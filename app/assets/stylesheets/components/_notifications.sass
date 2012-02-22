@@ -48,7 +48,7 @@
     color: darken($warning, 15%)
     .heading
       color: darken($warning, 15%)
-  &.danger
+  &.danger, &.error
     +background-darken-border(lighten($danger, 40%))
     color: $danger
     .heading
@@ -78,7 +78,7 @@
     +background-darken-border($success)
   &.warning
     +background-darken-border($warning)
-  &.danger
+  &.danger, &.error
     +background-darken-border($danger)
   &.primary
     +background-darken-border($primary)
