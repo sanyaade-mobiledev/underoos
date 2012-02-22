@@ -1,0 +1,44 @@
+
+// Mixin the container sizes
+@mixin resize_containers($base_value)
+  .container
+    max-width: $base_value * 1px
+  .container-fixed
+    width: $base_value * 1px
+
+// Large screens
+@media (min-width: 1200px)
+  +resize_containers(1200)
+  #page_title
+    color: red
+
+// Default desktop and tablet portrait
+@media (min-width: 1000px)
+
+// Portrait tablet
+@media (max-width: 767px)
+  +resize_containers(768)
+  #page_title
+    color: orange
+
+// Landscape mobile
+@media (max-width: 480px)
+  +resize_containers(480)
+  #page_title
+    color: green
+
+  .navbar.fixed
+    position: static
+  .sg-threequarter, .sg-half, .sg-quarter,
+  .sg-twothird, .sg-onethird
+    width: 98%
+    margin-left: 0
+    margin-right: 0
+    float: none
+
+// Portrait mobile
+@media (max-width: 320px)
+  +resize_containers(320)
+  #page_title
+    color: magenta
+

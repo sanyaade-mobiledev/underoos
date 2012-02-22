@@ -38,6 +38,12 @@
       }, 3000)
     })
 
+    // Simple test for calculating the page size
+    var sizing = $('#page_title')
+    window.onresize = function() {
+      sizing[0].innerHTML = window.innerWidth + 'px'
+    }
+
   })
 
 }(window.jQuery)
