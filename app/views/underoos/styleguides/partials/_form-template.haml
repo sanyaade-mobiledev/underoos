@@ -4,7 +4,7 @@
   %ol
     -# Text Input
     %li(class="#{state} #{disabled}" id="#{uid}test_text_input")
-      %label.label(for="#{uid}test_text") Text Input <abbr title="required">*</abbr>
+      %label.label(for="#{uid}test_text") Text Input<abbr title="required">*</abbr>
       - if disabled == "disabled"
         %input.input-medium(id="#{uid}test_text" type="text" name="test[text]" placeholder="text input" disabled)
       - else
