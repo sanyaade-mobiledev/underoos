@@ -7,6 +7,7 @@ curl -L -o ./vendor/assets/javascripts/bootstrap-dropdown.js http://twitter.gith
 curl -L -o ./vendor/assets/javascripts/bootstrap-modal.js http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js
 curl -L -o ./vendor/assets/javascripts/bootstrap-alert.js http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js
 curl -L -o ./vendor/assets/javascripts/bootstrap-button.js http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js
+curl -L -o ./vendor/assets/javascripts/bootstrap-tab.js http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js
 
 echo Not Updated: jquery, prettify.js
 

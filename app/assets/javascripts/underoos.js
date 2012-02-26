@@ -9,6 +9,7 @@
 //= require bootstrap-popover
 //= require bootstrap-modal
 //= require bootstrap-alert
+//= require bootstrap-tab
 
 
 /* APPLICATION ASSETS */
