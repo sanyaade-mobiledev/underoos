@@ -38,6 +38,18 @@
       }, 3000)
     })
 
+    // Click progress bars to showcase states
+    $('.progress').on('click', function(e) {
+      var bar = $(this).find('> .bar')
+      var pwidth = $(this).width()
+
+      if (bar.width() === pwidth) {
+        bar.css({width:'0%'})
+      } else {
+        bar.css({width:'100%'})
+      }
+    })
+
     // Simple test for calculating the page size
     /* var sizing = $('#page_title')
     window.onresize = function() {
