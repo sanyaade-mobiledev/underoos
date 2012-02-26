@@ -1,0 +1,24 @@
+
+.sg-subsection
+  %h3.sg-subheading Containers <span>containers.sass</span>
+  %p(style="width:67%;") Containers are used to "contain" elements of content within a page or section. All containers inject a <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro clearfix</a> to clear any floats from interior elements.
+.sg-subsection
+  %table.box.banded.thead-decorate
+    %thead
+      %tr
+        %th Class
+        %th Usage
+    %tbody
+      %tr
+        %td
+          %code .container
+        %td The default container is a fluid width container with a <code>max-width</code> set to the <code>$base_width</code> variable.
+      %tr
+        %td
+          %code .container.full
+        %td Adding the <code>.full</code> class to a <code>container</code> will remove the <code>max-width</code> setting and allow the container to fill the browser window.
+      %tr
+        %td
+          %code .container.fixed
+        %td Adding the <code>.fixed</code> class to a <code>container</code> will render it using fixed width pixels with no responsive behavior.
+
