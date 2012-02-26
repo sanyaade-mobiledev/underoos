@@ -145,7 +145,20 @@
         %td <code>to_percent</code>
         %td <code>$target_px, $context:$base_width</code>
         %td Convert target <code>px</code> value to <code>percentage</code> in context constraints of the container's width
+      %tr
+        %td <code>vertical_pixel</code>
+        %td <code>$target_px</code>
+        %td Returns the vertical rhythm in <code>px</code> calculated from the <code>$base_vertical</code> setting
+      %tr
+        %td <code>vertical_em</code>
+        %td <code>$target_px</code>
+        %td Returns the vertical rhythm in <code>em</code> calculated from the <code>$base_vertical</code> setting
+      %tr
+        %td <code>vertical_percent</code>
+        %td <code>$target_px</code>
+        %td Returns the vertical rhythm in <code>percent</code> calculated from the <code>$base_vertical</code> setting
   .notification.warning.fade.in
-    %p <strong>Warning!</strong> Define <code>$context_px</code>, <code>$base_font_size</code>, and <code>$base_width</code> prior to the functions being loaded.
-
+    %p <strong>Warning!</strong> Define <code>$context_px</code>, <code>$base_font_size</code>, <code>$base_width</code> and <code>$base_vertical</code> prior to the functions being loaded.
+  .notification.important.fade.in
+    %p <strong>Important!</strong> When calculating vertical rhythm, always pass in what the expected pixel value is for the element.
 
