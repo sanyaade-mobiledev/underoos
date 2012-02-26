@@ -33,19 +33,18 @@ table
   tbody + tbody
     border-top: 2px solid $component_border
 
-  th a.ascending:after,
-  th a.descending:after
-    +inline-block
-    content: ""
-    margin: -4px 0 0 8px
-    border-width: 0 4px 4px
-    border-style: solid
-    border-color: $link_normal transparent
-  th a.ascending:hover:after,
-  th a.descending:hover:after
-    border-color: $link_hover transparent
-  th a.descending:after
-    border-width: 4px 4px 0
+  th .ascending .caret
+    margin-top: 6px
+  th .descending .caret
+    margin-top: 2px
+
+  th .ascending:hover .caret,
+  th .unsorted:hover .caret-north-south:after
+    border-top-color: $link_hover
+
+  th .descending:hover .caret,
+  th .unsorted:hover .caret-north-south
+    border-bottom-color: $link_hover
 
 // Outer box
 table.box
