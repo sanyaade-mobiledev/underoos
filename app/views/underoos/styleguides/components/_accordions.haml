@@ -1,0 +1,72 @@
+
+.sg-subsection
+  %h3.sg-subheading Accordions <span>accordions.sass</span>
+  %p(style="width:67%;") The accordion navigation system requires <a href="http://twitter.github.com/bootstrap/javascript.html#collapse">Bootstrap's Collapse plugin</a>. They're used typically in navigation systems to toggle and reveal sections of content.
+  %br
+  %p(style="width:67%;") Accordions support multiple open sections or just single sections based on the <code>data</code> attributes set within the links.
+
+.sg-subsection
+  .accordion#accordion_example
+
+    .accordion-group
+      .accordion-heading
+        %a.accordion-toggle(href="#collapse_1" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 1
+      .accordion-body.collapse#collapse_1
+        .accordion-inner
+          %p=@lorem_sm
+
+    .accordion-group
+      .accordion-heading
+        %a.accordion-toggle(href="#collapse_2" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 2
+      .accordion-body.collapse#collapse_2
+        .accordion-inner
+          %p=@lorem_sm
+
+    .accordion-group
+      .accordion-heading
+        %a.accordion-toggle(href="#collapse_3" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 3
+      .accordion-body.collapse#collapse_3
+        .accordion-inner
+          %p=@lorem_sm
+
+
+.sg-subsection
+  %pre.prettyprint
+    = preserve do
+      :escaped
+        <div class="accordion" id="accordion_example">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_1">Accordion Group 1</a>
+            </div>
+            <div class="accordion-body in collapse" id="collapse_1" style="height: auto; ">
+              <div class="accordion-inner">
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_2">Accordion Group 2</a>
+            </div>
+            <div class="accordion-body collapse" id="collapse_2" style="height: 0px; ">
+              <div class="accordion-inner">
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_3">Accordion Group 3</a>
+            </div>
+            <div class="accordion-body collapse" id="collapse_3" style="height: 0px; ">
+              <div class="accordion-inner">
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  .notification.important.fade.in
+    %p <strong>Note!</strong> Remove the <code>data-parent</code> attribute from the links to have multiple sections open at the same time
+
