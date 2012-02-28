@@ -1,13 +1,19 @@
 
 .sg-subsection
   %h3.sg-subheading Navbars <span>navbars.sass</span>
-  %p.sg-twothird.pull Typically used for application or page level navigation systems. Navbars can contain just about any type of navigation component, search forms, button groups and drop downs.
+  %p(style="width:67%;") Typically used for application or page level navigation systems. Navbars can contain just about any type of navigation component, search forms, button groups and drop downs.
+  %br
+  %p(style="width:67%;") Navbars support responsive behavior, by adding a button with <code>data-toggle="collapse" data-target="#target_id"</code>. You'll also need to set the corresponding class (<code>.nav-collapse</code>) and the id based on the target (<code>#target_id</code>) on the collapsable container. Make sure to utilize the styles contained within the media queries as well.
 .sg-subsection
   .navbar
     .navbar-inner
       .container
-        %nav
-          %a.brand(href="#") Brand
+        %a.btn.info.btn-navbar(data-toggle="collapse" data-target="#collapse_example")
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.brand(href="#") Brand
+        %nav.nav-collapse#collapse_example
           %ul.nav
             %li
               %a(href="#") Link 1
@@ -25,7 +31,7 @@
                 %li
                   %a(href="#") Subnav 3
 
-        %nav.pull-right
+        %nav.pull-right.nav-collapse
           %form.form-search
             %ol
               %li
@@ -51,8 +57,13 @@
         <div class="navbar">
           <div class="navbar-inner">
             <div class="container">
-              <nav>
-                <a class="brand" href="#">Brand</a>
+              <a class="btn info btn-navbar" data-toggle="collapse" data-target="#collapse_example">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
+              <a class="brand" href="#">Brand</a>
+              <nav class="nav-collapse" id="#collapse_example">
                 <ul class="nav">
                   <li><a href="#">Link 1</a></li>
                   <li class="active"><a href="#">Link 2</a></li>
@@ -88,3 +99,6 @@
         </div>
   .notification.important.fade.in
     %p <strong>Note!</strong> Add the <code>.fixed</code> class to the <code>.navbar</code> container to fix the navigation system to the top of the page
+  .notification.important.fade.in
+    %p <strong>Note!</strong> For a responsive navbar, make sure to include <a href="http://twitter.github.com/bootstrap/javascript.html#collapse">Bootstrap's Collapse plugin</a> and add the necessary elements to the structure
+

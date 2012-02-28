@@ -3,15 +3,77 @@
 @mixin resize_containers($base_value)
   .container
     max-width: $base_value * 1px
-  .container-fixed
-    width: $base_value * 1px
+    &.fluid, &.fixed
+      max-width: none
+    &.fixed
+      width: $base_value * 1px
 
 // Large screens
 @media (min-width: 1200px)
   +resize_containers(1200)
 
 // Default desktop and tablet portrait
-@media (min-width: 1000px)
+@media (min-width: 980px)
+  .nav-collapse.collapse
+    height: auto !important
+    overflow: visible !important
+
+// This is the point where your navigation needs to collapse
+@media (max-width: 979px)
+  .navbar.fixed
+    position: static
+  .navbar .nav-collapse
+    clear: left
+  .navbar .nav,
+  .navbar .nav > li
+    float: none
+
+  .navbar .dropdown-menu
+    +border-radius(0)
+    +box-shadow(none)
+    position: static
+    top: auto
+    left: auto
+    float: none
+    display: block
+    max-width: none
+    margin: 0 0.5em
+    padding: 0
+    background-color: transparent
+    border: none
+
+  .navbar .dropdown .dropdown-toggle,
+  .navbar .dropdown .dropdown-toggle:hover,
+  .navbar .dropdown .dropdown-toggle:active,
+  .navbar .nav .open > .dropdown-toggle,
+  .navbar .nav .active > .dropdown-toggle,
+  .navbar .nav .open.active > .dropdown-toggle
+    +box-shadow(none)
+    cursor: default
+    padding-bottom: 0.25em
+    color: $component_normal
+    background-color: transparent
+    text-shadow: none
+
+  .navbar .dropdown .caret
+    display: none
+
+  .btn-navbar
+    display: block
+
+  .nav-collapse
+    overflow: hidden
+    height: 0
+
+  .navbar .dropdown-menu .divider
+    display: none
+
+  .navbar form,
+  .navbar .pull-right
+    float: none
+
+  .sg-navbar .brand
+    float: left
 
 // Portrait tablet
 @media (max-width: 767px)
@@ -21,8 +83,6 @@
 @media (max-width: 480px)
   +resize_containers(480)
 
-  .navbar.fixed
-    position: static
   .sg-threequarter, .sg-half, .sg-quarter,
   .sg-twothird, .sg-onethird
     width: 98%

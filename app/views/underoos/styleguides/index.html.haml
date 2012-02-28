@@ -19,10 +19,13 @@
     .navbar.fixed.sg-navbar
       .navbar-inner
         .container
-          %nav.spy
-            %a#page_title.brand.pull-right(href="/styleguide") underoos.
+          %a.btn.info.btn-navbar(data-toggle="collapse" data-target=".nav-collapse")
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a#page_title.brand(href="/styleguide") underoos.
+          %nav.spy.nav-collapse
             %ul.nav
-
               %li.dropdown
                 %a.dropdown-toggle(href="#" data-toggle="dropdown") Typography<span class="caret"></span>
                 %ul.dropdown-menu
