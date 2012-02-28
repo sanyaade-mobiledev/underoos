@@ -50,6 +50,13 @@
       }
     })
 
+    // Test the upgrade message icon
+    $('#upgrade_test').on('click', function(e) {
+      e.preventDefault()
+      $('html').toggleClass('no-js lt-ie8')
+      window.scrollTo(0,0)
+    })
+
     // Simple test for calculating the page size
     /* var sizing = $('#page_title')
     window.onresize = function() {

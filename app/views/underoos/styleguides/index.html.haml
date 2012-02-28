@@ -129,8 +129,18 @@
 
               %li
                 %a(href="#structures") Structures
-              %li
-                %a(href="#layouts") Layouts
+
+              %li.dropdown
+                %a.dropdown-toggle(href="#" data-toggle="dropdown") Layouts<span class="caret"></span>
+                %ul.dropdown-menu
+                  %li
+                    %a(href="#layouts") Description
+                  %li
+                    %a(href="#layouts_containers") Containers
+                  %li
+                    %a(href="#layouts_queries") Media Queries
+                  %li
+                    %a(href="#layouts_upgrades") Upgrades
 
               %li.dropdown
                 %a.dropdown-toggle(href="#" data-toggle="dropdown") Assets<span class="caret"></span>
@@ -148,7 +158,7 @@
                   %li
                     %a(href="#utilities") Description
                   %li
-                    %a(href="#utils_helpers") Helpers
+                    %a(href="#utils_helpers") helpers
                   %li
                     %a(href="#utils_transitions") Transitions
                   %li
