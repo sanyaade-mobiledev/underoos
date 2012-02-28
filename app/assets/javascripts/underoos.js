@@ -10,6 +10,7 @@
 //= require bootstrap-modal
 //= require bootstrap-alert
 //= require bootstrap-tab
+//= require bootstrap-collapse
 
 
 /* APPLICATION ASSETS */
