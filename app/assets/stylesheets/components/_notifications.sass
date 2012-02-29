@@ -124,8 +124,9 @@
 .flash-messages .pop-notification
   margin: 0
 
-.flash-messages.top,
-.flash-messages.bottom
-  .notification, .pop-notification
-    +border-radius(0)
+.flash-messages.top .notification,
+.flash-messages.top .pop-notification,
+.flash-messages.bottom .notification,
+.flash-messages.bottom .pop-notification
+  +border-radius(0)
 

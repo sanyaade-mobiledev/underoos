@@ -16,8 +16,8 @@
   &:visited
     color: $color
   &:hover, &:focus, &.active
-    color: $color
     background: darken($bg, 3%)
+    color: $color
   &:hover, &.active
     border: 1px solid darken($bg, 40%)
   &:hover
@@ -45,8 +45,8 @@
     +font-sizes($base_font_size + 2)
     line-height: 1.3
   .caret
-    margin: 0.5em 0 0 0.5em
     border-top-color: $color
+    margin: 0.5em 0 0 0.5em
 
 // Override specific properties for `.btn` colorways
 @mixin btn-override($bg, $color:#fff)

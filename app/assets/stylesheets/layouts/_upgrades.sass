@@ -11,29 +11,29 @@
 
 // Settings for the icon
 #upgrade_notifications .upgrade-icon
-  cursor: pointer
-  line-height: 1
+  background-color: $danger
+  border: 1px solid darken($danger, 10%)
   font-size: 1em
+  line-height: 1
   text-align: center
   width: 1.2em
   height: 1.2em
-  background-color: $danger
-  border: 1px solid darken($danger, 10%)
+  cursor: pointer
 
 // Settings for block message
 #upgrade_notifications .upgrade-notification
-  cursor: default
-  display: none
+  background-color: $danger
+  border: 1px solid darken($danger, 10%)
   font-size: 0.85em
   text-align: left
+  display: none
   margin-top: 0.2em
   padding: 0.75em
   position: relative
   top: 0
   left: 0
   width: 200px
-  background-color: $danger
-  border: 1px solid darken($danger, 10%)
+  cursor: default
 
 // Make the links readable
 #upgrade_notifications .upgrade-notification a
