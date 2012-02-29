@@ -1,7 +1,7 @@
 
 // Base notification used for @extends
 .base-notification
-  +border-radius($radii + .1em)
+  +border-radius($radii)
   +background-darken-border($standard)
   position: relative
   padding: 0.75em
@@ -82,4 +82,56 @@
     +background-darken-border($danger)
   &.primary
     +background-darken-border($primary)
+
+// Flash messages container
+.flash-messages,
+.flash-messages.top
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  z-index: $zindex_flash_message
+
+.flash-messages.bottom
+  top: auto
+  bottom: 0
+
+.flash-messages.top-left,
+.flash-messages.top-center,
+.flash-messages.top-right
+  top: 20px
+
+.flash-messages.top-left,
+.flash-messages.top-center,
+.flash-messages.middle
+  right: auto
+
+.flash-messages.top-left,
+.flash-messages.top-right
+  width: 25%
+
+.flash-messages.top-left
+  left: 20px
+
+.flash-messages.top-center,
+.flash-messages.middle
+  left: 25%
+  width: 50%
+
+.flash-messages.middle
+  top: 45%
+
+.flash-messages.top-right
+  left: auto
+  right: 20px
+
+// Override some of the settings for full screen messages
+.flash-messages .notification,
+.flash-messages .pop-notification
+  margin: 0
+
+.flash-messages.top,
+.flash-messages.bottom
+  .notification, .pop-notification
+    +border-radius(0)
 

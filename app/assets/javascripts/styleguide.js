@@ -57,6 +57,19 @@
       window.scrollTo(0,0)
     })
 
+    // Test flash messages
+    $('.flash-example').on('click', function(e) {
+      e.preventDefault()
+      var tmpl = '<div class="notification important fade"><p><strong>Pro Tip!</strong> This is a message</p><a class="close" data-dismiss="alert" href="#">×</a></div>'
+      var fm = $('#flash_messages')
+      fm.html(tmpl)
+      var notifier = $(fm.find('.notification')[0])
+      var position = ($(this).data('position'))
+      fm.removeClass()
+      fm.addClass('flash-messages ' + position)
+      notifier.addClass('in')
+    })
+
     // Simple test for calculating the page size
     /* var sizing = $('#page_title')
     window.onresize = function() {
@@ -66,4 +79,5 @@
   })
 
 }(window.jQuery)
+
 

@@ -167,9 +167,49 @@
           </div>
 
 .sg-subsection
-  %h3.sg-subheading Flash notifications
-  .sg-half.pull
-    %p.sg-todo Describe Flash notifications
-  .sg-half.push
-    %p.sg-todo Add in Flash notifications
+  %h4 Flash Notifications
+  %p(style="width:67%") Flash notifications enhance the standard <code>.notification</code> and <code>.pop-notification</code> components by allowing them to appear fixed above all other elements on the page. Wrap the notifications within a <code>#flash_messages.flash-messages</code> container at the root of the body, sprinkle a little JavaScript and you're ready to go.
+  %br
+  %p(style="width:67%") Adding different positional classes to the <code>.flash-messages</code> container will allow them to appear in different quadrants of the viewport as seen below:
+.sg-subsection
+  %table.box.banded.thead-decorate
+    %thead
+      %tr
+        %th Type
+        %th Markup
+        %th Usage
+    %tbody
+      %tr
+        %td
+          %a.flash-example(href="#" data-position="top") Top
+        %td <code>.flash-messages.top</code>
+        %td Fixed to the top of the browser, spans the entire viewport (<em>the default</em>)
+      %tr
+        %td
+          %a.flash-example(href="#" data-position="bottom") Bottom
+        %td <code>.flash-messages.bottom</code>
+        %td Fixed to the bottom of the browser, spans the entire viewport
+      %tr
+        %td
+          %a.flash-example(href="#" data-position="top-left") Top left
+        %td <code>.flash-messages.top-left</code>
+        %td Upper left quadrant of the viewport, with a size of 25%
+      %tr
+        %td
+          %a.flash-example(href="#" data-position="top-right") Top right
+        %td <code>.flash-messages.top-right</code>
+        %td Upper right quadrant of the viewport, with a size of 25%
+      %tr
+        %td
+          %a.flash-example(href="#" data-position="top-center") Top center
+        %td <code>.flash-messages.top-center</code>
+        %td Upper center quadrant of the viewport, with a size of 50%
+      %tr
+        %td
+          %a.flash-example(href="#" data-position="middle") Middle
+        %td <code>.flash-messages.middle</code>
+        %td Dead center baby, with a size of 50%
+
+  .notification.important.fade.in
+    %p <strong>Note!</strong> You don't necessarily need to use notifications within the <code>.flash-messages</code> container, it's left fairly flexible to allow for various interpretations
 
