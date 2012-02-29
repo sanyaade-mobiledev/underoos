@@ -25,7 +25,10 @@
         %td The opposite of <code>shown</code>, sets an element to <code>display:none</code> and <code>visibility:hidden</code>
       %tr
         %td <code>.visuallyhidden</code>
-        %td Sets an element to only visually hidden, elements are still accessible
+        %td Sets an element to only visually hidden, elements are still accessible, use this class instead of <code>display:none</code>
+      %tr
+        %td <code>.visuallyshown</code>
+        %td Reverse the effects of <code>.visuallyhidden</code>
       %tr
         %td <code>.invisible</code>
         %td Keeps elements in the DOM, but hidden from view
@@ -44,6 +47,8 @@
       %tr
         %td <code>.base-row</code>
         %td For use by extension for <code>row</code> classes
+  .notification.important.fade.in
+    %p <strong>Pro Tip!</strong> When using <code>visuallyhidden</code> and <code>visuallyshown</code> with <code>box-shadow</code>, you'll need to add <code>clip:initial</code> to get the shadows to reappear
 
 #utils_transitions.sg-spy-landing
 .sg-subsection
