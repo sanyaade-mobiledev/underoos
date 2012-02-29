@@ -14,6 +14,4 @@
 
 
 /* APPLICATION ASSETS */
-// require_tree ./templates
-// require components/click_over
 

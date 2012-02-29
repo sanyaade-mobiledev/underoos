@@ -5,7 +5,7 @@ require "underoos/version"
 Gem::Specification.new do |s|
   s.name        = "underoos"
   s.version     = Underoos::VERSION
-  s.authors     = ["Matt Kitt"]
+  s.authors     = ["Matthew Kitt"]
   s.email       = ["matt.kitt@modeset.com"]
   s.homepage    = ""
   s.summary     = %q{Starter styles in Sass and Compass}
@@ -22,8 +22,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'sass-rails'
   s.add_runtime_dependency 'compass-rails'
   s.add_runtime_dependency 'haml-rails'
-  s.add_runtime_dependency 'redcarpet'
-  s.add_runtime_dependency 'eco'
 
   s.add_development_dependency 'thin'
   s.add_development_dependency 'rocco'
