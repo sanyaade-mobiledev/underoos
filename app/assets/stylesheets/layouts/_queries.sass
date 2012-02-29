@@ -76,13 +76,42 @@
   .navbar .pull-right
     float: none
 
-// Portrait tablet
+// Portrait tablet and below
 @media (max-width: 768px)
   +resize_containers(768)
 
-// Landscape mobile
+// Landscape mobile and below
 @media (max-width: 480px)
   +resize_containers(480)
+
+  input[type="checkbox"],
+  input[type="radio"]
+    border: 1px solid #ccc
+
+  .form-horizontal
+    li > label
+      float: none
+      width: auto
+      padding-top: 0
+      text-align: left
+
+    .boolean > label,
+    .choice > label,
+    .hint
+      padding-left: 0
+
+    .form-actions
+      padding-left: 0.75em
+      padding-right: 0.75em
+
+    .modal
+      position: absolute
+      margin: 0
+      top: 10px
+      left: 10px
+      right: 10px
+      width: auto
+
 
 // Portrait mobile
 @media (max-width: 320px)
