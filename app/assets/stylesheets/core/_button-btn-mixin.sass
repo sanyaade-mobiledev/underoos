@@ -1,11 +1,11 @@
 
 //  Buttons look boxy and sexy
 @mixin btn-button($bg, $color:#fff, $padding:0.4em 0.7em, $radii:$radii)
-  +inline-block
   +background-clip(padding-box)
   +border-radius($radii)
   +transition(all $speed)
   +font-sizes($base_font_size)
+  display: inline-block
   background: $bg
   border: 1px solid darken($bg, 30%)
   color: $color
