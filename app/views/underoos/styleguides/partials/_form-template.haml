@@ -125,6 +125,15 @@
       - else
         %textarea.input-medium(id="#{uid}test_textarea" name="test[textarea]" placeholder="Enter some text..." rows="2")
 
+    -# Uneditable Text Input
+    %li(class="#{state} #{disabled}" id="#{uid}test_uneditable")
+      %label.label(for="#{uid}test_uneditable") Uneditable Input
+      - if disabled == "disabled"
+        %span.input-medium.uneditable(id="#{uid}test_uneditable" class="disabled") Hammer time
+      - else
+        %span.input-medium.uneditable(id="#{uid}test_uneditable") Hammer time
+      %p.hint Can't touch this!
+
     -# File Browser
     %li.commit.button(class="#{state} #{disabled}")
       %label.label(for="#{uid}test_file") File Browser

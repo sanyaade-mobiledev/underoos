@@ -60,7 +60,8 @@ label
 // ## Form controls
 input,
 textarea,
-select
+select,
+.uneditable
   +box-sizing(border-box)
   +border-radius($radii)
   +font-sizes($base_font_size)
@@ -71,7 +72,8 @@ select
   padding: 0.4em
 
 input,
-textarea
+textarea,
+.uneditable
   +box-shadow($input_inset_shadow)
   +transition(border $speed, box-shadow $speed, background-color $speed)
 
@@ -85,12 +87,16 @@ label textarea,
 label select
   display: block
 
+// Specific styles for special input types
 .search-query
   +border-radius(1em)
   padding-left: 1em
   padding-right: 1em
   margin-bottom: 0
 
+.uneditable
+  background-color: $off_white
+  cursor: not-allowed
 
 // ## Perform resets on odd controls before defining again
 select[multiple],
@@ -162,7 +168,8 @@ select:focus
 // ## Disabled states
 input,
 textarea,
-select
+select,
+.uneditable
   &.disabled, &[disabled], &[readonly]
     +box-shadow(none)
     cursor: not-allowed
@@ -204,6 +211,10 @@ form .disabled .hint
       color: $highlight
       +box-shadow(0 0 6px lighten($highlight, 20%))
       border-color: darken($highlight, 10%)
+
+  .uneditable
+    color: $highlight
+    border-color: $highlight
 
   input[type="button"]:hover,
   input[type="submit"]:hover,
@@ -251,7 +262,8 @@ select:focus:required:invalid
 .form-horizontal
   input,
   textarea,
-  select
+  select,
+  .uneditable
     display: inline-block
     margin-bottom: 0
 
@@ -267,7 +279,8 @@ select:focus:required:invalid
     +clearfixer
   li > input,
   li > textarea,
-  li > select
+  li > select,
+  li > .uneditable
     margin-left: 1em
 
   li > label
