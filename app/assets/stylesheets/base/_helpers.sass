@@ -22,17 +22,17 @@
   br
     display: none
 
-// Totally shown
-.shown
-  display: block
-  visibility: visible
-
-// Totally hidden
+// Totally hidden from screen readers and browsers
 .hidden
   display: none !important
   visibility: hidden
 
-// Only visually hidden
+// Reverse the effects of hidden
+.shown
+  display: block
+  visibility: visible
+
+// Only visually hidden, still available to screen readers
 .visuallyhidden
   border: 0
   clip: rect(0 0 0 0)
@@ -51,7 +51,7 @@
     position: static
     width: auto
 
-// Counter the settings applied by visually hidden
+// Reverse the settings applied by `.visuallyhidden`
 .visuallyshown
   clip: auto
   height: auto
@@ -60,7 +60,7 @@
   position: static
   width: auto
 
-// Visually invisible, content remains in the DOM
+// Hide visually and from screenreaders, but maintain layout
 .invisible
   visibility: hidden
 

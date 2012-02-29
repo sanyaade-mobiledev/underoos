@@ -18,20 +18,20 @@
         %td <code>.ir</code>
         %td For use in image replacement, typically on links
       %tr
-        %td <code>.shown</code>
-        %td The opposite of <code>hidden</code>, sets an element to <code>display:block</code> and <code>visibility:visible</code>
-      %tr
         %td <code>.hidden</code>
-        %td The opposite of <code>shown</code>, sets an element to <code>display:none</code> and <code>visibility:hidden</code>
+        %td The opposite of <code>shown</code>, elements are completely hidden from screen readers and browsers
+      %tr
+        %td <code>.shown</code>
+        %td Reverse the effects of <code>hidden</code>
       %tr
         %td <code>.visuallyhidden</code>
-        %td Sets an element to only visually hidden, elements are still accessible, use this class instead of <code>display:none</code>
+        %td Only visually hidden, elements are still available to screen readers, use this class instead of <code>display:none</code>
       %tr
         %td <code>.visuallyshown</code>
         %td Reverse the effects of <code>.visuallyhidden</code>
       %tr
         %td <code>.invisible</code>
-        %td Keeps elements in the DOM, but hidden from view
+        %td Keeps elements in the DOM, but hidden from view and screen readers
       %tr
         %td <code>.pull-left</code>
         %td Floats an element to the left (<em>Gabe, your welcome</em>)
