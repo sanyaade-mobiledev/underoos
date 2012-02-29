@@ -14,17 +14,12 @@
   border-top-color: $link_hover
 
 .dropdown-menu
-  +background-clip(padding-box)
+  @extend .visuallyhidden
   +border-radius(0 0 $radii $radii)
   +box-shadow($drop_dark)
   list-style: none
   background-color: $body_bg
-  border: 1px solid $component_border
-  position: absolute
-  display: none
   float: left
-  margin: 0
-  padding: 0.3em 0
   top: 100%
   left: 0
   max-width: 240px
@@ -32,7 +27,6 @@
   z-index: $zindex_dropdown
   &.drop-up
     +border-radius($radii)
-    margin-bottom: 2px
     top: auto
     bottom: 100%
 
@@ -65,8 +59,16 @@
 // Open state for the dropdown
 .dropdown.open .dropdown-toggle
   color: $link_hover
-.dropdown.open .dropdown-menu
-  display: block
+
+.dropdown.open .dropdown-menu,
+.button-group.open .dropdown-menu
+  @extend .visuallyshown
+  position: absolute
+  clip: initial
+  border: 1px solid $component_border
+  padding: 0.3em 0
+  &.drop-up
+    margin-bottom: 2px
 
 // Redeclare for specificity purposes
 .pull-right .dropdown-menu

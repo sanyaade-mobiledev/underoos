@@ -57,7 +57,8 @@
 
 // Togglable pill panes
 .pill-content > .pill-pane
-  display: none
+  @extend .visuallyhidden
+
 .pill-content > .active
-  display: block
+  @extend .visuallyshown
 

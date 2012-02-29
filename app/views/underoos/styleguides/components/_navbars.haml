@@ -31,23 +31,23 @@
                 %li
                   %a(href="#") Subnav 3
 
-        %nav.pull-right.nav-collapse
-          %form.form-search
-            %ol
-              %li
-                %input.search-query(type="search" name="test[searchbar]" placeholder="search")
-                %button.btn.primary(type="submit") Go
-          %ul.nav
-            %li.dropdown
-              %a.dropdown-toggle(href="#" data-toggle="dropdown") Dropdown<span class="caret"></span>
-              %ul.dropdown-menu
+          %nav.pull-right
+            %form.form-search
+              %ol
                 %li
-                  %a(href="#") Subnav 1
-                %li
-                  %a(href="#") Subnav 2
-                %li.divider
-                %li
-                  %a(href="#") Subnav 3
+                  %input.search-query(type="search" name="test[searchbar]" placeholder="search")
+                  %button.btn.primary(type="submit") Go
+            %ul.nav
+              %li.dropdown
+                %a.dropdown-toggle(href="#" data-toggle="dropdown") Dropdown<span class="caret"></span>
+                %ul.dropdown-menu
+                  %li
+                    %a(href="#") Subnav 1
+                  %li
+                    %a(href="#") Subnav 2
+                  %li.divider
+                  %li
+                    %a(href="#") Subnav 3
 
 .sg-subsection
   %pre.prettyprint
@@ -75,25 +75,25 @@
                     </ul>
                   </li>
                 </ul>
-              </nav>
-              <section class="pull-right">
-                <form class="form-search">
-                  <ol>
-                    <li>
-                      <input class="search-query" name="test[searchbar]" placeholder="search" type="search">
-                      <button class="btn primary" type="submit">Go</button>
+                <section class="pull-right">
+                  <form class="form-search">
+                    <ol>
+                      <li>
+                        <input class="search-query" name="test[searchbar]" placeholder="search" type="search">
+                        <button class="btn primary" type="submit">Go</button>
+                      </li>
+                    </ol>
+                  </form>
+                  <ul class="nav">
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        ...
+                      </ul>
                     </li>
-                  </ol>
-                </form>
-                <ul class="nav">
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      ...
-                    </ul>
-                  </li>
-                </ul>
-              </section>
+                  </ul>
+                </section>
+              </nav>
             </div>
           </div>
         </div>
