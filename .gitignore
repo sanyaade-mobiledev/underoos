@@ -1,10 +1,8 @@
 *.gem
 .bundle
-Gemfile.lock
 pkg/*
 .idea
 .sass-cache
 log/*
 *.log
 tmp/*
-Gemfile.lock
