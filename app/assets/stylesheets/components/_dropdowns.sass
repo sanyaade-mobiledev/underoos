@@ -61,6 +61,7 @@
   color: $link_hover
 
 .dropdown.open .dropdown-menu,
+.typeahead.dropdown-menu,
 .button-group.open .dropdown-menu
   @extend .visuallyshown
   position: absolute
@@ -69,6 +70,9 @@
   padding: 0.3em 0
   &.drop-up
     margin-bottom: 2px
+
+.typeahead.dropdown-menu
+  display: none
 
 // Redeclare for specificity purposes
 .pull-right .dropdown-menu
