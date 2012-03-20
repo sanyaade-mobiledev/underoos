@@ -31,43 +31,56 @@
         %th Usage
     %tbody
       %tr
-        %td <code>&lt;a&gt;</code>
+        %td.html <code>&lt;a&gt;</code>
+        %td.haml.hidden <code>%a</code>
         %td The anchor element defines a <a href="http://www.modeset.com/">hyperlink</a>!
       %tr
-        %td <code>&lt;em&gt;</code>
+        %td.html <code>&lt;em&gt;</code>
+        %td.haml.hidden <code>%em</code>
         %td The em element is used to <em>emphasize</em> text
       %tr
-        %td <code>&lt;strong&gt;</code>
+        %td.html <code>&lt;strong&gt;</code>
+        %td.haml.hidden <code>%strong</code>
         %td The strong element also <strong>emphasizes</strong> text, typically in <strong>bold</strong>
       %tr
-        %td <code>&lt;small&gt;</code>
+        %td.html <code>&lt;small&gt;</code>
+        %td.haml.hidden <code>%small</code>
         %td The small element renders text well, <small>smaller</small>
       %tr
-        %td <code>&lt;sup&gt;</code>
+        %td.html <code>&lt;sup&gt;</code>
+        %td.haml.hidden <code>%sup</code>
         %td The superscript element is used to display text higher<sup>&reg;</sup> and smaller<sup>&trade;</sup>
       %tr
-        %td <code>&lt;sub&gt;</code>
+        %td.html <code>&lt;sub&gt;</code>
+        %td.haml.hidden <code>%sub</code>
         %td The sub element is used to display text <sub>lower</sub> and <sub>smaller</sub>
       %tr
-        %td <code>&lt;address&gt;</code>
+        %td.html <code>&lt;address&gt;</code>
+        %td.haml.hidden <code>%address</code>
         %td For contact information related to the author of the document
       %tr
-        %td <code>&lt;time&gt;</code>
+        %td.html <code>&lt;time&gt;</code>
+        %td.haml.hidden <code>%time</code>
         %td Use for a <time>24-hour</time> clock or a precise date in the <a href="http://en.wikipedia.org/wiki/Gregorian_calendar">Gregorian calendar</a>
       %tr
-        %td <code>&lt;abbr&gt;</code>
+        %td.html <code>&lt;abbr&gt;</code>
+        %td.haml.hidden <code>%abbr</code>
         %td <abbr title="For Placement Only">FPO</abbr>. Describes an abbreviated phrase with the <code>title</code> attribute
       %tr
-        %td <code>&lt;dfn&gt;</code>
+        %td.html <code>&lt;dfn&gt;</code>
+        %td.haml.hidden <code>%dfn</code>
         %td <dfn title="This is a definition">DFN</dfn>. Describes the definition of a word or term with the <code>title</code> attribute
       %tr
-        %td <code>&lt;ins&gt;</code>
+        %td.html <code>&lt;ins&gt;</code>
+        %td.haml.hidden <code>%ins</code>
         %td The ins element defines text that has been <ins>inserted into a document</ins>
       %tr
-        %td <code>&lt;del&gt;</code>
+        %td.html <code>&lt;del&gt;</code>
+        %td.haml.hidden <code>%del</code>
         %td The del tag defines text that has been <del>deleted from a document</del>
       %tr
-        %td <code>&lt;mark&gt;</code>
+        %td.html <code>&lt;mark&gt;</code>
+        %td.haml.hidden <code>%mark</code>
         %td The mark element is used for indicating text as <mark>marked or highlighted for reference</mark> purposes
 
 .sg-subsection
@@ -99,30 +112,41 @@
     %p &#8220;Let me tell you what Melba Toast is packin' right here, all right. We got 4:11 Positrac outback, 750 double pumper, Edelbrock intake, bored over 30, 11 to 1 pop-up pistons, turbo-jet 390 horsepower. We're talkin' some f***in' muscle.&#8221;
     %small David Wooderson, <cite title="link to source">Dazed &amp; Confused</cite>
 .sg-subsection
-  %pre.prettyprint
+  %pre.prettyprint.html
     = preserve do
       :escaped
         <blockquote>
           <p>&#8220;Let me...&#8221;</p>
           <small>Author<cite title="resource">source...</cite></small>
         </blockquote>
+  %pre.prettyprint.haml.hidden
+    = preserve do
+      :escaped
+        %blockquote
+          %p &#8220;Let me...&#8221;
+          %small
+            Author,
+            %cite(title="resource") source...
 
 #type_rules.sg-spy-landing
 .sg-subsection
   %h3.sg-subheading Rules <span>typography.sass</span>
   %h4 Horizontal
   .sg-quarter.pull
-    %code(style="line-height:5em") &lt;hr&gt;
+    %code.html(style="line-height:5em") &lt;hr&gt;
+    %code.haml.hidden(style="line-height:5em") %hr
   .sg-threequarter.push
     .well
       %hr
   .sg-quarter.pull
-    %code(style="line-height:5em") &lt;hr class="dotted"&gt;
+    %code.html(style="line-height:5em") &lt;hr class="dotted"&gt;
+    %code.haml.hidden(style="line-height:5em") %hr.dotted
   .sg-threequarter.push
     .well
       %hr.dotted
   .sg-quarter.pull
-    %code(style="line-height:5em") &lt;hr class="dashed"&gt;
+    %code.html(style="line-height:5em") &lt;hr class="dashed"&gt;
+    %code.haml.hidden(style="line-height:5em") %hr.dashed
   .sg-threequarter.push
     .well
       %hr.dashed
@@ -132,7 +156,8 @@
   %h3.sg-subheading Lists <span>typography.sass</span>
   .sg-quarter.pull
     %p <strong>Unordered list:</strong>
-    %p(style="margin-bottom:0.5em;") <code>&lt;ul&gt;</code>
+    %p.html(style="margin-bottom:0.5em;") <code>&lt;ul&gt;</code>
+    %p.haml.hidden(style="margin-bottom:0.5em;") <code>%ul</code>
     %ul
       %li Unordered list
       %li Unordered list
@@ -147,7 +172,8 @@
         %li Nested ordered list
   .sg-quarter
     %p <strong>Ordered list:</strong>
-    %p(style="margin-bottom:0.5em;") <code>&lt;ol&gt;</code>
+    %p.html(style="margin-bottom:0.5em;") <code>&lt;ol&gt;</code>
+    %p.haml.hidden(style="margin-bottom:0.5em;") <code>%ol</code>
     %ol
       %li Ordered list
       %li Ordered list
@@ -162,7 +188,8 @@
         %li Nested ordered list
   .sg-quarter
     %p <strong>Unstyled list:</strong>
-    %p(style="margin-bottom:0.5em;") <code>&lt;ul class="unstyled"&gt;</code>
+    %p.html(style="margin-bottom:0.5em;") <code>&lt;ul class="unstyled"&gt;</code>
+    %p.haml.hidden(style="margin-bottom:0.5em;") <code>%ul.unstyled</code>
     %ul.unstyled
       %li Unordered list
       %li Unordered list
@@ -177,7 +204,8 @@
         %li Nested ordered list
   .sg-quarter.push
     %p <strong>Definition list:</strong>
-    %p(style="margin-bottom:0.5em;") <code>&lt;dl&gt;</code>
+    %p.html(style="margin-bottom:0.5em;") <code>&lt;dl&gt;</code>
+    %p.haml.hidden(style="margin-bottom:0.5em;") <code>%dl</code>
     %dl
       %dt Definition Term
       %dd Definition Description #{@lorem_tiny}
@@ -197,20 +225,23 @@
         %th Usage
     %tbody
       %tr
-        %td <code>&lt;code&gt;</code>
+        %td.html <code>&lt;code&gt;</code>
+        %td.haml.hidden <code>%code</code>
         %td The <code>code</code> tag is used to show inline code
       %tr
-        %td <code>&lt;kbd&gt;</code>
+        %td.html <code>&lt;kbd&gt;</code>
+        %td.haml.hidden <code>%kbd</code>
         %td The <kbd>kbd</kbd> tag defines keyboard text
       %tr
-        %td <code>&lt;samp&gt;</code>
+        %td.html <code>&lt;samp&gt;</code>
+        %td.haml.hidden <code>%samp</code>
         %td The <samp>samp</samp> tag defines sample computer code
 
 .sg-subsection
   .sg-half.pull
     %h4 The basic block
     %p Use the <code>pre</code> element for multiline code blocks.
-    %pre
+    %pre.html
       = preserve do
         :escaped
           <!-- basic block -->
@@ -220,10 +251,18 @@
               <p>Some Copy...</p>
             </section>
           </pre>
+    %pre.haml.hidden
+      = preserve do
+        :escaped
+          <!-- basic block -->
+          %pre
+            %section
+              %h1 Heading
+              %p Some Copy...
   .sg-half.push
     %h4 Google's Prettify
     %p Add the <code>.prettyprint</code> class for basic syntax highlighting.
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <!-- make it pretty -->
@@ -233,4 +272,13 @@
               <p>Some Copy...</p>
             </section>
           </pre>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          <!-- make it pretty -->
+          %pre.prettyprint
+            %section
+              %h1 Heading
+              %p Some Copy...
+
 

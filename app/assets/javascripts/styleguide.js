@@ -6,6 +6,9 @@
     var showcase = $('#navs_showcase')
     var nav_lists = $('li', showcase)
     var nav_links = $('li > a', showcase)
+    var markup = 'html'
+    var html_examples = $('.html')
+    var haml_examples = $('.haml')
 
     // enable nice looking pre tags
     window.prettyPrint && prettyPrint()
@@ -68,6 +71,21 @@
       fm.removeClass()
       fm.addClass('flash-messages ' + position)
       notifier.addClass('in')
+    })
+
+    // Toggle markup examples when the "!" is hit
+    $('html').on('keydown', function(e) {
+      if ((e.which === 49 && e.shiftKey)) {
+        if (markup === 'html') {
+          markup = 'haml'
+          html_examples.addClass('hidden')
+          haml_examples.removeClass('hidden')
+        } else {
+          markup = 'html'
+          haml_examples.addClass('hidden')
+          html_examples.removeClass('hidden')
+        }
+      }
     })
 
     // Simple test for calculating the page size

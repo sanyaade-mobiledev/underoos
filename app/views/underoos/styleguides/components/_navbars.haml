@@ -50,7 +50,7 @@
                     %a(href="#") Subnav 3
 
 .sg-subsection
-  %pre.prettyprint
+  %pre.prettyprint.html
     = preserve do
       :escaped
         <!-- Showcases the navbar example above -->
@@ -63,7 +63,7 @@
                 <span class="icon-bar"></span>
               </a>
               <a class="brand" href="#">Brand</a>
-              <nav class="nav-collapse" id="#collapse_example">
+              <nav class="nav-collapse" id="collapse_example">
                 <ul class="nav">
                   <li><a href="#">Link 1</a></li>
                   <li class="active"><a href="#">Link 2</a></li>
@@ -97,6 +97,44 @@
             </div>
           </div>
         </div>
+  %pre.prettyprint.haml.hidden
+    = preserve do
+      :escaped
+        <!-- Showcases the navbar example above -->
+        .navbar
+          .navbar-inner
+            .container
+              %a.btn.info.btn-navbar(data-toggle="collapse" data-target="#collapse_example")
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              %a.brand(href="#") Brand
+              %nav.nav-collapse#collapse_example
+                %ul.nav
+                  %li
+                    %a(href="#") Link 1
+                  %li.active
+                    %a(href="#") Link 2
+                  %li.plain-text Plain Text
+                  %li.dropdown
+                    %a.dropdown-toggle(data-toggle="dropdown" href="#")
+                      Dropdown
+                      %span.caret
+                    %ul.dropdown-menu
+                      ...
+                %section.pull-right
+                  %form.form-search
+                    %ol
+                      %li
+                        %input.search-query(name="test[searchbar]" placeholder="search" type="search")
+                        %button.btn.primary(type="submit") Go
+                  %ul.nav
+                    %li.dropdown
+                      %a.dropdown-toggle(data-toggle="dropdown" href="#")
+                      Dropdown
+                      %span.caret
+                      %ul.dropdown-menu
+                        ...
   .notification.important.fade.in
     %p <strong>Note!</strong> Add the <code>.fixed</code> class to the <code>.navbar</code> container to fix the navigation system to the top of the page
   .notification.important.fade.in

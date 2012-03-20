@@ -19,7 +19,7 @@
             %li.sg-half
               %a.media-item(href="#")
                 %img(src="http://placehold.it/260x180" alt="alt")
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <nav>
@@ -32,6 +32,14 @@
               ...
             </ul>
           </nav>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %nav
+            %ul.media-grid
+              %li.col-half
+                %a.media-item(href="#")
+                  %img(alt="alt" src="http://placehold.it/260x180")
 
   .sg-half.push
     .well
@@ -43,7 +51,7 @@
           %footer(style="margin-top:1.2em;")
             %button.btn(href="#") Action
             %button.btn(href="#") Cancel
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <div class="media-item">
@@ -52,6 +60,13 @@
               ...
             </section>
           </div>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          .media-item
+            %img(alt="alt" src="http://placehold.it/260x180")
+            %section.caption
+              ...
 
 .sg-subsection
   .sg-half.pull
@@ -60,3 +75,4 @@
   .sg-half.push
     .notification.important.fade.in
       %p <strong>Note!</strong> Include a <code>caption</code> class after the media for additional padding
+

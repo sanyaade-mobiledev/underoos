@@ -12,16 +12,20 @@
     %tbody
       %tr
         %td <a href="#" rel="popover" data-placement="top" data-original-title="Top" data-content="This is a popover">Top</a>
-        %td <code>&lt;a rel="popover" data-placement="top" data-original-title="Top" data-content="..."&gt;Top&lt;/a&gt;</code>
+        %td.html <code>&lt;a rel="popover" data-placement="top" data-original-title="Top" data-content="..."&gt;Top&lt;/a&gt;</code>
+        %td.haml.hidden <code>%a(rel="popover" data-placement="top" data-original-title="Top" data-content="...") Top</code>
       %tr
         %td <a href="#" rel="popover" data-placement="bottom" data-original-title="Bottom" data-content="This is a popover">Bottom</a>
-        %td <code>&lt;a rel="popover" data-placement="bottom" data-original-title="Bottom" data-content="..."&gt;Bottom&lt;/a&gt;</code>
+        %td.html <code>&lt;a rel="popover" data-placement="bottom" data-original-title="Bottom" data-content="..."&gt;Bottom&lt;/a&gt;</code>
+        %td.haml.hidden <code>%a(rel="popover" data-placement="bottom" data-original-title="Bottom" data-content="...") Bottom</code>
       %tr
         %td <a href="#" rel="popover" data-placement="left" data-original-title="Left" data-content="This is a popover">Left</a>
-        %td <code>&lt;a rel="popover" data-placement="left" data-original-title="Left" data-content="..."&gt;Left&lt;/a&gt;</code>
+        %td.html <code>&lt;a rel="popover" data-placement="left" data-original-title="Left" data-content="..."&gt;Left&lt;/a&gt;</code>
+        %td.haml.hidden <code>%a(rel="popover" data-placement="left" data-original-title="Left" data-content="...") Left</code>
       %tr
         %td <a href="#" rel="popover" data-placement="right" data-original-title="Right" data-content="This is a popover">Right</a>
-        %td <code>&lt;a rel="popover" data-placement="right" data-original-title="Right" data-content="..."&gt;Right&lt;/a&gt;</code>
+        %td.html <code>&lt;a rel="popover" data-placement="right" data-original-title="Right" data-content="..."&gt;Right&lt;/a&gt;</code>
+        %td.haml.hidden <code>%a(rel="popover" data-placement="right" data-original-title="Right" data-content="...") Right</code>
 
   .notification.important.fade.in
     %p <strong>Note!</strong> Popovers are opt in and will only be instantiated if called directly from JavaScript:

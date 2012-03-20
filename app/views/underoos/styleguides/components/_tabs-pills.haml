@@ -107,11 +107,11 @@
       %nav
         %ul.nav.pills.stacked
           %li
-            %a(href="#") Pills One
+            %a(href="#") Pill One
           %li.active
-            %a(href="#") Pills Two
+            %a(href="#") Pill Two
           %li.dropdown
-            %a.dropdown-toggle(href="#" data-toggle="dropdown") Pills Three<span class="caret"></span>
+            %a.dropdown-toggle(href="#" data-toggle="dropdown") Pill Three<span class="caret"></span>
             %ul.dropdown-menu
               %li
                 %a(href="#") Subnav 1
@@ -121,14 +121,14 @@
               %li
                 %a(href="#") Subnav 3
           %li
-            %a(href="#") Pills Four
+            %a(href="#") Pill Four
 
 
 .sg-subsection
   .sg-half.pull
     %h4 Tabs structure
     %p Tabs structure shown with a dropdown.
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <nav>
@@ -144,11 +144,26 @@
               </li>
             </ul>
           </nav>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %nav
+            %ul.nav.tabs
+              %li
+                %a(href="#") Tab One
+              %li.active
+                %a(href="#") Tab Two
+              %li.dropdown
+                %a.dropdown-toggle(href="#" data-toggle="dropdown")
+                  Tab Three
+                  %span.caret
+                %ul.dropdown-menu
+                  ...
 
   .sg-half.push
     %h4 Pills structure
     %p Pills structure shown with a dropdown.
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <nav>
@@ -164,11 +179,27 @@
               </li>
             </ul>
           </nav>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %nav
+            %ul.nav.pills
+              %li
+                %a(href="#") Pill One
+              %li.active
+                %a(href="#") Pill Two
+              %li.dropdown
+                %a.dropdown-toggle(href="#" data-toggle="dropdown")
+                  Pill Three
+                  %span.caret
+                %ul.dropdown-menu
+                  ...
+
 
 .sg-subsection
   %h4 Togglable Tabs &amp; Pills
   %p(style="width:67%;") To utilize a drop dead simple version of hiding and showing content related to a tab/pill, utilize <a href="http://twitter.github.com/bootstrap/javascript.html#tabs">Bootstrap's Tab</a> plugin. The base structure of tabs and pills doesn't change, except to include a few more classes on the links and the <code>href</code> attribute the button will target.
-  %pre.prettyprint
+  %pre.prettyprint.html
     = preserve do
       :escaped
         <nav>
@@ -190,6 +221,21 @@
             <p>Tab two content</p>
           </div>
         </div>
+  %pre.prettyprint.haml.hidden
+    = preserve do
+      :escaped
+        %nav
+          %ul.nav.tabs
+            %li
+              %a(data-toggle="tab" href="#tab_one") Tab One
+            %li.active
+              %a(data-toggle="tab" href="#tab_two") Tab Two
+
+        .tab-content
+          #tab_one.tab-pane
+            %p Tab one content
+          #tab_two.tab-pane.active
+            %p Tab two content
   .notification.important.fade.in
     %p <strong>Note!</strong> When targeting pills, use <code>data-toggle="pill"</code> for links and <code>.pill-content</code>, <code>.pill-pane</code> for content elements.
 

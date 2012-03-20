@@ -12,7 +12,7 @@
         %a.btn.primary.active(href="#") Middle 1
         %a.btn.primary(href="#") Middle 2
         %a.btn.primary(href="#") Right
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <nav class="button-group">
@@ -21,6 +21,14 @@
             <a class="btn" href="#">Middle 2</a>
             <a class="btn" href="#">Right</a>
           </nav>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %nav.button-group
+            %a.btn(href="#") Left
+            %a.btn.active(href="#") Middle 1
+            %a.btn(href="#") Middle 2
+            %a.btn(href="#") Right
 
 .sg-subsection
   .sg-onethird.pull
@@ -39,7 +47,7 @@
           %a.btn(href="#") 6
         %nav.button-group
           %a.btn(href="#") 7
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <section class="button-toolbar">
@@ -53,6 +61,16 @@
               ...
             </nav>
           </section>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %section.button-toolbar
+            %nav.button-group
+              ...
+            %nav.button-group
+              ...
+            %nav.button-group
+              ...
     .notification.important.fade.in
       %p <strong>Note!</strong> When creating custom buttons, add the necessary overrides within <code>_button-groups.sass</code>
 
@@ -106,7 +124,7 @@
             %button#loader_btn.btn.primary(data-loading-text="sending..." data-complete-text="Sent") Send
           %td Disables a button as information is being sent, resets on callback
 
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <!-- Toggle -->
@@ -124,4 +142,21 @@
 
           <!-- Stateful -->
           <button data-loading-text="sending..." data-complete-text="Sent">Send</button>
+
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          <!-- Toggle -->
+          %button.btn(data-toggle="button") Toggle
+
+          <!-- Checkbox type button group -->
+          %nav.button-group(data-toggle="buttons-checkbox")
+            ...
+
+          <!-- Radio type button group -->
+          %nav.button-group(data-toggle="buttons-radio")
+            ...
+
+          <!-- Stateful -->
+          %button(data-loading-text="sending..." data-complete-text="Sent") Send
 

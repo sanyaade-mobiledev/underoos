@@ -21,7 +21,7 @@
             %a(href="#") List Four
           %li
             %a(href="#") List Five
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <nav>
@@ -34,4 +34,19 @@
               <li><a href="#">List 4</a></li>
             </ul>
           </nav>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %nav>
+            %ul.nav.nav-list
+              %li.nav-header List Header
+              %li
+                %a(href="#") List 1
+              %li.active
+                %a(href="#") List 2
+              %li
+                %a(href="#") List 3
+              %li.nav-header Another List Header
+              %li
+                %a(href="#") List 4
 

@@ -14,7 +14,7 @@
             %a(href="#") &larr; Previous
           %li
             %a(href="#") Next &rarr;
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <nav>
@@ -23,6 +23,15 @@
               <li> <a href="#">Next &rarr;</a> </li>
             </ul>
           </nav>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %nav
+            %ul.paddles
+              %li
+                %a(href="#") &larr; Previous
+              %li
+                %a(href="#") Next &rarr;
     .notification.important.fade.in
       %p <strong>Note!</strong> Add <code>.paddles-center</code> or <code>.paddles-right</code> on the container to change the alignment
 
@@ -38,7 +47,7 @@
             %a(href="#") &larr; Previous
           %li.next
             %a(href="#") Next &rarr;
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <nav>
@@ -47,4 +56,13 @@
               <li class="next"><a href="#">Next &rarr;</a> </li>
             </ul>
           </nav>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %nav
+            %ul.paddles
+              %li.prev
+                %a(href="#") &larr; Previous
+              %li.next
+                %a(href="#") Next &rarr;
 

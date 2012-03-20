@@ -27,13 +27,19 @@
     .notification.primary.fade.in
       %p <strong>Primary!</strong> The CI notification.
       %a.close(href="#" data-dismiss="alert") &times;
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <div class="notification important fade in">
             ...
             <a class="close" data-dismiss="alert">&times;</a>
           </div>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          .notification.important.fade.in
+            ...
+            %a.close(data-dismiss="alert") &times;
     %br
     %h5 Block notifications
     .notification.success.fade.in
@@ -59,7 +65,7 @@
         %strong Header with strong tag, no section or footer!
       %p=@lorem_sm
       %a.close(href="#" data-dismiss="alert") &times;
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <!-- Success Block -->
@@ -83,6 +89,27 @@
             <p>... </p>
             <a class="close" data-dismiss="alert">&times;</a>
           </div>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          <!-- Success Block -->
+          .notification.success.fade.in
+            %header ...
+            %section ...
+            %footer ...
+            %a.close(data-dismiss="alert") &times;
+
+          <!-- Danger Block -->
+          .notification.danger.fade.in
+            %section ...
+            %footer.footer-right ...
+            %a.close(data-dismiss="alert") &times;
+
+          <!-- Primary Block -->
+          .notification.important.fade.in
+            %header ...
+            %p ...
+            %a.close(data-dismiss="alert") &times;
 
   -# Pop Notifications
   .sg-half.pull
@@ -109,13 +136,19 @@
     .pop-notification.primary.fade.in
       %p <strong>Primary!</strong> The CI button.
       %a.close(href="#" data-dismiss="alert") &times;
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <div class="pop-notification important fade in">
             ...
             <a class="close" data-dismiss="alert">&times;</a>
           </div>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          .pop-notification.important.fade.in
+            ...
+            %a.close(data-dismiss="alert") &times;
     %br
     %h5 Block notifications
     .pop-notification.success.fade.in
@@ -141,7 +174,7 @@
         %strong Header with strong tag, no section or footer!
       %p=@lorem_sm
       %a.close(href="#" data-dismiss="alert") &times;
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <!-- Success Block -->
@@ -165,6 +198,27 @@
             <p>... </p>
             <a class="close" data-dismiss="alert">&times;</a>
           </div>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          <!-- Success Block -->
+          .pop-notification.success.fade.in
+            %header ...
+            %section ...
+            %footer ...
+            %a.close(data-dismiss="alert") &times;
+
+          <!-- Danger Block -->
+          .pop-notification.danger.fade.in
+            %section ...
+            %footer.footer-right ...
+            %a.close(data-dismiss="alert") &times;
+
+          <!-- Primary Block -->
+          .pop-notification.important.fade.in
+            %header ...
+            %p ...
+            %a.close(data-dismiss="alert") &times;
 
 .sg-subsection
   %h4 Flash Notifications
@@ -176,7 +230,7 @@
     %thead
       %tr
         %th Type
-        %th Markup
+        %th Class
         %th Usage
     %tbody
       %tr

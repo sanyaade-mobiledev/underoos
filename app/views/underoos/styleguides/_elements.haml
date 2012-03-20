@@ -4,17 +4,30 @@
   %h3.sg-subheading Base nav <span>elements.sass</span>
   .sg-half.pull
     %p The base nav is generally the first class in the list for components like tabs, pills, breadcrumbs, pagination and navigation lists. Use this class as a building block for custom navigation systems.
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <nav>
-            <ul class="nav">
+            <ol class="nav">
               <li><a href="#">Nav 1</a></li>
               <li><a href="#">Nav 2</a></li>
               <li class="active"><a href="#">Active</a></li>
               <li><a href="#">Nav 4</a></li>
             </ul>
           </nav>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %nav
+            %ol.nav
+              %li
+                %a(href="#") Nav 1
+              %li
+                %a(href="#") Nav 2
+              %li.active
+                %a(href="#") Active
+              %li
+                %a(href="#") Nav 4
   .sg-half.push
     .well
       %nav
@@ -44,7 +57,7 @@
       %p <strong>Warning!</strong> All navigation components depend on this class being attached to the container element
   .sg-half.push
     .notification.important.fade.in
-      %p <strong>Note!</strong> For convenience, add the <code>inline</code> class to the <code>ul</code> element to display the base nav as, well inline
+      %p <strong>Note!</strong> For convenience, add the <code>inline</code> class to the <code>.nav</code> element to display the base nav as, well inline
 
 #elements_buttons.sg-spy-landing
 .sg-subsection
@@ -92,7 +105,7 @@
     %p Button styles can be applied to anything with the <code>.btn</code> class. Typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements or <code>input</code> button elements.
   .sg-half.push
     %h4 The structure
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <button class="btn">Default</button>
@@ -101,8 +114,19 @@
           <a class="btn">Default</a>
           <a class="btn important">Important</a>
 
-          <input class="submit btn" type="submit" value="Submit"></input>
-          <input class="reset btn" type="reset" value="Reset"></input>
+          <input class="btn" type="submit" value="Submit"></input>
+          <input class="btn" type="reset" value="Reset"></input>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %button.btn Default
+          %button.btn.important Important
+
+          %a.btn Default
+          %a.btn.important Important
+
+          %input.btn(type="submit" value="Submit")
+          %input.btn(type="reset" value="Reset")
 .sg-subsection(style="margin-top:2.5em")
   .sg-half.pull
     %h4 Links render different
@@ -154,10 +178,14 @@
   .sg-half.pull
     %h4 Standard image element
     %p Images by default have the style setting of <code>max-width:100%</code> applied to allow scaling in a fluid grid.
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <img src="http://placehold.it/160x90" alt="image"/>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %img(src="http://placehold.it/160x90" alt="image")
   .sg-half.push
     .well
       %img(src="http://placehold.it/160x90" alt="image")
@@ -165,13 +193,19 @@
   .sg-half.pull
     %h4 The figure element
     %p The <code>figure</code> element represents self-contained content, frequently with a <code>figcaption</code>. Typically used with images, illustrations, diagrams, or code snippets, referenced in the main text.
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <figure>
             <img src="http://placehold.it/160x90" alt="image"/>
             <figcaption>caption</figcaption>
           </figure>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %figure
+            %img(src="http://placehold.it/160x90" alt="image")
+            %figcaption>caption
   .sg-half.push
     %br
     .well
@@ -185,13 +219,19 @@
   %h3.sg-subheading Video <span>elements.sass</span>
   .sg-half.pull
     %p Standard video, controls, and poster image utilizing the <code>video</code> tag. Nothing special is done to the <code>video</code> element, just make sure to include a poster image and the appropriate sources!
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <video controls="" poster="...">
             <source src="video.mp4" type="video/mp4; codecs=\"...\"">
             <source src="video.ogv" type="video/ogg; codecs=\"...\"">
           </video>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %video(controls="" poster="...")
+            %source(src="video.mp4" type="video/mp4; codecs=\"...\"")
+            %source(src="video.ogv" type="video/ogg; codecs=\"...\"")
     .notification.important.fade.in
       %p <strong>Note!</strong> More information on the <a href="http://dochub.io/#html/video">video element</a>.
   .sg-half.push

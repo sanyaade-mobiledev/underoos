@@ -11,8 +11,10 @@
     %tbody
       %tr
         %td <a class="close" style="float:none;" href="#">&times;</a>
-        %td <code>&lt;a class="close" href="#"&gt;&times;&lt;/a&gt;</code>
+        %td.html <code>&lt;a class="close" href="#"&gt;#{"&times;"}&lt;/a&gt;</code>
+        %td.haml.hidden <code>%a.close(href="#") #{"&times;"}</code>
       %tr(style="background-color:#333;")
         %td <a class="close alt" style="float:none;" href="#">&times;</a>
-        %td <code>&lt;a class="close alt" href="#"&gt;&times;&lt;/a&gt;</code>
+        %td.html <code>&lt;a class="close alt" href="#"&gt;#{"&times;"}&lt;/a&gt;</code>
+        %td.haml.hidden <code>%a.close.alt(href="#") #{"&times;"}</code>
 

@@ -8,7 +8,7 @@
   .sg-twothird.push
     .well
       %button.btn.primary(data-toggle="modal" href="#modal") Launch Modal
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <!-- Modal Trigger Button -->
@@ -19,6 +19,16 @@
             ...
             <a class="close" data-dismiss="modal">&times;</a>
           </div>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          <!-- Modal Trigger Button -->
+          %button.btn.important(data-toggle="modal" href="#modal_name")
+
+          <!-- Modal Wrapper -->
+          #modal_name.modal.fade(data-backdrop="true" data-keyboard="true")
+            ...
+            %a.close(data-dismiss="modal") &times;
 #modal.modal.fade(data-backdrop="true" data-keyboard="true")
   .notification
     %header

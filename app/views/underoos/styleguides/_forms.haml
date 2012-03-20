@@ -93,7 +93,7 @@
 .sg-subsection
   %h3.sg-subheading Form structure
   %p Forms are built around the structure output from <a href="https://github.com/justinfrench/formtastic">formtastic</a>.
-  %pre.prettyprint
+  %pre.prettyprint.html
     = preserve do
       :escaped
         <form class="form-horizontal well dark">
@@ -114,6 +114,22 @@
             </li>
           </ol>
         </form>
+  %pre.haml.hidden
+    = preserve do
+      :escaped
+        %form.form-horizontal.well.dark
+          %ol
+            %li
+              %label.label(for="example_url")
+                Domain Name
+                %abbr(title="required") *
+              %input#example_url.input-medium(name="example[url]" placeholder="www.example.com" type="url")
+              %p.hint Enter your domain name!
+            %li.boolean
+              %label(for="example_check" name="example[check]")
+                %input#example_check(name="example[check]" type="checkbox" value="0") Check this box!
+            %li.form-actions dark
+              %button.btn(type="submit") Submit
 
 #forms_state.sg-spy-landing
 .sg-subsection
@@ -148,8 +164,8 @@
     %thead
       %tr
         %th Control
-        %th Value
         %th Type
+        %th Description
     %tfoot
       %tr
         %td(colspan="3") Descriptions courtesy <a href="https://developer.mozilla.org">Mozilla Developer Network</a>

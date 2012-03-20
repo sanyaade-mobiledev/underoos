@@ -31,7 +31,7 @@
 
 
 .sg-subsection
-  %pre.prettyprint
+  %pre.prettyprint.html
     = preserve do
       :escaped
         <div class="accordion" id="accordion_example">
@@ -66,6 +66,33 @@
             </div>
           </div>
         </div>
+
+  %pre.prettyprint.haml.hidden
+    = preserve do
+      :escaped
+        #accordion_example.accordion
+
+          .accordion-group
+            .accordion-heading
+              %a.accordion-toggle(href="#collapse_1" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 1
+            .accordion-body.collapse#collapse_1
+              .accordion-inner
+                %p ...
+
+          .accordion-group
+            .accordion-heading
+              %a.accordion-toggle(href="#collapse_2" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 2
+            .accordion-body.collapse#collapse_2
+              .accordion-inner
+                %p ...
+
+          .accordion-group
+            .accordion-heading
+              %a.accordion-toggle(href="#collapse_3" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 3
+            .accordion-body.collapse#collapse_3
+              .accordion-inner
+                %p ...
+
 
   .notification.important.fade.in
     %p <strong>Note!</strong> Remove the <code>data-parent</code> attribute from the links to have multiple sections open at the same time

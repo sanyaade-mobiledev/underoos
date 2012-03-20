@@ -24,7 +24,7 @@
           %li
             %a(href="#" rel="next") &raquo;
 
-    %pre.prettyprint
+    %pre.prettyprint.html
       = preserve do
         :escaped
           <nav>
@@ -39,6 +39,26 @@
               <li><a href="#">&raquo;</a></li>
             </ol>
           </nav>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %ol.nav.pagination
+            %li.disabled
+              %a(href="#") &laquo;
+            %li
+              %a(href="#") 1
+            %li.active
+              %a(href="#") 2
+            %li
+              %a(href="#" rel="next") 3
+            %li.disabled
+              %a(href="#") &hellip;
+            %li
+              %a(href="#") 11
+            %li
+              %a(href="#") 12
+            %li
+              %a(href="#" rel="next") &raquo;
     .notification.important.fade.in
       %p <strong>Note!</strong> Add <code>.pagination-center</code> or <code>.pagination-right</code> on the container to change the alignment
 
