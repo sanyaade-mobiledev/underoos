@@ -241,3 +241,23 @@
         %td <code>hidden</code>
         %td A control that is not displayed, but whose value is submitted to the server
 
+#forms_editable.sg-spy-landing
+.sg-subsection
+  %h3.sg-subheading Content editable elements <span>forms.sass</span>
+  .sg-onethird.pull
+    %p Applying the attribute <code>contenteditable="true"</code> to elements allows the user to change the contents within the item. Elements that are editable typically include states for <code>hover</code> and <code>focus</code> while a user is editing.
+  .sg-twothird.push
+    .well
+      %h3(contenteditable="true") Edit Title
+      %p(contenteditable="true") Edit Description
+    %pre.prettyprint.html
+      = preserve do
+        :escaped
+          <h3 contenteditable="true">Edit Title</h3>
+          <p contenteditable="true">Edit Description</p>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %h3(contenteditable="true") Edit Title
+          %p(contenteditable="true") Edit Description
+

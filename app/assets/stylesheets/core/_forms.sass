@@ -324,3 +324,18 @@ select:focus:required:invalid
 .input-xlarge
   width: 100%
 
+// ## Content Editable states
+[contenteditable="true"]
+  border: 1px dotted transparent
+
+[contenteditable="true"]:hover
+  border-color: $primary
+
+[contenteditable="true"]:focus
+  +box-shadow($input_inset_shadow, $focus_glow)
+  background-color: $off_white
+  border-style: solid
+  border-color: $focus_border
+  outline: 0
+  outline: thin dotted \9
+
