@@ -71,8 +71,8 @@
     %h4 Button dropdowns
     %p For elements outside of a list, typically in stand alone buttons, utilize the <code>button-group</code> structure for creating dropdowns.
   .sg-twothird.push
-    .well
-      %nav.button-group(style="display:inline-block;")
+    .well.button-toolbar
+      %nav.button-group
         %button.btn.dropdown-toggle(href="#" data-toggle="dropdown") Dropdown<span class="caret"></span>
         %ul.dropdown-menu
           %li
@@ -83,7 +83,7 @@
           %li
             %a(href="#") Subnav 3
 
-      %nav.button-group(style="display:inline-block;")
+      %nav.button-group
         %button.btn.important.dropdown-toggle(href="#" data-toggle="dropdown") Important<span class="caret"></span>
         %ul.dropdown-menu.drop-up
           %li
@@ -93,7 +93,7 @@
           %li.divider
           %li
             %a(href="#") Subnav 3
-      %nav.button-group(style="display:inline-block;")
+      %nav.button-group
         %button.btn.success.dropdown-toggle(href="#" data-toggle="dropdown") Success<span class="caret"></span>
         %ul.dropdown-menu
           %li
@@ -124,8 +124,8 @@
     %h4 Split button dropdowns
     %p Building on the <code>button-group</code> structure, create split buttons where there is action on the left button and contextual menu items under the caret to the right.
   .sg-twothird.push
-    .well
-      %nav.button-group(style="display:inline-block;")
+    .well.button-toolbar
+      %nav.button-group
         %button.btn(href="#") Action
         %button.btn.dropdown-toggle(href="#" data-toggle="dropdown") <span class="caret split"></span>
         %ul.dropdown-menu
@@ -136,7 +136,7 @@
           %li.divider
           %li
             %a(href="#") Subnav 3
-      %nav.button-group(style="display:inline-block;")
+      %nav.button-group
         %button.btn.important(href="#") Action
         %button.btn.important.dropdown-toggle(href="#" data-toggle="dropdown") <span class="caret split"></span>
         %ul.dropdown-menu.drop-up
@@ -147,7 +147,7 @@
           %li.divider
           %li
             %a(href="#") Subnav 3
-      %nav.button-group(style="display:inline-block;")
+      %nav.button-group
         %button.btn.success(href="#") Action
         %button.btn.success.dropdown-toggle(href="#" data-toggle="dropdown") <span class="caret split"></span>
         %ul.dropdown-menu
