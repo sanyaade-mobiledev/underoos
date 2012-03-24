@@ -38,12 +38,6 @@ summary, time, mark
   margin: 0
   padding: 0
 
-// Better box model
-*
-  -moz-box-sizing: border-box
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
-
 // All Typography normalization is found in _typography.sass
 // All List normalization is found in _lists.sass
 
@@ -104,8 +98,8 @@ input[type="radio"]
   cursor: pointer
 
 input[type="search"]
-  -webkit-appearance: textfield
   +box-sizing(content-box)
+  -webkit-appearance: textfield
 
 input[type="search"]::-webkit-search-decoration
   -webkit-appearance: none

@@ -11,11 +11,11 @@
 
 // Image replacement
 .ir
+  background-color: transparent
   border: 0
+  color: transparent
   font: 0/0 a
   text-shadow: none
-  color: transparent
-  background-color: transparent
 
 // Totally hidden from screen readers and browsers
 .hidden
@@ -70,16 +70,19 @@
 
 // The base `column` settings, should be extended by all columns
 .base-column
+  +box-sizing(border-box)
   display: block
   float: left
 
 // An alternate base `column` which floats elements to the right
 .base-column-right
+  +box-sizing(border-box)
   display: block
   float: right
 
 // The base `row` settings, should be extended by all rows
 .base-row
+  +box-sizing(border-box)
   +clearfixer
   display: block
 

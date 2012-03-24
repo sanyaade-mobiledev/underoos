@@ -1,14 +1,17 @@
 
 .media-grid
+  +box-sizing(border-box)
   +clearfixer
   list-style: none
 
 .media-grid > li
+  +box-sizing(border-box)
   float: left
   margin-bottom: 1em
 
 .media-item
   +border-radius($radii)
+  +box-sizing(border-box)
   +box-shadow($drop_dark)
   border: 1px solid $component_border
   display: block

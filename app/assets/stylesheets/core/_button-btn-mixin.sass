@@ -3,6 +3,7 @@
 @mixin btn-button($bg, $color:#fff, $padding:0.4em 0.7em, $radii:$radii)
   +background-clip(padding-box)
   +border-radius($radii)
+  +box-sizing(border-box)
   +transition(all $speed)
   +font-sizes($base_font_size)
   display: inline-block
