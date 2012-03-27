@@ -22,7 +22,7 @@ class Underoos::Application < Rails::Application
   config.assets.version = '1.2'
 
   # Tune down the output of the css
-  # config.compass.line_comments = false
+  config.compass.line_comments = false
   # config.compass.output_style = :compressed
 
   # Compass, Y U No Play Nice?
