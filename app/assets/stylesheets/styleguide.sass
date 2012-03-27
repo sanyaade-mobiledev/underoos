@@ -1,4 +1,8 @@
 
+// Import what's necessary
+@import themes/default
+@import mixins/clearfixins
+
 // Nav Bar
 .sg-navbar .dropdown .caret
   margin-left: 0.25em
@@ -21,7 +25,11 @@
 
 .sg-threequarter, .sg-half, .sg-quarter,
 .sg-twothird, .sg-onethird
-  @extend .base-column
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  display: block
+  float: left
   margin-left: 2%
   margin-right: 2%
   &.pull
