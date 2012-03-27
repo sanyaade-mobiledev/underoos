@@ -1,26 +1,12 @@
 require "bundler/gem_tasks"
 
-require File.join(File.dirname(__FILE__), 'lib', 'sprockets', 'config')
+begin 
+  require 'cucumber'
+  require 'cucumber/rake/task'
 
-namespace :assets do
-
-  task :environment do
-    @sources = %w(application.css application.js styleguide.js prettify.js)
-    @target = File.join(File.dirname(__FILE__), 'public', 'assets')
-    @static_compiler = Sprockets::StaticCompiler.new($sprockets_environment, @target, :digest => false)
+  Cucumber::Rake::Task.new(:cucumber) do |t|
+    t.cucumber_opts = "features --format pretty --require features/"
   end
-
-  desc 'Precompile assets for static deployment'
-  task :precompile => :environment do
-    @static_compiler.precompile(@sources)
-  end
-
-  desc 'Clean compiled assets from the target directory'
-  task :clean => :environment do
-    @sources.each do |source|
-      source += "*"
-      FileUtils.rm Dir.glob(File.join(@target, source))
-    end
-  end
+rescue LoadError
+  puts 'Could not load Cucumber'
 end
-
