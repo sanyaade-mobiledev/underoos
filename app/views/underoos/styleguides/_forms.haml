@@ -241,6 +241,48 @@
         %td <code>hidden</code>
         %td A control that is not displayed, but whose value is submitted to the server
 
+#forms_typeahead.sg-spy-landing
+.sg-subsection
+  %h3.sg-subheading Typeahead <span>forms.sass, dropdowns.sass</span>
+  .sg-onethird.pull
+    %p For quick auto-complete functionality, utilize the typeahead component. It's a combination of an input with a <code>data-provide="typeahead"</code> attribute and a drop down menu.
+    %br
+    %p The component requires <a href="http://twitter.github.com/bootstrap/javascript.html#typeahead">Bootstrap's typeahead plugin</a>.
+    %br
+    %p The plugin, appends a <code>ul.typeahead.dropdown-menu</code> list to the <code>body</code> element. There are no specific styles included within underoos for typeaheads as they are primarily a combination of existing components.
+  .sg-twothird.push
+    .well
+      %form
+        %ol
+          %li
+            %input.input-medium#superfriends(type="text" data-provide="typeahead" autocomplete="off" placeholder="Add Superfriends")
+    %pre.prettyprint.html
+      = preserve do
+        :escaped
+          <form>
+            <ol>
+              <li>
+                <input id="superfriends" data-provide="typeahead" autocomplete="off" placeholder="Add" type="text">
+              </li>
+            </ol>
+          </form>
+    %pre.prettyprint.haml.hidden
+      = preserve do
+        :escaped
+          %form
+            %ol
+              %li
+                %input#superfriends(type="text" data-provide="typeahead" autocomplete="off" placeholder="Add")
+    %pre.prettyprint
+      = preserve do
+        :escaped
+          // Instantiate the typeahead instance based off an id
+          $('#superfriends').typeahead({source:['Aquaman', 'Superman'] , items:10})
+
+    .notification.important.fade.in
+      %p <strong>Tip!</strong> Make sure to include the attribute <code>autocomplete="off"</code> to disable the browser's default behavior
+
+
 #forms_editable.sg-spy-landing
 .sg-subsection
   %h3.sg-subheading Content editable elements <span>forms.sass</span>

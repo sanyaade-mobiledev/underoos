@@ -9,6 +9,34 @@
     var markup = 'html'
     var html_examples = $('.html')
     var haml_examples = $('.haml')
+    var superfriends = [
+       'Aquaman'
+      ,'Batman'
+      ,'Catwomen'
+      ,'Daredevil'
+      ,'Elektra'
+      ,'Fantastic Four'
+      ,'Green Lantern'
+      ,'Hulk'
+      ,'Iron Man'
+      ,'Jericho'
+      ,'Karate Kid'
+      ,'Lobo'
+      ,'Mr. Terrific'
+      ,'Nightwing'
+      ,'Obsidian'
+      ,'Plastic Man'
+      ,'Quicksilver'
+      ,'Robin'
+      ,'Superman'
+      ,'Teenage Mutant Ninja Turtles'
+      ,'Ultraman'
+      ,'Vigilante'
+      ,'Wolverine'
+      ,'X-Men'
+      ,'Yellow Jacket'
+      ,'Zattana'
+    ]
 
     // enable nice looking pre tags
     window.prettyPrint && prettyPrint()
@@ -87,6 +115,9 @@
         }
       }
     })
+
+    // Demo the typeahead plugin
+    $('#superfriends').typeahead({source:superfriends , items:10})
 
     // Simple test for calculating the page size
     // var sizing = $('#page_title')
