@@ -1,16 +1,17 @@
 
 /* VENDOR ASSETS */
-//= require jquery-1.7.1.min
+//= require jquery-1.7.2.min
 //= require bootstrap-transition
-//= require bootstrap-scrollspy
+//= require bootstrap-alert
+//= require bootstrap-modal
 //= require bootstrap-dropdown
-//= require bootstrap-button
+//= require bootstrap-scrollspy
+//= require bootstrap-tab
 //= require bootstrap-tooltip
 //= require bootstrap-popover
-//= require bootstrap-modal
-//= require bootstrap-alert
-//= require bootstrap-tab
+//= require bootstrap-button
 //= require bootstrap-collapse
+//= require bootstrap-typeahead
 
 
 /* APPLICATION ASSETS */
