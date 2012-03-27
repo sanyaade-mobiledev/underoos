@@ -9,5 +9,7 @@ curl -L -o ./vendor/assets/javascripts/bootstrap-alert.js http://twitter.github.
 curl -L -o ./vendor/assets/javascripts/bootstrap-button.js http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js
 curl -L -o ./vendor/assets/javascripts/bootstrap-tab.js http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js
 curl -L -o ./vendor/assets/javascripts/bootstrap-collapse.js http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js
+curl -L -o ./vendor/assets/javascripts/bootstrap-typeahead.js http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js
 
 echo Not Updated: jquery, prettify.js
+
