@@ -242,7 +242,8 @@ select:focus:required:invalid
 
 
 // Button group containers
-.form-actions
+.form-actions,
+form .buttons
   background-color: $off_white
   border-top: 1px solid $component_border
   margin-top: 1em
@@ -251,7 +252,8 @@ select:focus:required:invalid
   &.dark
     background-color: darken($off_grey, 3%)
 
-.form-actions li
+.form-actions li,
+form .buttons li
   display: inline-block
   vertical-align: middle
   margin: 0
@@ -260,7 +262,8 @@ select:focus:required:invalid
 // ## Form layouts
 .form-search,
 .form-inline,
-.form-horizontal
+.form-horizontal,
+.default-manage-form
   input,
   textarea,
   select,
@@ -275,7 +278,8 @@ select:focus:required:invalid
 
 
 // ## Horizontal specific overrides
-.form-horizontal
+.form-horizontal,
+.default-manage-form
   li
     +clearfixer
   li > input,
@@ -304,7 +308,8 @@ select:focus:required:invalid
     margin-left: 0
     padding-left: 0
 
-  .form-actions
+  .form-actions,
+  form .buttons
     padding-left: $horiz_offset
 
   .hint
@@ -338,4 +343,17 @@ select:focus:required:invalid
   border-color: $focus_border
   outline: 0
   outline: thin dotted \9
+
+// Specific settings for formtastic
+.default-manage-form .well
+  background-color: $off_white
+
+form .buttons input[type="button"],
+form .buttons input[type="submit"]
+  +btn-button($standard, $grey6)
+  +btn-override($primary, $white)
+
+form .buttons input[type="reset"]
+  +btn-button($standard, $grey6)
+  +btn-override($danger, $white)
 
