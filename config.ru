@@ -20,6 +20,10 @@ class Underoos::Application < Rails::Application
   config.assets.compress  = false
   config.assets.debug     = true
   config.assets.version = '1.2'
+  config.assets.compile       = true
+  config.serve_static_assets  = true
+  config.assets.prefix        = 'assets'
+  config.assets.digest        = false
 
   # Tune down the output of the css
   config.compass.line_comments = false
