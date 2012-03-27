@@ -6,7 +6,6 @@ PATH
       haml-rails
       rails (>= 3.1.0)
       sass-rails
-      thin
 
 GEM
   remote: http://rubygems.org/

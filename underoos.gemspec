@@ -23,7 +23,4 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'compass-rails'
   s.add_runtime_dependency 'haml-rails'
 
-  s.add_development_dependency 'thin'
-  # s.add_runtime_dependency 'thin'
-
 end
