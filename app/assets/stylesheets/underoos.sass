@@ -1,23 +1,24 @@
 
 @import compass
 
-// The theme used for the build
-@import themes/default
-
-// normalize and reset
-@import base/normalize
+// @import polyfills/functions
+// @import polyfills/transition
 
 // mixins
+@import mixins/conversions
 @import mixins/clearfixins
-@import mixins/sizing
-@import mixins/user-select
+@import mixins/font-size
 @import mixins/tab-focus
 @import mixins/timing-equations
 @import mixins/coloring
 @import mixins/image-tools
 @import mixins/arrows
 
+// The theme used for the build
+@import themes/default
+
 // base settings
+@import base/normalize
 @import base/scaffold
 @import base/helpers
 @import base/transitions

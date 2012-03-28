@@ -65,8 +65,8 @@ select,
 .uneditable
   +box-sizing(border-box)
   +border-radius($radii)
-  +font-sizes($base_font_size)
-  display: inline-block
+  +font-size($base_font_size)
+  +inline-block
   border: 1px solid $component_border
   color: $body_color
   vertical-align: middle
@@ -124,7 +124,7 @@ input[type="image"]
 input[type="checkbox"],
 input[type="radio"]
   +border-radius(0)
-  display: inline-block
+  +inline-block
   border: 0
   vertical-align: middle
   margin: -0.3em 0.3em 0 0
@@ -141,11 +141,11 @@ form .choice
 
 form .boolean > label,
 form .choice > label
-  +font-sizes($base_font_size)
+  +font-size($base_font_size)
 
 form .boolean.inline,
 form .choice.inline
-  display: inline-block
+  +inline-block
   vertical-align: middle
   margin-right: 1em
 
@@ -254,7 +254,7 @@ form .buttons
 
 .form-actions li,
 form .buttons li
-  display: inline-block
+  +inline-block
   vertical-align: middle
   margin: 0
 
@@ -268,12 +268,12 @@ form .buttons li
   textarea,
   select,
   .uneditable
-    display: inline-block
+    +inline-block
     margin-bottom: 0
 
 .form-inline label,
 .form-search label
-  display: inline-block
+  +inline-block
   margin-bottom: 0
 
 
