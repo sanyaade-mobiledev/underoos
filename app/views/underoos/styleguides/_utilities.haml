@@ -99,6 +99,10 @@
         %td <code>$color, $percentage:20%</code>
         %td Fill a background and stroke a border with a darkened percentage
       %tr
+        %td <code>+font-size</code>
+        %td <code>$target_px, $context:$context_px</code>
+        %td Inject <code>font-size</code> for <code>px</code> and <code>rem</code>: <a href="http://snook.ca/archives/html_and_css/font-size-with-rem">more info</a>
+      %tr
         %td <code>+sharpen-image</code>
         %td(style="color: #999;") <em>none</em>
         %td Sharpen an image due to up/down scaling: <a href="http://stitchcss.com/#sharpen_image">stitchcss</a>
@@ -111,23 +115,15 @@
         %td(style="color: #999;") <em>none</em>
         %td Decrease rendering quality in favor of speed: <a href="http://stitchcss.com/#low_quality_image">stitchcss</a>
       %tr
-        %td <code>+font-sizes</code>
-        %td <code>$target_px, $context:$context_px</code>
-        %td Inject <code>font-size</code> for <code>px</code> and <code>rem</code>: <a href="http://snook.ca/archives/html_and_css/font-size-with-rem">more info</a>
-      %tr
         %td <code>+tab-focus</code>
         %td(style="color: #999;") <em>none</em>
         %td Resets default outlines for webkit on focusable elements
-      %tr
-        %td <code>+user-select</code>
-        %td <code>$type:none</code>
-        %td Define whether an element is selectable
   .notification.important.fade.in
-    %p <strong>Pro Tip!</strong> There are variables available within <code>_timing-equations.sass</code> for defining <code>cubic-bezier</code> values.
+    %p <strong>Pro Tip!</strong> There are variables available within <code>timing-equations.sass</code> for defining <code>cubic-bezier</code> values.
 
 #utils_functions.sg-spy-landing
 .sg-subsection
-  %h3.sg-subheading Functions <span>mixins/sizing.sass</span>
+  %h3.sg-subheading Functions <span>mixins/conversions.sass</span>
   %table.box.vborder.banded.thead-decorate
     %thead
       %tr
@@ -166,4 +162,61 @@
     %p <strong>Warning!</strong> Define <code>$context_px</code>, <code>$base_font_size</code>, <code>$base_width</code> and <code>$base_vertical</code> prior to the functions being loaded.
   .notification.important.fade.in
     %p <strong>Important!</strong> When calculating vertical rhythm, always pass in what the expected pixel value is for the element.
+
+#utils_polyfill.sg-spy-landing
+.sg-subsection
+  %h3.sg-subheading Polyfills <span>polyfill/*.sass</span>
+  %p Most projects benefit greatly from using a library like <a href="http://compass-style.org/">Compass</a> or <a href="http://thoughtbot.com/bourbon/">Bourbon</a>. Underoos is not designed to replace these libraries, but rather sit on top of them. There may be times when using one of these libraries isn't an option, so Underoos provides a few simple polyfill mixins in it's place.
+  %table.box.vborder.banded.thead-decorate
+    %thead
+      %tr
+        %th Mixin
+        %th Parameters
+        %th Usage
+    %tfoot
+      %tr
+        %td(colspan="3") The mixins above provided by either Compass, Bourbon or the polyfills are all interchangeable to allow Underoos to be as agnostic as possible.
+    %tbody
+      %tr
+        %td <code>+border-radius</code>
+        %td <code>$radii</code>
+        %td Draws rounded corners on an element (also includes mixins for individual corners and sides)
+      %tr
+        %td <code>+box-shadow</code>
+        %td <code>$shadow-1:none, $shadow-n:false, ...</code>
+        %td Draws an outer or inset shadow around an element (supports up to 9 shadow parameters)
+      %tr
+        %td <code>+box-sizing</code>
+        %td <code>$type:border-box</code>
+        %td Changes the box model used for calculating an elements width and height
+      %tr
+        %td <code>+box-sizing</code>
+        %td <code>$type:border-box</code>
+        %td Changes the box model used for calculating an elements width and height
+      %tr
+        %td <code>+inline-block</code>
+        %td(style="color: #999;") <em>none</em>
+        %td Adds support for <code>display:inline-block</code> down to IE7
+      %tr
+        %td <code>+opacity</code>
+        %td <code>$alpha:1</code>
+        %td Provides cross browser opacity, values are between<code>0-1</code>
+      %tr
+        %td <code>+transition</code>
+        %td <code>$transition-1:all 0.25s, $transition-n:false, ...</code>
+        %td Adds vendor prefixes for transitions (supports up to 9 transition parameters)
+      %tr
+        %td <code>+user-select</code>
+        %td <code>$type:none</code>
+        %td Define whether an element is selectable
+      %tr
+        %td <code>combine</code>
+        %td <code>$value-1:none, $value-n:false, ...</code>
+        %td A function used to <em>combine</em> and normalize multiple parameters for a polyfill (supports up to 9 values)
+  .notification.important.fade.in
+    %p <strong>Pro Tip!</strong> To include all polyfills in a project: <code>@import polyfills/polyfills</code>
+  .notification.warning.fade.in
+    %p <strong>Warning!</strong> The <code>combine</code> function for mixin values only accepts 9 values, this is inline with the Bourbon library (Compass supports 10!)
+  .notification.danger.fade.in
+    %p <strong>Danger!</strong> If a project uses Compass or Bourbon, make sure not to import these polyfills
 
