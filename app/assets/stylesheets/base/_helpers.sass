@@ -1,5 +1,6 @@
 
 // Utility classes for use with @extension, or just common items found in every project!
+// All helpers are also available as mixins, following the same name
 
 // Utilizes the `micro clearfix` on pseudo elements for clearing floats
 .clearfixer
@@ -11,78 +12,43 @@
 
 // Image replacement
 .ir
-  background-color: transparent
-  border: 0
-  color: transparent
-  font: 0/0 a
-  text-shadow: none
+  +ir
 
 // Totally hidden from screen readers and browsers
 .hidden
-  display: none !important
-  visibility: hidden
+  +hidden
 
 // Reverse the effects of hidden
 .shown
-  display: block
-  visibility: visible
+  +shown
 
 // Only visually hidden, still available to screen readers
 .visuallyhidden
-  border: 0
-  clip: rect(0 0 0 0)
-  height: 1px
-  margin: -1px
-  overflow: hidden
-  padding: 0
-  position: absolute
-  width: 1px
-  &.focusable:active,
-  &.focusable:focus
-    clip: auto
-    height: auto
-    margin: 0
-    overflow: visible
-    position: static
-    width: auto
+  +visuallyhidden
 
 // Reverse the settings applied by `.visuallyhidden`
 .visuallyshown
-  clip: auto
-  height: auto
-  margin: 0
-  overflow: visible
-  position: static
-  width: auto
+  +visuallyshown
 
 // Hide visually and from screenreaders, but maintain layout
 .invisible
-  visibility: hidden
+  +invisible
+
+// The base `column` settings, should be extended by all columns
+.base-column
+  +base-column
+
+// An alternate base `column` which floats elements to the right
+.base-column-right
+  +base-column-right
+
+// The base `row` settings, should be extended by all rows
+.base-row
+  +base-row
 
 // Gabe, your welcome.
 .pull-left
   float: left
 .pull-right
   float: right
-
-
-// ### Base classes used for extension
-
-// The base `column` settings, should be extended by all columns
-.base-column
-  +box-sizing(border-box)
-  display: block
-  float: left
-
-// An alternate base `column` which floats elements to the right
-.base-column-right
-  +box-sizing(border-box)
-  display: block
-  float: right
-
-// The base `row` settings, should be extended by all rows
-.base-row
-  +box-sizing(border-box)
-  +clearfixer
-  display: block
 

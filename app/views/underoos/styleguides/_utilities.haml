@@ -7,6 +7,9 @@
       %tr
         %th Class
         %th Usage
+    %tfoot
+      %tr
+        %td(colspan="2") All helper classes (except <code>.pull-left|right</code>) are also available as mixins
     %tbody
       %tr
         %td <code>.clearfixer</code>
@@ -33,12 +36,6 @@
         %td <code>.invisible</code>
         %td Keeps elements in the DOM, but hidden from view and screen readers
       %tr
-        %td <code>.pull-left</code>
-        %td Floats an element to the left (<em>Gabe, your welcome</em>)
-      %tr
-        %td <code>.pull-right</code>
-        %td Floats an element to the right (<em>may be renamed to: </em><code>.varela</code>)
-      %tr
         %td <code>.base-column</code>
         %td For use by extension for <code>column</code> classes
       %tr
@@ -47,6 +44,12 @@
       %tr
         %td <code>.base-row</code>
         %td For use by extension for <code>row</code> classes
+      %tr
+        %td <code>.pull-left</code>
+        %td Floats an element to the left (<em>Gabe, your welcome</em>)
+      %tr
+        %td <code>.pull-right</code>
+        %td Floats an element to the right (<em>may be renamed to: </em><code>.varela</code>)
   .notification.important.fade.in
     %p <strong>Pro Tip!</strong> When using <code>visuallyhidden</code> and <code>visuallyshown</code> with <code>box-shadow</code>, you'll need to add <code>clip:initial</code> to get the shadows to reappear
 
@@ -115,9 +118,46 @@
         %td(style="color: #999;") <em>none</em>
         %td Decrease rendering quality in favor of speed: <a href="http://stitchcss.com/#low_quality_image">stitchcss</a>
       %tr
+        %td <code>+ir</code>
+        %td(style="color: #999;") <em>none</em>
+        %td For use in image replacement, typically on links
+      %tr
+        %td <code>+hidden</code>
+        %td(style="color: #999;") <em>none</em>
+        %td The opposite of <code>shown</code>, elements are completely hidden from screen readers and browsers
+      %tr
+        %td <code>+shown</code>
+        %td(style="color: #999;") <em>none</em>
+        %td Reverse the effects of <code>hidden</code>
+      %tr
+        %td <code>+visuallyhidden</code>
+        %td(style="color: #999;") <em>none</em>
+        %td Only visually hidden, elements are still available to screen readers, use this instead of <code>display:none</code>
+      %tr
+        %td <code>+visuallyshown</code>
+        %td(style="color: #999;") <em>none</em>
+        %td Reverse the effects of <code>visuallyhidden</code>
+      %tr
+        %td <code>+invisible</code>
+        %td(style="color: #999;") <em>none</em>
+        %td Keeps elements in the DOM, but hidden from view and screen readers
+      %tr
+        %td <code>+base-column</code>
+        %td(style="color: #999;") <em>none</em>
+        %td For use by <code>column</code> classes
+      %tr
+        %td <code>+base-column-right</code>
+        %td(style="color: #999;") <em>none</em>
+        %td For use by <code>column</code> classes, floats elements to the right
+      %tr
+        %td <code>+base-row</code>
+        %td(style="color: #999;") <em>none</em>
+        %td For use by <code>row</code> classes
+      %tr
         %td <code>+tab-focus</code>
         %td(style="color: #999;") <em>none</em>
         %td Resets default outlines for webkit on focusable elements
+
   .notification.important.fade.in
     %p <strong>Pro Tip!</strong> There are variables available within <code>timing-equations.sass</code> for defining <code>cubic-bezier</code> values.
 
