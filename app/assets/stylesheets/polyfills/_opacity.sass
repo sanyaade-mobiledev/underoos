@@ -1,6 +1,6 @@
 
 // Opacity polyfill matches compass and bourbon
-@mixin opacity($opacity:1)
-  filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})")
-  opacity: $opacity
+@mixin opacity($alpha:1)
+  filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($alpha * 100)})")
+  opacity: $alpha
 
