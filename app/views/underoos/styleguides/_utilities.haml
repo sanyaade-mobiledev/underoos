@@ -75,6 +75,14 @@
         %td <code>.collapse.in</code>
         %td Transitions an element to a <code>height</code> of <code>auto</code>
 
+.sg-subsection
+  %h3.sg-subheading Timing Equations <span>mixins/timing-equations.sass</span>
+  %p Underoos comes packed with a number of cubic-bezier timing properties for use with <code>transition-timing-function</code>. The timing functions are based on the properties included with <a href="http://thoughtbot.com/bourbon/">Bourbon</a>, which are courtesy of <a href="github.com/jaukia/easie">jquery.easie</a>.
+  .notification.important.fade.in
+    %p <strong>Pro Tip!</strong> Hover over the table below to see the results of each cubic-bezier function.
+.sg-subsection
+  = render :partial => 'underoos/styleguides/partials/transitions'
+
 #utils_mixins.sg-spy-landing
 .sg-subsection
   %h3.sg-subheading Mixins <span>mixins/*.sass</span>
@@ -159,7 +167,7 @@
         %td Resets default outlines for webkit on focusable elements
 
   .notification.important.fade.in
-    %p <strong>Pro Tip!</strong> There are variables available within <code>timing-equations.sass</code> for defining <code>cubic-bezier</code> values.
+    %p <strong>Pro Tip!</strong> See the Helpers section for classes using these mixins which can be used for extension
 
 #utils_functions.sg-spy-landing
 .sg-subsection
