@@ -1,0 +1,43 @@
+
+// Totally hidden from screen readers and browsers
+@mixin hidden
+  display: none !important
+  visibility: hidden
+
+// Reverse the effects of hidden
+@mixin shown
+  display: block
+  visibility: visible
+
+// Only visually hidden, still available to screen readers
+@mixin visuallyhidden
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+  &.focusable:active,
+  &.focusable:focus
+    clip: auto
+    height: auto
+    margin: 0
+    overflow: visible
+    position: static
+    width: auto
+
+// Reverse the settings applied by `.visuallyhidden`
+@mixin visuallyshown
+  clip: auto
+  height: auto
+  margin: 0
+  overflow: visible
+  position: static
+  width: auto
+
+// Hide visually and from screenreaders, but maintain layout
+@mixin invisible
+  visibility: hidden
+

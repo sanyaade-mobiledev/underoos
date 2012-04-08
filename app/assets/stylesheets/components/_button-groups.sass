@@ -9,7 +9,7 @@
   margin-left: 0.5em
 
 .button-toolbar .button-group
-  display: inline-block
+  +inline-block
 
 .button-group .dropdown-toggle:active,
 .button-group.open .dropdown-toggle
@@ -27,13 +27,11 @@
   margin-left: -1px
 
 .button-group .btn:first-child
-  +border-top-left-radius($radii)
-  +border-bottom-left-radius($radii)
+  +border-left-radius($radii)
 
 .button-group .btn:last-child,
 .button-group .dropdown-toggle
-  +border-top-right-radius($radii)
-  +border-bottom-right-radius($radii)
+  +border-right-radius($radii)
 
 .button-group .btn:hover,
 .button-group .btn:focus,

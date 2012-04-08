@@ -1,33 +1,25 @@
 
+// pick a library
 @import compass
+// @import bourbon
+// @import polyfills/polyfills
 
-// The theme used for the build
+// import all underoos mixins
+@import mixins/mixins
+
+// configuration theme
 @import themes/default
 
-// normalize and reset
+// base elements
 @import base/normalize
-
-// mixins
-@import mixins/clearfixins
-@import mixins/sizing
-@import mixins/user-select
-@import mixins/tab-focus
-@import mixins/timing-equations
-@import mixins/coloring
-@import mixins/image-tools
-@import mixins/arrows
-
-// base settings
 @import base/scaffold
 @import base/helpers
 @import base/transitions
-
-// core elements
-@import core/button-btn-mixin
-@import core/typography
-@import core/elements
-@import core/tables
-@import core/forms
+@import base/button-btn-mixin
+@import base/typography
+@import base/elements
+@import base/tables
+@import base/forms
 
 // components
 @import components/carets
