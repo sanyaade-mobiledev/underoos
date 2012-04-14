@@ -6,93 +6,77 @@
   %p(style="width:67%;") Accordions support multiple open sections or just single sections based on the <code>data</code> attributes set within the links.
 
 .sg-subsection
-  .accordion#accordion_example
-
-    .accordion-group
-      .accordion-heading
+  %nav
+    %ul#accordion_example
+      %li.accordion-group
         %a.accordion-toggle(href="#collapse_1" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 1
-      .accordion-body.collapse#collapse_1
-        .accordion-inner
-          %p=@lorem_sm
-
-    .accordion-group
-      .accordion-heading
+        %section.collapse#collapse_1
+          %article.accordion-inner
+            %p=@lorem
+      %li.accordion-group
         %a.accordion-toggle(href="#collapse_2" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 2
-      .accordion-body.collapse#collapse_2
-        .accordion-inner
-          %p=@lorem_sm
-
-    .accordion-group
-      .accordion-heading
+        %section.collapse#collapse_2
+          %article.accordion-inner
+            %p=@lorem
+      %li.accordion-group
         %a.accordion-toggle(href="#collapse_3" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 3
-      .accordion-body.collapse#collapse_3
-        .accordion-inner
-          %p=@lorem_sm
+        %section.collapse#collapse_3
+          %article.accordion-inner
+            %p=@lorem
 
 
 .sg-subsection
   %pre.prettyprint.html
     = preserve do
       :escaped
-        <div class="accordion" id="accordion_example">
-          <div class="accordion-group">
-            <div class="accordion-heading">
+        <nav>
+          <ul id="accordion_example">
+            <li class="accordion-group">
               <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_1">Accordion Group 1</a>
-            </div>
-            <div class="accordion-body in collapse" id="collapse_1" style="height: auto; ">
-              <div class="accordion-inner">
-                <p>...</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
+              <section class="collapse" id="collapse_1"">
+                <article class="accordion-inner">
+                  <p>...</p>
+                </article>
+              </section>
+            </li>
+            <li class="accordion-group">
               <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_2">Accordion Group 2</a>
-            </div>
-            <div class="accordion-body collapse" id="collapse_2" style="height: 0px; ">
-              <div class="accordion-inner">
-                <p>...</p>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
+              <section class="collapse" id="collapse_2"">
+                <article class="accordion-inner">
+                  <p>...</p>
+                </article>
+              </section>
+            </li>
+            <li class="accordion-group">
               <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_3">Accordion Group 3</a>
-            </div>
-            <div class="accordion-body collapse" id="collapse_3" style="height: 0px; ">
-              <div class="accordion-inner">
-                <p>...</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+              <section class="collapse" id="collapse_3"">
+                <article class="accordion-inner">
+                  <p>...</p>
+                </article>
+              </section>
+            </li>
+          </ul>
+        </nav>
   %pre.prettyprint.haml.hidden
     = preserve do
       :escaped
-        #accordion_example.accordion
-
-          .accordion-group
-            .accordion-heading
+        %nav
+          %ul#accordion_example
+            %li.accordion-group
               %a.accordion-toggle(href="#collapse_1" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 1
-            .accordion-body.collapse#collapse_1
-              .accordion-inner
-                %p ...
-
-          .accordion-group
-            .accordion-heading
+              %section.collapse#collapse_1
+                %article.accordion-inner
+                  %p ...
+            %li.accordion-group
               %a.accordion-toggle(href="#collapse_2" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 2
-            .accordion-body.collapse#collapse_2
-              .accordion-inner
-                %p ...
-
-          .accordion-group
-            .accordion-heading
+              %section.collapse#collapse_2
+                %article.accordion-inner
+                  %p ...
+            %li.accordion-group
               %a.accordion-toggle(href="#collapse_3" data-toggle="collapse" data-parent="#accordion_example") Accordion Group 3
-            .accordion-body.collapse#collapse_3
-              .accordion-inner
-                %p ...
-
+              %section.collapse#collapse_3
+                %article.accordion-inner
+                  %p ...
 
   .notification.important.fade.in
     %p <strong>Note!</strong> Remove the <code>data-parent</code> attribute from the links to have multiple sections open at the same time
