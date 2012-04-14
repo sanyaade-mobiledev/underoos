@@ -16,15 +16,16 @@
 .dropdown-menu
   @extend .visuallyhidden
   +box-shadow($drop_dark)
+  background-clip: padding-box
   background-color: $body_bg
   border-radius: 0 0 $radii $radii
   list-style: none
   float: left
   top: 100%
   left: 0
-  max-width: 240px
   min-width: 160px
   z-index: $zindex_dropdown
+  *z-index: $zindex_dropdown
   &.drop-up
     border-radius: $radii
     top: auto
