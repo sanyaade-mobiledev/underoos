@@ -33,23 +33,23 @@
     left: 0
 
 .popover-inner
-  +border-radius($radii)
   +box-shadow($drop_dark)
   background-color: $body_bg
   border: 1px solid $component_border
+  border-radius: $radii
   overflow: hidden
 
 .popover-title
-  +border-radius($radii $radii 0 0)
   +font-size(16)
   background-clip: padding-box
   background-color: $component_bg_hover
   border-bottom: 1px solid $component_border_alt
+  border-radius: $radii $radii 0 0
   padding: 0.625em 1em
   line-height: 1
 
 .popover-content
   background-clip: padding-box
-  +border-radius(0 0 $radii $radii)
+  border-radius: 0 0 $radii $radii
   padding: 1em
 

@@ -8,8 +8,8 @@
   margin-bottom: -1px
 
 .tabs > li > a
-  +border-radius($radii $radii 0 0)
   border: 1px solid transparent
+  border-radius: $radii $radii 0 0
   margin-right: 0.15em
   padding: 0.6em 0.85em
   text-shadow: $text_drop_lite
@@ -31,8 +31,8 @@
   float: none
 
 .tabs.stacked > li > a
-  +border-radius(0)
   border: 1px solid $component_border_alt
+  border-radius: 0
   margin-right: 0
   padding: 0.4em 0.85em
   &:hover
@@ -40,9 +40,9 @@
     z-index: 2
 
 .tabs.stacked > li:first-child > a
-  +border-radius($radii $radii 0 0)
+  border-radius: $radii $radii 0 0
 .tabs.stacked > li:last-child > a
-  +border-radius(0 0 $radii $radii)
+  border-radius: 0 0 $radii $radii
 
 .tabs.stacked .active > a,
 .tabs.stacked li > a:active

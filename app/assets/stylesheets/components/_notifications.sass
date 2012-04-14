@@ -1,8 +1,8 @@
 
 // Base notification used for @extends
 .base-notification
-  +border-radius($radii)
   +background-darken-border($standard)
+  border-radius: $radii
   position: relative
   padding: 0.75em
   margin: 1em 0
@@ -128,5 +128,5 @@
 .flash-messages.top .pop-notification,
 .flash-messages.bottom .notification,
 .flash-messages.bottom .pop-notification
-  +border-radius(0)
+  border-radius: 0
 

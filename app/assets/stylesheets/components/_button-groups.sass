@@ -21,17 +21,19 @@
 
 // Overrides and settings specific for the `.btn` class
 .button-group .btn
-  +border-radius(0)
+  border-radius: 0
   position: relative
   float: left
   margin-left: -1px
 
 .button-group .btn:first-child
-  +border-left-radius($radii)
+  border-top-left-radius: $radii
+  border-bottom-left-radius: $radii
 
 .button-group .btn:last-child,
 .button-group .dropdown-toggle
-  +border-right-radius($radii)
+  border-top-right-radius: $radii
+  border-bottom-right-radius: $radii
 
 .button-group .btn:hover,
 .button-group .btn:focus,

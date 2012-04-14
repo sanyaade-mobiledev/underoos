@@ -64,10 +64,10 @@ textarea,
 select,
 .uneditable
   +box-sizing(border-box)
-  +border-radius($radii)
   +font-size($base_font_size)
   +inline-block
   border: 1px solid $component_border
+  border-radius: $radii
   color: $body_color
   vertical-align: middle
   padding: 0.4em
@@ -90,7 +90,7 @@ label select
 
 // Specific styles for special input types
 .search-query
-  +border-radius(1em)
+  border-radius: 1em
   margin-bottom: 0
   padding-left: 1em
   padding-right: 1em
@@ -114,8 +114,8 @@ input[type="file"]
   padding: initial
 
 input[type="image"]
-  +border-radius(0)
   border-color: transparent
+  border-radius: 0
   margin: 0
   padding: 0
 
@@ -123,9 +123,9 @@ input[type="image"]
 // ## Radio and Checkboxes
 input[type="checkbox"],
 input[type="radio"]
-  +border-radius(0)
   +inline-block
   border: 0
+  border-radius: 0
   vertical-align: middle
   margin: -0.3em 0.3em 0 0
   padding: 0

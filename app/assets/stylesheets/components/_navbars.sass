@@ -4,7 +4,7 @@
 
 .navbar-inner
   +box-shadow($drop_dark)
-  +border-radius($radii)
+  border-radius: $radii
   background-color: $standard
   font-weight: bold
   text-shadow: $text_drop_lite
@@ -74,7 +74,7 @@
   z-index: $zindex_navbar
 
 .navbar.fixed .navbar-inner
-  +border-radius(0)
+  border-radius: 0
 
 // Redeclare for specificity
 .navbar .pull-right
