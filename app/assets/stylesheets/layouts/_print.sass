@@ -3,8 +3,8 @@
 @media print
   *
     background: transparent !important
-    color: black !important
     box-shadow: none !important
+    color: black !important
     text-shadow: none !important
     filter: none !important
     -ms-filter: none !important
@@ -18,7 +18,9 @@
   abbr[title]:after
     content: " (" attr(title) ")"
 
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after
     content: ""
 
   pre, blockquote
@@ -27,7 +29,6 @@
 
   thead
     display: table-header-group
-
 
   tr, img
     page-break-inside: avoid

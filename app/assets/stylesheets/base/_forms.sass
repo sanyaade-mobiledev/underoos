@@ -21,11 +21,14 @@ form li
   &:last-child
     margin-bottom: 0
 
-\:-moz-placeholder
+@mixin form-placeholder
   color: $placeholder
 
+\:-moz-placeholder
+  +form-placeholder
+
 \::-webkit-input-placeholder
-  color: $placeholder
+  +form-placeholder
 
 
 // ## Description elements
@@ -69,8 +72,8 @@ select,
   border: 1px solid $component_border
   border-radius: $radii
   color: $body_color
-  vertical-align: middle
   padding: 0.4em
+  vertical-align: middle
 
 input,
 textarea,
@@ -126,9 +129,9 @@ input[type="radio"]
   +inline-block
   border: 0
   border-radius: 0
-  vertical-align: middle
   margin: -0.3em 0.3em 0 0
   padding: 0
+  vertical-align: middle
 
 form .choices-group
   margin: 1em 0
@@ -146,8 +149,8 @@ form .choice > label
 form .boolean.inline,
 form .choice.inline
   +inline-block
-  vertical-align: middle
   margin-right: 1em
+  vertical-align: middle
 
 
 // ## Focus states
@@ -173,10 +176,10 @@ select,
 .uneditable
   &.disabled, &[disabled], &[readonly]
     +box-shadow(none)
-    cursor: not-allowed
     background-color: $disabled_bg
     border-color: $disabled_border
     color: $disabled_color
+    cursor: not-allowed
 
 input[type="button"],
 input[type="submit"],
@@ -210,18 +213,18 @@ form .disabled .hint
     border-color: $highlight
     &:focus
       +box-shadow(0 0 6px lighten($highlight, 20%))
-      color: $highlight
       border-color: darken($highlight, 10%)
+      color: $highlight
 
   .uneditable
-    color: $highlight
     border-color: $highlight
+    color: $highlight
 
   input[type="button"]:hover,
   input[type="submit"]:hover,
   input[type="reset"]:hover
-    color: $highlight
     border-color: darken($highlight, 10%)
+    color: $highlight
 
 form .error
   +form-states($error)
@@ -234,8 +237,8 @@ form .warning
 input:focus:required:invalid,
 textarea:focus:required:invalid,
 select:focus:required:invalid
-  color: $error
   border-color: $error
+  color: $error
   &:focus
     +box-shadow(0 0 6px lighten($error, 20%))
     border-color: darken($error, 10%)
@@ -255,8 +258,8 @@ form .buttons
 .form-actions li,
 form .buttons li
   +inline-block
-  vertical-align: middle
   margin: 0
+  vertical-align: middle
 
 
 // ## Form layouts
@@ -290,18 +293,18 @@ form .buttons li
 
   li > label
     float: left
-    text-align: right
     padding-top: 0.5em
     width: $horiz_offset
+    text-align: right
 
   .boolean > label,
   .choice > label
     float: none
-    text-align: left
     margin-left: 1em
     padding-top: 0
     padding-left: $horiz_offset
     width: auto
+    text-align: left
 
   .boolean.inline + .boolean.inline > label,
   .choice.inline + .choice.inline > label

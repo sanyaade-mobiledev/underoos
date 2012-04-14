@@ -17,15 +17,16 @@ body
   background: $body_bg
   line-height: $base_line_height
 
-\::-moz-selection
+@mixin text-selection
   background: $select_bg
   color: $select_color
   text-shadow: none
 
+\::-moz-selection
+  +text-selection
+
 \::selection
-  background: $select_bg
-  color: $select_color
-  text-shadow: none
+  +text-selection
 
 // Links
 a, a:visited
