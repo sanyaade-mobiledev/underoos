@@ -53,30 +53,6 @@
     .heading
       color: $primary
 
-// Pop Messages
-.pop-notification
-  @extend .base-notification
-  +box-shadow($drop_dark, $inset_lite)
-  color: $grey6
-  text-shadow: $text_inset_lite
-  &.info, &.important, &.success, &.warning, &.danger, &.primary
-    color: $white
-    text-shadow: $text_inset_dark
-    .heading
-      color: $white
-  &.info, &.notice
-    +background-darken-border($info)
-  &.important
-    +background-darken-border($important)
-  &.success
-    +background-darken-border($success)
-  &.warning
-    +background-darken-border($warning)
-  &.danger, &.error, &.alert
-    +background-darken-border($danger)
-  &.primary
-    +background-darken-border($primary)
-
 // Flash messages container
 .flash-messages,
 .flash-messages.top
