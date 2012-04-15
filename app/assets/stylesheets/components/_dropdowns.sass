@@ -13,8 +13,10 @@
 .dropdown.open .caret
   border-top-color: $link_hover
 
+// To get IE7 support, comment out +visuallyhidden and uncomment display:none
 .dropdown-menu
   +visuallyhidden
+  // display: none
   +box-shadow($drop_dark)
   background-clip: padding-box
   background-color: $body_bg
@@ -25,7 +27,6 @@
   left: 0
   min-width: 160px
   z-index: $zindex_dropdown
-  *z-index: $zindex_dropdown
   &.drop-up
     border-radius: $radii
     top: auto
@@ -61,10 +62,12 @@
 .dropdown.open .dropdown-toggle
   color: $link_hover
 
+
 .dropdown.open .dropdown-menu,
 .typeahead.dropdown-menu,
 .button-group.open .dropdown-menu
   +visuallyshown
+  display: block
   position: absolute
   clip: initial
   border: 1px solid $component_border

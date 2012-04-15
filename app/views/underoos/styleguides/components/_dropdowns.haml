@@ -183,4 +183,7 @@
 
     .notification.important.fade.in
       %p <strong>Note!</strong> Add the <code>.split</code> class to the caret <code>&lt;span&gt;</code> to center within the button
+    .notification.important.fade.in
+      %p <strong>WTF: IE 7!</strong> Out of the box, dropdowns utilize <code>visuallyhidden</code> when hiding their content instead of <code>display:none</code>. This ensures the content is available to <a href="http://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/">screen readers</a>. If you must support IE 7, remove the mixin for <code>visuallyhidden</code> and uncomment <code>display:none</code>. The <code>visuallyhidden</code> mixin works fine for modern browsers and IE8+
+
 
