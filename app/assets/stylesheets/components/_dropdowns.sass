@@ -14,7 +14,7 @@
   border-top-color: $link_hover
 
 .dropdown-menu
-  @extend .visuallyhidden
+  +visuallyhidden
   +box-shadow($drop_dark)
   background-clip: padding-box
   background-color: $body_bg
@@ -64,7 +64,7 @@
 .dropdown.open .dropdown-menu,
 .typeahead.dropdown-menu,
 .button-group.open .dropdown-menu
-  @extend .visuallyshown
+  +visuallyshown
   position: absolute
   clip: initial
   border: 1px solid $component_border
