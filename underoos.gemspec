@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Underoos::VERSION
   s.authors     = ["Matthew Kitt"]
   s.email       = ["matt.kitt@modeset.com"]
-  s.homepage    = ""
-  s.summary     = %q{Starter styles in Sass and Compass}
-  s.description = %q{Starter styles in Sass and Compass}
+  s.homepage    = "http://underoos.modeset.com/"
+  s.summary     = %q{Starter styles in Sass}
+  s.description = %q{Starter styles in Sass}
 
   s.rubyforge_project = "underoos"
 
