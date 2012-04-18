@@ -31,7 +31,8 @@ end
 Underoos::Application.initialize!
 
 Underoos::Application.routes.draw do
-  match '/' => redirect('/styleguide')
+  root :to => 'pages#index'
+  match '*page', :to => 'pages#show'
   mount Underoos::Engine => "/styleguide"
 end
 
