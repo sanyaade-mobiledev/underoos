@@ -1,8 +1,8 @@
 class Underoos::AssetsGenerator < Rails::Generators::Base
+
   source_root File.expand_path("../../../../", __FILE__)
 
   def copy_underoos_js_assets
-    copy_file 'app/assets/javascripts/styleguide.js', 'app/assets/javascripts/styleguide.js'
     copy_file 'app/assets/javascripts/underoos.js', 'app/assets/javascripts/underoos.js'
   end
 
@@ -18,18 +18,15 @@ class Underoos::AssetsGenerator < Rails::Generators::Base
     copy_file 'vendor/assets/javascripts/bootstrap-tooltip.js'
     copy_file 'vendor/assets/javascripts/bootstrap-transition.js'
     copy_file 'vendor/assets/javascripts/bootstrap-typeahead.js'
-    copy_file 'vendor/assets/javascripts/bootstrap-alert.js'
-    copy_file 'vendor/assets/javascripts/prettify.js'
   end
 
   def copy_undeross_stylesheets
-    copy_file 'app/assets/stylesheets/styleguide.sass'
     copy_file 'app/assets/stylesheets/underoos.sass'
     directory 'app/assets/stylesheets/base'
     directory 'app/assets/stylesheets/components'
-    directory 'app/assets/stylesheets/core'
     directory 'app/assets/stylesheets/layouts'
     directory 'app/assets/stylesheets/mixins'
+    directory 'app/assets/stylesheets/polyfills'
     directory 'app/assets/stylesheets/themes'
   end
 
