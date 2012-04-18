@@ -12,7 +12,8 @@ require 'jquery-rails'
 
 # Set up a dummy app for development
 class Underoos::Application < Rails::Application
-  config.session_store :cookie_store, :key => '_testapp_session'
+
+  config.session_store :cookie_store, :key => '_underoos_session'
   config.secret_token = '1319d8ccf1b9bfbdefcb6aa380aadkasdjlkajdlajd044ce'
 
   config.encoding = 'utf-8'
