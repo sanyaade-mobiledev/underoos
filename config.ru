@@ -6,7 +6,6 @@ require 'underoos'
 
 require 'action_controller/railtie'
 require 'sass-rails'
-require 'compass-rails'
 require 'sprockets/railtie'
 require 'haml-rails'
 require 'jquery-rails'
@@ -26,12 +25,6 @@ class Underoos::Application < Rails::Application
   config.assets.prefix        = 'assets'
   config.assets.digest        = false
 
-  # Tune down the output of the css
-  # config.compass.line_comments = false
-  # config.compass.output_style = :compressed
-
-  # Compass, Y U No Play Nice?
-  config.sass.load_paths << "#{Gem.loaded_specs['compass'].full_gem_path}/frameworks/compass/stylesheets"
 end
 
 Underoos::Application.initialize!
