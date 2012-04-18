@@ -9,6 +9,7 @@ require 'sass-rails'
 require 'compass-rails'
 require 'sprockets/railtie'
 require 'haml-rails'
+require 'jquery-rails'
 
 # Set up a dummy app for development
 class Underoos::Application < Rails::Application

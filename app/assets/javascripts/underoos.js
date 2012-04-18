@@ -1,6 +1,6 @@
 
 /* VENDOR ASSETS */
-//= require jquery-1.7.2.min
+//= require jquery
 //= require bootstrap-transition
 //= require bootstrap-alert
 //= require bootstrap-modal
