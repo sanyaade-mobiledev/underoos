@@ -31,9 +31,9 @@ end
 Underoos::Application.initialize!
 
 Underoos::Application.routes.draw do
+  mount Underoos::Engine => "/styleguide"
   root :to => 'pages#index'
   match '*page', :to => 'pages#show'
-  mount Underoos::Engine => "/styleguide"
 end
 
 run Underoos::Application
