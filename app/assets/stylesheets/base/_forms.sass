@@ -73,7 +73,6 @@ select,
   border-radius: $radii
   color: $body_color
   padding: 0.4em
-  vertical-align: middle
 
 input,
 textarea,
@@ -131,7 +130,6 @@ input[type="radio"]
   border-radius: 0
   margin: -0.3em 0.3em 0 0
   padding: 0
-  vertical-align: middle
 
 form .choices-group
   margin: 1em 0
@@ -150,7 +148,6 @@ form .boolean.inline,
 form .choice.inline
   +inline-block
   margin-right: 1em
-  vertical-align: middle
 
 
 // ## Focus states
@@ -160,7 +157,6 @@ textarea:focus
   background-color: $off_white
   border-color: $focus_border
   outline: 0
-  outline: thin dotted \9
 
 input[type="file"]:focus,
 input[type="radio"]:focus,
@@ -259,7 +255,6 @@ form .buttons
 form .buttons li
   +inline-block
   margin: 0
-  vertical-align: middle
 
 
 // ## Form layouts
@@ -345,7 +340,7 @@ form .buttons li
   border-style: solid
   border-color: $focus_border
   outline: 0
-  outline: thin dotted \9
+  outline: thin dotted
 
 // Specific settings for formtastic
 .default-manage-form .well
@@ -353,10 +348,8 @@ form .buttons li
 
 form .buttons input[type="button"],
 form .buttons input[type="submit"]
-  +btn-button($standard, $grey6)
-  +btn-override($primary, $white)
+  @extend .btn.primary
 
 form .buttons input[type="reset"]
-  +btn-button($standard, $grey6)
-  +btn-override($danger, $white)
+  @extend .btn.danger
 

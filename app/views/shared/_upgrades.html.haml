@@ -1,12 +1,11 @@
 
-#upgrade_notifications
-  .upgrade-icon
-    %span !
-    .upgrade-notification
-      #lt_ie8.upgrade-container
-        %p Please upgrade to the <a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie-9/worldwide-languages">latest version of Internet Explorer</a> or use one of the following browsers:
-        %br
-        %p <a href="http://www.google.com/chrome/">Google Chrome</a>, <a href="http://www.apple.com/safari/download/">Apple Safari</a>, or <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a>
-      #no_js.upgrade-container
-        %p For full functionality of this site it is necessary to enable <a href="http://www.enable-javascript.com/" target="_blank">JavaScript</a>.
+.upgrade-notifications
+  %a.upgrade-close(href="#" data-dismiss="alert") &times;
+  .upgrade-notification
+    .lt-ie8-msg.upgrade-container
+      %p
+        Please upgrade to the <a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie-9/worldwide-languages">latest version of Internet Explorer</a> or use one of the following browsers:
+        <a href="http://www.google.com/chrome/">Google Chrome</a>, <a href="http://www.apple.com/safari/download/">Apple Safari</a>, or <a href="http://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a>
+    .no-js-msg.upgrade-container
+      %p For full functionality of this site it is necessary to enable <a href="http://www.enable-javascript.com/" target="_blank">JavaScript</a>.
 
