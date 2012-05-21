@@ -64,6 +64,9 @@
 
 .tabs.stacked .caret
   float: right
+  @if $legacy-support-for-ie
+    *margin: -1.5em 10px 0 0
+
 .tabs.stacked .active .caret
   border-top-color: $component_active
 

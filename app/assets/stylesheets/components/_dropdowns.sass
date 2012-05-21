@@ -13,10 +13,8 @@
 .dropdown.open .caret
   border-top-color: $link_hover
 
-// To get IE7 support, comment out +visuallyhidden and uncomment display:none
 .dropdown-menu
   +visuallyhidden
-  // display: none
   +box-shadow($drop_dark)
   background-clip: padding-box
   background-color: $body_bg
@@ -38,6 +36,8 @@
   padding: 0.3em 1em
   clear: both
   white-space: nowrap
+  @if $legacy-support-for-ie
+    *padding-left: 0
 
 .dropdown-menu li > a:hover,
 .dropdown-menu .active > a,
@@ -58,10 +58,13 @@
   height: 1px
   overflow: hidden
 
+@if $legacy-support-for-ie
+  .dropdown.open
+    *z-index: $zindex_dropdown
+
 // Open state for the dropdown
 .dropdown.open .dropdown-toggle
   color: $link_hover
-
 
 .dropdown.open .dropdown-menu,
 .typeahead.dropdown-menu,
@@ -69,7 +72,7 @@
   +visuallyshown
   display: block
   position: absolute
-  clip: initial
+  clip: inherit
   border: 1px solid $component_border
   padding: 0.3em 0
   &.drop-up

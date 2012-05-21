@@ -17,8 +17,9 @@ audio, canvas, video
   margin: 0
   padding: 0
   display: inline-block
-  *display: inline
-  *zoom: 1
+  @if $legacy-support-for-ie
+    *display: inline
+    *zoom: 1
 
 audio:not([controls])
   display: none
@@ -60,11 +61,13 @@ svg:not(:root)
 button, input, select, textarea, label
   font-size: 100%
   vertical-align: baseline
-  *vertical-align: middle
+  @if $legacy-support-for-ie
+    *vertical-align: middle
 
 legend
   white-space: normal
-  *margin-left: -7px
+  @if $legacy-support-for-ie
+    *margin-left: -7px
 
 button, input
   line-height: normal
@@ -86,7 +89,8 @@ input[type="submit"]
   cursor: pointer
   line-height: normal
   -webkit-appearance: button
-  *overflow: visible
+  @if $legacy-support-for-ie
+    *overflow: visible
 
 button[disabled],
 a.disabled,

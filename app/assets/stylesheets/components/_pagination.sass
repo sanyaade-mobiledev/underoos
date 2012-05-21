@@ -8,7 +8,7 @@
 .pagination > li > a
   background-color: $component_bg
   border: 1px solid $component_border
-  border-right-width: 0
+  border-left-width: 0
   padding: 0.5em 0.75em
   &:hover
     background-color: $component_bg_hover
@@ -28,10 +28,10 @@
   color: $disabled_color
 
 .pagination > li:first-child > a
+  border-left-width: 1px
   border-radius: $radii 0 0 $radii
 .pagination > li:last-child > a
   border-radius: 0 $radii $radii 0
-  border-right-width: 1px
 
 .pagination-center
   text-align: center

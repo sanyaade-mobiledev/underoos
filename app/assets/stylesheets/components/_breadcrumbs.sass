@@ -3,13 +3,8 @@
   +inline-block
   color: $component_normal
   font-weight: bold
-  &:after
-    content: " /"
-  &:last-child:after
-    content: ""
 
 .breadcrumb > li > a
-  display: inline
   color: $link_normal
 
 .breadcrumb > li > a:hover,
@@ -18,5 +13,9 @@
 
 .breadcrumb > .active > a,
 .breadcrumb > .active > a:hover
+  color: $component_normal
+
+.breadcrumb .divider
+  padding: 0 0.25em
   color: $component_normal
 

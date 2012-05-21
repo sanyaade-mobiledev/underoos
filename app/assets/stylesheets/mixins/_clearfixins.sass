@@ -1,7 +1,8 @@
 
 // The [micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/)
 @mixin clearfixer
-  *zoom: 1
+  @if $legacy-support-for-ie
+    *zoom: 1
   &:before, &:after
     content: ""
     display: table
@@ -11,5 +12,6 @@
 // The standard `clearfix` found in Compass
 @mixin clearfix
   overflow: hidden
-  *zoom: 1
+  @if $legacy-support-for-ie
+    *zoom: 1
 
