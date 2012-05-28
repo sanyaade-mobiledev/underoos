@@ -74,11 +74,13 @@ styles:
     - require: mixins/_image-tools.sass
     - require: mixins/_inline-block.sass
     - require: mixins/_ir.sass
+    - require: mixins/_responsive.sass
+    - require: mixins/_sticky-footer.sass
     - require: mixins/_tab-focus.sass
     - require: mixins/_timing-equations.sass
     - require: mixins/_visibility.sass
 
-    - require: polyfills/_poyfills.sass
+    - require: polyfills/_polyfills.sass
       template: overview.mustache
     - require: polyfills/_functions.sass
     - require: polyfills/_box-shadow.sass

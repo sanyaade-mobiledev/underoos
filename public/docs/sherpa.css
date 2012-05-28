@@ -219,6 +219,10 @@ sherpa.css
   border-color: #e05a5a;
   color: #b22222;
 }
+.sherpa-notes li a {
+  text-decoration: underline;
+}
+
 .sherpa-showcase {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
