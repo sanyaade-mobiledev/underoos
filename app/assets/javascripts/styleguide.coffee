@@ -4,18 +4,14 @@ class Styleguide
     @initialize()
 
   initialize: ->
-    @domLookup()
     @addListeners()
     @prettyCodeBlocks()
     @showcaseTips()
 
-  domLookup: ->
-    @progress_bars = $('.progress')
-    @table_demo = $('#underoos_table_demo a')
-
   addListeners: ->
-    @progress_bars.on 'click', @showcaseProgressBars
-    @table_demo.on 'click', @showcaseTableDemo
+    $('.progress').on 'click', @showcaseProgressBars
+    $('#underoos_table_demo a').on 'click', @showcaseTableDemo
+    $('#underoos_upgrade_demo').on 'click', @showcaseUpgrades
 
   # Underoos Specific
   prettyCodeBlocks: ->
@@ -41,6 +37,11 @@ class Styleguide
     style = target.data('table')
     table = target.parents('.sherpa-showcase').first().find('table')
     table.toggleClass(style)
+
+  showcaseUpgrades: (e) =>
+    e.preventDefault()
+    $('html').toggleClass('no-js lt-ie8')
+    window.scrollTo(0,0)
 
 
 # Get this party started
