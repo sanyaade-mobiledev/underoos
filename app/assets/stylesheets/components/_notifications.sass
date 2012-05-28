@@ -8,14 +8,18 @@
   margin: 1em 0
   a
     text-decoration: underline
-  header, footer, p
+  .notify-header,
+  .notify-content,
+  .notify-footer
     padding-right: 1.2em
-  header
+  .notify-header
     margin-bottom: 0.5em
-  footer
+  .notify-footer
     margin-top: 1.25em
-    &.footer-right
-      text-align: right
+  .notify-heading
+    +font-size(20)
+  .notify-right
+    text-align: right
   .close
     position: absolute
     top: 7px
@@ -30,27 +34,27 @@
   &.important
     +background-darken-border(lighten($important, 40%))
     color: $important
-    .heading
+    .notify-heading
       color: $important
   &.success
     +background-darken-border(lighten($success, 40%))
     color: $success
-    .heading
+    .notify-heading
       color: $success
   &.warning
     +background-darken-border(lighten($warning, 30%))
     color: darken($warning, 15%)
-    .heading
+    .notify-heading
       color: darken($warning, 15%)
   &.danger, &.error, &.alert
     +background-darken-border(lighten($danger, 40%))
     color: $danger
-    .heading
+    .notify-heading
       color: $danger
   &.primary
     +background-darken-border(lighten($primary, 40%))
     color: $primary
-    .heading
+    .notify-heading
       color: $primary
 
 // Flash messages container
@@ -96,13 +100,10 @@
   right: 1.5em
 
 // Override some of the settings for full screen messages
-.flash-messages .notification,
-.flash-messages .pop-notification
+.flash-messages .notification
   margin: 0
 
 .flash-messages.top .notification,
-.flash-messages.top .pop-notification,
-.flash-messages.bottom .notification,
-.flash-messages.bottom .pop-notification
+.flash-messages.bottom .notification
   border-radius: 0
 
