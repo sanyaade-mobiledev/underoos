@@ -1,4 +1,30 @@
 
+//~
+// Paddles are commonly used in carousel or simple paging navigations.
+// The default set contains simple inline links represented as a group.
+//
+// To allow paddles to float on the sides of the container, apply the
+// `.prev` and `.next` classes to the containing paddles `li` element.
+//
+// Notes:
+// - **Pro Tip** Add `.paddles-center` or `.paddles-right` on the `.paddles` element to adjust alignment for a group
+//
+// Usage:
+//    <nav>
+//      <ul class="paddles">
+//        <li> <a href="#">&larr; Previous</a> </li>
+//        <li> <a href="#">Next &rarr;</a> </li>
+//      </ul>
+//    </nav>
+//
+//    <!-- Aligned Paddles -->
+//    <nav style="margin-top:1.5em">
+//      <ul class="paddles">
+//        <li class="prev"><a href="#">&larr; Previous</a> </li>
+//        <li class="next"><a href="#">Next &rarr;</a> </li>
+//      </ul>
+//    </nav>
+
 .paddles
   +clearfixer
   list-style: none

@@ -1,18 +1,87 @@
 
-// ## Base Sizing
+//~
+// The theme file contains grid dimensions, fonts, colorways, shadows,
+// z-indexes, sprite positions and various other global reference variables.
+// Themes are the basis of the design language used throughout the application.
+//
+// ##### Greyscale palette
+// Swatch                                                                           | Variable                | Hex
+// -------------------------------------------------------------------------------- | ----------------------- | --------
+// <span class="sherpa-swatch" style="background-color:#000;"></span>               | `$black`                | `#000`
+// <span class="sherpa-swatch" style="background-color:#111;"></span>               | `$grey1`                | `#111`
+// <span class="sherpa-swatch" style="background-color:#222;"></span>               | `$grey2`                | `#222`
+// <span class="sherpa-swatch" style="background-color:#333;"></span>               | `$grey3`                | `#333`
+// <span class="sherpa-swatch" style="background-color:#444;"></span>               | `$grey4`                | `#444`
+// <span class="sherpa-swatch" style="background-color:#555;"></span>               | `$grey5`                | `#555`
+// <span class="sherpa-swatch" style="background-color:#666;"></span>               | `$grey6`                | `#666`
+// <span class="sherpa-swatch" style="background-color:#777;"></span>               | `$grey7`                | `#777`
+// <span class="sherpa-swatch" style="background-color:#888;"></span>               | `$grey8`                | `#888`
+// <span class="sherpa-swatch" style="background-color:#999;"></span>               | `$grey9`                | `#999`
+// <span class="sherpa-swatch" style="background-color:#aaa;"></span>               | `$greyA`                | `#aaa`
+// <span class="sherpa-swatch" style="background-color:#bbb;"></span>               | `$greyB`                | `#bbb`
+// <span class="sherpa-swatch" style="background-color:#ccc;"></span>               | `$greyC`                | `#ccc`
+// <span class="sherpa-swatch" style="background-color:#ddd;"></span>               | `$greyD`                | `#ddd`
+// <span class="sherpa-swatch" style="background-color:#eee;"></span>               | `$greyE`                | `#eee`
+// <span class="sherpa-swatch" style="background-color:#fff;"></span>               | `$white`                | `#fff`
+// <span class="sherpa-swatch" style="background-color:#fafafa;"></span>            | `$off_white`            | `#fafafa`
+// <span class="sherpa-swatch" style="background-color:#eaeaea;"></span>            | `$off_grey`             | `#eaeaea`
+//
+// ##### mc roy g biv palette
+// Swatch                                                                           | Variable                | Hex
+// -------------------------------------------------------------------------------- | ----------------------- | --------
+// <span class="sherpa-swatch" style="background-color:#ff00ff;"></span>            | `$magenta`              | `#ff00ff`
+// <span class="sherpa-swatch" style="background-color:#00ffff;"></span>            | `$cyan`                 | `#00ffff`
+// <span class="sherpa-swatch" style="background-color:#b22222;"></span>            | `$red`                  | `#b22222`
+// <span class="sherpa-swatch" style="background-color:#f26522;"></span>            | `$orange`               | `#f26522`
+// <span class="sherpa-swatch" style="background-color:#ffc40d;"></span>            | `$yellow`               | `#ffc40d`
+// <span class="sherpa-swatch" style="background-color:#46a546;"></span>            | `$green`                | `#46a546`
+// <span class="sherpa-swatch" style="background-color:#268bd2;"></span>            | `$blue`                 | `#268bd2`
+// <span class="sherpa-swatch" style="background-color:#4b0082;"></span>            | `$indigo`               | `#4b0082`
+// <span class="sherpa-swatch" style="background-color:#ee82ee;"></span>            | `$violet`               | `#ee82ee`
+//
+// ##### Status palette
+// Swatch                                                                           | Variable                | Hex
+// -------------------------------------------------------------------------------- | ----------------------- | --------
+// <span class="sherpa-swatch" style="background-color:#f5f5f5;"></span>            | `$standard`             | `#f5f5f5`
+// <span class="sherpa-swatch" style="background-color:#999;"></span>               | `$info`                 | `$grey9`
+// <span class="sherpa-swatch" style="background-color:#268bd2;"></span>            | `$important`            | `$blue`
+// <span class="sherpa-swatch" style="background-color:#46a546;"></span>            | `$success`              | `$green`
+// <span class="sherpa-swatch" style="background-color:#ffc40d;"></span>            | `$warning`              | `$yellow`
+// <span class="sherpa-swatch" style="background-color:#b22222;"></span>            | `$error`                | `$red`
+// <span class="sherpa-swatch" style="background-color:#b22222;"></span>            | `$danger`               | `$red`
+//
+// ##### Miscellaneous swatches
+// Swatch                                                                           | Variable                | Hex
+// -------------------------------------------------------------------------------- | ----------------------- | --------
+// <span class="sherpa-swatch" style="background-color:#268bd2;"></span>            | `$primary`              | `$blue`
+// <span class="sherpa-swatch" style="background-color:#bbb;"></span>               | `$disabled_color`       | `$greyB`
+// <span class="sherpa-swatch" style="background-color:#eee;"></span>               | `$disabled_bg`          | `$greyE`
+// <span class="sherpa-swatch" style="background-color:#ddd;"></span>               | `$disabled_border`      | `$greyD`
+// <span class="sherpa-swatch" style="background-color:#52a8ec;"></span>            | `$focus_color`          | `#52a8ec`
+// <span class="sherpa-swatch" style="background-color:rgba(#52a8ec, 0.8);"></span> | `$focus_border`         | `rgba($focus_color, 0.8)`
+// <span class="sherpa-swatch" style="background-color:#666;"></span>               | `$component_normal`     | `$grey6`
+// <span class="sherpa-swatch" style="background-color:#fff;"></span>               | `$component_active`     | `$white`
+// <span class="sherpa-swatch" style="background-color:transparent;"></span>        | `$component_bg`         | `transparent`
+// <span class="sherpa-swatch" style="background-color:#eee;"></span>               | `$component_bg_hover`   | `$greyE`
+// <span class="sherpa-swatch" style="background-color:#268bd2;"></span>            | `$component_bg_active`  | `$primary`
+// <span class="sherpa-swatch" style="background-color:#ccc;"></span>               | `$component_border`     | `$greyC`
+// <span class="sherpa-swatch" style="background-color:#b3b3b3;"></span>            | `$component_border_alt` | `darken($component_border, 10%)`
+//
+// Notes:
+// - **Heads Up!** Not every setting is shown within the styleguide. Please refer to the actual file for more settings.
+
+// Base Sizing
 $context_px: 16
 $base_font_size: 14
 $base_width: 1000
 $base_line_height: 1.2
 $base_vertical: $base_font_size * $base_line_height
 
-// ## Fonts
+// Fonts
 $sans_norm: "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 $serif_norm: "Georgia", "Times", "Times New Roman", serif
 $code_norm: "Bitstream Vera Sans Mono", "Menslo LG M", "Menlo", "Monaco", monospace
 
-
-// ## Colors
 
 // greyscale
 $black: #000
@@ -73,7 +142,7 @@ $component_bg_active: $primary
 $component_border: $greyC
 $component_border_alt: darken($component_border, 10%)
 
-// ## Shadows
+// Shadows
 $text_inset_dark: 0 -1px 0 rgba($black, 0.25)
 $text_inset_lite: 0 -1px 0 rgba($white, 0.75)
 $text_drop_dark: 0 1px 0 rgba($black, 0.25)
@@ -88,7 +157,7 @@ $focus_inset: inset 0 1px 3px rgba($black, 0.1)
 $focus_glow: 0 0 8px rgba($focus_color, 0.6)
 $error_glow: 0 0 8px rgba($red, 0.6)
 
-// ## Misc
+// Misc
 $radii: 0.4em
 $speed: 0.25s
 

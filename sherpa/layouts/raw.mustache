@@ -1,0 +1,25 @@
+
+<section class="sherpa-section sherpa-clearfix" id="{{{id}}}">
+
+  {{#filepath}}
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="{{{repo_url}}}" target="_blank">{{{filepath}}}</a>
+    </div>
+  {{/filepath}}
+
+  {{#file.markup}}
+    <div class="sherpa-description sherpa-clearfix">
+      {{{file.markup}}}
+    </div>
+  {{/file.markup}}
+
+  {{#file.blocks}}
+    {{#usage_showcase}}
+      <div class="sherpa-showcase sherpa-clearfix">
+        {{{usage_showcase}}}
+      </div>
+    {{/usage_showcase}}
+  {{/file.blocks}}
+
+</section>
+

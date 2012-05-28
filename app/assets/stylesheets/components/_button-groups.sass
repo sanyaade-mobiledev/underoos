@@ -1,4 +1,47 @@
 
+//~ Button Groups &amp; Toolbars
+//
+// Use button groups to join multiple buttons together as one composite component.
+// Build them with a series of `<a>` or `<button>` elements.
+//
+// Building off of the button group concept, combine multiple `.button-group`
+// elements under a `.button-toolbar` container to form a navigation system.
+//
+// Utilizing [Bootstrap's Button plugin](http://twitter.github.com/bootstrap/javascript.html#buttons),
+// you can control a button group or toolbars states by utilizing the `data-toggle` attribute.
+// Passing either `buttons-checkbox` or `buttons-radio` will allow buttons within a group to
+// behave similar to their `input` counterparts.
+//
+// Notes:
+// - **Heads Up!** When creating custom buttons (i.e. `btn`), add the necessary overrides within `button-groups.sass` file
+//
+// Usage:
+//    <!-- Button Group -->
+//    <nav class="button-group" data-toggle="buttons-radio">
+//      <a class="btn" href="#">Left</a>
+//      <a class="btn active" href="#">Middle 1</a>
+//      <a class="btn" href="#">Middle 2</a>
+//      <a class="btn" href="#">Right</a>
+//    </nav>
+//    <br />
+//
+//    <!-- Button Toolbar -->
+//    <section class="button-toolbar" data-toggle="buttons-checkbox">
+//      <nav class="button-group">
+//        <a class="btn" href="#">1</a>
+//        <a class="btn" href="#">2</a>
+//        <a class="btn" href="#">3</a>
+//      </nav>
+//      <nav class="button-group">
+//        <a class="btn active" href="#">4</a>
+//      </nav>
+//      <nav class="button-group">
+//        <a class="btn" href="#">5</a>
+//        <a class="btn" href="#">6</a>
+//        <a class="btn" href="#">7</a>
+//      </nav>
+//    </section>
+
 // Settings for button groups and toolbars
 .button-group
   +clearfixer

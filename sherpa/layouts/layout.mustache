@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>{{{title}}} {{{page}}}</title>
+    <meta name="imagetoolbar" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="apple-mobile-web-app-capable" content="YES" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/assets/underoos.css" type="text/css">
+    <link rel="stylesheet" href="sherpa.css" type="text/css">
+  </head>
+
+  <body id="{{{page}}}">
+    <aside class="sherpa-sidebar">
+      <nav>
+        <a class="sherpa-brand" href="/">{{{title}}}</a>
+        {{#nav}}
+          <ul class="sherpa-dox-nav sherpa-nav-list">
+            <li class="sherpa-nav-header">Documentation</li>
+            {{{nav}}}
+          </ul>
+        {{/nav}}
+
+      {{#aside}}
+        <ul class="sherpa-anchor-nav sherpa-nav-list">
+          {{{aside}}}
+        </ul>
+      {{/aside}}
+      </nav>
+    </aside>
+
+    <section class="sherpa-wrapper sherpa-container sherpa-clearfix">
+
+      <section class="sherpa-section sherpa-clearfix">
+        <h1 class="sherpa-page-heading">{{{page}}}</h1>
+      </section>
+
+      {{{layout}}}
+    </section>
+
+    <footer class="sherpa-footer sherpa-container sherpa-clearfix">
+      <p>&raquo; <a href="{{{repo}}}">Github Repository</a></p>
+      <p>&raquo; <a href="https://www.pivotaltracker.com/projects/485221">Pivotal Tracker</a></p>
+    </footer>
+    <script src="/assets/underoos.js"></script>
+    <script src="/assets/docs.js"></script>
+  </body>
+</html>
+

@@ -1,4 +1,75 @@
 
+//~
+// A basic notification is set on a container with the `.notification` class.
+// They come in the standard flavors for various types of alerts.
+// Notifications utilize [Bootstrap's alert plugin](http://twitter.github.com/bootstrap/javascript.html#alerts)
+// for closing a notification.
+//
+// #### Block Notifications
+// Block notifications are similar to the basic notification, in fact nothing
+// needs to change on the outer container. Just add a `.notify-header`,
+// `.notify-content` and/or `.notify-footer` to the internal markup to provide
+// more information around the notification.
+//
+// Notes:
+// - **Pro Tip!** Add the class `.notify-right` to any element to right align text for block notifications
+//
+// Usage:
+//    <!-- Basic Notifications -->
+//    <div class="notification fade in">
+//      <p><strong>Default!</strong> This is the default notification</p>
+//      <a class="close" data-dismiss="alert" href="#">&times;</a>
+//    </div>
+//    <div class="notification info fade in">
+//      <p><strong>Info or Notice!</strong> Use this for general information</p>
+//      <a class="close" data-dismiss="alert" href="#">&times;</a>
+//    </div>
+//    <div class="notification important fade in">
+//      <p><strong>Important!</strong> Something important is said here</p>
+//      <a class="close" data-dismiss="alert" href="#">&times;</a>
+//    </div>
+//    <div class="notification success fade in">
+//      <p><strong>Success!</strong> Congratulations, you get a trophy</p>
+//      <a class="close" data-dismiss="alert" href="#">&times;</a>
+//    </div>
+//    <div class="notification warning fade in">
+//      <p><strong>Warning!</strong> You're first and final</p>
+//      <a class="close" data-dismiss="alert" href="#">&times;</a>
+//    </div>
+//    <div class="notification danger fade in">
+//      <p><strong>Danger or Error or Alert!</strong> Something bad happened here</p>
+//      <a class="close" data-dismiss="alert" href="#">&times;</a>
+//    </div>
+//    <div class="notification primary fade in">
+//      <p><strong>Primary!</strong> The CI coloring for alerts</p>
+//      <a class="close" data-dismiss="alert" href="#">&times;</a>
+//    </div>
+//
+//    <!-- Block Notifications -->
+//    <div class="notification success fade in">
+//      <header class="notify-header">
+//        <h4 class="notify-heading">Block Notification</h4>
+//      </header>
+//      <section class="notify-content">
+//        <p>~lorem_medium</p>
+//      </section>
+//      <footer class="notify-footer">
+//        <button class="btn success">Action</button>
+//        <button class="btn danger">Cancel</button>
+//      </footer>
+//      <a class="close" data-dismiss="alert" href="#">&times;</a>
+//    </div>
+//    <div class="notification danger fade in">
+//      <section class="notify-content">
+//        <p><strong>Yikes! This doesn't have a header and the footer is on the right!</strong> ~lorem_medium</p>
+//      </section>
+//      <footer class="notify-footer notify-right">
+//        <button class="btn success">Action</button>
+//        <button class="btn danger">Cancel</button>
+//      </footer>
+//      <a class="close" data-dismiss="alert" href="#">&times;</a>
+//    </div>
+
 // Base notification used for @extends
 .base-notification
   +background-darken-border($standard)
@@ -57,7 +128,28 @@
     .notify-heading
       color: $primary
 
-// Flash messages container
+//~
+// #### Flash Notifications
+// Flash notifications enhance the `.notification` component by allowing them
+// to appear fixed above all other elements on the page. Wrap the notifications
+// within a `#flash_messages.flash-messages` container at the root of the body,
+// sprinkle a little JavaScript and you're ready to go.
+//
+// Adding different positional classes to the `.flash-messages` container will
+// allow them to appear in different quadrants of the viewport as seen below.
+//
+// Type              | Class                        | Usage
+// ----------------- | ---------------------------- | --------------------
+// Top               | `.flash-messages.top`        | Fixed to the top of the browser, spans the entire viewport (_the default_)
+// Bottom            | `.flash-messages.bottom`     | Fixed to the bottom of the browser, spans the entire viewport
+// Top left          | `.flash-messages.top-left`   | Upper left quadrant of the viewport, with a size of 25%
+// Top right         | `.flash-messages.top-right`  | Upper right quadrant of the viewport, with a size of 25%
+// Top center        | `.flash-messages.top-center` | Upper center quadrant of the viewport, with a size of 50%
+// Middle            | `.flash-messages.top-center` | Dead center baby, with a size of 50%
+//
+// Notes:
+// - **Pro Tip!** The `.flash-messages` container is flexible enough to allow any component to be injected
+
 .flash-messages,
 .flash-messages.top
   position: fixed

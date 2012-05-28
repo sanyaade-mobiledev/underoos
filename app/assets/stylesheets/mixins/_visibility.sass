@@ -1,15 +1,26 @@
 
-// Totally hidden from screen readers and browsers
+//~
+// Controls various visibility settings applied to elements.
+//
+// Mixin            | Params  | Usage
+// ---------------- | ------- | ----------------------------------------------
+// `+hidden`        | _none_  | Totally hidden from screen readers and browsers
+// `+shown`         | _none_  | Reverse the effects of `hidden`
+// `+visuallyhidden`| _none_  | Only visually hidden, still available to screen readers
+// `+visuallyshown` | _none_  | Reverse the settings applied by `.visuallyhidden`
+// `+invisible`     | _none_  | Hide visually and from screenreaders, but maintain layout
+//
+// Notes:
+// - **Pro Tip!** All of these mixins are available as helper classes for use with `@extend`
+
 @mixin hidden
   display: none !important
   visibility: hidden
 
-// Reverse the effects of hidden
 @mixin shown
   display: block
   visibility: visible
 
-// Only visually hidden, still available to screen readers
 @mixin visuallyhidden
   border: 0
   clip: rect(0 0 0 0)
@@ -28,7 +39,6 @@
     width: auto
     height: auto
 
-// Reverse the settings applied by `.visuallyhidden`
 @mixin visuallyshown
   clip: auto
   clip: rect(auto auto auto auto)
@@ -38,7 +48,6 @@
   width: auto
   height: auto
 
-// Hide visually and from screenreaders, but maintain layout
 @mixin invisible
   visibility: hidden
 

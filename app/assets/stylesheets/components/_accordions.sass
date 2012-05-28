@@ -1,4 +1,43 @@
 
+//~
+// The accordion navigation system requires [Bootstrap's Collapse plugin](http://twitter.github.com/bootstrap/javascript.html#collapse).
+// They're used typically in navigation systems to toggle and reveal sections of content.
+//
+// Accordions support multiple open sections or just single sections based on the `data` attributes set within the links.
+//
+// Notes:
+// - **Pro Tip!** Remove the `data-parent` attribute from the links to have multiple accordion items open at the same time
+//
+// Usage:
+//    <nav>
+//      <ul id="accordion_example">
+//        <li class="accordion-group">
+//          <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_1">Accordion Group 1</a>
+//          <section class="collapse" id="collapse_1">
+//            <article class="accordion-inner">
+//              <p>...</p>
+//            </article>
+//          </section>
+//        </li>
+//        <li class="accordion-group">
+//          <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_2">Accordion Group 2</a>
+//          <section class="collapse" id="collapse_2">
+//            <article class="accordion-inner">
+//              <p>...</p>
+//            </article>
+//          </section>
+//        </li>
+//        <li class="accordion-group">
+//          <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_3">Accordion Group 3</a>
+//          <section class="collapse" id="collapse_3">
+//            <article class="accordion-inner">
+//              <p>...</p>
+//            </article>
+//          </section>
+//        </li>
+//      </ul>
+//    </nav>
+
 // Typically the `li`
 .accordion-group
   border: 1px solid $component_border

@@ -1,6 +1,25 @@
 
-// The "x" close button used in messaging systems.
-// In your markup use `&times;` for the content
+//~
+// Use the close icon to dismiss modals and notifications.
+//
+// Coupled with Bootstrap's [alert](http://twitter.github.com/bootstrap/javascript.html#alerts)
+// or [modal](http://twitter.github.com/bootstrap/javascript.html#modals) plugins, you can pass
+// the `data-dismiss="modal|alert"` attribute to trigger dismissal.
+//
+// Close Icon                                | Markup
+// ----------------------------------------- | ---------------------------
+// <a class="close" href="#">&times;</a>     | `<a class="close" href="#">&times;</a>`
+// <a class="close alt" href="#">&times;</a> | `<a class="close alt" href="#">&times;</a>` (_for use on darker backgrounds_)
+//
+// Notes:
+// - **Pro Tip!** In your markup use `&times;` for the content
+//
+// Usage:
+//    <div class="notification fade in">
+//      <p><strong>Try Me!</strong> Dismiss this notification</p>
+//      <a class="close" data-dismiss="alert">&times;</a>
+//    </div>
+
 .close
   +font-size(20)
   +opacity(0.3)

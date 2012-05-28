@@ -1,4 +1,19 @@
 
+//~
+// Apply the `.breadcrumb` class to the `ol` or `ul` element to provide linkable
+// references to nested sections within the application. Utilize a `span.divider`
+// for separation of links.
+//
+// Usage:
+//    <nav>
+//      <ol class="nav breadcrumb">
+//        <li><a href="#">Level 1 <span class="divider">/</span></a></li>
+//        <li><a href="#">Level 2 <span class="divider">/</span></a></li>
+//        <li><a href="#">Level 3 <span class="divider">/</span></a></li>
+//        <li class="active"><a href="#">Active</a></li>
+//      </ol>
+//    </nav>
+
 .breadcrumb > li
   +inline-block
   color: $component_normal

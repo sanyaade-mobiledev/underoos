@@ -1,0 +1,3565 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>underoos styles</title>
+    <meta name="imagetoolbar" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="apple-mobile-web-app-capable" content="YES" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/assets/underoos.css" type="text/css">
+    <link rel="stylesheet" href="sherpa.css" type="text/css">
+  </head>
+
+  <body id="styles">
+    <aside class="sherpa-sidebar">
+      <nav>
+        <a class="sherpa-brand" href="/">underoos</a>
+          <ul class="sherpa-dox-nav sherpa-nav-list">
+            <li class="sherpa-nav-header">Documentation</li>
+            <li><a href='index.html'>Overview</a></li><li><a href='styles.html'>Styles</a></li><li><a href='images.html'>Images</a></li>
+          </ul>
+
+        <ul class="sherpa-anchor-nav sherpa-nav-list">
+          <li class='sherpa-nav-header'>Settings</li><li><a href='#settings-settings'>Settings</a></li><li><a href='#settings-config'>Config</a></li><li><a href='#settings-theme'>Theme</a></li><li class='sherpa-nav-header'>Base</li><li><a href='#base-base'>Base</a></li><li><a href='#base-normalize'>Normalize</a></li><li><a href='#base-scaffold'>Scaffold</a></li><li><a href='#base-helpers'>Helpers</a></li><li><a href='#base-transitions'>Transitions</a></li><li><a href='#base-typography'>Typography</a></li><li><a href='#base-button-btn-mixin'>btn mixin</a></li><li><a href='#base-elements'>Elements</a></li><li><a href='#base-tables'>Tables</a></li><li><a href='#base-forms'>Forms</a></li><li class='sherpa-nav-header'>Components</li><li><a href='#components-components'>Components</a></li><li><a href='#components-button-groups'>Button Groups &amp; Toolbars</a></li><li><a href='#components-dropdowns'>Dropdowns</a></li><li><a href='#components-tabs'>Tabs</a></li><li class='sherpa-subnav'><a href='#components-tabs-stacked-tabs'>&ndash; Stacked Tabs</a></li><li><a href='#components-pills'>Pills</a></li><li class='sherpa-subnav'><a href='#components-pills-stacked-pills'>&ndash; Stacked Pills</a></li><li><a href='#components-nav-lists'>Nav lists</a></li><li><a href='#components-breadcrumbs'>Breadcrumbs</a></li><li><a href='#components-pagination'>Pagination</a></li><li><a href='#components-accordions'>Accordions</a></li><li><a href='#components-paddles'>Paddles</a></li><li><a href='#components-navbars'>Navbars</a></li><li><a href='#components-modals'>Modals</a></li><li><a href='#components-notifications'>Notifications</a></li><li class='sherpa-subnav'><a href='#components-notifications-flash-notifications'>&ndash; Flash Notifications</a></li><li><a href='#components-progress-bars'>Progress bars</a></li><li><a href='#components-media'>Media Items</a></li><li><a href='#components-carousels'>Carousels</a></li><li><a href='#components-wells'>Wells</a></li><li><a href='#components-decals'>Decals</a></li><li><a href='#components-tooltips'>Tooltips</a></li><li><a href='#components-popovers'>Popovers</a></li><li><a href='#components-carets'>Carets</a></li><li><a href='#components-close'>Close</a></li><li class='sherpa-nav-header'>Layouts</li><li><a href='#layouts-layouts'>Layouts</a></li><li><a href='#layouts-containers'>Containers</a></li><li><a href='#layouts-queries'>Queries</a></li><li><a href='#layouts-upgrades'>Upgrades</a></li><li><a href='#layouts-print'>Print</a></li><li class='sherpa-nav-header'>Mixins</li><li><a href='#mixins-mixins'>Mixins</a></li><li><a href='#mixins-arrows'>Arrows</a></li><li><a href='#mixins-clearfixins'>Clearfixins</a></li><li><a href='#mixins-coloring'>Coloring</a></li><li><a href='#mixins-columns'>Columns</a></li><li><a href='#mixins-conversions'>Conversions</a></li><li><a href='#mixins-font-size'>Font size</a></li><li><a href='#mixins-image-tools'>Image tools</a></li><li><a href='#mixins-inline-block'>Inline block</a></li><li><a href='#mixins-ir'>Image replacement</a></li><li><a href='#mixins-tab-focus'>Tab focus</a></li><li><a href='#mixins-timing-equations'>Timing-equations</a></li><li><a href='#mixins-visibility'>Visibility</a></li><li class='sherpa-nav-header'>Polyfills</li><li><a href='#polyfills-functions'>Functions</a></li><li><a href='#polyfills-box-shadow'>Box-shadow</a></li><li><a href='#polyfills-box-sizing'>Box-sizing</a></li><li><a href='#polyfills-opacity'>Opacity</a></li><li><a href='#polyfills-transition'>Transition</a></li><li><a href='#polyfills-user-select'>User-select</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="sherpa-wrapper sherpa-container sherpa-clearfix">
+
+      <section class="sherpa-section sherpa-clearfix">
+        <h1 class="sherpa-page-heading">styles</h1>
+      </section>
+
+      
+<section class="sherpa-section sherpa-clearfix" id="settings-settings">
+
+    <div class="sherpa-overview sherpa-clearfix">
+      <h2>Settings</h2>
+<br /><p>Contains the main configuration settings for compiling to css and color
+palettes and themes found in the application.</p>
+
+    </div>
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/settings/_config.sass" target="_blank">settings/_config.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="settings-config">
+        <h2>Config</h2>
+<br /><p>Configure settings for Underoos and Compass for css output. Disabling some of
+these features will result in smaller code, but less overall support. See the
+<a href="http://compass-style.org/reference/compass/support/">Compass reference</a> for other
+available settings.</p>
+<br /><table><thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>$legacy-support-for-ie</code></td>
+<td><code>true</code></td>
+<td>Toggles ie7 hacks (supported by Compass and Underoos polyfills)</td>
+</tr>
+<tr>
+<td><code>$legacy-support-for-ie8</code></td>
+<td><code>true</code></td>
+<td>Toggles ie8 hacks (requires Compass)</td>
+</tr>
+<tr>
+<td><code>$support-for-original-webkit-gradients</code></td>
+<td><code>true</code></td>
+<td>Toggles support for the the original webkit style gradients (requires Compass)</td>
+</tr>
+<tr>
+<td><code>$experimental-support-for-mozilla</code></td>
+<td><code>true</code></td>
+<td>Toggles support for the <code>-moz</code> prefix (requires Compass)</td>
+</tr>
+<tr>
+<td><code>$experimental-support-for-opera</code></td>
+<td><code>true</code></td>
+<td>Toggles support for the <code>-o</code> prefix (requires Compass)</td>
+</tr>
+<tr>
+<td><code>$experimental-support-for-microsoft</code></td>
+<td><code>true</code></td>
+<td>Toggles support for the <code>-ms</code> prefix (requires Compass)</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> When compiling for iOS and Android, disable ie and experimental support for other browsers</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/settings/_theme.sass" target="_blank">settings/_theme.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="settings-theme">
+        <h2>Theme</h2>
+<br /><p>The theme file contains grid dimensions, fonts, colorways, shadows,
+z-indexes, sprite positions and various other global reference variables.
+Themes are the basis of the design language used throughout the application.</p>
+<br /><h4>Greyscale palette</h4>
+<br /><table><thead>
+<tr>
+<th>Swatch</th>
+<th>Variable</th>
+<th>Hex</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#000;"></span></td>
+<td><code>$black</code></td>
+<td><code>#000</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#111;"></span></td>
+<td><code>$grey1</code></td>
+<td><code>#111</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#222;"></span></td>
+<td><code>$grey2</code></td>
+<td><code>#222</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#333;"></span></td>
+<td><code>$grey3</code></td>
+<td><code>#333</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#444;"></span></td>
+<td><code>$grey4</code></td>
+<td><code>#444</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#555;"></span></td>
+<td><code>$grey5</code></td>
+<td><code>#555</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#666;"></span></td>
+<td><code>$grey6</code></td>
+<td><code>#666</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#777;"></span></td>
+<td><code>$grey7</code></td>
+<td><code>#777</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#888;"></span></td>
+<td><code>$grey8</code></td>
+<td><code>#888</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#999;"></span></td>
+<td><code>$grey9</code></td>
+<td><code>#999</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#aaa;"></span></td>
+<td><code>$greyA</code></td>
+<td><code>#aaa</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#bbb;"></span></td>
+<td><code>$greyB</code></td>
+<td><code>#bbb</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#ccc;"></span></td>
+<td><code>$greyC</code></td>
+<td><code>#ccc</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#ddd;"></span></td>
+<td><code>$greyD</code></td>
+<td><code>#ddd</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#eee;"></span></td>
+<td><code>$greyE</code></td>
+<td><code>#eee</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#fff;"></span></td>
+<td><code>$white</code></td>
+<td><code>#fff</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#fafafa;"></span></td>
+<td><code>$off_white</code></td>
+<td><code>#fafafa</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#eaeaea;"></span></td>
+<td><code>$off_grey</code></td>
+<td><code>#eaeaea</code></td>
+</tr>
+</tbody></table>
+<br /><h4>mc roy g biv palette</h4>
+<br /><table><thead>
+<tr>
+<th>Swatch</th>
+<th>Variable</th>
+<th>Hex</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#ff00ff;"></span></td>
+<td><code>$magenta</code></td>
+<td><code>#ff00ff</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#00ffff;"></span></td>
+<td><code>$cyan</code></td>
+<td><code>#00ffff</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#b22222;"></span></td>
+<td><code>$red</code></td>
+<td><code>#b22222</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#f26522;"></span></td>
+<td><code>$orange</code></td>
+<td><code>#f26522</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#ffc40d;"></span></td>
+<td><code>$yellow</code></td>
+<td><code>#ffc40d</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#46a546;"></span></td>
+<td><code>$green</code></td>
+<td><code>#46a546</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#268bd2;"></span></td>
+<td><code>$blue</code></td>
+<td><code>#268bd2</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#4b0082;"></span></td>
+<td><code>$indigo</code></td>
+<td><code>#4b0082</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#ee82ee;"></span></td>
+<td><code>$violet</code></td>
+<td><code>#ee82ee</code></td>
+</tr>
+</tbody></table>
+<br /><h4>Status palette</h4>
+<br /><table><thead>
+<tr>
+<th>Swatch</th>
+<th>Variable</th>
+<th>Hex</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#f5f5f5;"></span></td>
+<td><code>$standard</code></td>
+<td><code>#f5f5f5</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#999;"></span></td>
+<td><code>$info</code></td>
+<td><code>$grey9</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#268bd2;"></span></td>
+<td><code>$important</code></td>
+<td><code>$blue</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#46a546;"></span></td>
+<td><code>$success</code></td>
+<td><code>$green</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#ffc40d;"></span></td>
+<td><code>$warning</code></td>
+<td><code>$yellow</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#b22222;"></span></td>
+<td><code>$error</code></td>
+<td><code>$red</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#b22222;"></span></td>
+<td><code>$danger</code></td>
+<td><code>$red</code></td>
+</tr>
+</tbody></table>
+<br /><h4>Miscellaneous swatches</h4>
+<br /><table><thead>
+<tr>
+<th>Swatch</th>
+<th>Variable</th>
+<th>Hex</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#268bd2;"></span></td>
+<td><code>$primary</code></td>
+<td><code>$blue</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#bbb;"></span></td>
+<td><code>$disabled_color</code></td>
+<td><code>$greyB</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#eee;"></span></td>
+<td><code>$disabled_bg</code></td>
+<td><code>$greyE</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#ddd;"></span></td>
+<td><code>$disabled_border</code></td>
+<td><code>$greyD</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#52a8ec;"></span></td>
+<td><code>$focus_color</code></td>
+<td><code>#52a8ec</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:rgba(#52a8ec, 0.8);"></span></td>
+<td><code>$focus_border</code></td>
+<td><code>rgba($focus_color, 0.8)</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#666;"></span></td>
+<td><code>$component_normal</code></td>
+<td><code>$grey6</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#fff;"></span></td>
+<td><code>$component_active</code></td>
+<td><code>$white</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:transparent;"></span></td>
+<td><code>$component_bg</code></td>
+<td><code>transparent</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#eee;"></span></td>
+<td><code>$component_bg_hover</code></td>
+<td><code>$greyE</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#268bd2;"></span></td>
+<td><code>$component_bg_active</code></td>
+<td><code>$primary</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#ccc;"></span></td>
+<td><code>$component_border</code></td>
+<td><code>$greyC</code></td>
+</tr>
+<tr>
+<td><span class="sherpa-swatch" style="background-color:#b3b3b3;"></span></td>
+<td><code>$component_border_alt</code></td>
+<td><code>darken($component_border, 10%)</code></td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Heads Up!</strong> Not every setting is shown within the styleguide. Please refer to the actual file for more settings.</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix" id="base-base">
+
+    <div class="sherpa-overview sherpa-clearfix">
+      <h1>Base</h1>
+<br /><p>Sets up normalization and base styles for native elements and core classes.</p>
+
+    </div>
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/base/_normalize.sass" target="_blank">base/_normalize.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="base-normalize">
+        <h2>Normalize</h2>
+<br /><p>Normalize and reset base elements to allow browsers to render all element
+more consistently and in line with modern standards.</p>
+<br /><p>Normalization and resets based on</p>
+<br /><ul>
+<li><a href="http://necolas.github.com/normalize.css/">normalize.css</a></li>
+<li><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+<li><a href="http://meyerweb.com/eric/tools/css/reset/">Eric Meyer&#39;s reset</a></li>
+</ul>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/base/_scaffold.sass" target="_blank">base/_scaffold.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="base-scaffold">
+        <h2>Scaffold</h2>
+<br /><p>Setup main scaffolding elements for <code>html</code>, <code>body</code> and generic link elements</p>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/base/_helpers.sass" target="_blank">base/_helpers.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="base-helpers">
+        <h2>Helpers</h2>
+<br /><p>Utility classes for use with <code>@extends</code>, or just common items found in every project!
+All helpers are also available as mixins, following the same name</p>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/base/_transitions.sass" target="_blank">base/_transitions.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="base-transitions">
+        <h2>Transitions</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/base/_typography.sass" target="_blank">base/_typography.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="base-typography">
+        <h2>Typography</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/base/_button-btn-mixin.sass" target="_blank">base/_button-btn-mixin.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="base-button-btn-mixin">
+        <h2>btn mixin</h2>
+<br /><p>Buttons look boxy and sexy</p>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/base/_elements.sass" target="_blank">base/_elements.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="base-elements">
+        <h2>Elements</h2>
+<br /><p>Allow images to be fluid</p>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/base/_tables.sass" target="_blank">base/_tables.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="base-tables">
+        <h2>Tables</h2>
+<br /><p>Building tables is additive around the classes applied to the top level <code>&lt;table&gt;</code> element.
+By combining any of the following classes, the table can be given a different look and feel.</p>
+<br /><table><thead>
+<tr>
+<th>Name</th>
+<th>Class</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Base</td>
+<td><em>none</em></td>
+<td>The base table creates division in data with horizontal dividers.</td>
+</tr>
+<tr>
+<td>Box</td>
+<td><code>.box</code></td>
+<td>Renders the table with exterior boundries for all table rows.</td>
+</tr>
+<tr>
+<td>Vertical border</td>
+<td><code>.vborder</code></td>
+<td>Renders the table with vertical divisions for table data.</td>
+</tr>
+<tr>
+<td>Banded</td>
+<td><code>.banded</code></td>
+<td>Renders alternating <code>&lt;tbody&gt;</code> rows with a different color.</td>
+</tr>
+<tr>
+<td>Header</td>
+<td><code>.thead-decorate</code></td>
+<td>Fills the <code>thead</code> with a background fill</td>
+</tr>
+<tr>
+<td>Footer</td>
+<td><code>.tfoot-decorate</code></td>
+<td>Fills the <code>tfoot</code> with a background fill</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <table>
+  <caption>Table Caption</caption>
+  <thead>
+    <tr>
+      <th>
+        <a href="#">#</a>
+      </th>
+      <th>Table Header</th>
+      <th>
+        <a class="ascending" href="#">Ascending <span class="caret"></span></a>
+      </th>
+      <th>
+        <a class="descending" href="#">Descending <span class="caret north"></span></a>
+      </th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td colspan="4">Set the <code>colspan</code> attribute to span the width of the table for footers.</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Table Data</td>
+      <td>One</td>
+      <td>Three</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>
+        <a href="#">Click me!</a>
+      </td>
+      <td>Two</td>
+      <td>Two</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>
+        <a href="#">Click me!</a>
+      </td>
+      <td>Three</td>
+      <td>One</td>
+    </tr>
+  </tbody>
+</table>
+<!-- Testing purposes only -->
+<nav class="button-group" data-toggle="buttons-checkbox" id="underoos_table_demo" style="margin-top:1.5em;">
+  <a class="btn" href="#" data-table="box">Box</a>
+  <a class="btn" href="#" data-table="vborder">Vertical Border</a>
+  <a class="btn" href="#" data-table="banded">Banded</a>
+  <a class="btn" href="#" data-table="thead-decorate">Header</a>
+  <a class="btn" href="#" data-table="tfoot-decorate">Footer</a>
+</nav>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;table&gt;
+  &lt;caption&gt;Table Caption&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;
+        &lt;a href=&quot;#&quot;&gt;#&lt;/a&gt;
+      &lt;/th&gt;
+      &lt;th&gt;Table Header&lt;/th&gt;
+      &lt;th&gt;
+        &lt;a class=&quot;ascending&quot; href=&quot;#&quot;&gt;Ascending &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;/th&gt;
+      &lt;th&gt;
+        &lt;a class=&quot;descending&quot; href=&quot;#&quot;&gt;Descending &lt;span class=&quot;caret north&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan=&quot;4&quot;&gt;Set the &lt;code&gt;colspan&lt;/code&gt; attribute to span the width of the table for footers.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Table Data&lt;/td&gt;
+      &lt;td&gt;One&lt;/td&gt;
+      &lt;td&gt;Three&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;#&quot;&gt;Click me!&lt;/a&gt;
+      &lt;/td&gt;
+      &lt;td&gt;Two&lt;/td&gt;
+      &lt;td&gt;Two&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;#&quot;&gt;Click me!&lt;/a&gt;
+      &lt;/td&gt;
+      &lt;td&gt;Three&lt;/td&gt;
+      &lt;td&gt;One&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+<br />&lt;!-- Testing purposes only --&gt;
+&lt;nav class=&quot;button-group&quot; data-toggle=&quot;buttons-checkbox&quot; id=&quot;underoos_table_demo&quot; style=&quot;margin-top:1.5em;&quot;&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot; data-table=&quot;box&quot;&gt;Box&lt;/a&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot; data-table=&quot;vborder&quot;&gt;Vertical Border&lt;/a&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot; data-table=&quot;banded&quot;&gt;Banded&lt;/a&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot; data-table=&quot;thead-decorate&quot;&gt;Header&lt;/a&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot; data-table=&quot;tfoot-decorate&quot;&gt;Footer&lt;/a&gt;
+&lt;/nav&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Demo!</strong> Toggle the buttons in the button group to showcase various table settings, follow along in the web inspector!</li>
+<li><strong>Pro Tip!</strong> Add <code>.ascending</code> or <code>.descending</code> to <code>th &gt; a</code> elements with an enclosed <code>span caret</code> for sorting icons</li>
+</ul>
+
+      </div>
+
+      <div class="sherpa-description sherpa-notes sherpa-warnings sherpa-clearfix">
+        <h4>Warnings:</h4>
+<br /><ul>
+<li><strong>Heads Up!</strong> Tables throughout the styleguide may not contain the exact styles of the application</li>
+</ul>
+
+      </div>
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/base/_forms.sass" target="_blank">base/_forms.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="base-forms">
+        <h2>Forms</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix" id="components-components">
+
+    <div class="sherpa-overview sherpa-clearfix">
+      <h1>Components</h1>
+<br /><p>Components are common patterns used in many applications but are not defined as base element tags.
+The modules are used as a starting point and helps define the markup structure in use.</p>
+
+    </div>
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_button-groups.sass" target="_blank">components/_button-groups.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-button-groups">
+        <h2>Button Groups &amp; Toolbars</h2>
+<br /><p>Use button groups to join multiple buttons together as one composite component.
+Build them with a series of <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> elements.</p>
+<br /><p>Building off of the button group concept, combine multiple <code>.button-group</code>
+elements under a <code>.button-toolbar</code> container to form a navigation system.</p>
+<br /><p>Utilizing <a href="http://twitter.github.com/bootstrap/javascript.html#buttons">Bootstrap&#39;s Button plugin</a>,
+you can control a button group or toolbars states by utilizing the <code>data-toggle</code> attribute.
+Passing either <code>buttons-checkbox</code> or <code>buttons-radio</code> will allow buttons within a group to
+behave similar to their <code>input</code> counterparts.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <!-- Button Group -->
+<nav class="button-group" data-toggle="buttons-radio">
+  <a class="btn" href="#">Left</a>
+  <a class="btn active" href="#">Middle 1</a>
+  <a class="btn" href="#">Middle 2</a>
+  <a class="btn" href="#">Right</a>
+</nav>
+<br />
+<!-- Button Toolbar -->
+<section class="button-toolbar" data-toggle="buttons-checkbox">
+  <nav class="button-group">
+    <a class="btn" href="#">1</a>
+    <a class="btn" href="#">2</a>
+    <a class="btn" href="#">3</a>
+  </nav>
+  <nav class="button-group">
+    <a class="btn active" href="#">4</a>
+  </nav>
+  <nav class="button-group">
+    <a class="btn" href="#">5</a>
+    <a class="btn" href="#">6</a>
+    <a class="btn" href="#">7</a>
+  </nav>
+</section>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;!-- Button Group --&gt;
+&lt;nav class=&quot;button-group&quot; data-toggle=&quot;buttons-radio&quot;&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;Left&lt;/a&gt;
+  &lt;a class=&quot;btn active&quot; href=&quot;#&quot;&gt;Middle 1&lt;/a&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;Middle 2&lt;/a&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;Right&lt;/a&gt;
+&lt;/nav&gt;
+&lt;br /&gt;
+<br />&lt;!-- Button Toolbar --&gt;
+&lt;section class=&quot;button-toolbar&quot; data-toggle=&quot;buttons-checkbox&quot;&gt;
+  &lt;nav class=&quot;button-group&quot;&gt;
+    &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;
+    &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;
+    &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;
+  &lt;/nav&gt;
+  &lt;nav class=&quot;button-group&quot;&gt;
+    &lt;a class=&quot;btn active&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;
+  &lt;/nav&gt;
+  &lt;nav class=&quot;button-group&quot;&gt;
+    &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;
+    &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;6&lt;/a&gt;
+    &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;7&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/section&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Heads Up!</strong> When creating custom buttons (i.e. <code>btn</code>), add the necessary overrides within <code>button-groups.sass</code> file</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_dropdowns.sass" target="_blank">components/_dropdowns.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-dropdowns">
+        <h2>Dropdowns</h2>
+<br /><p>Apply the <code>data-toggle=&quot;dropdown</code> attribute to a target link or button, then structure a dropdown navigation
+under a <code>ul.dropdown-menu</code>. Within the menu item, there should be a listing of links and optional dividers.</p>
+<br /><p>Dropdown&#39;s utilize a <code>visuallyhidden</code> and <code>visuallyshown</code> technique rather than a <code>display: none|block</code>
+to allow screen readers to still discover the inner content.</p>
+<br /><p>Dropdown&#39;s require <a href="http://twitter.github.com/bootstrap/javascript.html#dropdowns">Bootstrap&#39;s Dropdown plugin</a>.</p>
+<br /><p>When the target link is floated right, the dropdown will automatically align it&#39;s dropdown menu accordingly.
+Dropdowns are designed to work with <code>tabs</code>, <code>pills</code>, <code>navbars</code>, <code>button-groups</code> and <code>split buttons</code>.</p>
+<br /><p>For elements outside of a list, typically in stand alone buttons, utilize
+the <code>button-group</code> structure for creating dropdowns. Split button dropdowns
+allow an action on the left while the dropdown on the right can be used
+for contextual menu items.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <section class="button-toolbar">
+  <!-- Basic dropdown with typical menu structure -->
+  <nav class="button-group">
+    <ul class="nav">
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown">Dropdown<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Subnav 1</a></li>
+          <li><a href="#">Subnav 2</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Subnav 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- Button Dropdowns -->
+  <nav class="button-group">
+    <button class="btn dropdown-toggle" data-toggle="dropdown">Default<span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Subnav 1</a></li>
+      <li><a href="#">Subnav 2</a></li>
+    </ul>
+  </nav>
+  <nav class="button-group">
+    <button class="btn success dropdown-toggle" data-toggle="dropdown">Success<span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Subnav 1</a></li>
+      <li><a href="#">Subnav 2</a></li>
+    </ul>
+  </nav>
+  <nav class="button-group">
+    <button class="btn danger dropdown-toggle" data-toggle="dropdown">Danger Dropup<span class="caret"></span></button>
+    <ul class="dropdown-menu drop-up">
+      <li><a href="#">Subnav 1</a></li>
+      <li><a href="#">Subnav 2</a></li>
+    </ul>
+  </nav>
+  <!-- Split Button Dropdowns -->
+  <nav class="button-group">
+    <button class="btn important">Action</button>
+    <button class="btn important dropdown-toggle" data-toggle="dropdown"><span class="caret split"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Subnav 1</a></li>
+      <li><a href="#">Subnav 2</a></li>
+    </ul>
+  </nav>
+  <nav class="button-group">
+    <button class="btn warning">Warning</button>
+    <button class="btn warning dropdown-toggle" data-toggle="dropdown"><span class="caret split"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Subnav 1</a></li>
+      <li><a href="#">Subnav 2</a></li>
+    </ul>
+  </nav>
+</section>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;section class=&quot;button-toolbar&quot;&gt;
+<br />  &lt;!-- Basic dropdown with typical menu structure --&gt;
+  &lt;nav class=&quot;button-group&quot;&gt;
+    &lt;ul class=&quot;nav&quot;&gt;
+      &lt;li class=&quot;dropdown&quot;&gt;
+        &lt;a href=&quot;#&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 1&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 2&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 3&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+<br />  &lt;!-- Button Dropdowns --&gt;
+  &lt;nav class=&quot;button-group&quot;&gt;
+    &lt;button class=&quot;btn dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;Default&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;nav class=&quot;button-group&quot;&gt;
+    &lt;button class=&quot;btn success dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;Success&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;nav class=&quot;button-group&quot;&gt;
+    &lt;button class=&quot;btn danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;Danger Dropup&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu drop-up&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+<br />  &lt;!-- Split Button Dropdowns --&gt;
+  &lt;nav class=&quot;button-group&quot;&gt;
+    &lt;button class=&quot;btn important&quot;&gt;Action&lt;/button&gt;
+    &lt;button class=&quot;btn important dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;span class=&quot;caret split&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;nav class=&quot;button-group&quot;&gt;
+    &lt;button class=&quot;btn warning&quot;&gt;Warning&lt;/button&gt;
+    &lt;button class=&quot;btn warning dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;span class=&quot;caret split&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/section&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> Add the <code>.drop-up</code> class to the <code>.dropdown-menu</code> to pop the menu above the target</li>
+<li><strong>Pro Tip!</strong> For split button dropdowns, add the <code>.split</code> class to the caret <code>&lt;span&gt;</code> to center within the button</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_tabs.sass" target="_blank">components/_tabs.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-tabs">
+        <h2>Tabs</h2>
+<br /><p>Tabs follow the same markup structure as other navigation elements.
+Tabs like other navigation elements require the <code>.nav</code> class for
+layout. Add <code>.nav .tabs</code> to a <code>ul</code> or <code>ol</code> element.</p>
+<br /><h4>Togglable Tabs</h4>
+<br /><p>To utilize a drop dead simple version of hiding and showing content
+related to a tab navigation, utilize <a href="http://twitter.github.com/bootstrap/javascript.html#tabs">Bootstrap&#39;s Tab plugin</a>.
+The base structure of tabs doesn&#39;t change, except to include a few more
+classes on the links and the <code>href</code> attribute the button will target.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <nav>
+  <ul class="nav tabs">
+    <li class="active">
+      <a data-toggle="tab" href="#tab_one">Tab One</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#tab_two">Tab Two</a>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tab Three<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li>
+          <a data-toggle="tab" href="#tab_three-1">Subnav 1</a>
+        </li>
+        <li>
+          <a data-toggle="tab" href="#tab_three-2">Subnav 2</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<!-- Tabable Content -->
+<section class="tab-content" style="margin-top:1.25em;">
+  <article class="tab-pane active" id="tab_one">
+    <p>Tab <span class="decal primary">one</span> content</p>
+  </article>
+  <article class="tab-pane" id="tab_two">
+    <p>Tab <span class="decal primary">two</span> content</p>
+  </article>
+  <article class="tab-pane" id="tab_three-1">
+    <p>Tab <span class="decal primary">three</span>: subnav <span class="decal primary">1</span> content</p>
+  </article>
+  <article class="tab-pane" id="tab_three-2">
+    <p>Tab <span class="decal primary">three</span>: subnav <span class="decal primary">2</span> content</p>
+  </article>
+</section>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;nav&gt;
+  &lt;ul class=&quot;nav tabs&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;
+      &lt;a data-toggle=&quot;tab&quot; href=&quot;#tab_one&quot;&gt;Tab One&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a data-toggle=&quot;tab&quot; href=&quot;#tab_two&quot;&gt;Tab Two&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot;&gt;
+      &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Tab Three&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;
+          &lt;a data-toggle=&quot;tab&quot; href=&quot;#tab_three-1&quot;&gt;Subnav 1&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a data-toggle=&quot;tab&quot; href=&quot;#tab_three-2&quot;&gt;Subnav 2&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;!-- Tabable Content --&gt;
+&lt;section class=&quot;tab-content&quot; style=&quot;margin-top:1.25em;&quot;&gt;
+  &lt;article class=&quot;tab-pane active&quot; id=&quot;tab_one&quot;&gt;
+    &lt;p&gt;Tab &lt;span class=&quot;decal primary&quot;&gt;one&lt;/span&gt; content&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;tab-pane&quot; id=&quot;tab_two&quot;&gt;
+    &lt;p&gt;Tab &lt;span class=&quot;decal primary&quot;&gt;two&lt;/span&gt; content&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;tab-pane&quot; id=&quot;tab_three-1&quot;&gt;
+    &lt;p&gt;Tab &lt;span class=&quot;decal primary&quot;&gt;three&lt;/span&gt;: subnav &lt;span class=&quot;decal primary&quot;&gt;1&lt;/span&gt; content&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;tab-pane&quot; id=&quot;tab_three-2&quot;&gt;
+    &lt;p&gt;Tab &lt;span class=&quot;decal primary&quot;&gt;three&lt;/span&gt;: subnav &lt;span class=&quot;decal primary&quot;&gt;2&lt;/span&gt; content&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/section&gt;
+</code></pre>
+
+      </div>
+
+
+
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-tabs-stacked-tabs">
+        <h3>Stacked Tabs</h3>
+<br /><p>Stack tabs by adding the class <code>.stacked</code> to the <code>.tabs</code> element.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <nav>
+  <ul class="nav tabs stacked">
+    <li class="active">
+      <a href="#">Tab One</a>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tab Two<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="#">Subnav 1</a>
+        </li>
+        <li>
+          <a href="#">Subnav 2</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Tab Three</a>
+    </li>
+  </ul>
+</nav>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;nav&gt;
+  &lt;ul class=&quot;nav tabs stacked&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;Tab One&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot;&gt;
+      &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Tab Two&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;Subnav 1&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;Subnav 2&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Tab Three&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+      </div>
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_pills.sass" target="_blank">components/_pills.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-pills">
+        <h2>Pills</h2>
+<br /><p>Pills are similar to tabs, and follow the same markup structure as other
+navigation elements. Pills like other navigation elements require the
+<code>.nav</code> class for layout. Add <code>.nav .pills</code> to a <code>ul</code> or <code>ol</code> element.</p>
+<br /><h4>Togglable Pills</h4>
+<br /><p>To utilize a drop dead simple version of hiding and showing content
+related to a pill navigation, utilize <a href="http://twitter.github.com/bootstrap/javascript.html#tabs">Bootstrap&#39;s Tab plugin</a>.
+The base structure of pills doesn&#39;t change, except to include a few more
+classes on the links and the <code>href</code> attribute the button will target.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <nav>
+  <ul class="nav pills">
+    <li class="active">
+      <a data-toggle="pill" href="#pill_one">Pill One</a>
+    </li>
+    <li>
+      <a data-toggle="pill" href="#pill_two">Pill Two</a>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pill Three<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li>
+          <a data-toggle="pill" href="#pill_three-1">Subnav 1</a>
+        </li>
+        <li>
+          <a data-toggle="pill" href="#pill_three-2">Subnav 2</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<!-- Pillable Content -->
+<section class="pill-content" style="margin-top:1.25em;">
+  <article class="pill-pane active" id="pill_one">
+    <p>Pill <span class="decal primary">one</span> content</p>
+  </article>
+  <article class="pill-pane" id="pill_two">
+    <p>Pill <span class="decal primary">two</span> content</p>
+  </article>
+  <article class="pill-pane" id="pill_three-1">
+    <p>Pill <span class="decal primary">three</span>: subnav <span class="decal primary">1</span> content</p>
+  </article>
+  <article class="pill-pane" id="pill_three-2">
+    <p>Pill <span class="decal primary">three</span>: subnav <span class="decal primary">2</span> content</p>
+  </article>
+</section>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;nav&gt;
+  &lt;ul class=&quot;nav pills&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;
+      &lt;a data-toggle=&quot;pill&quot; href=&quot;#pill_one&quot;&gt;Pill One&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a data-toggle=&quot;pill&quot; href=&quot;#pill_two&quot;&gt;Pill Two&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot;&gt;
+      &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Pill Three&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;
+          &lt;a data-toggle=&quot;pill&quot; href=&quot;#pill_three-1&quot;&gt;Subnav 1&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a data-toggle=&quot;pill&quot; href=&quot;#pill_three-2&quot;&gt;Subnav 2&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;!-- Pillable Content --&gt;
+&lt;section class=&quot;pill-content&quot; style=&quot;margin-top:1.25em;&quot;&gt;
+  &lt;article class=&quot;pill-pane active&quot; id=&quot;pill_one&quot;&gt;
+    &lt;p&gt;Pill &lt;span class=&quot;decal primary&quot;&gt;one&lt;/span&gt; content&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;pill-pane&quot; id=&quot;pill_two&quot;&gt;
+    &lt;p&gt;Pill &lt;span class=&quot;decal primary&quot;&gt;two&lt;/span&gt; content&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;pill-pane&quot; id=&quot;pill_three-1&quot;&gt;
+    &lt;p&gt;Pill &lt;span class=&quot;decal primary&quot;&gt;three&lt;/span&gt;: subnav &lt;span class=&quot;decal primary&quot;&gt;1&lt;/span&gt; content&lt;/p&gt;
+  &lt;/article&gt;
+  &lt;article class=&quot;pill-pane&quot; id=&quot;pill_three-2&quot;&gt;
+    &lt;p&gt;Pill &lt;span class=&quot;decal primary&quot;&gt;three&lt;/span&gt;: subnav &lt;span class=&quot;decal primary&quot;&gt;2&lt;/span&gt; content&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/section&gt;
+</code></pre>
+
+      </div>
+
+
+
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-pills-stacked-pills">
+        <h3>Stacked Pills</h3>
+<br /><p>Stack pills by adding the class <code>.stacked</code> to the <code>.pills</code> element.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <nav>
+  <ul class="nav pills stacked">
+    <li class="active">
+      <a href="#">Pill One</a>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pill Two<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="#">Subnav 1</a>
+        </li>
+        <li>
+          <a href="#">Subnav 2</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Pill Three</a>
+    </li>
+  </ul>
+</nav>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;nav&gt;
+  &lt;ul class=&quot;nav pills stacked&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;Pill One&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot;&gt;
+      &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Pill Two&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;Subnav 1&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;Subnav 2&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Pill Three&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+      </div>
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_nav-lists.sass" target="_blank">components/_nav-lists.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-nav-lists">
+        <h2>Nav lists</h2>
+<br /><p>Nav lists are typically used in aside style navigation systems. They utilize the same markup structure as <code>tabs</code> and <code>pills</code>.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <nav>
+  <ul class="nav nav-list">
+    <li class="nav-header">List Header</li>
+    <li><a href="#">List 1</a></li>
+    <li class="active"><a href="#">List 2</a></li>
+    <li><a href="#">List 3</a></li>
+    <li class="nav-header">Another List Header</li>
+    <li><a href="#">List 4</a></li>
+  </ul>
+</nav>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;nav&gt;
+  &lt;ul class=&quot;nav nav-list&quot;&gt;
+    &lt;li class=&quot;nav-header&quot;&gt;List Header&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;List 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;List 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;List 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;nav-header&quot;&gt;Another List Header&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;List 4&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> To include a header, just supply the <code>li</code> with the class <code>.nav-header</code></li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_breadcrumbs.sass" target="_blank">components/_breadcrumbs.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-breadcrumbs">
+        <h2>Breadcrumbs</h2>
+<br /><p>Apply the <code>.breadcrumb</code> class to the <code>ol</code> or <code>ul</code> element to provide linkable
+references to nested sections within the application. Utilize a <code>span.divider</code>
+for separation of links.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <nav>
+  <ol class="nav breadcrumb">
+    <li><a href="#">Level 1 <span class="divider">/</span></a></li>
+    <li><a href="#">Level 2 <span class="divider">/</span></a></li>
+    <li><a href="#">Level 3 <span class="divider">/</span></a></li>
+    <li class="active"><a href="#">Active</a></li>
+  </ol>
+</nav>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;nav&gt;
+  &lt;ol class=&quot;nav breadcrumb&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Level 1 &lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Level 2 &lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Level 3 &lt;span class=&quot;divider&quot;&gt;/&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Active&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+</code></pre>
+
+      </div>
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_pagination.sass" target="_blank">components/_pagination.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-pagination">
+        <h2>Pagination</h2>
+<br /><p>Apply the <code>.pagination</code> class to the <code>ol</code> or <code>ul</code> element to
+represent pagination navigation.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <nav>
+  <ol class="nav pagination">
+    <li class="disabled"><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li class="active"><a href="#">2</a></li>
+    <li><a href="#" rel="next">3</a></li>
+    <li class="disabled"><a href="#">&hellip;</a></li>
+    <li><a href="#">11</a></li>
+    <li><a href="#">12</a></li>
+    <li><a href="#">&raquo;</a></li>
+  </ol>
+</nav>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;nav&gt;
+  &lt;ol class=&quot;nav pagination&quot;&gt;
+    &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;&amp;hellip;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;11&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;12&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip</strong> Add <code>.pagination-center</code> or <code>.pagination-right</code> on the <code>.pagination</code> container to change the alignment</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_accordions.sass" target="_blank">components/_accordions.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-accordions">
+        <h2>Accordions</h2>
+<br /><p>The accordion navigation system requires <a href="http://twitter.github.com/bootstrap/javascript.html#collapse">Bootstrap&#39;s Collapse plugin</a>.
+They&#39;re used typically in navigation systems to toggle and reveal sections of content.</p>
+<br /><p>Accordions support multiple open sections or just single sections based on the <code>data</code> attributes set within the links.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <nav>
+  <ul id="accordion_example">
+    <li class="accordion-group">
+      <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_1">Accordion Group 1</a>
+      <section class="collapse" id="collapse_1">
+        <article class="accordion-inner">
+          <p>...</p>
+        </article>
+      </section>
+    </li>
+    <li class="accordion-group">
+      <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_2">Accordion Group 2</a>
+      <section class="collapse" id="collapse_2">
+        <article class="accordion-inner">
+          <p>...</p>
+        </article>
+      </section>
+    </li>
+    <li class="accordion-group">
+      <a class="accordion-toggle" data-parent="#accordion_example" data-toggle="collapse" href="#collapse_3">Accordion Group 3</a>
+      <section class="collapse" id="collapse_3">
+        <article class="accordion-inner">
+          <p>...</p>
+        </article>
+      </section>
+    </li>
+  </ul>
+</nav>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;nav&gt;
+  &lt;ul id=&quot;accordion_example&quot;&gt;
+    &lt;li class=&quot;accordion-group&quot;&gt;
+      &lt;a class=&quot;accordion-toggle&quot; data-parent=&quot;#accordion_example&quot; data-toggle=&quot;collapse&quot; href=&quot;#collapse_1&quot;&gt;Accordion Group 1&lt;/a&gt;
+      &lt;section class=&quot;collapse&quot; id=&quot;collapse_1&quot;&gt;
+        &lt;article class=&quot;accordion-inner&quot;&gt;
+          &lt;p&gt;...&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;accordion-group&quot;&gt;
+      &lt;a class=&quot;accordion-toggle&quot; data-parent=&quot;#accordion_example&quot; data-toggle=&quot;collapse&quot; href=&quot;#collapse_2&quot;&gt;Accordion Group 2&lt;/a&gt;
+      &lt;section class=&quot;collapse&quot; id=&quot;collapse_2&quot;&gt;
+        &lt;article class=&quot;accordion-inner&quot;&gt;
+          &lt;p&gt;...&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;accordion-group&quot;&gt;
+      &lt;a class=&quot;accordion-toggle&quot; data-parent=&quot;#accordion_example&quot; data-toggle=&quot;collapse&quot; href=&quot;#collapse_3&quot;&gt;Accordion Group 3&lt;/a&gt;
+      &lt;section class=&quot;collapse&quot; id=&quot;collapse_3&quot;&gt;
+        &lt;article class=&quot;accordion-inner&quot;&gt;
+          &lt;p&gt;...&lt;/p&gt;
+        &lt;/article&gt;
+      &lt;/section&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> Remove the <code>data-parent</code> attribute from the links to have multiple accordion items open at the same time</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_paddles.sass" target="_blank">components/_paddles.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-paddles">
+        <h2>Paddles</h2>
+<br /><p>Paddles are commonly used in carousel or simple paging navigations.
+The default set contains simple inline links represented as a group.</p>
+<br /><p>To allow paddles to float on the sides of the container, apply the
+<code>.prev</code> and <code>.next</code> classes to the containing paddles <code>li</code> element.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <nav>
+  <ul class="paddles">
+    <li> <a href="#">&larr; Previous</a> </li>
+    <li> <a href="#">Next &rarr;</a> </li>
+  </ul>
+</nav>
+<!-- Aligned Paddles -->
+<nav style="margin-top:1.5em">
+  <ul class="paddles">
+    <li class="prev"><a href="#">&larr; Previous</a> </li>
+    <li class="next"><a href="#">Next &rarr;</a> </li>
+  </ul>
+</nav>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;nav&gt;
+  &lt;ul class=&quot;paddles&quot;&gt;
+    &lt;li&gt; &lt;a href=&quot;#&quot;&gt;&amp;larr; Previous&lt;/a&gt; &lt;/li&gt;
+    &lt;li&gt; &lt;a href=&quot;#&quot;&gt;Next &amp;rarr;&lt;/a&gt; &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+<br />&lt;!-- Aligned Paddles --&gt;
+&lt;nav style=&quot;margin-top:1.5em&quot;&gt;
+  &lt;ul class=&quot;paddles&quot;&gt;
+    &lt;li class=&quot;prev&quot;&gt;&lt;a href=&quot;#&quot;&gt;&amp;larr; Previous&lt;/a&gt; &lt;/li&gt;
+    &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Next &amp;rarr;&lt;/a&gt; &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip</strong> Add <code>.paddles-center</code> or <code>.paddles-right</code> on the <code>.paddles</code> element to adjust alignment for a group</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_navbars.sass" target="_blank">components/_navbars.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-navbars">
+        <h2>Navbars</h2>
+<br /><p>Typically used for application or page level navigation systems
+Navbars can contain just about any type of navigation component,
+search forms, button groups and drop downs.</p>
+<br /><p>Navbars support responsive behavior, by adding a button with <code>data-toggle=&quot;collapse&quot;
+data-target=&quot;#target_id&quot;</code>. Add the corresponding class <code>.nav-collapse</code>
+and the id based on the target (<code>#target_id</code>) on the collapsable container.
+Make sure to utilize styles contained within the media queries as well.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn info btn-navbar" data-toggle="collapse" data-target="#collapse_example">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Brand</a>
+      <nav class="nav-collapse" id="collapse_example">
+        <ul class="nav">
+          <li><a href="#">Link 1</a></li>
+          <li class="active"><a href="#">Link 2</a></li>
+          <li class="plain-text">Plain Text</li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Subnav 1</a></li>
+              <li><a href="#">Subnav 2</a></li>
+            </ul>
+          </li>
+        </ul>
+        <section class="pull-right">
+          <form class="form-search">
+            <ol>
+              <li>
+                <input class="search-query" name="test[searchbar]" placeholder="search" type="search">
+                <button class="btn primary" type="submit">Go</button>
+              </li>
+            </ol>
+          </form>
+          <ul class="nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Subnav 1</a></li>
+                <li><a href="#">Subnav 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+  </div>
+</div>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;div class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;navbar-inner&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;a class=&quot;btn info btn-navbar&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#collapse_example&quot;&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
+      &lt;nav class=&quot;nav-collapse&quot; id=&quot;collapse_example&quot;&gt;
+        &lt;ul class=&quot;nav&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;plain-text&quot;&gt;Plain Text&lt;/li&gt;
+          &lt;li class=&quot;dropdown&quot;&gt;
+            &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Dropdown&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 1&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;section class=&quot;pull-right&quot;&gt;
+          &lt;form class=&quot;form-search&quot;&gt;
+            &lt;ol&gt;
+              &lt;li&gt;
+                &lt;input class=&quot;search-query&quot; name=&quot;test[searchbar]&quot; placeholder=&quot;search&quot; type=&quot;search&quot;&gt;
+                &lt;button class=&quot;btn primary&quot; type=&quot;submit&quot;&gt;Go&lt;/button&gt;
+              &lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/form&gt;
+          &lt;ul class=&quot;nav&quot;&gt;
+            &lt;li class=&quot;dropdown&quot;&gt;
+              &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Dropdown&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subnav 2&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/section&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> Add the <code>.fixed</code> class to the <code>.navbar</code> container to fix the navigation system to the top of the page</li>
+<li><strong>Pro Tip!</strong> For a responsive navbar, include <a href="http://twitter.github.com/bootstrap/javascript.html#collapse">Bootstrap&#39;s Collapse plugin</a> and add the necessary elements to the structure</li>
+</ul>
+
+      </div>
+
+      <div class="sherpa-description sherpa-notes sherpa-warnings sherpa-clearfix">
+        <h4>Warnings:</h4>
+<br /><ul>
+<li><strong>Warning!</strong> It&#39;s a good idea to set a specific height for the navbar, this is not set in the default component</li>
+</ul>
+
+      </div>
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_modals.sass" target="_blank">components/_modals.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-modals">
+        <h2>Modals</h2>
+<br /><p>Modals utilize <a href="http://twitter.github.com/bootstrap/javascript.html#modals">Bootstrap&#39;s Modal plugin</a>.
+Control various options of how modals are shown based on attributes set
+in the trigger or the modal markup itself (preferred).</p>
+<br /><p>Styles are not included for the contents of a modal. This is better suited
+for other components or custom layouts within the application.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <!-- Modal Trigger Button -->
+<a class="btn important" data-toggle="modal" href="#modal_name">Launch Modal</a>
+<!-- Modal Wrapper -->
+<div id="modal_name" class="modal fade" data-backdrop="true" data-keyboard="true">
+  <div class="notification">
+    <header>
+      <h3 class="heading">Notification within a Modal</h3>
+    </header>
+    <section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+    </section>
+    <footer class="footer-right">
+      <button class="btn important">Action</button>
+      <button class="btn danger">Cancel</button>
+    </footer>
+    <a class="close" data-dismiss="modal" href="#">×</a>
+  </div>
+</div>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;!-- Modal Trigger Button --&gt;
+&lt;a class=&quot;btn important&quot; data-toggle=&quot;modal&quot; href=&quot;#modal_name&quot;&gt;Launch Modal&lt;/a&gt;
+<br />&lt;!-- Modal Wrapper --&gt;
+&lt;div id=&quot;modal_name&quot; class=&quot;modal fade&quot; data-backdrop=&quot;true&quot; data-keyboard=&quot;true&quot;&gt;
+  &lt;div class=&quot;notification&quot;&gt;
+    &lt;header&gt;
+      &lt;h3 class=&quot;heading&quot;&gt;Notification within a Modal&lt;/h3&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;footer class=&quot;footer-right&quot;&gt;
+      &lt;button class=&quot;btn important&quot;&gt;Action&lt;/button&gt;
+      &lt;button class=&quot;btn danger&quot;&gt;Cancel&lt;/button&gt;
+    &lt;/footer&gt;
+    &lt;a class=&quot;close&quot; data-dismiss=&quot;modal&quot; href=&quot;#&quot;&gt;×&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+      </div>
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_notifications.sass" target="_blank">components/_notifications.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-notifications">
+        <h2>Notifications</h2>
+<br /><p>A basic notification is set on a container with the <code>.notification</code> class.
+They come in the standard flavors for various types of alerts.
+Notifications utilize <a href="http://twitter.github.com/bootstrap/javascript.html#alerts">Bootstrap&#39;s alert plugin</a>
+for closing a notification.</p>
+<br /><h3>Block Notifications</h3>
+<br /><p>Block notifications are similar to the basic notification, in fact nothing
+needs to change on the outer container. Just add a <code>.notify-header</code>,
+<code>.notify-content</code> and/or <code>.notify-footer</code> to the internal markup to provide
+more information around the notification.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <!-- Basic Notifications -->
+<div class="notification fade in">
+  <p><strong>Default!</strong> This is the default notification</p>
+  <a class="close" data-dismiss="alert" href="#">&times;</a>
+</div>
+<div class="notification info fade in">
+  <p><strong>Info or Notice!</strong> Use this for general information</p>
+  <a class="close" data-dismiss="alert" href="#">&times;</a>
+</div>
+<div class="notification important fade in">
+  <p><strong>Important!</strong> Something important is said here</p>
+  <a class="close" data-dismiss="alert" href="#">&times;</a>
+</div>
+<div class="notification success fade in">
+  <p><strong>Success!</strong> Congratulations, you get a trophy</p>
+  <a class="close" data-dismiss="alert" href="#">&times;</a>
+</div>
+<div class="notification warning fade in">
+  <p><strong>Warning!</strong> You're first and final</p>
+  <a class="close" data-dismiss="alert" href="#">&times;</a>
+</div>
+<div class="notification danger fade in">
+  <p><strong>Danger or Error or Alert!</strong> Something bad happened here</p>
+  <a class="close" data-dismiss="alert" href="#">&times;</a>
+</div>
+<div class="notification primary fade in">
+  <p><strong>Primary!</strong> The CI coloring for alerts</p>
+  <a class="close" data-dismiss="alert" href="#">&times;</a>
+</div>
+<!-- Block Notifications -->
+<div class="notification success fade in">
+  <header class="notify-header">
+    <h4 class="notify-heading">Block Notification</h4>
+  </header>
+  <section class="notify-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+  </section>
+  <footer class="notify-footer">
+    <button class="btn success">Action</button>
+    <button class="btn danger">Cancel</button>
+  </footer>
+  <a class="close" data-dismiss="alert" href="#">&times;</a>
+</div>
+<div class="notification danger fade in">
+  <section class="notify-content">
+    <p><strong>Yikes! This doesn't have a header and the footer is on the right!</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+  </section>
+  <footer class="notify-footer notify-right">
+    <button class="btn success">Action</button>
+    <button class="btn danger">Cancel</button>
+  </footer>
+  <a class="close" data-dismiss="alert" href="#">&times;</a>
+</div>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;!-- Basic Notifications --&gt;
+&lt;div class=&quot;notification fade in&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Default!&lt;/strong&gt; This is the default notification&lt;/p&gt;
+  &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;notification info fade in&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Info or Notice!&lt;/strong&gt; Use this for general information&lt;/p&gt;
+  &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;notification important fade in&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Important!&lt;/strong&gt; Something important is said here&lt;/p&gt;
+  &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;notification success fade in&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Success!&lt;/strong&gt; Congratulations, you get a trophy&lt;/p&gt;
+  &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;notification warning fade in&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Warning!&lt;/strong&gt; You&#39;re first and final&lt;/p&gt;
+  &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;notification danger fade in&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Danger or Error or Alert!&lt;/strong&gt; Something bad happened here&lt;/p&gt;
+  &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;notification primary fade in&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Primary!&lt;/strong&gt; The CI coloring for alerts&lt;/p&gt;
+  &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+<br />&lt;!-- Block Notifications --&gt;
+&lt;div class=&quot;notification success fade in&quot;&gt;
+  &lt;header class=&quot;notify-header&quot;&gt;
+    &lt;h4 class=&quot;notify-heading&quot;&gt;Block Notification&lt;/h4&gt;
+  &lt;/header&gt;
+  &lt;section class=&quot;notify-content&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;footer class=&quot;notify-footer&quot;&gt;
+    &lt;button class=&quot;btn success&quot;&gt;Action&lt;/button&gt;
+    &lt;button class=&quot;btn danger&quot;&gt;Cancel&lt;/button&gt;
+  &lt;/footer&gt;
+  &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;notification danger fade in&quot;&gt;
+  &lt;section class=&quot;notify-content&quot;&gt;
+    &lt;p&gt;&lt;strong&gt;Yikes! This doesn&#39;t have a header and the footer is on the right!&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;footer class=&quot;notify-footer notify-right&quot;&gt;
+    &lt;button class=&quot;btn success&quot;&gt;Action&lt;/button&gt;
+    &lt;button class=&quot;btn danger&quot;&gt;Cancel&lt;/button&gt;
+  &lt;/footer&gt;
+  &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> Add the class <code>.notify-right</code> to any element to right align text for block notifications</li>
+</ul>
+
+      </div>
+
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-notifications-flash-notifications">
+        <h3>Flash Notifications</h3>
+<br /><p>Flash notifications enhance the <code>.notification</code> component by allowing them
+to appear fixed above all other elements on the page. Wrap the notifications
+within a <code>#flash_messages.flash-messages</code> container at the root of the body,
+sprinkle a little JavaScript and you&#39;re ready to go.</p>
+<br /><p>Adding different positional classes to the <code>.flash-messages</code> container will
+allow them to appear in different quadrants of the viewport as seen below.</p>
+<br /><table><thead>
+<tr>
+<th>Type</th>
+<th>Class</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Top</td>
+<td><code>.flash-messages.top</code></td>
+<td>Fixed to the top of the browser, spans the entire viewport (<em>the default</em>)</td>
+</tr>
+<tr>
+<td>Bottom</td>
+<td><code>.flash-messages.bottom</code></td>
+<td>Fixed to the bottom of the browser, spans the entire viewport</td>
+</tr>
+<tr>
+<td>Top left</td>
+<td><code>.flash-messages.top-left</code></td>
+<td>Upper left quadrant of the viewport, with a size of 25%</td>
+</tr>
+<tr>
+<td>Top right</td>
+<td><code>.flash-messages.top-right</code></td>
+<td>Upper right quadrant of the viewport, with a size of 25%</td>
+</tr>
+<tr>
+<td>Top center</td>
+<td><code>.flash-messages.top-center</code></td>
+<td>Upper center quadrant of the viewport, with a size of 50%</td>
+</tr>
+<tr>
+<td>Middle</td>
+<td><code>.flash-messages.top-center</code></td>
+<td>Dead center baby, with a size of 50%</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> The <code>.flash-messages</code> container is flexible enough to allow any component to be injected</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_progress-bars.sass" target="_blank">components/_progress-bars.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-progress-bars">
+        <h2>Progress bars</h2>
+<br /><p>Progress bars are used to display actions being performed by the user.
+Utilize a bit of JavaScript to set the <code>width</code> of the <code>.progress &gt; .bar</code>
+to showcase it&#39;s status. They come in the standard status colors.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <div class="progress">
+  <div class="bar" style="width:60%"></div>
+</div>
+<div class="progress info">
+  <div class="bar" style="width:60%"></div>
+</div>
+<div class="progress important">
+  <div class="bar" style="width:60%"></div>
+</div>
+<div class="progress success">
+  <div class="bar" style="width:60%"></div>
+</div>
+<div class="progress warning">
+  <div class="bar" style="width:60%"></div>
+</div>
+<div class="progress danger">
+  <div class="bar" style="width:60%"></div>
+</div>
+<div class="progress primary">
+  <div class="bar" style="width:60%"></div>
+</div>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;bar&quot; style=&quot;width:60%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress info&quot;&gt;
+  &lt;div class=&quot;bar&quot; style=&quot;width:60%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress important&quot;&gt;
+  &lt;div class=&quot;bar&quot; style=&quot;width:60%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress success&quot;&gt;
+  &lt;div class=&quot;bar&quot; style=&quot;width:60%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress warning&quot;&gt;
+  &lt;div class=&quot;bar&quot; style=&quot;width:60%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress danger&quot;&gt;
+  &lt;div class=&quot;bar&quot; style=&quot;width:60%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;progress primary&quot;&gt;
+  &lt;div class=&quot;bar&quot; style=&quot;width:60%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> Click in the progress bar container to showcase the loading animation</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_media.sass" target="_blank">components/_media.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-media">
+        <h2>Media Items</h2>
+<br /><p>Media items provide a simple way for showcasing images, video
+and other media items as static media or clickable links. Include
+a <code>.caption</code> element when an area is needed to describe the figure.</p>
+<br /><p>The media grid contains some basic settings for layout, but a more
+structured layout is intended for the grid framework in use with
+the application.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <nav>
+  <ul class="media-grid">
+    <li>
+      <figure class="media-item">
+        <img alt="alt" src="http://placehold.it/260x180">
+        <figcaption class="caption">
+          <h5>Media Item</h5>
+          <p>With a caption copy</p>
+          <footer style="margin-top:1.2em;">
+            <button class="btn">Action</button>
+          </footer>
+        </figcaption>
+      </figure>
+    </li>
+    <li>
+      <a class="media-item" href="#"><img alt="alt" src="http://placehold.it/260x180"></a>
+    </li>
+    <li>
+      <a class="media-item" href="#"><img alt="alt" src="http://placehold.it/260x180"></a>
+    </li>
+  </ul>
+</nav>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;nav&gt;
+  &lt;ul class=&quot;media-grid&quot;&gt;
+    &lt;li&gt;
+      &lt;figure class=&quot;media-item&quot;&gt;
+        &lt;img alt=&quot;alt&quot; src=&quot;http://placehold.it/260x180&quot;&gt;
+        &lt;figcaption class=&quot;caption&quot;&gt;
+          &lt;h5&gt;Media Item&lt;/h5&gt;
+          &lt;p&gt;With a caption copy&lt;/p&gt;
+          &lt;footer style=&quot;margin-top:1.2em;&quot;&gt;
+            &lt;button class=&quot;btn&quot;&gt;Action&lt;/button&gt;
+          &lt;/footer&gt;
+        &lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class=&quot;media-item&quot; href=&quot;#&quot;&gt;&lt;img alt=&quot;alt&quot; src=&quot;http://placehold.it/260x180&quot;&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class=&quot;media-item&quot; href=&quot;#&quot;&gt;&lt;img alt=&quot;alt&quot; src=&quot;http://placehold.it/260x180&quot;&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> Define the column span class on the <code>&lt;li&gt;</code> for grid layouts</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_carousels.sass" target="_blank">components/_carousels.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-carousels">
+        <h2>Carousels</h2>
+<br /><p>Carousels need to be documented</p>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_wells.sass" target="_blank">components/_wells.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-wells">
+        <h2>Wells</h2>
+<br /><p>Wells are used to contain components, forms or various elements.</p>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <div class="well">.well</div>
+<div class="well lite">.well.lite</div>
+<div class="well dark">.well.dark</div>
+<div class="well primary">.well.primary</div>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;div class=&quot;well&quot;&gt;.well&lt;/div&gt;
+&lt;div class=&quot;well lite&quot;&gt;.well.lite&lt;/div&gt;
+&lt;div class=&quot;well dark&quot;&gt;.well.dark&lt;/div&gt;
+&lt;div class=&quot;well primary&quot;&gt;.well.primary&lt;/div&gt;
+</code></pre>
+
+      </div>
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_decals.sass" target="_blank">components/_decals.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-decals">
+        <h2>Decals</h2>
+<br /><p>Decals are used to <span class="decal important">POP</span> information in a block of text.
+They are typically used with inline elements.</p>
+<br /><table><thead>
+<tr>
+<th>Decal</th>
+<th>Markup</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><span class="decal">Default</span></td>
+<td><code>&lt;span class=&quot;decal&quot;&gt;Default&lt;/span&gt;</code></td>
+</tr>
+<tr>
+<td><span class="decal info">Info</span></td>
+<td><code>&lt;span class=&quot;decal info&quot;&gt;Info&lt;/span&gt;</code></td>
+</tr>
+<tr>
+<td><span class="decal important">Important</span></td>
+<td><code>&lt;span class=&quot;decal important&quot;&gt;Important&lt;/span&gt;</code></td>
+</tr>
+<tr>
+<td><span class="decal success">Success</span></td>
+<td><code>&lt;span class=&quot;decal success&quot;&gt;Success&lt;/span&gt;</code></td>
+</tr>
+<tr>
+<td><span class="decal warning">Warning</span></td>
+<td><code>&lt;span class=&quot;decal warning&quot;&gt;Warning&lt;/span&gt;</code></td>
+</tr>
+<tr>
+<td><span class="decal danger">Danger</span></td>
+<td><code>&lt;span class=&quot;decal danger&quot;&gt;Danger&lt;/span&gt;</code></td>
+</tr>
+<tr>
+<td><span class="decal primary">Primary</span></td>
+<td><code>&lt;span class=&quot;decal primary&quot;&gt;Primary&lt;/span&gt;</code></td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_tooltips.sass" target="_blank">components/_tooltips.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-tooltips">
+        <h2>Tooltips</h2>
+<br /><p>Tool tips utilize <a href="http://twitter.github.com/bootstrap/javascript.html#tooltips">Bootstrap&#39;s Tooltip plugin</a>.
+You can control various options of how a tool tip is shown based on attributes set in the link.</p>
+<br /><p>Styles are automatically generated based on the inverted colors of the body&#39;s
+<code>background-color</code> and font <code>color</code>.</p>
+<br /><p>Tooltips handle positions for
+<a href="#" rel="tooltip" data-placement="top" title="Top">top</a>,
+<a href="#" rel="tooltip" data-placement="bottom" title="Bottom">bottom</a>,
+<a href="#" rel="tooltip" data-placement="left" title="Left">left</a>, or
+<a href="#" rel="tooltip" data-placement="right" title="Right">right</a>.
+They require information set on a links data attributes.</p>
+<br /><table><thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>rel</code></td>
+<td><code>popover</code></td>
+<td>The js identifier for the type of component</td>
+</tr>
+<tr>
+<td><code>data-placement</code></td>
+<td><code>top</code>,<code>bottom</code>,<code>left</code>,<code>right</code></td>
+<td>The direction to show based on the target</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><em>text</em></td>
+<td>The copy for the tooltip</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+      <div class="sherpa-description sherpa-clearfix">
+        <h4>Examples:</h4>
+<br /><pre><code>&lt;a rel=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Top&quot;&gt;Top&lt;/a&gt;
+</code></pre>
+
+      </div>
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Heads Up!</strong> Tooltips are opt in and will only be instantiated if called directly from JavaScript <code>$(&quot;a[rel=tooltip]&quot;).tooltip()</code></li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_popovers.sass" target="_blank">components/_popovers.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-popovers">
+        <h2>Popovers</h2>
+<br /><p>Popovers utilize <a href="http://twitter.github.com/bootstrap/javascript.html#popovers">Bootstrap&#39;s Popover plugin</a>.
+They are similar to the tool tip plugin and also require
+<a href="http://twitter.github.com/bootstrap/javascript.html#tooltips">Bootstrap&#39;s Tooltip plugin</a>
+to be included as well.</p>
+<br /><p>Popovers handle positions for
+<a href="#" rel="popover" data-placement="top" title="Top" data-content="This is a popover">top</a>,
+<a href="#" rel="popover" data-placement="bottom" title="Bottom" data-content="This is a popover">bottom</a>,
+<a href="#" rel="popover" data-placement="left" title="Left" data-content="This is a popover">left</a>, or
+<a href="#" rel="popover" data-placement="right" title="Right" data-content="This is a popover">right</a>.
+They require information set on a links data attributes.</p>
+<br /><table><thead>
+<tr>
+<th>Attribute</th>
+<th>Values</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>rel</code></td>
+<td><code>popover</code></td>
+<td>The js identifier for the type of component</td>
+</tr>
+<tr>
+<td><code>data-placement</code></td>
+<td><code>top</code>,<code>bottom</code>,<code>left</code>,<code>right</code></td>
+<td>The direction to show based on the target</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td><em>text</em></td>
+<td>The headline title for the popover</td>
+</tr>
+<tr>
+<td><code>data-content</code></td>
+<td><em>text</em></td>
+<td>The body copy for the popover</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+      <div class="sherpa-description sherpa-clearfix">
+        <h4>Examples:</h4>
+<br /><pre><code>&lt;a rel=&quot;popover&quot; data-placement=&quot;top&quot; title=&quot;Top&quot; data-content=&quot;...&quot;&gt;Top&lt;/a&gt;
+</code></pre>
+
+      </div>
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Heads Up!</strong> Popovers are opt in and will only be instantiated if called directly from JavaScript <code>$(&quot;a[rel=popover]&quot;).popover()</code></li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_carets.sass" target="_blank">components/_carets.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-carets">
+        <h2>Carets</h2>
+<br /><p>Carets are used as icons for links.
+They are generally applied within <code>span</code> elements.</p>
+<br /><table><thead>
+<tr>
+<th>Caret</th>
+<th>Markup</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><span class="caret"></span></td>
+<td><code>&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;</code> or <code>class=&quot;caret south&quot;</code></td>
+</tr>
+<tr>
+<td><span class="caret north"></span></td>
+<td><code>&lt;span class=&quot;caret north&quot;&gt;&lt;/span&gt;</code></td>
+</tr>
+<tr>
+<td><span class="caret east"></span></td>
+<td><code>&lt;span class=&quot;caret east&quot;&gt;&lt;/span&gt;</code></td>
+</tr>
+<tr>
+<td><span class="caret west"></span></td>
+<td><code>&lt;span class=&quot;caret west&quot;&gt;&lt;/span&gt;</code></td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <a class="btn" href="#">Eastside<span class="caret"></span></a>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;Eastside&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+</code></pre>
+
+      </div>
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/components/_close.sass" target="_blank">components/_close.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="components-close">
+        <h2>Close</h2>
+<br /><p>Use the close icon to dismiss modals and notifications.</p>
+<br /><p>Coupled with Bootstrap&#39;s <a href="http://twitter.github.com/bootstrap/javascript.html#alerts">alert</a>
+or <a href="http://twitter.github.com/bootstrap/javascript.html#modals">modal</a> plugins, you can pass
+the <code>data-dismiss=&quot;modal|alert&quot;</code> attribute to trigger dismissal.</p>
+<br /><table><thead>
+<tr>
+<th>Close Icon</th>
+<th>Markup</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a class="close" href="#">&times;</a></td>
+<td><code>&lt;a class=&quot;close&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;</code></td>
+</tr>
+<tr>
+<td><a class="close alt" href="#">&times;</a></td>
+<td><code>&lt;a class=&quot;close alt&quot; href=&quot;#&quot;&gt;&amp;times;&lt;/a&gt;</code> (<em>for use on darker backgrounds</em>)</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+      <div class="sherpa-showcase sherpa-clearfix">
+        <div class="notification fade in">
+  <p><strong>Try Me!</strong> Dismiss this notification</p>
+  <a class="close" data-dismiss="alert">&times;</a>
+</div>
+      </div>
+
+      <div class="sherpa-description sherpa-usage sherpa-clearfix">
+        <h4>Usage:</h4>
+<br /><pre><code>&lt;div class=&quot;notification fade in&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Try Me!&lt;/strong&gt; Dismiss this notification&lt;/p&gt;
+  &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+      </div>
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> In your markup use <code>&amp;times;</code> for the content</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix" id="layouts-layouts">
+
+    <div class="sherpa-overview sherpa-clearfix">
+      <h1>Layouts</h1>
+<br /><p>Describe these Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </div>
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/layouts/_containers.sass" target="_blank">layouts/_containers.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="layouts-containers">
+        <h2>Containers</h2>
+<br /><p>Containers are used to &quot;contain&quot; elements of content within a page or section.
+All containers inject a <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro clearfix</a>
+to clear any floats from interior elements.</p>
+<br /><table><thead>
+<tr>
+<th>Class</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>.container</code></td>
+<td>The default container is a fluid width container with a <code>max-width</code> set to the <code>$base_width</code> variable.</td>
+</tr>
+<tr>
+<td><code>.container.outer</code></td>
+<td>Adding the <code>.outer</code> class to a <code>container</code> adds left and right padding, which creates a little breathing room in fluid layouts from the browser&#39;s edges.</td>
+</tr>
+<tr>
+<td><code>.container.fluid</code></td>
+<td>Adding the <code>.fluid</code> class to a <code>container</code> will remove the <code>max-width</code> setting and allow the container to fill the browser window.</td>
+</tr>
+<tr>
+<td><code>.container.fixed</code></td>
+<td>Adding the <code>.fixed</code> class to a <code>container</code> will render it using fixed width pixels with no responsive behavior.</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/layouts/_queries.sass" target="_blank">layouts/_queries.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="layouts-queries">
+        <h2>Queries</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/layouts/_upgrades.sass" target="_blank">layouts/_upgrades.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="layouts-upgrades">
+        <h2>Upgrades</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/layouts/_print.sass" target="_blank">layouts/_print.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="layouts-print">
+        <h2>Print</h2>
+<br /><p>A very basic print stylesheet based off <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></p>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix" id="mixins-mixins">
+
+    <div class="sherpa-overview sherpa-clearfix">
+      <h1>Mixins</h1>
+<br /><p>Mixins automate common re-usable chunks of CSS, properties, selectors, and/or settings.</p>
+
+    </div>
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_arrows.sass" target="_blank">mixins/_arrows.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-arrows">
+        <h2>Arrows</h2>
+<br /><p>Draws a directional arrow, typically used for the pseudo elements of <code>:before</code> or <code>:after</code>.
+These are similar to carets, except they don&#39;t require an extra element inside the DOM.</p>
+<br /><table><thead>
+<tr>
+<th>Mixin</th>
+<th>Params</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>+arrow_north</code></td>
+<td><code>$color:#000, $size:5px</code></td>
+<td>An arrow pointing up</td>
+</tr>
+<tr>
+<td><code>+arrow_south</code></td>
+<td><code>$color:#000, $size:5px</code></td>
+<td>An arrow pointing down</td>
+</tr>
+<tr>
+<td><code>+arrow_east</code></td>
+<td><code>$color:#000, $size:5px</code></td>
+<td>An arrow pointing right</td>
+</tr>
+<tr>
+<td><code>+arrow_west</code></td>
+<td><code>$color:#000, $size:5px</code></td>
+<td>An arrow pointing left</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Heads Up!</strong> Arrows are positioned <code>absolute</code> by default so the host should be <code>relative</code> and don&#39;t forget to add <code>content: &quot;&quot;</code></li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_clearfixins.sass" target="_blank">mixins/_clearfixins.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-clearfixins">
+        <h2>Clearfixins</h2>
+<br /><p>Clearfixins force a containers height to adjust when it contains floated children elements.</p>
+<br /><p>There are two mixins available for fixing floats</p>
+<br /><ul>
+<li><code>+clearfixer</code> The <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro clearfix</a> utilizing pseudo elements to clear floats</li>
+<li><code>+clearfix</code> Uses <code>overflow: hidden</code> to clear floats</li>
+</ul>
+<br /><p>Generally, the micro clearfix (<code>+clearfixer</code>) is prefered and mixed into the parent container of floated items.</p>
+
+      </div>
+
+
+
+
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> There are helper classes for <code>.clearfixer</code> and <code>.clearfix</code> which can be inserted
+into the DOM or used with <code>@extend</code>, it&#39;s prefered to mixin this into an element though</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_coloring.sass" target="_blank">mixins/_coloring.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-coloring">
+        <h2>Coloring</h2>
+<br /><p>Colorizing mixins to extend the native Sass functions.</p>
+<br /><table><thead>
+<tr>
+<th>Mixin</th>
+<th>Params</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>+background-darken-border</code></td>
+<td><code>$color</code>, <code>$percentage:20%</code></td>
+<td>Fills a background color and darkens the border based off a percentage</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> Sass comes pre-baked with <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html">killer native color methods</a></li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_columns.sass" target="_blank">mixins/_columns.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-columns">
+        <h2>Columns</h2>
+<br /><p>Allows elements to take the shape of either a column or row within a grid environment.</p>
+<br /><table><thead>
+<tr>
+<th>Mixin</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>+base-column</code></td>
+<td>The base <code>column</code> settings, should be extended by all columns</td>
+</tr>
+<tr>
+<td><code>+base-column-right</code></td>
+<td>An alternate base <code>column</code> which floats elements to the right</td>
+</tr>
+<tr>
+<td><code>+base-row</code></td>
+<td>The base <code>row</code> settings, should be extended by all rows</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> There are helper classes for <code>.base-column</code>, <code>.base-row</code> and
+<code>.base-column-right</code> which can be used for extension with <code>@extend</code></li>
+</ul>
+
+      </div>
+
+      <div class="sherpa-description sherpa-notes sherpa-warnings sherpa-clearfix">
+        <h4>Warnings:</h4>
+<br /><ul>
+<li><strong>Warning!</strong> The column mixins all utilize <code>box-sizing: border-box</code> which is not supported in ie7</li>
+</ul>
+
+      </div>
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_conversions.sass" target="_blank">mixins/_conversions.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-conversions">
+        <h2>Conversions</h2>
+<br /><p>Sass functions for calculations and conversion between pixels, ems, rems and percentages.</p>
+<br /><table><thead>
+<tr>
+<th>Function</th>
+<th>Params</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>to_em</code></td>
+<td><code>$target_px</code>, <code>$context:$base_font_size</code></td>
+<td>Converts target <code>px</code> value to <code>em</code> in context constraints of the base font size</td>
+</tr>
+<tr>
+<td><code>to_rem</code></td>
+<td><code>$target_px</code>, <code>$context:$context_px</code></td>
+<td>Converts target <code>px</code> value to <code>rem</code> in context constraints of the user&#39;s base font size</td>
+</tr>
+<tr>
+<td><code>to_percent</code></td>
+<td><code>$target_px</code>, <code>$context:$base_width</code></td>
+<td>Converts target <code>px</code> value to <code>percentage</code> in context constraints of the container&#39;s width</td>
+</tr>
+<tr>
+<td><code>vertical_pixel</code></td>
+<td><code>$target_px</code></td>
+<td>Returns the vertical rhythm in pixels calculated from the <code>$base_vertical</code> setting</td>
+</tr>
+<tr>
+<td><code>vertical_em</code></td>
+<td><code>$target_px</code></td>
+<td>Returns the vertical rhythm in em calculated from the <code>$base_vertical</code> setting</td>
+</tr>
+<tr>
+<td><code>vertical_percent</code></td>
+<td><code>$target_px</code></td>
+<td>Returns the vertical rhythm in percent calculated from the <code>$base_vertical</code> setting</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Important!</strong> When calculating vertical rhythm, always pass in what the expected pixel value is for the element.</li>
+</ul>
+
+      </div>
+
+      <div class="sherpa-description sherpa-notes sherpa-warnings sherpa-clearfix">
+        <h4>Warnings:</h4>
+<br /><ul>
+<li><strong>Warning!</strong> Define <code>$context_px</code>, <code>$base_font_size</code>, <code>$base_width</code> and <code>$base_vertical</code> prior to the functions being loaded.</li>
+</ul>
+
+      </div>
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_font-size.sass" target="_blank">mixins/_font-size.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-font-size">
+        <h2>Font size</h2>
+<br /><p>Sets a <code>font-size</code> using <code>rems</code> with a pixel fallback.</p>
+
+      </div>
+
+      <div class="sherpa-description sherpa-clearfix">
+        <h4>Arguments:</h4>
+<br /><ul>
+<li><code>$target_px</code>              - The target font size in pixels</li>
+<li><code>$context:$context_px</code>    - [<em>optional</em>] The context constraints of the
+                           user&#39;s base font size</li>
+</ul>
+
+      </div>
+
+
+
+
+      <div class="sherpa-description sherpa-clearfix">
+        <h4>Examples:</h4>
+<br /><pre><code>h1
+  +font-size(48)
+  color: blue
+</code></pre>
+
+      </div>
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Heads Up!</strong> Make sure not to include the <code>px</code> postfix when passing a size</li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_image-tools.sass" target="_blank">mixins/_image-tools.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-image-tools">
+        <h2>Image tools</h2>
+<br /><p>Image interpolation settings based on <a href="http://stitchcss.com/">stich css</a>.</p>
+<br /><table><thead>
+<tr>
+<th>Mixin</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>+sharpen-image</code></td>
+<td>Sharpen an image if it has become blurry due to upscaling or downscaling</td>
+</tr>
+<tr>
+<td><code>+high-quality-image</code></td>
+<td>Improves rendering quality for images which may be upscaled or downscaled</td>
+</tr>
+<tr>
+<td><code>+low-quality-image</code></td>
+<td>Optimizes the rendering on images so they appear faster, but at a lower quality</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+
+      <div class="sherpa-description sherpa-notes sherpa-warnings sherpa-clearfix">
+        <h4>Warnings:</h4>
+<br /><ul>
+<li><strong>Warning!</strong> These settings can have adverse effects in some browsers, test thoroughly.</li>
+</ul>
+
+      </div>
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_inline-block.sass" target="_blank">mixins/_inline-block.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-inline-block">
+        <h2>Inline block</h2>
+<br /><p>Mirrors the functionality found in <a href="http://compass-style.org/reference/compass/css3/inline_block/">Compass</a>
+and normalizes <code>inline-block</code> for <a href="http://thoughtbot.com/bourbon/">Bourbon</a> by setting <code>vertical-align: middle</code>.</p>
+<br /><p>The mixin also fixes support for ie7 if <code>$legacy-support-for-ie</code> is set to true.</p>
+
+      </div>
+
+
+
+
+
+      <div class="sherpa-description sherpa-clearfix">
+        <h4>Examples:</h4>
+<br /><pre><code>.breadcrumb &gt; li
+  +inline-block
+  color: blue
+</code></pre>
+
+      </div>
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_ir.sass" target="_blank">mixins/_ir.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-ir">
+        <h2>Image replacement</h2>
+<br /><p>Hides text on an element when utilizing a <code>background-image</code> for an element
+such as a logo or icon</p>
+
+      </div>
+
+
+
+
+
+      <div class="sherpa-description sherpa-clearfix">
+        <h4>Examples:</h4>
+<br /><pre><code>.footer .social-icon
+  +ir
+  background-image: $sprite-icons-img
+  width: 24px
+  height: 24px
+</code></pre>
+
+      </div>
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> There is a helper class for <code>.ir</code> which can be used for
+extension with <code>@extend</code></li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_tab-focus.sass" target="_blank">mixins/_tab-focus.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-tab-focus">
+        <h2>Tab focus</h2>
+<br /><p>Resets the normal browser behavior for tab focusable content.</p>
+
+      </div>
+
+
+
+
+
+      <div class="sherpa-description sherpa-clearfix">
+        <h4>Examples:</h4>
+<br /><pre><code>input[type=&quot;radio&quot;]:focus,
+input[type=&quot;checkbox&quot;]:focus
+  +tab-focus
+</code></pre>
+
+      </div>
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_timing-equations.sass" target="_blank">mixins/_timing-equations.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-timing-equations">
+        <h2>Timing-equations</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/mixins/_visibility.sass" target="_blank">mixins/_visibility.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="mixins-visibility">
+        <h2>Visibility</h2>
+<br /><p>Controls various visibility settings applied to elements.</p>
+<br /><table><thead>
+<tr>
+<th>Mixin</th>
+<th>Params</th>
+<th>Usage</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>+hidden</code></td>
+<td><em>none</em></td>
+<td>Totally hidden from screen readers and browsers</td>
+</tr>
+<tr>
+<td><code>+shown</code></td>
+<td><em>none</em></td>
+<td>Reverse the effects of <code>hidden</code></td>
+</tr>
+<tr>
+<td><code>+visuallyhidden</code></td>
+<td><em>none</em></td>
+<td>Only visually hidden, still available to screen readers</td>
+</tr>
+<tr>
+<td><code>+visuallyshown</code></td>
+<td><em>none</em></td>
+<td>Reverse the settings applied by <code>.visuallyhidden</code></td>
+</tr>
+<tr>
+<td><code>+invisible</code></td>
+<td><em>none</em></td>
+<td>Hide visually and from screenreaders, but maintain layout</td>
+</tr>
+</tbody></table>
+
+      </div>
+
+
+
+
+
+
+      <div class="sherpa-description sherpa-notes sherpa-clearfix">
+        <h4>Notes:</h4>
+<br /><ul>
+<li><strong>Pro Tip!</strong> All of these mixins are available as helper classes for use with <code>@extend</code></li>
+</ul>
+
+      </div>
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/polyfills/_functions.sass" target="_blank">polyfills/_functions.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="polyfills-functions">
+        <h2>Functions</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/polyfills/_box-shadow.sass" target="_blank">polyfills/_box-shadow.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="polyfills-box-shadow">
+        <h2>Box-shadow</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/polyfills/_box-sizing.sass" target="_blank">polyfills/_box-sizing.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="polyfills-box-sizing">
+        <h2>Box-sizing</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/polyfills/_opacity.sass" target="_blank">polyfills/_opacity.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="polyfills-opacity">
+        <h2>Opacity</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/polyfills/_transition.sass" target="_blank">polyfills/_transition.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="polyfills-transition">
+        <h2>Transition</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+<section class="sherpa-section sherpa-clearfix">
+
+    <div class="sherpa-filepath sherpa-clearfix">
+      <a href="https://github.com/modeset/underoos/blob/master/app/assets/stylesheets/polyfills/_user-select.sass" target="_blank">polyfills/_user-select.sass</a>
+    </div>
+
+      <div class="sherpa-summary sherpa-clearfix" id="polyfills-user-select">
+        <h2>User-select</h2>
+
+      </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+    </section>
+
+    <footer class="sherpa-footer sherpa-container sherpa-clearfix">
+      <p>&raquo; <a href="https://github.com/modeset/underoos/">Github Repository</a></p>
+      <p>&raquo; <a href="https://www.pivotaltracker.com/projects/485221">Pivotal Tracker</a></p>
+    </footer>
+    <script src="/assets/underoos.js"></script>
+    <script src="/assets/docs.js"></script>
+  </body>
+</html>
+
