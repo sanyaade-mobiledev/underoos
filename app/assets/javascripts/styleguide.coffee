@@ -2,32 +2,11 @@
 class Styleguide
   constructor: ->
     @superfriends = [
-       'Aquaman'
-      ,'Batman'
-      ,'Catwomen'
-      ,'Daredevil'
-      ,'Elektra'
-      ,'Fantastic Four'
-      ,'Green Lantern'
-      ,'Hulk'
-      ,'Iron Man'
-      ,'Jericho'
-      ,'Karate Kid'
-      ,'Lobo'
-      ,'Mr. Terrific'
-      ,'Nightwing'
-      ,'Obsidian'
-      ,'Plastic Man'
-      ,'Quicksilver'
-      ,'Robin'
-      ,'Superman'
-      ,'Teenage Mutant Ninja Turtles'
-      ,'Ultraman'
-      ,'Vigilante'
-      ,'Wolverine'
-      ,'X-Men'
-      ,'Yellow Jacket'
-      ,'Zattana'
+       'Aquaman' ,'Batman' ,'Catwomen' ,'Daredevil' ,'Elektra' ,'Fantastic Four'
+      ,'Green Lantern' ,'Hulk' ,'Iron Man' ,'Jericho' ,'Karate Kid' ,'Lobo'
+      ,'Mr. Terrific' ,'Nightwing' ,'Obsidian' ,'Plastic Man' ,'Quicksilver'
+      ,'Robin' ,'Superman' ,'Teenage Mutant Ninja Turtles' ,'Ultraman'
+      ,'Vigilante' ,'Wolverine' ,'X-Men' ,'Yellow Jacket' ,'Zattana'
     ]
     @initialize()
 
@@ -35,7 +14,7 @@ class Styleguide
     @addListeners()
     @prettyCodeBlocks()
     @showcaseTips()
-    $('#superfriends').typeahead({source:@superfriends , items:10})
+    @showcaseSuperfriends()
 
   addListeners: ->
     $('.progress').on 'click', @showcaseProgressBars
@@ -67,20 +46,6 @@ class Styleguide
     style = target.data('table')
     table = target.parents('.sherpa-showcase').first().find('table')
     table.toggleClass(style)
-
-  setFormStates: (form, state) ->
-    form.find('li').addClass(state)
-    form.find('.uneditable').addClass(state)
-
-  resetFormStates: (form) ->
-    form.find('li').removeClass('disabled error warning success')
-    form.find('.uneditable').removeClass('disabled error warning success')
-    form.find('input').removeAttr('disabled')
-    form.find('select').removeAttr('disabled')
-    form.find('textarea').removeAttr('disabled')
-
-  resetFormWells: (form) ->
-    form.removeClass('well dark lite primary')
 
   showcaseFormDemo: (e) =>
     target = $(e.target)
@@ -115,6 +80,23 @@ class Styleguide
     else if style is 'error' or style is 'success' or style is 'warning'
       @resetFormStates(form)
       @setFormStates(form, style)
+
+  setFormStates: (form, state) ->
+    form.find('li').addClass(state)
+    form.find('.uneditable').addClass(state)
+
+  resetFormStates: (form) ->
+    form.find('li').removeClass('disabled error warning success')
+    form.find('.uneditable').removeClass('disabled error warning success')
+    form.find('input').removeAttr('disabled')
+    form.find('select').removeAttr('disabled')
+    form.find('textarea').removeAttr('disabled')
+
+  resetFormWells: (form) ->
+    form.removeClass('well dark lite primary')
+
+  showcaseSuperfriends: ->
+    $('#underoos_superfriends').typeahead({source:@superfriends , items:10})
 
   showcaseUpgrades: (e) =>
     e.preventDefault()
