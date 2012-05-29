@@ -1,49 +1,62 @@
 
 //~
-// Utility classes for use with `@extends`, or just common items found in every project!
-// All helpers are also available as mixins, following the same name
+// Utility classes for use with `@extend`, mapped directly to their
+// [mixin](#mixins-mixins) counterparts. Based on the hard work from
+// [HTML5 Boilerplate](http://html5boilerplate.com/).
+//
+// Most elements within underoos utilize mixins instead of extending the helpers.
+// This is by design, to allow the application to take full advantage of `@extend`
+// without creating incredibly long selector lists.
+//
+// Class                | Usage
+// -------------------- | ----------------------------------------------
+// `.clearfixer`        | The [micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) utilizing pseudo elements to clear floats
+// `.clearfix`          | Uses `overflow: hidden` to clear floats
+// `.ir`                | Hides text on an element when utilizing a `background-image` such as a logo or icon
+// `.hidden`            | Totally hidden from screen readers and browsers
+// `.shown`             | Reverse the effects of `hidden`
+// `.visuallyhidden`    | Only visually hidden, still available to screen readers
+// `.visuallyshown`     | Reverse the settings applied by `.visuallyhidden`
+// `.invisible`         | Hide visually and from screenreaders, but maintain layout
+// `.base-column`       | The base `column` settings, should be extended by all columns
+// `.base-column-right` | An alternate base `column` which floats elements to the right
+// `.base-row`          | The base `row` settings, should be extended by all rows
+// `.pull-left`         | Adds `float: left` to an element
+// `.pull-right`        | Adds `float: right` to an element
+//
+// Notes:
+// - **Pro Tip!** Check out the [mixins](#mixins-mixins) for more detailed examples and explanation
 
-// Utilizes the `micro clearfix` on pseudo elements for clearing floats
 .clearfixer
   +clearfixer
 
-// Uses the standard clearfix of `overflow:hidden` found in Compass
 .clearfix
   +clearfix
 
-// Image replacement
 .ir
   +ir
 
-// Totally hidden from screen readers and browsers
 .hidden
   +hidden
 
-// Reverse the effects of hidden
 .shown
   +shown
 
-// Only visually hidden, still available to screen readers
 .visuallyhidden
   +visuallyhidden
 
-// Reverse the settings applied by `.visuallyhidden`
 .visuallyshown
   +visuallyshown
 
-// Hide visually and from screenreaders, but maintain layout
 .invisible
   +invisible
 
-// The base `column` settings, should be extended by all columns
 .base-column
   +base-column
 
-// An alternate base `column` which floats elements to the right
 .base-column-right
   +base-column-right
 
-// The base `row` settings, should be extended by all rows
 .base-row
   +base-row
 

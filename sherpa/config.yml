@@ -24,13 +24,13 @@ styles:
       template: overview.mustache
     - require: base/_normalize.sass
     - require: base/_scaffold.sass
-    - require: base/_helpers.sass
-    - require: base/_transitions.sass
     - require: base/_typography.sass
     - require: base/_button-btn-mixin.sass
     - require: base/_elements.sass
     - require: base/_tables.sass
     - require: base/_forms.sass
+    - require: base/_helpers.sass
+    - require: base/_transitions.sass
 
     - require: components/_components.sass
       template: overview.mustache
