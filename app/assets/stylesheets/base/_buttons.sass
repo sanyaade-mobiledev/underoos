@@ -9,8 +9,30 @@
 // <button class="btn warning">Warning</button>     | `.btn.warning`    | The warning button indicates caution should be taken with this action
 // <button class="btn danger">Danger</button>       | `.btn.danger`     | The danger button indicates a dangerous or potentially negative action
 // <button class="btn primary">Primary</button>     | `.btn.primary`    | The primary button is based off of the CI settings within the application
+//
+// The `.btn` button is built from a mixin (`base/_button-btn-mixin.sass`)
+//
+// All buttons come in a variety of states and sizes, toggle the buttons below for examples.
+//
+// Usage:
+//    <!-- Testing purposes only -->
+//    <nav class="button-group" data-toggle="buttons-radio" id="underoos_buttons_demo">
+//      <a class="btn active" href="#" data-class="normal">Normal</a>
+//      <a class="btn" href="#" data-class="active">Active</a>
+//      <a class="btn" href="#" data-class="error">Error</a>
+//      <a class="btn" href="#" data-class="disabled">Disabled</a>
+//      <a class="btn" href="#" data-class="small">Small</a>
+//      <a class="btn" href="#" data-class="large">Large</a>
+//    </nav>
 
-// Buttons
+//~
+// The `.btn` class can be applied to `<a>`, `<button>` and `<input>` elements.
+// Usage:
+//    <a class="btn" href="#">Link</a>
+//    <button class="btn" type="submit">Button</button>
+//    <input class="btn" type="button" value="Input">
+//    <input class="btn" type="submit" value="Submit">
+
 .btn
   +btn-button($standard, $grey6)
   &.info

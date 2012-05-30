@@ -22,11 +22,23 @@ class Styleguide
     $('#underoos_table_demo a').on 'click', @showcaseTableDemo
     $('#underoos_form_demo_type a').on 'click', @showcaseFormDemo
     $('#underoos_upgrade_demo').on 'click', @showcaseUpgrades
+    $('#underoos_buttons_demo').on 'click', @showcaseButtons
 
   # Underoos Specific
   prettyCodeBlocks: ->
     $('.sherpa-description > pre').addClass('prettyprint')
     window.prettyPrint()
+
+  showcaseButtons: (e) =>
+    e.preventDefault()
+    target = $(e.target)
+    classes = target.data('class')
+    buttons = target.parents('.sherpa-section').first().find('#base-buttons > table button')
+    if classes is "normal"
+      buttons.removeClass('active error disabled small large')
+    else
+      buttons.removeClass('active error disabled small large')
+      buttons.addClass(classes)
 
   showcaseTips: ->
     $("a[rel=tooltip]").tooltip()
