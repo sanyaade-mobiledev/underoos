@@ -1,5 +1,5 @@
 
-# Demos various aspects of the styleguide
+# Demos various aspects of the styleguide in a very dirty way.
 class Styleguide
   constructor: ->
     @initialize()
@@ -11,8 +11,9 @@ class Styleguide
     @demoTypeahead()
 
   addListeners: ->
-    $('#underoos_buttons_demo').on 'click', @demoButtons
     $('#underoos_nav_demo').on 'click', @demoNav
+    $('#underoos_buttons_demo').on 'click', @demoButtons
+    $('.btn[data-complete-text]').on 'click', @demoSending
     $('#underoos_table_demo a').on 'click', @demoTable
     $('#underoos_form_demo_type a').on 'click', @demoForm
     $('#underoos_upgrade_demo').on 'click', @demoUpgrades
@@ -23,6 +24,17 @@ class Styleguide
   prettyCodeBlocks: ->
     $('.sherpa-description > pre').addClass('prettyprint')
     window.prettyPrint()
+
+  # Demos structures built off the base `.nav` class
+  demoNav: (e) =>
+    e.preventDefault()
+    target = $(e.target)
+    classes = target.data('classes')
+    nav = target.parents('.nav').first()
+    li = target.parent('li')
+    nav.removeClass().addClass(classes)
+    nav.find('li').removeClass('active')
+    li.addClass('active')
 
   # Demos various states on `.btn` elements within a table
   demoButtons: (e) =>
@@ -36,16 +48,14 @@ class Styleguide
       buttons.removeClass('active error disabled small large')
       buttons.addClass(classes)
 
-  # Demos structures built off the base `.nav` class
-  demoNav: (e) =>
+  # Demos a stateful button
+  demoSending: (e) =>
     e.preventDefault()
     target = $(e.target)
-    classes = target.data('classes')
-    nav = target.parents('.nav').first()
-    li = target.parent('li')
-    nav.removeClass().addClass(classes)
-    nav.find('li').removeClass('active')
-    li.addClass('active')
+    target.button('loading')
+    setTimeout((->
+      target.button('complete')
+    ), 3000)
 
   # Demos additive classes around table styles
   demoTable: (e) =>

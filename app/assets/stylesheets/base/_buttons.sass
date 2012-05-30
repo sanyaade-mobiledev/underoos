@@ -33,6 +33,19 @@
 //    <input class="btn" type="button" value="Input">
 //    <input class="btn" type="submit" value="Submit">
 
+//~
+// #### Behaviors
+// Utilizing [Bootstrap's Button plugin](http://twitter.github.com/bootstrap/javascript.html#buttons),
+// you can control a button's states by utilizing the `data-toggle` attribute.
+//
+// State                                                                                      | Usage
+// ------------------------------------------------------------------------------------------ | --------------------------------------
+// <button class="btn" data-toggle="button">Toggle</button>                                   | Toggles active state on a single button
+// <button class="btn" data-complete-text="Sent" data-loading-text="sending...">Send</button> | Disables a button as information is being sent, resets on callback
+//
+// Notes:
+// - **Pro Tip!** See the [button groups](#components-button-groups) component for uses with `data-toggle="buttons-radio|checkbox"`
+
 .btn
   +btn-button($standard, $grey6)
   &.info
