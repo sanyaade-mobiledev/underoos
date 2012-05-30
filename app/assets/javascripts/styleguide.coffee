@@ -18,6 +18,7 @@ class Styleguide
 
   addListeners: ->
     $('.progress').on 'click', @showcaseProgressBars
+    $('#underoos_nav_demo').on 'click', @showcaseNavDemo
     $('#underoos_table_demo a').on 'click', @showcaseTableDemo
     $('#underoos_form_demo_type a').on 'click', @showcaseFormDemo
     $('#underoos_upgrade_demo').on 'click', @showcaseUpgrades
@@ -30,6 +31,16 @@ class Styleguide
   showcaseTips: ->
     $("a[rel=tooltip]").tooltip()
     $("a[rel=popover]").popover()
+
+  showcaseNavDemo: (e) =>
+    e.preventDefault()
+    target = $(e.target)
+    classes = target.data('classes')
+    nav = target.parents('.nav').first()
+    li = target.parent('li')
+    nav.find('li').removeClass('active')
+    nav.removeClass().addClass(classes)
+    li.addClass('active')
 
   showcaseProgressBars: ->
     target = $(@)
