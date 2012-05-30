@@ -9,14 +9,12 @@
 // `.collapse`    | Transitions an element to a `height` of `0`
 // `.collapse.in` | Transitions an element to a `height` of `auto`
 
-// Show and hide behaviors
 .fade
   +transition(opacity $speed)
   +opacity(0)
   &.in
     +opacity(1)
 
-// Accordions
 .collapse
   +transition(height $speed $ease-in-out-quart)
   position: relative
