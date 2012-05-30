@@ -5,17 +5,10 @@
 // Notifications utilize [Bootstrap's alert plugin](http://twitter.github.com/bootstrap/javascript.html#alerts)
 // for closing a notification.
 //
-// #### Block Notifications
-// Block notifications are similar to the basic notification, in fact nothing
-// needs to change on the outer container. Just add a `.notify-header`,
-// `.notify-content` and/or `.notify-footer` to the internal markup to provide
-// more information around the notification.
-//
 // Notes:
 // - **Pro Tip!** Add the class `.notify-right` to any element to right align text for block notifications
 //
 // Usage:
-//    <!-- Basic Notifications -->
 //    <div class="notification fade in">
 //      <p><strong>Default!</strong> This is the default notification</p>
 //      <a class="close" data-dismiss="alert" href="#">&times;</a>
@@ -44,8 +37,15 @@
 //      <p><strong>Primary!</strong> The CI coloring for alerts</p>
 //      <a class="close" data-dismiss="alert" href="#">&times;</a>
 //    </div>
+
+//~
+// #### Block Notifications
+// Block notifications are similar to the basic notification, in fact nothing
+// needs to change on the outer container. Just add a `.notify-header`,
+// `.notify-content` and/or `.notify-footer` to the internal markup to provide
+// more information around the notification.
 //
-//    <!-- Block Notifications -->
+// Usage:
 //    <div class="notification success fade in">
 //      <header class="notify-header">
 //        <h4 class="notify-heading">Block Notification</h4>
