@@ -1,0 +1,68 @@
+
+//~
+// Button                                           | Class             | Description
+// ------------------------------------------------ | ----------------- | ---------------------------
+// <button class="btn">Default</button>             | `.btn`            | The default button is typically used in forms
+// <button class="btn info">Info</button>           | `.btn.info`       | The info button is an alternate to the default button
+// <button class="btn important">Important</button> | `.btn.important`  | The important button is used to showcase a primary action
+// <button class="btn success">Success</button>     | `.btn.success`    | The success button indicates a successful or positive action
+// <button class="btn warning">Warning</button>     | `.btn.warning`    | The warning button indicates caution should be taken with this action
+// <button class="btn danger">Danger</button>       | `.btn.danger`     | The danger button indicates a dangerous or potentially negative action
+// <button class="btn primary">Primary</button>     | `.btn.primary`    | The primary button is based off of the CI settings within the application
+//
+// The `.btn` button is built from a mixin (`base/_button-btn-mixin.sass`)
+//
+// All buttons come in a variety of states and sizes, toggle the buttons below for examples.
+//
+// Usage:
+//    <!-- Testing purposes only -->
+//    <nav class="button-group" data-toggle="buttons-radio" id="underoos_buttons_demo">
+//      <a class="btn active" href="#" data-class="normal">Normal</a>
+//      <a class="btn" href="#" data-class="active">Active</a>
+//      <a class="btn" href="#" data-class="error">Error</a>
+//      <a class="btn" href="#" data-class="disabled">Disabled</a>
+//      <a class="btn" href="#" data-class="small">Small</a>
+//      <a class="btn" href="#" data-class="large">Large</a>
+//    </nav>
+
+//~
+// #### Button elements
+// The `.btn` class can be applied to `<a>`, `<button>` and `<input>` elements.
+// Usage:
+//    <a class="btn" href="#">Link</a>
+//    <button class="btn" type="submit">Button</button>
+//    <input class="btn" type="button" value="Input">
+//    <input class="btn" type="submit" value="Submit">
+
+//~
+// #### Behaviors
+// Utilizing [Bootstrap's Button plugin](http://twitter.github.com/bootstrap/javascript.html#buttons),
+// you can control a button's states by utilizing the `data-toggle` attribute.
+//
+// State                                                                                      | Usage
+// ------------------------------------------------------------------------------------------ | --------------------------------------
+// <button class="btn" data-toggle="button">Toggle</button>                                   | Toggles active state on a single button
+// <button class="btn" data-complete-text="Sent" data-loading-text="sending...">Send</button> | Disables a button as information is being sent, resets on callback
+//
+// Notes:
+// - **Pro Tip!** See the [button groups](#components-button-groups) component for uses with `data-toggle="buttons-radio|checkbox"`
+
+.btn
+  +btn-button($standard, $grey6)
+  &.info
+    +btn-override($info, $white)
+  &.important
+    +btn-override($important, $white)
+  &.success
+    +btn-override($success, $white)
+  &.warning
+    +btn-override($warning, $white)
+  &.danger
+    +btn-override($danger, $white)
+  &.primary
+    +btn-override($primary, $white)
+
+// Fix standard links to closer resemble `button` elements
+a.btn
+  font-weight: bold
+

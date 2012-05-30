@@ -1,0 +1,96 @@
+settings:
+  title: underoos
+  repo: https://github.com/modeset/underoos/
+  output_dir: ./public/docs/
+  layout_dir: ./sherpa/layouts/
+  layout_template: layout.mustache
+  default_section_template: section.mustache
+
+overview:
+  base_dir: ./
+  section_template: raw.mustache
+  manifest:
+    - require: README.md
+
+styles:
+  base_dir: ./app/assets/stylesheets/
+  manifest:
+    - require: settings/_settings.sass
+      template: overview.mustache
+    - require: settings/_config.sass
+    - require: settings/_theme.sass
+
+    - require: base/_base.sass
+      template: overview.mustache
+    - require: base/_normalize.sass
+    - require: base/_scaffold.sass
+    - require: base/_typography.sass
+    - require: base/_buttons.sass
+    - require: base/_tables.sass
+    - require: base/_forms.sass
+    - require: base/_helpers.sass
+    - require: base/_transitions.sass
+
+    - require: components/_components.sass
+      template: overview.mustache
+    - require: components/_button-groups.sass
+    - require: components/_dropdowns.sass
+    - require: components/_tabs.sass
+    - require: components/_pills.sass
+    - require: components/_nav-lists.sass
+    - require: components/_breadcrumbs.sass
+    - require: components/_pagination.sass
+    - require: components/_accordions.sass
+    - require: components/_paddles.sass
+    - require: components/_navbars.sass
+    - require: components/_modals.sass
+    - require: components/_notifications.sass
+    - require: components/_progress-bars.sass
+    - require: components/_media.sass
+    - require: components/_carousels.sass
+    - require: components/_wells.sass
+    - require: components/_decals.sass
+    - require: components/_tooltips.sass
+    - require: components/_popovers.sass
+    - require: components/_carets.sass
+    - require: components/_close.sass
+
+    - require: layouts/_layouts.sass
+      template: overview.mustache
+    - require: layouts/_containers.sass
+    - require: layouts/_queries.sass
+    - require: layouts/_upgrades.sass
+    - require: layouts/_print.sass
+
+    - require: mixins/_mixins.sass
+      template: overview.mustache
+    - require: mixins/_arrows.sass
+    - require: mixins/_clearfixins.sass
+    - require: mixins/_coloring.sass
+    - require: mixins/_columns.sass
+    - require: mixins/_conversions.sass
+    - require: mixins/_font-size.sass
+    - require: mixins/_image-tools.sass
+    - require: mixins/_inline-block.sass
+    - require: mixins/_ir.sass
+    - require: mixins/_responsive.sass
+    - require: mixins/_sticky-footer.sass
+    - require: mixins/_tab-focus.sass
+    - require: mixins/_timing-equations.sass
+    - require: mixins/_visibility.sass
+
+    - require: polyfills/_polyfills.sass
+      template: overview.mustache
+    - require: polyfills/_functions.sass
+    - require: polyfills/_box-shadow.sass
+    - require: polyfills/_box-sizing.sass
+    - require: polyfills/_opacity.sass
+    - require: polyfills/_transition.sass
+    - require: polyfills/_user-select.sass
+
+images:
+  section_template: images.mustache
+  base_dir: ./
+  manifest:
+    - require: "public/**/*.{png,jpeg,jpg,gif,ico}"
+

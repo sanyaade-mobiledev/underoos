@@ -1,4 +1,81 @@
 
+//~
+// Building tables is additive around the classes applied to the top level `<table>` element.
+// By combining any of the following classes, the table can be given a different look and feel.
+//
+// Name            | Class               | Usage
+// --------------- | ------------------- | ---------------------------
+// Base            | _none_              | The base table creates division in data with horizontal dividers.
+// Box             | `.box`              | Renders the table with exterior boundries for all table rows.
+// Vertical border | `.vborder`          | Renders the table with vertical divisions for table data.
+// Banded          | `.banded`           | Renders alternating `<tbody>` rows with a different color.
+// Header          | `.thead-decorate`   | Fills the `thead` with a background fill
+// Footer          | `.tfoot-decorate`   | Fills the `tfoot` with a background fill
+//
+// Notes:
+// - **Demo!** Toggle the buttons in the button group to showcase various table settings, follow along in the web inspector!
+// - **Pro Tip!** Add `.ascending` or `.descending` to `th > a` elements with an enclosed `span caret` for sorting icons
+//
+// Warnings:
+// - **Heads Up!** Tables throughout the styleguide may not contain the exact styles of the application
+//
+// Usage:
+//    <table>
+//      <caption>Table Caption</caption>
+//      <thead>
+//        <tr>
+//          <th>
+//            <a href="#">#</a>
+//          </th>
+//          <th>Table Header</th>
+//          <th>
+//            <a class="ascending" href="#">Ascending <span class="caret"></span></a>
+//          </th>
+//          <th>
+//            <a class="descending" href="#">Descending <span class="caret north"></span></a>
+//          </th>
+//        </tr>
+//      </thead>
+//      <tfoot>
+//        <tr>
+//          <td colspan="4">Set the <code>colspan</code> attribute to span the width of the table for footers.</td>
+//        </tr>
+//      </tfoot>
+//      <tbody>
+//        <tr>
+//          <td>1</td>
+//          <td>Table Data</td>
+//          <td>One</td>
+//          <td>Three</td>
+//        </tr>
+//        <tr>
+//          <td>2</td>
+//          <td>
+//            <a href="#">Click me!</a>
+//          </td>
+//          <td>Two</td>
+//          <td>Two</td>
+//        </tr>
+//        <tr>
+//          <td>3</td>
+//          <td>
+//            <a href="#">Click me!</a>
+//          </td>
+//          <td>Three</td>
+//          <td>One</td>
+//        </tr>
+//      </tbody>
+//    </table>
+//
+//    <!-- Testing purposes only -->
+//    <nav class="button-group" data-toggle="buttons-checkbox" id="underoos_table_demo" style="margin-top:1.5em;">
+//      <a class="btn" href="#" data-table="box">Box</a>
+//      <a class="btn" href="#" data-table="vborder">Vertical Border</a>
+//      <a class="btn" href="#" data-table="banded">Banded</a>
+//      <a class="btn" href="#" data-table="thead-decorate">Header</a>
+//      <a class="btn" href="#" data-table="tfoot-decorate">Footer</a>
+//    </nav>
+
 // Tables
 table
   margin: 0.5em 0

@@ -1,4 +1,40 @@
 
+//~ Media Items
+// Media items provide a simple way for showcasing images, video
+// and other media items as static media or clickable links. Include
+// a `.caption` element when an area is needed to describe the figure.
+//
+// The media grid contains some basic settings for layout, but a more
+// structured layout is intended for the grid framework in use with
+// the application.
+//
+// Notes:
+// - **Pro Tip!** Define the column span class on the `<li>` for grid layouts
+//
+// Usage:
+//    <nav>
+//      <ul class="media-grid">
+//        <li>
+//          <figure class="media-item">
+//            <img alt="alt" src="http://placehold.it/260x180">
+//            <figcaption class="caption">
+//              <h5>Media Item</h5>
+//              <p>With a caption copy</p>
+//              <footer style="margin-top:1.2em;">
+//                <button class="btn">Action</button>
+//              </footer>
+//            </figcaption>
+//          </figure>
+//        </li>
+//        <li>
+//          <a class="media-item" href="#"><img alt="alt" src="http://placehold.it/260x180"></a>
+//        </li>
+//        <li>
+//          <a class="media-item" href="#"><img alt="alt" src="http://placehold.it/260x180"></a>
+//        </li>
+//      </ul>
+//    </nav>
+
 .media-grid
   +box-sizing(border-box)
   +clearfixer

@@ -1,4 +1,35 @@
 
+//~ Upgrade messaging
+// Responds to conditional tests in the head of the document around a threshold
+// for a version of Internet Explorer and/or JavaScript being disabled. If any
+// of these conditions are met, a message for either enabling JavaScript or
+// upgrading their browser version is displayed to the user.
+//
+// Examples:
+//    <!-- The head conditional -->
+//    <!doctype html>
+//    <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+//    <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+//    <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+//    <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+//
+//    <!-- The hidden section for the messaging -->
+//    <section class="upgrade-notifications">
+//      <a class="upgrade-close" data-dismiss="alert" href="#">×</a>
+//      <section class="upgrade-notification">
+//        <article class="lt-ie8-msg upgrade-container">
+//          <p>Messaging for IE version</p>
+//        </article>
+//        <article class="no-js-msg upgrade-container">
+//          <p>Messaging for no JavaScript</p>
+//        </article>
+//      </section>
+//    </section>
+//
+// Usage:
+//    <!-- Testing purposes only -->
+//    <button class="btn primary" href="#" id="underoos_upgrade_demo">Test Upgrade Message</button>
+
 // The main container for the upgrade notification
 .upgrade-notifications
   color: $white

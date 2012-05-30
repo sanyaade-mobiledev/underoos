@@ -1,5 +1,290 @@
 
-// ## Form containers and base settings
+//~
+// Styling for inputs, textarea, labels, selects, and other controls associated
+// with form elements. Tuned to play with [formtastic](https://github.com/justinfrench/formtastic).
+//
+// Forms can be styled by applying a top level class on the `<form>` element.
+//
+// Name            | Class               | Usage
+// --------------- | ------------------- | ---------------------------
+// Vertical    | _not required_      | Stacked label, controls and hints
+// Horizontal  | `.form-horizontal`  | Labels and controls on the same line, stacked hints
+// Inline      | `.form-inline`      | All controls on the same line
+// Search      | `.form-search`      | Similar to inline, but targets a search field
+//
+// Notes:
+// - **Pro Tip!** Add one of the `.well` classes to the `<form>` element to contain it from other items on the page
+
+//~
+// #### Basic form
+// Small sample of form control elements using the default layout.
+//
+// Usage:
+//    <form class="well dark">
+//      <ol>
+//        <li>
+//          <label class="label" for="example_url">Domain Name<abbr title="required">*</abbr></label>
+//          <input class="input-medium" id="example_url" name="example[url]" placeholder="www.example.com" type="url">
+//          <p class="hint">Enter your domain name!</p>
+//        </li>
+//        <li class="boolean">
+//          <label for="example_check" name="example[check]">
+//            <input id="example_check" name="example[check]" type="checkbox" value="0">
+//            Check this box!
+//          </label>
+//        </li>
+//        <li class="form-actions">
+//          <button class="btn" type="submit">Submit</button>
+//        </li>
+//      </ol>
+//    </form>
+
+//~
+// #### Inline form
+// Utilizing the `.form-inline` class on the `<form>` element for small forms needing a compact style.
+//
+// Usage:
+//    <form class="form-inline well dark">
+//      <ol>
+//        <li>
+//          <input class="input-small" name="test[email]" placeholder="email" type="email">
+//          <input class="input-small" name="test[password]" placeholder="password" type="password">
+//          <button class="btn" type="submit">Go</button>
+//        </li>
+//      </ol>
+//    </form>
+
+//~
+// #### Search form
+// Utilizing the `.form-search` class on the `<form>` element for forms associated with searching.
+//
+// Notes:
+// - **Pro Tip** Add the class `search-query` to input elements for rounded corners.
+//
+// Usage:
+//    <form class="form-search well dark">
+//      <ol>
+//        <li>
+//          <input class="search-query input-small" name="test[search]" placeholder="google" type="search">
+//          <button class="btn" type="submit">Search</button>
+//        </li>
+//      </ol>
+//    </form>
+
+//~
+// #### Horizontal &amp; Vertical forms
+// These are the most common layouts used by forms. The structure for both vertical and horizontal
+// forms remains the same, swapping between the two styles is a matter of changing the class name
+// on the top level `<form>` element.
+//
+// Notes:
+// - **Pro Tip!** Adding the `.error|.warning|.success` class to the `<li>` will show the state on the element
+// - **Pro Tip!** For fully disabled controls the `<li>` element needs the class `.disabled`, as well the `disabled` attribute on `input`, `select`, and `textarea` controls
+//
+// Usage:
+//    <!-- Testing purposes only -->
+//    <section class="button-toolbar" id="underoos_form_demo_type" style="margin-bottom:1.5em;">
+//      <nav class="button-group" data-toggle="buttons-radio">
+//        <a class="btn" href="#" data-form-type="form-vertical">Vertical</a>
+//        <a class="btn active" href="#" data-form-type="form-horizontal">Horizontal</a>
+//      </nav>
+//      <nav class="button-group" data-toggle="buttons-radio">
+//        <a class="btn" href="#" data-form-type="regular">Well</a>
+//        <a class="btn active" href="#" data-form-type="dark">Dark</a>
+//        <a class="btn" href="#" data-form-type="lite">Light</a>
+//        <a class="btn" href="#" data-form-type="primary">Primary</a>
+//        <a class="btn" href="#" data-form-type="empty">None</a>
+//      </nav>
+//      <nav class="button-group" data-toggle="buttons-radio">
+//        <a class="btn active" href="#" data-form-type="normal">Normal</a>
+//        <a class="btn" href="#" data-form-type="disabled">Disabled</a>
+//        <a class="btn" href="#" data-form-type="error">Error</a>
+//        <a class="btn" href="#" data-form-type="warning">Warning</a>
+//        <a class="btn" href="#" data-form-type="success">Success</a>
+//      </nav>
+//    </section>
+//
+//    <form class="form-horizontal well dark">
+//      <fieldset>
+//        <legend>I am Legend</legend>
+//        <ol>
+//          <li class=" " id="horz_test_text_input">
+//            <label class="label" for="horz_test_text">Text Input<abbr title="required">*</abbr></label>
+//            <input class="input-medium" id="horz_test_text" name="test[text]" placeholder="text input" type="text">
+//            <p class="hint">This is a hint for the text element!</p>
+//          </li>
+//          <li class="boolean">
+//            <label for="horz_test_check1" name="test[check1]">
+//              <input checked="checked" id="horz_test_check1" name="test[check1]" type="checkbox" value="0">
+//              Checkboxes for multiple selections
+//            </label>
+//          </li>
+//          <li class="boolean">
+//            <label for="horz_test_check2" name="test[check2]">
+//              <input id="horz_test_check2" name="test[check2]" type="checkbox" value="1">
+//              Go ahead and select this one too
+//            </label>
+//          </li>
+//          <li>
+//            <ol class="choices-group">
+//              <li class="choice">
+//                <label for="horz_test_radio1">
+//                  <input id="horz_test_radio1" name="test[radio]" type="radio" value="true">
+//                  Yes, to radio buttons
+//                </label>
+//              </li>
+//              <li class="choice">
+//                <label for="horz_test_radio2">
+//                  <input id="horz_test_radio2" name="test[radio]" type="radio" value="false">
+//                  No, to radio buttons
+//                </label>
+//              </li>
+//            </ol>
+//          </li>
+//          <li class="boolean inline">
+//            <label for="horz_test_check3" name="test[check3]">
+//              <input checked="checked" id="horz_test_check3" name="test[check3]" type="checkbox" value="0">
+//              Checkbox inline 1
+//            </label>
+//          </li>
+//          <li class="boolean inline">
+//            <label for="horz_test_check4" name="test[check4]">
+//              <input id="horz_test_check4" name="test[check4]" type="checkbox" value="1">
+//              Checkbox inline 2
+//            </label>
+//          </li>
+//          <li>
+//            <ol class="choices-group">
+//              <li class="choice inline">
+//                <label for="horz_test_radio3">
+//                  <input id="horz_test_radio3" name="test[radio]" type="radio" value="true">
+//                  Yes, radio inline
+//                </label>
+//              </li>
+//              <li class="choice inline">
+//                <label for="horz_test_radio4">
+//                  <input id="horz_test_radio4" name="test[radio]" type="radio" value="false">
+//                  No, radio inline
+//                </label>
+//              </li>
+//            </ol>
+//          </li>
+//          <li class=" " id="horz_test_select_input">
+//            <label class="label" for="horz_test_select">Select</label>
+//            <select class="input-medium" id="horz_test_select" name="test[select]">
+//              <optgroup label="Colorado">
+//                <option selected="selected" value="denver">Denver</option>
+//                <option value="boulder">Boulder</option>
+//              </optgroup>
+//              <optgroup label="California">
+//                <option value="los angeles">Los Angeles</option>
+//                <option value="san francisco">San Francisco</option>
+//              </optgroup>
+//            </select>
+//          </li>
+//          <li class=" " id="horz_test_multi_input">
+//            <label class="label" for="horz_test_multi">Multi</label>
+//            <select class="input-medium" id="horz_test_multi" multiple="" name="test[multi]">
+//              <option value="1">One</option>
+//              <option selected="selected" value="2">Two</option>
+//              <option value="3">Three</option>
+//              <option value="4">Four</option>
+//              <option value="5">Five</option>
+//            </select>
+//          </li>
+//          <li class=" " id="horz_test_textarea_textarea.optional">
+//            <label class="label" for="horz_test_textarea">Text Area</label>
+//            <textarea class="input-medium" id="horz_test_textarea" name="test[textarea]" placeholder="Enter some text..." rows="2"></textarea>
+//          </li>
+//          <li class=" " id="horz_test_uneditable">
+//            <label class="label" for="horz_test_uneditable">Uneditable Input</label>
+//            <span class="input-medium uneditable" id="horz_test_uneditable">Hammer time</span>
+//            <p class="hint">Can't touch this!</p>
+//          </li>
+//          <li class="button commit">
+//            <label class="label" for="horz_test_file">File Browser</label>
+//            <input class="file" id="horz_test_file" name="file" type="file" value="file">
+//          </li>
+//          <li>
+//            <ol class="form-actions">
+//              <li class="button commit">
+//                <input class="submit btn" name="submit" type="submit" value="Submit">
+//              </li>
+//              <li class="button commit">
+//                <input class="reset btn" name="reset" type="reset" value="Reset">
+//              </li>
+//              <li class="button commit">
+//                <input class="button btn" name="button" type="button" value="Button">
+//              </li>
+//              <li class="button commit">
+//                <input class="image" name="image" src="http://placehold.it/68x28&amp;text=IMG" type="image" value="Image">
+//              </li>
+//            </ol>
+//          </li>
+//        </ol>
+//      </fieldset>
+//    </form>
+
+//~
+// #### Additional input controls
+//
+// Control                                                                                                       | Type                | Usage
+// ------------------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------
+// <input class="input-xlarge" name="email" placeholder="name@example.com" type="email">                         | `email`             | Text field for editing an e-mail address, `:valid` and `:invalid` pseudo-classes are applied
+// <input class="input-xlarge" name="password" placeholder="password" type="password">                           | `password`          | A single-line text field whose value is obscured
+// <input class="input-xlarge" name="url" placeholder="www.example.com" type="url">                              | `url`               | Text field for editing a URL, `:valid` and `:invalid` pseudo-classes are applied
+// <input class="input-xlarge" name="tel" placeholder="303-867-5309" type="tel">                                 | `tel`               | Text field for entering a telephone number, `:valid` and `:invalid` pseudo-classes are applied
+// <input class="input-xlarge" name="datetime" placeholder="2012-01-29 12:06:23:21" type="datetime">             | `datetime`          | Date and time control with the time zone set to UTC
+// <input class="input-xlarge" name="datetime-local" placeholder="2012-01-29 12:06:23:21" type="datetime-local"> | `datetime-local`    | Date and time control with no time zone
+// <input class="input-xlarge" name="time" placeholder="12:06:23:21" type="time">                                | `time`              | Time control with no time zone
+// <input class="input-xlarge" name="date" placeholder="2012-01-29" type="date">                                 | `date`              | Date control with no time zone
+// <input class="input-xlarge" name="month" placeholder="2012-01" type="month">                                  | `month`             | Date control consisting of a year and a month with no time zone
+// <input class="input-xlarge" name="week" placeholder="42" type="week">                                         | `week`              | Date control consisting of a week-year number and a week number with no time zone
+// <input class="input-xlarge" max="10" min="0" name="number" placeholder="5" type="number">                     | `number`            | Control for floating point values, add `min` and `max` attributes to create a spinner
+// <input class="input-xlarge" max="10" min="0" name="range" placeholder="5" step=".5" type="range">             | `range`             | Slider control for numbers where exact value is not important, add `min`, `max` and `step` attributes
+// <input alt="color" class="input-xlarge" name="color" placeholder="#fff" type="color">                         | `color`             | A control for specifying a color
+// <input class="input-xlarge" name="hidden" placeholder="hidden" type="hidden">                                 | `hidden`            | A control that is not displayed, but whose value is submitted to the server
+//
+// <small>Descriptions courtesy [Mozilla Developer Network](https://developer.mozilla.org/en-US/)</small>
+
+//~
+// #### Typeahead
+//
+// For quick auto-complete functionality, utilize the typeahead component.
+// It's a combination of an input with a `data-provide="typeahead"` attribute
+// and a drop down menu. The component requires
+// [Bootstrap's typeahead plugin](http://twitter.github.com/bootstrap/javascript.html#typeahead).
+//
+// The plugin, appends a `ul.typeahead.dropdown-menu` list to the `body` element.
+// There are no specific styles included within underoos for typeaheads as they
+// are primarily a combination of existing components.
+//
+// Notes:
+// - **Pro Tip!** Make sure to include the attribute `autocomplete="off"` to disable the browser's default behavior
+//
+// Usage:
+//    <form>
+//      <ol>
+//        <li>
+//          <input autocomplete="off" class="input-medium" data-provide="typeahead" id="underoos_typeahead" placeholder="Add Superfriends by typing" type="text">
+//        </li>
+//      </ol>
+//    </form>
+//
+// Examples:
+//    $('#superfriends').typeahead({source:['Aquaman', 'Superman'] , items:10})
+
+//~
+// #### Content Editable
+// Applying the attribute `contenteditable="true"` to elements allows the user
+// to change the contents within the item. Elements that are editable typically
+// include states for `hover` and `focus` while a user is editing.
+//
+// Usage:
+//    <h3 contenteditable="true">Edit Title</h3>
+//    <p contenteditable="true">Edit Description</p>
+
+// Form containers and base settings
 form
   margin: 0
 
@@ -31,7 +316,7 @@ form li
   +form-placeholder
 
 
-// ## Description elements
+// Description elements
 form abbr[title]
   border: none
   margin-left: 0.25em
@@ -61,7 +346,7 @@ label
   margin-top: 0.25em
 
 
-// ## Form controls
+// Form controls
 input,
 textarea,
 select,
@@ -101,7 +386,7 @@ label select
   background-color: $off_white
   cursor: not-allowed
 
-// ## Perform resets on odd controls before defining again
+// Perform resets on odd controls before defining again
 select[multiple],
 select[size]
   height: auto
@@ -122,7 +407,7 @@ input[type="image"]
   padding: 0
 
 
-// ## Radio and Checkboxes
+// Radio and Checkboxes
 input[type="checkbox"],
 input[type="radio"]
   +inline-block
@@ -150,7 +435,7 @@ form .choice.inline
   margin-right: 1em
 
 
-// ## Focus states
+// Focus states
 input:focus,
 textarea:focus
   +box-shadow($input_inset_shadow, $focus_glow)
@@ -165,7 +450,7 @@ select:focus
   +box-shadow(none)
   +tab-focus
 
-// ## Disabled states
+// Disabled states
 input,
 textarea,
 select,
@@ -199,7 +484,7 @@ form .disabled label,
 form .disabled .hint
   color: $disabled_color
 
-// ## Error, Warning Success states
+// Error, Warning Success states
 @mixin form-states($highlight)
   label, .hint
     color: $highlight
@@ -248,8 +533,19 @@ form .buttons
   margin-top: 1em
   margin-bottom: 1em
   padding: 1.5em
-  &.dark
-    background-color: darken($off_grey, 3%)
+
+form.dark .form-actions,
+form.dark .buttons
+  background-color: darken($off_grey, 3%)
+
+form.lite .form-actions,
+form.lite .buttons
+  background-color: darken($off_white, 3%)
+
+form.primary .form-actions,
+form.primary .buttons
+  background-color: darken($primary, 3%)
+
 
 .form-actions li,
 form .buttons li
@@ -257,7 +553,7 @@ form .buttons li
   margin: 0
 
 
-// ## Form layouts
+// Form layouts
 .form-search,
 .form-inline,
 .form-horizontal,
@@ -275,7 +571,7 @@ form .buttons li
   margin-bottom: 0
 
 
-// ## Horizontal specific overrides
+// Horizontal specific overrides
 .form-horizontal,
 .default-manage-form
   li
@@ -315,7 +611,7 @@ form .buttons li
     padding-left: $horiz_offset
 
 
-// ## Convenience classes for sizing
+// Convenience classes for sizing
 .input-xsmall
   width: 12.5%
 .input-small
@@ -327,7 +623,7 @@ form .buttons li
 .input-xlarge
   width: 100%
 
-// ## Content Editable states
+// Content Editable states
 [contenteditable="true"]
   border: 1px dotted transparent
 

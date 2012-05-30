@@ -1,12 +1,15 @@
 
-// Mixin the container sizes
-@mixin resize_containers($base_value)
-  .container
-    max-width: $base_value * 1px
-    &.fluid, &.fixed
-      max-width: none
-    &.fixed
-      width: $base_value * 1px
+//~ Media queries
+// Default media queries are put into place and are tuned for a few components.
+// These should be adjusted based on the application's needs. Underoos rolls
+// mobile first, and overrides styles as the viewport becomes smaller.
+//
+// Media Query               | Usage
+// ------------------------- | -----------------------------------
+// `@media min-width:1200px` | Typically larger desktop screens
+// `@media max-width:768px`  | Typically portrait tablet
+// `@media max-width:480px`  | Typically landscape phones
+// `@media max-width:320px`  | Typically portrait phones
 
 // Large screens
 @media (min-width: 1200px)

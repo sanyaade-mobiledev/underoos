@@ -1,4 +1,68 @@
 
+//~
+// Typically used for application or page level navigation systems
+// Navbars can contain just about any type of navigation component,
+// search forms, button groups and drop downs.
+//
+// Navbars support responsive behavior, by adding a button with `data-toggle="collapse"
+// data-target="#target_id"`. Add the corresponding class `.nav-collapse`
+// and the id based on the target (`#target_id`) on the collapsable container.
+// Make sure to utilize styles contained within the media queries as well.
+//
+// Notes:
+// - **Pro Tip!** Add the `.fixed` class to the `.navbar` container to fix the navigation system to the top of the page
+// - **Pro Tip!** For a responsive navbar, include [Bootstrap's Collapse plugin](http://twitter.github.com/bootstrap/javascript.html#collapse) and add the necessary elements to the structure
+//
+// Warnings:
+// - **Warning!** It's a good idea to set a specific height for the navbar, this is not set in the default component
+//
+// Usage:
+//    <div class="navbar">
+//      <div class="navbar-inner">
+//        <div class="container">
+//          <a class="btn info btn-navbar" data-toggle="collapse" data-target="#collapse_example">
+//            <span class="icon-bar"></span>
+//            <span class="icon-bar"></span>
+//            <span class="icon-bar"></span>
+//          </a>
+//          <a class="brand" href="#">Brand</a>
+//          <nav class="nav-collapse" id="collapse_example">
+//            <ul class="nav">
+//              <li><a href="#">Link 1</a></li>
+//              <li class="active"><a href="#">Link 2</a></li>
+//              <li class="plain-text">Plain Text</li>
+//              <li class="dropdown">
+//                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+//                <ul class="dropdown-menu">
+//                  <li><a href="#">Subnav 1</a></li>
+//                  <li><a href="#">Subnav 2</a></li>
+//                </ul>
+//              </li>
+//            </ul>
+//            <section class="pull-right">
+//              <form class="form-search">
+//                <ol>
+//                  <li>
+//                    <input class="search-query" name="test[searchbar]" placeholder="search" type="search">
+//                    <button class="btn primary" type="submit">Go</button>
+//                  </li>
+//                </ol>
+//              </form>
+//              <ul class="nav">
+//                <li class="dropdown">
+//                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+//                  <ul class="dropdown-menu">
+//                    <li><a href="#">Subnav 1</a></li>
+//                    <li><a href="#">Subnav 2</a></li>
+//                  </ul>
+//                </li>
+//              </ul>
+//            </section>
+//          </nav>
+//        </div>
+//      </div>
+//    </div>
+
 .navbar
   overflow: visible
 

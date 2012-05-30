@@ -1,4 +1,33 @@
 
+//~
+// Modals utilize [Bootstrap's Modal plugin](http://twitter.github.com/bootstrap/javascript.html#modals).
+// Control various options of how modals are shown based on attributes set
+// in the trigger or the modal markup itself (preferred).
+//
+// Styles are not included for the contents of a modal. This is better suited
+// for other components or custom layouts within the application.
+//
+// Usage:
+//    <!-- Modal Trigger Button -->
+//    <a class="btn important" data-toggle="modal" href="#modal_name">Launch Modal</a>
+//
+//    <!-- Modal Wrapper -->
+//    <div id="modal_name" class="modal fade" data-backdrop="true" data-keyboard="true">
+//      <div class="notification">
+//        <header class="notify-header">
+//          <h3 class="notify-heading">Notification within a Modal</h3>
+//        </header>
+//        <section class="notify-content">
+//          <p>~lorem_medium</p>
+//        </section>
+//        <footer class="notify-footer notify-right">
+//          <button class="btn important">Action</button>
+//          <button class="btn danger">Cancel</button>
+//        </footer>
+//        <a class="close" data-dismiss="modal" href="#">×</a>
+//      </div>
+//    </div>
+
 .modal-backdrop
   +transition(opacity $speed)
   background-color: $body_bg

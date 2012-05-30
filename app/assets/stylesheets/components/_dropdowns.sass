@@ -1,4 +1,85 @@
 
+//~
+// Apply the `data-toggle="dropdown"` attribute to a target link or button, then structure a dropdown navigation
+// under a `ul.dropdown-menu`. Within the menu item, there should be a listing of links and optional dividers.
+//
+// Dropdown's utilize a `visuallyhidden` and `visuallyshown` technique rather than a `display: none|block`
+// to allow screen readers to still discover the inner content.
+//
+// Dropdown's require [Bootstrap's Dropdown plugin](http://twitter.github.com/bootstrap/javascript.html#dropdowns).
+//
+// When the target link is floated right, the dropdown will automatically align it's dropdown menu accordingly.
+// Dropdowns are designed to work with `tabs`, `pills`, `navbars`, `button-groups` and `split buttons`.
+//
+// For elements outside of a list, typically in stand alone buttons, utilize
+// the `button-group` structure for creating dropdowns. Split button dropdowns
+// allow an action on the left while the dropdown on the right can be used
+// for contextual menu items.
+//
+// Notes:
+// - **Pro Tip!** Add the `.drop-up` class to the `.dropdown-menu` to pop the menu above the target
+// - **Pro Tip!** For split button dropdowns, add the `.split` class to the caret `<span>` to center within the button
+//
+// Usage:
+//    <section class="button-toolbar">
+//
+//      <!-- Basic dropdown with typical menu structure -->
+//      <nav class="button-group">
+//        <ul class="nav">
+//          <li class="dropdown">
+//            <a href="#" data-toggle="dropdown">Dropdown<span class="caret"></span></a>
+//            <ul class="dropdown-menu">
+//              <li><a href="#">Subnav 1</a></li>
+//              <li><a href="#">Subnav 2</a></li>
+//              <li class="divider"></li>
+//              <li><a href="#">Subnav 3</a></li>
+//            </ul>
+//          </li>
+//        </ul>
+//      </nav>
+//
+//      <!-- Button Dropdowns -->
+//      <nav class="button-group">
+//        <button class="btn dropdown-toggle" data-toggle="dropdown">Default<span class="caret"></span></button>
+//        <ul class="dropdown-menu">
+//          <li><a href="#">Subnav 1</a></li>
+//          <li><a href="#">Subnav 2</a></li>
+//        </ul>
+//      </nav>
+//      <nav class="button-group">
+//        <button class="btn success dropdown-toggle" data-toggle="dropdown">Success<span class="caret"></span></button>
+//        <ul class="dropdown-menu">
+//          <li><a href="#">Subnav 1</a></li>
+//          <li><a href="#">Subnav 2</a></li>
+//        </ul>
+//      </nav>
+//      <nav class="button-group">
+//        <button class="btn danger dropdown-toggle" data-toggle="dropdown">Danger Dropup<span class="caret"></span></button>
+//        <ul class="dropdown-menu drop-up">
+//          <li><a href="#">Subnav 1</a></li>
+//          <li><a href="#">Subnav 2</a></li>
+//        </ul>
+//      </nav>
+//
+//      <!-- Split Button Dropdowns -->
+//      <nav class="button-group">
+//        <button class="btn important">Action</button>
+//        <button class="btn important dropdown-toggle" data-toggle="dropdown"><span class="caret split"></span></button>
+//        <ul class="dropdown-menu">
+//          <li><a href="#">Subnav 1</a></li>
+//          <li><a href="#">Subnav 2</a></li>
+//        </ul>
+//      </nav>
+//      <nav class="button-group">
+//        <button class="btn warning">Warning</button>
+//        <button class="btn warning dropdown-toggle" data-toggle="dropdown"><span class="caret split"></span></button>
+//        <ul class="dropdown-menu">
+//          <li><a href="#">Subnav 1</a></li>
+//          <li><a href="#">Subnav 2</a></li>
+//        </ul>
+//      </nav>
+//    </section>
+
 .dropdown
   position: relative
 

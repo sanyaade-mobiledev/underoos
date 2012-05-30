@@ -1,4 +1,52 @@
 
+//~
+// Setup main scaffolding elements for `html`, `body`, selections, generic links and navigation.
+// Scaffolding includes font sizes, families, colors, backgrounds and line heights.
+
+//~
+// #### Base navs
+// The base nav is the building block for navigation structures and components
+// (tabs, pills, breadcrumbs, pagination and navigation lists). The `.nav` class
+// can be used for simple navigation as well. The buttons below will change the
+// class on the `ul` element to showcase the different navigation systems
+// based off the same markup structure.
+//
+// Warnings:
+// - **Heads Up!** All navigation components depend on the `.nav` class being attached to the container element
+//
+// Notes:
+// - **Pro Tip!** For convenience, add the `inline` class to the `.nav` element to display the base nav inline
+//
+// Usage:
+//    <nav>
+//      <ul class="nav inline" id="underoos_nav_demo">
+//        <li>
+//          <a data-classes="nav" href="#">Base Nav</a>
+//        </li>
+//        <li class="active">
+//          <a data-classes="nav inline" href="#">Base Nav Inline</a>
+//        </li>
+//        <li>
+//          <a data-classes="nav tabs" href="#">Tabs</a>
+//        </li>
+//        <li>
+//          <a data-classes="nav pills" href="#">Pills</a>
+//        </li>
+//        <li>
+//          <a data-classes="nav breadcrumb" href="#">Breadcrumbs</a>
+//        </li>
+//        <li>
+//          <a data-classes="nav pagination" href="#">Pagination</a>
+//        </li>
+//        <li>
+//          <a data-classes="nav tabs stacked" href="#">Stacked Tabs</a>
+//        </li>
+//        <li>
+//          <a data-classes="nav pills stacked" href="#">Stacked Pills</a>
+//        </li>
+//      </ul>
+//    </nav>
+
 // Top level elements
 html
   font-size: 100%
@@ -48,4 +96,41 @@ a:active, a.active, .active > a
 
 a:link
   -webkit-tap-highlight-color: $tap_highlight
+
+.nav
+  +clearfixer
+  list-style: none
+
+.nav > li
+  margin-left: 0
+
+.nav > li > a
+  display: block
+
+.nav.inline > li
+  float: left
+
+.nav.inline > li > a
+  padding-left: 0.5em
+  padding-right: 0.5em
+
+// Active states for navs get a default cursor
+.nav > .active > a,
+.nav > .active > a:hover
+  cursor: default
+.nav > .dropdown.active > a:hover
+  cursor: pointer
+
+// Headers within a Nav
+.nav .nav-header
+  display: block
+  color: $component_normal
+  font-size: 0.75em
+  font-weight: bold
+  text-transform: uppercase
+  text-shadow: $text_drop_lite
+  padding: 0.4em 1em
+
+.nav li + .nav-header
+  margin-top: 1em
 

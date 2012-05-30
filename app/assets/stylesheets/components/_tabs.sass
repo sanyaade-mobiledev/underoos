@@ -1,4 +1,80 @@
 
+//~
+// Tabs follow the same markup structure as other navigation elements.
+// Tabs like other navigation elements require the `.nav` class for
+// layout. Add `.nav .tabs` to a `ul` or `ol` element.
+//
+// ##### Togglable Tabs
+// To utilize a drop dead simple version of hiding and showing content
+// related to a tab navigation, utilize [Bootstrap's Tab plugin](http://twitter.github.com/bootstrap/javascript.html#tabs).
+// The base structure of tabs doesn't change, except to include a few more
+// classes on the links and the `href` attribute the button will target.
+//
+// Usage:
+//    <nav>
+//      <ul class="nav tabs">
+//        <li class="active">
+//          <a data-toggle="tab" href="#tab_one">Tab One</a>
+//        </li>
+//        <li>
+//          <a data-toggle="tab" href="#tab_two">Tab Two</a>
+//        </li>
+//        <li class="dropdown">
+//          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tab Three<span class="caret"></span></a>
+//          <ul class="dropdown-menu">
+//            <li>
+//              <a data-toggle="tab" href="#tab_three-1">Subnav 1</a>
+//            </li>
+//            <li>
+//              <a data-toggle="tab" href="#tab_three-2">Subnav 2</a>
+//            </li>
+//          </ul>
+//        </li>
+//      </ul>
+//    </nav>
+//    <!-- Tabable Content -->
+//    <section class="tab-content" style="margin-top:1.25em;">
+//      <article class="tab-pane active" id="tab_one">
+//        <p>Tab <span class="decal primary">one</span> content</p>
+//      </article>
+//      <article class="tab-pane" id="tab_two">
+//        <p>Tab <span class="decal primary">two</span> content</p>
+//      </article>
+//      <article class="tab-pane" id="tab_three-1">
+//        <p>Tab <span class="decal primary">three</span>: subnav <span class="decal primary">1</span> content</p>
+//      </article>
+//      <article class="tab-pane" id="tab_three-2">
+//        <p>Tab <span class="decal primary">three</span>: subnav <span class="decal primary">2</span> content</p>
+//      </article>
+//    </section>
+
+//~
+// #### Stacked Tabs
+// Stack tabs by adding the class `.stacked` to the `.tabs` element.
+//
+// Usage:
+//    <nav>
+//      <ul class="nav tabs stacked">
+//        <li class="active">
+//          <a href="#">Tab One</a>
+//        </li>
+//        <li class="dropdown">
+//          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tab Two<span class="caret"></span></a>
+//          <ul class="dropdown-menu">
+//            <li>
+//              <a href="#">Subnav 1</a>
+//            </li>
+//            <li>
+//              <a href="#">Subnav 2</a>
+//            </li>
+//          </ul>
+//        </li>
+//        <li>
+//          <a href="#">Tab Three</a>
+//        </li>
+//      </ul>
+//    </nav>
+
 // Default Tabs
 .tabs
   border-bottom: 1px solid $component_border_alt

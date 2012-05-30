@@ -1,4 +1,30 @@
 
+//~
+// Popovers utilize [Bootstrap's Popover plugin](http://twitter.github.com/bootstrap/javascript.html#popovers).
+// They are similar to the tool tip plugin and also require
+// [Bootstrap's Tooltip plugin](http://twitter.github.com/bootstrap/javascript.html#tooltips)
+// to be included as well.
+//
+// Popovers handle positions for
+// <a href="#" rel="popover" data-placement="top" title="Top" data-content="This is a popover">top</a>,
+// <a href="#" rel="popover" data-placement="bottom" title="Bottom" data-content="This is a popover">bottom</a>,
+// <a href="#" rel="popover" data-placement="left" title="Left" data-content="This is a popover">left</a>, or
+// <a href="#" rel="popover" data-placement="right" title="Right" data-content="This is a popover">right</a>.
+// They require information set on a links data attributes.
+//
+// Attribute          | Values                        | Usage
+// ------------------ | ---------------------------   | ---------------------------
+// `rel`              | `popover`                     | The js identifier for the type of component
+// `data-placement`   | `top`,`bottom`,`left`,`right` | The direction to show based on the target
+// `title`            | _text_                        | The headline title for the popover
+// `data-content`     | _text_                        | The body copy for the popover
+//
+// Examples:
+//    <a rel="popover" data-placement="top" title="Top" data-content="...">Top</a>
+//
+// Notes:
+// - **Heads Up!** Popovers are opt in and will only be instantiated if called directly from JavaScript `$("a[rel=popover]").popover()`
+
 .popover
   display: none
   padding: 5px

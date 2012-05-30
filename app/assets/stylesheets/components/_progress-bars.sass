@@ -1,10 +1,42 @@
 
+//~ Progress bars
+// Progress bars are used to display actions being performed by the user.
+// Utilize a bit of JavaScript to set the `width` of the `.progress > .bar`
+// to showcase it's status. They come in the standard status colors.
+//
+// Notes:
+// - **Pro Tip!** Click in the progress bar container to showcase the loading animation
+//
+// Usage:
+//    <div class="progress">
+//      <div class="bar" style="width:60%"></div>
+//    </div>
+//    <div class="progress info">
+//      <div class="bar" style="width:60%"></div>
+//    </div>
+//    <div class="progress important">
+//      <div class="bar" style="width:60%"></div>
+//    </div>
+//    <div class="progress success">
+//      <div class="bar" style="width:60%"></div>
+//    </div>
+//    <div class="progress warning">
+//      <div class="bar" style="width:60%"></div>
+//    </div>
+//    <div class="progress danger">
+//      <div class="bar" style="width:60%"></div>
+//    </div>
+//    <div class="progress primary">
+//      <div class="bar" style="width:60%"></div>
+//    </div>
+
 .progress
   +box-shadow($inset_dark)
   background-color: $body_bg
   border-radius: $radii
   overflow: hidden
   height: 1em
+  margin: 1em 0
 
 .progress .bar
   +box-sizing(border-box)
