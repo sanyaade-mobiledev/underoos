@@ -1,35 +1,31 @@
 
+# Demos various aspects of the styleguide
 class Styleguide
   constructor: ->
-    @superfriends = [
-       'Aquaman' ,'Batman' ,'Catwomen' ,'Daredevil' ,'Elektra' ,'Fantastic Four'
-      ,'Green Lantern' ,'Hulk' ,'Iron Man' ,'Jericho' ,'Karate Kid' ,'Lobo'
-      ,'Mr. Terrific' ,'Nightwing' ,'Obsidian' ,'Plastic Man' ,'Quicksilver'
-      ,'Robin' ,'Superman' ,'Teenage Mutant Ninja Turtles' ,'Ultraman'
-      ,'Vigilante' ,'Wolverine' ,'X-Men' ,'Yellow Jacket' ,'Zattana'
-    ]
     @initialize()
 
   initialize: ->
     @addListeners()
     @prettyCodeBlocks()
-    @showcaseTips()
-    @showcaseSuperfriends()
+    @demoTips()
+    @demoTypeahead()
 
   addListeners: ->
-    $('.progress').on 'click', @showcaseProgressBars
-    $('#underoos_nav_demo').on 'click', @showcaseNavDemo
-    $('#underoos_table_demo a').on 'click', @showcaseTableDemo
-    $('#underoos_form_demo_type a').on 'click', @showcaseFormDemo
-    $('#underoos_upgrade_demo').on 'click', @showcaseUpgrades
-    $('#underoos_buttons_demo').on 'click', @showcaseButtons
+    $('#underoos_buttons_demo').on 'click', @demoButtons
+    $('#underoos_nav_demo').on 'click', @demoNav
+    $('#underoos_table_demo a').on 'click', @demoTable
+    $('#underoos_form_demo_type a').on 'click', @demoForm
+    $('#underoos_upgrade_demo').on 'click', @demoUpgrades
+    $('.upgrade-close').on 'click', @closeUpgrades
+    $('.progress').on 'click', @demoProgressBars
 
-  # Underoos Specific
+  # Turn code blocks into pretty colors
   prettyCodeBlocks: ->
     $('.sherpa-description > pre').addClass('prettyprint')
     window.prettyPrint()
 
-  showcaseButtons: (e) =>
+  # Demos various states on `.btn` elements within a table
+  demoButtons: (e) =>
     e.preventDefault()
     target = $(e.target)
     classes = target.data('class')
@@ -40,37 +36,28 @@ class Styleguide
       buttons.removeClass('active error disabled small large')
       buttons.addClass(classes)
 
-  showcaseTips: ->
-    $("a[rel=tooltip]").tooltip()
-    $("a[rel=popover]").popover()
-
-  showcaseNavDemo: (e) =>
+  # Demos structures built off the base `.nav` class
+  demoNav: (e) =>
     e.preventDefault()
     target = $(e.target)
     classes = target.data('classes')
     nav = target.parents('.nav').first()
     li = target.parent('li')
-    nav.find('li').removeClass('active')
     nav.removeClass().addClass(classes)
+    nav.find('li').removeClass('active')
     li.addClass('active')
 
-  showcaseProgressBars: ->
-    target = $(@)
-    bar = target.find('> .bar')
-    pb_width = target.width()
-
-    if bar.width() is pb_width
-      bar.css(width: '0%')
-    else
-      bar.css(width:'100%')
-
-  showcaseTableDemo: (e) =>
+  # Demos additive classes around table styles
+  demoTable: (e) =>
+    e.preventDefault()
     target = $(e.target)
     style = target.data('table')
     table = target.parents('.sherpa-showcase').first().find('table')
     table.toggleClass(style)
 
-  showcaseFormDemo: (e) =>
+  # Demos structures, states and well coloring related to forms
+  demoForm: (e) =>
+    e.preventDefault()
     target = $(e.target)
     form = target.parents('.sherpa-showcase').first().find('form')
     style = target.data('form-type')
@@ -104,10 +91,16 @@ class Styleguide
       @resetFormStates(form)
       @setFormStates(form, style)
 
+  # Resets form wells
+  resetFormWells: (form) ->
+    form.removeClass('well dark lite primary')
+
+  # Sets a state (error, warning, success, disabled) for form elements
   setFormStates: (form, state) ->
     form.find('li').addClass(state)
     form.find('.uneditable').addClass(state)
 
+  # Resets form states back to normal
   resetFormStates: (form) ->
     form.find('li').removeClass('disabled error warning success')
     form.find('.uneditable').removeClass('disabled error warning success')
@@ -115,17 +108,44 @@ class Styleguide
     form.find('select').removeAttr('disabled')
     form.find('textarea').removeAttr('disabled')
 
-  resetFormWells: (form) ->
-    form.removeClass('well dark lite primary')
+  # Demos the typeahead plugin from an array
+  demoTypeahead: ->
+    superfriends = [
+       'Aquaman' ,'Batman' ,'Catwomen' ,'Daredevil' ,'Elektra' ,'Fantastic Four'
+      ,'Green Lantern' ,'Hulk' ,'Iron Man' ,'Jericho' ,'Karate Kid' ,'Lobo'
+      ,'Mr. Terrific' ,'Nightwing' ,'Obsidian' ,'Plastic Man' ,'Quicksilver'
+      ,'Robin' ,'Superman' ,'Teenage Mutant Ninja Turtles' ,'Ultraman'
+      ,'Vigilante' ,'Wolverine' ,'X-Men' ,'Yellow Jacket' ,'Zattana'
+    ]
+    $('#underoos_typeahead').typeahead({source:superfriends , items:10})
 
-  showcaseSuperfriends: ->
-    $('#underoos_superfriends').typeahead({source:@superfriends , items:10})
+  # Instantiates tooltips and popovers on the page
+  demoTips: ->
+    $("a[rel=tooltip]").tooltip()
+    $("a[rel=popover]").popover()
 
-  showcaseUpgrades: (e) =>
+  # Demos the animation on progress bars
+  demoProgressBars: ->
+    target = $(@)
+    bar = target.find('> .bar')
+    pb_width = target.width()
+    if bar.width() is pb_width
+      bar.css(width: '0%')
+    else
+      bar.css(width:'100%')
+
+  # Demos the upgrade message
+  demoUpgrades: (e) =>
     e.preventDefault()
-    $('html').toggleClass('no-js lt-ie8')
+    $('html').addClass('no-js lt-ie8')
     window.scrollTo(0,0)
 
+  # Hop back down to upgrades after closing the window
+  closeUpgrades: (e) =>
+    e.preventDefault()
+    $('html').removeClass('no-js lt-ie8')
+    div = $('#layouts-upgrades')
+    window.scroll(0,div.offset().top)
 
 # Get this party started
 new Styleguide()
