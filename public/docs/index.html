@@ -49,16 +49,68 @@
     </div>
 
     <div class="sherpa-description sherpa-clearfix">
-      <h1>underoos are fun to wear</h1>
-<br /><p>Stop back soon! We are just getting this bad boy going, it&#39;s in total turmoil at the moment.</p>
-<br /><p><img src="http://oofblamargh.typepad.com/.a/6a0120a6b84d21970b01543408e128970c-800wi" alt="underoos" title="title"></p>
-<br /><!-- 
--# This is so dirty and not in that good way.
-:ruby
-  def partial(file)
-    return haml_concat(Haml::Engine.new(IO.read("app/views/styleguide/_#{file}.haml")).render)
-  end
- -->
+      <h2>underoos</h2>
+<br /><p>Base styles, component and layout structures for a projects foundation.</p>
+<br /><ol>
+<li>Crafted in <a href="http://sass-lang.com/">Sass</a> - the actual <code>.sass</code> version</li>
+<li>Tuned for responsiveness with <code>ems</code> and <code>percentages</code> instead of pixel measurements</li>
+<li>Structured, consistent markup allowing a common language between front and back end development teams</li>
+<li>Minimal styles for quick prototypes, and allowing development teams to move forward while still in design phase</li>
+<li>Built to work with <a href="http://compass-style.org/">Compass</a> or <a href="http://thoughtbot.com/bourbon/">Bourbon</a> out of the box (though not a requirement by any means)</li>
+</ol>
+<br /><p>Underoos is meant as the starting point for an application. All of the <code>.sass</code> files are meant to be tweaked to the design, the important part is maintaining the structure of the markup as close as possible. This allows back end developers, front end developers and design teams to work simultaneously across an application. Underoos is the fancy stuff under the pants.</p>
+<br /><p>For more details around Underoos and how it works, take a look at the <a href="http://underoos.modeset.com/docs/style.html">interactive docs</a>.</p>
+<br /><p>Underoos is still under continuous development. It&#39;s stable, but is subject to some changes.</p>
+<br /><h3>Browser support</h3>
+<br /><ul>
+<li>Modern browsers (Chrome, Safari, Firefox, Internet Explorer 9+)</li>
+<li>Mobile/Tablet browsers (The Webkits)</li>
+<li>Internet Explorer 8</li>
+<li>Internet Explorer 7 (This needs to be enabled)</li>
+</ul>
+<br /><h3>Requirements</h3>
+<br /><ul>
+<li>Sass 3.1+ (files can easily be converted to <code>scss</code> by using the <code>sass-convert</code> tool)</li>
+</ul>
+<br /><h3>Installation</h3>
+<br /><p>Within a Rails environment:</p>
+<br /><p>Include underoos in your Gemfile</p>
+<br /><pre><code>gem &#39;underoos&#39;
+</code></pre>
+<br /><p>Then run the generator</p>
+<br /><pre><code>rails g underoos:assets
+</code></pre>
+<br /><p>Currently in other environments, it&#39;s a manual operation, but it&#39;s on our short list to automate this.</p>
+<br /><ol>
+<li>Clone or download the repository</li>
+<li>Copy over the <code>.sass</code> files from within <code>underoos/app/assets/stylesheets/</code></li>
+<li>Copy over the <code>javascripts</code> files from within <code>underoos/app/assets/javascripts/</code></li>
+<li>Copy over the <code>javascripts</code> files from within <code>underoos/vendor/assets/javascripts/</code></li>
+<li>Optionally copy over the <code>./script/javascripts</code> for pulling down the latest vendor javascripts</li>
+</ol>
+<br /><p>We know this sort of sucks ATM, but we&#39;ll get something better in place, promise.</p>
+<br /><h3>What&#39;s with all the comments?</h3>
+<br /><p>Underoos utilizes <a href="https://github.com/modeset/sherpa">sherpa</a> for documentation generation. This means the comments actually generate a <a href="http://underoos.modeset.com/docs/style.html">living styleguide</a>. As long as the structure doesn&#39;t change, the styleguide will be updated as you change style configurations. This allows documentation to be portable across applications. If you&#39;re like us, you hate documenting, so creating an automated task is a bonus all around. We will most likely move the inline documentation to external files in the very near future. Stay tuned.</p>
+<br /><p>See the <a href="https://github.com/modeset/sherpa">sherpa</a> project for more details. </p>
+<br /><h3>Inspirations</h3>
+<br /><p>Underoos is heavily inspired by the fabulous <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> library. In fact, we are using most of the JavaScript files contained within Bootstrap. We literally built underoos and it&#39;s documentation on the backs of giants. Let us give credit where credit is due. There are some key differences between underoos and bootstrap, so don&#39;t think of it as a pure clone.</p>
+<br /><p>If you don&#39;t mind dealing with the <a href="http://lesscss.org/">less library</a>, you should be using Twitter&#39;s Bootstrap.</p>
+<br /><h3>Road Map</h3>
+<br /><p>Feature updates are currently being run through a <a href="https://www.pivotaltracker.com/projects/485221">Pivotal Tracker project</a>.</p>
+<br /><h3>Contributing</h3>
+<br /><p>We are happy to take pull requests and bug fixes, but please follow these simple rules.</p>
+<br /><ol>
+<li>Needs to pass in all supported browsers (ie7 doesn&#39;t necessarily need to be perfect!)</li>
+<li>Documentation needs to reflect changes or additions</li>
+</ol>
+<br /><p>Feel free to check in with us before working on anything just to make sure we haven&#39;t started down the path already.</p>
+<br /><p>To work with the repository, clone and run the following:</p>
+<br /><pre><code>bundle
+rake sherpa:html
+</code></pre>
+<br /><p>Anytime you alter documentation, you&#39;ll need to run <code>rake sherpa:html</code> to regenerate it. If you are only tweaking styles, there is no need to rerun this command, just hit refresh.</p>
+<br /><h3>Licensing</h3>
+<br /><p>Underoos is <a href="https://raw.github.com/modeset/underoos/master/LICENSE">MIT licensed</a>, so do what you want with these files. We built them for us, but hopefully this makes somebody&#39;s life easier too. If you use underoos in a project, like us on Facebook... just kidding, don&#39;t do that, that is just lame. Seriously though, let us know how it goes.</p>
 
     </div>
 
@@ -69,8 +121,10 @@
     </section>
 
     <footer class="sherpa-footer sherpa-container sherpa-clearfix">
-      <p>&raquo; <a href="https://github.com/modeset/underoos/">Github Repository</a></p>
-      <p>&raquo; <a href="https://www.pivotaltracker.com/projects/485221">Pivotal Tracker</a></p>
+      <p>&raquo; Hand crafted by <a href="http://www.modeset.com/">Mode Set</a> and <a href="https://raw.github.com/modeset/underoos/master/LICENSE">licensed MIT</a> style for your pleasure</p>
+      <p>&raquo; Fork and fix me at <a href="https://github.com/modeset/underoos/">Github</a></p>
+      <p>&raquo; See where it's headed on <a href="https://www.pivotaltracker.com/projects/485221">Pivotal Tracker</a></p>
+      <p>&raquo; Documentation generated by <a href="https://github.com/modeset/sherpa">sherpa</a></p>
     </footer>
 
     <section class="upgrade-notifications">
