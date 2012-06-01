@@ -1,6 +1,6 @@
 require "bundler/gem_tasks"
 
-begin 
+begin
   require 'cucumber'
   require 'cucumber/rake/task'
 

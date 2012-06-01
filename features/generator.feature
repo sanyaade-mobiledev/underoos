@@ -9,9 +9,13 @@ Feature: Generating the Underoos SASS files into an app
     When I successfully run `bundle exec rails generate underoos:assets --trace`
     Then the following files should exist:
       | app/assets/javascripts/underoos.js                      |
+      | app/assets/javascripts/docs.js                          |
+      | app/assets/javascripts/styleguide.coffee                |
       | app/assets/stylesheets/underoos.sass                    |
+      | app/assets/stylesheets/underoos-docs.sass               |
+      | app/assets/stylesheets/base/_base.sass                  |
       | app/assets/stylesheets/base/_button-btn-mixin.sass      |
-      | app/assets/stylesheets/base/_elements.sass              |
+      | app/assets/stylesheets/base/_buttons.sass               |
       | app/assets/stylesheets/base/_forms.sass                 |
       | app/assets/stylesheets/base/_helpers.sass               |
       | app/assets/stylesheets/base/_normalize.sass             |
@@ -25,6 +29,7 @@ Feature: Generating the Underoos SASS files into an app
       | app/assets/stylesheets/components/_carets.sass          |
       | app/assets/stylesheets/components/_carousels.sass       |
       | app/assets/stylesheets/components/_close.sass           |
+      | app/assets/stylesheets/components/_components.sass      |
       | app/assets/stylesheets/components/_decals.sass          |
       | app/assets/stylesheets/components/_dropdowns.sass       |
       | app/assets/stylesheets/components/_media.sass           |
@@ -41,6 +46,7 @@ Feature: Generating the Underoos SASS files into an app
       | app/assets/stylesheets/components/_tooltips.sass        |
       | app/assets/stylesheets/components/_wells.sass           |
       | app/assets/stylesheets/layouts/_containers.sass         |
+      | app/assets/stylesheets/layouts/_layouts.sass            |
       | app/assets/stylesheets/layouts/_print.sass              |
       | app/assets/stylesheets/layouts/_queries.sass            |
       | app/assets/stylesheets/layouts/_upgrades.sass           |
@@ -51,27 +57,30 @@ Feature: Generating the Underoos SASS files into an app
       | app/assets/stylesheets/mixins/_conversions.sass         |
       | app/assets/stylesheets/mixins/_font-size.sass           |
       | app/assets/stylesheets/mixins/_image-tools.sass         |
+      | app/assets/stylesheets/mixins/_inline-block.sass        |
       | app/assets/stylesheets/mixins/_ir.sass                  |
       | app/assets/stylesheets/mixins/_mixins.sass              |
+      | app/assets/stylesheets/mixins/_responsive.sass          |
+      | app/assets/stylesheets/mixins/_sticky-footer.sass       |
       | app/assets/stylesheets/mixins/_tab-focus.sass           |
       | app/assets/stylesheets/mixins/_timing-equations.sass    |
       | app/assets/stylesheets/mixins/_visibility.sass          |
       | app/assets/stylesheets/polyfills/_box-shadow.sass       |
       | app/assets/stylesheets/polyfills/_box-sizing.sass       |
       | app/assets/stylesheets/polyfills/_functions.sass        |
-      | app/assets/stylesheets/polyfills/_inline-block.sass     |
       | app/assets/stylesheets/polyfills/_opacity.sass          |
       | app/assets/stylesheets/polyfills/_polyfills.sass        |
       | app/assets/stylesheets/polyfills/_transition.sass       |
       | app/assets/stylesheets/polyfills/_user-select.sass      |
-      | app/assets/stylesheets/themes/_default.sass             |
+      | app/assets/stylesheets/settings/_config.sass            |
+      | app/assets/stylesheets/settings/_settings.sass          |
+      | app/assets/stylesheets/settings/_theme.sass             |
       | vendor/assets/javascripts/bootstrap-alert.js            |
       | vendor/assets/javascripts/bootstrap-button.js           |
       | vendor/assets/javascripts/bootstrap-collapse.js         |
       | vendor/assets/javascripts/bootstrap-dropdown.js         |
       | vendor/assets/javascripts/bootstrap-modal.js            |
       | vendor/assets/javascripts/bootstrap-popover.js          |
-      | vendor/assets/javascripts/bootstrap-scrollspy.js        |
       | vendor/assets/javascripts/bootstrap-tab.js              |
       | vendor/assets/javascripts/bootstrap-tooltip.js          |
       | vendor/assets/javascripts/bootstrap-transition.js       |
