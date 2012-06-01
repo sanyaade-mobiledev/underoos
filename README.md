@@ -10,7 +10,7 @@ Base styles, component and layout structures for a projects foundation.
 
 Underoos is meant as the starting point for an application. All of the `.sass` files are meant to be tweaked to the design, the important part is maintaining the structure of the markup as close as possible. This allows back end developers, front end developers and design teams to work simultaneously across an application. Underoos is the fancy stuff under the pants.
 
-For more details around Underoos and how it works, take a look at the [interactive docs](http://underoos.modeset.com/docs/style.html).
+For more details around Underoos and how it works, take a look at the [interactive docs](http://underoos.modeset.com/styles.html).
 
 Underoos is still under continuous development. It's stable, but is subject to some changes.
 
@@ -50,7 +50,7 @@ We know this sort of sucks ATM, but we'll get something better in place, promise
 
 ### What's with all the comments?
 
-Underoos utilizes [sherpa](https://github.com/modeset/sherpa) for documentation generation. This means the comments actually generate a [living styleguide](http://underoos.modeset.com/docs/style.html). As long as the structure doesn't change, the styleguide will be updated as you change style configurations. This allows documentation to be portable across applications. If you're like us, you hate documenting, so creating an automated task is a bonus all around. We will most likely move the inline documentation to external files in the very near future. Stay tuned.
+Underoos utilizes [sherpa](https://github.com/modeset/sherpa) for documentation generation. This means the comments actually generate a [living styleguide](http://underoos.modeset.com/styles.html). As long as the structure doesn't change, the styleguide will be updated as you change style configurations. This allows documentation to be portable across applications. If you're like us, you hate documenting, so creating an automated task is a bonus all around. We will most likely move the inline documentation to external files in the very near future. Stay tuned.
 
 See the [sherpa](https://github.com/modeset/sherpa) project for more details. 
 
