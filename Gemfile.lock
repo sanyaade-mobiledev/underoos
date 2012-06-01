@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    underoos (1.0.0)
+    underoos (1.1.0)
       rails (>= 3.1.0)
       sass-rails
 
