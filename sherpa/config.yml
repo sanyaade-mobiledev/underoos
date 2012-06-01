@@ -1,7 +1,7 @@
 settings:
   title: underoos
   repo: https://github.com/modeset/underoos/
-  output_dir: ./public/docs/
+  output_dir: ./public/
   layout_dir: ./sherpa/layouts/
   layout_template: layout.mustache
   default_section_template: section.mustache

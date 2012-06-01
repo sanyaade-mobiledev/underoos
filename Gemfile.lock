@@ -1,16 +1,17 @@
+GIT
+  remote: git://github.com/modeset/sherpa.git
+  revision: 6428d27b2eecbd2809c8e5793a8c867cee38a9da
+  specs:
+    sherpa (0.1.0)
+      mustache (~> 0.99.4)
+      redcarpet (~> 2.1.1)
+
 PATH
   remote: .
   specs:
     underoos (1.0.0)
       rails (>= 3.1.0)
       sass-rails
-
-PATH
-  remote: ~/Sites/sherpa
-  specs:
-    sherpa (0.1.0)
-      mustache (~> 0.99.4)
-      redcarpet (~> 2.1.1)
 
 GEM
   remote: http://rubygems.org/
@@ -73,12 +74,6 @@ GEM
     ffi (1.0.11)
     gherkin (2.9.0)
       json (>= 1.4.6)
-    haml (3.1.4)
-    haml-rails (0.3.4)
-      actionpack (~> 3.0)
-      activesupport (~> 3.0)
-      haml (~> 3.0)
-      railties (~> 3.0)
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.3)
@@ -155,9 +150,7 @@ PLATFORMS
 DEPENDENCIES
   aruba
   coffee-rails
-  coffee-script-source
   cucumber
-  haml-rails
   jquery-rails
   sherpa!
   thin

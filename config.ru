@@ -7,7 +7,6 @@ require 'underoos'
 require 'action_controller/railtie'
 require 'sass-rails'
 require 'sprockets/railtie'
-require 'haml-rails'
 require 'jquery-rails'
 
 # Set up a dummy app for development
@@ -31,9 +30,7 @@ end
 Underoos::Application.initialize!
 
 Underoos::Application.routes.draw do
-  mount Underoos::Engine => "/styleguide"
-  root :to => 'pages#index'
-  match '*page', :to => 'pages#show'
+  mount Underoos::Engine => '/'
 end
 
 run Underoos::Application
